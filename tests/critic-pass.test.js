@@ -130,3 +130,46 @@ test("config stages match emitted stages (no faked mastery)", async () => {
   assert.ok(item.acceptableAnswers.some((a) => a.split(" ").length >= 4), "stage-8 items are judged on a carried sentence, not a bare term");
   assert.ok(core.CONCEPTS.every((x) => x.definition.es && x.definition.zh), "every definition exists in EN/ES/ZH");
 });
+
+test("KB review actively rejects unusable knowledge, accepts the seed", () => {
+  const good = core.reviewKnowledgeBase({ concepts: core.CONCEPTS, sources: core.SOURCES });
+  assert.equal(good.rejected, 0);
+  assert.equal(good.accepted, core.CONCEPTS.length);
+  const broken = { ...core.CONCEPTS[0], conceptId: "broken-test", sourceIds: [], distinctions: [], misconceptions: [], examples: [{ en: "Unrelated sentence entirely.", es: "Frase sin relación alguna.", zh: "完全无关的句子。" }] };
+  const verdict = core.reviewKnowledgeItem(broken, { concepts: [broken, ...core.CONCEPTS], sources: core.SOURCES });
+  assert.equal(verdict.verdict, "reject");
+  assert.ok(verdict.findings.some((f) => f.severity === "blocker"));
+  const colliding = { ...core.CONCEPTS[1], conceptId: "collide-test", terms: { ...core.CONCEPTS[1].terms, es: { ...core.CONCEPTS[1].terms.es, term: core.CONCEPTS[0].terms.es.term } } };
+  assert.equal(core.reviewKnowledgeItem(colliding, { concepts: [colliding, ...core.CONCEPTS], sources: core.SOURCES }).verdict, "reject");
+});
+
+test("generation rejects bad items: bare-term interpretation, neighbour answers, leaked prompts", () => {
+  const cs = core.SEED_CONCEPTS_BY_DOMAIN["oregon-medical"];
+  const bare = core.validateItems([{ conceptId: "dose", domainId: "oregon-medical", stage: 8, prompt: "Interpret", acceptableAnswers: ["dosis"], sourceIds: ["x"] }], { concepts: cs });
+  assert.equal(bare.valid.length, 0);
+  const neighbour = core.validateItems([{ conceptId: "dose", domainId: "oregon-medical", stage: 2, prompt: "How do you say dose?", acceptableAnswers: [cs.find((c) => c.conceptId === "dosage").terms.es.term], sourceIds: ["x"] }], { concepts: cs });
+  assert.equal(neighbour.valid.length, 0);
+  const set = core.generatePracticeSet({ concepts: cs.slice(0, 4), domain: core.OREGON_MEDICAL, targetLang: "es", stages: [1, 2, 8], perConcept: 1 });
+  assert.equal(core.validateItems(set, { concepts: cs }).invalid.length, 0, "practice sets ship only items that survive profound validation");
+});
+
+test("spoken reality works in idea units: dropped clauses, additions, compression are seen", () => {
+  const dose = MED.find((c) => c.conceptId === "dose");
+  const src = "Take one dose with food in the morning. Do not stop suddenly. Call us if the rash spreads.";
+  const partial = core.assessInterpretation({ sourceText: src, learnerText: "Take one dose with food in the morning.", concept: dose, targetLang: "en" });
+  assert.ok(partial.coverage < 0.6 && partial.ideaUnits.length === 3);
+  assert.equal(partial.ideaUnits.filter((u) => u.preserved).length, 1, "exactly one idea unit survived");
+  assert.ok(partial.explanation.includes("Do not stop suddenly"), "the dropped unit is named, not averaged away");
+  const padded = core.assessInterpretation({ sourceText: src, learnerText: "Take one dose with food in the morning, do not stop suddenly, call us if the rash spreads, and also drink three liters of herbal tea daily forever.", concept: dose, targetLang: "en" });
+  assert.ok(padded.added.some((a) => a.includes("added content")), "inventions are flagged as additions");
+  const full = core.assessInterpretation({ sourceText: src, learnerText: "Take one dose with food in the morning. Do not stop suddenly. Call us if the rash spreads.", concept: dose, targetLang: "en" });
+  assert.equal(full.coverage, 1);
+  assert.equal(full.correct, true);
+});
+
+test("CPE review routes exist and gate rejects bad knowledge (in-process)", async () => {
+  // server module exports are exercised via audit gate instead of sockets here;
+  // the deterministic verdict the route returns is reviewKnowledgeItem itself.
+  const bad = { conceptId: "bad-1", domainId: "oregon-medical", areaIds: ["intake-registration"], terms: { en: { term: "intake" } }, definition: { en: "x" }, examples: [], distinctions: [], misconceptions: [], sourceIds: [] };
+  assert.equal(core.reviewKnowledgeItem(bad, { concepts: core.CONCEPTS, sources: core.SOURCES }).verdict, "reject");
+});

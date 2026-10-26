@@ -106,3 +106,24 @@ Critic majors addressed in code (24/24 tests green):
   (reverse-direction listening, Stages 1/5) with oxygen, jellyfish, and a
   melon submarine. Both are full-canvas worlds, one-minute-to-learn, and
   feed the same engine evidence as every other door.
+
+## Profound gatekeeper pass (later same day)
+
+- `reviewKnowledgeItem`/`reviewKnowledgeBase` (engine-core/review.js): a KB
+  item is rejected for term collisions, sourcelessness, self-contrasting
+  distinctions; repaired for example sentences that don't contain their own
+  term, thin distinctions, unusable diagnostics. Seed: **61 accept / 0 repair
+  / 0 reject** after fixing the two real example flaws it caught.
+- `GET /v1/ai/review-base`, `POST /v1/ai/review` (CPE): deterministic gate
+  first (422 on reject — bad knowledge never becomes a game), Muse Wonder as
+  second reader when keyed. Wonder may only tighten (accept→repair), never
+  waive a blocker. No key: gate stands alone, labeled.
+- Generation rejection is active: practice sets drop items failing profound
+  `validateItems` (bare-term Stage-8 grading, neighbour-term answers,
+  answer-leaking prompts, definition-less Stage-1 choices).
+- Spoken reality runs on idea units: per-clause preserved/dropped reporting
+  (visible in Night Shift's "What they heard"), unsupported-addition
+  detection, compression ratio — alongside negation/number/modality/hedge.
+- Visual charm, Muse-referenced and code-built: papel-picado banner and
+  frijol markers in Lotería, vinyl records in the Milonga shelf, SVG sun /
+  disc / drone / melon hub art (generated images served as reference only).

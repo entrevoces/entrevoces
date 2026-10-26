@@ -130,3 +130,16 @@ test("§22 CPE generation endpoints mint people + practice (G3)", async () => {
   assert.equal(practice.status, 200);
   assert.ok(practice.json.acceptableAnswers?.length > 0);
 });
+
+test("KB gatekeeper routes: review-base is clean, bad concepts are refused 422", async () => {
+  const base = await callCPE("GET", "/v1/ai/review-base");
+  assert.equal(base.status, 200);
+  assert.equal(base.json.rejected, 0, JSON.stringify(base.json.rejectedIds));
+  assert.equal(base.json.accepted, base.json.total);
+  const bad = await callCPE("POST", "/v1/ai/review", { concept: { conceptId: "bad-1", domainId: "oregon-medical", areaIds: ["intake-registration"], terms: { en: { term: "intake" } }, definition: { en: "x" }, examples: [], distinctions: [], misconceptions: [], sourceIds: [] } });
+  assert.equal(bad.status, 422, "rejected knowledge must not become games");
+  const good = await callCPE("POST", "/v1/ai/review", { conceptId: "dose", domainId: "oregon-medical" });
+  assert.equal(good.status, 200);
+  assert.equal(good.json.gate.verdict, "accept");
+  assert.ok("provider" in good.json, "Meta second reviewer is labeled (meta or local-template)");
+});

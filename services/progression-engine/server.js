@@ -17,9 +17,9 @@ import {
   validateDomainConfig, validateConcept, validateEvidence,
   computeLearnerState, recommendNext, domainCoverage,
   generateClient, generateNight, generateItem,
-  SEED_DOMAINS, CONCEPTS, SOURCES, ENGINE_VERSION,
+  SEED_DOMAINS, CONCEPTS, SOURCES, ENGINE_VERSION, reviewKnowledgeItem, reviewKnowledgeBase,
 } from "../../packages/engine-core/index.js";
-import { metaStatus, inventGame, enrichConceptDraft } from "./meta.js";
+import { metaStatus, inventGame, enrichConceptDraft, reviewKnowledge } from "./meta.js";
 
 const __dir = dirname(fileURLToPath(import.meta.url));
 const PORT = Number(process.env.PORT || 8787);
@@ -325,6 +325,24 @@ const server = http.createServer(async (req, res) => {
       const next = state ? recommendNext({ domain, concepts, learnerState: state }) : null;
       const weakest = concepts.find((c) => c.conceptId === next?.conceptId) || concepts[0];
       send(res, 200, await inventGame({ audience: body.audience || "aspiring interpreter", gap: body.gap || "auto", domain, coverage, weakest }));
+      return;
+    }
+    if (path === "/v1/ai/review" && method === "POST") {
+      // KB gatekeeper: deterministic profound review first; Wonder second.
+      // Rejected items are refused (422) — bad knowledge does not become games.
+      const body = (await readBody(req)) || {};
+      const concept = body.conceptId ? conceptsFor(body.domainId || "oregon-medical").find((c) => c.conceptId === body.conceptId) || store.concepts.find((c) => c.conceptId === body.conceptId) : body.concept;
+      if (!concept) { problem(res, 404, "Concept not found", "Pass conceptId (+domainId) or a full concept object."); return; }
+      const siblings = store.concepts.filter((c) => c.domainId === concept.domainId);
+      const gate = reviewKnowledgeItem(concept, { concepts: siblings, sources: store.sources });
+      if (body.deep === false) { send(res, gate.verdict === "reject" ? 422 : 200, { gate, provider: "deterministic" }); return; }
+      const reviewed = await reviewKnowledge({ concept, gate });
+      send(res, reviewed.verdict === "reject" ? 422 : 200, { gate, ...reviewed });
+      return;
+    }
+    if (path === "/v1/ai/review-base" && method === "GET") {
+      const base = reviewKnowledgeBase({ concepts: store.concepts, sources: store.sources });
+      send(res, 200, { total: base.total, accepted: base.accepted, repair: base.repair, rejected: base.rejected, rejectedIds: base.results.filter((r) => r.verdict === "reject").map((r) => r.conceptId) });
       return;
     }
     if (path === "/v1/ai/enrich" && method === "POST") {

@@ -41,7 +41,12 @@ for (const d of core.SEED_DOMAINS) {
     }
   }
 }
-console.log(`KB AUDIT — ${core.SEED_DOMAINS.length} worlds, ${core.CONCEPTS.length} concepts`);
+const review = core.reviewKnowledgeBase({ concepts: core.CONCEPTS, sources: core.SOURCES });
+for (const r of review.results) {
+  if (r.verdict === "reject") blockers.push(`${r.conceptId}: KB review REJECT — ${r.findings.filter((f) => f.severity === "blocker").map((f) => f.message).join("; ")}`);
+  if (r.verdict === "repair") warnings.push(`${r.conceptId}: KB review repair — ${r.findings.map((f) => f.field).join(", ")}`);
+}
+console.log(`KB AUDIT — ${core.SEED_DOMAINS.length} worlds, ${core.CONCEPTS.length} concepts · profound review: ${review.accepted} accept, ${review.repair} repair, ${review.rejected} reject`);
 console.log(`blockers: ${blockers.length}`);
 blockers.forEach((b) => console.log("  BLOCKER", b));
 console.log(`warnings: ${warnings.length} (reported, not hidden)`);

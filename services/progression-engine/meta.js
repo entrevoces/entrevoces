@@ -109,3 +109,25 @@ export function voiceObservation({ transcript, confidence }) {
     note: "A transcript is an observation, not ground truth. Low confidence routes to dispute/diagnostic, never silent scoring.",
   };
 }
+
+/**
+ * Wonder KB reviewer: an AI second reader over the deterministic gate.
+ * The deterministic reviewKnowledgeItem verdict is computed by the CALLER
+ * (server.js, engine-core) and passed in as `gate`. Wonder may add findings
+ * and may downgrade accept->repair with reasons; it may NEVER upgrade a
+ * reject, and without a key the gate stands alone, labeled as such.
+ */
+export async function reviewKnowledge({ concept, gate }) {
+  const fallback = { verdict: gate.verdict, score: gate.score, addedFindings: [], provider: "local-template", model: WONDER, note: "Deterministic gate only (no META_API_KEY). Set the key and Wonder reads as second reviewer — it can add findings, never waive blockers." };
+  const text = await metaChat({
+    model: WONDER, task: "review-knowledge",
+    system: "You review interpreter-training knowledge items for classroom use. Return ONLY JSON {verdictNote, addedFindings:[{severity:'major'|'minor', field, message}], culturalRisks:[string]}. Be specific: would this example sentence teach the claimed term, in register, in all languages? Never approve an item the deterministic gate rejected.",
+    user: `Concept: ${JSON.stringify({ conceptId: concept.conceptId, terms: concept.terms, definition: concept.definition, examples: concept.examples, distinctions: concept.distinctions, misconceptions: concept.misconceptions })}. Deterministic gate: ${JSON.stringify(gate)}. Review for teaching usability and cultural/register risk.`,
+  });
+  if (!text) return fallback;
+  const parsed = parseJSON(text, { addedFindings: [], culturalRisks: [] });
+  const added = Array.isArray(parsed.addedFindings) ? parsed.addedFindings : [];
+  let verdict = gate.verdict;
+  if (verdict === "accept" && added.some((f) => f.severity === "major")) verdict = "repair"; // AI can only tighten
+  return { verdict, score: gate.score, addedFindings: added, culturalRisks: parsed.culturalRisks || [], verdictNote: parsed.verdictNote || "", provider: "meta", model: WONDER, gateVerdict: gate.verdict };
+}
