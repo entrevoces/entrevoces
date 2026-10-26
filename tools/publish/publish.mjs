@@ -35,7 +35,12 @@ function pushBundle(dir, repo, message) {
   const remote = `git@github.com:${ORG}/${repo}.git`;
   try { git(dir, "ls-remote", remote); }
   catch { return { repo, status: "BLOCKED: repo not found or no SSH write access — create an empty repo (no README) at https://github.com/organizations/" + ORG + "/repositories/new?name=" + repo + ", or grant the pushing account org write access" }; }
-  if (!existsSync(join(dir, ".git"))) { git(dir, "init", "-b", "main"); git(dir, "remote", "add", "origin", remote); }
+  if (!existsSync(join(dir, ".git"))) {
+    git(dir, "init", "-b", "main"); git(dir, "remote", "add", "origin", remote);
+    // dist/ is rebuilt from scratch each run, so adopt the remote's history
+    // as our base (keeps pushes fast-forward; generated files stay generated).
+    try { git(dir, "fetch", "origin", "main"); git(dir, "reset", "--mixed", "origin/main"); } catch { /* brand-new repo */ }
+  }
   git(dir, "add", "-A");
   try { git(dir, "-c", "user.name=ENTRE VOCES Publisher", "-c", "user.email=publisher@entrevoces.local", "commit", "-m", message); }
   catch { return { repo, status: "no changes" }; }
