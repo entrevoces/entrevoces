@@ -1,0 +1,604 @@
+{
+  "domain": {
+    "domainId": "california-tax",
+    "label": {
+      "en": "California — Tax Advice",
+      "es": "California — Asesoría fiscal",
+      "zh": "加利福尼亚州 — 税务咨询"
+    },
+    "jurisdiction": {
+      "country": "US",
+      "region": "California",
+      "regionCode": "US-CA"
+    },
+    "profession": "other",
+    "institutions": [
+      "California Franchise Tax Board",
+      "California Department of Tax and Fee Administration"
+    ],
+    "languagePairs": [
+      {
+        "source": "en",
+        "target": "es",
+        "direction": "bidirectional"
+      },
+      {
+        "source": "en",
+        "target": "zh",
+        "direction": "bidirectional"
+      }
+    ],
+    "modalities": [
+      "consecutive",
+      "sight"
+    ],
+    "competencyWeights": {
+      "domain-knowledge": 1,
+      "professional-terminology": 1,
+      "bilingual-terminology": 1,
+      "terminology-usage": 1,
+      "listening": 0.8,
+      "speech-production": 0.8,
+      "meaning-transfer": 1,
+      "cognitive-interpreting": 0.8,
+      "professional-judgment": 1,
+      "integrated-performance": 0.9
+    },
+    "sourceIds": [
+      "ca-ftb"
+    ],
+    "status": "active",
+    "version": 1,
+    "translationAreas": [
+      {
+        "areaId": "residency-status",
+        "label": {
+          "en": "Residency & filing status"
+        },
+        "setting": "Preparer intake",
+        "participants": [
+          "preparer",
+          "taxpayer"
+        ],
+        "goals": [
+          "Distinguish domicile, residency, and filing status without guessing"
+        ],
+        "typicalSpeechFeatures": [
+          "status distinctions",
+          "dates in state"
+        ],
+        "riskIfMistranslated": "high",
+        "conceptIds": [
+          "residency-domicile",
+          "filing-status"
+        ],
+        "prerequisiteAreaIds": [],
+        "order": 1
+      },
+      {
+        "areaId": "income-reporting",
+        "label": {
+          "en": "Income & withholding"
+        },
+        "setting": "Return preparation",
+        "participants": [
+          "preparer",
+          "taxpayer"
+        ],
+        "goals": [
+          "Report income and withholding; separate tax from refund"
+        ],
+        "typicalSpeechFeatures": [
+          "form names",
+          "amounts"
+        ],
+        "riskIfMistranslated": "high",
+        "conceptIds": [
+          "withholding",
+          "estimated-payments"
+        ],
+        "prerequisiteAreaIds": [
+          "residency-status"
+        ],
+        "order": 2
+      },
+      {
+        "areaId": "deductions-credits",
+        "label": {
+          "en": "Deductions & credits"
+        },
+        "setting": "Return review",
+        "participants": [
+          "preparer",
+          "taxpayer"
+        ],
+        "goals": [
+          "Never swap deduction and credit — they do different math"
+        ],
+        "typicalSpeechFeatures": [
+          "deduction vs. credit"
+        ],
+        "riskIfMistranslated": "high",
+        "conceptIds": [
+          "deduction-vs-credit"
+        ],
+        "prerequisiteAreaIds": [
+          "income-reporting"
+        ],
+        "order": 3
+      },
+      {
+        "areaId": "sales-use-tax",
+        "label": {
+          "en": "Sales & use tax (business)"
+        },
+        "setting": "Small-business consultation",
+        "participants": [
+          "advisor",
+          "owner"
+        ],
+        "goals": [
+          "Distinguish sales tax collected from use tax owed"
+        ],
+        "typicalSpeechFeatures": [
+          "nexus",
+          "rates"
+        ],
+        "riskIfMistranslated": "medium",
+        "conceptIds": [
+          "sales-vs-use-tax"
+        ],
+        "prerequisiteAreaIds": [
+          "income-reporting"
+        ],
+        "order": 4
+      },
+      {
+        "areaId": "notices-appeals",
+        "label": {
+          "en": "Notices, deadlines & appeals"
+        },
+        "setting": "FTB notice review",
+        "participants": [
+          "preparer",
+          "taxpayer"
+        ],
+        "goals": [
+          "Preserve protest deadlines exactly — a missed date can end the argument"
+        ],
+        "typicalSpeechFeatures": [
+          "deadlines",
+          "protest rights"
+        ],
+        "riskIfMistranslated": "critical",
+        "conceptIds": [
+          "notice-protest"
+        ],
+        "prerequisiteAreaIds": [
+          "deductions-credits"
+        ],
+        "order": 5
+      }
+    ]
+  },
+  "concepts": [
+    {
+      "conceptId": "residency-domicile",
+      "domainId": "california-tax",
+      "areaIds": [
+        "residency-status"
+      ],
+      "difficulty": 3,
+      "competences": [
+        "domain-knowledge",
+        "professional-terminology"
+      ],
+      "sourceIds": [
+        "ca-ftb"
+      ],
+      "inferred": false,
+      "terms": {
+        "en": {
+          "term": "domicile vs. residency (California)",
+          "alternatives": [
+            "residency"
+          ],
+          "register": "legal/tax"
+        },
+        "es": {
+          "term": "domicilio frente a residencia (California)",
+          "alternatives": [
+            "residencia"
+          ],
+          "register": "legal/tax"
+        },
+        "zh": {
+          "term": "住所与居住地（加州）",
+          "alternatives": [
+            "居住地"
+          ],
+          "register": "legal/tax"
+        }
+      },
+      "definition": {
+        "en": "Domicile is your true permanent home; residency for California tax can attach by presence and purpose. They are related, not identical."
+      },
+      "distinctions": [
+        {
+          "contrast": "living in California (presence alone)",
+          "difference": "Presence, domicile, and statutory residency answer different questions. Collapsing them files the wrong return — or two."
+        }
+      ],
+      "misconceptions": [
+        {
+          "tag": "residency-as-presence",
+          "description": "Equating residency with simply being present",
+          "diagnosticPrompt": "Taxpayer: 'I only slept here for work.' Interpret why domicile still gets asked."
+        }
+      ],
+      "examples": [
+        {
+          "en": "California residency and domicile are separate questions, so we document both.",
+          "es": "La residencia y el domicilio en California son preguntas distintas, así que documentamos ambas.",
+          "zh": "加州的居住地和住所是两个不同的问题，因此两者都要记录。"
+        }
+      ],
+      "relationships": []
+    },
+    {
+      "conceptId": "filing-status",
+      "domainId": "california-tax",
+      "areaIds": [
+        "residency-status"
+      ],
+      "difficulty": 2,
+      "competences": [
+        "professional-terminology"
+      ],
+      "sourceIds": [
+        "ca-ftb"
+      ],
+      "inferred": false,
+      "terms": {
+        "en": {
+          "term": "filing status",
+          "alternatives": [],
+          "register": "legal/tax"
+        },
+        "es": {
+          "term": "estado civil tributario",
+          "alternatives": [
+            "categoría de declaración"
+          ],
+          "register": "legal/tax"
+        },
+        "zh": {
+          "term": "报税身份",
+          "alternatives": [
+            "申报状态"
+          ],
+          "register": "legal/tax"
+        }
+      },
+      "definition": {
+        "en": "The category (single, married filing jointly/separately, head of household) that sets brackets and many eligibility rules."
+      },
+      "distinctions": [
+        {
+          "contrast": "marital status (everyday)",
+          "difference": "Filing status is a tax category with tests (e.g., head of household), not just whether someone is married."
+        }
+      ],
+      "misconceptions": [
+        {
+          "tag": "status-as-marriage",
+          "description": "Treating filing status as plain marital status",
+          "diagnosticPrompt": "Interpret: 'Head of household has its own tests.' What must not be assumed from 'single parent'?"
+        }
+      ],
+      "examples": [
+        {
+          "en": "Your filing status sets the brackets, so we confirm it before any numbers.",
+          "es": "Su estado civil tributario define los tramos, así que lo confirmamos antes de cualquier cifra.",
+          "zh": "您的报税身份决定税档，因此我们先确认它再谈数字。"
+        }
+      ],
+      "relationships": []
+    },
+    {
+      "conceptId": "withholding",
+      "domainId": "california-tax",
+      "areaIds": [
+        "income-reporting"
+      ],
+      "difficulty": 2,
+      "competences": [
+        "professional-terminology",
+        "bilingual-terminology"
+      ],
+      "sourceIds": [
+        "ca-ftb"
+      ],
+      "inferred": false,
+      "terms": {
+        "en": {
+          "term": "withholding",
+          "alternatives": [
+            "tax withholding"
+          ],
+          "register": "legal/tax"
+        },
+        "es": {
+          "term": "retención",
+          "alternatives": [
+            "retención de impuestos"
+          ],
+          "register": "legal/tax"
+        },
+        "zh": {
+          "term": "预扣税",
+          "alternatives": [
+            "代扣代缴"
+          ],
+          "register": "legal/tax"
+        }
+      },
+      "definition": {
+        "en": "Tax already taken from pay during the year and credited on the return — prepayment, not the final tax itself."
+      },
+      "distinctions": [
+        {
+          "contrast": "tax owed (final liability)",
+          "difference": "Withholding is what was prepaid; liability is what is owed. Refund or balance due is the difference — swapping terms panics or over-promises."
+        }
+      ],
+      "misconceptions": [
+        {
+          "tag": "withholding-as-tax",
+          "description": "Merging withholding with final tax",
+          "diagnosticPrompt": "W-2 shows $4,000 withheld. Is that 'the tax'? Interpret the preparer's next sentence carefully."
+        }
+      ],
+      "examples": [
+        {
+          "en": "Withholding is the prepaid credit; your final tax is computed after.",
+          "es": "La retención es el crédito prepagado; su impuesto final se calcula después.",
+          "zh": "预扣税是已预缴的抵免；最终税额随后计算。"
+        }
+      ],
+      "relationships": []
+    },
+    {
+      "conceptId": "estimated-payments",
+      "domainId": "california-tax",
+      "areaIds": [
+        "income-reporting"
+      ],
+      "difficulty": 2,
+      "competences": [
+        "domain-knowledge"
+      ],
+      "sourceIds": [
+        "ca-ftb"
+      ],
+      "inferred": false,
+      "terms": {
+        "en": {
+          "term": "estimated tax payments",
+          "alternatives": [
+            "estimated payments"
+          ],
+          "register": "legal/tax"
+        },
+        "es": {
+          "term": "pagos estimados de impuestos",
+          "alternatives": [
+            "pagos trimestrales estimados"
+          ],
+          "register": "legal/tax"
+        },
+        "zh": {
+          "term": "预估税款",
+          "alternatives": [
+            "季度预缴"
+          ],
+          "register": "legal/tax"
+        }
+      },
+      "definition": {
+        "en": "Periodic prepayments of expected tax on income without withholding (self-employment, investments), to avoid underpayment penalties."
+      },
+      "distinctions": [
+        {
+          "contrast": "paying at filing",
+          "difference": "Estimates pay as you earn through the year; filing settles the account. Waiting until April can add penalties even if the total matches."
+        }
+      ],
+      "misconceptions": [],
+      "examples": [
+        {
+          "en": "Without withholding, estimated payments keep you ahead of penalties.",
+          "es": "Sin retención, los pagos estimados le mantienen por delante de las sanciones.",
+          "zh": "没有预扣时，预估付款可帮助您避免罚款。"
+        }
+      ],
+      "relationships": []
+    },
+    {
+      "conceptId": "deduction-vs-credit",
+      "domainId": "california-tax",
+      "areaIds": [
+        "deductions-credits"
+      ],
+      "difficulty": 3,
+      "competences": [
+        "domain-knowledge",
+        "meaning-transfer"
+      ],
+      "sourceIds": [
+        "ca-ftb"
+      ],
+      "inferred": false,
+      "terms": {
+        "en": {
+          "term": "deduction vs. credit",
+          "alternatives": [],
+          "register": "legal/tax"
+        },
+        "es": {
+          "term": "deducción frente a crédito",
+          "alternatives": [],
+          "register": "legal/tax"
+        },
+        "zh": {
+          "term": "扣除与抵免的区别",
+          "alternatives": [],
+          "register": "legal/tax"
+        }
+      },
+      "definition": {
+        "en": "A deduction lowers taxable income; a credit lowers the tax itself, dollar for dollar. Same dollars, different math entirely."
+      },
+      "distinctions": [
+        {
+          "contrast": "treating them as synonyms for 'savings'",
+          "difference": "$1,000 deduction at 9.3% saves ~$93; $1,000 credit saves $1,000. Swapping the words misprices advice by an order of magnitude."
+        }
+      ],
+      "misconceptions": [
+        {
+          "tag": "deduction-equals-credit",
+          "description": "Swapping deduction and credit",
+          "diagnosticPrompt": "Client hears '$1,000 credit' as '$1,000 deduction.' Interpret the preparer's correction with the math intact."
+        }
+      ],
+      "examples": [
+        {
+          "en": "Remember: a deduction lowers income, a credit lowers the tax itself.",
+          "es": "Recuerde: una deducción reduce el ingreso, un crédito reduce el impuesto mismo.",
+          "zh": "请记住：扣除减少应税收入，抵免直接减少税额本身。"
+        }
+      ],
+      "relationships": []
+    },
+    {
+      "conceptId": "sales-vs-use-tax",
+      "domainId": "california-tax",
+      "areaIds": [
+        "sales-use-tax"
+      ],
+      "difficulty": 3,
+      "competences": [
+        "domain-knowledge"
+      ],
+      "sourceIds": [
+        "ca-ftb"
+      ],
+      "inferred": false,
+      "terms": {
+        "en": {
+          "term": "sales tax vs. use tax",
+          "alternatives": [],
+          "register": "legal/tax"
+        },
+        "es": {
+          "term": "impuesto sobre ventas frente a impuesto sobre uso",
+          "alternatives": [],
+          "register": "legal/tax"
+        },
+        "zh": {
+          "term": "销售税与使用税的区别",
+          "alternatives": [],
+          "register": "legal/tax"
+        }
+      },
+      "definition": {
+        "en": "Sales tax is collected by the seller at purchase; use tax is owed by the buyer when sales tax was not collected on goods used in California."
+      },
+      "distinctions": [
+        {
+          "contrast": "one 'shopping tax'",
+          "difference": "Who collects and who remits flips between the two. An owner who only knows 'sales tax' misses use-tax liability on out-of-state equipment."
+        }
+      ],
+      "misconceptions": [
+        {
+          "tag": "sales-equals-use",
+          "description": "Collapsing sales and use tax",
+          "diagnosticPrompt": "Owner bought equipment online, tax-free. Interpret why use tax still gets assessed."
+        }
+      ],
+      "examples": [
+        {
+          "en": "If sales tax was not collected, use tax may still be owed in California.",
+          "es": "Si no se cobró el impuesto sobre ventas, aún puede deberse el impuesto sobre uso en California.",
+          "zh": "如果未征收销售税，在加州可能仍需缴纳使用税。"
+        }
+      ],
+      "relationships": []
+    },
+    {
+      "conceptId": "notice-protest",
+      "domainId": "california-tax",
+      "areaIds": [
+        "notices-appeals"
+      ],
+      "difficulty": 3,
+      "competences": [
+        "professional-judgment",
+        "meaning-transfer"
+      ],
+      "sourceIds": [
+        "ca-ftb"
+      ],
+      "inferred": false,
+      "terms": {
+        "en": {
+          "term": "Notice of Proposed Assessment — protest deadline",
+          "alternatives": [
+            "protest (FTB)"
+          ],
+          "register": "legal/tax"
+        },
+        "es": {
+          "term": "notificación de liquidación propuesta — plazo de protesta",
+          "alternatives": [
+            "protesta (FTB)"
+          ],
+          "register": "legal/tax"
+        },
+        "zh": {
+          "term": "拟议评税通知——抗议期限",
+          "alternatives": [
+            "抗议 (FTB)"
+          ],
+          "register": "legal/tax"
+        }
+      },
+      "definition": {
+        "en": "FTB's proposed additional tax notice; protesting in writing within the stated deadline (commonly 60 days) preserves appeal rights."
+      },
+      "distinctions": [
+        {
+          "contrast": "paying or ignoring until later",
+          "difference": "The protest deadline is jurisdictional in effect: miss it and the assessment can become final. Dates here are rights, not reminders."
+        }
+      ],
+      "misconceptions": [
+        {
+          "tag": "deadline-as-reminder",
+          "description": "Rendering protest deadline as flexible reminder",
+          "diagnosticPrompt": "Interpret: 'You have 60 days to protest in writing.' What happens to tone if 'deadline' becomes 'when you can'?"
+        }
+      ],
+      "examples": [
+        {
+          "en": "This notice gives you sixty days to protest in writing — that deadline protects your rights.",
+          "es": "Esta notificación le da sesenta días para protestar por escrito: ese plazo protege sus derechos.",
+          "zh": "本通知给予您六十天书面抗议期——该期限保护您的权利。"
+        }
+      ],
+      "relationships": []
+    }
+  ]
+}

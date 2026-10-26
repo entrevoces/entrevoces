@@ -1,0 +1,771 @@
+{
+  "domain": {
+    "domainId": "oregon-legal",
+    "label": {
+      "en": "Oregon — Legal Interpreting",
+      "es": "Oregón — Interpretación legal",
+      "zh": "俄勒冈州 — 法律口译"
+    },
+    "jurisdiction": {
+      "country": "US",
+      "region": "Oregon",
+      "regionCode": "US-OR"
+    },
+    "profession": "legal",
+    "institutions": [
+      "Oregon Judicial Department"
+    ],
+    "languagePairs": [
+      {
+        "source": "en",
+        "target": "es",
+        "direction": "bidirectional"
+      },
+      {
+        "source": "en",
+        "target": "zh",
+        "direction": "bidirectional"
+      }
+    ],
+    "modalities": [
+      "consecutive",
+      "simultaneous",
+      "sight"
+    ],
+    "competencyWeights": {
+      "domain-knowledge": 0.9,
+      "professional-terminology": 1,
+      "bilingual-terminology": 1,
+      "terminology-usage": 1,
+      "listening": 1,
+      "speech-production": 0.9,
+      "meaning-transfer": 1,
+      "cognitive-interpreting": 1,
+      "professional-judgment": 1,
+      "integrated-performance": 1
+    },
+    "sourceIds": [
+      "ojd-court-interpreter"
+    ],
+    "status": "active",
+    "version": 1,
+    "translationAreas": [
+      {
+        "areaId": "arraignment",
+        "label": {
+          "en": "Arraignment"
+        },
+        "setting": "First appearance in court",
+        "participants": [
+          "judge",
+          "defendant",
+          "attorneys"
+        ],
+        "goals": [
+          "Convey charges and rights advisement exactly"
+        ],
+        "typicalSpeechFeatures": [
+          "formal register",
+          "rights language"
+        ],
+        "riskIfMistranslated": "high",
+        "conceptIds": [
+          "arraignment",
+          "charge"
+        ],
+        "prerequisiteAreaIds": [],
+        "order": 1
+      },
+      {
+        "areaId": "plea-colloquy",
+        "label": {
+          "en": "Plea colloquy"
+        },
+        "setting": "Plea hearing",
+        "participants": [
+          "judge",
+          "defendant"
+        ],
+        "goals": [
+          "Preserve voluntariness and waiver meaning; yes/no fidelity"
+        ],
+        "typicalSpeechFeatures": [
+          "waiver language",
+          "yes/no fidelity"
+        ],
+        "riskIfMistranslated": "critical",
+        "conceptIds": [
+          "plea",
+          "waiver"
+        ],
+        "prerequisiteAreaIds": [
+          "arraignment"
+        ],
+        "order": 2
+      },
+      {
+        "areaId": "evidence-testimony",
+        "label": {
+          "en": "Evidence & testimony"
+        },
+        "setting": "Direct / cross examination",
+        "participants": [
+          "attorney",
+          "witness",
+          "judge"
+        ],
+        "goals": [
+          "Track speakers; preserve objections and qualifiers"
+        ],
+        "typicalSpeechFeatures": [
+          "objections",
+          "speaker tracking",
+          "self-correction"
+        ],
+        "riskIfMistranslated": "high",
+        "conceptIds": [
+          "testimony",
+          "objection"
+        ],
+        "prerequisiteAreaIds": [
+          "arraignment"
+        ],
+        "order": 3
+      },
+      {
+        "areaId": "sentencing-conditions",
+        "label": {
+          "en": "Sentencing & conditions"
+        },
+        "setting": "Sentencing hearing",
+        "participants": [
+          "judge",
+          "defendant"
+        ],
+        "goals": [
+          "Convey conditions, dates, and obligations with numeric precision"
+        ],
+        "typicalSpeechFeatures": [
+          "numeric precision",
+          "conditions and dates"
+        ],
+        "riskIfMistranslated": "high",
+        "conceptIds": [
+          "sentence-conditions"
+        ],
+        "prerequisiteAreaIds": [
+          "plea-colloquy"
+        ],
+        "order": 4
+      },
+      {
+        "areaId": "victim-witness",
+        "label": {
+          "en": "Victim / witness interview"
+        },
+        "setting": "Witness interview",
+        "participants": [
+          "attorney",
+          "witness"
+        ],
+        "goals": [
+          "Preserve narrative, corrections, and uncertainty"
+        ],
+        "typicalSpeechFeatures": [
+          "narrative",
+          "emotional variation"
+        ],
+        "riskIfMistranslated": "medium",
+        "conceptIds": [
+          "testimony"
+        ],
+        "prerequisiteAreaIds": [],
+        "order": 5
+      },
+      {
+        "areaId": "sight-documents",
+        "label": {
+          "en": "Sight translation of documents"
+        },
+        "setting": "Forms and court orders",
+        "participants": [
+          "interpreter",
+          "defendant"
+        ],
+        "goals": [
+          "Render written text aloud accurately in the other language"
+        ],
+        "typicalSpeechFeatures": [
+          "register shift",
+          "abbreviations"
+        ],
+        "riskIfMistranslated": "medium",
+        "conceptIds": [
+          "waiver",
+          "sentence-conditions"
+        ],
+        "prerequisiteAreaIds": [],
+        "order": 6
+      },
+      {
+        "areaId": "professional-judgment-legal",
+        "label": {
+          "en": "Professional judgment (legal)"
+        },
+        "setting": "Any proceeding",
+        "participants": [
+          "interpreter",
+          "court"
+        ],
+        "goals": [
+          "Remain impartial; interpret everything; flag inaudible speech properly"
+        ],
+        "typicalSpeechFeatures": [
+          "clarification protocol"
+        ],
+        "riskIfMistranslated": "high",
+        "conceptIds": [
+          "impartiality"
+        ],
+        "prerequisiteAreaIds": [],
+        "order": 7
+      }
+    ]
+  },
+  "concepts": [
+    {
+      "conceptId": "arraignment",
+      "domainId": "oregon-legal",
+      "areaIds": [
+        "arraignment"
+      ],
+      "difficulty": 2,
+      "competences": [
+        "domain-knowledge",
+        "professional-terminology"
+      ],
+      "sourceIds": [
+        "ojd-court-interpreter"
+      ],
+      "inferred": false,
+      "terms": {
+        "en": {
+          "term": "arraignment",
+          "alternatives": [],
+          "register": "legal"
+        },
+        "es": {
+          "term": "lectura de cargos",
+          "alternatives": [
+            "comparecencia inicial",
+            "instrucción de cargos"
+          ],
+          "register": "legal"
+        },
+        "zh": {
+          "term": "提审",
+          "alternatives": [
+            "传讯"
+          ],
+          "register": "legal"
+        }
+      },
+      "definition": {
+        "en": "The first court appearance where charges are read and rights are advised.",
+        "es": "La primera comparecencia ante el tribunal, donde se leen los cargos y se informan los derechos.",
+        "zh": "首次出庭，由法庭宣读指控并告知权利。"
+      },
+      "distinctions": [
+        {
+          "contrast": "trial",
+          "difference": "Arraignment is the opening procedural step (charges + rights + plea timing), not the determination of guilt. Interpreting it as 'trial' misstates what will happen."
+        }
+      ],
+      "misconceptions": [
+        {
+          "tag": "arraignment-as-trial",
+          "description": "Presenting arraignment as the trial itself",
+          "diagnosticPrompt": "Defendant: '¿Hoy es el juicio?' How do you interpret the judge's explanation that today is only the arraignment?"
+        }
+      ],
+      "examples": [
+        {
+          "en": "This is your arraignment. I will read the charges and advise you of your rights.",
+          "es": "Esta es su lectura de cargos. Leeré los cargos y le informaré de sus derechos.",
+          "zh": "这是您的提审。我将宣读指控并告知您的权利。"
+        }
+      ],
+      "relationships": [
+        {
+          "type": "related",
+          "targetId": "charge",
+          "documented": true
+        }
+      ]
+    },
+    {
+      "conceptId": "charge",
+      "domainId": "oregon-legal",
+      "areaIds": [
+        "arraignment"
+      ],
+      "difficulty": 2,
+      "competences": [
+        "professional-terminology"
+      ],
+      "sourceIds": [
+        "ojd-court-interpreter"
+      ],
+      "inferred": false,
+      "terms": {
+        "en": {
+          "term": "charge (criminal)",
+          "alternatives": [
+            "criminal charge"
+          ],
+          "register": "legal"
+        },
+        "es": {
+          "term": "cargo",
+          "alternatives": [
+            "acusación formal"
+          ],
+          "register": "legal"
+        },
+        "zh": {
+          "term": "指控",
+          "alternatives": [
+            "控罪"
+          ],
+          "register": "legal"
+        }
+      },
+      "definition": {
+        "en": "A formal accusation that a person committed a specific offense. (Not a fee.)",
+        "es": "Una acusación formal de que una persona cometió un delito concreto. (No es un cobro.)",
+        "zh": "指控某人犯有特定罪行的正式控告。（不是费用。）"
+      },
+      "distinctions": [
+        {
+          "contrast": "fee/price ('charge')",
+          "difference": "In court, 'charge' is an accusation, not money. The everyday sense must not leak into legal interpreting."
+        }
+      ],
+      "misconceptions": [
+        {
+          "tag": "charge-polysemy",
+          "description": "Interpreting legal 'charge' as a fee",
+          "diagnosticPrompt": "In 'You are charged with theft,' what does 'charged' mean, and what mistranslation must be avoided?"
+        }
+      ],
+      "examples": [
+        {
+          "en": "You are charged with theft in the second degree.",
+          "es": "Se le acusa de hurto en segundo grado.",
+          "zh": "您被指控犯有二级盗窃罪。"
+        }
+      ],
+      "relationships": []
+    },
+    {
+      "conceptId": "plea",
+      "domainId": "oregon-legal",
+      "areaIds": [
+        "plea-colloquy"
+      ],
+      "difficulty": 3,
+      "competences": [
+        "domain-knowledge",
+        "meaning-transfer"
+      ],
+      "sourceIds": [
+        "ojd-court-interpreter"
+      ],
+      "inferred": false,
+      "terms": {
+        "en": {
+          "term": "plea",
+          "alternatives": [
+            "plea of guilty / not guilty"
+          ],
+          "register": "legal"
+        },
+        "es": {
+          "term": "declaración",
+          "alternatives": [
+            "declaración de culpabilidad / no culpabilidad"
+          ],
+          "register": "legal"
+        },
+        "zh": {
+          "term": "答辩",
+          "alternatives": [
+            "认罪/不认罪答辩"
+          ],
+          "register": "legal"
+        }
+      },
+      "definition": {
+        "en": "The defendant's formal answer to charges: guilty, not guilty, or no contest where allowed.",
+        "es": "La respuesta formal del acusado a los cargos: culpable, no culpable o sin oposición, donde esté permitido.",
+        "zh": "被告对指控的正式回答：认罪、不认罪，或在允许的情况下不抗辩。"
+      },
+      "distinctions": [
+        {
+          "contrast": "pleading/begging",
+          "difference": "A legal plea is a formal procedural answer, not begging. Register must stay formal; a colloquial rendering distorts the record."
+        }
+      ],
+      "misconceptions": [
+        {
+          "tag": "plea-register",
+          "description": "Rendering the formal plea in a begging/colloquial register",
+          "diagnosticPrompt": "How do you keep 'I plead not guilty' formal and exact in interpretation? What would a register error sound like?"
+        }
+      ],
+      "examples": [
+        {
+          "en": "How do you plead to the charge?",
+          "es": "¿Cómo se declara ante el cargo?",
+          "zh": "您对指控作何答辩？"
+        }
+      ],
+      "relationships": [
+        {
+          "type": "related",
+          "targetId": "waiver",
+          "documented": true
+        }
+      ]
+    },
+    {
+      "conceptId": "waiver",
+      "domainId": "oregon-legal",
+      "areaIds": [
+        "plea-colloquy",
+        "sight-documents"
+      ],
+      "difficulty": 3,
+      "competences": [
+        "domain-knowledge",
+        "professional-judgment"
+      ],
+      "sourceIds": [
+        "ojd-court-interpreter"
+      ],
+      "inferred": false,
+      "terms": {
+        "en": {
+          "term": "waiver",
+          "alternatives": [
+            "waive a right"
+          ],
+          "register": "legal"
+        },
+        "es": {
+          "term": "renuncia",
+          "alternatives": [
+            "renuncia a un derecho"
+          ],
+          "register": "legal"
+        },
+        "zh": {
+          "term": "放弃",
+          "alternatives": [
+            "弃权"
+          ],
+          "register": "legal"
+        }
+      },
+      "definition": {
+        "en": "The voluntary, knowing relinquishment of a known right (e.g., to a jury trial).",
+        "es": "La renuncia voluntaria e informada a un derecho conocido (p. ej., al juicio con jurado).",
+        "zh": "自愿且知情地放弃一项已知权利（例如陪审团审判权）。"
+      },
+      "distinctions": [
+        {
+          "contrast": "losing a right",
+          "difference": "Waiver requires that the person knows the right and gives it up voluntarily. Interpreting must preserve 'knowing and voluntary' — it cannot sound automatic."
+        }
+      ],
+      "misconceptions": [
+        {
+          "tag": "waiver-as-automatic",
+          "description": "Making a waiver sound automatic or uninformed",
+          "diagnosticPrompt": "Judge: 'Do you understand you are waiving your right to a jury trial?' What two ideas must the interpretation keep intact?"
+        }
+      ],
+      "examples": [
+        {
+          "en": "Do you understand that by pleading guilty you waive your right to a jury trial?",
+          "es": "¿Entiende que al declararse culpable renuncia a su derecho a un juicio con jurado?",
+          "zh": "您是否理解，认罪即意味着放弃陪审团审判的权利？"
+        }
+      ],
+      "relationships": []
+    },
+    {
+      "conceptId": "testimony",
+      "domainId": "oregon-legal",
+      "areaIds": [
+        "evidence-testimony",
+        "victim-witness"
+      ],
+      "difficulty": 2,
+      "competences": [
+        "listening",
+        "meaning-transfer"
+      ],
+      "sourceIds": [
+        "ojd-court-interpreter"
+      ],
+      "inferred": false,
+      "terms": {
+        "en": {
+          "term": "testimony",
+          "alternatives": [],
+          "register": "legal"
+        },
+        "es": {
+          "term": "testimonio",
+          "alternatives": [
+            "declaración testimonial"
+          ],
+          "register": "legal"
+        },
+        "zh": {
+          "term": "证词",
+          "alternatives": [
+            "作证"
+          ],
+          "register": "legal"
+        }
+      },
+      "definition": {
+        "en": "A witness's sworn spoken evidence in a proceeding.",
+        "es": "La declaración oral bajo juramento de un testigo en un procedimiento.",
+        "zh": "证人在程序中宣誓后所作的口头证词。"
+      },
+      "distinctions": [
+        {
+          "contrast": "testament / story",
+          "difference": "Testimony is sworn evidence subject to challenge — hedges, corrections, and uncertainty are part of the evidence and must be preserved, not smoothed away."
+        }
+      ],
+      "misconceptions": [
+        {
+          "tag": "smoothing-testimony",
+          "description": "Cleaning up hedges and self-corrections in testimony",
+          "diagnosticPrompt": "Witness: 'I think — no, wait, it was Tuesday, I think.' What must the interpretation preserve, and why?"
+        }
+      ],
+      "examples": [
+        {
+          "en": "Please give your testimony truthfully and completely.",
+          "es": "Por favor, rinda su testimonio de forma veraz y completa.",
+          "zh": "请如实、完整地作证。"
+        }
+      ],
+      "relationships": [
+        {
+          "type": "related",
+          "targetId": "objection",
+          "documented": true
+        }
+      ]
+    },
+    {
+      "conceptId": "objection",
+      "domainId": "oregon-legal",
+      "areaIds": [
+        "evidence-testimony"
+      ],
+      "difficulty": 2,
+      "competences": [
+        "professional-terminology",
+        "cognitive-interpreting"
+      ],
+      "sourceIds": [
+        "ojd-court-interpreter"
+      ],
+      "inferred": false,
+      "terms": {
+        "en": {
+          "term": "objection",
+          "alternatives": [
+            "objection, hearsay"
+          ],
+          "register": "legal"
+        },
+        "es": {
+          "term": "objeción",
+          "alternatives": [
+            "objeción, testimonio de oídas"
+          ],
+          "register": "legal"
+        },
+        "zh": {
+          "term": "反对",
+          "alternatives": [
+            "反对，传闻证据"
+          ],
+          "register": "legal"
+        }
+      },
+      "definition": {
+        "en": "A formal challenge to a question or evidence (e.g., hearsay), which the judge sustains or overrules.",
+        "es": "Una impugnación formal de una pregunta o prueba (p. ej., de oídas), que el juez estima o desestima.",
+        "zh": "对问题或证据的正式反对（例如传闻），由法官裁定成立或驳回。"
+      },
+      "distinctions": [
+        {
+          "contrast": "disagreement",
+          "difference": "An objection is a procedural act with legal grounds, not personal disagreement. 'Sustained/overruled' decides whether testimony continues — timing and exactness matter."
+        }
+      ],
+      "misconceptions": [
+        {
+          "tag": "objection-as-opinion",
+          "description": "Interpreting an objection as mere disagreement",
+          "diagnosticPrompt": "Attorney: 'Objection, hearsay.' Judge: 'Sustained.' Interpret both, keeping the procedural force."
+        }
+      ],
+      "examples": [
+        {
+          "en": "Objection, hearsay. — Sustained.",
+          "es": "Objeción, testimonio de oídas. — Se estima.",
+          "zh": "反对，传闻证据。——反对成立。"
+        }
+      ],
+      "relationships": []
+    },
+    {
+      "conceptId": "sentence-conditions",
+      "domainId": "oregon-legal",
+      "areaIds": [
+        "sentencing-conditions",
+        "sight-documents"
+      ],
+      "difficulty": 3,
+      "competences": [
+        "terminology-usage",
+        "meaning-transfer"
+      ],
+      "sourceIds": [
+        "ojd-court-interpreter"
+      ],
+      "inferred": false,
+      "terms": {
+        "en": {
+          "term": "conditions of sentence / probation conditions",
+          "alternatives": [
+            "conditions"
+          ],
+          "register": "legal"
+        },
+        "es": {
+          "term": "condiciones de la sentencia / de la libertad condicional",
+          "alternatives": [
+            "condiciones"
+          ],
+          "register": "legal"
+        },
+        "zh": {
+          "term": "判决条件/缓刑条件",
+          "alternatives": [
+            "条件"
+          ],
+          "register": "legal"
+        }
+      },
+      "definition": {
+        "en": "Obligations and restrictions imposed as part of a sentence (reporting, no-contact, treatment, dates).",
+        "es": "Las obligaciones y restricciones impuestas como parte de una sentencia (comparecencias, no contacto, tratamiento, fechas).",
+        "zh": "作为判决一部分施加的义务和限制（报到、禁止接触、治疗、日期）。"
+      },
+      "distinctions": [
+        {
+          "contrast": "suggestions",
+          "difference": "Conditions are enforceable obligations with consequences, not suggestions. Modality ('must' vs. 'should') must be interpreted exactly."
+        }
+      ],
+      "misconceptions": [
+        {
+          "tag": "condition-modality",
+          "description": "Softening 'must' conditions into suggestions",
+          "diagnosticPrompt": "Judge: 'You must report within 72 hours.' What happens to the meaning if 'must' becomes 'should'?"
+        }
+      ],
+      "examples": [
+        {
+          "en": "You must report to your probation officer within 72 hours.",
+          "es": "Debe presentarse ante su oficial de libertad condicional en un plazo de 72 horas.",
+          "zh": "您必须在72小时内向缓刑官报到。"
+        }
+      ],
+      "relationships": []
+    },
+    {
+      "conceptId": "impartiality",
+      "domainId": "oregon-legal",
+      "areaIds": [
+        "professional-judgment-legal"
+      ],
+      "difficulty": 2,
+      "competences": [
+        "professional-judgment"
+      ],
+      "sourceIds": [
+        "ojd-court-interpreter"
+      ],
+      "inferred": false,
+      "terms": {
+        "en": {
+          "term": "impartiality (interpreter)",
+          "alternatives": [
+            "interpreter impartiality"
+          ],
+          "register": "professional/legal"
+        },
+        "es": {
+          "term": "imparcialidad (del intérprete)",
+          "alternatives": [],
+          "register": "professional/legal"
+        },
+        "zh": {
+          "term": "公正性（口译员）",
+          "alternatives": [
+            "中立"
+          ],
+          "register": "professional/legal"
+        }
+      },
+      "definition": {
+        "en": "The interpreter interprets everything accurately without favoring any party, adding, omitting, or advising.",
+        "es": "El intérprete interpreta todo con precisión, sin favorecer a ninguna parte, sin añadir, omitir ni aconsejar.",
+        "zh": "口译员准确传译所有内容，不偏袒任何一方，不增删，不提供建议。"
+      },
+      "distinctions": [
+        {
+          "contrast": "helping one side",
+          "difference": "Explaining procedure through proper clarification is allowed; coaching, summarizing selectively, or advising a party breaks impartiality and the record."
+        }
+      ],
+      "misconceptions": [
+        {
+          "tag": "interpreter-as-advocate",
+          "description": "Slipping from interpreting into advising or advocating",
+          "diagnosticPrompt": "A defendant whispers: 'Just tell the judge I am sorry.' What does impartiality require the interpreter to do?"
+        }
+      ],
+      "examples": [
+        {
+          "en": "I interpret everything that is said, for everyone, without taking sides.",
+          "es": "Interpreto todo lo que se dice, para todas las partes, sin tomar partido.",
+          "zh": "我为所有人传译所说的每一句话，不偏袒任何一方。"
+        }
+      ],
+      "relationships": []
+    }
+  ]
+}

@@ -1,0 +1,1099 @@
+{
+  "domain": {
+    "domainId": "oregon-medical",
+    "label": {
+      "en": "Oregon — Medical Interpreting",
+      "es": "Oregón — Interpretación médica",
+      "zh": "俄勒冈州 — 医疗口译"
+    },
+    "jurisdiction": {
+      "country": "US",
+      "region": "Oregon",
+      "regionCode": "US-OR"
+    },
+    "profession": "medical",
+    "institutions": [
+      "Oregon Health Authority"
+    ],
+    "languagePairs": [
+      {
+        "source": "en",
+        "target": "es",
+        "direction": "bidirectional"
+      },
+      {
+        "source": "en",
+        "target": "zh",
+        "direction": "bidirectional"
+      }
+    ],
+    "modalities": [
+      "consecutive",
+      "sight"
+    ],
+    "competencyWeights": {
+      "domain-knowledge": 0.9,
+      "professional-terminology": 0.9,
+      "bilingual-terminology": 1,
+      "terminology-usage": 0.9,
+      "listening": 0.9,
+      "speech-production": 0.8,
+      "meaning-transfer": 1,
+      "cognitive-interpreting": 0.8,
+      "professional-judgment": 0.9,
+      "integrated-performance": 0.9
+    },
+    "sourceIds": [
+      "oha-hci-program",
+      "ncihc-ethics"
+    ],
+    "status": "active",
+    "version": 1,
+    "translationAreas": [
+      {
+        "areaId": "intake-registration",
+        "label": {
+          "en": "Intake & registration"
+        },
+        "setting": "Front desk / patient portal",
+        "participants": [
+          "front-desk staff",
+          "patient"
+        ],
+        "goals": [
+          "Collect accurate demographics and coverage information"
+        ],
+        "typicalSpeechFeatures": [
+          "abbreviations",
+          "spelled names and dates"
+        ],
+        "riskIfMistranslated": "medium",
+        "conceptIds": [
+          "intake",
+          "referral"
+        ],
+        "prerequisiteAreaIds": [],
+        "order": 1
+      },
+      {
+        "areaId": "history-symptoms",
+        "label": {
+          "en": "History & symptoms"
+        },
+        "setting": "Exam-room history-taking",
+        "participants": [
+          "clinician",
+          "patient"
+        ],
+        "goals": [
+          "Convey symptom quality, timing, and severity accurately"
+        ],
+        "typicalSpeechFeatures": [
+          "hedging",
+          "symptom qualifiers",
+          "timelines"
+        ],
+        "riskIfMistranslated": "high",
+        "conceptIds": [
+          "chief-complaint",
+          "onset"
+        ],
+        "prerequisiteAreaIds": [
+          "intake-registration"
+        ],
+        "order": 2
+      },
+      {
+        "areaId": "diagnosis-explanation",
+        "label": {
+          "en": "Diagnosis explanation"
+        },
+        "setting": "Diagnosis discussion",
+        "participants": [
+          "clinician",
+          "patient",
+          "family"
+        ],
+        "goals": [
+          "Distinguish condition, symptom, and test result"
+        ],
+        "typicalSpeechFeatures": [
+          "probability language",
+          "condition vs. symptom"
+        ],
+        "riskIfMistranslated": "high",
+        "conceptIds": [
+          "diagnosis",
+          "prognosis"
+        ],
+        "prerequisiteAreaIds": [
+          "history-symptoms"
+        ],
+        "order": 3
+      },
+      {
+        "areaId": "informed-consent",
+        "label": {
+          "en": "Informed consent"
+        },
+        "setting": "Pre-procedure consent discussion",
+        "participants": [
+          "clinician",
+          "patient"
+        ],
+        "goals": [
+          "Convey risks, benefits, alternatives; support teach-back"
+        ],
+        "typicalSpeechFeatures": [
+          "teach-back",
+          "legal register",
+          "numeric risk"
+        ],
+        "riskIfMistranslated": "critical",
+        "conceptIds": [
+          "informed-consent",
+          "adverse-effect"
+        ],
+        "prerequisiteAreaIds": [
+          "diagnosis-explanation"
+        ],
+        "order": 4
+      },
+      {
+        "areaId": "treatment-plan",
+        "label": {
+          "en": "Treatment plan & prescriptions"
+        },
+        "setting": "Plan and prescribing",
+        "participants": [
+          "clinician",
+          "patient",
+          "pharmacist"
+        ],
+        "goals": [
+          "Convey dose, frequency, and adherence instructions exactly"
+        ],
+        "typicalSpeechFeatures": [
+          "numeric precision",
+          "dose vs. dosage"
+        ],
+        "riskIfMistranslated": "high",
+        "conceptIds": [
+          "dosage",
+          "dose"
+        ],
+        "prerequisiteAreaIds": [
+          "diagnosis-explanation"
+        ],
+        "order": 5
+      },
+      {
+        "areaId": "discharge-followup",
+        "label": {
+          "en": "Discharge & follow-up"
+        },
+        "setting": "Discharge instructions",
+        "participants": [
+          "clinician",
+          "patient",
+          "family"
+        ],
+        "goals": [
+          "Convey warning signs and return precautions"
+        ],
+        "typicalSpeechFeatures": [
+          "informal paraphrase",
+          "warning signs"
+        ],
+        "riskIfMistranslated": "high",
+        "conceptIds": [
+          "discharge",
+          "follow-up"
+        ],
+        "prerequisiteAreaIds": [
+          "treatment-plan"
+        ],
+        "order": 6
+      },
+      {
+        "areaId": "professional-judgment-med",
+        "label": {
+          "en": "Professional judgment (medical)"
+        },
+        "setting": "Any encounter",
+        "participants": [
+          "interpreter",
+          "clinician",
+          "patient"
+        ],
+        "goals": [
+          "Maintain role boundaries; clarify without advising"
+        ],
+        "typicalSpeechFeatures": [
+          "clarification protocol"
+        ],
+        "riskIfMistranslated": "high",
+        "conceptIds": [
+          "clarification-protocol"
+        ],
+        "prerequisiteAreaIds": [],
+        "order": 7
+      }
+    ]
+  },
+  "concepts": [
+    {
+      "conceptId": "dosage",
+      "domainId": "oregon-medical",
+      "areaIds": [
+        "treatment-plan"
+      ],
+      "difficulty": 2,
+      "competences": [
+        "professional-terminology",
+        "bilingual-terminology",
+        "terminology-usage"
+      ],
+      "sourceIds": [
+        "oha-hci-program"
+      ],
+      "inferred": false,
+      "terms": {
+        "en": {
+          "term": "dosage",
+          "alternatives": [
+            "dosage regimen"
+          ],
+          "register": "professional"
+        },
+        "es": {
+          "term": "posología",
+          "alternatives": [
+            "dosis pautada",
+            "pauta de dosificación"
+          ],
+          "register": "professional"
+        },
+        "zh": {
+          "term": "剂量方案",
+          "alternatives": [
+            "给药方案"
+          ],
+          "register": "professional"
+        }
+      },
+      "definition": {
+        "en": "The full prescribed regimen: amount per dose, frequency, route, and duration — not a single amount.",
+        "es": "El régimen completo prescrito: cantidad por toma, frecuencia, vía y duración.",
+        "zh": "完整的处方用药方案：每次用量、频次、途径和疗程，而非单次量。"
+      },
+      "distinctions": [
+        {
+          "contrast": "dose",
+          "difference": "A dose is one single amount taken at one time; dosage is the whole regimen (amount × frequency × duration). Confusing them changes how much medicine a patient takes."
+        }
+      ],
+      "misconceptions": [
+        {
+          "tag": "dose-equals-dosage",
+          "description": "Treating dosage and dose as the same word",
+          "diagnosticPrompt": "A prescription says '500 mg twice daily for 7 days.' Is '500 mg' the dose or the dosage — and what is the other one?"
+        }
+      ],
+      "examples": [
+        {
+          "en": "Follow the dosage exactly: one tablet twice a day for seven days.",
+          "es": "Siga la posología exactamente: una tableta dos veces al día durante siete días.",
+          "zh": "请严格按照剂量方案服药：每天两次，每次一片，连服七天。"
+        }
+      ],
+      "relationships": [
+        {
+          "type": "confusable-with",
+          "targetId": "dose",
+          "documented": true
+        }
+      ]
+    },
+    {
+      "conceptId": "dose",
+      "domainId": "oregon-medical",
+      "areaIds": [
+        "treatment-plan"
+      ],
+      "difficulty": 1,
+      "competences": [
+        "professional-terminology",
+        "bilingual-terminology"
+      ],
+      "sourceIds": [
+        "oha-hci-program"
+      ],
+      "inferred": false,
+      "terms": {
+        "en": {
+          "term": "dose",
+          "alternatives": [],
+          "register": "professional"
+        },
+        "es": {
+          "term": "dosis",
+          "alternatives": [
+            "toma"
+          ],
+          "register": "professional"
+        },
+        "zh": {
+          "term": "剂量",
+          "alternatives": [
+            "一次量"
+          ],
+          "register": "professional"
+        }
+      },
+      "definition": {
+        "en": "A single measured amount of medicine taken at one time.",
+        "es": "Una cantidad medida de medicamento que se toma en una sola vez.",
+        "zh": "一次服用的单次药量。"
+      },
+      "distinctions": [
+        {
+          "contrast": "dosage",
+          "difference": "Dose = one amount, once. Dosage = the entire schedule. Interpreting one as the other can double or halve medication."
+        }
+      ],
+      "misconceptions": [
+        {
+          "tag": "dose-equals-dosage",
+          "description": "Treating dosage and dose as the same word",
+          "diagnosticPrompt": "The patient asks: '¿Cuánto tomo cada vez?' Are they asking about dose or dosage?"
+        }
+      ],
+      "examples": [
+        {
+          "en": "Take one dose now, then wait six hours.",
+          "es": "Tome una dosis ahora y luego espere seis horas.",
+          "zh": "现在服用一剂，然后等待六小时。"
+        }
+      ],
+      "relationships": [
+        {
+          "type": "confusable-with",
+          "targetId": "dosage",
+          "documented": true
+        }
+      ]
+    },
+    {
+      "conceptId": "informed-consent",
+      "domainId": "oregon-medical",
+      "areaIds": [
+        "informed-consent"
+      ],
+      "difficulty": 3,
+      "competences": [
+        "domain-knowledge",
+        "meaning-transfer",
+        "professional-judgment"
+      ],
+      "sourceIds": [
+        "oha-hci-program",
+        "ncihc-ethics"
+      ],
+      "inferred": false,
+      "terms": {
+        "en": {
+          "term": "informed consent",
+          "alternatives": [],
+          "register": "professional/legal"
+        },
+        "es": {
+          "term": "consentimiento informado",
+          "alternatives": [],
+          "register": "professional/legal"
+        },
+        "zh": {
+          "term": "知情同意",
+          "alternatives": [],
+          "register": "professional/legal"
+        }
+      },
+      "definition": {
+        "en": "A patient's voluntary agreement to a procedure after understanding its purpose, risks, benefits, and alternatives.",
+        "es": "La aceptación voluntaria de un procedimiento tras comprender su finalidad, riesgos, beneficios y alternativas.",
+        "zh": "患者在理解某项操作的目的、风险、益处和替代方案后自愿作出的同意。"
+      },
+      "distinctions": [
+        {
+          "contrast": "signature on a form",
+          "difference": "Consent is the understood agreement, not the signature. A signed form without understanding is not informed consent — interpreters must convey the discussion, not just witness a signature."
+        }
+      ],
+      "misconceptions": [
+        {
+          "tag": "consent-is-signature",
+          "description": "Equating consent with signing a form",
+          "diagnosticPrompt": "The patient signed but says they did not understand the risks. Has informed consent happened? What should the interpreter do?"
+        }
+      ],
+      "examples": [
+        {
+          "en": "Before we proceed, I need your informed consent after we discuss the risks and alternatives.",
+          "es": "Antes de continuar, necesito su consentimiento informado después de hablar de los riesgos y las alternativas.",
+          "zh": "在继续之前，我们需要先讨论风险和替代方案，然后取得您的知情同意。"
+        }
+      ],
+      "relationships": [
+        {
+          "type": "related",
+          "targetId": "adverse-effect",
+          "documented": true
+        }
+      ]
+    },
+    {
+      "conceptId": "adverse-effect",
+      "domainId": "oregon-medical",
+      "areaIds": [
+        "informed-consent",
+        "treatment-plan"
+      ],
+      "difficulty": 3,
+      "competences": [
+        "professional-terminology",
+        "domain-knowledge"
+      ],
+      "sourceIds": [
+        "oha-hci-program"
+      ],
+      "inferred": false,
+      "terms": {
+        "en": {
+          "term": "adverse effect",
+          "alternatives": [
+            "adverse reaction"
+          ],
+          "register": "professional"
+        },
+        "es": {
+          "term": "efecto adverso",
+          "alternatives": [
+            "reacción adversa"
+          ],
+          "register": "professional"
+        },
+        "zh": {
+          "term": "不良反应",
+          "alternatives": [
+            "副作用"
+          ],
+          "register": "professional"
+        }
+      },
+      "definition": {
+        "en": "An unwanted, harmful effect caused by a medication or procedure.",
+        "es": "Un efecto no deseado y perjudicial causado por un medicamento o procedimiento.",
+        "zh": "由药物或操作引起的非预期的有害反应。"
+      },
+      "distinctions": [
+        {
+          "contrast": "side effect",
+          "difference": "Side effects can be neutral or even useful; adverse effects are harmful. In consent discussions the interpreter must not soften 'adverse' into merely 'possible'."
+        }
+      ],
+      "misconceptions": [
+        {
+          "tag": "softening-risk",
+          "description": "Softening risk language when interpreting consent",
+          "diagnosticPrompt": "How would you interpret: 'There is a small risk of serious adverse effects, including bleeding'?"
+        }
+      ],
+      "examples": [
+        {
+          "en": "Report any adverse effects, such as swelling or difficulty breathing, right away.",
+          "es": "Informe de inmediato cualquier efecto adverso, como hinchazón o dificultad para respirar.",
+          "zh": "如出现任何不良反应，例如肿胀或呼吸困难，请立即告知。"
+        }
+      ],
+      "relationships": []
+    },
+    {
+      "conceptId": "chief-complaint",
+      "domainId": "oregon-medical",
+      "areaIds": [
+        "history-symptoms"
+      ],
+      "difficulty": 2,
+      "competences": [
+        "domain-knowledge",
+        "listening"
+      ],
+      "sourceIds": [
+        "oha-hci-program"
+      ],
+      "inferred": false,
+      "terms": {
+        "en": {
+          "term": "chief complaint",
+          "alternatives": [
+            "presenting complaint"
+          ],
+          "register": "professional"
+        },
+        "es": {
+          "term": "motivo de consulta",
+          "alternatives": [
+            "queja principal"
+          ],
+          "register": "professional"
+        },
+        "zh": {
+          "term": "主诉",
+          "alternatives": [
+            "就诊原因"
+          ],
+          "register": "professional"
+        }
+      },
+      "definition": {
+        "en": "The main reason for the visit, in the patient's own framing — not yet a diagnosis.",
+        "es": "El motivo principal de la visita, según el propio paciente; aún no es un diagnóstico.",
+        "zh": "患者本人表述的主要就诊原因，尚不是诊断。"
+      },
+      "distinctions": [
+        {
+          "contrast": "diagnosis",
+          "difference": "The chief complaint is what brings the patient in ('my chest hurts'); the diagnosis is the clinician's conclusion ('angina'). Interpreters must not upgrade a complaint into a diagnosis."
+        }
+      ],
+      "misconceptions": [
+        {
+          "tag": "complaint-as-diagnosis",
+          "description": "Interpreting a symptom report as a diagnosis",
+          "diagnosticPrompt": "Patient: 'Me duele el pecho desde ayer.' Is that a chief complaint or a diagnosis? Interpret it without adding a diagnosis."
+        }
+      ],
+      "examples": [
+        {
+          "en": "What is your chief complaint today?",
+          "es": "¿Cuál es su motivo de consulta hoy?",
+          "zh": "您今天主要是哪里不舒服（主诉）？"
+        }
+      ],
+      "relationships": [
+        {
+          "type": "prerequisite",
+          "targetId": "diagnosis",
+          "documented": false
+        }
+      ]
+    },
+    {
+      "conceptId": "diagnosis",
+      "domainId": "oregon-medical",
+      "areaIds": [
+        "diagnosis-explanation"
+      ],
+      "difficulty": 2,
+      "competences": [
+        "domain-knowledge",
+        "meaning-transfer"
+      ],
+      "sourceIds": [
+        "oha-hci-program"
+      ],
+      "inferred": false,
+      "terms": {
+        "en": {
+          "term": "diagnosis",
+          "alternatives": [],
+          "register": "professional"
+        },
+        "es": {
+          "term": "diagnóstico",
+          "alternatives": [],
+          "register": "professional"
+        },
+        "zh": {
+          "term": "诊断",
+          "alternatives": [],
+          "register": "professional"
+        }
+      },
+      "definition": {
+        "en": "The clinician's identification of a condition, after evaluation — stated with a degree of certainty.",
+        "es": "La identificación de una afección por parte del profesional, tras la evaluación, con un grado de certeza.",
+        "zh": "临床医生经评估后对病情作出的判断，并带有一定的确定程度。"
+      },
+      "distinctions": [
+        {
+          "contrast": "prognosis",
+          "difference": "Diagnosis says what the condition is; prognosis says what is likely to happen. Mixing them misleads patients about both."
+        }
+      ],
+      "misconceptions": [
+        {
+          "tag": "diagnosis-as-certainty",
+          "description": "Interpreting a tentative diagnosis as certain",
+          "diagnosticPrompt": "Clinician: 'This is most likely a viral infection.' What must the interpretation preserve about certainty?"
+        }
+      ],
+      "examples": [
+        {
+          "en": "The diagnosis is most likely a viral infection, but we will confirm with a test.",
+          "es": "El diagnóstico más probable es una infección viral, pero lo confirmaremos con una prueba.",
+          "zh": "最可能的诊断是病毒感染，但我们会通过检查来确认。"
+        }
+      ],
+      "relationships": [
+        {
+          "type": "confusable-with",
+          "targetId": "prognosis",
+          "documented": true
+        }
+      ]
+    },
+    {
+      "conceptId": "prognosis",
+      "domainId": "oregon-medical",
+      "areaIds": [
+        "diagnosis-explanation"
+      ],
+      "difficulty": 3,
+      "competences": [
+        "domain-knowledge",
+        "meaning-transfer"
+      ],
+      "sourceIds": [
+        "oha-hci-program"
+      ],
+      "inferred": false,
+      "terms": {
+        "en": {
+          "term": "prognosis",
+          "alternatives": [],
+          "register": "professional"
+        },
+        "es": {
+          "term": "pronóstico",
+          "alternatives": [],
+          "register": "professional"
+        },
+        "zh": {
+          "term": "预后",
+          "alternatives": [
+            "预判"
+          ],
+          "register": "professional"
+        }
+      },
+      "definition": {
+        "en": "The likely course and outcome of a condition over time.",
+        "es": "La evolución y el resultado probables de una afección a lo largo del tiempo.",
+        "zh": "某种疾病随时间推移的可能病程和结果。"
+      },
+      "distinctions": [
+        {
+          "contrast": "diagnosis",
+          "difference": "Diagnosis = what it is. Prognosis = what is likely to happen. A good prognosis can accompany a serious diagnosis."
+        }
+      ],
+      "misconceptions": [
+        {
+          "tag": "diagnosis-as-certainty",
+          "description": "Interpreting prognosis as a guarantee",
+          "diagnosticPrompt": "Interpret: 'The prognosis is generally good with treatment.' What words carry the uncertainty?"
+        }
+      ],
+      "examples": [
+        {
+          "en": "With treatment, the prognosis is generally good.",
+          "es": "Con tratamiento, el pronóstico es generalmente bueno.",
+          "zh": "经过治疗，预后总体良好。"
+        }
+      ],
+      "relationships": [
+        {
+          "type": "confusable-with",
+          "targetId": "diagnosis",
+          "documented": true
+        }
+      ]
+    },
+    {
+      "conceptId": "onset",
+      "domainId": "oregon-medical",
+      "areaIds": [
+        "history-symptoms"
+      ],
+      "difficulty": 2,
+      "competences": [
+        "professional-terminology",
+        "listening"
+      ],
+      "sourceIds": [
+        "oha-hci-program"
+      ],
+      "inferred": false,
+      "terms": {
+        "en": {
+          "term": "onset",
+          "alternatives": [
+            "beginning"
+          ],
+          "register": "professional"
+        },
+        "es": {
+          "term": "inicio",
+          "alternatives": [
+            "comienzo de los síntomas"
+          ],
+          "register": "professional"
+        },
+        "zh": {
+          "term": "发病",
+          "alternatives": [
+            "起病"
+          ],
+          "register": "professional"
+        }
+      },
+      "definition": {
+        "en": "When symptoms or a condition began.",
+        "es": "El momento en que comenzaron los síntomas o la afección.",
+        "zh": "症状或疾病开始出现的时间。"
+      },
+      "distinctions": [
+        {
+          "contrast": "duration",
+          "difference": "Onset is the start point; duration is how long it has lasted. 'Since Tuesday' answers onset; 'for three days' answers duration."
+        }
+      ],
+      "misconceptions": [
+        {
+          "tag": "onset-duration-confusion",
+          "description": "Swapping onset and duration",
+          "diagnosticPrompt": "Patient: 'Empezó el martes.' Is that onset or duration? What follow-up question separates them?"
+        }
+      ],
+      "examples": [
+        {
+          "en": "When was the onset of the pain?",
+          "es": "¿Cuándo fue el inicio del dolor?",
+          "zh": "疼痛是什么时候开始的（发病时间）？"
+        }
+      ],
+      "relationships": []
+    },
+    {
+      "conceptId": "intake",
+      "domainId": "oregon-medical",
+      "areaIds": [
+        "intake-registration"
+      ],
+      "difficulty": 1,
+      "competences": [
+        "domain-knowledge"
+      ],
+      "sourceIds": [
+        "oha-hci-program"
+      ],
+      "inferred": false,
+      "terms": {
+        "en": {
+          "term": "intake",
+          "alternatives": [
+            "registration intake"
+          ],
+          "register": "institutional"
+        },
+        "es": {
+          "term": "admisión",
+          "alternatives": [
+            "registro de ingreso"
+          ],
+          "register": "institutional"
+        },
+        "zh": {
+          "term": "登记",
+          "alternatives": [
+            "入院登记"
+          ],
+          "register": "institutional"
+        }
+      },
+      "definition": {
+        "en": "The initial collection of a patient's identifying, coverage, and contact information.",
+        "es": "La recopilación inicial de los datos de identificación, cobertura y contacto del paciente.",
+        "zh": "最初收集患者身份、保险和联系信息的过程。"
+      },
+      "distinctions": [
+        {
+          "contrast": "assessment",
+          "difference": "Intake collects administrative information; assessment is clinical evaluation. Intake questions are not medical advice."
+        }
+      ],
+      "misconceptions": [],
+      "examples": [
+        {
+          "en": "We will complete intake first, then the nurse will see you.",
+          "es": "Primero completaremos la admisión y luego la enfermera le atenderá.",
+          "zh": "我们先完成登记，然后护士会来见您。"
+        }
+      ],
+      "relationships": []
+    },
+    {
+      "conceptId": "referral",
+      "domainId": "oregon-medical",
+      "areaIds": [
+        "intake-registration",
+        "discharge-followup"
+      ],
+      "difficulty": 2,
+      "competences": [
+        "domain-knowledge",
+        "terminology-usage"
+      ],
+      "sourceIds": [
+        "oha-hci-program"
+      ],
+      "inferred": false,
+      "terms": {
+        "en": {
+          "term": "referral",
+          "alternatives": [],
+          "register": "institutional"
+        },
+        "es": {
+          "term": "derivación",
+          "alternatives": [
+            "remisión",
+            "referencia"
+          ],
+          "register": "institutional"
+        },
+        "zh": {
+          "term": "转诊",
+          "alternatives": [
+            "转介"
+          ],
+          "register": "institutional"
+        }
+      },
+      "definition": {
+        "en": "Directing a patient to another clinician or service for care beyond the current visit.",
+        "es": "La orientación de un paciente a otro profesional o servicio para una atención adicional.",
+        "zh": "将患者转介给另一位临床医生或服务机构以获得进一步诊疗。"
+      },
+      "distinctions": [
+        {
+          "contrast": "recommendation",
+          "difference": "A referral is an institutional act (often requiring authorization); a recommendation is advice. Interpreting one as the other confuses what will actually happen."
+        }
+      ],
+      "misconceptions": [
+        {
+          "tag": "referral-as-advice",
+          "description": "Interpreting a formal referral as casual advice",
+          "diagnosticPrompt": "Clinician: 'I am placing a referral to cardiology.' What must the patient understand will happen next?"
+        }
+      ],
+      "examples": [
+        {
+          "en": "I am placing a referral to cardiology; they will contact you within a week.",
+          "es": "Voy a hacer una derivación a cardiología; le contactarán en el plazo de una semana.",
+          "zh": "我会为您开具心脏科转诊，他们会在一周内联系您。"
+        }
+      ],
+      "relationships": []
+    },
+    {
+      "conceptId": "discharge",
+      "domainId": "oregon-medical",
+      "areaIds": [
+        "discharge-followup"
+      ],
+      "difficulty": 2,
+      "competences": [
+        "domain-knowledge"
+      ],
+      "sourceIds": [
+        "oha-hci-program"
+      ],
+      "inferred": false,
+      "terms": {
+        "en": {
+          "term": "discharge (from care)",
+          "alternatives": [
+            "discharge instructions"
+          ],
+          "register": "institutional"
+        },
+        "es": {
+          "term": "alta",
+          "alternatives": [
+            "alta médica",
+            "instrucciones de alta"
+          ],
+          "register": "institutional"
+        },
+        "zh": {
+          "term": "出院",
+          "alternatives": [
+            "出院指导"
+          ],
+          "register": "institutional"
+        }
+      },
+      "definition": {
+        "en": "Release from a facility or service, together with the instructions that accompany it. (Distinct from bodily discharge.)",
+        "es": "La salida de un centro o servicio, junto con las instrucciones que la acompañan. (Distinto de secreción.)",
+        "zh": "从医疗机构或服务中离院，以及随附的指导说明。（与分泌物不同。）"
+      },
+      "distinctions": [
+        {
+          "contrast": "bodily discharge (secretion)",
+          "difference": "Same English word, different concepts: leaving the hospital vs. a bodily fluid. Context decides; translators must not carry the wrong sense across languages."
+        }
+      ],
+      "misconceptions": [
+        {
+          "tag": "discharge-polysemy",
+          "description": "Carrying the wrong sense of 'discharge' across languages",
+          "diagnosticPrompt": "In 'You will be discharged tomorrow with instructions,' which sense of discharge is meant? How do you know?"
+        }
+      ],
+      "examples": [
+        {
+          "en": "You will be discharged tomorrow; these are your discharge instructions.",
+          "es": "Le darán el alta mañana; estas son sus instrucciones de alta.",
+          "zh": "您明天出院；这是您的出院指导。"
+        }
+      ],
+      "relationships": []
+    },
+    {
+      "conceptId": "follow-up",
+      "domainId": "oregon-medical",
+      "areaIds": [
+        "discharge-followup"
+      ],
+      "difficulty": 1,
+      "competences": [
+        "terminology-usage"
+      ],
+      "sourceIds": [
+        "oha-hci-program"
+      ],
+      "inferred": false,
+      "terms": {
+        "en": {
+          "term": "follow-up",
+          "alternatives": [
+            "follow-up appointment"
+          ],
+          "register": "institutional"
+        },
+        "es": {
+          "term": "seguimiento",
+          "alternatives": [
+            "cita de seguimiento"
+          ],
+          "register": "institutional"
+        },
+        "zh": {
+          "term": "随访",
+          "alternatives": [
+            "复诊"
+          ],
+          "register": "institutional"
+        }
+      },
+      "definition": {
+        "en": "A planned later check on progress, results, or recovery.",
+        "es": "Una revisión posterior planificada del progreso, los resultados o la recuperación.",
+        "zh": "按计划在之后进行的进展、结果或康复复查。"
+      },
+      "distinctions": [
+        {
+          "contrast": "emergency return",
+          "difference": "Follow-up is scheduled monitoring; return precautions ('come back now if…') are urgent. Both appear in discharge talk and must not be merged."
+        }
+      ],
+      "misconceptions": [],
+      "examples": [
+        {
+          "en": "Schedule a follow-up in two weeks, sooner if the fever returns.",
+          "es": "Programe una cita de seguimiento en dos semanas, antes si vuelve la fiebre.",
+          "zh": "请预约两周后的复诊，如再次发烧请提前就诊。"
+        }
+      ],
+      "relationships": []
+    },
+    {
+      "conceptId": "clarification-protocol",
+      "domainId": "oregon-medical",
+      "areaIds": [
+        "professional-judgment-med"
+      ],
+      "difficulty": 2,
+      "competences": [
+        "professional-judgment"
+      ],
+      "sourceIds": [
+        "ncihc-ethics"
+      ],
+      "inferred": false,
+      "terms": {
+        "en": {
+          "term": "request for clarification",
+          "alternatives": [
+            "clarification protocol"
+          ],
+          "register": "professional"
+        },
+        "es": {
+          "term": "solicitud de aclaración",
+          "alternatives": [
+            "protocolo de aclaración"
+          ],
+          "register": "professional"
+        },
+        "zh": {
+          "term": "请求澄清",
+          "alternatives": [
+            "澄清流程"
+          ],
+          "register": "professional"
+        }
+      },
+      "definition": {
+        "en": "The interpreter transparently pauses to ask a speaker to repeat or clarify, identifying themselves as the interpreter — without adding advice or opinions.",
+        "es": "El intérprete pausa de forma transparente para pedir que se repita o aclare algo, identificándose como intérprete, sin añadir consejos ni opiniones.",
+        "zh": "口译员透明地暂停，请说话者重复或澄清，并表明自己的口译员身份——不添加建议或意见。"
+      },
+      "distinctions": [
+        {
+          "contrast": "giving advice",
+          "difference": "Clarifying language ('The interpreter needs to clarify a term') is the role; advising ('You should ask for…') is outside it. The protocol keeps that line visible to everyone."
+        }
+      ],
+      "misconceptions": [
+        {
+          "tag": "interpreter-as-advocate",
+          "description": "Slipping from interpreting into advising or advocating",
+          "diagnosticPrompt": "The patient asks you directly: 'What would you do?' What does the clarification/role protocol require?"
+        }
+      ],
+      "examples": [
+        {
+          "en": "Interpreter: 'This is the interpreter — could you clarify that term so I can interpret it accurately?'",
+          "es": "Intérprete: «Soy la intérprete — ¿podría aclarar ese término para interpretarlo con precisión?»",
+          "zh": "口译员：\"我是口译员——请您澄清一下这个术语，以便我准确传译好吗？\""
+        }
+      ],
+      "relationships": []
+    }
+  ]
+}

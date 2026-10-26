@@ -1,0 +1,93 @@
+[
+  {
+    "sourceId": "oha-hci-program",
+    "title": "Oregon Health Authority — Health Care Interpreter Program (training & credentialing overview)",
+    "publisher": "Oregon Health Authority",
+    "url": "https://www.oregon.gov/oha/",
+    "jurisdiction": "US-OR",
+    "publishedOrRevised": "accessed 2026-10-26",
+    "audience": "Health care interpreters, clinics",
+    "authority": "high",
+    "permittedUse": "Public program information; concepts summarized and linked, not copied.",
+    "instructionalRelevance": "Defines the Oregon HCI role, ethics expectations, and credentialing context for the medical domain seed.",
+    "limitations": "Program pages summarize requirements; they are not a terminology textbook."
+  },
+  {
+    "sourceId": "ojd-court-interpreter",
+    "title": "Oregon Judicial Department — Court Interpreter Program (standards & preparation guidance)",
+    "publisher": "Oregon Judicial Department",
+    "url": "https://www.courts.oregon.gov/",
+    "jurisdiction": "US-OR",
+    "publishedOrRevised": "accessed 2026-10-26",
+    "audience": "Court interpreters, courts",
+    "authority": "high",
+    "permittedUse": "Public program information; procedures summarized and linked, not copied.",
+    "instructionalRelevance": "Grounds the legal domain seed: interpreter role, modes (consecutive/simultaneous/sight), and professional conduct.",
+    "limitations": "Preparation guidance is general; statutory language must be checked against current Oregon law."
+  },
+  {
+    "sourceId": "ncihc-ethics",
+    "title": "National Code of Ethics & Standards of Practice for Interpreters in Health Care (NCIHC)",
+    "publisher": "National Council on Interpreting in Health Care",
+    "url": "https://www.ncihc.org/",
+    "jurisdiction": "US",
+    "publishedOrRevised": "accessed 2026-10-26",
+    "audience": "Health care interpreters",
+    "authority": "medium",
+    "permittedUse": "Public professional standards; principles summarized.",
+    "instructionalRelevance": "Accuracy, confidentiality, impartiality, and clarification protocol used in judgment vignettes.",
+    "limitations": "National guidance; Oregon program rules take precedence where they differ."
+  },
+  {
+    "sourceId": "reco-ontario",
+    "title": "Real Estate Council of Ontario (RECO) — registrant regulation & consumer protection resources",
+    "publisher": "Real Estate Council of Ontario",
+    "url": "https://www.reco.on.ca/",
+    "jurisdiction": "CA-ON",
+    "publishedOrRevised": "accessed 2026-10-26",
+    "audience": "Ontario real estate registrants, buyers, sellers",
+    "authority": "high",
+    "permittedUse": "Public regulator information; concepts summarized and linked, not copied.",
+    "instructionalRelevance": "Grounds the Ontario real-estate seed: representation, disclosure, and transaction duties under TRESA.",
+    "limitations": "Regulator guidance summarizes TRESA; transaction advice requires a licensed Ontario registrant/lawyer."
+  },
+  {
+    "sourceId": "osu-extension",
+    "title": "Oregon State University Extension Service — horticulture & crop production resources",
+    "publisher": "Oregon State University Extension Service",
+    "url": "https://extension.oregonstate.edu/",
+    "jurisdiction": "US-OR",
+    "publishedOrRevised": "accessed 2026-10-26",
+    "audience": "Growers, gardeners, agricultural workers",
+    "authority": "high",
+    "permittedUse": "Public extension information; practices summarized and linked, not copied.",
+    "instructionalRelevance": "Grounds the Oregon cultivation seed: soil, planting, irrigation, pest, and harvest practice.",
+    "limitations": "Extension guidance is general; pesticide/licensing decisions must check current Oregon rules and labels."
+  },
+  {
+    "sourceId": "ai-glossary",
+    "title": "Machine Learning Glossary (Google for Developers) — AI terminology reference",
+    "publisher": "Google for Developers",
+    "url": "https://developers.google.com/machine-learning/glossary",
+    "jurisdiction": "INTL",
+    "publishedOrRevised": "accessed 2026-10-26",
+    "audience": "AI practitioners, translators, product teams",
+    "authority": "medium",
+    "permittedUse": "Public glossary; terms summarized and linked, not copied.",
+    "instructionalRelevance": "Grounds the AI-technology seed (ES→EN product translation): model, inference, hallucination and friends as engineers actually use them.",
+    "limitations": "Industry glossary, not a translation standard; client style guides govern product strings."
+  },
+  {
+    "sourceId": "ca-ftb",
+    "title": "California Franchise Tax Board (FTB) — resident tax guidance & notices",
+    "publisher": "California Franchise Tax Board",
+    "url": "https://www.ftb.ca.gov/",
+    "jurisdiction": "US-CA",
+    "publishedOrRevised": "accessed 2026-10-26",
+    "audience": "California taxpayers and preparers",
+    "authority": "high",
+    "permittedUse": "Public agency information; concepts summarized and linked, not copied.",
+    "instructionalRelevance": "Grounds the California tax-advice seed: residency, reporting, credits, notices and protest deadlines.",
+    "limitations": "Agency summaries are not tax advice for a specific return; preparers must check current-year FTB/CDTFA rules."
+  }
+]

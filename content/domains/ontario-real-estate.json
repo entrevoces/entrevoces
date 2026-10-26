@@ -1,0 +1,594 @@
+{
+  "domain": {
+    "domainId": "ontario-real-estate",
+    "label": {
+      "en": "Ontario — Real Estate",
+      "es": "Ontario — Bienes raíces",
+      "zh": "安大略省 — 房地产"
+    },
+    "jurisdiction": {
+      "country": "CA",
+      "region": "Ontario",
+      "regionCode": "CA-ON"
+    },
+    "profession": "other",
+    "institutions": [
+      "Real Estate Council of Ontario"
+    ],
+    "languagePairs": [
+      {
+        "source": "en",
+        "target": "es",
+        "direction": "bidirectional"
+      },
+      {
+        "source": "en",
+        "target": "zh",
+        "direction": "bidirectional"
+      }
+    ],
+    "modalities": [
+      "consecutive",
+      "sight"
+    ],
+    "competencyWeights": {
+      "domain-knowledge": 0.9,
+      "professional-terminology": 1,
+      "bilingual-terminology": 1,
+      "terminology-usage": 0.9,
+      "listening": 0.8,
+      "speech-production": 0.8,
+      "meaning-transfer": 1,
+      "cognitive-interpreting": 0.7,
+      "professional-judgment": 1,
+      "integrated-performance": 0.9
+    },
+    "sourceIds": [
+      "reco-ontario"
+    ],
+    "status": "active",
+    "version": 1,
+    "translationAreas": [
+      {
+        "areaId": "buyer-representation",
+        "label": {
+          "en": "Buyer representation"
+        },
+        "setting": "Brokerage / client intake",
+        "participants": [
+          "registrant",
+          "buyer"
+        ],
+        "goals": [
+          "Explain representation, duties, and choices before loyalty is assumed"
+        ],
+        "typicalSpeechFeatures": [
+          "designated representation",
+          "informed choice"
+        ],
+        "riskIfMistranslated": "high",
+        "conceptIds": [
+          "representation-agreement"
+        ],
+        "prerequisiteAreaIds": [],
+        "order": 1
+      },
+      {
+        "areaId": "offer-conditions",
+        "label": {
+          "en": "Offers & conditions"
+        },
+        "setting": "Offer presentation and negotiation",
+        "participants": [
+          "registrants",
+          "buyer",
+          "seller"
+        ],
+        "goals": [
+          "Convey price, deposit, conditions, and irrevocability exactly"
+        ],
+        "typicalSpeechFeatures": [
+          "numeric precision",
+          "deadlines"
+        ],
+        "riskIfMistranslated": "critical",
+        "conceptIds": [
+          "agreement-purchase-sale",
+          "deposit",
+          "offer-conditions"
+        ],
+        "prerequisiteAreaIds": [
+          "buyer-representation"
+        ],
+        "order": 2
+      },
+      {
+        "areaId": "disclosure",
+        "label": {
+          "en": "Disclosure & property condition"
+        },
+        "setting": "Property review",
+        "participants": [
+          "registrant",
+          "buyer",
+          "seller"
+        ],
+        "goals": [
+          "Distinguish known defects, stigmas, and what was actually asked"
+        ],
+        "typicalSpeechFeatures": [
+          "hedging",
+          "known vs. suspected"
+        ],
+        "riskIfMistranslated": "high",
+        "conceptIds": [
+          "disclosure-statement"
+        ],
+        "prerequisiteAreaIds": [
+          "buyer-representation"
+        ],
+        "order": 3
+      },
+      {
+        "areaId": "closing-funds",
+        "label": {
+          "en": "Closing & funds"
+        },
+        "setting": "Law office / closing day",
+        "participants": [
+          "lawyer",
+          "buyer",
+          "seller"
+        ],
+        "goals": [
+          "Convey closing adjustments, land transfer tax, and key release"
+        ],
+        "typicalSpeechFeatures": [
+          "adjustments",
+          "funds timing"
+        ],
+        "riskIfMistranslated": "high",
+        "conceptIds": [
+          "closing-day",
+          "land-transfer-tax"
+        ],
+        "prerequisiteAreaIds": [
+          "offer-conditions"
+        ],
+        "order": 4
+      }
+    ]
+  },
+  "concepts": [
+    {
+      "conceptId": "representation-agreement",
+      "domainId": "ontario-real-estate",
+      "areaIds": [
+        "buyer-representation"
+      ],
+      "difficulty": 3,
+      "competences": [
+        "domain-knowledge",
+        "professional-judgment"
+      ],
+      "sourceIds": [
+        "reco-ontario"
+      ],
+      "inferred": false,
+      "terms": {
+        "en": {
+          "term": "representation agreement",
+          "alternatives": [
+            "buyer representation agreement"
+          ],
+          "register": "legal/real-estate"
+        },
+        "es": {
+          "term": "acuerdo de representación",
+          "alternatives": [
+            "contrato de representación del comprador"
+          ],
+          "register": "legal/real-estate"
+        },
+        "zh": {
+          "term": "代理协议",
+          "alternatives": [
+            "买方代理协议"
+          ],
+          "register": "legal/real-estate"
+        }
+      },
+      "definition": {
+        "en": "The agreement that defines whether a brokerage represents you, and what duties it owes you — signed before loyalty can be assumed."
+      },
+      "distinctions": [
+        {
+          "contrast": "being a customer (no representation)",
+          "difference": "A represented client is owed loyalty and full duties; a customer is not. Interpreting one as the other misstates who protects whom."
+        }
+      ],
+      "misconceptions": [
+        {
+          "tag": "representation-assumed",
+          "description": "Assuming representation without agreement",
+          "diagnosticPrompt": "The buyer says 'my agent' but signed nothing. What must the interpretation preserve about choice?"
+        }
+      ],
+      "examples": [
+        {
+          "en": "Before we view homes, we sign a representation agreement so my duties to you are clear.",
+          "es": "Antes de ver viviendas, firmamos un acuerdo de representación para que mis obligaciones con usted queden claras.",
+          "zh": "在看房之前，我们先签署代理协议，明确我对您的义务。"
+        }
+      ],
+      "relationships": []
+    },
+    {
+      "conceptId": "agreement-purchase-sale",
+      "domainId": "ontario-real-estate",
+      "areaIds": [
+        "offer-conditions"
+      ],
+      "difficulty": 3,
+      "competences": [
+        "professional-terminology",
+        "meaning-transfer"
+      ],
+      "sourceIds": [
+        "reco-ontario"
+      ],
+      "inferred": false,
+      "terms": {
+        "en": {
+          "term": "Agreement of Purchase and Sale (APS)",
+          "alternatives": [
+            "APS"
+          ],
+          "register": "legal/real-estate"
+        },
+        "es": {
+          "term": "acuerdo de compraventa",
+          "alternatives": [
+            "contrato de compraventa (APS)"
+          ],
+          "register": "legal/real-estate"
+        },
+        "zh": {
+          "term": "买卖协议",
+          "alternatives": [
+            "购售协议 (APS)"
+          ],
+          "register": "legal/real-estate"
+        }
+      },
+      "definition": {
+        "en": "The binding contract to buy and sell the property on stated price, deposit, conditions, and closing date."
+      },
+      "distinctions": [
+        {
+          "contrast": "verbal understanding",
+          "difference": "The APS binds in writing; a handshake understanding does not. Register and exactness protect both sides."
+        }
+      ],
+      "misconceptions": [
+        {
+          "tag": "offer-as-final",
+          "description": "Treating a conditional offer as a completed sale",
+          "diagnosticPrompt": "The offer has a financing condition. Has the home been sold? Interpret the status exactly."
+        }
+      ],
+      "examples": [
+        {
+          "en": "This Agreement of Purchase and Sale becomes firm when the conditions are waived or fulfilled.",
+          "es": "Este acuerdo de compraventa queda firme cuando las condiciones se cumplen o se renuncian.",
+          "zh": "当条件得到满足或被放弃时，本买卖协议即告确定。"
+        }
+      ],
+      "relationships": []
+    },
+    {
+      "conceptId": "deposit",
+      "domainId": "ontario-real-estate",
+      "areaIds": [
+        "offer-conditions"
+      ],
+      "difficulty": 2,
+      "competences": [
+        "professional-terminology",
+        "bilingual-terminology"
+      ],
+      "sourceIds": [
+        "reco-ontario"
+      ],
+      "inferred": false,
+      "terms": {
+        "en": {
+          "term": "deposit (real estate)",
+          "alternatives": [],
+          "register": "legal/real-estate"
+        },
+        "es": {
+          "term": "depósito",
+          "alternatives": [
+            "anticipo en garantía"
+          ],
+          "register": "legal/real-estate"
+        },
+        "zh": {
+          "term": "订金",
+          "alternatives": [
+            "保证金"
+          ],
+          "register": "legal/real-estate"
+        }
+      },
+      "definition": {
+        "en": "Money held in trust as security with the offer — not the down payment itself, though it forms part of it on closing."
+      },
+      "distinctions": [
+        {
+          "contrast": "down payment",
+          "difference": "Deposit = trust money with the offer. Down payment = total equity at closing. Confusing them misstates what is owed when."
+        }
+      ],
+      "misconceptions": [
+        {
+          "tag": "deposit-equals-downpayment",
+          "description": "Merging deposit and down payment",
+          "diagnosticPrompt": "Deposit $20,000, price $800,000, down payment 20%. How much is held in trust today?"
+        }
+      ],
+      "examples": [
+        {
+          "en": "The deposit is held in the brokerage trust account until closing.",
+          "es": "El depósito se mantiene en la cuenta fiduciaria de la correduría hasta el cierre.",
+          "zh": "订金在成交前存放在经纪公司的信托账户中。"
+        }
+      ],
+      "relationships": []
+    },
+    {
+      "conceptId": "offer-conditions",
+      "domainId": "ontario-real-estate",
+      "areaIds": [
+        "offer-conditions"
+      ],
+      "difficulty": 3,
+      "competences": [
+        "domain-knowledge",
+        "meaning-transfer"
+      ],
+      "sourceIds": [
+        "reco-ontario"
+      ],
+      "inferred": false,
+      "terms": {
+        "en": {
+          "term": "conditions (financing / inspection)",
+          "alternatives": [
+            "conditional offer"
+          ],
+          "register": "legal/real-estate"
+        },
+        "es": {
+          "term": "condiciones (financiación / inspección)",
+          "alternatives": [
+            "oferta condicional"
+          ],
+          "register": "legal/real-estate"
+        },
+        "zh": {
+          "term": "条件（贷款/验房）",
+          "alternatives": [
+            "附条件要约"
+          ],
+          "register": "legal/real-estate"
+        }
+      },
+      "definition": {
+        "en": "Requirements that must be fulfilled or waived by a deadline for the deal to become firm — e.g., financing, home inspection."
+      },
+      "distinctions": [
+        {
+          "contrast": "firm offer",
+          "difference": "Conditional = exit exists until the deadline. Firm = bound now. One word changes whether a buyer can walk away."
+        }
+      ],
+      "misconceptions": [
+        {
+          "tag": "condition-as-formality",
+          "description": "Treating conditions as paperwork",
+          "diagnosticPrompt": "Interpret: 'This offer is conditional on inspection for five business days.' What right does the buyer hold?"
+        }
+      ],
+      "examples": [
+        {
+          "en": "This offer is conditional on a satisfactory home inspection within five business days.",
+          "es": "Esta oferta está condicionada a una inspección satisfactoria de la vivienda en un plazo de cinco días laborables.",
+          "zh": "本要约附带条件：须在五个工作日内完成满意的房屋检查。"
+        }
+      ],
+      "relationships": []
+    },
+    {
+      "conceptId": "disclosure-statement",
+      "domainId": "ontario-real-estate",
+      "areaIds": [
+        "disclosure"
+      ],
+      "difficulty": 3,
+      "competences": [
+        "domain-knowledge",
+        "professional-judgment"
+      ],
+      "sourceIds": [
+        "reco-ontario"
+      ],
+      "inferred": false,
+      "terms": {
+        "en": {
+          "term": "Seller Property Information Statement (SPIS)",
+          "alternatives": [
+            "disclosure statement"
+          ],
+          "register": "legal/real-estate"
+        },
+        "es": {
+          "term": "declaración de información de la propiedad del vendedor",
+          "alternatives": [
+            "declaración de divulgación"
+          ],
+          "register": "legal/real-estate"
+        },
+        "zh": {
+          "term": "卖方物业信息声明",
+          "alternatives": [
+            "披露声明"
+          ],
+          "register": "legal/real-estate"
+        }
+      },
+      "definition": {
+        "en": "The seller's written answers about known property condition — what is known, not a warranty about what is unknown."
+      },
+      "distinctions": [
+        {
+          "contrast": "warranty",
+          "difference": "Disclosure reports knowledge; warranty guarantees condition. Upgrading one into the other invents a promise."
+        }
+      ],
+      "misconceptions": [
+        {
+          "tag": "disclosure-as-warranty",
+          "description": "Interpreting disclosure as guarantee",
+          "diagnosticPrompt": "Seller disclosed 'no known leaks.' The roof leaks. Interpret what was actually promised."
+        }
+      ],
+      "examples": [
+        {
+          "en": "The seller discloses no known water problems, to the best of their knowledge.",
+          "es": "El vendedor declara que, según su leal saber, no conoce problemas de agua.",
+          "zh": "卖方据其所知披露并无已知漏水问题。"
+        }
+      ],
+      "relationships": []
+    },
+    {
+      "conceptId": "closing-day",
+      "domainId": "ontario-real-estate",
+      "areaIds": [
+        "closing-funds"
+      ],
+      "difficulty": 2,
+      "competences": [
+        "domain-knowledge",
+        "terminology-usage"
+      ],
+      "sourceIds": [
+        "reco-ontario"
+      ],
+      "inferred": false,
+      "terms": {
+        "en": {
+          "term": "closing (real estate)",
+          "alternatives": [
+            "closing day",
+            "completion"
+          ],
+          "register": "legal/real-estate"
+        },
+        "es": {
+          "term": "cierre",
+          "alternatives": [
+            "día de cierre",
+            "formalización"
+          ],
+          "register": "legal/real-estate"
+        },
+        "zh": {
+          "term": "交割",
+          "alternatives": [
+            "成交日"
+          ],
+          "register": "legal/real-estate"
+        }
+      },
+      "definition": {
+        "en": "The day title, funds, and keys transfer and the transaction completes — after adjustments are settled."
+      },
+      "distinctions": [
+        {
+          "contrast": "possession date in a lease",
+          "difference": "Closing transfers ownership; possession under a lease transfers use. Same calendar word family, different rights."
+        }
+      ],
+      "misconceptions": [],
+      "examples": [
+        {
+          "en": "On closing, funds and keys are exchanged through the lawyers.",
+          "es": "En el cierre, los fondos y las llaves se intercambian a través de los abogados.",
+          "zh": "在交割日，资金和钥匙通过律师进行交换。"
+        }
+      ],
+      "relationships": []
+    },
+    {
+      "conceptId": "land-transfer-tax",
+      "domainId": "ontario-real-estate",
+      "areaIds": [
+        "closing-funds"
+      ],
+      "difficulty": 2,
+      "competences": [
+        "professional-terminology"
+      ],
+      "sourceIds": [
+        "reco-ontario"
+      ],
+      "inferred": false,
+      "terms": {
+        "en": {
+          "term": "land transfer tax",
+          "alternatives": [],
+          "register": "institutional"
+        },
+        "es": {
+          "term": "impuesto de transferencia de tierras",
+          "alternatives": [
+            "impuesto de transmisión patrimonial"
+          ],
+          "register": "institutional"
+        },
+        "zh": {
+          "term": "土地转让税",
+          "alternatives": [],
+          "register": "institutional"
+        }
+      },
+      "definition": {
+        "en": "Ontario tax payable by the buyer on the transfer of land, calculated on consideration, due on closing (plus Toronto's municipal tax where applicable)."
+      },
+      "distinctions": [
+        {
+          "contrast": "property tax",
+          "difference": "Land transfer tax is one-time on purchase; property tax recurs annually. Buyers budgeting one as the other are surprised at closing."
+        }
+      ],
+      "misconceptions": [
+        {
+          "tag": "transfer-vs-property-tax",
+          "description": "Merging one-time and recurring taxes",
+          "diagnosticPrompt": "Which tax is due only on closing day? Interpret the buyer's two obligations separately."
+        }
+      ],
+      "examples": [
+        {
+          "en": "Land transfer tax is payable on closing, separate from annual property tax.",
+          "es": "El impuesto de transferencia se paga en el cierre, aparte del impuesto anual a la propiedad.",
+          "zh": "土地转让税在交割时缴纳，与年度房产税分开。"
+        }
+      ],
+      "relationships": []
+    }
+  ]
+}

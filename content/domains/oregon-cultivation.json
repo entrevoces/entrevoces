@@ -1,0 +1,715 @@
+{
+  "domain": {
+    "domainId": "oregon-cultivation",
+    "label": {
+      "en": "Oregon — Planting & Cultivation",
+      "es": "Oregón — Siembra y cultivo",
+      "zh": "俄勒冈州 — 种植与栽培"
+    },
+    "jurisdiction": {
+      "country": "US",
+      "region": "Oregon",
+      "regionCode": "US-OR"
+    },
+    "profession": "other",
+    "institutions": [
+      "Oregon State University Extension Service",
+      "Oregon Department of Agriculture"
+    ],
+    "languagePairs": [
+      {
+        "source": "en",
+        "target": "es",
+        "direction": "bidirectional"
+      },
+      {
+        "source": "en",
+        "target": "zh",
+        "direction": "bidirectional"
+      }
+    ],
+    "modalities": [
+      "consecutive"
+    ],
+    "competencyWeights": {
+      "domain-knowledge": 1,
+      "professional-terminology": 0.9,
+      "bilingual-terminology": 0.9,
+      "terminology-usage": 0.9,
+      "listening": 0.8,
+      "speech-production": 0.7,
+      "meaning-transfer": 0.9,
+      "cognitive-interpreting": 0.7,
+      "professional-judgment": 0.8,
+      "integrated-performance": 0.8
+    },
+    "sourceIds": [
+      "osu-extension"
+    ],
+    "status": "active",
+    "version": 1,
+    "translationAreas": [
+      {
+        "areaId": "soil-prep",
+        "label": {
+          "en": "Soil & site preparation"
+        },
+        "setting": "Field / greenhouse bench",
+        "participants": [
+          "extension agent",
+          "grower",
+          "crew lead"
+        ],
+        "goals": [
+          "Convey soil test results and amendments without inventing rates"
+        ],
+        "typicalSpeechFeatures": [
+          "measurements",
+          "pH and nutrients"
+        ],
+        "riskIfMistranslated": "medium",
+        "conceptIds": [
+          "soil-ph",
+          "amendment"
+        ],
+        "prerequisiteAreaIds": [],
+        "order": 1
+      },
+      {
+        "areaId": "planting-calendar",
+        "label": {
+          "en": "Planting calendar & germination"
+        },
+        "setting": "Planning session / field row",
+        "participants": [
+          "grower",
+          "crew"
+        ],
+        "goals": [
+          "Sequence sowing, spacing, and frost risk accurately"
+        ],
+        "typicalSpeechFeatures": [
+          "dates",
+          "spacing numbers"
+        ],
+        "riskIfMistranslated": "high",
+        "conceptIds": [
+          "germination",
+          "frost-date"
+        ],
+        "prerequisiteAreaIds": [
+          "soil-prep"
+        ],
+        "order": 2
+      },
+      {
+        "areaId": "irrigation-water",
+        "label": {
+          "en": "Irrigation & water"
+        },
+        "setting": "Field irrigation check",
+        "participants": [
+          "grower",
+          "irrigator"
+        ],
+        "goals": [
+          "Distinguish water amount, frequency, and stress signs"
+        ],
+        "typicalSpeechFeatures": [
+          "schedules",
+          "stress signs"
+        ],
+        "riskIfMistranslated": "high",
+        "conceptIds": [
+          "irrigation-scheduling"
+        ],
+        "prerequisiteAreaIds": [
+          "planting-calendar"
+        ],
+        "order": 3
+      },
+      {
+        "areaId": "pest-management",
+        "label": {
+          "en": "Pest & disease management"
+        },
+        "setting": "Scouting walk",
+        "participants": [
+          "scout",
+          "grower"
+        ],
+        "goals": [
+          "Identify, threshold, and choose controls within label law"
+        ],
+        "typicalSpeechFeatures": [
+          "thresholds",
+          "label restrictions"
+        ],
+        "riskIfMistranslated": "critical",
+        "conceptIds": [
+          "integrated-pest-management",
+          "pesticide-label"
+        ],
+        "prerequisiteAreaIds": [
+          "planting-calendar"
+        ],
+        "order": 4
+      },
+      {
+        "areaId": "harvest-records",
+        "label": {
+          "en": "Harvest & records"
+        },
+        "setting": "Harvest / packing shed",
+        "participants": [
+          "grower",
+          "buyer",
+          "inspector"
+        ],
+        "goals": [
+          "Convey harvest window, handling, and traceability records"
+        ],
+        "typicalSpeechFeatures": [
+          "windows",
+          "lot records"
+        ],
+        "riskIfMistranslated": "high",
+        "conceptIds": [
+          "harvest-window",
+          "traceability"
+        ],
+        "prerequisiteAreaIds": [
+          "irrigation-water"
+        ],
+        "order": 5
+      }
+    ]
+  },
+  "concepts": [
+    {
+      "conceptId": "soil-ph",
+      "domainId": "oregon-cultivation",
+      "areaIds": [
+        "soil-prep"
+      ],
+      "difficulty": 2,
+      "competences": [
+        "domain-knowledge",
+        "professional-terminology"
+      ],
+      "sourceIds": [
+        "osu-extension"
+      ],
+      "inferred": false,
+      "terms": {
+        "en": {
+          "term": "soil pH",
+          "alternatives": [],
+          "register": "professional/agricultural"
+        },
+        "es": {
+          "term": "pH del suelo",
+          "alternatives": [],
+          "register": "professional/agricultural"
+        },
+        "zh": {
+          "term": "土壤酸碱度",
+          "alternatives": [
+            "土壤pH值"
+          ],
+          "register": "professional/agricultural"
+        }
+      },
+      "definition": {
+        "en": "How acidic or alkaline the soil is (0–14) — it controls whether nutrients are available to the crop at all."
+      },
+      "distinctions": [
+        {
+          "contrast": "soil fertility (nutrient amount)",
+          "difference": "Fertile soil at the wrong pH still starves plants: nutrients lock up. pH is availability, not quantity."
+        }
+      ],
+      "misconceptions": [
+        {
+          "tag": "ph-as-fertility",
+          "description": "Treating pH as fertilizer amount",
+          "diagnosticPrompt": "Test says pH 5.2, nutrients adequate. Why might blueberries thrive and beans struggle? Interpret without adding rates."
+        }
+      ],
+      "examples": [
+        {
+          "en": "Your soil pH is 5.8, slightly acidic, so lime is recommended before planting.",
+          "es": "El pH de su suelo es 5,8, ligeramente ácido, por lo que se recomienda cal antes de sembrar.",
+          "zh": "您的土壤酸碱度为5.8，略偏酸，因此建议种植前施用石灰。"
+        }
+      ],
+      "relationships": []
+    },
+    {
+      "conceptId": "amendment",
+      "domainId": "oregon-cultivation",
+      "areaIds": [
+        "soil-prep"
+      ],
+      "difficulty": 2,
+      "competences": [
+        "terminology-usage"
+      ],
+      "sourceIds": [
+        "osu-extension"
+      ],
+      "inferred": false,
+      "terms": {
+        "en": {
+          "term": "soil amendment",
+          "alternatives": [
+            "amendment"
+          ],
+          "register": "professional/agricultural"
+        },
+        "es": {
+          "term": "enmienda del suelo",
+          "alternatives": [
+            "mejorador del suelo"
+          ],
+          "register": "professional/agricultural"
+        },
+        "zh": {
+          "term": "土壤改良剂",
+          "alternatives": [
+            "土壤调理剂"
+          ],
+          "register": "professional/agricultural"
+        }
+      },
+      "definition": {
+        "en": "Material added to improve soil structure or chemistry (compost, lime, sulfur) — distinct from fertilizer that feeds plants directly."
+      },
+      "distinctions": [
+        {
+          "contrast": "fertilizer",
+          "difference": "Amendments fix the soil; fertilizer feeds the plant. Swapping them changes what the grower buys and spreads."
+        }
+      ],
+      "misconceptions": [
+        {
+          "tag": "amendment-as-fertilizer",
+          "description": "Merging amendment and fertilizer",
+          "diagnosticPrompt": "Agent: 'Add compost as an amendment, then fertilize at planting.' Interpret both acts distinctly."
+        }
+      ],
+      "examples": [
+        {
+          "en": "Compost is an amendment for structure; fertilizer comes later at planting.",
+          "es": "El compost es una enmienda para la estructura; el fertilizante viene después, al sembrar.",
+          "zh": "堆肥是改善结构的改良剂；肥料在种植时再施。"
+        }
+      ],
+      "relationships": []
+    },
+    {
+      "conceptId": "germination",
+      "domainId": "oregon-cultivation",
+      "areaIds": [
+        "planting-calendar"
+      ],
+      "difficulty": 2,
+      "competences": [
+        "domain-knowledge"
+      ],
+      "sourceIds": [
+        "osu-extension"
+      ],
+      "inferred": false,
+      "terms": {
+        "en": {
+          "term": "germination",
+          "alternatives": [],
+          "register": "professional/agricultural"
+        },
+        "es": {
+          "term": "germinación",
+          "alternatives": [],
+          "register": "professional/agricultural"
+        },
+        "zh": {
+          "term": "发芽",
+          "alternatives": [
+            "萌发"
+          ],
+          "register": "professional/agricultural"
+        }
+      },
+      "definition": {
+        "en": "The seed sprouting and emerging — dependent on moisture, temperature, and seed viability, before any harvest question exists."
+      },
+      "distinctions": [
+        {
+          "contrast": "emergence vs. germination (field use)",
+          "difference": "Germination begins below ground; emergence is the shoot breaking the surface. Field talk mixes them — interpreters keep the stage the speaker meant."
+        }
+      ],
+      "misconceptions": [],
+      "examples": [
+        {
+          "en": "Germination takes seven to ten days at this soil temperature.",
+          "es": "La germinación tarda de siete a diez días a esta temperatura del suelo.",
+          "zh": "在此土壤温度下，发芽需要七到十天。"
+        }
+      ],
+      "relationships": []
+    },
+    {
+      "conceptId": "frost-date",
+      "domainId": "oregon-cultivation",
+      "areaIds": [
+        "planting-calendar"
+      ],
+      "difficulty": 2,
+      "competences": [
+        "domain-knowledge",
+        "meaning-transfer"
+      ],
+      "sourceIds": [
+        "osu-extension"
+      ],
+      "inferred": false,
+      "terms": {
+        "en": {
+          "term": "last frost date (average)",
+          "alternatives": [
+            "frost-free date"
+          ],
+          "register": "professional/agricultural"
+        },
+        "es": {
+          "term": "fecha media de la última helada",
+          "alternatives": [],
+          "register": "professional/agricultural"
+        },
+        "zh": {
+          "term": "平均终霜日",
+          "alternatives": [
+            "无霜期开始日"
+          ],
+          "register": "professional/agricultural"
+        }
+      },
+      "definition": {
+        "en": "The average spring date after which frost risk drops — a probability guide, not a guarantee against a late freeze."
+      },
+      "distinctions": [
+        {
+          "contrast": "guaranteed frost-free day",
+          "difference": "An average still carries risk on both sides. Interpreting it as a promise plants tender crops into a freeze."
+        }
+      ],
+      "misconceptions": [
+        {
+          "tag": "frost-average-as-promise",
+          "description": "Rendering average frost date as guarantee",
+          "diagnosticPrompt": "Interpret: 'Average last frost is April 15.' What must survive about uncertainty?"
+        }
+      ],
+      "examples": [
+        {
+          "en": "Average last frost is mid-April, but tender starts still need watching.",
+          "es": "La última helada media es a mediados de abril, pero los plantones sensibles aún necesitan vigilancia.",
+          "zh": "平均终霜日在四月中旬，但娇嫩的幼苗仍需留意。"
+        }
+      ],
+      "relationships": []
+    },
+    {
+      "conceptId": "irrigation-scheduling",
+      "domainId": "oregon-cultivation",
+      "areaIds": [
+        "irrigation-water"
+      ],
+      "difficulty": 3,
+      "competences": [
+        "domain-knowledge",
+        "terminology-usage"
+      ],
+      "sourceIds": [
+        "osu-extension"
+      ],
+      "inferred": false,
+      "terms": {
+        "en": {
+          "term": "irrigation scheduling",
+          "alternatives": [],
+          "register": "professional/agricultural"
+        },
+        "es": {
+          "term": "programación del riego",
+          "alternatives": [],
+          "register": "professional/agricultural"
+        },
+        "zh": {
+          "term": "灌溉计划",
+          "alternatives": [
+            "灌溉调度"
+          ],
+          "register": "professional/agricultural"
+        }
+      },
+      "definition": {
+        "en": "Deciding when and how much to water from soil moisture, crop stage, and weather — not a fixed calendar habit."
+      },
+      "distinctions": [
+        {
+          "contrast": "watering amount alone",
+          "difference": "Scheduling joins timing + amount + crop stage. 'Water more' without 'when' drowns roots as reliably as drought starves them."
+        }
+      ],
+      "misconceptions": [
+        {
+          "tag": "more-water-always",
+          "description": "Interpreting scheduling as simply more water",
+          "diagnosticPrompt": "Grower: 'The schedule says skip tomorrow.' Interpret without turning it into 'water less overall.'"
+        }
+      ],
+      "examples": [
+        {
+          "en": "Check soil moisture before irrigating; the schedule skips tomorrow after rain.",
+          "es": "Revise la humedad del suelo antes de regar; la programación omite mañana después de la lluvia.",
+          "zh": "灌溉前检查土壤湿度；下雨后计划明天跳过一次。"
+        }
+      ],
+      "relationships": []
+    },
+    {
+      "conceptId": "integrated-pest-management",
+      "domainId": "oregon-cultivation",
+      "areaIds": [
+        "pest-management"
+      ],
+      "difficulty": 3,
+      "competences": [
+        "domain-knowledge",
+        "professional-judgment"
+      ],
+      "sourceIds": [
+        "osu-extension"
+      ],
+      "inferred": false,
+      "terms": {
+        "en": {
+          "term": "integrated pest management (IPM)",
+          "alternatives": [
+            "IPM"
+          ],
+          "register": "professional/agricultural"
+        },
+        "es": {
+          "term": "manejo integrado de plagas (MIP)",
+          "alternatives": [
+            "MIP"
+          ],
+          "register": "professional/agricultural"
+        },
+        "zh": {
+          "term": "病虫害综合治理",
+          "alternatives": [
+            "综合防治 (IPM)"
+          ],
+          "register": "professional/agricultural"
+        }
+      },
+      "definition": {
+        "en": "Managing pests by monitoring, thresholds, and least-risk controls first — spraying is one tool, not the definition."
+      },
+      "distinctions": [
+        {
+          "contrast": "spraying on sight",
+          "difference": "IPM acts at economic thresholds after identification; calendar spraying acts regardless. The threshold is the expertise."
+        }
+      ],
+      "misconceptions": [
+        {
+          "tag": "ipm-as-spraying",
+          "description": "Reducing IPM to pesticide application",
+          "diagnosticPrompt": "Scout: 'Counts are below threshold, so we monitor.' Interpret the decision not to spray as action, not neglect."
+        }
+      ],
+      "examples": [
+        {
+          "en": "Counts are below threshold, so under IPM we monitor and release beneficials first.",
+          "es": "Los conteos están por debajo del umbral, así que con MIP vigilamos y liberamos benéficos primero.",
+          "zh": "数量低于阈值，因此按综合治理先监测并释放天敌。"
+        }
+      ],
+      "relationships": []
+    },
+    {
+      "conceptId": "pesticide-label",
+      "domainId": "oregon-cultivation",
+      "areaIds": [
+        "pest-management"
+      ],
+      "difficulty": 3,
+      "competences": [
+        "professional-judgment",
+        "meaning-transfer"
+      ],
+      "sourceIds": [
+        "osu-extension"
+      ],
+      "inferred": false,
+      "terms": {
+        "en": {
+          "term": "pesticide label (the law)",
+          "alternatives": [
+            "label directions"
+          ],
+          "register": "legal/agricultural"
+        },
+        "es": {
+          "term": "etiqueta del pesticida (es la ley)",
+          "alternatives": [
+            "instrucciones de la etiqueta"
+          ],
+          "register": "legal/agricultural"
+        },
+        "zh": {
+          "term": "农药标签（即法律）",
+          "alternatives": [
+            "标签说明"
+          ],
+          "register": "legal/agricultural"
+        }
+      },
+      "definition": {
+        "en": "The legally binding directions for a pesticide's use — rate, protective equipment, re-entry interval. Deviating is unlawful, not creative."
+      },
+      "distinctions": [
+        {
+          "contrast": "recommendation",
+          "difference": "A label binds; advice suggests. Interpreting label limits as tips invites illegal, unsafe application."
+        }
+      ],
+      "misconceptions": [
+        {
+          "tag": "label-as-advice",
+          "description": "Softening label law into advice",
+          "diagnosticPrompt": "Interpret: 'The label requires gloves and a 12-hour re-entry interval.' Keep every obligation."
+        }
+      ],
+      "examples": [
+        {
+          "en": "The label requires gloves and a twelve-hour re-entry interval — that is the law, not a tip.",
+          "es": "La etiqueta exige guantes y un intervalo de reingreso de doce horas: es la ley, no un consejo.",
+          "zh": "标签要求戴手套并遵守12小时再入间隔——这是法律，不是建议。"
+        }
+      ],
+      "relationships": []
+    },
+    {
+      "conceptId": "harvest-window",
+      "domainId": "oregon-cultivation",
+      "areaIds": [
+        "harvest-records"
+      ],
+      "difficulty": 2,
+      "competences": [
+        "domain-knowledge"
+      ],
+      "sourceIds": [
+        "osu-extension"
+      ],
+      "inferred": false,
+      "terms": {
+        "en": {
+          "term": "harvest window",
+          "alternatives": [],
+          "register": "professional/agricultural"
+        },
+        "es": {
+          "term": "ventana de cosecha",
+          "alternatives": [
+            "periodo óptimo de cosecha"
+          ],
+          "register": "professional/agricultural"
+        },
+        "zh": {
+          "term": "收获窗口期",
+          "alternatives": [
+            "最佳收获期"
+          ],
+          "register": "professional/agricultural"
+        }
+      },
+      "definition": {
+        "en": "The limited period when the crop meets quality and market standards — early loses yield, late loses grade."
+      },
+      "distinctions": [
+        {
+          "contrast": "harvest date (single day)",
+          "difference": "A window is a range judged by readiness signs; a single date ignores weather and ripening spread."
+        }
+      ],
+      "misconceptions": [],
+      "examples": [
+        {
+          "en": "The harvest window opens next week, judged by color and firmness, not the calendar alone.",
+          "es": "La ventana de cosecha se abre la próxima semana, según color y firmeza, no solo el calendario.",
+          "zh": "收获窗口期下周开启，按颜色和硬度判断，不只看日历。"
+        }
+      ],
+      "relationships": []
+    },
+    {
+      "conceptId": "traceability",
+      "domainId": "oregon-cultivation",
+      "areaIds": [
+        "harvest-records"
+      ],
+      "difficulty": 2,
+      "competences": [
+        "domain-knowledge"
+      ],
+      "sourceIds": [
+        "osu-extension"
+      ],
+      "inferred": false,
+      "terms": {
+        "en": {
+          "term": "traceability (lot tracking)",
+          "alternatives": [
+            "lot traceability"
+          ],
+          "register": "institutional"
+        },
+        "es": {
+          "term": "trazabilidad (por lotes)",
+          "alternatives": [],
+          "register": "institutional"
+        },
+        "zh": {
+          "term": "可追溯性（批次追踪）",
+          "alternatives": [],
+          "register": "institutional"
+        }
+      },
+      "definition": {
+        "en": "Records linking each harvested lot back to field, date, and handling so problems can be isolated and recalled precisely."
+      },
+      "distinctions": [
+        {
+          "contrast": "general farm diary",
+          "difference": "Traceability is lot-specific and auditable; a diary is narrative. Buyers and inspectors need the lot chain."
+        }
+      ],
+      "misconceptions": [],
+      "examples": [
+        {
+          "en": "Keep lot records so traceability holds from field to buyer.",
+          "es": "Mantenga registros por lote para que la trazabilidad se mantenga del campo al comprador.",
+          "zh": "保留批次记录，确保从田间到买家的可追溯性。"
+        }
+      ],
+      "relationships": []
+    }
+  ]
+}

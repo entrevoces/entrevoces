@@ -1,0 +1,719 @@
+{
+  "domain": {
+    "domainId": "ai-technology",
+    "label": {
+      "en": "AI Technology — ES→EN Product Translation",
+      "es": "Tecnología de IA — Traducción de producto ES→EN",
+      "zh": "人工智能技术 — 西译英产品翻译"
+    },
+    "jurisdiction": {
+      "country": "INTL",
+      "region": "Global (remote product teams)",
+      "regionCode": "INTL"
+    },
+    "profession": "other",
+    "institutions": [
+      "AI product teams (glossary-governed)"
+    ],
+    "languagePairs": [
+      {
+        "source": "es",
+        "target": "en",
+        "direction": "bidirectional"
+      },
+      {
+        "source": "en",
+        "target": "zh",
+        "direction": "bidirectional"
+      }
+    ],
+    "modalities": [
+      "consecutive",
+      "sight",
+      "remote"
+    ],
+    "competencyWeights": {
+      "domain-knowledge": 0.9,
+      "professional-terminology": 1,
+      "bilingual-terminology": 1,
+      "terminology-usage": 1,
+      "listening": 0.7,
+      "speech-production": 0.7,
+      "meaning-transfer": 1,
+      "cognitive-interpreting": 0.6,
+      "professional-judgment": 0.9,
+      "integrated-performance": 0.9
+    },
+    "sourceIds": [
+      "ai-glossary"
+    ],
+    "status": "active",
+    "version": 1,
+    "translationAreas": [
+      {
+        "areaId": "model-basics",
+        "label": {
+          "en": "Models & training"
+        },
+        "setting": "Product / ML review (remote)",
+        "participants": [
+          "ML engineer",
+          "product manager",
+          "localization"
+        ],
+        "goals": [
+          "Keep model, training, and data claims exact across languages"
+        ],
+        "typicalSpeechFeatures": [
+          "model vs. system",
+          "training claims"
+        ],
+        "riskIfMistranslated": "high",
+        "conceptIds": [
+          "machine-learning-model",
+          "training-data"
+        ],
+        "prerequisiteAreaIds": [],
+        "order": 1
+      },
+      {
+        "areaId": "generation-risks",
+        "label": {
+          "en": "Generation & its risks"
+        },
+        "setting": "Trust & safety review",
+        "participants": [
+          "AI engineer",
+          "support lead"
+        ],
+        "goals": [
+          "Never soften hallucination, bias, or guardrail language for marketing comfort"
+        ],
+        "typicalSpeechFeatures": [
+          "risk language",
+          "hedging"
+        ],
+        "riskIfMistranslated": "critical",
+        "conceptIds": [
+          "ai-hallucination",
+          "prompt",
+          "guardrails"
+        ],
+        "prerequisiteAreaIds": [
+          "model-basics"
+        ],
+        "order": 2
+      },
+      {
+        "areaId": "serving-scale",
+        "label": {
+          "en": "Inference & serving"
+        },
+        "setting": "Engineering stand-up / docs",
+        "participants": [
+          "engineer",
+          "translator"
+        ],
+        "goals": [
+          "Distinguish inference, latency, tokens, and embeddings in docs and UI"
+        ],
+        "typicalSpeechFeatures": [
+          "inference vs. training",
+          "units"
+        ],
+        "riskIfMistranslated": "medium",
+        "conceptIds": [
+          "inference",
+          "token",
+          "embedding"
+        ],
+        "prerequisiteAreaIds": [
+          "model-basics"
+        ],
+        "order": 3
+      },
+      {
+        "areaId": "product-strings",
+        "label": {
+          "en": "Product strings & docs (sight)"
+        },
+        "setting": "Localization review",
+        "participants": [
+          "localizer",
+          "designer"
+        ],
+        "goals": [
+          "Sight-translate UI strings without calquing Spanish syntax into English buttons"
+        ],
+        "typicalSpeechFeatures": [
+          "UI brevity",
+          "register"
+        ],
+        "riskIfMistranslated": "medium",
+        "conceptIds": [
+          "fine-tuning"
+        ],
+        "prerequisiteAreaIds": [
+          "generation-risks"
+        ],
+        "order": 4
+      }
+    ]
+  },
+  "concepts": [
+    {
+      "conceptId": "machine-learning-model",
+      "domainId": "ai-technology",
+      "areaIds": [
+        "model-basics"
+      ],
+      "difficulty": 2,
+      "competences": [
+        "domain-knowledge",
+        "professional-terminology"
+      ],
+      "sourceIds": [
+        "ai-glossary"
+      ],
+      "inferred": false,
+      "terms": {
+        "en": {
+          "term": "machine learning model",
+          "alternatives": [
+            "ML model",
+            "model"
+          ],
+          "register": "technical"
+        },
+        "es": {
+          "term": "modelo de aprendizaje automático",
+          "alternatives": [
+            "modelo de machine learning"
+          ],
+          "register": "technical"
+        },
+        "zh": {
+          "term": "机器学习模型",
+          "alternatives": [
+            "ML模型"
+          ],
+          "register": "technical"
+        }
+      },
+      "definition": {
+        "en": "A program trained on data to make predictions or generate content — not the whole product built around it."
+      },
+      "distinctions": [
+        {
+          "contrast": "AI system / product",
+          "difference": "The model is one component; the system adds data, guardrails, UI, and policy. Product copy that swaps them over-claims."
+        }
+      ],
+      "misconceptions": [
+        {
+          "tag": "model-equals-product",
+          "description": "Translating model as the whole AI product",
+          "diagnosticPrompt": "Spanish: 'Nuestro modelo responde en la app.' What two layers must English keep apart?"
+        }
+      ],
+      "examples": [
+        {
+          "en": "The model generates a draft; the product decides what ships.",
+          "es": "El modelo genera un borrador; el producto decide qué se publica.",
+          "zh": "模型生成草稿；产品决定发布什么。"
+        }
+      ],
+      "relationships": []
+    },
+    {
+      "conceptId": "training-data",
+      "domainId": "ai-technology",
+      "areaIds": [
+        "model-basics"
+      ],
+      "difficulty": 2,
+      "competences": [
+        "domain-knowledge"
+      ],
+      "sourceIds": [
+        "ai-glossary"
+      ],
+      "inferred": false,
+      "terms": {
+        "en": {
+          "term": "training data",
+          "alternatives": [],
+          "register": "technical"
+        },
+        "es": {
+          "term": "datos de entrenamiento",
+          "alternatives": [],
+          "register": "technical"
+        },
+        "zh": {
+          "term": "训练数据",
+          "alternatives": [],
+          "register": "technical"
+        }
+      },
+      "definition": {
+        "en": "The examples used to teach a model during training — distinct from the live inputs users send later."
+      },
+      "distinctions": [
+        {
+          "contrast": "user data / prompts at runtime",
+          "difference": "Training data shaped the model beforehand; prompts arrive after. Privacy copy that merges them misleads users about what was learned from them."
+        }
+      ],
+      "misconceptions": [
+        {
+          "tag": "training-equals-user-data",
+          "description": "Merging training data with runtime user data",
+          "diagnosticPrompt": "Interpret: 'No entrenamos con tus mensajes.' Keep training and runtime apart."
+        }
+      ],
+      "examples": [
+        {
+          "en": "Training data teaches the model; your prompt today does not retrain it.",
+          "es": "Los datos de entrenamiento enseñan al modelo; tu mensaje de hoy no lo reentrena.",
+          "zh": "训练数据用于教模型；您今天的提示不会重新训练它。"
+        }
+      ],
+      "relationships": []
+    },
+    {
+      "conceptId": "ai-hallucination",
+      "domainId": "ai-technology",
+      "areaIds": [
+        "generation-risks"
+      ],
+      "difficulty": 3,
+      "competences": [
+        "domain-knowledge",
+        "meaning-transfer",
+        "professional-judgment"
+      ],
+      "sourceIds": [
+        "ai-glossary"
+      ],
+      "inferred": false,
+      "terms": {
+        "en": {
+          "term": "hallucination (AI)",
+          "alternatives": [
+            "AI hallucination",
+            "confabulation (technical writing)"
+          ],
+          "register": "technical"
+        },
+        "es": {
+          "term": "alucinación (IA)",
+          "alternatives": [
+            "alucinación de la IA"
+          ],
+          "register": "technical"
+        },
+        "zh": {
+          "term": "幻觉（人工智能）",
+          "alternatives": [
+            "AI幻觉"
+          ],
+          "register": "technical"
+        }
+      },
+      "definition": {
+        "en": "Fluent model output that is false or unsupported — stated with confidence, which is exactly why the word matters."
+      },
+      "distinctions": [
+        {
+          "contrast": "hallucination (medical symptom)",
+          "difference": "Same word, different world: here it is a system failure mode, not a patient symptom. Domain decides the sense — tenancy in your head."
+        }
+      ],
+      "misconceptions": [
+        {
+          "tag": "hallucination-softened",
+          "description": "Softening hallucination into 'small error' in risk copy",
+          "diagnosticPrompt": "Marketing wants 'occasional inaccuracies' for 'hallucinations.' Interpret the safety lead's refusal exactly."
+        }
+      ],
+      "examples": [
+        {
+          "en": "The model can hallucinate citations that do not exist.",
+          "es": "El modelo puede alucinar citas que no existen.",
+          "zh": "模型可能会虚构不存在的引用。"
+        }
+      ],
+      "relationships": []
+    },
+    {
+      "conceptId": "prompt",
+      "domainId": "ai-technology",
+      "areaIds": [
+        "generation-risks"
+      ],
+      "difficulty": 1,
+      "competences": [
+        "professional-terminology",
+        "bilingual-terminology"
+      ],
+      "sourceIds": [
+        "ai-glossary"
+      ],
+      "inferred": false,
+      "terms": {
+        "en": {
+          "term": "prompt",
+          "alternatives": [
+            "input prompt"
+          ],
+          "register": "technical/product"
+        },
+        "es": {
+          "term": "prompt",
+          "alternatives": [
+            "instrucción",
+            "mensaje del usuario (UI)"
+          ],
+          "register": "technical/product"
+        },
+        "zh": {
+          "term": "提示词",
+          "alternatives": [
+            "提示"
+          ],
+          "register": "technical/product"
+        }
+      },
+      "definition": {
+        "en": "The instruction/input given to a generative model. In Spanish product work 'prompt' often stays borrowed — style guide decides."
+      },
+      "distinctions": [
+        {
+          "contrast": "command / order (everyday)",
+          "difference": "A prompt can be a question, example, or document — not only an order. Calquing 'comando' narrows the product's English."
+        }
+      ],
+      "misconceptions": [],
+      "examples": [
+        {
+          "en": "Write a prompt that gives the model an example first.",
+          "es": "Escribe un prompt que primero le dé un ejemplo al modelo.",
+          "zh": "编写一个先给模型示例的提示词。"
+        }
+      ],
+      "relationships": []
+    },
+    {
+      "conceptId": "guardrails",
+      "domainId": "ai-technology",
+      "areaIds": [
+        "generation-risks"
+      ],
+      "difficulty": 3,
+      "competences": [
+        "professional-judgment",
+        "meaning-transfer"
+      ],
+      "sourceIds": [
+        "ai-glossary"
+      ],
+      "inferred": false,
+      "terms": {
+        "en": {
+          "term": "guardrails",
+          "alternatives": [
+            "safety guardrails"
+          ],
+          "register": "technical/product"
+        },
+        "es": {
+          "term": "barreras de seguridad",
+          "alternatives": [
+            "guardarraíles (calque — avoid)",
+            "controles de seguridad"
+          ],
+          "register": "technical/product"
+        },
+        "zh": {
+          "term": "护栏（安全护栏）",
+          "alternatives": [
+            "安全控制"
+          ],
+          "register": "technical/product"
+        }
+      },
+      "definition": {
+        "en": "Controls that constrain model behavior (filters, policies, checks) — product teams keep the English metaphor or localize deliberately, never by calque accident."
+      },
+      "distinctions": [
+        {
+          "contrast": "censorship (loaded everyday sense)",
+          "difference": "Guardrails include quality and privacy checks, not only content blocking. A loaded rendering starts an argument the source never made."
+        }
+      ],
+      "misconceptions": [
+        {
+          "tag": "guardrail-calque",
+          "description": "Literal calque of guardrails",
+          "diagnosticPrompt": "Draft says 'guardarraíles.' What does the style-guide-aware rendering choose, and why?"
+        }
+      ],
+      "examples": [
+        {
+          "en": "Guardrails block the request before the model answers.",
+          "es": "Las barreras de seguridad bloquean la solicitud antes de que el modelo responda.",
+          "zh": "安全护栏在模型回答之前阻止该请求。"
+        }
+      ],
+      "relationships": []
+    },
+    {
+      "conceptId": "inference",
+      "domainId": "ai-technology",
+      "areaIds": [
+        "serving-scale"
+      ],
+      "difficulty": 3,
+      "competences": [
+        "domain-knowledge",
+        "professional-terminology"
+      ],
+      "sourceIds": [
+        "ai-glossary"
+      ],
+      "inferred": false,
+      "terms": {
+        "en": {
+          "term": "inference (ML)",
+          "alternatives": [
+            "model inference"
+          ],
+          "register": "technical"
+        },
+        "es": {
+          "term": "inferencia",
+          "alternatives": [
+            "inferencia del modelo"
+          ],
+          "register": "technical"
+        },
+        "zh": {
+          "term": "推理（机器学习）",
+          "alternatives": [
+            "模型推理"
+          ],
+          "register": "technical"
+        }
+      },
+      "definition": {
+        "en": "Running a trained model to produce an output — the using, not the teaching. (Not logical deduction in everyday prose.)"
+      },
+      "distinctions": [
+        {
+          "contrast": "training",
+          "difference": "Training builds the model once (or periodically); inference uses it per request. Latency and cost live in inference — swapping the words misplaces the engineering."
+        }
+      ],
+      "misconceptions": [
+        {
+          "tag": "inference-as-training",
+          "description": "Swapping inference and training",
+          "diagnosticPrompt": "Spanish: 'La inferencia tarda 200 ms.' Interpret without implying retraining per tap."
+        }
+      ],
+      "examples": [
+        {
+          "en": "Inference runs in 200 milliseconds on device.",
+          "es": "La inferencia se ejecuta en 200 milisegundos en el dispositivo.",
+          "zh": "推理在设备上200毫秒内运行。"
+        }
+      ],
+      "relationships": []
+    },
+    {
+      "conceptId": "token",
+      "domainId": "ai-technology",
+      "areaIds": [
+        "serving-scale"
+      ],
+      "difficulty": 2,
+      "competences": [
+        "professional-terminology"
+      ],
+      "sourceIds": [
+        "ai-glossary"
+      ],
+      "inferred": false,
+      "terms": {
+        "en": {
+          "term": "token (language model)",
+          "alternatives": [],
+          "register": "technical"
+        },
+        "es": {
+          "term": "token",
+          "alternatives": [
+            "unidad de texto (explanatory)"
+          ],
+          "register": "technical"
+        },
+        "zh": {
+          "term": "词元",
+          "alternatives": [
+            "token"
+          ],
+          "register": "technical"
+        }
+      },
+      "definition": {
+        "en": "A chunk of text (often sub-word) that models read and generate in, and that pricing/limits count — not a coin, not quite a word."
+      },
+      "distinctions": [
+        {
+          "contrast": "word",
+          "difference": "Tokens split words ('unbelievable' → pieces). Limits quoted in tokens surprise users who count words — good interpreting flags the unit."
+        }
+      ],
+      "misconceptions": [
+        {
+          "tag": "token-equals-word",
+          "description": "Translating token as word",
+          "diagnosticPrompt": "Limit: '4,000 tokens.' Interpret so a Spanish writer does not budget 4,000 words."
+        }
+      ],
+      "examples": [
+        {
+          "en": "This plan includes 4,000 tokens per response, roughly 3,000 words.",
+          "es": "Este plan incluye 4.000 tokens por respuesta, unas 3.000 palabras.",
+          "zh": "此方案每次响应包含4,000个词元，约3,000个词。"
+        }
+      ],
+      "relationships": []
+    },
+    {
+      "conceptId": "embedding",
+      "domainId": "ai-technology",
+      "areaIds": [
+        "serving-scale"
+      ],
+      "difficulty": 3,
+      "competences": [
+        "domain-knowledge"
+      ],
+      "sourceIds": [
+        "ai-glossary"
+      ],
+      "inferred": false,
+      "terms": {
+        "en": {
+          "term": "embedding",
+          "alternatives": [
+            "vector embedding"
+          ],
+          "register": "technical"
+        },
+        "es": {
+          "term": "embedding",
+          "alternatives": [
+            "representación vectorial",
+            "incrustación (avoid)"
+          ],
+          "register": "technical"
+        },
+        "zh": {
+          "term": "嵌入向量",
+          "alternatives": [
+            "向量嵌入"
+          ],
+          "register": "technical"
+        }
+      },
+      "definition": {
+        "en": "A numeric vector representing meaning so similar texts sit near each other — the geometry search and recommendations run on."
+      },
+      "distinctions": [
+        {
+          "contrast": "embedded (hardware) / incrustación",
+          "difference": "An embedding is a meaning-vector, not a chip and not a jewel setting. The false friend embarrasses docs in both directions."
+        }
+      ],
+      "misconceptions": [
+        {
+          "tag": "embedding-false-friend",
+          "description": "Rendering embedding as incrustación/hardware",
+          "diagnosticPrompt": "Draft: 'incrustaciones de texto.' Repair it for an engineering reader."
+        }
+      ],
+      "examples": [
+        {
+          "en": "Search compares embeddings to find meaning, not keywords.",
+          "es": "La búsqueda compara embeddings para encontrar significado, no palabras clave.",
+          "zh": "搜索比较嵌入向量以找到含义，而非关键词。"
+        }
+      ],
+      "relationships": []
+    },
+    {
+      "conceptId": "fine-tuning",
+      "domainId": "ai-technology",
+      "areaIds": [
+        "product-strings"
+      ],
+      "difficulty": 3,
+      "competences": [
+        "domain-knowledge",
+        "terminology-usage"
+      ],
+      "sourceIds": [
+        "ai-glossary"
+      ],
+      "inferred": false,
+      "terms": {
+        "en": {
+          "term": "fine-tuning",
+          "alternatives": [
+            "fine-tune (verb)"
+          ],
+          "register": "technical"
+        },
+        "es": {
+          "term": "ajuste fino",
+          "alternatives": [
+            "fine-tuning"
+          ],
+          "register": "technical"
+        },
+        "zh": {
+          "term": "微调",
+          "alternatives": [],
+          "register": "technical"
+        }
+      },
+      "definition": {
+        "en": "Further training a pretrained model on narrower data to specialize it — more than prompting, less than training from scratch."
+      },
+      "distinctions": [
+        {
+          "contrast": "prompting / configuration",
+          "difference": "Fine-tuning changes model weights; prompting changes only the input. Sales copy that confuses them promises learning the product never does."
+        }
+      ],
+      "misconceptions": [
+        {
+          "tag": "finetune-as-settings",
+          "description": "Presenting fine-tuning as user settings",
+          "diagnosticPrompt": "Interpret: 'No ajustamos el modelo con tus datos.' Keep weights vs. settings apart."
+        }
+      ],
+      "examples": [
+        {
+          "en": "Fine-tuning specializes the model; a prompt only instructs it once.",
+          "es": "El ajuste fino especializa el modelo; un prompt solo le da una instrucción una vez.",
+          "zh": "微调使模型专业化；提示词只指示一次。"
+        }
+      ],
+      "relationships": []
+    }
+  ]
+}
