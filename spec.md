@@ -515,3 +515,39 @@ Step-by-step GitHub Pages (Actions → static artifact per app), Cloudflare Page
    VocabCraft: first-person voxel build with walk-across proof.
 4. Judging artifacts: `docs/judging/winning-pass.md`, `docs/demo/demo-script-3min.md`,
    `docs/agents.md`. Tests: `tests/tenancy-generation.test.js` (18 total).
+
+## 25. Contest compliance contract (Meta Global AI Developer Hackathon)
+
+1. Track: Indie Developer, *Build for Your World*. The system trains
+   interpreters; it never gives medical, legal, or tax advice to end clients
+   (synthetic practice only) and is not a chatbot, RAG demo, or screener —
+   banned-pattern avoidance is a design constraint, not a disclaimer.
+2. Meta tooling is load-bearing and logged: Wonder invents games and acts as
+   KB second reviewer (may tighten, never waive, the deterministic gate);
+   Spark drafts enrichment (always inferred); Voice observes speech
+   (disputable). No key → `local-template` labels; a fake Meta call is a
+   spec violation.
+3. Public repos, new-work git history, ≤4 team, one Representative, 3-minute
+   demo, Nov 4 21:00 ET deadline: tracked in docs/judging/contest-compliance.md.
+4. No affiliate links anywhere in product, docs, or recommendations. The
+   altruistic shelf recommends to help, full stop.
+
+## 26. Polish standard (real-studio bar)
+
+- Scene-first where genre allows (canvas/constructed sets), panels only for
+  judgement phases. Feedback lands at the spot of action within one frame.
+- Sound: synthesized event sounds (WebAudio, no assets, no autoplay, always
+  after a user gesture; wrong-answer sounds never punish harshly).
+- Title screens sell the world in one sentence; engine jargon (Stage N,
+  evidence counts) lives in the Mirror/Console, not on game doors.
+- Every control is reachable by touch and keyboard; reduced-motion respected;
+  text never truncates the term being taught at play distance.
+- Comfort is a first-class mode (§27), not a settings afterthought.
+
+## 27. Comfort (casual) mode
+
+A learner may choose comfort in the Hub profile (`ev:comfortMode`).
+The engine then prefers gentle games (BUILD, GATHER, DIVE, FEEL, ECHO verbs;
+no lives/timers as the headline), and pressure games are suggested only with
+their pressure named. Casual comfort and professional depth share one
+learner record — comfort changes the door, never the truth inside.

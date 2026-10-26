@@ -173,3 +173,11 @@ test("CPE review routes exist and gate rejects bad knowledge (in-process)", asyn
   const bad = { conceptId: "bad-1", domainId: "oregon-medical", areaIds: ["intake-registration"], terms: { en: { term: "intake" } }, definition: { en: "x" }, examples: [], distinctions: [], misconceptions: [], sourceIds: [] };
   assert.equal(core.reviewKnowledgeItem(bad, { concepts: core.CONCEPTS, sources: core.SOURCES }).verdict, "reject");
 });
+
+test("comfort mode prefers gentle doors and names pressure honestly", () => {
+  const cs = core.SEED_CONCEPTS_BY_DOMAIN["oregon-medical"];
+  const st = core.computeLearnerState({ learnerId: "C", domainId: "oregon-medical", events: [], concepts: cs, now: Date.now() });
+  const chill = core.recommendGames({ domain: core.OREGON_MEDICAL, concepts: cs, learnerState: st, limit: 3, comfort: true });
+  const GENTLE = new Set(["BUILD", "GATHER", "DIVE", "FEEL", "ECHO", "MINE & BUILD"]);
+  assert.ok(chill.every((g) => GENTLE.has(g.verb) || g.pressureNote), "comfort picks are gentle or carry a pressure warning");
+});
