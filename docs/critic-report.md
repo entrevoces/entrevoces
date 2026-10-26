@@ -144,3 +144,16 @@ live: hub games-first, Echo stone interaction, Rush drop/miss loop, 60 fps,
 zero page errors. Remaining honest debt: Bench/Table/Repair/Atelier are
 still DOM judgement scenes (their verbs are paper/stamp/strategy), and
 VocabCraft/VR label sizing needs a device pass.
+
+## Regeneration completed (Bench / Table / Repair / Atelier / Milonga)
+
+All remaining text-centered games rebuilt scene-first on canvas per
+game-spec-kit, preserving their evidence contracts exactly (Bench sight 5 +
+judgment 3 with one-render-per-group and overlap>=0.45; Table strategy 5 vs
+fidelity 8 with trust<40 impatience; Repair spot/fit scored separately,
+stage 7; Atelier four beats 1/2/4/3 with shelf persistence; Milonga vibe
+stage 8 / gloss stage 4 with record unlocks). Headless live verification:
+Bench scan+render "On the record", Table gesture→render nod, Repair
+wrong-lift diagnosis, Atelier orb "Heard true", Milonga record "Carried" —
+61 fps, zero page errors. Every playable title is now canvas, 3D, or a
+physical tabletop; DOM remains for menus, reports, and the Hub launcher.
