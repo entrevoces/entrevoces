@@ -1,0 +1,13 @@
+# Game Spec (game-spec-kit format — every ENTRE VOCES game must have one)
+
+## Player fantasy (one sentence, no learning words)
+## Core loop (30 seconds, verbs only)
+## Controls (one hand / one tap to start enjoying)
+## Fail state & recovery (kind, visible, instructive)
+## Juice (particles, shake, sound, animation on every verb)
+## Progression (minute 1 vs minute 20 vs day 20)
+## Visual identity (palette, one memorable character/object, no stock UI)
+## Text budget (max words on screen during play; text lives on objects, not paragraphs)
+## Interpretation core (which stage, where meaning can be lost, how the game notices)
+## Session (target minutes, natural stop, tomorrow-hook)
+## Comfort (what changes when pressure is off)

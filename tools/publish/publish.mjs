@@ -55,7 +55,8 @@ function rewriteGameImports(dir) {
     writeFileSync(p, readFileSync(p, "utf8")
       .replaceAll("../../hub/", SITE_URL + "apps/hub/")
       .replaceAll("../../../packages/engine-core/index.js", "./engine/engine-core/index.js")
-      .replaceAll("../../../packages/engine-client/engine-client.js", "./engine/engine-client/engine-client.js"));
+      .replaceAll("../../../packages/engine-client/engine-client.js", "./engine/engine-client/engine-client.js")
+      .replaceAll("../../../packages/game-kit/juice.js", "./engine/game-kit/juice.js"));
   }
   const htmlPath = join(dir, "index.html");
   if (existsSync(htmlPath)) writeFileSync(htmlPath, readFileSync(htmlPath, "utf8").replaceAll("../../hub/", SITE_URL));
@@ -63,6 +64,7 @@ function rewriteGameImports(dir) {
 function vendorEngine(destDir) {
   cpSync(join(ROOT, "packages/engine-core"), join(destDir, "engine/engine-core"), { recursive: true });
   cpSync(join(ROOT, "packages/engine-client"), join(destDir, "engine/engine-client"), { recursive: true });
+  cpSync(join(ROOT, "packages/game-kit"), join(destDir, "engine/game-kit"), { recursive: true });
 }
 
 const results = [];
