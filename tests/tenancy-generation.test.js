@@ -8,8 +8,8 @@ import { EngineClient, MemoryStorage } from "../packages/engine-client/engine-cl
 
 const ALL_GAMES = readdirSync("apps/games", { withFileTypes: true }).filter((d) => d.isDirectory()).map((d) => d.name);
 
-test("six worlds seed clean, each with sourced trilingual concepts", () => {
-  assert.equal(core.SEED_DOMAINS.length, 6);
+test("seven worlds seed clean, each with sourced trilingual concepts", () => {
+  assert.equal(core.SEED_DOMAINS.length, 7);
   const sids = new Set(core.SOURCES.map((s) => s.sourceId));
   for (const d of core.SEED_DOMAINS) {
     assert.equal(core.validateDomainConfig(d).ok, true, d.domainId);
@@ -21,7 +21,7 @@ test("six worlds seed clean, each with sourced trilingual concepts", () => {
       assert.equal(c.domainId, d.domainId);
     }
   }
-  assert.equal(core.CONCEPTS.length, 53);
+  assert.equal(core.CONCEPTS.length, 61);
 });
 
 test("tenancy: EngineClient in one world never surfaces another world's concepts or state", async () => {

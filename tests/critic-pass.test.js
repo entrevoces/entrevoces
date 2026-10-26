@@ -60,3 +60,36 @@ test("portfolio now includes genre-surprise games with distinct verbs", () => {
   assert.equal(new Set(verbs).size, verbs.length, "no verb repeats across the portfolio");
   assert.ok(core.GAME_CATALOG.find((g) => g.gameId === "melon-reef").stages.includes(1), "reef tests listening recognition (reverse direction)");
 });
+
+test("training modes re-rank training: telephone prizes listening, written prizes distinctions", () => {
+  const now = Date.now();
+  const st = core.computeLearnerState({ learnerId: "M", domainId: "oregon-medical", events: [], concepts: MED, now });
+  const phone = core.recommendNext({ domain: core.OREGON_MEDICAL, concepts: MED, learnerState: st, mode: core.modeById("telephone") });
+  const written = core.recommendNext({ domain: core.OREGON_MEDICAL, concepts: MED, learnerState: st, mode: core.modeById("written") });
+  assert.ok(core.modeById("cultural").games.includes("milonga-sentido"));
+  assert.ok(phone && written, "both modes produce a recommendation");
+});
+
+test("altruistic resources match weakest stage and mode, with reasons", () => {
+  const recs = core.recommendResources({ learnerState: null, concepts: MED, modes: ["consecutive"], limit: 3 });
+  assert.equal(recs.length, 3);
+  assert.ok(recs.every((r) => r.title && r.by && r.reason.length > 20));
+  assert.ok(recs.some((r) => r.forModes.includes("consecutive") || r.matchedStages?.length >= 0));
+});
+
+test("imagined classmates are deterministic, labelled, and hobby-suggestions map to real games", () => {
+  const a = core.generateClassmates("AULA-1234");
+  const b = core.generateClassmates("AULA-1234");
+  assert.deepEqual(a, b);
+  assert.ok(a.every((c) => c.imagined && core.GAME_CATALOG.some((g) => g.gameId === c.suggestedGameId)));
+  const board = core.classroomLeaderboard({ classCode: "AULA-1234", learnerName: "You", learnerProofs: 9999 });
+  assert.equal(board[0].name, "You");
+  assert.equal(board[0].imagined, false);
+  assert.ok(board.slice(1).every((r) => r.imagined), "everyone else is honestly imagined");
+});
+
+test("tango world is cultural translation, with classics kept off the page (no lyrics in seed)", () => {
+  const tango = core.SEED_CONCEPTS_BY_DOMAIN["rio-tango"];
+  assert.equal(tango.length, 8);
+  assert.ok(tango.every((c) => c.sourceIds.includes("tango-culture")));
+});

@@ -78,6 +78,19 @@
     "limitations": "Industry glossary, not a translation standard; client style guides govern product strings."
   },
   {
+    "sourceId": "tango-culture",
+    "title": "Tango cultural references — Academia Nacional del Tango & lunfardo lexicography (Gobello)",
+    "publisher": "Academia Nacional del Tango / José Gobello, Nuevo diccionario lunfardo",
+    "url": "https://en.wikipedia.org/wiki/Lunfardo",
+    "jurisdiction": "AR-UY",
+    "publishedOrRevised": "accessed 2026-10-26",
+    "audience": "Cultural translators, tango listeners, Spanish learners",
+    "authority": "medium",
+    "permittedUse": "Cultural terms summarized; game verses are original pastiche written for ENTRE VOCES — no copyrighted lyrics are reproduced. Classic recordings are linked to streaming search, never copied.",
+    "instructionalRelevance": "Grounds the Río de la Plata tango path: lunfardo, arrabal, milonga culture and the nostalgia economy of the classics.",
+    "limitations": "Lunfardo is living slang; renderings are Rioplatense-flavoured and should be checked with porteño speakers for publication."
+  },
+  {
     "sourceId": "ca-ftb",
     "title": "California Franchise Tax Board (FTB) — resident tax guidance & notices",
     "publisher": "California Franchise Tax Board",
