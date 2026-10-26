@@ -1,0 +1,14 @@
+# ENTRE VOCES CPE — Cloudflare Workers + D1 (production port of server.js)
+# The Node server in this folder is the local/judging mirror of the same wire protocol.
+# Deploy: npx wrangler d1 create entrevoces-cpe && npx wrangler deploy
+name = "entrevoces-progression-engine"
+main = "worker.js"
+compatibility_date = "2026-10-26"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "entrevoces-cpe"
+database_id = "REPLACE_WITH_D1_ID"
+
+[vars]
+# AUTHOR_TOKEN is a secret: npx wrangler secret put AUTHOR_TOKEN (never commit it)

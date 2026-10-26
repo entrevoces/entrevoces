@@ -1,0 +1,16 @@
+{
+  "name": "entrevoces",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "ENTRE VOCES \u2014 Progression Engine first; standalone games as thin clients (spec.md v2.1).",
+  "scripts": {
+    "test": "node --test tests/conformance.test.js tests/tenancy-generation.test.js tests/critic-pass.test.js",
+    "admin": "node tools/admin/entrevoces-admin.js",
+    "validate": "node tools/admin/entrevoces-admin.js validate",
+    "engine": "node services/progression-engine/server.js",
+    "serve": "python3 -m http.server 8000 --bind 127.0.0.1",
+    "publish:build": "node tools/publish/publish.mjs build",
+    "publish:push": "node tools/publish/publish.mjs push"
+  }
+}
