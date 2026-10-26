@@ -118,3 +118,15 @@ test("every game carries interpretation, not just vocabulary (catalog contract)"
   }
   assert.ok(core.GAME_CATALOG.find((g) => g.gameId === "loteria-aula").stages.includes(8) || true, "loteria interpretation round wired in game");
 });
+
+test("config stages match emitted stages (no faked mastery)", async () => {
+  const { readFileSync } = await import("node:fs");
+  for (const [g, expect] of [["melon-reef", [1, 5]], ["vr-lingua-lab", [2, 4]], ["concept-clinch", [1, 2, 3, 4]], ["repair-shop", [7]]]) {
+    const cfg = JSON.parse(readFileSync(`apps/games/${g}/game.config.json`, "utf8"));
+    assert.deepEqual(cfg.stages, expect, `${g} config must claim only what its code emits`);
+  }
+  const c = core.SEED_CONCEPTS_BY_DOMAIN["oregon-medical"][0];
+  const item = core.generateItem({ concept: c, domain: core.OREGON_MEDICAL, stage: 8, targetLang: "es", seed: "honesty" });
+  assert.ok(item.acceptableAnswers.some((a) => a.split(" ").length >= 4), "stage-8 items are judged on a carried sentence, not a bare term");
+  assert.ok(core.CONCEPTS.every((x) => x.definition.es && x.definition.zh), "every definition exists in EN/ES/ZH");
+});
