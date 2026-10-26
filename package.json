@@ -11,6 +11,7 @@
     "engine": "node services/progression-engine/server.js",
     "serve": "python3 -m http.server 8000 --bind 127.0.0.1",
     "publish:build": "node tools/publish/publish.mjs build",
-    "publish:push": "node tools/publish/publish.mjs push"
+    "publish:push": "node tools/publish/publish.mjs push",
+    "audit:kb": "node tools/audit/kb-audit.mjs"
   }
 }
