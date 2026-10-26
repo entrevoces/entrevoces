@@ -127,3 +127,20 @@ Critic majors addressed in code (24/24 tests green):
 - Visual charm, Muse-referenced and code-built: papel-picado banner and
   frijol markers in Lotería, vinyl records in the Milonga shelf, SVG sun /
   disc / drone / melon hub art (generated images served as reference only).
+
+## Regeneration pass (game-spec-kit) — response to failed calibration
+
+The verdict was accepted: quiz skins with good copy are still quiz skins.
+Adopted docs/design/game-spec-kit (spec per game: fantasy, 30-second loop,
+controls, fail, juice, progression, text budget, interpretation core).
+Built packages/game-kit (particles, shake, floating text, synth SFX,
+DOM feedback bursts). Regenerated as canvas games: Echo Sequence →
+Firefly Path (lantern-bearer walks your remembered order across a pond),
+Term Rush → Catch the Rain (basket catcher, splashes, combo flame, meaning
+drops). Hub UI: games first; Lab/profile/classrooms/instructor/shelf fold
+into collapsibles; featured card spans wide. DOM judgement games received
+game-kit feedback bursts/shake/sound on every verdict. Headless-verified
+live: hub games-first, Echo stone interaction, Rush drop/miss loop, 60 fps,
+zero page errors. Remaining honest debt: Bench/Table/Repair/Atelier are
+still DOM judgement scenes (their verbs are paper/stamp/strategy), and
+VocabCraft/VR label sizing needs a device pass.
