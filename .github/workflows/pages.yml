@@ -16,16 +16,31 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
+    env:
+      EV_SPOKEN_API_URL: ${{ vars.EV_SPOKEN_API_URL }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
           node-version: 22
-      - name: Conformance gate (spec §24)
-        run: node --test tests/conformance.test.js
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install HTTP contract test dependencies
+        run: python -m pip install -r services/modal-spoken/requirements-dev.txt
+      - name: Build GitHub Pages site
+        env:
+          EV_SPOKEN_API_URL: ${{ vars.EV_SPOKEN_API_URL }}
+        run: npm run build
+      - name: Verify game and engine tests
+        run: npm test
+      - name: Validate Modal voice contract
+        run: npm run modal:check
+      - name: Verify public artifact dependencies and boundaries
+        run: npm run verify:site
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: .
+          path: dist
       - id: deployment
         uses: actions/deploy-pages@v4

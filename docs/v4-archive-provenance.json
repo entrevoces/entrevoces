@@ -1,0 +1,14 @@
+{
+  "origin": "User-supplied repository-root archives",
+  "archives": [
+    {
+      "file": "entrevoces-modal-pages-v4-overlay.zip",
+      "sha256": "27d3ea6032cedc74df9bf9ce0aa4557ecc159ba43e6a57a29e59dbbfb13464d7"
+    },
+    {
+      "file": "entrevoces-modal-pages-v4-static-site.zip",
+      "sha256": "373efd42c35ba400cfe77018c4ee66405fad53257018b99e3337667151f6e0ad"
+    }
+  ],
+  "integration": "Source overlay integrated; static archive compared with a fresh source build. CPU-only Meta MMS update supersedes GPU/Llama runtime."
+}

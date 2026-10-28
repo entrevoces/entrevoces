@@ -14,7 +14,13 @@
     "knowledge:build": "node tools/build-interpreter-library.mjs",
     "build": "node tools/build-hub.mjs",
     "hub": "python3 -m http.server 8014 --bind 127.0.0.1 --directory dist",
+    "hub:spoken": "npm run hub",
+    "hub:legacy-muse": "node services/spoken-gateway/server.js",
+    "modal:check": "PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s tests -p 'test_modal_*.py' -v",
+    "spoken:calibrate": "node tools/calibrate-spoken.mjs",
     "suite:build": "node tools/build-suite.mjs",
-    "audit:samples": "node tools/audit/seed-audit.mjs"
+    "audit:samples": "node tools/audit/seed-audit.mjs",
+    "pretest": "npm run build",
+    "verify:site": "node tools/verify-site.mjs"
   }
 }

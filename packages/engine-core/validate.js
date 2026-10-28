@@ -112,8 +112,16 @@ export function validateEvidence(ev) {
   if(ev.assistance!=null&&(!Array.isArray(ev.assistance)||ev.assistance.length>20||ev.assistance.some(v=>typeof v!=='string'||!v||v.length>120)))errors.push(err('assistance','bounded array of support labels required'));
   for(const k of ['clientTs','serverTs'])if(ev[k]!=null&&(!Number.isFinite(ev[k])||ev[k]<0))errors.push(err(k,'finite nonnegative timestamp required'));
   for(const k of ['areaId','gameId','activityType','languageDirection','misconceptionTag','responseSummary'])if(ev[k]!=null&&(typeof ev[k]!=='string'||ev[k].length>1000))errors.push(err(k,'bounded string required'));
+  if(ev.responseModality!=null&&!['touch','keyboard','text','speech','audio','mixed'].includes(ev.responseModality))errors.push(err('responseModality','unknown response modality'));
+  if(ev.assessmentMethod!=null&&!['visible-term-choice','concept-comprehension','typed-retrieval','spoken-rendering','dialogue-judgment','other'].includes(ev.assessmentMethod))errors.push(err('assessmentMethod','unknown assessment method'));
+  // New explicit modality contracts protect downstream mastery from inflated
+  // stages. Legacy evidence without these optional fields remains readable.
+  if(ev.assessmentMethod==='visible-term-choice'&&(ev.stage!==2||ev.activityType!=='bilingual'||(ev.confidence??0)>0.75))errors.push(err('assessmentMethod','visible term selection may only assess stage-2 bilingual recognition at confidence <= 0.75'));
+  if(ev.assessmentMethod==='visible-term-choice'&&ev.responseModality!=null&&!['touch','keyboard'].includes(ev.responseModality))errors.push(err('responseModality','visible-choice evidence requires touch or keyboard selection'));
+  if(['touch','keyboard'].includes(ev.responseModality)&&ev.stage>=7)errors.push(err('responseModality','motor or touch choice cannot establish spoken production or interpreting'));
+  if(ev.assessmentMethod==='spoken-rendering'&&ev.responseModality!=='speech')errors.push(err('responseModality','spoken rendering requires spoken output'));
   // minimization: reject unexpected top-level fields (spec §9.4)
-  const allowed = new Set(["eventId","learnerId","domainId","conceptId","areaId","gameId","activityType","stage","languageDirection","correct","score","assistance","confidence","fidelity","misconceptionTag","responseSummary","clientTs","serverTs"]);
+  const allowed = new Set(["eventId","learnerId","domainId","conceptId","areaId","gameId","activityType","stage","languageDirection","responseModality","assessmentMethod","correct","score","assistance","confidence","fidelity","misconceptionTag","responseSummary","clientTs","serverTs"]);
   for (const k of Object.keys(ev)) if (!allowed.has(k)) errors.push(err(k, "unexpected field — evidence schema is closed (data minimization)"));
   return { ok: errors.length === 0, errors };
 }

@@ -76,6 +76,8 @@ export class EngineClient {
       activityType: partial.activityType || "terminology",
       stage: partial.stage ?? 1,
       languageDirection: partial.languageDirection || "en->es",
+      ...(partial.responseModality ? {responseModality:partial.responseModality} : {}),
+      ...(partial.assessmentMethod ? {assessmentMethod:partial.assessmentMethod} : {}),
       correct: partial.correct ?? (partial.score != null ? partial.score >= 0.6 : false),
       score: partial.score == null ? (partial.correct ? 1 : 0) : partial.score,
       assistance: partial.assistance || [],
@@ -93,7 +95,14 @@ export class EngineClient {
     const concept=this.fallbackConcepts.find(c=>c.conceptId===ev.conceptId&&c.domainId===ev.domainId);
     if(ev.areaId&&!concept.areaIds.includes(ev.areaId))throw new Error("Evidence references an area outside the concept scope.");
     const log = this.localEvidence(ev.domainId);
-    if (!log.some((e) => e.eventId === ev.eventId)) { log.push(ev); this._writeJSON(this._logKey(ev.domainId), log); }
+    const old=log.find((e)=>e.eventId===ev.eventId);
+    if(old&&JSON.stringify(old)!==JSON.stringify(ev)){
+      // Retries are idempotent. A conflict must not silently overwrite a
+      // genuine decision or make a forged answer appear to have been logged.
+      const comparable=({clientTs,...rest})=>rest;
+      if(JSON.stringify(comparable(old))!==JSON.stringify(comparable(ev)))throw new Error('Conflicting evidence event ID.');
+    }
+    if(!old) { log.push(ev); this._writeJSON(this._logKey(ev.domainId), log); }
     return ev;
   }
 

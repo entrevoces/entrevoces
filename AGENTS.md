@@ -230,3 +230,8 @@ These project-specific rules implement the user's explicit direction. Explicit l
 - English–Spanish and English–Chinese are the user-confirmed language priorities. Preserve source-backed regional, dialect and script distinctions; disclose missing or inferred equivalents.
 - Explain transferable concepts and real workflows, then important terminology and consequential distinctions. Separate jurisdiction-specific law, institutions and clinical guidance from general interpreter practice. Never imply that a local rule is universal.
 - Research and authored books must come from the agent pipeline and actual primary evidence; host-written briefs guide scope but are not substitute knowledge bases.
+
+
+### Deployment update authorized October 28, 2026
+
+The user supplied the v4 Modal/Pages archives and explicitly requested integration, container deployment, Git push and a working linked service. This supersedes the previous blanket runtime-AI exclusion **only for opt-in provisional spoken practice**: GitHub Pages hosts static games; separate authenticated Modal CPU functions run Meta MMS speech recognition (no GPU/Llama). Authoring remains local CLI; deterministic game evidence and progress stay local. Never publish account tokens, HF access, demo codes, recordings or transcripts in Pages. Transcripts are review aids; automated fidelity grading is disabled and ASR awards no learning evidence. Existing no-hosted-Muse default remains: the imported legacy gateway is regression-only and is not deployed.

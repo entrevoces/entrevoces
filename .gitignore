@@ -5,3 +5,6 @@ outputs/
 dist/
 knowledge/generated/
 knowledge/game-suite/builds/
+.venv-modal/
+__pycache__/
+*.pyc

@@ -14,6 +14,8 @@
     "activityType": { "type": "string", "enum": ["terminology", "conceptual", "contextual-usage", "bilingual", "retrieval", "listening", "spoken-production", "interpretation", "integrated", "judgment", "note-craft", "sight", "repair"] },
     "stage": { "type": "integer", "minimum": 1, "maximum": 8 },
     "languageDirection": { "type": "string" },
+    "responseModality": { "type": "string", "enum": ["touch", "keyboard", "text", "speech", "audio", "mixed"] },
+    "assessmentMethod": { "type": "string", "enum": ["visible-term-choice", "concept-comprehension", "typed-retrieval", "spoken-rendering", "dialogue-judgment", "other"] },
     "correct": { "type": "boolean" },
     "score": { "type": "number", "minimum": 0, "maximum": 1 },
     "assistance": { "type": "array", "items": { "type": "string" } },

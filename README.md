@@ -1,6 +1,6 @@
 # Entre Voces
 
-A shared learning engine, an interpreting learning hub, and a file-based game creation suite. Interpreting—understanding meaning, choosing language, preserving intent and repairing communication—is the core principle. Published learning and play are static; authoring agents work at build time through the local Codex CLI. There are no provider HTTP clients or model API keys in the application.
+A shared learning engine, an interpreting learning hub, and a file-based game creation suite. Interpreting—understanding meaning, choosing language, preserving intent and repairing communication—is the core principle. Published learning and games remain static on **GitHub Pages**; authoring agents work at build time through the local Codex CLI. An opt-in spoken-practice extension calls a **separate Modal endpoint running Meta MMS speech recognition on CPU**. Neither Pages nor the game bundle contains model credentials.
 
 ```sh
 npm run build
@@ -8,6 +8,8 @@ npm run hub
 ```
 
 The local hub opens at `http://127.0.0.1:8014/`. It contains the game collection, a staged learning path, searchable English–Spanish/English–Chinese knowledge, a readable reused handbook, local progress export/import, and a creation room for saving game briefs. The build reuses 21 existing medical/legal concepts, ten interpreting-skill definitions from existing research notes, and nine optional source-specific reference entries. Institutional/credential reference material does not define curriculum progress. Missing translations remain visible rather than silently falling back to another language.
+
+For GitHub Pages, the `.github/workflows/pages.yml` workflow builds and publishes `dist/`. If the public GitHub Actions variable `EV_SPOKEN_API_URL` points at your deployed Modal web function, each game can send explicitly recorded 16 kHz audio to Meta MMS for speech recognition on CPU; the transcript and example rendering are available for review, without automatic meaning grades. With no URL, games stay playable while the voice feature is unavailable. See [Modal deployment and licensing](services/modal-spoken/README.md) and [three arcade games](apps/games/README.md). Live CPU model inference testing is still required before asserting the model integration works with real voices.
 
 The shared engine maintains eight separate mastery stages, ten competences, confidence/assistance limits, retention and spaced review, misconception diagnostics, prerequisites and a static difficulty policy. Recognition cannot award higher-order interpreting proof; repeated assisted success cannot become full mastery. Progress is validated, deduplicated and kept on-device, with corruption/quota recovery. Reading a page or launching a game awards no evidence.
 

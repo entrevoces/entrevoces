@@ -20,4 +20,5 @@ export { HANDBOOK_VERSION, HANDBOOK_ELEMENTS, HANDBOOK_DEPTHS, validateHandbookP
 export { FRAMEWORK_SECTIONS, validateFramework } from "./framework.js";
 
 export { DIFFICULTY_POLICY, analyzeDifficulty } from "./difficulty.js";
+export { assessBilingualChoice } from "./choice-assessment.js";
 export {CURRICULUM_PHASES,compileCurriculum,curriculumProgress,suggestCurriculumPractice} from './curriculum.js';
