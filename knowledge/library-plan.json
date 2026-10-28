@@ -1,0 +1,482 @@
+{
+  "rationale": "This blueprint assigns clinical encounter understanding to medical, jurisdiction-bounded procedural understanding to legal, and transferable interpreting and language reasoning to language-foundations. Areas are research responsibilities and proposed teaching structures, not researched professional claims or verified translations. Source evidence inspected: the complete input.json, including all three briefs, configured languages es and zh, and DomainConfig schema; task.md was also read. No professional source passages were supplied or researched, so no substantive domain claim or translation is represented as source-grounded. Decisions: organize by consequential work situations and conceptual dependencies, prioritize contextual explanation over term counts, use English–Spanish and English–Chinese bidirectionally, and separate portable practice from source-specific clinical or legal rules. Risk labels express planning priorities rather than validated clinical or legal risk assessments. Checks performed: read both workspace files; enumerated available workspace files; checked for agents/common.md, which was absent; manually reviewed the blueprint against the supplied field requirements, configured languages, three required volume IDs, cross-jurisdictional framing, and division of responsibilities. No automated schema validation, runtime validator, source acquisition, bilingual review, or professional review was performed. Residual risks: source availability, reuse rights, currentness, jurisdictional comparability, Spanish regional variation, Chinese spoken varieties and scripts, and unresolved institutional equivalents. The host's subsequent research jobs must resolve or explicitly bound these issues before any comprehensive-handbook claim.",
+  "volumes": [
+    {
+      "id": "medical",
+      "request": "Produce a substantial practitioner handbook for developing and working medical interpreters. Own clinical encounter concepts, workflows and consequential meaning distinctions; link to language-foundations for transferable interpreting techniques and explain domain-specific applications here. Do not organize around a credential examination, one jurisdiction, alphabetical vocabulary or arbitrary term totals. Treat each domain.translationAreas entry as an acceptance responsibility. Start with a coverage matrix using stable area and concept IDs, priority, work situation, observable meaning-transfer responsibility, source needs, discovery query, evidence status and unresolved gaps. Refine the taxonomy through actual source reading and document changes without losing ID traceability. For every important area, establish the encounter model and participants before introducing terminology; explain relevant concepts, procedural sequence, consequential near-neighbors, exceptions, misconceptions, uncertainty and register. Acceptance requires a reader to identify which distinctions must survive interpretation and when transparent clarification is needed, without learning to diagnose, prescribe or alter clinical meaning. Acquire and actually read authoritative public clinical patient-education materials, public health guidance, medication information and professional medical-interpreting standards. Prefer original institutional publications; glossaries only supplement explanatory evidence. Use each area's focused query as a discovery seed, not proof or a fixed source list. Retrieve targeted follow-up evidence whenever a source omits an important responsibility. Record source title, issuing body, exact URL, publication/update date when available, access date, jurisdiction, audience, language/script/variant, reuse constraints, passage locator and the exact passage supporting each factual assertion or proposed equivalent. Separate source facts, pedagogical inferences, synthetic examples and unknowns. Preserve actors, qualifications, negation, timing, thresholds and units. For English–Spanish and English–Chinese, research both directions, distinguish professional from patient language, and verify proposed equivalents in contextual authoritative multilingual sources; do not infer Chinese spoken variety from zh or Spanish region from es. Mark unavailable equivalents and variants explicitly. Each chapter must contain integrated explanations, contextual terminology dossiers, consequential distinctions, source-linked definition supplements, labeled synthetic encounter sequences, likely meaning-loss patterns and justified clarification strategies. Synthetic examples cannot establish clinical facts. Produce a topical handbook, typed concept relationships and an evidence ledger connecting concepts, workflows, contrasts, language variants and sources. Audit outpatient, inpatient, emergency, community and remote encounters; adults, children, older people and sensitive encounters; consecutive, simultaneous, sight and remote demands. Include cross-area transitions such as emergency assessment to medication reconciliation to discharge. Keep interpreter role boundaries explicit and preserve consent, capacity and confidentiality rules only within their sourced jurisdiction and setting. Important evidence or language gaps trigger further acquisition; unresolved gaps must be visible and block an unqualified comprehensive-book claim. Deliver a chapter-level coverage audit, source/currentness limits and an exact record of performed checks. Professional and bilingual review remain separate gates if not actually performed.",
+      "domain": {
+        "domainId": "medical",
+        "label": {
+          "en": "Medical interpreting: clinical encounters and meaning"
+        },
+        "jurisdiction": {
+          "country": "cross-jurisdictional",
+          "region": "General interpreter practice; specific legal/clinical rules labeled by source"
+        },
+        "profession": "medical",
+        "languagePairs": [
+          {
+            "source": "en",
+            "target": "es",
+            "direction": "both"
+          },
+          {
+            "source": "en",
+            "target": "zh",
+            "direction": "both"
+          }
+        ],
+        "modalities": [
+          "consecutive",
+          "simultaneous",
+          "sight",
+          "remote"
+        ],
+        "translationAreas": [
+          {
+            "areaId": "encounter-access-and-role",
+            "label": {
+              "en": "Access, encounter structure and interpreter role"
+            },
+            "prerequisiteAreaIds": [],
+            "riskIfMistranslated": "high",
+            "description": "Important. Map referral, scheduling, intake, team introductions, handoffs and remote participation; distinguish interpreting from advocacy, explanation and clinical decision making within sourced standards. Evidence responsibility: a sourced encounter map and role-boundary cases including access barriers and communication repair. Sources: professional interpreter standards and health-system language-access guidance. Queries: 'healthcare interpreter standards role boundaries remote encounter'; 'hospital interpreter patient language access workflow'."
+          },
+          {
+            "areaId": "history-examination-and-reasoning",
+            "label": {
+              "en": "History, examination and diagnostic uncertainty"
+            },
+            "prerequisiteAreaIds": [],
+            "riskIfMistranslated": "critical",
+            "description": "Critical. Cover presenting concern, history, allergies, prior care, family/social context, symptom chronology and examination speech. Evidence responsibility: source-grounded distinctions among reported symptom, observed sign, tentative explanation, differential consideration and established diagnosis; preserve attribution, uncertainty, negatives and time. Sources: public clinical encounter explanations and patient history materials. Queries: 'patient history physical examination symptoms signs diagnosis uncertainty patient information'; 'medical history allergy adverse reaction patient information'."
+          },
+          {
+            "areaId": "anatomy-and-body-systems",
+            "label": {
+              "en": "Functional anatomy, physiology and common conditions"
+            },
+            "prerequisiteAreaIds": [],
+            "riskIfMistranslated": "high",
+            "description": "Important. Build functional models for cardiovascular, respiratory, gastrointestinal/hepatobiliary, renal/urinary, endocrine/metabolic, neurologic, musculoskeletal, skin, sensory, hematologic/immune and infectious-disease encounters. Evidence responsibility: each system receives a relevant structure/function model, common consequential presentations and condition distinctions linked to actual encounter tasks; justify depth through frequency and consequence rather than encyclopedic disease lists. Sources: national health agencies and institutional patient education. Queries: '[body system] anatomy symptoms diagnosis treatment patient information'; '[condition] patient information complications follow-up'."
+          },
+          {
+            "areaId": "tests-imaging-and-results",
+            "label": {
+              "en": "Investigations, preparation and result communication"
+            },
+            "prerequisiteAreaIds": [],
+            "riskIfMistranslated": "critical",
+            "description": "Critical. Cover specimens, laboratory tests, imaging, screening, diagnostic testing, preparation and result follow-up. Evidence responsibility: contextual distinctions among indication, preparation, procedure, finding, interpretation and next step; investigate positive/negative, normal/abnormal, screening/confirmation and uncertainty without inventing universal thresholds. Sources: public laboratory, imaging and screening explanations. Queries: 'medical tests understanding results reference ranges patient information'; 'imaging contrast preparation patient information'; 'screening diagnostic test false positive patient information'."
+          },
+          {
+            "areaId": "medicines-and-regimens",
+            "label": {
+              "en": "Medication communication and reconciliation"
+            },
+            "prerequisiteAreaIds": [],
+            "riskIfMistranslated": "critical",
+            "description": "Critical. Cover medicine identity, purpose, formulation, route, strength, dose, frequency, duration, changes, missed-dose questions, allergies, adverse effects and reconciliation. Evidence responsibility: preserve quantity relationships, units, instructions and conditional wording; distinguish source-supported medication concepts without supplying treatment advice or unsupported conversions. Sources: official medicine labels, public medicines agencies and patient medication instructions. Queries: 'medicine patient information strength dose route frequency'; 'medication reconciliation patient information allergy side effects'; 'Spanish Chinese official medication patient information'."
+          },
+          {
+            "areaId": "treatment-procedures-and-rehabilitation",
+            "label": {
+              "en": "Treatment, procedures and recovery"
+            },
+            "prerequisiteAreaIds": [],
+            "riskIfMistranslated": "critical",
+            "description": "Critical. Research common surgery, anesthesia, bedside procedures, devices, wound care, rehabilitation and supportive treatment according to encounter importance. Evidence responsibility: source-linked preparation–procedure–recovery models, participant roles, choices, restrictions and follow-up language; preserve conditional instructions and avoid implying universal protocols. Sources: hospital and professional-body patient materials. Queries: 'procedure anesthesia recovery patient information'; 'rehabilitation wound care device instructions patient education'."
+          },
+          {
+            "areaId": "consent-risk-and-decisions",
+            "label": {
+              "en": "Consent, risk and shared decisions"
+            },
+            "prerequisiteAreaIds": [],
+            "riskIfMistranslated": "critical",
+            "description": "Critical. Cover options, benefits, harms, alternatives, refusal, consent discussions, understanding checks and source-specific capacity arrangements. Evidence responsibility: preserve voluntariness, actor, uncertainty, probability framing and distinctions between permission, understanding and agreement. Label jurisdictional rules rather than presenting one consent model as universal. Sources: public consent policies, patient decision resources and interpreting standards. Queries: 'patient informed consent shared decision making risks alternatives'; '[jurisdiction] healthcare consent capacity interpreter official guidance'."
+          },
+          {
+            "areaId": "pain-and-emergency-care",
+            "label": {
+              "en": "Pain, urgent assessment and emergency transitions"
+            },
+            "prerequisiteAreaIds": [],
+            "riskIfMistranslated": "critical",
+            "description": "Critical. Cover pain quality/location/radiation/severity, injury, triage, acute deterioration, emergency procedures and rapid handoffs. Evidence responsibility: retain sequence, onset, attribution, severity wording and urgent instructions under interruption; distinguish emergency workflow language from interpreter-led clinical triage. Sources: emergency-care patient materials and professional interpreting guidance. Queries: 'emergency department triage assessment patient information'; 'pain description onset severity patient assessment'; 'emergency medical interpreting communication standards'."
+          },
+          {
+            "areaId": "mental-health-and-substance-care",
+            "label": {
+              "en": "Mental health, distress and substance-related encounters"
+            },
+            "prerequisiteAreaIds": [],
+            "riskIfMistranslated": "critical",
+            "description": "Critical. Cover assessment, therapy, crisis conversations, substance use, withdrawal and safety-related language as supported by sources. Evidence responsibility: preserve speaker perspective, disfluency, idiom, reported experience, intent and uncertainty; investigate stigma, euphemism and interpreter role boundaries. Source every legal restriction or disclosure duty by jurisdiction. Sources: public mental-health services, patient resources and specialist interpreting standards. Queries: 'mental health interpreting assessment idiom interpreter guidance'; 'mental health crisis substance use patient information'; '[jurisdiction] mental health consent confidentiality official'."
+          },
+          {
+            "areaId": "sexual-reproductive-and-sensitive-care",
+            "label": {
+              "en": "Sexual, reproductive and sensitive care"
+            },
+            "prerequisiteAreaIds": [],
+            "riskIfMistranslated": "critical",
+            "description": "Critical. Cover sexual history, reproductive anatomy, contraception, pregnancy, birth, postpartum care and pregnancy loss; investigate violence-related encounters and safeguarding boundaries through appropriate evidence. Evidence responsibility: accurate anatomical and patient-preferred language, chronology, privacy concerns, euphemism and sensitive clarification without assumptions about identity or family structure. Sources: authoritative sexual/reproductive patient education and jurisdiction-labeled safeguarding guidance. Queries: 'sexual reproductive health patient information interpreter'; 'pregnancy childbirth postpartum loss patient information'; '[jurisdiction] safeguarding healthcare interpreter guidance'."
+          },
+          {
+            "areaId": "longitudinal-and-life-course-care",
+            "label": {
+              "en": "Chronic care, life course and serious illness"
+            },
+            "prerequisiteAreaIds": [],
+            "riskIfMistranslated": "high",
+            "description": "Important. Cover recurring chronic-care visits, self-management discussions, prevention, pediatric/developmental encounters, older-person care, disability-related access and serious-illness/palliative conversations. Evidence responsibility: preserve goals, baseline/change, prognosis uncertainty, caregiver versus patient attribution and follow-up responsibilities; distinguish care concepts that lack institutional equivalents. Sources: public disease-management, pediatric, geriatric and palliative patient resources. Queries: 'chronic condition self management follow-up patient information'; 'pediatric older adult healthcare communication interpreter'; 'palliative goals of care prognosis patient information'."
+          },
+          {
+            "areaId": "discharge-navigation-and-follow-up",
+            "label": {
+              "en": "Discharge, transitions and continuity"
+            },
+            "prerequisiteAreaIds": [],
+            "riskIfMistranslated": "critical",
+            "description": "Critical. Cover discharge instructions, medication changes, referrals, appointments, home care, return precautions and administrative access language. Evidence responsibility: complete source-grounded transitions identifying who must do what, when, where and under which condition, including unresolved results and failed communication. Sources: institutional discharge and referral materials. Queries: 'hospital discharge instructions medication follow-up pending results patient'; 'patient referral appointment preparation language access'."
+          },
+          {
+            "areaId": "clinical-language-and-documents",
+            "label": {
+              "en": "Clinical register, quantities and document interpretation"
+            },
+            "prerequisiteAreaIds": [],
+            "riskIfMistranslated": "critical",
+            "description": "Critical cross-cutting responsibility. Audit every chapter for abbreviations, names, numbers, units, dates, negation, probability, time, professional/patient register and supported Spanish/Chinese false friends or variants. Evidence responsibility: contextual bilingual dossiers and sight/remote document cases with ambiguity and clarification boundaries; no invented equivalents or decontextualized abbreviation expansions. Sources: originating clinical documents, authoritative multilingual patient materials and language references. Queries: '[clinical concept] official patient information español 中文'; '[abbreviation] [clinical context] official patient information'."
+          }
+        ],
+        "competencyWeights": {
+          "competence": 1
+        },
+        "status": "draft"
+      }
+    },
+    {
+      "id": "legal",
+      "request": "Produce a substantial professional reference for legal interpreters, organized around sourced institutions, procedural sequences and meaning-transfer problems. Own legal concepts and jurisdiction-bounded applications; cross-reference language-foundations for general language and interpreting techniques. Do not center one state, credential examination or legal tradition. Treat every domain.translationAreas entry as a research acceptance responsibility. Establish a coverage matrix with stable area/concept IDs, priority, proceeding type, actor, jurisdiction, observable interpretation responsibility, source requirement, query and evidence status. Select a manageable, explicitly justified set of jurisdictions and institutions for concrete examples; cross-jurisdictional means boundaries are visible, not that legal rules are universal. Do not promise global procedural coverage. For each important topic, explain the work problem, actors, process and conceptual distinctions before terminology. Acquire and read primary legislation or rules where needed for exact legal claims, official court/judiciary explanations, professional interpreter standards, and credible jurisdiction-specific legal-aid/public legal education. Distinguish binding authority from public explanation and professional guidance. Verify currentness and amendments where ascertainable; preserve dated historical context where relevant. Every legal assertion and proposed bilingual equivalent requires a source dossier with issuer, exact URL, date, jurisdiction/court/procedure, audience, language/variant/script, locator and supporting passage. A source about one institution does not establish equivalence elsewhere. Use area queries to initiate focused discovery and acquire follow-up sources for uncovered responsibilities, exceptions and conflicting accounts. Separate documented law/practice, inference, teaching design and unresolved questions. English–Spanish and English–Chinese work must investigate both directions, source-defined variants, spoken-language needs and Chinese scripts without assuming one universal target register. When institutional equivalence is unsupported, explain the bounded concept and translation problem rather than inventing a counterpart. Chapters require coherent process models, contextual terminology, consequential contrasts, exceptions, register/disfluency considerations, source-linked definitions and clearly labeled synthetic interpreting sequences. Include ambiguous testimony, interrupted examination, names/numbers/dates, document sight work and remote failure/repair; never give personalized legal advice. Trace synthetic case premises to sourced concepts and mark invented details. Produce typed relationships among actors, institutions, procedural stages, rights, remedies, contrasts, language variants and sources. Audit criminal, civil and administrative work, then justified family, immigration, employment and housing contexts; examine cross-area paths such as custody through hearing, evidence, order and review. Keep binding rights and interpreter duties jurisdiction-specific. Important evidence gaps require further discovery and block an unqualified comprehensive-book claim. Deliver the handbook, coverage/evidence ledger, jurisdiction and currentness map, missing-language boundaries and exact performed-check record. Do not claim expert review or observed interpreter performance unless conducted.",
+      "domain": {
+        "domainId": "legal",
+        "label": {
+          "en": "Legal interpreting: institutions, proceedings and meaning"
+        },
+        "jurisdiction": {
+          "country": "cross-jurisdictional",
+          "region": "General interpreter practice; specific legal/clinical rules labeled by source"
+        },
+        "profession": "legal",
+        "languagePairs": [
+          {
+            "source": "en",
+            "target": "es",
+            "direction": "both"
+          },
+          {
+            "source": "en",
+            "target": "zh",
+            "direction": "both"
+          }
+        ],
+        "modalities": [
+          "consecutive",
+          "simultaneous",
+          "sight",
+          "remote"
+        ],
+        "translationAreas": [
+          {
+            "areaId": "institutions-roles-and-authority",
+            "label": {
+              "en": "Institutions, legal sources and participant roles"
+            },
+            "prerequisiteAreaIds": [],
+            "riskIfMistranslated": "high",
+            "description": "Important. Map courts, tribunals, agencies, legal representatives, parties, witnesses and decision makers within selected jurisdictions. Evidence responsibility: distinguish institution, authority, role, capacity and representation; compare common-law/civil-law features only through specific supporting sources. Sources: official judiciary maps, rules and public legal education. Queries: '[jurisdiction] court structure parties legal representation official'; '[jurisdiction] civil criminal administrative procedure judiciary'."
+          },
+          {
+            "areaId": "interpreter-duties-and-communication",
+            "label": {
+              "en": "Interpreter duties, access and transparent intervention"
+            },
+            "prerequisiteAreaIds": [],
+            "riskIfMistranslated": "critical",
+            "description": "Critical. Research appointment, qualifications, accuracy, impartiality, confidentiality, conflicts, preparation, interventions and mode selection. Evidence responsibility: jurisdiction-specific duty maps and sourced responses to inaudibility, ambiguity, conflict and requests for advice. Sources: court interpreter codes, judiciary protocols and applicable rules. Queries: '[jurisdiction] court interpreter code ethics clarification conflict confidentiality'; '[court] remote interpreting protocol'."
+          },
+          {
+            "areaId": "allegations-charges-and-claims",
+            "label": {
+              "en": "Allegations, charges, claims and responses"
+            },
+            "prerequisiteAreaIds": [],
+            "riskIfMistranslated": "critical",
+            "description": "Critical. Cover initiation of criminal, civil and administrative matters, party positions, pleadings and responses. Evidence responsibility: preserve allegation versus finding, actor, denial/admission, asserted versus established fact and jurisdiction-specific offense/claim vocabulary. Sources: official procedural guides, forms and governing texts. Queries: '[jurisdiction] criminal charge complaint civil claim response court guide'; '[jurisdiction] allegation admission denial pleading official'."
+          },
+          {
+            "areaId": "arrest-custody-and-release",
+            "label": {
+              "en": "Arrest, custody, questioning and release"
+            },
+            "prerequisiteAreaIds": [],
+            "riskIfMistranslated": "critical",
+            "description": "Critical. Research police/custody encounters, interviews, detention and release arrangements without universalizing rights or conditions. Evidence responsibility: source-defined actors, sequence, warnings, choices, conditions and institutional non-equivalence; distinguish legal meaning from conversational use. Sources: official custody guidance, legislation and jurisdiction-specific legal aid. Queries: '[jurisdiction] arrest custody questioning interpreter rights official'; '[jurisdiction] pretrial release detention conditions court'."
+          },
+          {
+            "areaId": "criminal-proceeding-sequences",
+            "label": {
+              "en": "Criminal hearings, pleas and trial pathways"
+            },
+            "prerequisiteAreaIds": [],
+            "riskIfMistranslated": "critical",
+            "description": "Critical. Build bounded criminal process maps covering preliminary appearances, pleas, pretrial issues, trial and alternative dispositions where sourced. Evidence responsibility: terminology in sequence, participant choices, contested versus agreed matters and consequences described by authoritative sources. Sources: court criminal-process guides, procedural rules and legal-aid explanations. Queries: '[jurisdiction] criminal court hearings plea trial process official'; '[jurisdiction] criminal diversion negotiated disposition court guide'."
+          },
+          {
+            "areaId": "civil-and-administrative-pathways",
+            "label": {
+              "en": "Civil disputes and administrative proceedings"
+            },
+            "prerequisiteAreaIds": [],
+            "riskIfMistranslated": "high",
+            "description": "Important. Cover filing/service, response, case management, disclosure where applicable, settlement, hearing and administrative review. Evidence responsibility: separate court and agency pathways and preserve duties, deadlines and conditional outcomes without importing another jurisdiction's procedure. Sources: court/tribunal guides, agency rules and public legal education. Queries: '[jurisdiction] civil case service hearing settlement official'; '[agency jurisdiction] administrative hearing review process'."
+          },
+          {
+            "areaId": "evidence-testimony-and-examination",
+            "label": {
+              "en": "Evidence, witness testimony and examination"
+            },
+            "prerequisiteAreaIds": [],
+            "riskIfMistranslated": "critical",
+            "description": "Critical. Cover testimony, exhibits, questioning patterns, objections, rulings and source-specific evidentiary concepts. Evidence responsibility: preserve question scope, leading or conditional form, quoted/reported speech, attribution, uncertainty, disfluency, profanity and register; do not regularize witness speech into stronger evidence. Sources: court witness guides, evidence rules and interpreter standards. Queries: '[jurisdiction] witness examination objections evidence court guide'; 'court interpreting witness disfluency register accuracy standards'."
+          },
+          {
+            "areaId": "findings-decisions-and-orders",
+            "label": {
+              "en": "Findings, verdicts, judgments, sentences and orders"
+            },
+            "prerequisiteAreaIds": [],
+            "riskIfMistranslated": "critical",
+            "description": "Critical. Research decision types and their relationship to reasons, liability, conviction, sanction and operative instructions. Evidence responsibility: source-bounded distinctions and document walkthroughs preserving actor, scope, effective date, conditions and negation; do not imply identical institutions behind similar words. Sources: official decision explanations, rules and sample public orders. Queries: '[jurisdiction] verdict judgment sentence order court explanation'; '[jurisdiction] court order conditions effective date official'."
+          },
+          {
+            "areaId": "remedies-enforcement-and-review",
+            "label": {
+              "en": "Remedies, enforcement, appeal and review"
+            },
+            "prerequisiteAreaIds": [],
+            "riskIfMistranslated": "critical",
+            "description": "Critical. Cover requested versus granted relief, compliance, enforcement, reconsideration, appeal and review as jurisdictionally applicable. Evidence responsibility: preserve procedural route, responsible actor, deadline language, finality and conditional effect without supplying advice. Sources: judiciary and legal-aid guidance plus governing rules for precise claims. Queries: '[jurisdiction] enforce judgment remedy appeal review official'; '[jurisdiction] appeal deadline permission court guide'."
+          },
+          {
+            "areaId": "family-and-protection-proceedings",
+            "label": {
+              "en": "Family, child-related and protection proceedings"
+            },
+            "prerequisiteAreaIds": [],
+            "riskIfMistranslated": "critical",
+            "description": "Critical where included. Research family relationships, separation, parenting arrangements, support and protective proceedings using explicit local boundaries. Evidence responsibility: distinguish informal relationship language from legal status, allegations from findings, interim from final measures and child/patient/party attribution. Sources: family courts, official protection-order materials and specialist legal aid. Queries: '[jurisdiction] family court parenting support protection order guide'; '[jurisdiction] child proceedings interpreter guidance'."
+          },
+          {
+            "areaId": "immigration-and-status-proceedings",
+            "label": {
+              "en": "Immigration, status and protection processes"
+            },
+            "prerequisiteAreaIds": [],
+            "riskIfMistranslated": "critical",
+            "description": "Critical where included. Bound coverage to identified agencies, interview/hearing types and status/protection procedures. Evidence responsibility: source-defined distinctions among applications, status, admissibility or eligibility concepts, decisions and review; preserve chronology and personal narrative without merging country-specific categories. Sources: official immigration agencies, tribunals and credible legal aid. Queries: '[country] immigration hearing interpreter application status official'; '[country] protection asylum procedure legal aid'."
+          },
+          {
+            "areaId": "employment-housing-and-everyday-disputes",
+            "label": {
+              "en": "Employment, housing and recurring civil disputes"
+            },
+            "prerequisiteAreaIds": [],
+            "riskIfMistranslated": "high",
+            "description": "Important. Justify selected workplace, tenancy, benefits, debt or consumer contexts through interpreter work needs and source availability. Evidence responsibility: conceptual maps linking documents, parties, asserted obligations, disputes and remedies; distinguish ordinary language from legally defined status. Sources: tribunals, agencies, court self-help and legal aid. Queries: '[jurisdiction] employment housing tribunal hearing guide'; '[jurisdiction] tenancy eviction wage dispute official legal aid'."
+          },
+          {
+            "areaId": "rights-fairness-and-participation",
+            "label": {
+              "en": "Rights, procedural fairness and effective participation"
+            },
+            "prerequisiteAreaIds": [],
+            "riskIfMistranslated": "critical",
+            "description": "Critical cross-cutting responsibility. Research source-defined rights, waivers, representation, language access, accommodations and participation barriers. Evidence responsibility: retain right-holder, duty-holder, scope, conditions and exceptions; distinguish binding rules from recommended practice and avoid global entitlement claims. Sources: applicable legal texts, court access policies and interpreter guidance. Queries: '[jurisdiction] interpreter language access fair hearing rights official'; '[jurisdiction] waiver representation accommodation court'."
+          },
+          {
+            "areaId": "legal-register-documents-and-equivalence",
+            "label": {
+              "en": "Legal register, documents and bilingual non-equivalence"
+            },
+            "prerequisiteAreaIds": [],
+            "riskIfMistranslated": "critical",
+            "description": "Critical cross-cutting responsibility. Cover formal formulas, ordinary words with legal senses, ambiguity, names, dates, money, citations, forms and sight/remote document constraints. Evidence responsibility: contextual English–Spanish and English–Chinese dossiers, supported false-friend analysis and institutional non-equivalence, with transparent clarification strategies. Sources: originating court documents, official multilingual resources and authoritative language references. Queries: '[court concept] official español 中文 [jurisdiction]'; '[court] multilingual forms interpreter glossary context'."
+          }
+        ],
+        "competencyWeights": {
+          "competence": 1
+        },
+        "status": "draft"
+      }
+    },
+    {
+      "id": "language-foundations",
+      "request": "Produce the companion professional resource on meaning transfer, interpreter practice and contextual definitions shared by medical and legal work. Own transferable conceptual and language responsibilities; provide concise source-grounded clinical/legal definition supplements and links to the owning handbook rather than duplicate its chapters. Treat each domain.translationAreas entry as an acceptance responsibility. Derive a coherent taxonomy from actual interpreting tasks and credible professional/linguistic evidence. Maintain stable concept IDs, typed relationships and a coverage ledger identifying source facts, descriptive linguistic analysis, professional standards, pedagogical inference and unresolved questions. For each important responsibility, specify observable preservation or repair behavior, evidence needed, source type and focused discovery query. Acquire and read professional interpreting standards, primary institutional multilingual materials, authoritative language references and relevant original linguistic/interpreting research. Do not transform local professional codes into universal duties or limited research findings into guaranteed techniques. Record exact supporting passages, source identity/URL, locator, date, jurisdiction, language variety/script, scope and reuse limitations. Evaluate descriptive versus prescriptive sources and distinguish professional consensus from empirical findings. Research English–Spanish and English–Chinese bidirectionally. Treat es and zh as configured coverage labels, not sufficient specifications of region, spoken variety or script; document supported variants and unresolved audience choices. Verify contextual equivalents and examples rather than invent translations. Each chapter must explain a task-relevant conceptual model, consequential distinctions, contextual terminology, exceptions, recurrent error patterns, source-supported practices and labeled synthetic cross-domain situations. For example design, state the intended meaning-transfer responsibility and what evidence would demonstrate preservation or justified clarification; do not invent learner results. Cover consecutive, simultaneous, sight and remote work with preparation, processing, delivery, monitoring and repair, while respecting evidence limits on cognitive techniques. Definitions must be substantive enough to explain the clinical, legal, linguistic and professional concepts used by both handbooks, with source links, contrasts and ownership links. Avoid a dictionary, universal equivalence table or full duplicate domain chapters. Build relationships such as broader/narrower concept, contrast, workflow role, source-bound equivalent, variant and supports-understanding-of; identify relationship provenance and uncertainty. Audit transfer across medical/legal encounters, both language directions, registers, quantities, negation, ambiguity and remote/document constraints. Acquire follow-up evidence for important gaps. Deliver integrated topical chapters, source-grounded dossiers, cross-volume coverage/ownership map, language and source limitations, and exact performed-check record. Do not implement mastery, retention, weighting, diagnostics, assessment or difficulty mathematics: those remain host-engine responsibilities. Teaching suggestions are proposals, not validated learning outcomes; professional, bilingual and human-use review must be reported as unperformed unless actually conducted.",
+      "domain": {
+        "domainId": "language-foundations",
+        "label": {
+          "en": "Interpreter language foundations and shared professional practice"
+        },
+        "jurisdiction": {
+          "country": "cross-jurisdictional",
+          "region": "General interpreter practice; specific legal/clinical rules labeled by source"
+        },
+        "profession": "other",
+        "languagePairs": [
+          {
+            "source": "en",
+            "target": "es",
+            "direction": "both"
+          },
+          {
+            "source": "en",
+            "target": "zh",
+            "direction": "both"
+          }
+        ],
+        "modalities": [
+          "consecutive",
+          "simultaneous",
+          "sight",
+          "remote"
+        ],
+        "translationAreas": [
+          {
+            "areaId": "professional-roles-and-ethics",
+            "label": {
+              "en": "Professional roles, ethics and accountable boundaries"
+            },
+            "prerequisiteAreaIds": [],
+            "riskIfMistranslated": "high",
+            "description": "Important. Distinguish interpreting, translation, mediation and other roles; research accuracy, impartiality, confidentiality, conflicts and scope. Evidence responsibility: compare explicitly bounded professional standards and show transparent responses to role pressure without inventing universal duties. Sources: professional associations and institutional codes. Queries: 'interpreter translator mediator role professional code ethics'; 'medical legal interpreter accuracy confidentiality impartiality standards'."
+          },
+          {
+            "areaId": "modes-and-workflow",
+            "label": {
+              "en": "Consecutive, simultaneous, sight and remote workflows"
+            },
+            "prerequisiteAreaIds": [],
+            "riskIfMistranslated": "high",
+            "description": "Important. Map preparation, turn management, reception, processing, delivery, monitoring and closure across modes. Evidence responsibility: source-grounded mode distinctions, suitable workflow considerations and limitations, including document and remote constraints; avoid unsupported performance promises. Sources: professional practice guides and original interpreting research. Queries: 'professional interpreting consecutive simultaneous sight translation remote guidance'; 'interpreting modes turn management original research'."
+          },
+          {
+            "areaId": "listening-discourse-and-meaning",
+            "label": {
+              "en": "Listening, discourse structure and meaning units"
+            },
+            "prerequisiteAreaIds": [],
+            "riskIfMistranslated": "high",
+            "description": "Important. Research discourse organization, reference, cohesion, topic shifts, meaning units, propositional content and pragmatic force. Evidence responsibility: contextual analyses showing which relations and speaker commitments must survive transfer; separate analytic teaching models from proven cognitive mechanisms. Sources: primary discourse/pragmatics research and professional resources. Queries: 'interpreting discourse cohesion reference meaning units research'; 'pragmatic force propositional content interpreting research'."
+          },
+          {
+            "areaId": "logical-scope-and-uncertainty",
+            "label": {
+              "en": "Negation, modality, conditions and uncertainty"
+            },
+            "prerequisiteAreaIds": [],
+            "riskIfMistranslated": "critical",
+            "description": "Critical. Cover scope, qualification, possibility, obligation, permission, hypothetical conditions and reported certainty. Evidence responsibility: source-grounded English–Spanish and English–Chinese contrastive analyses with contextual examples preserving strength, scope and speaker commitment; mark ambiguous readings and repair options. Sources: authoritative grammars and primary linguistic research. Queries: 'English Spanish negation modality conditional scope grammar'; 'English Chinese negation modality uncertainty contrastive research'."
+          },
+          {
+            "areaId": "time-aspect-agency-and-attribution",
+            "label": {
+              "en": "Time, aspect, agency and attribution"
+            },
+            "prerequisiteAreaIds": [],
+            "riskIfMistranslated": "critical",
+            "description": "Critical. Research chronology, completion, repetition, duration, causation, agent/patient roles and direct/reported speech. Evidence responsibility: contextual contrastive dossiers preserving who did or reported what, when and with what temporal status; distinguish linguistic form from inferred factual meaning. Sources: authoritative language references and original contrastive studies. Queries: 'English Spanish tense aspect reported speech agency'; 'English Chinese aspect time reference reported speech grammar'."
+          },
+          {
+            "areaId": "register-pragmatics-and-sensitive-language",
+            "label": {
+              "en": "Register, politeness, idiom and sensitive speech"
+            },
+            "prerequisiteAreaIds": [],
+            "riskIfMistranslated": "high",
+            "description": "Important. Cover formal/informal register, indirectness, politeness, euphemism, idiom, taboo, profanity and disfluency. Evidence responsibility: context-dependent meaning and stance analyses that avoid sanitizing, intensifying or stereotyping speech; investigate multiple defensible renderings and their limits. Sources: pragmatics research, contextual language references and interpreter standards. Queries: 'Spanish Chinese English register politeness euphemism interpreting research'; 'interpreting profanity disfluency professional accuracy'."
+          },
+          {
+            "areaId": "variation-and-institutional-non-equivalence",
+            "label": {
+              "en": "Language variation and cultural/institutional non-equivalence"
+            },
+            "prerequisiteAreaIds": [],
+            "riskIfMistranslated": "high",
+            "description": "Important. Investigate regional/dialect variation, Chinese spoken varieties and scripts, Spanish regional usage and concepts without direct institutional counterparts. Evidence responsibility: explicitly bounded variant records and source-supported explanations; distinguish language choice, identity and literacy without predicting them from nationality. Sources: authoritative regional language references and originating institutions. Queries: 'Spanish regional terminology authoritative language reference'; 'Chinese language varieties simplified traditional script professional interpreting'; '[institution] official multilingual explanation'."
+          },
+          {
+            "areaId": "clarification-monitoring-and-repair",
+            "label": {
+              "en": "Transparent clarification, correction and communication repair"
+            },
+            "prerequisiteAreaIds": [],
+            "riskIfMistranslated": "critical",
+            "description": "Critical. Cover ambiguity, unfamiliar terminology, inaudibility, overlapping turns, interpreter errors and requests to simplify. Evidence responsibility: standards-grounded intervention boundaries and labeled repair sequences preserving speaker ownership and uncertainty. Sources: professional codes, institutional protocols and interaction research. Queries: 'interpreter transparent clarification correction error professional standards'; 'interpreting repair ambiguity overlapping speech research'."
+          },
+          {
+            "areaId": "memory-notes-and-cognitive-load",
+            "label": {
+              "en": "Memory, note-taking and processing demands"
+            },
+            "prerequisiteAreaIds": [],
+            "riskIfMistranslated": "high",
+            "description": "Important. Research selective notes, discourse links, names/numbers, recall, segmentation and processing demands without prescribing stenographic overload. Evidence responsibility: explain proposed techniques, evidence populations, study limits and context; distinguish pedagogical exercises from demonstrated transfer to professional performance. Sources: original interpreting studies and credible professional training references. Queries: 'consecutive interpreting note taking memory empirical study'; 'interpreting cognitive load segmentation training transfer research'."
+          },
+          {
+            "areaId": "numbers-units-identifiers-and-abbreviations",
+            "label": {
+              "en": "Numbers, units, dates, names and abbreviations"
+            },
+            "prerequisiteAreaIds": [],
+            "riskIfMistranslated": "critical",
+            "description": "Critical. Cover quantities, decimal conventions, ranges, percentages, dates, times, names, spelling, identifiers and contextual abbreviation ambiguity. Evidence responsibility: sourced convention contrasts and preservation/verification strategies; distinguish faithful transfer from unauthorized unit conversion or guessed expansion. Sources: official measurement/style references, originating documents and professional guidance. Queries: 'official units decimal date conventions Spanish Chinese'; 'interpreter numbers names spelling abbreviation accuracy guidance'."
+          },
+          {
+            "areaId": "terminology-research-and-source-literacy",
+            "label": {
+              "en": "Terminology research, source authority and uncertainty"
+            },
+            "prerequisiteAreaIds": [],
+            "riskIfMistranslated": "high",
+            "description": "Important. Cover identifying a concept, discovering sources, assessing authority/currentness, corroborating contextual equivalents and maintaining a personal termbase. Evidence responsibility: reproducible research trails and dossier fields linking concept, context, jurisdiction, variant, source passage, uncertainty and revision history; distinguish translation evidence from frequency alone. Sources: professional terminology standards/guidance and institutional multilingual publications. Queries: 'terminology management concept context source reliability interpreting'; 'official bilingual terminology jurisdiction variant source documentation'."
+          },
+          {
+            "areaId": "sight-remote-and-accessible-communication",
+            "label": {
+              "en": "Documents, remote channels and communication access"
+            },
+            "prerequisiteAreaIds": [],
+            "riskIfMistranslated": "high",
+            "description": "Important. Research document layout, legibility, missing context, audio/video constraints, turn visibility, interruption and accessibility. Evidence responsibility: mode-specific preparation and failure/repair sequences grounded in institutional guidance; distinguish language variation from access or literacy needs and avoid technical/privacy guarantees. Sources: professional remote/sight guidance and official accessibility resources. Queries: 'remote interpreting audio video failure protocol professional'; 'sight translation legibility document preparation standards'; 'interpreting communication access accessibility guidance'."
+          },
+          {
+            "areaId": "shared-definitions-and-cross-domain-transfer",
+            "label": {
+              "en": "Contextual definitions and cross-domain transfer"
+            },
+            "prerequisiteAreaIds": [],
+            "riskIfMistranslated": "high",
+            "description": "Important. Supply explanatory definitions needed by both handbooks, including professional, linguistic, clinical and legal concepts, with owning-volume links. Evidence responsibility: source-linked scope, contrasts and relationships; show where identical words carry different domain meanings through labeled synthetic situations. Avoid duplicate domain chapters and unsupported equivalence tables. Sources: the two handbooks' accepted evidence plus authoritative linguistic/professional sources. Queries: '[shared concept] clinical legal meaning official'; '[linguistic concept] authoritative definition interpreting context'; '[concept] Spanish Chinese institutional terminology'."
+          }
+        ],
+        "competencyWeights": {
+          "competence": 1
+        },
+        "status": "draft"
+      }
+    }
+  ]
+}

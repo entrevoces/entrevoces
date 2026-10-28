@@ -3,15 +3,18 @@
   "version": "1.0.0",
   "private": true,
   "type": "module",
-  "description": "ENTRE VOCES \u2014 Progression Engine first; standalone games as thin clients (spec.md v2.1).",
+  "description": "File-based knowledge and game generation with deterministic learning and game runtimes.",
   "scripts": {
-    "test": "node --test tests/conformance.test.js tests/tenancy-generation.test.js tests/critic-pass.test.js",
-    "admin": "node tools/admin/entrevoces-admin.js",
-    "validate": "node tools/admin/entrevoces-admin.js validate",
-    "engine": "node services/progression-engine/server.js",
-    "serve": "python3 -m http.server 8000 --bind 127.0.0.1",
-    "publish:build": "node tools/publish/publish.mjs build",
-    "publish:push": "node tools/publish/publish.mjs push",
-    "audit:kb": "node tools/audit/kb-audit.mjs"
+    "generate": "node tools/generate.mjs",
+    "agents": "node tools/generate.mjs agents",
+    "doctor": "node tools/generate.mjs doctor",
+    "validate": "node tools/generate.mjs validate",
+    "test": "node --test tests/*.test.js",
+    "audit:kb": "node tools/audit/kb-audit.mjs",
+    "knowledge:build": "node tools/build-interpreter-library.mjs",
+    "build": "node tools/build-hub.mjs",
+    "hub": "python3 -m http.server 8014 --bind 127.0.0.1 --directory dist",
+    "suite:build": "node tools/build-suite.mjs",
+    "audit:samples": "node tools/audit/seed-audit.mjs"
   }
 }

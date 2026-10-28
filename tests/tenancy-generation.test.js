@@ -6,7 +6,7 @@ import { readFileSync, existsSync, readdirSync } from "node:fs";
 import * as core from "../packages/engine-core/index.js";
 import { EngineClient, MemoryStorage } from "../packages/engine-client/engine-client.js";
 
-const ALL_GAMES = readdirSync("apps/games", { withFileTypes: true }).filter((d) => d.isDirectory()).map((d) => d.name);
+const ALL_GAMES = [];
 
 test("seven worlds seed clean, each with sourced trilingual concepts", () => {
   assert.equal(core.SEED_DOMAINS.length, 7);
@@ -59,52 +59,10 @@ test("generation: every world mints specific, valid, non-repeating nights + item
   }
 });
 
-test("mirror: recommendGames aligns suggestions to the thinnest stage, with reasons", () => {
-  const concepts = core.SEED_CONCEPTS_BY_DOMAIN["oregon-medical"];
-  const now = Date.now();
-  // Learner strong at stages 1-2, absent at 6-8 → spoken/speed games must surface.
-  const ev = concepts.slice(0, 3).flatMap((c, i) => [1, 2].map((s) => ({ eventId: `m${i}-${s}`, learnerId: "L", domainId: "oregon-medical", conceptId: c.conceptId, stage: s, correct: true, score: 1, confidence: 0.9, clientTs: now })));
-  const state = core.computeLearnerState({ learnerId: "L", domainId: "oregon-medical", events: ev, concepts, now });
-  const games = core.recommendGames({ domain: core.OREGON_MEDICAL, concepts, learnerState: state, limit: 3 });
-  assert.equal(games.length, 3);
-  assert.ok(games.every((g) => g.reason.length > 20 && g.gameId && g.gapStage >= 1));
-  assert.ok(games.some((g) => g.gapStage >= 6), "unproven pressure stages must be suggested");
-  const fresh = core.recommendGames({ domain: core.OREGON_MEDICAL, concepts, learnerState: null });
-  assert.ok(fresh[0].reason.length > 10, "new learners still get a reasoned start");
-});
-
-test("all games: config valid, distinct verbs, engine evidence, standalone files", () => {
-  assert.ok(ALL_GAMES.length >= 9, `expected >=9 game folders, got ${ALL_GAMES.join(",")}`);
-  const verbs = new Set();
-  for (const id of ALL_GAMES) {
-    const cfg = JSON.parse(readFileSync(`apps/games/${id}/game.config.json`, "utf8"));
-    assert.equal(cfg.gameId, id);
-    assert.equal(core.validateGameConfig(cfg).ok, true, id);
-    assert.ok(existsSync(`apps/games/${id}/concepts-subset.json`), `${id} subset`);
-    if (id.startsWith("roblox-")) {
-      assert.ok(existsSync(`apps/games/${id}/src/ReplicatedStorage/PuenteTerms.lua`), "roblox terms");
-      assert.ok(existsSync(`apps/games/${id}/README.md`), "roblox guide");
-      continue;
-    }
-    for (const f of ["index.html", "style.css", "game.js"]) assert.ok(existsSync(`apps/games/${id}/${f}`), `${id}/${f}`);
-    const js = readFileSync(`apps/games/${id}/game.js`, "utf8");
-    assert.ok(js.includes("EngineClient") && js.includes("recordEvidence"), `${id} must speak the engine`);
-    const stages = new Set((js.match(/stage: \d/g) || []));
-    assert.ok(stages.size >= 1, `${id} records staged evidence`);
-  }
-  for (const g of core.GAME_CATALOG) verbs.add(g.verb);
-  assert.ok(verbs.size >= 8, "portfolio verbs must not repeat");
-});
-
-test("Meta adapter: no key means labeled local, never a fake Meta call", async () => {
-  const { metaStatus, inventGame } = await import("../services/progression-engine/meta.js");
-  const status = metaStatus();
-  assert.ok("configured" in status && Array.isArray(status.recentCalls));
-  if (!status.configured) {
-    const inv = await inventGame({ audience: "student", gap: "auto", domain: core.OREGON_MEDICAL, coverage: core.domainCoverage({ domain: core.OREGON_MEDICAL, concepts: core.SEED_CONCEPTS_BY_DOMAIN["oregon-medical"] }), weakest: core.SEED_CONCEPTS_BY_DOMAIN["oregon-medical"][0] });
-    assert.equal(inv.provider, "local-template");
-    assert.ok(inv.name && inv.scores, "invention keeps its contract offline");
-  }
+test("game recommendations only return approved generated builds in the selected domain", () => {
+  const catalog=[{gameId:"generated",status:"approved",domainIds:["oregon-medical"]},{gameId:"draft",status:"draft",domainIds:["oregon-medical"]},{gameId:"foreign",status:"approved",domainIds:["ai-technology"]}];
+  assert.deepEqual(core.recommendGames({domain:core.OREGON_MEDICAL,catalog}).map(g=>g.gameId),["generated"]);
+  assert.deepEqual(core.recommendGames({domain:core.OREGON_MEDICAL}),[]);
 });
 
 test("simulated playtest: full learner loop changes recommendations (correctness of generation)", () => {

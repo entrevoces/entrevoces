@@ -1,0 +1,35 @@
+{
+  "historicalJobId": "6a4effcf-8ef3-44c5-ae82-c5636e711bbd",
+  "source": {
+    "title": "Developing a Language Access Plan",
+    "publisher": "Oregon Health Authority — Equity and Inclusion Division",
+    "url": "https://www.oregon.gov/oha/EI/Documents/Language-Access-Planning.pdf",
+    "publishedOrRevised": "2021-06-10",
+    "authority": "high",
+    "permittedUse": "Public Oregon government educational guidance, local evaluation only; review rights before redistribution.",
+    "limitations": "2021 publication; current law and linked external tools must be verified separately.",
+    "sourceId": "resource-23d4e92c6c708e66596d",
+    "jurisdiction": "Oregon"
+  },
+  "importedAt": "2026-10-27T09:27:01.293Z",
+  "status": "historical-reviewed-draft",
+  "note": "Reused existing content, not newly generated or newly certified. Source-specific legal/institutional boundaries remain applicable.",
+  "files": [
+    {
+      "name": "handbook.md",
+      "sha256": "a5fac39993733d990d4f6a1a5135c3157572c0e2cc69b15af05b542ca51824be"
+    },
+    {
+      "name": "handbook.json",
+      "sha256": "afb46699ea4d3fa58bd1a519c615fe1d8dca5c65ba738a525a460fe8fcab2aea"
+    },
+    {
+      "name": "knowledgebase.md",
+      "sha256": "72623c3fe22ee44449c8790a40a8e2e8d9560d6d03ad6b01ef73d124ed1cd277"
+    },
+    {
+      "name": "knowledgebase.json",
+      "sha256": "ff45e1877ad50d06694da3fa6e2f34480793322ac80e6df195749b45d613d491"
+    }
+  ]
+}

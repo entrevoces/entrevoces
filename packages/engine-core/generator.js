@@ -1,4 +1,4 @@
-// ENTRE VOCES engine-core — procedural people & problems (Spark showcase)
+// ENTRE VOCES engine-core — procedural people & problems (game builder showcase)
 // NOT LLM filler: combinatorial generation over hand-authored domain material.
 // Same seed → same person (reproducible, testable). New seed → a specific new
 // person with a name, a stake, a speech quirk, and an effort profile derived

@@ -1,0 +1,194 @@
+# Common Ground — game_framework
+
+Status: agent-authored design specification. Implementation and playtesting remain separate gates.
+
+Domain: language-foundations. Concepts: interpreting-skill-9.
+
+## Candidate exploration
+
+### Common Ground — selected
+
+Coordinate a living city of encounters, one tactical turn at a time. Choose which voice to serve, preserve the intended recipient and constraints, and clarify missing meaning rather than invent it. Selected because its state space adds a distinct interpreting responsibility and can be expressed as consequential game-world actions.
+
+### Dialog-driven interpretation desk — rejected
+
+Rejected because it would concentrate play into reading and answer choices, repeat the old text-heavy presentation and add little mechanical distinction to the collection.
+
+### Generic recall challenge with a new theme — rejected
+
+Rejected because swapping colors, vocabulary and cover art would not change the primary verb, decision topology or the evidence produced by the existing games.
+
+## 01 · charter
+
+Common Ground owns a specific interpreting responsibility: Coordinate a living city of encounters, one tactical turn at a time. Choose which voice to serve, preserve the intended recipient and constraints, and clarify missing meaning rather than invent it. It is one part of a five-world curriculum and does not certify a professional. Its primary verb is coordinate; its decision space is described below rather than inherited from a quiz template.
+
+## 02 · audience
+
+Developing and working interpreters who want practical attention and meaning-transfer exercises. Sessions last roughly three to eight minutes and support mouse, touch and keyboard. English–Spanish and English–Chinese use existing terms; synthetic world instructions are labeled practice. No prior clinical or legal credential is required to explore Common Ground.
+
+## 03 · creative-direction
+
+A lantern-lit terracotta and jade city, isometric building caps, rain-slick paths, small expressive residents and visible arcs between voices. Meaning is carried as compact symbol packets. The tactical plan is legible from shapes and positions before reading optional detail. Deliberate, reversible movement within a turn, readable intent previews, a satisfying shared light when an encounter resolves, and a brief pause for the recipient response. Pressure comes from competing human needs and limited attention, not a countdown or a wall of choices. Preserve this identity across title, play and result. Other games in the collection use different geometry and temporal structure; sharing the host controls must not make their worlds look or play alike.
+
+## 04 · gameplay-loops
+
+A seven-by-seven walkable city grid contains walls, speakers, recipients and scheduled encounter requests. The interpreter has three movement points and two bounded message slots. Collecting a request stores its known semantic fields; an unknown field remains unknown until clarification at its speaker costs an action. A relay assesses recipient, field completeness and preserved meaning, then updates the encounter. NPC intentions are telegraphed before the turn advances. A seeded generator validates routes and schedules feasible deadlines; no real legal or clinical decision is made by the player. Six districts, each a finite twelve-turn encounter schedule with increasing concurrent responsibilities. The player needs a threshold of faithful resolutions and must avoid three unclarified or misdirected relays. Earlier skill handoffs matter: qualifiers, memory anchors, queue coordination and planning ahead. A new run changes city layout, encounter order and traffic. The recurring loop is input, world change, feedback, and a consequential next action. Explanatory prose stays in optional help; the world and its changing state remain the primary interface.
+
+## 05 · state
+
+SceneMachine owns title, play, paused, interlude and result. Common Ground's world owns its level-local entities and counters; the host owns session ID, level checkpoint, assistance, assessed-attempt IDs and settings. No timer advances while paused. Restart replaces level-local state, retaining prior evidence and the assistance flag for a repeated challenge.
+
+## 06 · mechanics
+
+A seven-by-seven walkable city grid contains walls, speakers, recipients and scheduled encounter requests. The interpreter has three movement points and two bounded message slots. Collecting a request stores its known semantic fields; an unknown field remains unknown until clarification at its speaker costs an action. A relay assesses recipient, field completeness and preserved meaning, then updates the encounter. NPC intentions are telegraphed before the turn advances. A seeded generator validates routes and schedules feasible deadlines; no real legal or clinical decision is made by the player. Completion requires a real state transition through the relevant target or encounter, never clicking a generic correct-answer button. Geometric/motor scoring is separate from language assessment, and omitted or unknown meaning cannot be silently substituted.
+
+## 07 · entities
+
+A seven-by-seven walkable city grid contains walls, speakers, recipients and scheduled encounter requests. The interpreter has three movement points and two bounded message slots. Collecting a request stores its known semantic fields; an unknown field remains unknown until clarification at its speaker costs an action. A relay assesses recipient, field completeness and preserved meaning, then updates the encounter. NPC intentions are telegraphed before the turn advances. A seeded generator validates routes and schedules feasible deadlines; no real legal or clinical decision is made by the player. Each entity has a stable level-local ID, CSS-pixel or grid position, type, active state and explicit owner. Draw-only particles have no collision or assessment authority. Labels name only immediate world objects; no decorative entity is counted as authored learning content.
+
+## 08 · interactions
+
+Input is sampled before simulation; movement and physical collisions resolve next; semantic gate/receiver/encounter assessment resolves once per unique attempt; feedback and checkpoint persistence follow. Tap reachable tiles or use arrows to move. Space interacts with the adjacent focused person; Clarify resolves missing information at its source; Relay delivers the selected message to an adjacent recipient. Tab changes carried message; End turn resolves telegraphed intentions. Touch controls duplicate every action. Paused, title and result scenes reject world actions, and a release/cancel clears held inputs before a new scene begins.
+
+## 09 · simulation
+
+A seven-by-seven walkable city grid contains walls, speakers, recipients and scheduled encounter requests. The interpreter has three movement points and two bounded message slots. Collecting a request stores its known semantic fields; an unknown field remains unknown until clarification at its speaker costs an action. A relay assesses recipient, field completeness and preserved meaning, then updates the encounter. NPC intentions are telegraphed before the turn advances. A seeded generator validates routes and schedules feasible deadlines; no real legal or clinical decision is made by the player. Use the shared fixed 60 Hz GameLoop and bounded catch-up. World positions are CSS pixels calculated from viewport layout, while grids keep discrete coordinates. A visited-state cap, finite packet/particle capacity and explicit level boundaries prevent runaway loops and unbounded accumulation.
+
+## 10 · ai
+
+There is no runtime model or adaptive NPC model in Common Ground. Any NPC timing, path selection or decorative motion follows deterministic seeded rules. Authoring happened in the chat under the user's explicit quota exception. Independent CLI critique is still pending and must not be represented as completed by these deterministic agents.
+
+## 11 · levels
+
+Six districts, each a finite twelve-turn encounter schedule with increasing concurrent responsibilities. The player needs a threshold of faithful resolutions and must avoid three unclarified or misdirected relays. Earlier skill handoffs matter: qualifiers, memory anchors, queue coordination and planning ahead. A new run changes city layout, encounter order and traffic. A level begins from a reproducible seed and a validated reachable construction. Onboarding introduces only one load-bearing rule before combining it with another. Replay changes topology, state and decision order, not only names or colors. An unreachable or contradictory generated level is rejected before play.
+
+## 12 · content
+
+Coordinate a living city of encounters, one tactical turn at a time. Choose which voice to serve, preserve the intended recipient and constraints, and clarify missing meaning rather than invent it. Reuse the selected concept definitions and English/Spanish/Chinese terms from the existing knowledge snapshot. Synthetic world messages are authored practice, not medical advice or jurisdiction-universal law. Missing target-language terms are shown as missing, never replaced by an unrelated language.
+
+## 13 · difficulty
+
+Difficulty and evidence eligibility remain deterministic engine-core policy. Six districts, each a finite twelve-turn encounter schedule with increasing concurrent responsibilities. The player needs a threshold of faithful resolutions and must avoid three unclarified or misdirected relays. Earlier skill handoffs matter: qualifiers, memory anchors, queue coordination and planning ahead. A new run changes city layout, encounter order and traffic. Level escalation changes interacting gameplay constraints; it does not overwrite mastery estimates. Comfort mode removes unnecessary time pressure and logs assistance where it changes assessment. Motor success alone cannot promote language difficulty.
+
+## 14 · progression
+
+Common Ground follows the previous worlds in the collection and prepares integrated repeat practice. Every game remains explorable as a local experiment. Level checkpoints guide continuation; no fake stars or automatic evidence are awarded for title, help, reading, settings, pause, restart or result views.
+
+## 15 · narrative
+
+The player is a carrier of meaning inside an original abstract world. Coordinate a living city of encounters, one tactical turn at a time. Choose which voice to serve, preserve the intended recipient and constraints, and clarify missing meaning rather than invent it. There are no borrowed characters, commercial artwork or claims that fictional cases happened. Narrative is expressed through the world's state and responses rather than long dialogue; source-specific professional content remains a reference boundary.
+
+## 16 · controls-camera
+
+Tap reachable tiles or use arrows to move. Space interacts with the adjacent focused person; Clarify resolves missing information at its source; Relay delivers the selected message to an adjacent recipient. Tab changes carried message; End turn resolves telegraphed intentions. Touch controls duplicate every action. Layout uses actual CSS viewport dimensions, with world reflow and targets around 44 pixels or larger rather than a shrunken desktop canvas. The camera shows the next consequential action. Keyboard focus is drawn in the world, and touch controls provide alternatives to precision dragging or held mouse gestures.
+
+## 17 · ui-ux
+
+Open on a full-screen art-directed title for Common Ground, with one primary Play/Continue action. During play, the world occupies at least 80% of the viewport; the source is one short utterance, and HUD shows only level, immediate state and essential tools. Definitions, citations, full controls and production limitations live in optional help, not stacked model-text cards.
+
+## 18 · art
+
+A lantern-lit terracotta and jade city, isometric building caps, rain-slick paths, small expressive residents and visible arcs between voices. Meaning is carried as compact symbol packets. The tactical plan is legible from shapes and positions before reading optional detail. Author original local SVG title layers and draw interactive geometry/entities live on canvas. Never bake authoritative text, the complete HUD or the game itself into an image. Essential objects use distinct shape and motion as well as color, and asset failure has an explicit recoverable title fallback.
+
+## 19 · animation-vfx
+
+Deliberate, reversible movement within a turn, readable intent previews, a satisfying shared light when an encounter resolves, and a brief pause for the recipient response. Pressure comes from competing human needs and limited attention, not a countdown or a wall of choices. Draw a bounded particle pool, eased transitions and short state cues. Reduced motion removes shake, trails and nonessential parallax while retaining necessary position/state feedback. Animation never delays assessment or hides a control; draw order is background, world, agents, feedback, focus and HUD.
+
+## 20 · audio
+
+Bundle original build-time rendered WAV cues and a restrained ambient score appropriate to this identity: Deliberate, reversible movement within a turn, readable intent previews, a satisfying shared light when an encounter resolves, and a brief pause for the recipient response. Pressure comes from competing human needs and limited attention, not a countdown or a wall of choices. AudioMixer unlocks after the first gesture, exposes mute and volume, and keeps play functional in silence. Musical cues are feedback rather than a claim of synthesized speech or spoken-source assessment.
+
+## 21 · accessibility
+
+Keyboard and touch have complete control parity. Tap reachable tiles or use arrows to move. Space interacts with the adjacent focused person; Clarify resolves missing information at its source; Relay delivers the selected message to an adjacent recipient. Tab changes carried message; End turn resolves telegraphed intentions. Touch controls duplicate every action. Provide visible focus, readable source text, shape-coded state, a pause affordance, reduced motion, mute/volume and comfort mode. Blur cancels input and opens pause; returning cannot silently resume an active timer. Help explains exact controls and the limited learning responsibility.
+
+## 22 · architecture
+
+Use one shared host for lifecycle, assets, audio, input, persistence and validated multi-domain EngineClient instances, plus a separate common-ground world module implementing its own state space and rules. The host imports actual engine-core and game-runtime APIs. Rendering has no authority to update learning state, and worlds never duplicate mastery or retention math.
+
+## 23 · performance
+
+Target 60 Hz on desktop and mobile with DPR capped at two, finite entities and bounded effects. A seven-by-seven walkable city grid contains walls, speakers, recipients and scheduled encounter requests. The interpreter has three movement points and two bounded message slots. Collecting a request stores its known semantic fields; an unknown field remains unknown until clarification at its speaker costs an action. A relay assesses recipient, field completeness and preserved meaning, then updates the encounter. NPC intentions are telegraphed before the turn advances. A seeded generator validates routes and schedules feasible deadlines; no real legal or clinical decision is made by the player. Avoid per-frame DOM rebuilds and runtime network dependencies. Fixed-step catch-up drops excess time rather than fast-forwarding an invisible world. Large source/reference prose is loaded only for optional reading, not every frame.
+
+## 24 · persistence
+
+VersionedStore keeps the level checkpoint, seed, settings, best local run and assistance markers. EngineClient separately owns append-only domain-isolated evidence. Reload resumes the current level, not a fabricated exact-frame snapshot. Corrupt data resets safely; blocked/quota storage leaves play possible and exposes exportable in-session progress.
+
+## 25 · generation
+
+A seven-by-seven walkable city grid contains walls, speakers, recipients and scheduled encounter requests. The interpreter has three movement points and two bounded message slots. Collecting a request stores its known semantic fields; an unknown field remains unknown until clarification at its speaker costs an action. A relay assesses recipient, field completeness and preserved meaning, then updates the encounter. NPC intentions are telegraphed before the turn advances. A seeded generator validates routes and schedules feasible deadlines; no real legal or clinical decision is made by the player. Seeds determine topology, content order and timing. Generate a valid solution or feasible schedule first, scramble the presentation second, then validate reachability and resource budgets. Do not claim variation from color/name swaps. Failed validation regenerates within a bounded attempt count or reports an explicit error.
+
+## 26 · testing
+
+Exercise a full Six districts, each a finite twelve-turn encounter schedule with increasing concurrent responsibilities. The player needs a threshold of faithful resolutions and must avoid three unclarified or misdirected relays. Earlier skill handoffs matter: qualifiers, memory anchors, queue coordination and planning ahead. A new run changes city layout, encounter order and traffic. Test keyboard and portrait touch, pause/blur, restart, hint persistence, seeded replay, repeated completion, malformed storage, missing audio, and the distinction between motor errors and assessed meaning errors. Logic tests cover reachable solutions and finite event ordering; real browser play is separately recorded.
+
+## 27 · acceptance
+
+A complete session in Common Ground must be reachable through actual world actions, with escalation, meaningful consequence, win/result, recoverable failure and replay. The saved definition, required assets, lifecycle controls and shared evidence integration must exist. Independent CLI design/code reviews remain pending; do not mark a model or human quality gate passed merely because files compile.
+
+## 28 · delivery
+
+Deliver a static standalone package for common-ground: index, style, source modules, bundled art/audio, knowledge snapshot, shared learning/runtime modules, this framework and an honest acceptance report. Include it in the local learning hub as an experiment. The author can hide/remove it easily; no automatic publication follows a successful build.
+
+## 29 · risks
+
+Risks include a motor or routing solution that bypasses the meaning task, a dominant waiting strategy, repeated-seed farming, tiny mobile targets, source ambiguity and overclaiming evidence. Coordinate a living city of encounters, one tactical turn at a time. Choose which voice to serve, preserve the intended recipient and constraints, and clarify missing meaning rather than invent it. Keep the assessed responsibility narrow and inspect real play. Aesthetic ambition does not waive state correctness or the still-pending independent critiques.
+
+## 30 · traceability
+
+Trace WORLD-common-ground to the unique coordinate loop, SOURCE-interpreting-skill-9 to the reused knowledge, LIFE-01 to host scenes, ACCESS-01 to keyboard/touch, SAVE-01 to checkpoint recovery and EVIDENCE-01 to the assessed-action event. Every advertised feature needs actual code and observed or tested evidence; limitations remain explicit in the build report.
+
+## Operational mechanic contracts
+
+### common-ground-world
+
+**decision:** Tap reachable tiles or use arrows to move. Space interacts with the adjacent focused person; Clarify resolves missing information at its source; Relay delivers the selected message to an adjacent recipient. Tab changes carried message; End turn resolves telegraphed intentions. Touch controls duplicate every action.
+
+**trigger:** A real player world action during the play scene reaches a consequential state transition.
+
+**preconditions:** The level is active, its deterministic seed is initialized, and this attempt has not already been assessed.
+
+**inputs:** Tap reachable tiles or use arrows to move. Space interacts with the adjacent focused person; Clarify resolves missing information at its source; Relay delivers the selected message to an adjacent recipient. Tab changes carried message; End turn resolves telegraphed intentions. Touch controls duplicate every action.
+
+**algorithm:** A seven-by-seven walkable city grid contains walls, speakers, recipients and scheduled encounter requests. The interpreter has three movement points and two bounded message slots. Collecting a request stores its known semantic fields; an unknown field remains unknown until clarification at its speaker costs an action. A relay assesses recipient, field completeness and preserved meaning, then updates the encounter. NPC intentions are telegraphed before the turn advances. A seeded generator validates routes and schedules feasible deadlines; no real legal or clinical decision is made by the player.
+
+**parameters:** Six districts, each a finite twelve-turn encounter schedule with increasing concurrent responsibilities. The player needs a threshold of faithful resolutions and must avoid three unclarified or misdirected relays. Earlier skill handoffs matter: qualifiers, memory anchors, queue coordination and planning ahead. A new run changes city layout, encounter order and traffic.
+
+**costs:** Actions consume the explicitly defined time, movement, attention or error budget; hints are recorded as assistance.
+
+**stateChanges:** Update only world-owned entities first, then emit at most one domain-qualified evidence event for an assessed response.
+
+**feedback:** Deliberate, reversible movement within a turn, readable intent previews, a satisfying shared light when an encounter resolves, and a brief pause for the recipient response. Pressure comes from competing human needs and limited attention, not a countdown or a wall of choices.
+
+**interactions:** Physical state resolves before semantic assessment; feedback and checkpoint writes follow the accepted transition.
+
+**edgeCases:** Pause, blur, restart, repeated input, invalid storage, simultaneous arrivals and failed assets must recover without duplicate evidence.
+
+**tests:** Validate seeded reachability, a complete session, keyboard/touch equivalence, finite event ordering and no mastery from motor-only actions.
+
+### common-ground-meaning
+
+**decision:** Coordinate a living city of encounters, one tactical turn at a time. Choose which voice to serve, preserve the intended recipient and constraints, and clarify missing meaning rather than invent it.
+
+**trigger:** A real player world action during the play scene reaches a consequential state transition.
+
+**preconditions:** The level is active, its deterministic seed is initialized, and this attempt has not already been assessed.
+
+**inputs:** Tap reachable tiles or use arrows to move. Space interacts with the adjacent focused person; Clarify resolves missing information at its source; Relay delivers the selected message to an adjacent recipient. Tab changes carried message; End turn resolves telegraphed intentions. Touch controls duplicate every action.
+
+**algorithm:** A seven-by-seven walkable city grid contains walls, speakers, recipients and scheduled encounter requests. The interpreter has three movement points and two bounded message slots. Collecting a request stores its known semantic fields; an unknown field remains unknown until clarification at its speaker costs an action. A relay assesses recipient, field completeness and preserved meaning, then updates the encounter. NPC intentions are telegraphed before the turn advances. A seeded generator validates routes and schedules feasible deadlines; no real legal or clinical decision is made by the player.
+
+**parameters:** Six districts, each a finite twelve-turn encounter schedule with increasing concurrent responsibilities. The player needs a threshold of faithful resolutions and must avoid three unclarified or misdirected relays. Earlier skill handoffs matter: qualifiers, memory anchors, queue coordination and planning ahead. A new run changes city layout, encounter order and traffic.
+
+**costs:** Actions consume the explicitly defined time, movement, attention or error budget; hints are recorded as assistance.
+
+**stateChanges:** Update only world-owned entities first, then emit at most one domain-qualified evidence event for an assessed response.
+
+**feedback:** Deliberate, reversible movement within a turn, readable intent previews, a satisfying shared light when an encounter resolves, and a brief pause for the recipient response. Pressure comes from competing human needs and limited attention, not a countdown or a wall of choices.
+
+**interactions:** Physical state resolves before semantic assessment; feedback and checkpoint writes follow the accepted transition.
+
+**edgeCases:** Pause, blur, restart, repeated input, invalid storage, simultaneous arrivals and failed assets must recover without duplicate evidence.
+
+**tests:** Validate seeded reachability, a complete session, keyboard/touch equivalence, finite event ordering and no mastery from motor-only actions.
+

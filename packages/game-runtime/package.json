@@ -1,0 +1,19 @@
+{
+  "name": "@entrevoces/game-runtime",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./loop.js": "./loop.js",
+    "./scenes.js": "./scenes.js",
+    "./input.js": "./input.js",
+    "./camera.js": "./camera.js",
+    "./assets.js": "./assets.js",
+    "./audio.js": "./audio.js",
+    "./rng.js": "./rng.js",
+    "./fx.js": "./fx.js",
+    "./storage.js": "./storage.js"
+  },
+  "description": "Shared browser game runtime for ENTRE VOCES generated games: fixed-step loop, scenes, input, camera, assets, audio, RNG, FX, persistence. Zero dependencies, no CDN, no learning/assessment math."
+}

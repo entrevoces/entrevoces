@@ -1,0 +1,194 @@
+# Counterpoint — game_framework
+
+Status: agent-authored design specification. Implementation and playtesting remain separate gates.
+
+Domain: medical. Concepts: dose.
+
+## Candidate exploration
+
+### Counterpoint — selected
+
+Conduct overlapping speaker channels. Hold a complete unit, route its term into the right target-language receiver, and release at the right moment without clipping the source. Selected because its state space adds a distinct interpreting responsibility and can be expressed as consequential game-world actions.
+
+### Dialog-driven interpretation desk — rejected
+
+Rejected because it would concentrate play into reading and answer choices, repeat the old text-heavy presentation and add little mechanical distinction to the collection.
+
+### Generic recall challenge with a new theme — rejected
+
+Rejected because swapping colors, vocabulary and cover art would not change the primary verb, decision topology or the evidence produced by the existing games.
+
+## 01 · charter
+
+Counterpoint owns a specific interpreting responsibility: Conduct overlapping speaker channels. Hold a complete unit, route its term into the right target-language receiver, and release at the right moment without clipping the source. It is one part of a five-world curriculum and does not certify a professional. Its primary verb is conduct; its decision space is described below rather than inherited from a quiz template.
+
+## 02 · audience
+
+Developing and working interpreters who want practical attention and meaning-transfer exercises. Sessions last roughly three to eight minutes and support mouse, touch and keyboard. English–Spanish and English–Chinese use existing terms; synthetic world instructions are labeled practice. No prior clinical or legal credential is required to explore Counterpoint.
+
+## 03 · creative-direction
+
+A midnight concert hall of curved brass channels, coral and lavender signals, silhouetted speakers and a reflective stage. The world resembles an instrument being played. Payload terms are concise in-world labels; full definitions are optional help. Commit is percussive and immediate. Complete packets resolve into harmonic chords; a clipped turn leaves an audible rest and a broken ribbon. The interaction should feel like balancing simultaneous musical lines while protecting the identity of each voice. Preserve this identity across title, play and result. Other games in the collection use different geometry and temporal structure; sharing the host controls must not make their worlds look or play alike.
+
+## 04 · gameplay-loops
+
+Two channels grow into three. Each speaker emits a bounded packet with a known English term, a complete source unit, a target-language term from the reused knowledge and an arrival deadline. Packet charge reaches complete after its declared duration. A selected channel can be routed to one of the displayed receiver lanes, then committed. Early commit clips the unit; wrong receiver changes the term; overflow loses the packet. Clarification freezes a packet briefly but is logged as assistance. Fixed-step scheduling and stable packet IDs resolve simultaneous arrivals before player commits. Six movements of 45 seconds, with a finite target number of faithful deliveries and a three-error recovery budget. Each movement changes term mix, channel concurrency, receiver positions and source duration, so a fixed tapping pattern is not a solution. No recorded speech or listening proficiency is claimed from musical cues. The recurring loop is input, world change, feedback, and a consequential next action. Explanatory prose stays in optional help; the world and its changing state remain the primary interface.
+
+## 05 · state
+
+SceneMachine owns title, play, paused, interlude and result. Counterpoint's world owns its level-local entities and counters; the host owns session ID, level checkpoint, assistance, assessed-attempt IDs and settings. No timer advances while paused. Restart replaces level-local state, retaining prior evidence and the assistance flag for a repeated challenge.
+
+## 06 · mechanics
+
+Two channels grow into three. Each speaker emits a bounded packet with a known English term, a complete source unit, a target-language term from the reused knowledge and an arrival deadline. Packet charge reaches complete after its declared duration. A selected channel can be routed to one of the displayed receiver lanes, then committed. Early commit clips the unit; wrong receiver changes the term; overflow loses the packet. Clarification freezes a packet briefly but is logged as assistance. Fixed-step scheduling and stable packet IDs resolve simultaneous arrivals before player commits. Completion requires a real state transition through the relevant target or encounter, never clicking a generic correct-answer button. Geometric/motor scoring is separate from language assessment, and omitted or unknown meaning cannot be silently substituted.
+
+## 07 · entities
+
+Two channels grow into three. Each speaker emits a bounded packet with a known English term, a complete source unit, a target-language term from the reused knowledge and an arrival deadline. Packet charge reaches complete after its declared duration. A selected channel can be routed to one of the displayed receiver lanes, then committed. Early commit clips the unit; wrong receiver changes the term; overflow loses the packet. Clarification freezes a packet briefly but is logged as assistance. Fixed-step scheduling and stable packet IDs resolve simultaneous arrivals before player commits. Each entity has a stable level-local ID, CSS-pixel or grid position, type, active state and explicit owner. Draw-only particles have no collision or assessment authority. Labels name only immediate world objects; no decorative entity is counted as authored learning content.
+
+## 08 · interactions
+
+Input is sampled before simulation; movement and physical collisions resolve next; semantic gate/receiver/encounter assessment resolves once per unique attempt; feedback and checkpoint persistence follow. Tap a speaker to select it, tap a target receiver to route, then tap Release. Number keys 1–3 select speakers, left/right choose a receiver, Space releases, C clarifies. A visible charge ring and shape-coded channel ribbon communicate completeness without long text. Paused, title and result scenes reject world actions, and a release/cancel clears held inputs before a new scene begins.
+
+## 09 · simulation
+
+Two channels grow into three. Each speaker emits a bounded packet with a known English term, a complete source unit, a target-language term from the reused knowledge and an arrival deadline. Packet charge reaches complete after its declared duration. A selected channel can be routed to one of the displayed receiver lanes, then committed. Early commit clips the unit; wrong receiver changes the term; overflow loses the packet. Clarification freezes a packet briefly but is logged as assistance. Fixed-step scheduling and stable packet IDs resolve simultaneous arrivals before player commits. Use the shared fixed 60 Hz GameLoop and bounded catch-up. World positions are CSS pixels calculated from viewport layout, while grids keep discrete coordinates. A visited-state cap, finite packet/particle capacity and explicit level boundaries prevent runaway loops and unbounded accumulation.
+
+## 10 · ai
+
+There is no runtime model or adaptive NPC model in Counterpoint. Any NPC timing, path selection or decorative motion follows deterministic seeded rules. Authoring happened in the chat under the user's explicit quota exception. Independent CLI critique is still pending and must not be represented as completed by these deterministic agents.
+
+## 11 · levels
+
+Six movements of 45 seconds, with a finite target number of faithful deliveries and a three-error recovery budget. Each movement changes term mix, channel concurrency, receiver positions and source duration, so a fixed tapping pattern is not a solution. No recorded speech or listening proficiency is claimed from musical cues. A level begins from a reproducible seed and a validated reachable construction. Onboarding introduces only one load-bearing rule before combining it with another. Replay changes topology, state and decision order, not only names or colors. An unreachable or contradictory generated level is rejected before play.
+
+## 12 · content
+
+Conduct overlapping speaker channels. Hold a complete unit, route its term into the right target-language receiver, and release at the right moment without clipping the source. Reuse the selected concept definitions and English/Spanish/Chinese terms from the existing knowledge snapshot. Synthetic world messages are authored practice, not medical advice or jurisdiction-universal law. Missing target-language terms are shown as missing, never replaced by an unrelated language.
+
+## 13 · difficulty
+
+Difficulty and evidence eligibility remain deterministic engine-core policy. Six movements of 45 seconds, with a finite target number of faithful deliveries and a three-error recovery budget. Each movement changes term mix, channel concurrency, receiver positions and source duration, so a fixed tapping pattern is not a solution. No recorded speech or listening proficiency is claimed from musical cues. Level escalation changes interacting gameplay constraints; it does not overwrite mastery estimates. Comfort mode removes unnecessary time pressure and logs assistance where it changes assessment. Motor success alone cannot promote language difficulty.
+
+## 14 · progression
+
+Counterpoint follows the previous worlds in the collection and prepares marginfall. Every game remains explorable as a local experiment. Level checkpoints guide continuation; no fake stars or automatic evidence are awarded for title, help, reading, settings, pause, restart or result views.
+
+## 15 · narrative
+
+The player is a carrier of meaning inside an original abstract world. Conduct overlapping speaker channels. Hold a complete unit, route its term into the right target-language receiver, and release at the right moment without clipping the source. There are no borrowed characters, commercial artwork or claims that fictional cases happened. Narrative is expressed through the world's state and responses rather than long dialogue; source-specific professional content remains a reference boundary.
+
+## 16 · controls-camera
+
+Tap a speaker to select it, tap a target receiver to route, then tap Release. Number keys 1–3 select speakers, left/right choose a receiver, Space releases, C clarifies. A visible charge ring and shape-coded channel ribbon communicate completeness without long text. Layout uses actual CSS viewport dimensions, with world reflow and targets around 44 pixels or larger rather than a shrunken desktop canvas. The camera shows the next consequential action. Keyboard focus is drawn in the world, and touch controls provide alternatives to precision dragging or held mouse gestures.
+
+## 17 · ui-ux
+
+Open on a full-screen art-directed title for Counterpoint, with one primary Play/Continue action. During play, the world occupies at least 80% of the viewport; the source is one short utterance, and HUD shows only level, immediate state and essential tools. Definitions, citations, full controls and production limitations live in optional help, not stacked model-text cards.
+
+## 18 · art
+
+A midnight concert hall of curved brass channels, coral and lavender signals, silhouetted speakers and a reflective stage. The world resembles an instrument being played. Payload terms are concise in-world labels; full definitions are optional help. Author original local SVG title layers and draw interactive geometry/entities live on canvas. Never bake authoritative text, the complete HUD or the game itself into an image. Essential objects use distinct shape and motion as well as color, and asset failure has an explicit recoverable title fallback.
+
+## 19 · animation-vfx
+
+Commit is percussive and immediate. Complete packets resolve into harmonic chords; a clipped turn leaves an audible rest and a broken ribbon. The interaction should feel like balancing simultaneous musical lines while protecting the identity of each voice. Draw a bounded particle pool, eased transitions and short state cues. Reduced motion removes shake, trails and nonessential parallax while retaining necessary position/state feedback. Animation never delays assessment or hides a control; draw order is background, world, agents, feedback, focus and HUD.
+
+## 20 · audio
+
+Bundle original build-time rendered WAV cues and a restrained ambient score appropriate to this identity: Commit is percussive and immediate. Complete packets resolve into harmonic chords; a clipped turn leaves an audible rest and a broken ribbon. The interaction should feel like balancing simultaneous musical lines while protecting the identity of each voice. AudioMixer unlocks after the first gesture, exposes mute and volume, and keeps play functional in silence. Musical cues are feedback rather than a claim of synthesized speech or spoken-source assessment.
+
+## 21 · accessibility
+
+Keyboard and touch have complete control parity. Tap a speaker to select it, tap a target receiver to route, then tap Release. Number keys 1–3 select speakers, left/right choose a receiver, Space releases, C clarifies. A visible charge ring and shape-coded channel ribbon communicate completeness without long text. Provide visible focus, readable source text, shape-coded state, a pause affordance, reduced motion, mute/volume and comfort mode. Blur cancels input and opens pause; returning cannot silently resume an active timer. Help explains exact controls and the limited learning responsibility.
+
+## 22 · architecture
+
+Use one shared host for lifecycle, assets, audio, input, persistence and validated multi-domain EngineClient instances, plus a separate counterpoint world module implementing its own state space and rules. The host imports actual engine-core and game-runtime APIs. Rendering has no authority to update learning state, and worlds never duplicate mastery or retention math.
+
+## 23 · performance
+
+Target 60 Hz on desktop and mobile with DPR capped at two, finite entities and bounded effects. Two channels grow into three. Each speaker emits a bounded packet with a known English term, a complete source unit, a target-language term from the reused knowledge and an arrival deadline. Packet charge reaches complete after its declared duration. A selected channel can be routed to one of the displayed receiver lanes, then committed. Early commit clips the unit; wrong receiver changes the term; overflow loses the packet. Clarification freezes a packet briefly but is logged as assistance. Fixed-step scheduling and stable packet IDs resolve simultaneous arrivals before player commits. Avoid per-frame DOM rebuilds and runtime network dependencies. Fixed-step catch-up drops excess time rather than fast-forwarding an invisible world. Large source/reference prose is loaded only for optional reading, not every frame.
+
+## 24 · persistence
+
+VersionedStore keeps the level checkpoint, seed, settings, best local run and assistance markers. EngineClient separately owns append-only domain-isolated evidence. Reload resumes the current level, not a fabricated exact-frame snapshot. Corrupt data resets safely; blocked/quota storage leaves play possible and exposes exportable in-session progress.
+
+## 25 · generation
+
+Two channels grow into three. Each speaker emits a bounded packet with a known English term, a complete source unit, a target-language term from the reused knowledge and an arrival deadline. Packet charge reaches complete after its declared duration. A selected channel can be routed to one of the displayed receiver lanes, then committed. Early commit clips the unit; wrong receiver changes the term; overflow loses the packet. Clarification freezes a packet briefly but is logged as assistance. Fixed-step scheduling and stable packet IDs resolve simultaneous arrivals before player commits. Seeds determine topology, content order and timing. Generate a valid solution or feasible schedule first, scramble the presentation second, then validate reachability and resource budgets. Do not claim variation from color/name swaps. Failed validation regenerates within a bounded attempt count or reports an explicit error.
+
+## 26 · testing
+
+Exercise a full Six movements of 45 seconds, with a finite target number of faithful deliveries and a three-error recovery budget. Each movement changes term mix, channel concurrency, receiver positions and source duration, so a fixed tapping pattern is not a solution. No recorded speech or listening proficiency is claimed from musical cues. Test keyboard and portrait touch, pause/blur, restart, hint persistence, seeded replay, repeated completion, malformed storage, missing audio, and the distinction between motor errors and assessed meaning errors. Logic tests cover reachable solutions and finite event ordering; real browser play is separately recorded.
+
+## 27 · acceptance
+
+A complete session in Counterpoint must be reachable through actual world actions, with escalation, meaningful consequence, win/result, recoverable failure and replay. The saved definition, required assets, lifecycle controls and shared evidence integration must exist. Independent CLI design/code reviews remain pending; do not mark a model or human quality gate passed merely because files compile.
+
+## 28 · delivery
+
+Deliver a static standalone package for counterpoint: index, style, source modules, bundled art/audio, knowledge snapshot, shared learning/runtime modules, this framework and an honest acceptance report. Include it in the local learning hub as an experiment. The author can hide/remove it easily; no automatic publication follows a successful build.
+
+## 29 · risks
+
+Risks include a motor or routing solution that bypasses the meaning task, a dominant waiting strategy, repeated-seed farming, tiny mobile targets, source ambiguity and overclaiming evidence. Conduct overlapping speaker channels. Hold a complete unit, route its term into the right target-language receiver, and release at the right moment without clipping the source. Keep the assessed responsibility narrow and inspect real play. Aesthetic ambition does not waive state correctness or the still-pending independent critiques.
+
+## 30 · traceability
+
+Trace WORLD-counterpoint to the unique conduct loop, SOURCE-dose to the reused knowledge, LIFE-01 to host scenes, ACCESS-01 to keyboard/touch, SAVE-01 to checkpoint recovery and EVIDENCE-01 to the assessed-action event. Every advertised feature needs actual code and observed or tested evidence; limitations remain explicit in the build report.
+
+## Operational mechanic contracts
+
+### counterpoint-world
+
+**decision:** Tap a speaker to select it, tap a target receiver to route, then tap Release. Number keys 1–3 select speakers, left/right choose a receiver, Space releases, C clarifies. A visible charge ring and shape-coded channel ribbon communicate completeness without long text.
+
+**trigger:** A real player world action during the play scene reaches a consequential state transition.
+
+**preconditions:** The level is active, its deterministic seed is initialized, and this attempt has not already been assessed.
+
+**inputs:** Tap a speaker to select it, tap a target receiver to route, then tap Release. Number keys 1–3 select speakers, left/right choose a receiver, Space releases, C clarifies. A visible charge ring and shape-coded channel ribbon communicate completeness without long text.
+
+**algorithm:** Two channels grow into three. Each speaker emits a bounded packet with a known English term, a complete source unit, a target-language term from the reused knowledge and an arrival deadline. Packet charge reaches complete after its declared duration. A selected channel can be routed to one of the displayed receiver lanes, then committed. Early commit clips the unit; wrong receiver changes the term; overflow loses the packet. Clarification freezes a packet briefly but is logged as assistance. Fixed-step scheduling and stable packet IDs resolve simultaneous arrivals before player commits.
+
+**parameters:** Six movements of 45 seconds, with a finite target number of faithful deliveries and a three-error recovery budget. Each movement changes term mix, channel concurrency, receiver positions and source duration, so a fixed tapping pattern is not a solution. No recorded speech or listening proficiency is claimed from musical cues.
+
+**costs:** Actions consume the explicitly defined time, movement, attention or error budget; hints are recorded as assistance.
+
+**stateChanges:** Update only world-owned entities first, then emit at most one domain-qualified evidence event for an assessed response.
+
+**feedback:** Commit is percussive and immediate. Complete packets resolve into harmonic chords; a clipped turn leaves an audible rest and a broken ribbon. The interaction should feel like balancing simultaneous musical lines while protecting the identity of each voice.
+
+**interactions:** Physical state resolves before semantic assessment; feedback and checkpoint writes follow the accepted transition.
+
+**edgeCases:** Pause, blur, restart, repeated input, invalid storage, simultaneous arrivals and failed assets must recover without duplicate evidence.
+
+**tests:** Validate seeded reachability, a complete session, keyboard/touch equivalence, finite event ordering and no mastery from motor-only actions.
+
+### counterpoint-meaning
+
+**decision:** Conduct overlapping speaker channels. Hold a complete unit, route its term into the right target-language receiver, and release at the right moment without clipping the source.
+
+**trigger:** A real player world action during the play scene reaches a consequential state transition.
+
+**preconditions:** The level is active, its deterministic seed is initialized, and this attempt has not already been assessed.
+
+**inputs:** Tap a speaker to select it, tap a target receiver to route, then tap Release. Number keys 1–3 select speakers, left/right choose a receiver, Space releases, C clarifies. A visible charge ring and shape-coded channel ribbon communicate completeness without long text.
+
+**algorithm:** Two channels grow into three. Each speaker emits a bounded packet with a known English term, a complete source unit, a target-language term from the reused knowledge and an arrival deadline. Packet charge reaches complete after its declared duration. A selected channel can be routed to one of the displayed receiver lanes, then committed. Early commit clips the unit; wrong receiver changes the term; overflow loses the packet. Clarification freezes a packet briefly but is logged as assistance. Fixed-step scheduling and stable packet IDs resolve simultaneous arrivals before player commits.
+
+**parameters:** Six movements of 45 seconds, with a finite target number of faithful deliveries and a three-error recovery budget. Each movement changes term mix, channel concurrency, receiver positions and source duration, so a fixed tapping pattern is not a solution. No recorded speech or listening proficiency is claimed from musical cues.
+
+**costs:** Actions consume the explicitly defined time, movement, attention or error budget; hints are recorded as assistance.
+
+**stateChanges:** Update only world-owned entities first, then emit at most one domain-qualified evidence event for an assessed response.
+
+**feedback:** Commit is percussive and immediate. Complete packets resolve into harmonic chords; a clipped turn leaves an audible rest and a broken ribbon. The interaction should feel like balancing simultaneous musical lines while protecting the identity of each voice.
+
+**interactions:** Physical state resolves before semantic assessment; feedback and checkpoint writes follow the accepted transition.
+
+**edgeCases:** Pause, blur, restart, repeated input, invalid storage, simultaneous arrivals and failed assets must recover without duplicate evidence.
+
+**tests:** Validate seeded reachability, a complete session, keyboard/touch equivalence, finite event ordering and no mastery from motor-only actions.
+

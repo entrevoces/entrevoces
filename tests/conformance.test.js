@@ -2,10 +2,11 @@
 // Run: node --test tests/conformance.test.js   (or: npm test)
 import test from "node:test";
 import assert from "node:assert/strict";
-import { readFileSync, existsSync } from "node:fs";
-import { Readable } from "node:stream";
+import { mkdtempSync, readFileSync, existsSync } from "node:fs";
+
 import * as core from "../packages/engine-core/index.js";
 
+process.env.STORE_PATH = `${mkdtempSync("/tmp/ev-conformance-")}/store.json`;
 const MED = core.SEED_CONCEPTS_BY_DOMAIN["oregon-medical"];
 const sourceIds = new Set(core.SOURCES.map((s) => s.sourceId));
 
@@ -68,17 +69,6 @@ test("§9.3 offline merge dedupes by eventId", () => {
   assert.deepEqual(core.mergeEvidence(a, b).map((e) => e.eventId), ["m1", "m2", "m3"]);
 });
 
-test("§11 every game config validates and evidence ids match configs", async () => {
-  for (const id of ["concept-clinch", "shift-consecutive", "bench-call"]) {
-    const cfg = JSON.parse(readFileSync(`apps/games/${id}/game.config.json`, "utf8"));
-    assert.equal(cfg.gameId, id);
-    assert.equal(core.validateGameConfig(cfg).ok, true, id);
-    const js = readFileSync(`apps/games/${id}/game.js`, "utf8");
-    assert.ok(js.includes(`"${id}"`), `${id} game.js must record evidence as ${id}`);
-    assert.ok(existsSync(`apps/games/${id}/concepts-subset.json`), `${id} needs standalone subset`);
-  }
-});
-
 test("§22 generation is reproducible, specific, and varied within a night", () => {
   const args = { domain: core.OREGON_MEDICAL, concepts: MED, seed: "gate-1", targetLang: "es" };
   const a = core.generateClient(args), b = core.generateClient(args);
@@ -96,50 +86,3 @@ test("Appendix A machine-readable schemas exist and parse", () => {
   }
 });
 
-// --- CPE wire, exercised in-process (no socket; sandbox-safe) ---
-async function callCPE(method, path, body, headers = {}) {
-  const { server } = await import("../services/progression-engine/server.js");
-  const handler = server.listeners("request")[0];
-  const payload = body ? JSON.stringify(body) : "";
-  const req = Readable.from(payload ? [Buffer.from(payload)] : []);
-  req.method = method; req.url = path; req.headers = { host: "test", "content-type": "application/json", ...headers };
-  let status = 0, text = "";
-  const res = {
-    writeHead(s, h) { status = s; this.headers = h; },
-    end(t) { text = t || ""; },
-    setHeader() {},
-  };
-  await handler(req, res);
-  return { status, json: text ? JSON.parse(text) : null };
-}
-
-test("§9 CPE health + domains over the wire", async () => {
-  const h = await callCPE("GET", "/v1/health");
-  assert.equal(h.status, 200); assert.equal(h.json.ok, true);
-  const d = await callCPE("GET", "/v1/domains?status=active");
-  assert.equal(d.status, 200);
-  assert.ok(d.json.data.some((x) => x.domainId === "oregon-medical"));
-});
-
-test("§22 CPE generation endpoints mint people + practice (G3)", async () => {
-  const night = await callCPE("GET", "/v1/generate/night?domainId=oregon-medical&seed=gate&size=3");
-  assert.equal(night.status, 200);
-  assert.equal(night.json.data.length, 3);
-  assert.ok(night.json.data.every((p) => p.name && p.conceptId));
-  const practice = await callCPE("GET", "/v1/generate/practice?domainId=oregon-medical&conceptId=dose&stage=2&lang=es");
-  assert.equal(practice.status, 200);
-  assert.ok(practice.json.acceptableAnswers?.length > 0);
-});
-
-test("KB gatekeeper routes: review-base is clean, bad concepts are refused 422", async () => {
-  const base = await callCPE("GET", "/v1/ai/review-base");
-  assert.equal(base.status, 200);
-  assert.equal(base.json.rejected, 0, JSON.stringify(base.json.rejectedIds));
-  assert.equal(base.json.accepted, base.json.total);
-  const bad = await callCPE("POST", "/v1/ai/review", { concept: { conceptId: "bad-1", domainId: "oregon-medical", areaIds: ["intake-registration"], terms: { en: { term: "intake" } }, definition: { en: "x" }, examples: [], distinctions: [], misconceptions: [], sourceIds: [] } });
-  assert.equal(bad.status, 422, "rejected knowledge must not become games");
-  const good = await callCPE("POST", "/v1/ai/review", { conceptId: "dose", domainId: "oregon-medical" });
-  assert.equal(good.status, 200);
-  assert.equal(good.json.gate.verdict, "accept");
-  assert.ok("provider" in good.json, "Meta second reviewer is labeled (meta or local-template)");
-});

@@ -1,0 +1,152 @@
+{
+  "domainId": "language-foundations",
+  "label": {
+    "en": "Interpreter language foundations and shared professional practice"
+  },
+  "jurisdiction": {
+    "country": "cross-jurisdictional",
+    "region": "General interpreter practice; specific legal/clinical rules labeled by source"
+  },
+  "profession": "other",
+  "languagePairs": [
+    {
+      "source": "en",
+      "target": "es",
+      "direction": "both"
+    },
+    {
+      "source": "en",
+      "target": "zh",
+      "direction": "both"
+    }
+  ],
+  "modalities": [
+    "consecutive",
+    "simultaneous",
+    "sight",
+    "remote"
+  ],
+  "translationAreas": [
+    {
+      "areaId": "professional-roles-and-ethics",
+      "label": {
+        "en": "Professional roles, ethics and accountable boundaries"
+      },
+      "prerequisiteAreaIds": [],
+      "riskIfMistranslated": "high",
+      "description": "Important. Distinguish interpreting, translation, mediation and other roles; research accuracy, impartiality, confidentiality, conflicts and scope. Evidence responsibility: compare explicitly bounded professional standards and show transparent responses to role pressure without inventing universal duties. Sources: professional associations and institutional codes. Queries: 'interpreter translator mediator role professional code ethics'; 'medical legal interpreter accuracy confidentiality impartiality standards'."
+    },
+    {
+      "areaId": "modes-and-workflow",
+      "label": {
+        "en": "Consecutive, simultaneous, sight and remote workflows"
+      },
+      "prerequisiteAreaIds": [],
+      "riskIfMistranslated": "high",
+      "description": "Important. Map preparation, turn management, reception, processing, delivery, monitoring and closure across modes. Evidence responsibility: source-grounded mode distinctions, suitable workflow considerations and limitations, including document and remote constraints; avoid unsupported performance promises. Sources: professional practice guides and original interpreting research. Queries: 'professional interpreting consecutive simultaneous sight translation remote guidance'; 'interpreting modes turn management original research'."
+    },
+    {
+      "areaId": "listening-discourse-and-meaning",
+      "label": {
+        "en": "Listening, discourse structure and meaning units"
+      },
+      "prerequisiteAreaIds": [],
+      "riskIfMistranslated": "high",
+      "description": "Important. Research discourse organization, reference, cohesion, topic shifts, meaning units, propositional content and pragmatic force. Evidence responsibility: contextual analyses showing which relations and speaker commitments must survive transfer; separate analytic teaching models from proven cognitive mechanisms. Sources: primary discourse/pragmatics research and professional resources. Queries: 'interpreting discourse cohesion reference meaning units research'; 'pragmatic force propositional content interpreting research'."
+    },
+    {
+      "areaId": "logical-scope-and-uncertainty",
+      "label": {
+        "en": "Negation, modality, conditions and uncertainty"
+      },
+      "prerequisiteAreaIds": [],
+      "riskIfMistranslated": "critical",
+      "description": "Critical. Cover scope, qualification, possibility, obligation, permission, hypothetical conditions and reported certainty. Evidence responsibility: source-grounded English–Spanish and English–Chinese contrastive analyses with contextual examples preserving strength, scope and speaker commitment; mark ambiguous readings and repair options. Sources: authoritative grammars and primary linguistic research. Queries: 'English Spanish negation modality conditional scope grammar'; 'English Chinese negation modality uncertainty contrastive research'."
+    },
+    {
+      "areaId": "time-aspect-agency-and-attribution",
+      "label": {
+        "en": "Time, aspect, agency and attribution"
+      },
+      "prerequisiteAreaIds": [],
+      "riskIfMistranslated": "critical",
+      "description": "Critical. Research chronology, completion, repetition, duration, causation, agent/patient roles and direct/reported speech. Evidence responsibility: contextual contrastive dossiers preserving who did or reported what, when and with what temporal status; distinguish linguistic form from inferred factual meaning. Sources: authoritative language references and original contrastive studies. Queries: 'English Spanish tense aspect reported speech agency'; 'English Chinese aspect time reference reported speech grammar'."
+    },
+    {
+      "areaId": "register-pragmatics-and-sensitive-language",
+      "label": {
+        "en": "Register, politeness, idiom and sensitive speech"
+      },
+      "prerequisiteAreaIds": [],
+      "riskIfMistranslated": "high",
+      "description": "Important. Cover formal/informal register, indirectness, politeness, euphemism, idiom, taboo, profanity and disfluency. Evidence responsibility: context-dependent meaning and stance analyses that avoid sanitizing, intensifying or stereotyping speech; investigate multiple defensible renderings and their limits. Sources: pragmatics research, contextual language references and interpreter standards. Queries: 'Spanish Chinese English register politeness euphemism interpreting research'; 'interpreting profanity disfluency professional accuracy'."
+    },
+    {
+      "areaId": "variation-and-institutional-non-equivalence",
+      "label": {
+        "en": "Language variation and cultural/institutional non-equivalence"
+      },
+      "prerequisiteAreaIds": [],
+      "riskIfMistranslated": "high",
+      "description": "Important. Investigate regional/dialect variation, Chinese spoken varieties and scripts, Spanish regional usage and concepts without direct institutional counterparts. Evidence responsibility: explicitly bounded variant records and source-supported explanations; distinguish language choice, identity and literacy without predicting them from nationality. Sources: authoritative regional language references and originating institutions. Queries: 'Spanish regional terminology authoritative language reference'; 'Chinese language varieties simplified traditional script professional interpreting'; '[institution] official multilingual explanation'."
+    },
+    {
+      "areaId": "clarification-monitoring-and-repair",
+      "label": {
+        "en": "Transparent clarification, correction and communication repair"
+      },
+      "prerequisiteAreaIds": [],
+      "riskIfMistranslated": "critical",
+      "description": "Critical. Cover ambiguity, unfamiliar terminology, inaudibility, overlapping turns, interpreter errors and requests to simplify. Evidence responsibility: standards-grounded intervention boundaries and labeled repair sequences preserving speaker ownership and uncertainty. Sources: professional codes, institutional protocols and interaction research. Queries: 'interpreter transparent clarification correction error professional standards'; 'interpreting repair ambiguity overlapping speech research'."
+    },
+    {
+      "areaId": "memory-notes-and-cognitive-load",
+      "label": {
+        "en": "Memory, note-taking and processing demands"
+      },
+      "prerequisiteAreaIds": [],
+      "riskIfMistranslated": "high",
+      "description": "Important. Research selective notes, discourse links, names/numbers, recall, segmentation and processing demands without prescribing stenographic overload. Evidence responsibility: explain proposed techniques, evidence populations, study limits and context; distinguish pedagogical exercises from demonstrated transfer to professional performance. Sources: original interpreting studies and credible professional training references. Queries: 'consecutive interpreting note taking memory empirical study'; 'interpreting cognitive load segmentation training transfer research'."
+    },
+    {
+      "areaId": "numbers-units-identifiers-and-abbreviations",
+      "label": {
+        "en": "Numbers, units, dates, names and abbreviations"
+      },
+      "prerequisiteAreaIds": [],
+      "riskIfMistranslated": "critical",
+      "description": "Critical. Cover quantities, decimal conventions, ranges, percentages, dates, times, names, spelling, identifiers and contextual abbreviation ambiguity. Evidence responsibility: sourced convention contrasts and preservation/verification strategies; distinguish faithful transfer from unauthorized unit conversion or guessed expansion. Sources: official measurement/style references, originating documents and professional guidance. Queries: 'official units decimal date conventions Spanish Chinese'; 'interpreter numbers names spelling abbreviation accuracy guidance'."
+    },
+    {
+      "areaId": "terminology-research-and-source-literacy",
+      "label": {
+        "en": "Terminology research, source authority and uncertainty"
+      },
+      "prerequisiteAreaIds": [],
+      "riskIfMistranslated": "high",
+      "description": "Important. Cover identifying a concept, discovering sources, assessing authority/currentness, corroborating contextual equivalents and maintaining a personal termbase. Evidence responsibility: reproducible research trails and dossier fields linking concept, context, jurisdiction, variant, source passage, uncertainty and revision history; distinguish translation evidence from frequency alone. Sources: professional terminology standards/guidance and institutional multilingual publications. Queries: 'terminology management concept context source reliability interpreting'; 'official bilingual terminology jurisdiction variant source documentation'."
+    },
+    {
+      "areaId": "sight-remote-and-accessible-communication",
+      "label": {
+        "en": "Documents, remote channels and communication access"
+      },
+      "prerequisiteAreaIds": [],
+      "riskIfMistranslated": "high",
+      "description": "Important. Research document layout, legibility, missing context, audio/video constraints, turn visibility, interruption and accessibility. Evidence responsibility: mode-specific preparation and failure/repair sequences grounded in institutional guidance; distinguish language variation from access or literacy needs and avoid technical/privacy guarantees. Sources: professional remote/sight guidance and official accessibility resources. Queries: 'remote interpreting audio video failure protocol professional'; 'sight translation legibility document preparation standards'; 'interpreting communication access accessibility guidance'."
+    },
+    {
+      "areaId": "shared-definitions-and-cross-domain-transfer",
+      "label": {
+        "en": "Contextual definitions and cross-domain transfer"
+      },
+      "prerequisiteAreaIds": [],
+      "riskIfMistranslated": "high",
+      "description": "Important. Supply explanatory definitions needed by both handbooks, including professional, linguistic, clinical and legal concepts, with owning-volume links. Evidence responsibility: source-linked scope, contrasts and relationships; show where identical words carry different domain meanings through labeled synthetic situations. Avoid duplicate domain chapters and unsupported equivalence tables. Sources: the two handbooks' accepted evidence plus authoritative linguistic/professional sources. Queries: '[shared concept] clinical legal meaning official'; '[linguistic concept] authoritative definition interpreting context'; '[concept] Spanish Chinese institutional terminology'."
+    }
+  ],
+  "competencyWeights": {
+    "competence": 1
+  },
+  "status": "draft"
+}

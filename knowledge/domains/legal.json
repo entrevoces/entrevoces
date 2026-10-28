@@ -1,0 +1,161 @@
+{
+  "domainId": "legal",
+  "label": {
+    "en": "Legal interpreting: institutions, proceedings and meaning"
+  },
+  "jurisdiction": {
+    "country": "cross-jurisdictional",
+    "region": "General interpreter practice; specific legal/clinical rules labeled by source"
+  },
+  "profession": "legal",
+  "languagePairs": [
+    {
+      "source": "en",
+      "target": "es",
+      "direction": "both"
+    },
+    {
+      "source": "en",
+      "target": "zh",
+      "direction": "both"
+    }
+  ],
+  "modalities": [
+    "consecutive",
+    "simultaneous",
+    "sight",
+    "remote"
+  ],
+  "translationAreas": [
+    {
+      "areaId": "institutions-roles-and-authority",
+      "label": {
+        "en": "Institutions, legal sources and participant roles"
+      },
+      "prerequisiteAreaIds": [],
+      "riskIfMistranslated": "high",
+      "description": "Important. Map courts, tribunals, agencies, legal representatives, parties, witnesses and decision makers within selected jurisdictions. Evidence responsibility: distinguish institution, authority, role, capacity and representation; compare common-law/civil-law features only through specific supporting sources. Sources: official judiciary maps, rules and public legal education. Queries: '[jurisdiction] court structure parties legal representation official'; '[jurisdiction] civil criminal administrative procedure judiciary'."
+    },
+    {
+      "areaId": "interpreter-duties-and-communication",
+      "label": {
+        "en": "Interpreter duties, access and transparent intervention"
+      },
+      "prerequisiteAreaIds": [],
+      "riskIfMistranslated": "critical",
+      "description": "Critical. Research appointment, qualifications, accuracy, impartiality, confidentiality, conflicts, preparation, interventions and mode selection. Evidence responsibility: jurisdiction-specific duty maps and sourced responses to inaudibility, ambiguity, conflict and requests for advice. Sources: court interpreter codes, judiciary protocols and applicable rules. Queries: '[jurisdiction] court interpreter code ethics clarification conflict confidentiality'; '[court] remote interpreting protocol'."
+    },
+    {
+      "areaId": "allegations-charges-and-claims",
+      "label": {
+        "en": "Allegations, charges, claims and responses"
+      },
+      "prerequisiteAreaIds": [],
+      "riskIfMistranslated": "critical",
+      "description": "Critical. Cover initiation of criminal, civil and administrative matters, party positions, pleadings and responses. Evidence responsibility: preserve allegation versus finding, actor, denial/admission, asserted versus established fact and jurisdiction-specific offense/claim vocabulary. Sources: official procedural guides, forms and governing texts. Queries: '[jurisdiction] criminal charge complaint civil claim response court guide'; '[jurisdiction] allegation admission denial pleading official'."
+    },
+    {
+      "areaId": "arrest-custody-and-release",
+      "label": {
+        "en": "Arrest, custody, questioning and release"
+      },
+      "prerequisiteAreaIds": [],
+      "riskIfMistranslated": "critical",
+      "description": "Critical. Research police/custody encounters, interviews, detention and release arrangements without universalizing rights or conditions. Evidence responsibility: source-defined actors, sequence, warnings, choices, conditions and institutional non-equivalence; distinguish legal meaning from conversational use. Sources: official custody guidance, legislation and jurisdiction-specific legal aid. Queries: '[jurisdiction] arrest custody questioning interpreter rights official'; '[jurisdiction] pretrial release detention conditions court'."
+    },
+    {
+      "areaId": "criminal-proceeding-sequences",
+      "label": {
+        "en": "Criminal hearings, pleas and trial pathways"
+      },
+      "prerequisiteAreaIds": [],
+      "riskIfMistranslated": "critical",
+      "description": "Critical. Build bounded criminal process maps covering preliminary appearances, pleas, pretrial issues, trial and alternative dispositions where sourced. Evidence responsibility: terminology in sequence, participant choices, contested versus agreed matters and consequences described by authoritative sources. Sources: court criminal-process guides, procedural rules and legal-aid explanations. Queries: '[jurisdiction] criminal court hearings plea trial process official'; '[jurisdiction] criminal diversion negotiated disposition court guide'."
+    },
+    {
+      "areaId": "civil-and-administrative-pathways",
+      "label": {
+        "en": "Civil disputes and administrative proceedings"
+      },
+      "prerequisiteAreaIds": [],
+      "riskIfMistranslated": "high",
+      "description": "Important. Cover filing/service, response, case management, disclosure where applicable, settlement, hearing and administrative review. Evidence responsibility: separate court and agency pathways and preserve duties, deadlines and conditional outcomes without importing another jurisdiction's procedure. Sources: court/tribunal guides, agency rules and public legal education. Queries: '[jurisdiction] civil case service hearing settlement official'; '[agency jurisdiction] administrative hearing review process'."
+    },
+    {
+      "areaId": "evidence-testimony-and-examination",
+      "label": {
+        "en": "Evidence, witness testimony and examination"
+      },
+      "prerequisiteAreaIds": [],
+      "riskIfMistranslated": "critical",
+      "description": "Critical. Cover testimony, exhibits, questioning patterns, objections, rulings and source-specific evidentiary concepts. Evidence responsibility: preserve question scope, leading or conditional form, quoted/reported speech, attribution, uncertainty, disfluency, profanity and register; do not regularize witness speech into stronger evidence. Sources: court witness guides, evidence rules and interpreter standards. Queries: '[jurisdiction] witness examination objections evidence court guide'; 'court interpreting witness disfluency register accuracy standards'."
+    },
+    {
+      "areaId": "findings-decisions-and-orders",
+      "label": {
+        "en": "Findings, verdicts, judgments, sentences and orders"
+      },
+      "prerequisiteAreaIds": [],
+      "riskIfMistranslated": "critical",
+      "description": "Critical. Research decision types and their relationship to reasons, liability, conviction, sanction and operative instructions. Evidence responsibility: source-bounded distinctions and document walkthroughs preserving actor, scope, effective date, conditions and negation; do not imply identical institutions behind similar words. Sources: official decision explanations, rules and sample public orders. Queries: '[jurisdiction] verdict judgment sentence order court explanation'; '[jurisdiction] court order conditions effective date official'."
+    },
+    {
+      "areaId": "remedies-enforcement-and-review",
+      "label": {
+        "en": "Remedies, enforcement, appeal and review"
+      },
+      "prerequisiteAreaIds": [],
+      "riskIfMistranslated": "critical",
+      "description": "Critical. Cover requested versus granted relief, compliance, enforcement, reconsideration, appeal and review as jurisdictionally applicable. Evidence responsibility: preserve procedural route, responsible actor, deadline language, finality and conditional effect without supplying advice. Sources: judiciary and legal-aid guidance plus governing rules for precise claims. Queries: '[jurisdiction] enforce judgment remedy appeal review official'; '[jurisdiction] appeal deadline permission court guide'."
+    },
+    {
+      "areaId": "family-and-protection-proceedings",
+      "label": {
+        "en": "Family, child-related and protection proceedings"
+      },
+      "prerequisiteAreaIds": [],
+      "riskIfMistranslated": "critical",
+      "description": "Critical where included. Research family relationships, separation, parenting arrangements, support and protective proceedings using explicit local boundaries. Evidence responsibility: distinguish informal relationship language from legal status, allegations from findings, interim from final measures and child/patient/party attribution. Sources: family courts, official protection-order materials and specialist legal aid. Queries: '[jurisdiction] family court parenting support protection order guide'; '[jurisdiction] child proceedings interpreter guidance'."
+    },
+    {
+      "areaId": "immigration-and-status-proceedings",
+      "label": {
+        "en": "Immigration, status and protection processes"
+      },
+      "prerequisiteAreaIds": [],
+      "riskIfMistranslated": "critical",
+      "description": "Critical where included. Bound coverage to identified agencies, interview/hearing types and status/protection procedures. Evidence responsibility: source-defined distinctions among applications, status, admissibility or eligibility concepts, decisions and review; preserve chronology and personal narrative without merging country-specific categories. Sources: official immigration agencies, tribunals and credible legal aid. Queries: '[country] immigration hearing interpreter application status official'; '[country] protection asylum procedure legal aid'."
+    },
+    {
+      "areaId": "employment-housing-and-everyday-disputes",
+      "label": {
+        "en": "Employment, housing and recurring civil disputes"
+      },
+      "prerequisiteAreaIds": [],
+      "riskIfMistranslated": "high",
+      "description": "Important. Justify selected workplace, tenancy, benefits, debt or consumer contexts through interpreter work needs and source availability. Evidence responsibility: conceptual maps linking documents, parties, asserted obligations, disputes and remedies; distinguish ordinary language from legally defined status. Sources: tribunals, agencies, court self-help and legal aid. Queries: '[jurisdiction] employment housing tribunal hearing guide'; '[jurisdiction] tenancy eviction wage dispute official legal aid'."
+    },
+    {
+      "areaId": "rights-fairness-and-participation",
+      "label": {
+        "en": "Rights, procedural fairness and effective participation"
+      },
+      "prerequisiteAreaIds": [],
+      "riskIfMistranslated": "critical",
+      "description": "Critical cross-cutting responsibility. Research source-defined rights, waivers, representation, language access, accommodations and participation barriers. Evidence responsibility: retain right-holder, duty-holder, scope, conditions and exceptions; distinguish binding rules from recommended practice and avoid global entitlement claims. Sources: applicable legal texts, court access policies and interpreter guidance. Queries: '[jurisdiction] interpreter language access fair hearing rights official'; '[jurisdiction] waiver representation accommodation court'."
+    },
+    {
+      "areaId": "legal-register-documents-and-equivalence",
+      "label": {
+        "en": "Legal register, documents and bilingual non-equivalence"
+      },
+      "prerequisiteAreaIds": [],
+      "riskIfMistranslated": "critical",
+      "description": "Critical cross-cutting responsibility. Cover formal formulas, ordinary words with legal senses, ambiguity, names, dates, money, citations, forms and sight/remote document constraints. Evidence responsibility: contextual English–Spanish and English–Chinese dossiers, supported false-friend analysis and institutional non-equivalence, with transparent clarification strategies. Sources: originating court documents, official multilingual resources and authoritative language references. Queries: '[court concept] official español 中文 [jurisdiction]'; '[court] multilingual forms interpreter glossary context'."
+    }
+  ],
+  "competencyWeights": {
+    "competence": 1
+  },
+  "status": "draft"
+}

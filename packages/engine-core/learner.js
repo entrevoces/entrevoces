@@ -1,6 +1,6 @@
 // ENTRE VOCES engine-core — learner model (spec §5)
-// Pure functions: same code runs on CPE server and inside EngineClient offline,
-// so online and offline adaptation agree. No I/O, no globals.
+// Pure functions over validated, isolated evidence. No I/O or AI calls.
+import {validateEvidence} from "./validate.js";
 
 export const STAGES = [
   { stage: 1, key: "recognize", label: "Recognize a word" },
@@ -54,12 +54,15 @@ export function predictedRetention(cell, now = Date.now()) {
  * Only the event's own stage is updated (spec §5.2 — never collapsed).
  */
 export function computeLearnerState({ learnerId, domainId, events = [], concepts = [], now = Date.now() }) {
+  concepts = concepts.filter(c=>c.domainId===domainId);
   const conceptById = new Map(concepts.map((c) => [c.conceptId, c]));
   const stages = {};
   const ensure = (cid) => { if (!stages[cid]) stages[cid] = emptyStageVector(); return stages[cid]; };
   concepts.forEach((c) => ensure(c.conceptId));
 
-  const sorted = [...events].sort((a, b) => (a.clientTs || a.serverTs || 0) - (b.clientTs || b.serverTs || 0));
+  const admissible=events.filter(e=>e&&e.learnerId===learnerId&&e.domainId===domainId&&conceptById.has(e.conceptId)&&validateEvidence(e).ok);
+  const unique=[...new Map(admissible.slice().reverse().map(e=>[e.eventId,e])).values()];
+  const sorted=unique.map(e=>({...e,clientTs:Math.min(e.clientTs??e.serverTs??now,now)})).sort((a,b)=>a.clientTs-b.clientTs||(a.eventId<b.eventId?-1:a.eventId>b.eventId?1:0));
   const recentErrors = [];
   const tagCounts = new Map();
 
@@ -69,18 +72,20 @@ export function computeLearnerState({ learnerId, domainId, events = [], concepts
     const conf = ev.confidence == null ? 0.8 : ev.confidence;
     const assisted = Array.isArray(ev.assistance) && ev.assistance.length > 0;
     const success = ev.correct != null ? (ev.correct ? 1 : 0) : (ev.score ?? 0);
-    const score = ev.score == null ? success : ev.score;
-    const weight = 0.15 + 0.35 * conf * (assisted ? 0.5 : 1);
+    const rawScore = ev.score == null ? success : ev.score;
+    const score = rawScore * (assisted ? 0.5 : 1);
+    const weight = 0.5 * conf;
     cell.estimate = cell.estimate + (score - cell.estimate) * weight;
     cell.evidenceCount += 1;
     cell.lastSeen = ev.clientTs || ev.serverTs || now;
-    cell.confidence = Math.min(1, cell.evidenceCount / 4) * (0.5 + 0.5 * conf);
+    cell.effectiveEvidence = (cell.effectiveEvidence || 0) + conf * (assisted ? 0.5 : 1);
+    cell.confidence = Math.min(1, cell.effectiveEvidence / 4);
     cell.estimate = Math.max(0, Math.min(1, cell.estimate));
     // Stability: successful retrieval lengthens memory life; failure shortens it.
     // Assisted success grows stability less (the help, not just memory, did the work).
-    if (score >= 0.6) cell.stabilityDays = cell.stabilityDays === 0 ? 1 : Math.min(90, cell.stabilityDays * (assisted ? 1.35 : 1.9));
+    if (rawScore >= 0.6 && conf >= 0.65) cell.stabilityDays = cell.stabilityDays === 0 ? 1 : Math.min(90, cell.stabilityDays * (assisted ? 1.35 : 1.9));
     else if (cell.stabilityDays > 0) cell.stabilityDays = Math.max(0.3, cell.stabilityDays * 0.5);
-    if (!ev.correct && ev.misconceptionTag) {
+    if (rawScore < 0.6 && ev.misconceptionTag) {
       tagCounts.set(ev.misconceptionTag, (tagCounts.get(ev.misconceptionTag) || 0) + 1);
       recentErrors.push({ conceptId: ev.conceptId, areaId: ev.areaId, stage: ev.stage, misconceptionTag: ev.misconceptionTag, ts: ev.clientTs || ev.serverTs });
     }
@@ -94,13 +99,18 @@ export function computeLearnerState({ learnerId, domainId, events = [], concepts
   const directions = {};
   const conceptDirections = {};
   for (const ev of sorted) {
-    const keys = new Set([...(STAGE_COMPETENCES[ev.stage || 1] || []), ...((conceptById.get(ev.conceptId)?.competences) || [])]);
-    const value = ev.score == null ? (ev.correct ? 1 : 0) : ev.score;
+    const keys = new Set(STAGE_COMPETENCES[ev.stage || 1] || []);
+    if(ev.activityType==='judgment'&&ev.stage>=3)keys.add('professional-judgment');
+    // A concept's broad competence tags describe curriculum scope, not proof
+    // that a recognition attempt demonstrated every higher-order ability.
+    const assistanceFactor=ev.assistance?.length?0.5:1;
+    const confidence=ev.confidence??0.8;
+    const value = (ev.score == null ? (ev.correct ? 1 : 0) : ev.score)*assistanceFactor;
     const ts = ev.clientTs || ev.serverTs || now;
     const ageWeight = Math.exp(-Math.max(0, now - ts) / (45 * DAY));
     for (const k of keys) {
       const a = compAcc.get(k); if (!a) continue;
-      a.sum += value * ageWeight; a.w += ageWeight; a.n += 1; a.confSum += (ev.confidence == null ? 0.8 : ev.confidence);
+      a.sum += value * ageWeight * confidence; a.w += ageWeight * confidence; a.n += 1; a.confSum += confidence*assistanceFactor;
     }
     const dir = ev.languageDirection || "unspecified";
     directions[dir] = (directions[dir] || 0) + 1;
@@ -119,7 +129,7 @@ export function computeLearnerState({ learnerId, domainId, events = [], concepts
   }
 
   // Spaced review queue: practiced cells whose predicted retention fell below 0.85,
-  // most-forgotten first. This queue is the daily return loop in hub + games.
+  // most-forgotten first. This queue is the daily return loop in games.
   const dueForReview = Object.entries(stages)
     .map(([conceptId, vec]) => {
       const practiced = STAGES.map((s) => vec[s.stage]).filter((c) => c.evidenceCount > 0);

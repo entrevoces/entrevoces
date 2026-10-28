@@ -1,0 +1,1581 @@
+{
+  "schemaVersion": "2.1",
+  "source": {
+    "title": "Developing a Language Access Plan",
+    "publisher": "Oregon Health Authority — Equity and Inclusion Division",
+    "url": "https://www.oregon.gov/oha/EI/Documents/Language-Access-Planning.pdf",
+    "publishedOrRevised": "2021-06-10",
+    "authority": "high",
+    "permittedUse": "Public Oregon government educational guidance, local evaluation only; review rights before redistribution.",
+    "limitations": "2021 publication; current law and linked external tools must be verified separately.",
+    "sourceId": "resource-23d4e92c6c708e66596d",
+    "jurisdiction": "Oregon"
+  },
+  "context": {
+    "audience": "Bilingual clinical staff learning the boundaries of professional health care interpreting in Oregon.",
+    "goals": "Understand the complete workflow for identifying community language needs, distinguishing bilingual staff from qualified interpreting, recognizing the stated emergency exception without broadening it, finding interpreters, and providing patient communication tools. Preserve operational steps and limitations of this 2021 source; do not invent medical advice or sourced translations."
+  },
+  "resource": {
+    "fingerprint": "23d4e92c6c708e66596de1904d3df538b3aea0338ced766cf68e424b77b6b27b",
+    "fileName": "Language-Access-Planning.pdf",
+    "kind": "pdf",
+    "pageCount": 2,
+    "characters": 4602,
+    "blankPages": [],
+    "passages": [
+      {
+        "passageId": "p1-0",
+        "page": 1,
+        "start": 0,
+        "end": 2632,
+        "text": "EQUITY AND INCLUSION DIVISION\nCivil Rights Unit\n\n\nDeveloping a language access plan\nFinding out what languages are spoken in local communities\nYou can look at several data sets and reach out to community members to determine the languages\nyour practice is most likely to encounter. A common starting point is the U.S. Census Bureau’s\nBusiness Builder. To use this:\n   ◼ Visit https://cbb.census.gov/rae/#.\n   ◼ Define your region by typing in the name of the county you are interested in generating a\n       report for and selecting the correct auto-populated option.\n   ◼ At the top of the webpage, select the following options:\n          ► Under “Change The Sector” ensure “All Sectors” is selected.\n          ► Under “Change Your Location” ensure the county and state you are interested in is\n              selected.\n          ► Under “Select Map Variable” ensure “Total Population” is selected as the 1st variable.\n   ◼ At the bottom left side of the webpage, select “Create Report” to generate a detailed report.\n   ◼ To save a copy of the report, you may download it as an Excel, CSV, or PDF file by clicking\n       the downward facing arrow in the top right corner of the webpage.\n\nOther potential data sources are:\n   ◼ School district data\n   ◼ Medicaid data\n   ◼ Data from community partners in your area\n\nCan a provider use bilingual staff to provide interpretation?\nYes. Section 1557 states that this is permissible, but the bilingual/multilingual staff member must\nqualified. Qualified is defined as:\n   ◼ Proficient in speaking and understanding both spoken English and at least one other spoken\n        language or sign language, including any necessary specialized vocabulary, terminology and\n        phraseology and\n   ◼ Able to effectively, accurately, and impartially communicate directly with individuals who use\n        sign language or who have limited English proficiency.\n\nIf bilingual staff members do not meet these criteria, they can only provide interpretation services in\nan emergency involving imminent threat to the safety or welfare of an individual or the public.\n\nWhere to find resources for interpreter services in Oregon\nUse the Health Care Interpreter Registry to find qualified and certified health care interpreters in\nOregon. The provider is responsible for ensuring that any interpreter used is a qualified or certified\ninterpreter.\n\nTo learn more about federal and state interpreter service requirements, read OHA’s fact sheet and\nvisit OHA’s Health Care Interpreter Program page.\n\n\n\n\nDeveloping a Language Access Plan                                                Last updated 06/10/2021\n"
+      },
+      {
+        "passageId": "p2-0",
+        "page": 2,
+        "start": 0,
+        "end": 1968,
+        "text": "Are there any tools for patients to inform providers about their language needs?\nYes, preferred language cards are a tool for patients to communicate their language\nneeds. Preferred Language cards are available in 10 languages.\n\nThere are also I Speak Identification Cards that should be readily available at your reception desk to\nallow people with LEP to identify their language easily.\n\nFor individuals who cannot speak you may want to have a communication card available. Here are\ntwo examples: COVID-19 Communication Card and Covid-19 Vaccine Communication Card\n\nWhere can I go for additional language access resources?\n  ◼ A BluePrint for Advancing National Standards for Culturally and Linguistically Appropriate\n     Services (CLAS)\n  ◼ United States Department of Health & Human Services Guidance to Federal Financial\n     Assistance Recipients\n  ◼ Civil Rights for Providers of Health Care and Human Services\n  ◼ HHS OCR link to LEP Resources and Guidance Documents\n  ◼ National Origin Discrimination – to assist agencies with benefit applications and other\n     administrative procedures, to ensure they do not deter or deny eligible national origin groups\n     from obtaining services\n  ◼ Effective communication YouTube video on improving patient-provider communications\n  ◼ Medical School Curriculum Facilitator's Guide and PowerPoint: “Stopping Discrimination\n     before it Starts: the Impact of Civil Rights Laws on Healthcare Disparities.” (MedEdPORTAL:\n     Pub Id #7740)\n  ◼ LEP Video on Breaking down the Language Barrier: Translating English Proficiency Policy\n     into Practice\n  ◼ Language Access Assessment and Planning Tool: A guide to walk you through your office to\n     review for access\n  ◼ How interpreters juggle two languages at Once Ted-Ed\n  ◼ Hearing Hands Samsung Ad illustrating barrier reduction for Deaf Community Member\n\n\n\n\nDeveloping a Language Access Plan                                              Last updated 06/10/2021\n"
+      }
+    ],
+    "extractor": "pdftotext-layout",
+    "warnings": []
+  },
+  "draft": {
+    "summary": "Oregon Health Authority guidance (last updated 06/10/2021) for developing a language access plan in Oregon medical settings: identify languages likely to be encountered using Census Business Builder and other local data plus community outreach, use bilingual/multilingual staff for interpretation only when they meet the stated qualified criteria, apply a narrow imminent-threat emergency exception for staff who do not meet those criteria, find interpreters through Oregon's Health Care Interpreter Registry while retaining provider responsibility for ensuring an interpreter is qualified or certified, and make patient language-identification and communication cards available at intake. The source is organizational language-access guidance, not encounter-specific medical advice, and it establishes no Spanish or Mandarin equivalents.",
+    "concepts": [
+      {
+        "conceptId": "b1-language-needs-assessment",
+        "areaIds": [
+          "intake-registration",
+          "professional-judgment-med"
+        ],
+        "terms": {
+          "en": {
+            "term": "language needs assessment",
+            "alternatives": [
+              "determining languages spoken in local communities",
+              "finding out what languages are spoken"
+            ],
+            "register": "organizational planning"
+          }
+        },
+        "definition": {
+          "en": "The planning step of determining which languages a practice is most likely to encounter by examining several data sets and reaching out to community members. The source names the U.S. Census Bureau's Business Builder as a common starting point and also lists school district data, Medicaid data, and data from community partners in the area."
+        },
+        "whyItMatters": "If a practice misidentifies the languages it is likely to encounter, its language access plan may fail to arrange appropriate interpreting capacity before patients need care; the source frames this as a data-and-community inquiry, not a guess based on a single source.",
+        "difficulty": 2,
+        "competences": [
+          "domain-knowledge",
+          "professional-judgment"
+        ],
+        "claims": [
+          {
+            "claimId": "b1-claim-needs-data-community",
+            "text": "A practice can look at several data sets and reach out to community members to determine the languages it is most likely to encounter.",
+            "kind": "procedure",
+            "citations": [
+              {
+                "passageId": "p1-0",
+                "quote": "You can look at several data sets and reach out to community members to determine the languages your practice is most likely to encounter."
+              }
+            ]
+          },
+          {
+            "claimId": "b1-claim-census-starting-point",
+            "text": "A common starting point is the U.S. Census Bureau's Business Builder.",
+            "kind": "context",
+            "citations": [
+              {
+                "passageId": "p1-0",
+                "quote": "A common starting point is the U.S. Census Bureau’s Business Builder."
+              }
+            ]
+          },
+          {
+            "claimId": "b1-claim-other-data-sources",
+            "text": "Other potential data sources are school district data, Medicaid data, and data from community partners in the area.",
+            "kind": "procedure",
+            "citations": [
+              {
+                "passageId": "p1-0",
+                "quote": "School district data"
+              },
+              {
+                "passageId": "p1-0",
+                "quote": "Medicaid data"
+              },
+              {
+                "passageId": "p1-0",
+                "quote": "Data from community partners in your area"
+              }
+            ]
+          }
+        ],
+        "distinctions": [
+          {
+            "contrast": "Census Business Builder report vs. other local data sources",
+            "difference": "Business Builder is presented as a common starting point, while school district, Medicaid, and community-partner data are additional potential sources; the source does not rank them as substitutes for community outreach.",
+            "citations": [
+              {
+                "passageId": "p1-0",
+                "quote": "A common starting point is the U.S. Census Bureau’s Business Builder."
+              },
+              {
+                "passageId": "p1-0",
+                "quote": "Other potential data sources are:"
+              }
+            ]
+          }
+        ],
+        "misconceptions": [
+          {
+            "tag": "single-source-language-planning",
+            "description": "Assuming one Census report alone completes language-needs identification, when the source also directs practices to several data sets and community members.",
+            "diagnosticPrompt": "A practice generated one county Census report and stopped. What additional source-directed inquiries remain before treating its language list as adequately informed?",
+            "inferred": true
+          }
+        ],
+        "examples": [
+          {
+            "en": "A practice defines its county in Census Business Builder, generates the report, and then checks school district and Medicaid data and asks community partners which languages they encounter before finalizing its plan.",
+            "areaId": "intake-registration",
+            "inferred": true
+          }
+        ],
+        "unresolved": [
+          "No Spanish or Mandarin equivalent for this concept is established in the passage; bilingual terminology remains a gap requiring human review.",
+          "The passage does not specify how to reconcile conflicting language data across sources."
+        ]
+      },
+      {
+        "conceptId": "b1-qualified-bilingual-staff",
+        "areaIds": [
+          "professional-judgment-med"
+        ],
+        "terms": {
+          "en": {
+            "term": "qualified bilingual/multilingual staff",
+            "alternatives": [
+              "qualified bilingual staff"
+            ],
+            "register": "regulatory/professional"
+          }
+        },
+        "definition": {
+          "en": "Under the source's statement of Section 1557, a bilingual/multilingual staff member may provide interpretation only if qualified. Qualified requires proficiency in speaking and understanding both spoken English and at least one other spoken language or sign language, including necessary specialized vocabulary, terminology and phraseology, and the ability to effectively, accurately, and impartially communicate directly with individuals who use sign language or who have limited English proficiency."
+        },
+        "whyItMatters": "Treating any bilingual employee as an interpreter risks inaccurate or partial communication in medical encounters; the source makes specialized proficiency plus effective, accurate, impartial direct communication the threshold, not bilingualism alone.",
+        "difficulty": 3,
+        "competences": [
+          "domain-knowledge",
+          "professional-terminology",
+          "bilingual-terminology",
+          "professional-judgment"
+        ],
+        "claims": [
+          {
+            "claimId": "b1-claim-1557-permissible-if-qualified",
+            "text": "Section 1557 states that using bilingual staff to provide interpretation is permissible, but the bilingual/multilingual staff member must be qualified.",
+            "kind": "rule",
+            "citations": [
+              {
+                "passageId": "p1-0",
+                "quote": "Section 1557 states that this is permissible, but the bilingual/multilingual staff member must qualified."
+              }
+            ]
+          },
+          {
+            "claimId": "b1-claim-qualified-proficiency",
+            "text": "Qualified includes proficiency in speaking and understanding both spoken English and at least one other spoken language or sign language, including any necessary specialized vocabulary, terminology and phraseology.",
+            "kind": "definition",
+            "citations": [
+              {
+                "passageId": "p1-0",
+                "quote": "Proficient in speaking and understanding both spoken English and at least one other spoken language or sign language, including any necessary specialized vocabulary, terminology and phraseology"
+              }
+            ]
+          },
+          {
+            "claimId": "b1-claim-qualified-communication",
+            "text": "Qualified also requires being able to effectively, accurately, and impartially communicate directly with individuals who use sign language or who have limited English proficiency.",
+            "kind": "definition",
+            "citations": [
+              {
+                "passageId": "p1-0",
+                "quote": "Able to effectively, accurately, and impartially communicate directly with individuals who use sign language or who have limited English proficiency."
+              }
+            ]
+          }
+        ],
+        "distinctions": [
+          {
+            "contrast": "bilingual/multilingual staff member vs. qualified bilingual/multilingual staff member",
+            "difference": "Speaking another language alone is insufficient in the source; the staff member must meet both the proficiency/specialized-vocabulary criterion and the effective, accurate, impartial direct-communication criterion before providing interpretation outside the emergency exception.",
+            "citations": [
+              {
+                "passageId": "p1-0",
+                "quote": "Proficient in speaking and understanding both spoken English and at least one other spoken language or sign language, including any necessary specialized vocabulary, terminology and phraseology"
+              },
+              {
+                "passageId": "p1-0",
+                "quote": "Able to effectively, accurately, and impartially communicate directly with individuals who use sign language or who have limited English proficiency."
+              }
+            ]
+          }
+        ],
+        "misconceptions": [
+          {
+            "tag": "bilingual-equals-qualified",
+            "description": "Assuming that being bilingual or multilingual automatically qualifies a staff member to interpret, without specialized vocabulary and effective, accurate, impartial communication ability.",
+            "diagnosticPrompt": "An employee speaks English and another language fluently in everyday conversation but has not shown medical terminology proficiency or impartial direct communication. Under the source, may they interpret routinely?",
+            "inferred": true
+          }
+        ],
+        "examples": [
+          {
+            "en": "Before assigning a bilingual staff member to interpret, a supervisor checks both spoken-language proficiency including specialized terminology and whether the person can communicate directly, effectively, accurately, and impartially with a patient with limited English proficiency.",
+            "areaId": "professional-judgment-med",
+            "inferred": true
+          }
+        ],
+        "unresolved": [
+          "No Spanish or Mandarin equivalent for 'qualified bilingual/multilingual staff' is established in the passage; proposed translations would require inferred labeling and human review.",
+          "The passage does not specify an assessment method or credentialing process for determining that staff meet the qualified criteria."
+        ]
+      },
+      {
+        "conceptId": "b1-emergency-interpretation-exception",
+        "areaIds": [
+          "professional-judgment-med"
+        ],
+        "terms": {
+          "en": {
+            "term": "emergency exception for unqualified bilingual staff",
+            "alternatives": [
+              "emergency involving imminent threat"
+            ],
+            "register": "regulatory/professional"
+          }
+        },
+        "definition": {
+          "en": "If bilingual staff members do not meet the qualified criteria, they can only provide interpretation services in an emergency involving imminent threat to the safety or welfare of an individual or the public. The exception is conditional on both non-qualification and an imminent-threat emergency; it is not presented as a general convenience or staffing-shortage exception."
+        },
+        "whyItMatters": "Broadening this exception beyond imminent threat would let unqualified staff interpret in routine medical encounters, contrary to the source's 'only' limitation and creating accuracy and impartiality risk.",
+        "difficulty": 3,
+        "competences": [
+          "domain-knowledge",
+          "professional-judgment"
+        ],
+        "claims": [
+          {
+            "claimId": "b1-claim-emergency-only",
+            "text": "If bilingual staff members do not meet the qualified criteria, they can only provide interpretation services in an emergency involving imminent threat to the safety or welfare of an individual or the public.",
+            "kind": "exception",
+            "citations": [
+              {
+                "passageId": "p1-0",
+                "quote": "If bilingual staff members do not meet these criteria, they can only provide interpretation services in an emergency involving imminent threat to the safety or welfare of an individual or the public."
+              }
+            ]
+          }
+        ],
+        "distinctions": [
+          {
+            "contrast": "emergency involving imminent threat vs. routine or urgent-but-not-imminent need",
+            "difference": "The source permits unqualified bilingual staff to interpret only in an emergency involving imminent threat to safety or welfare of an individual or the public; it does not state that workload, delay, or general urgency qualifies.",
+            "inferred": true
+          }
+        ],
+        "misconceptions": [
+          {
+            "tag": "emergency-means-any-urgent-need",
+            "description": "Reading 'emergency' as any busy, delayed, or clinically important situation rather than the source's narrower imminent threat to safety or welfare.",
+            "diagnosticPrompt": "No qualified interpreter is immediately available for a routine visit and a bilingual employee offers to help to avoid rescheduling. Does the source's emergency exception apply on those facts alone?",
+            "inferred": true
+          }
+        ],
+        "examples": [
+          {
+            "en": "A bilingual employee who does not meet the qualified criteria is not assigned to interpret a routine appointment solely because the schedule is full; the source's exception is reserved for an imminent-threat emergency.",
+            "areaId": "professional-judgment-med",
+            "inferred": true
+          }
+        ],
+        "unresolved": [
+          "The passage does not define further operational thresholds for 'imminent threat' beyond safety or welfare of an individual or the public.",
+          "No Spanish or Mandarin rendering of the exception is established in the passage."
+        ]
+      },
+      {
+        "conceptId": "b1-health-care-interpreter-registry",
+        "areaIds": [
+          "professional-judgment-med"
+        ],
+        "terms": {
+          "en": {
+            "term": "Health Care Interpreter Registry",
+            "alternatives": [
+              "Oregon Health Care Interpreter Registry"
+            ],
+            "register": "institutional proper name"
+          }
+        },
+        "definition": {
+          "en": "The Oregon resource named by the source for finding qualified and certified health care interpreters in Oregon. It is presented as the place to find interpreter services in Oregon, alongside references to OHA's fact sheet and Health Care Interpreter Program page for federal and state requirements."
+        },
+        "whyItMatters": "Using the Registry connects a practice to qualified and certified health care interpreters in Oregon rather than relying on ad hoc bilingual help; mistaking it for a guarantee would still overlook the provider's separate responsibility to ensure qualification or certification.",
+        "difficulty": 2,
+        "competences": [
+          "domain-knowledge",
+          "professional-judgment"
+        ],
+        "claims": [
+          {
+            "claimId": "b1-claim-use-registry",
+            "text": "Use the Health Care Interpreter Registry to find qualified and certified health care interpreters in Oregon.",
+            "kind": "procedure",
+            "citations": [
+              {
+                "passageId": "p1-0",
+                "quote": "Use the Health Care Interpreter Registry to find qualified and certified health care interpreters in Oregon."
+              }
+            ]
+          },
+          {
+            "claimId": "b1-claim-more-requirements-resources",
+            "text": "To learn more about federal and state interpreter service requirements, the source directs readers to OHA's fact sheet and OHA's Health Care Interpreter Program page.",
+            "kind": "context",
+            "citations": [
+              {
+                "passageId": "p1-0",
+                "quote": "To learn more about federal and state interpreter service requirements, read OHA’s fact sheet and visit OHA’s Health Care Interpreter Program page."
+              }
+            ]
+          }
+        ],
+        "distinctions": [
+          {
+            "contrast": "finding an interpreter through the Registry vs. provider ensuring qualification/certification",
+            "difference": "The Registry is the source's tool for finding qualified and certified interpreters, while the provider remains responsible for ensuring that any interpreter used is qualified or certified.",
+            "citations": [
+              {
+                "passageId": "p1-0",
+                "quote": "Use the Health Care Interpreter Registry to find qualified and certified health care interpreters in Oregon."
+              },
+              {
+                "passageId": "p1-0",
+                "quote": "The provider is responsible for ensuring that any interpreter used is a qualified or certified interpreter."
+              }
+            ]
+          }
+        ],
+        "misconceptions": [
+          {
+            "tag": "registry-listing-ends-provider-duty",
+            "description": "Assuming that locating a name through the Registry eliminates the provider's responsibility to ensure the interpreter used is qualified or certified.",
+            "diagnosticPrompt": "A provider found an interpreter through the Registry but did no check that the person used was qualified or certified. What source-stated responsibility remains unmet?",
+            "inferred": true
+          }
+        ],
+        "examples": [
+          {
+            "en": "When arranging Oregon interpreter services, a practice consults the Health Care Interpreter Registry to identify qualified and certified health care interpreters.",
+            "areaId": "professional-judgment-med",
+            "inferred": true
+          }
+        ],
+        "unresolved": [
+          "The passage does not provide Registry search steps, eligibility verification details, or a URL for the Registry.",
+          "No Spanish or Mandarin equivalent for the Registry name is established in the passage; as an institutional proper name it should not be presented as a sourced translation."
+        ]
+      },
+      {
+        "conceptId": "b1-provider-responsibility-for-interpreter",
+        "areaIds": [
+          "professional-judgment-med"
+        ],
+        "terms": {
+          "en": {
+            "term": "provider responsibility for interpreter qualification",
+            "alternatives": [
+              "provider responsibility for ensuring a qualified or certified interpreter"
+            ],
+            "register": "regulatory/professional"
+          }
+        },
+        "definition": {
+          "en": "The provider is responsible for ensuring that any interpreter used is a qualified or certified interpreter. This responsibility applies to 'any interpreter used' in the source's wording and is stated separately from the availability of the Health Care Interpreter Registry."
+        },
+        "whyItMatters": "If providers treat interpreter quality as solely the interpreter's or Registry's concern, unqualified interpretation may be used in care; the source assigns the ensuring responsibility to the provider.",
+        "difficulty": 2,
+        "competences": [
+          "domain-knowledge",
+          "professional-judgment",
+          "integrated-performance"
+        ],
+        "claims": [
+          {
+            "claimId": "b1-claim-provider-responsible",
+            "text": "The provider is responsible for ensuring that any interpreter used is a qualified or certified interpreter.",
+            "kind": "rule",
+            "citations": [
+              {
+                "passageId": "p1-0",
+                "quote": "The provider is responsible for ensuring that any interpreter used is a qualified or certified interpreter."
+              }
+            ]
+          }
+        ],
+        "distinctions": [
+          {
+            "contrast": "qualified interpreter vs. certified interpreter",
+            "difference": "The source states the provider must ensure the interpreter used is 'a qualified or certified interpreter' but does not define the difference between qualified and certified in this passage; that distinction cannot be completed from this passage alone.",
+            "inferred": true
+          }
+        ],
+        "misconceptions": [
+          {
+            "tag": "responsibility-shifts-to-interpreter",
+            "description": "Believing the interpreter alone bears responsibility for being qualified or certified, when the source expressly makes the provider responsible for ensuring it for any interpreter used.",
+            "diagnosticPrompt": "An unqualified person interpreted and the provider says qualification was entirely that person's responsibility. How does the source allocate responsibility?",
+            "inferred": true
+          }
+        ],
+        "examples": [
+          {
+            "en": "Before an encounter, the provider verifies that the interpreter who will be used is qualified or certified rather than assuming availability is enough.",
+            "areaId": "professional-judgment-med",
+            "inferred": true
+          }
+        ],
+        "unresolved": [
+          "The passage does not define 'certified' or explain how certification differs from 'qualified.'",
+          "The passage does not specify documentation or verification steps by which a provider ensures qualification or certification.",
+          "No Spanish or Mandarin equivalent for this responsibility statement is established in the passage."
+        ]
+      },
+      {
+        "conceptId": "b2-preferred-language-cards",
+        "areaIds": [
+          "intake-registration"
+        ],
+        "terms": {
+          "en": {
+            "term": "Preferred Language cards",
+            "alternatives": [
+              "preferred language cards"
+            ],
+            "register": "administrative / patient-facing intake tool"
+          }
+        },
+        "definition": {
+          "en": "Cards presented as a tool for patients to communicate their language needs to providers. The source states they are available in 10 languages, but does not name those languages or describe the cards' wording, format, or distribution procedure."
+        },
+        "whyItMatters": "At intake, using the documented tool as described helps a patient signal language need before clinical communication begins; assuming the card is available in a patient's specific language, or substituting it for arranging interpreting, risks an unidentified language need because the source does not list the 10 languages.",
+        "difficulty": 2,
+        "competences": [
+          "domain-knowledge",
+          "professional-terminology",
+          "terminology-usage"
+        ],
+        "claims": [
+          {
+            "claimId": "b2-claim-pref-lang-purpose",
+            "text": "Preferred language cards are a tool for patients to communicate their language needs.",
+            "kind": "definition",
+            "citations": [
+              {
+                "passageId": "p2-0",
+                "quote": "preferred language cards are a tool for patients to communicate their language"
+              }
+            ]
+          },
+          {
+            "claimId": "b2-claim-pref-lang-10",
+            "text": "Preferred Language cards are available in 10 languages.",
+            "kind": "context",
+            "citations": [
+              {
+                "passageId": "p2-0",
+                "quote": "Preferred Language cards are available in 10 languages."
+              }
+            ]
+          }
+        ],
+        "distinctions": [
+          {
+            "contrast": "I Speak Identification Cards",
+            "difference": "Preferred Language cards are framed as patients communicating language needs to providers; I Speak Identification Cards are specifically to be readily available at the reception desk to allow people with LEP to identify their language easily. The passage does not state they are interchangeable products.",
+            "inferred": true
+          }
+        ],
+        "misconceptions": [
+          {
+            "tag": "assumed-language-availability",
+            "description": "Assuming a Preferred Language card exists in the individual patient's language because the set covers 10 languages; the passage does not name the 10 languages.",
+            "diagnosticPrompt": "A patient needs a language you cannot confirm is among the 10: do you hand over a card anyway or escalate to identify the language another way? Explain based on what the source does and does not say.",
+            "inferred": true
+          }
+        ],
+        "examples": [
+          {
+            "en": "Front-desk staff offer a Preferred Language card during check-in so a patient can indicate their language need before registration continues.",
+            "areaId": "intake-registration",
+            "inferred": true
+          }
+        ],
+        "unresolved": [
+          "Spanish (es) and Mandarin (zh) equivalents for 'Preferred Language cards' are not established in this passage and require human review; no sourced translation is recorded.",
+          "The 10 languages in which the cards are available are not named in this passage.",
+          "Card wording, format, and who provides the card at what moment are not described."
+        ]
+      },
+      {
+        "conceptId": "b2-i-speak-cards",
+        "areaIds": [
+          "intake-registration"
+        ],
+        "terms": {
+          "en": {
+            "term": "I Speak Identification Cards",
+            "alternatives": [
+              "I Speak cards"
+            ],
+            "register": "administrative / reception-desk identification tool"
+          }
+        },
+        "definition": {
+          "en": "Identification cards that, per the source, should be readily available at the reception desk to allow people with LEP to identify their language easily. The passage does not expand the abbreviation LEP, list the languages on the cards, or describe their exact content."
+        },
+        "whyItMatters": "Placement is operational, not incidental: if the cards are not readily available at reception, a person with LEP may be unable to identify their language at first contact, delaying language-access steps at intake.",
+        "difficulty": 2,
+        "competences": [
+          "domain-knowledge",
+          "professional-terminology",
+          "terminology-usage",
+          "professional-judgment"
+        ],
+        "claims": [
+          {
+            "claimId": "b2-claim-i-speak-placement",
+            "text": "I Speak Identification Cards should be readily available at the reception desk.",
+            "kind": "rule",
+            "citations": [
+              {
+                "passageId": "p2-0",
+                "quote": "I Speak Identification Cards that should be readily available at your reception desk"
+              }
+            ]
+          },
+          {
+            "claimId": "b2-claim-i-speak-purpose",
+            "text": "I Speak Identification Cards allow people with LEP to identify their language easily.",
+            "kind": "definition",
+            "citations": [
+              {
+                "passageId": "p2-0",
+                "quote": "allow people with LEP to identify their language easily"
+              }
+            ]
+          }
+        ],
+        "distinctions": [
+          {
+            "contrast": "Preferred Language cards",
+            "difference": "I Speak cards are tied in the source to a specific location (reception desk) and population (people with LEP) for language identification; Preferred Language cards are described more generally as patients informing providers of language needs and as available in 10 languages.",
+            "inferred": true
+          },
+          {
+            "contrast": "Communication cards for individuals who cannot speak",
+            "difference": "I Speak cards support identifying a spoken language; communication cards are introduced separately for individuals who cannot speak, so language identification and non-speech communication are distinct needs in the passage.",
+            "inferred": true
+          }
+        ],
+        "misconceptions": [
+          {
+            "tag": "storage-vs-availability",
+            "description": "Treating I Speak cards as filed office supplies rather than readily available at the reception desk, contradicting the source's placement instruction.",
+            "diagnosticPrompt": "Cards are kept in a manager's office and brought out on request: does that satisfy 'readily available at your reception desk,' and what intake problem could result?",
+            "inferred": true
+          }
+        ],
+        "examples": [
+          {
+            "en": "A receptionist keeps I Speak Identification Cards visible at the front desk so a newly arrived patient can point to their language without needing English to ask.",
+            "areaId": "intake-registration",
+            "inferred": true
+          }
+        ],
+        "unresolved": [
+          "Spanish (es) and Mandarin (zh) equivalents for 'I Speak Identification Cards' are not established in this passage; no sourced translation is recorded.",
+          "The abbreviation LEP is not expanded in this passage.",
+          "Languages listed on the I Speak cards and the cards' exact wording are not given."
+        ]
+      },
+      {
+        "conceptId": "b2-communication-cards-nonspeaking",
+        "areaIds": [
+          "intake-registration",
+          "professional-judgment-med"
+        ],
+        "terms": {
+          "en": {
+            "term": "communication card (for individuals who cannot speak)",
+            "alternatives": [
+              "communication cards"
+            ],
+            "register": "patient-communication aid"
+          }
+        },
+        "definition": {
+          "en": "A card the source suggests having available for individuals who cannot speak. Two examples are named: a COVID-19 Communication Card and a Covid-19 Vaccine Communication Card. The passage uses tentative wording ('you may want to have') rather than a mandate, and does not describe card symbols, languages, or clinical use."
+        },
+        "whyItMatters": "This addresses a different barrier from spoken-language identification: a patient who cannot speak needs a non-speech communication aid. Broadening the tentative suggestion into a universal mandate, or using it as a substitute for qualified interpreting or clinical assessment, exceeds what the 2021 source states.",
+        "difficulty": 3,
+        "competences": [
+          "domain-knowledge",
+          "professional-judgment",
+          "meaning-transfer"
+        ],
+        "claims": [
+          {
+            "claimId": "b2-claim-comm-card-suggestion",
+            "text": "For individuals who cannot speak, the source suggests having a communication card available, using 'may want to' wording.",
+            "kind": "rule",
+            "citations": [
+              {
+                "passageId": "p2-0",
+                "quote": "For individuals who cannot speak you may want to have a communication card available."
+              }
+            ]
+          },
+          {
+            "claimId": "b2-claim-comm-card-examples",
+            "text": "The two examples given are the COVID-19 Communication Card and the Covid-19 Vaccine Communication Card.",
+            "kind": "context",
+            "citations": [
+              {
+                "passageId": "p2-0",
+                "quote": "COVID-19 Communication Card and Covid-19 Vaccine Communication Card"
+              }
+            ]
+          }
+        ],
+        "distinctions": [
+          {
+            "contrast": "I Speak Identification Cards",
+            "difference": "Communication cards are for individuals who cannot speak; I Speak cards are for people with LEP to identify their language. One concerns speech ability, the other language identification.",
+            "inferred": true
+          }
+        ],
+        "misconceptions": [
+          {
+            "tag": "tentative-as-mandate",
+            "description": "Reading 'you may want to have' as a strict requirement, or conversely dismissing the suggestion entirely; the source's modality is a recommendation, not 'must.'",
+            "diagnosticPrompt": "Does the passage require every site to stock these cards, recommend considering them, or forbid them? Point to the exact modal wording.",
+            "inferred": true
+          },
+          {
+            "tag": "aid-as-interpreting-substitute",
+            "description": "Assuming a communication card replaces qualified interpreting or clinical communication support; the passage presents it only as a card to have available and gives no such substitution rule.",
+            "diagnosticPrompt": "A nonspeaking patient also needs a language other than English: what does this passage alone authorize you to conclude about interpreting arrangements?",
+            "inferred": true
+          }
+        ],
+        "examples": [
+          {
+            "en": "During a vaccine visit, staff offer the Covid-19 Vaccine Communication Card to a patient who cannot speak so the patient can point to communicate basic needs.",
+            "areaId": "intake-registration",
+            "inferred": true
+          }
+        ],
+        "unresolved": [
+          "Spanish (es) and Mandarin (zh) equivalents for these card names are not established in this passage; no sourced translation is recorded.",
+          "Card contents, symbols, languages, and instructions for use are not described.",
+          "Whether the COVID-19 examples remain current after the 2021 publication must be verified separately."
+        ]
+      },
+      {
+        "conceptId": "b2-additional-language-access-resources",
+        "areaIds": [
+          "professional-judgment-med"
+        ],
+        "terms": {
+          "en": {
+            "term": "additional language access resources",
+            "alternatives": [
+              "language access resources"
+            ],
+            "register": "professional reference / guidance list"
+          }
+        },
+        "definition": {
+          "en": "A list of external resources the document points readers to for additional language-access information, spanning CLAS standards, federal civil-rights and LEP guidance, assessment/planning tools, and educational videos. The passage lists titles and brief descriptors only; it does not reproduce their content, so no rule should be derived from a title alone."
+        },
+        "whyItMatters": "Staff must treat this as a pointer list requiring verification of current, authoritative content, not as substantive guidance itself; citing a listed title as if the passage had stated its requirements would misrepresent the source, especially given the 2021 date.",
+        "difficulty": 2,
+        "competences": [
+          "domain-knowledge",
+          "professional-judgment"
+        ],
+        "claims": [
+          {
+            "claimId": "b2-claim-res-clas-blueprint",
+            "text": "Listed resource: 'A BluePrint for Advancing National Standards for Culturally and Linguistically Appropriate Services (CLAS)'.",
+            "kind": "context",
+            "citations": [
+              {
+                "passageId": "p2-0",
+                "quote": "A BluePrint for Advancing National Standards for Culturally and Linguistically Appropriate\n     Services (CLAS)"
+              }
+            ]
+          },
+          {
+            "claimId": "b2-claim-res-hhs-guidance",
+            "text": "Listed resource: United States Department of Health & Human Services Guidance to Federal Financial Assistance Recipients.",
+            "kind": "context",
+            "citations": [
+              {
+                "passageId": "p2-0",
+                "quote": "United States Department of Health & Human Services Guidance to Federal Financial\n     Assistance Recipients"
+              }
+            ]
+          },
+          {
+            "claimId": "b2-claim-res-civil-rights-providers",
+            "text": "Listed resource: Civil Rights for Providers of Health Care and Human Services.",
+            "kind": "context",
+            "citations": [
+              {
+                "passageId": "p2-0",
+                "quote": "Civil Rights for Providers of Health Care and Human Services"
+              }
+            ]
+          },
+          {
+            "claimId": "b2-claim-res-hhs-ocr-lep",
+            "text": "Listed resource: HHS OCR link to LEP Resources and Guidance Documents.",
+            "kind": "context",
+            "citations": [
+              {
+                "passageId": "p2-0",
+                "quote": "HHS OCR link to LEP Resources and Guidance Documents"
+              }
+            ]
+          },
+          {
+            "claimId": "b2-claim-res-national-origin",
+            "text": "Listed resource on National Origin Discrimination, described as assisting agencies with benefit applications and other administrative procedures to ensure they do not deter or deny eligible national origin groups from obtaining services.",
+            "kind": "context",
+            "citations": [
+              {
+                "passageId": "p2-0",
+                "quote": "National Origin Discrimination – to assist agencies with benefit applications and other\n     administrative procedures, to ensure they do not deter or deny eligible national origin groups\n     from obtaining services"
+              }
+            ]
+          },
+          {
+            "claimId": "b2-claim-res-effective-comm-video",
+            "text": "Listed resource: Effective communication YouTube video on improving patient-provider communications.",
+            "kind": "context",
+            "citations": [
+              {
+                "passageId": "p2-0",
+                "quote": "Effective communication YouTube video on improving patient-provider communications"
+              }
+            ]
+          },
+          {
+            "claimId": "b2-claim-res-mededportal",
+            "text": "Listed resource: Medical School Curriculum Facilitator's Guide and PowerPoint 'Stopping Discrimination before it Starts: the Impact of Civil Rights Laws on Healthcare Disparities' (MedEdPORTAL Pub Id #7740).",
+            "kind": "context",
+            "citations": [
+              {
+                "passageId": "p2-0",
+                "quote": "Medical School Curriculum Facilitator's Guide and PowerPoint: “Stopping Discrimination\n     before it Starts: the Impact of Civil Rights Laws on Healthcare Disparities.” (MedEdPORTAL:\n     Pub Id #7740)"
+              }
+            ]
+          },
+          {
+            "claimId": "b2-claim-res-lep-video",
+            "text": "Listed resource: LEP Video on Breaking down the Language Barrier: Translating English Proficiency Policy into Practice.",
+            "kind": "context",
+            "citations": [
+              {
+                "passageId": "p2-0",
+                "quote": "LEP Video on Breaking down the Language Barrier: Translating English Proficiency Policy\n     into Practice"
+              }
+            ]
+          },
+          {
+            "claimId": "b2-claim-res-assessment-tool",
+            "text": "Listed resource: Language Access Assessment and Planning Tool, described as a guide to walk you through your office to review for access.",
+            "kind": "context",
+            "citations": [
+              {
+                "passageId": "p2-0",
+                "quote": "Language Access Assessment and Planning Tool: A guide to walk you through your office to\n     review for access"
+              }
+            ]
+          },
+          {
+            "claimId": "b2-claim-res-teded-interpreters",
+            "text": "Listed resource: 'How interpreters juggle two languages at Once' Ted-Ed.",
+            "kind": "context",
+            "citations": [
+              {
+                "passageId": "p2-0",
+                "quote": "How interpreters juggle two languages at Once Ted-Ed"
+              }
+            ]
+          },
+          {
+            "claimId": "b2-claim-res-hearing-hands",
+            "text": "Listed resource: Hearing Hands Samsung Ad illustrating barrier reduction for Deaf Community Member.",
+            "kind": "context",
+            "citations": [
+              {
+                "passageId": "p2-0",
+                "quote": "Hearing Hands Samsung Ad illustrating barrier reduction for Deaf Community Member"
+              }
+            ]
+          }
+        ],
+        "distinctions": [
+          {
+            "contrast": "Substantive guidance in the document itself",
+            "difference": "This concept is only a list of external titles/descriptors; unlike the card instructions, it states no procedure, obligation, or threshold that a learner can apply without consulting and verifying the external source.",
+            "inferred": true
+          }
+        ],
+        "misconceptions": [
+          {
+            "tag": "title-as-rule",
+            "description": "Deriving a legal or clinical obligation from a listed resource title (e.g., CLAS or civil-rights items) when the passage provides no content from those resources.",
+            "diagnosticPrompt": "What specific obligation does this passage itself impose via the CLAS Blueprint listing, and what would you need to check outside the passage before acting?",
+            "inferred": true
+          }
+        ],
+        "examples": [
+          {
+            "en": "A staff member uses the listed Language Access Assessment and Planning Tool title as a lead to locate the actual tool for an office access review, rather than treating the listing as the review itself.",
+            "areaId": "professional-judgment-med",
+            "inferred": true
+          }
+        ],
+        "unresolved": [
+          "No URLs, publication dates, or current status are given for the listed resources in this passage; currency and authority must be verified separately, consistent with the source limitation that linked external tools must be verified.",
+          "Spanish (es) and Mandarin (zh) renderings of these resource titles are not established in this passage; titles are retained in English as proper names."
+        ]
+      }
+    ],
+    "relationships": [
+      {
+        "sourceId": "b1-emergency-interpretation-exception",
+        "targetId": "b1-qualified-bilingual-staff",
+        "type": "exception-to",
+        "explanation": "The emergency rule is an exception to the qualified-staff requirement: staff who do not meet the qualified criteria may interpret only in an emergency involving imminent threat to safety or welfare.",
+        "citations": [
+          {
+            "passageId": "p1-0",
+            "quote": "If bilingual staff members do not meet these criteria, they can only provide interpretation services in an emergency involving imminent threat to the safety or welfare of an individual or the public."
+          }
+        ]
+      },
+      {
+        "sourceId": "b1-health-care-interpreter-registry",
+        "targetId": "b1-provider-responsibility-for-interpreter",
+        "type": "step-before",
+        "explanation": "Using the Registry to find qualified and certified interpreters precedes, but does not replace, the provider's responsibility to ensure any interpreter used is qualified or certified.",
+        "citations": [
+          {
+            "passageId": "p1-0",
+            "quote": "Use the Health Care Interpreter Registry to find qualified and certified health care interpreters in Oregon."
+          },
+          {
+            "passageId": "p1-0",
+            "quote": "The provider is responsible for ensuring that any interpreter used is a qualified or certified interpreter."
+          }
+        ]
+      },
+      {
+        "sourceId": "b1-language-needs-assessment",
+        "targetId": "b1-health-care-interpreter-registry",
+        "type": "step-before",
+        "explanation": "Determining likely languages is a planning step before finding interpreters for those languages through the Registry; the ordering is a teaching sequence inferred from the passage layout, not an explicitly stated causal rule.",
+        "inferred": true
+      },
+      {
+        "sourceId": "b2-preferred-language-cards",
+        "targetId": "b2-i-speak-cards",
+        "type": "confusable-with",
+        "explanation": "Both are patient-facing cards used around language identification at intake, but the source assigns I Speak cards a reception-desk location and LEP language-identification purpose, while Preferred Language cards are described as available in 10 languages for patients to communicate language needs.",
+        "inferred": true
+      },
+      {
+        "sourceId": "b2-i-speak-cards",
+        "targetId": "b2-communication-cards-nonspeaking",
+        "type": "confusable-with",
+        "explanation": "Both are cards offered at the point of contact, but I Speak cards identify a spoken language for people with LEP, whereas communication cards are suggested for individuals who cannot speak; confusing them leaves one of the two barriers unaddressed.",
+        "inferred": true
+      }
+    ],
+    "procedures": [
+      {
+        "title": "Use Census Business Builder to generate a county language-access report",
+        "steps": [
+          {
+            "text": "Visit https://cbb.census.gov/rae/#.",
+            "citations": [
+              {
+                "passageId": "p1-0",
+                "quote": "Visit https://cbb.census.gov/rae/#."
+              }
+            ]
+          },
+          {
+            "text": "Define your region by typing in the name of the county you are interested in generating a report for and selecting the correct auto-populated option.",
+            "citations": [
+              {
+                "passageId": "p1-0",
+                "quote": "Define your region by typing in the name of the county you are interested in generating a report for and selecting the correct auto-populated option."
+              }
+            ]
+          },
+          {
+            "text": "At the top of the webpage, under 'Change The Sector' ensure 'All Sectors' is selected.",
+            "citations": [
+              {
+                "passageId": "p1-0",
+                "quote": "Under “Change The Sector” ensure “All Sectors” is selected."
+              }
+            ]
+          },
+          {
+            "text": "Under 'Change Your Location' ensure the county and state you are interested in is selected.",
+            "citations": [
+              {
+                "passageId": "p1-0",
+                "quote": "Under “Change Your Location” ensure the county and state you are interested in is selected."
+              }
+            ]
+          },
+          {
+            "text": "Under 'Select Map Variable' ensure 'Total Population' is selected as the 1st variable.",
+            "citations": [
+              {
+                "passageId": "p1-0",
+                "quote": "Under “Select Map Variable” ensure “Total Population” is selected as the 1st variable."
+              }
+            ]
+          },
+          {
+            "text": "At the bottom left side of the webpage, select 'Create Report' to generate a detailed report.",
+            "citations": [
+              {
+                "passageId": "p1-0",
+                "quote": "At the bottom left side of the webpage, select “Create Report” to generate a detailed report."
+              }
+            ]
+          },
+          {
+            "text": "To save a copy of the report, you may download it as an Excel, CSV, or PDF file by clicking the downward facing arrow in the top right corner of the webpage.",
+            "citations": [
+              {
+                "passageId": "p1-0",
+                "quote": "To save a copy of the report, you may download it as an Excel, CSV, or PDF file by clicking the downward facing arrow in the top right corner of the webpage."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Find interpreter services in Oregon",
+        "steps": [
+          {
+            "text": "Use the Health Care Interpreter Registry to find qualified and certified health care interpreters in Oregon.",
+            "citations": [
+              {
+                "passageId": "p1-0",
+                "quote": "Use the Health Care Interpreter Registry to find qualified and certified health care interpreters in Oregon."
+              }
+            ]
+          },
+          {
+            "text": "As the provider, ensure that any interpreter used is a qualified or certified interpreter.",
+            "citations": [
+              {
+                "passageId": "p1-0",
+                "quote": "The provider is responsible for ensuring that any interpreter used is a qualified or certified interpreter."
+              }
+            ]
+          },
+          {
+            "text": "For more on federal and state interpreter service requirements, read OHA's fact sheet and visit OHA's Health Care Interpreter Program page.",
+            "citations": [
+              {
+                "passageId": "p1-0",
+                "quote": "To learn more about federal and state interpreter service requirements, read OHA’s fact sheet and visit OHA’s Health Care Interpreter Program page."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Make language-identification and communication cards available at intake",
+        "steps": [
+          {
+            "text": "Keep I Speak Identification Cards readily available at the reception desk so people with LEP can identify their language easily.",
+            "citations": [
+              {
+                "passageId": "p2-0",
+                "quote": "I Speak Identification Cards that should be readily available at your reception desk to\nallow people with LEP to identify their language easily."
+              }
+            ]
+          },
+          {
+            "text": "Use Preferred Language cards as a tool for patients to communicate their language needs, noting they are available in 10 languages (languages not named in this passage).",
+            "citations": [
+              {
+                "passageId": "p2-0",
+                "quote": "preferred language cards are a tool for patients to communicate their language\nneeds. Preferred Language cards are available in 10 languages."
+              }
+            ]
+          },
+          {
+            "text": "For an individual who cannot speak, consider having a communication card available, such as the COVID-19 Communication Card or Covid-19 Vaccine Communication Card examples.",
+            "citations": [
+              {
+                "passageId": "p2-0",
+                "quote": "For individuals who cannot speak you may want to have a communication card available."
+              },
+              {
+                "passageId": "p2-0",
+                "quote": "COVID-19 Communication Card and Covid-19 Vaccine Communication Card"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "coverage": [
+      {
+        "passageId": "p1-0",
+        "status": "represented",
+        "reason": "Passage covers language-needs data sources and Census Business Builder steps, qualified bilingual staff criteria under Section 1557, the imminent-threat emergency exception, Oregon's Health Care Interpreter Registry, and provider responsibility; all are represented in concepts, claims, and procedures.",
+        "conceptIds": [
+          "b1-language-needs-assessment",
+          "b1-qualified-bilingual-staff",
+          "b1-emergency-interpretation-exception",
+          "b1-health-care-interpreter-registry",
+          "b1-provider-responsibility-for-interpreter"
+        ]
+      },
+      {
+        "passageId": "p2-0",
+        "status": "represented",
+        "reason": "All substantive content is represented: Preferred Language cards (10 languages), I Speak cards at reception for people with LEP, communication cards for individuals who cannot speak with two COVID-19 examples, and the full list of additional language-access resources. The footer date line is source metadata, not a separate concept.",
+        "conceptIds": [
+          "b2-preferred-language-cards",
+          "b2-i-speak-cards",
+          "b2-communication-cards-nonspeaking",
+          "b2-additional-language-access-resources"
+        ]
+      }
+    ],
+    "unresolved": [
+      "Source is dated 06/10/2021; current federal and Oregon law, Section 1557 interpretation, Registry operation, Census Business Builder interface, and linked external tools must be verified separately and are not established by these passages.",
+      "No sourced Spanish (es) or Mandarin (zh) equivalents are provided in either passage for any concept; bilingual-terminology coverage is missing for all concepts and must not be invented as sourced fact. This blocks equivalent-recall teaching in es/zh until human-approved translations are supplied.",
+      "The passages do not define 'certified' versus 'qualified,' specify how providers verify qualification/certification, or specify how bilingual staff qualification is assessed.",
+      "The passages do not define operational thresholds for 'imminent threat' beyond safety or welfare of an individual or the public.",
+      "LEP is used in p2-0 but not expanded there; its expansion must not be taught as sourced from p2-0.",
+      "The 10 languages for Preferred Language cards, the languages/content of I Speak cards, and communication-card contents, symbols, and instructions are not specified.",
+      "Configured translation areas history-symptoms, diagnosis-explanation, informed-consent, treatment-plan, and discharge-followup receive no direct content in these passages; they are unsupported by this source, not mastered. Only intake-registration and professional-judgment-med are supported.",
+      "Of the eight mastery stages (recognition, equivalent recall, conceptual understanding, distinction, application, rapid retrieval, spoken production, interpretation), this source supports only conceptual understanding and distinction, with limited application through the documented planning, Registry, and card-availability procedures. Recognition, equivalent recall (especially es/zh), rapid retrieval, spoken production, and interpretation performance have no supporting exercises or evidence in these passages and must not be claimed as complete.",
+      "Concept b2-additional-language-access-resources is intentionally isolated in the graph: the passage lists external titles only, and no typed relationship to other concepts is stated or safely inferable without inventing a connection. No relationship was created merely to avoid an isolated node.",
+      "External resources in p2-0 are listed by title/descriptor only, with no URLs, dates, or current status; no rule may be derived from a title alone."
+    ]
+  },
+  "review": {
+    "findings": [],
+    "limitations": [
+      "Source is Oregon Health Authority guidance last updated 06/10/2021; current federal and Oregon law, Section 1557 interpretation, Registry operation, Census Business Builder interface, and linked external resources require separate verification.",
+      "No Spanish or Mandarin equivalents are established in the passages; bilingual equivalent-recall teaching must not be presented as sourced until human-approved translations are supplied.",
+      "The passages do not define certified versus qualified, specify verification or staff-assessment methods, define operational thresholds for imminent threat, expand LEP, name the 10 Preferred Language card languages, or describe card contents and instructions.",
+      "Only intake-registration and professional-judgment-med are directly supported; history-symptoms, diagnosis-explanation, informed-consent, treatment-plan, and discharge-followup receive no direct content in these passages.",
+      "The source supports conceptual understanding and distinction, with limited application through documented procedures; it does not by itself evidence recognition, equivalent recall, rapid retrieval, spoken production, or interpretation performance."
+    ],
+    "missingPassageIds": [],
+    "verdict": "accept"
+  },
+  "metrics": {
+    "passages": 2,
+    "represented": 2,
+    "irrelevant": 0,
+    "insufficient": 0,
+    "relevantCoverage": 1,
+    "concepts": 9,
+    "claims": 27,
+    "relationships": 5,
+    "isolatedConceptIds": [
+      "b2-additional-language-access-resources"
+    ]
+  },
+  "handbook": {
+    "plan": {
+      "chapters": [
+        {
+          "chapterId": "plan-languages-before-patients-arrive",
+          "conceptIds": [
+            "b1-language-needs-assessment"
+          ],
+          "passageIds": [
+            "p1-0"
+          ],
+          "plannedElements": [
+            "conceptual-model",
+            "workflow",
+            "terms-in-context",
+            "worked-example",
+            "misconception",
+            "application"
+          ],
+          "purpose": "Enable staff to determine which languages a practice is most likely to encounter using several data sets and community outreach rather than guessing from a single report.",
+          "rationale": "The source gives one concrete Census Business Builder workflow plus named supplementary data sources, supporting a focused planning chapter but not broader demographic methods.",
+          "targetDepth": "focused",
+          "title": "Plan for the Languages You Are Likely to Encounter",
+          "workContext": "Organizational planning before scheduling, staffing, and arranging interpreter capacity for Oregon care."
+        },
+        {
+          "chapterId": "who-may-interpret-qualified-staff-emergency-limit",
+          "conceptIds": [
+            "b1-qualified-bilingual-staff",
+            "b1-emergency-interpretation-exception"
+          ],
+          "passageIds": [
+            "p1-0"
+          ],
+          "plannedElements": [
+            "conceptual-model",
+            "distinction",
+            "terms-in-context",
+            "worked-example",
+            "misconception",
+            "scope-limit"
+          ],
+          "purpose": "Help bilingual clinical staff and supervisors apply the source's two-part qualified test and recognize that unqualified staff may interpret only in an imminent-threat emergency.",
+          "rationale": "This is the source's highest-risk distinction, with explicit criteria and an 'only' exception, so it earns a dedicated decision-focused chapter.",
+          "targetDepth": "focused",
+          "title": "Who May Interpret: Qualified Bilingual Staff and the Narrow Emergency Exception",
+          "workContext": "Supervisors and bilingual staff deciding whether a staff member may interpret in routine or emergency encounters."
+        },
+        {
+          "chapterId": "find-interpreters-registry-provider-duty",
+          "conceptIds": [
+            "b1-health-care-interpreter-registry",
+            "b1-provider-responsibility-for-interpreter"
+          ],
+          "passageIds": [
+            "p1-0"
+          ],
+          "plannedElements": [
+            "workflow",
+            "distinction",
+            "terms-in-context",
+            "worked-example",
+            "misconception",
+            "application"
+          ],
+          "purpose": "Show how to use Oregon's Health Care Interpreter Registry to find qualified and certified interpreters while retaining the provider's separate duty to ensure qualification or certification.",
+          "rationale": "The source names the Registry and assigns provider responsibility in adjacent statements, making a combined sourcing-and-verification workflow the honest unit of teaching.",
+          "targetDepth": "focused",
+          "title": "Finding Interpreters in Oregon: The Registry and the Provider's Separate Responsibility",
+          "workContext": "Providers and schedulers arranging interpreter services in Oregon and checking who will actually interpret."
+        },
+        {
+          "chapterId": "intake-tools-patients-signal-language-need",
+          "conceptIds": [
+            "b2-preferred-language-cards",
+            "b2-i-speak-cards",
+            "b2-communication-cards-nonspeaking"
+          ],
+          "passageIds": [
+            "p2-0"
+          ],
+          "plannedElements": [
+            "distinction",
+            "terms-in-context",
+            "workflow",
+            "worked-example",
+            "misconception",
+            "scope-limit"
+          ],
+          "purpose": "Equip intake staff to distinguish Preferred Language cards, reception-desk I Speak Identification Cards, and communication cards for individuals who cannot speak, without overstating what each tool does.",
+          "rationale": "Three easily confused patient-facing tools are described in one short passage with different purposes, placement, and modality, requiring a distinction-led focused chapter.",
+          "targetDepth": "focused",
+          "title": "At Intake: Cards That Let Patients Signal Language and Communication Needs",
+          "workContext": "Front-desk and intake staff at first contact, before registration and clinical communication begin."
+        },
+        {
+          "chapterId": "external-resources-without-overreading-titles",
+          "conceptIds": [
+            "b2-additional-language-access-resources"
+          ],
+          "passageIds": [
+            "p2-0"
+          ],
+          "plannedElements": [
+            "conceptual-model",
+            "terms-in-context",
+            "misconception",
+            "application",
+            "scope-limit"
+          ],
+          "purpose": "Teach staff to treat the document's list of CLAS, civil-rights, LEP, assessment, and video resources as pointers to verify, not as substantive rules stated by this source itself.",
+          "rationale": "The passage lists titles and brief descriptors only, so the professionally useful chapter is about verification and limits rather than invented summaries of external content.",
+          "targetDepth": "focused",
+          "title": "Using the Additional-Resources List Without Overreading It",
+          "workContext": "Staff seeking further language-access guidance after using this 2021 Oregon planning document."
+        }
+      ],
+      "missingTopics": [
+        {
+          "neededSource": "Human-approved Oregon medical interpreting terminology resources for English-Spanish and English-Mandarin, reviewed by qualified medical translators/interpreters.",
+          "reason": "The source establishes no Spanish or Mandarin equivalents for any concept, so equivalent recall and bilingual terminology cannot be taught as sourced fact.",
+          "topic": "Spanish and Mandarin equivalents for all key terms"
+        },
+        {
+          "neededSource": "Current, encounter-specific Oregon medical interpreting guidance and clinical communication curricula for history-taking.",
+          "reason": "No passage covers symptom quality, timing, severity, hedging, or timelines, although history-symptoms is a configured translation area.",
+          "topic": "History and symptoms interpreting"
+        },
+        {
+          "neededSource": "Authoritative guidance on diagnosis, prognosis, probability language, and condition-versus-symptom distinctions in interpreted encounters.",
+          "reason": "No passage addresses diagnosis explanation, test results, prognosis, or probability language for interpreters or bilingual staff.",
+          "topic": "Diagnosis explanation and prognosis communication"
+        },
+        {
+          "neededSource": "Current legal and clinical guidance on informed consent, teach-back, numeric risk, and interpreter conduct in consent discussions.",
+          "reason": "No passage covers risks, benefits, alternatives, teach-back, or legal register, despite informed consent being a critical-risk configured area.",
+          "topic": "Informed consent interpreting"
+        },
+        {
+          "neededSource": "Clinical and pharmacy guidance on dose, dosage, frequency, adherence, and numeric precision in interpreted prescribing.",
+          "reason": "No passage covers prescriptions, dosing instructions, or pharmacist communication, so treatment-plan terminology and checks cannot be derived here.",
+          "topic": "Treatment plans, dose and dosage"
+        },
+        {
+          "neededSource": "Discharge-instruction guidance covering warning signs, return precautions, and family communication through interpreters.",
+          "reason": "No passage covers discharge, follow-up timing, warning signs, or return precautions in interpreted care.",
+          "topic": "Discharge and follow-up instructions"
+        },
+        {
+          "neededSource": "Current OHA Health Care Interpreter Program requirements defining qualified versus certified status and verification/documentation steps.",
+          "reason": "The source requires a qualified or certified interpreter but does not define certified, distinguish it from qualified, or specify how a provider verifies either status.",
+          "topic": "Qualified versus certified: definitions and provider verification"
+        },
+        {
+          "neededSource": "OHA or employer assessment standards for bilingual staff language proficiency, medical terminology, and impartial communication.",
+          "reason": "The source states the qualified criteria but provides no assessment method, credentialing process, or pass threshold for bilingual staff.",
+          "topic": "Assessing whether bilingual staff meet the qualified criteria"
+        },
+        {
+          "neededSource": "Current institutional emergency and legal guidance operationalizing imminent threat for language-access decisions.",
+          "reason": "The source permits unqualified interpretation only in an imminent-threat emergency but gives no further operational thresholds or examples.",
+          "topic": "Operational thresholds for imminent threat"
+        },
+        {
+          "neededSource": "The actual current card sets from OHA or the issuing bodies, with language lists, wording, symbols, and distribution instructions.",
+          "reason": "The source does not name the 10 Preferred Language card languages, list I Speak card languages or wording, expand LEP, or describe communication-card contents.",
+          "topic": "Card languages, contents, and instructions for use"
+        },
+        {
+          "neededSource": "Current federal Section 1557 regulations, Oregon law, OHA Registry and program pages, and the current Census Business Builder interface documentation.",
+          "reason": "This is a 2021 document; current law, Registry operation, external links, and the Census tool interface must be verified separately and may have changed.",
+          "topic": "Current law and tools after the 2021 publication"
+        },
+        {
+          "neededSource": "Professional ethics and standards for health care interpreters, such as current NCIHC guidance, plus Oregon-specific role-boundary training.",
+          "reason": "Beyond who may interpret, the passages do not teach clarification protocols, role boundaries, consecutive or sight interpreting technique, or spoken production.",
+          "topic": "Interpreter ethics, role boundaries, and interpreting performance skills"
+        }
+      ],
+      "organizingPrinciple": "Organized by the real sequence of language-access work: plan for likely languages, decide who may interpret, source and verify an interpreter, equip intake so patients can signal need, then verify external guidance without overreading it.",
+      "readingPath": "Read chapters 1-4 in order for the complete supported workflow, then use chapter 5 and the scope limits whenever a question reaches beyond this 2021 source.",
+      "scopeLimits": [
+        "This is a two-page Oregon Health Authority guidance document last updated 06/10/2021; current federal and Oregon law, Section 1557 interpretation, Registry operation, Census Business Builder interface, and linked external tools must be verified separately.",
+        "The source is organizational language-access guidance, not encounter-specific medical advice and not training in consecutive or sight interpreting technique.",
+        "No Spanish (es) or Mandarin (zh) equivalents are established for any concept; no translation in this handbook may be presented as sourced from these passages.",
+        "The source does not define 'certified' versus 'qualified,' specify how providers verify qualification or certification, or specify how bilingual staff qualification is assessed.",
+        "The source does not define operational thresholds for 'imminent threat' beyond safety or welfare of an individual or the public; routine urgency, delay, or workload is not stated to qualify.",
+        "LEP is used but not expanded in the passage; the 10 languages for Preferred Language cards, I Speak card languages and wording, and communication-card contents, symbols, and instructions are not specified.",
+        "Configured areas history-symptoms, diagnosis-explanation, informed-consent, treatment-plan, and discharge-followup receive no direct content; only intake-registration and professional-judgment-med are supported.",
+        "The source supports conceptual understanding and distinction, with limited application through documented planning, Registry, and card-availability procedures; it does not support equivalent recall, rapid retrieval, spoken production, or interpretation performance claims.",
+        "External resources are listed by title and brief descriptor only, with no URLs, dates, or current status; no rule may be derived from a title alone."
+      ],
+      "scopeStatement": "This handbook teaches only what the 2021 Oregon Health Authority language-access planning guidance supports: identifying likely community languages, the qualified criteria for bilingual staff, the narrow imminent-threat exception, finding interpreters through Oregon's Registry under provider responsibility, and patient language-identification and communication cards at intake. It cannot teach clinical interpreting, encounter-specific medical communication, or Spanish and Mandarin equivalents, none of which the source provides.",
+      "subtitle": "A focused desk handbook from Oregon Health Authority's 2021 language-access planning guidance for bilingual clinical staff and those who assign them",
+      "title": "Oregon Language Access at the Desk: Who May Interpret, How to Plan, and How Patients Signal Need"
+    },
+    "chapters": [
+      {
+        "chapterId": "plan-languages-before-patients-arrive",
+        "citations": [
+          {
+            "passageId": "p1-0",
+            "quote": "You can look at several data sets and reach out to community members to determine the languages your practice is most likely to encounter."
+          },
+          {
+            "passageId": "p1-0",
+            "quote": "A common starting point is the U.S. Census Bureau’s Business Builder."
+          },
+          {
+            "passageId": "p1-0",
+            "quote": "Visit https://cbb.census.gov/rae/#."
+          },
+          {
+            "passageId": "p1-0",
+            "quote": "Define your region by typing in the name of the county you are interested in generating a report for and selecting the correct auto-populated option."
+          },
+          {
+            "passageId": "p1-0",
+            "quote": "Under “Change The Sector” ensure “All Sectors” is selected."
+          },
+          {
+            "passageId": "p1-0",
+            "quote": "Under “Change Your Location” ensure the county and state you are interested in is selected."
+          },
+          {
+            "passageId": "p1-0",
+            "quote": "Under “Select Map Variable” ensure “Total Population” is selected as the 1st variable."
+          },
+          {
+            "passageId": "p1-0",
+            "quote": "At the bottom left side of the webpage, select “Create Report” to generate a detailed report."
+          },
+          {
+            "passageId": "p1-0",
+            "quote": "To save a copy of the report, you may download it as an Excel, CSV, or PDF file by clicking the downward facing arrow in the top right corner of the webpage."
+          },
+          {
+            "passageId": "p1-0",
+            "quote": "Other potential data sources are:"
+          },
+          {
+            "passageId": "p1-0",
+            "quote": "School district data"
+          },
+          {
+            "passageId": "p1-0",
+            "quote": "Medicaid data"
+          },
+          {
+            "passageId": "p1-0",
+            "quote": "Data from community partners in your area"
+          }
+        ],
+        "conceptIds": [
+          "b1-language-needs-assessment"
+        ],
+        "markdown": "# Plan for the Languages You Are Likely to Encounter\n\n## The work problem\n\nLanguage-access planning begins before a patient arrives. If a practice has not first worked out which languages it is likely to encounter, it cannot make an informed decision about the interpreting capacity it needs to arrange. The source frames that first step as an inquiry, not a guess: \"You can look at several data sets and reach out to community members to determine the languages your practice is most likely to encounter.\" [p1-0]\n\n## The conceptual model: several data sets plus community outreach\n\nThe term in context here is **language needs assessment** — in this source, the planning step of determining the languages a practice is most likely to encounter. Two kinds of input belong in that model. First, examine several data sets. Second, reach out to community members. Neither element is presented as optional decoration on the other: the sentence joins them as the way to determine likely languages. [p1-0]\n\nWithin the data-set side, the source gives one named starting point and three additional potential sources. \"A common starting point is the U.S. Census Bureau’s Business Builder.\" [p1-0] It then introduces the others under the heading \"Other potential data sources are:\" [p1-0] — \"School district data\" [p1-0], \"Medicaid data\" [p1-0], and \"Data from community partners in your area\" [p1-0].\n\nThe consequential distinction is between a **starting point** and a **completed assessment**. Business Builder is described as \"a common starting point,\" not as the sole or final source. [p1-0] School district, Medicaid, and community-partner data are presented as other potential sources, and community members are a direct line of inquiry in their own right. [p1-0] The source does not rank these sources, state that one substitutes for another, or explain how to reconcile them if they point in different directions.\n\n## Workflow: generate the Census Business Builder report\n\nThe source gives one concrete, ordered workflow. Follow it as written:\n\n1. \"Visit https://cbb.census.gov/rae/#.\" [p1-0]\n2. \"Define your region by typing in the name of the county you are interested in generating a report for and selecting the correct auto-populated option.\" [p1-0]\n3. At the top of the webpage, under “Change The Sector” ensure “All Sectors” is selected. [p1-0]\n4. \"Under “Change Your Location” ensure the county and state you are interested in is selected.\" [p1-0]\n5. \"Under “Select Map Variable” ensure “Total Population” is selected as the 1st variable.\" [p1-0]\n6. \"At the bottom left side of the webpage, select “Create Report” to generate a detailed report.\" [p1-0]\n7. To save the report: \"you may download it as an Excel, CSV, or PDF file by clicking the downward facing arrow in the top right corner of the webpage.\" The source introduces this step as: \"To save a copy of the report, you may download it as an Excel, CSV, or PDF file by clicking the downward facing arrow in the top right corner of the webpage.\" [p1-0]\n\nNote the exact settings the source specifies — county defined by name and auto-populated selection, \"All Sectors,\" the intended county and state, and \"Total Population\" as the 1st variable — because changing any of them would depart from the workflow as documented. [p1-0]\n\nAfter generating that report, continue the assessment rather than closing it: check the other named potential sources — school district data, Medicaid data, and data from community partners in your area — and reach out to community members. [p1-0]\n\n## Worked example\n\n**Synthetic example:** A practice defines its county in Census Business Builder, generates the report, and then checks school district and Medicaid data and asks community partners which languages they encounter before finalizing its plan. This example is a teaching illustration built from the source's named steps and sources; it is not a case reported in the source. [p1-0]\n\n## Misconception to avoid\n\n**Misconception — single-source language planning:** assuming one Census report alone completes language-needs identification. The source directs practices to several data sets and to community members, and it calls Business Builder only a starting point. [p1-0] Diagnostic check: a practice generated one county Census report and stopped — what additional source-directed inquiries remain before treating its language list as adequately informed? On this source, the answer is the other named data sources and community outreach. [p1-0]\n\n## Application\n\n**Documented application from the source:** At planning time, work in this order: run the Business Builder workflow exactly as specified for your county, save the detailed report in Excel, CSV, or PDF, then broaden the picture with school district data, Medicaid data, and community-partner data, and reach out to community members to determine the languages your practice is most likely to encounter. [p1-0] Treat the resulting list as the product of multiple inputs, not of the Census report alone. [p1-0]\n\n**Inferred teaching / local-implementation design — not stated in the source:** A practice may, as its own local choice, record which of those inputs it actually consulted so that the basis of its plan can be inspected later. That recording-and-inspection step is an inferred implementation suggestion added for teaching purposes; the cited passage does not require it, describe it, or specify any documentation format, timing, or reviewer for it. Do not present that local recording practice as a source-documented requirement.\n\n## Scope note\n\nThis chapter establishes only the source's planning inquiry and its Census Business Builder workflow. It does not establish how to reconcile conflicting language data across sources, any Spanish or Mandarin equivalent for this concept, clinical interpreting practice, or encounter-specific medical communication, none of which the passage provides.",
+        "scopeNote": "This chapter does not establish how to reconcile conflicting language data, any Spanish or Mandarin terminology, clinical interpreting, or encounter-specific medical communication.",
+        "title": "Plan for the Languages You Are Likely to Encounter"
+      },
+      {
+        "chapterId": "who-may-interpret-qualified-staff-emergency-limit",
+        "citations": [
+          {
+            "passageId": "p1-0",
+            "quote": "Section 1557 states that this is permissible, but the bilingual/multilingual staff member must qualified."
+          },
+          {
+            "passageId": "p1-0",
+            "quote": "Proficient in speaking and understanding both spoken English and at least one other spoken language or sign language, including any necessary specialized vocabulary, terminology and phraseology"
+          },
+          {
+            "passageId": "p1-0",
+            "quote": "Able to effectively, accurately, and impartially communicate directly with individuals who use sign language or who have limited English proficiency."
+          },
+          {
+            "passageId": "p1-0",
+            "quote": "If bilingual staff members do not meet these criteria, they can only provide interpretation services in an emergency involving imminent threat to the safety or welfare of an individual or the public."
+          }
+        ],
+        "conceptIds": [
+          "b1-qualified-bilingual-staff",
+          "b1-emergency-interpretation-exception"
+        ],
+        "markdown": "# Who May Interpret: Qualified Bilingual Staff and the Narrow Emergency Exception\n\n## The work problem\n\nA bilingual staff member is available, a patient needs language support, and the schedule is moving. The practical question is not, \"Does this employee speak another language?\" It is, \"Does this employee meet the source's test for a *qualified* bilingual/multilingual staff member, and if not, does the narrow emergency exception apply?\"\n\nThe source answers the first part directly: \"Section 1557 states that this is permissible, but the bilingual/multilingual staff member must qualified.\" [p1-0] Permissibility is therefore conditional. Bilingualism opens the question; it does not settle it.\n\n## The conceptual model: a two-part qualified test\n\nUnder the source, *qualified* has two cumulative parts. Both must be present.\n\n**1. Proficiency in both languages, including specialized language.** The staff member must be: \"Proficient in speaking and understanding both spoken English and at least one other spoken language or sign language, including any necessary specialized vocabulary, terminology and phraseology\" [p1-0]. Note the scope: speaking *and* understanding, English *and* the other spoken language or sign language, and not only everyday fluency — the proficiency must include any necessary specialized vocabulary, terminology and phraseology.\n\n**2. Effective, accurate, impartial direct communication.** The staff member must also be: \"Able to effectively, accurately, and impartially communicate directly with individuals who use sign language or who have limited English proficiency.\" [p1-0] This is a performance criterion, not a language-knowledge criterion alone. It adds three qualities — effectively, accurately, and impartially — and it requires direct communication with the individual concerned.\n\nIf either part is missing, the staff member does not meet these criteria. That conclusion then triggers the emergency rule below; it does not create a middle category of \"qualified enough for routine work.\"\n\n## Terms in context\n\n| Term as used here | What it means in this chapter |\n|---|---|\n| **bilingual/multilingual staff member** | A staff member who uses more than one language. The label alone does not establish qualification. |\n| **qualified bilingual/multilingual staff** | A bilingual/multilingual staff member who meets both parts above: proficiency including specialized vocabulary, terminology and phraseology, and effective, accurate, impartial direct communication. [p1-0] |\n| **limited English proficiency** | The population named in the second criterion, alongside individuals who use sign language, with whom the staff member must be able to communicate directly. [p1-0] |\n| **emergency involving imminent threat** | The only situation in which staff who do not meet the criteria may provide interpretation services, framed by the source as a threat \"to the safety or welfare of an individual or the public.\" [p1-0] |\n\nNo Spanish or Mandarin equivalent for these terms is established in the source passage, so none is presented here as a sourced translation.\n\n## Decision workflow — inferred teaching design\n\n*Inferred teaching design — not a source-prescribed procedure:* The passage states the two qualified criteria and the emergency exception, but it specifies no assessment method, decision status, decision label, or recording practice. The sequence below is a teaching aid for applying the sourced criteria; steps that go beyond restating those criteria are labeled inferred.\n\n1. **Check proficiency against the sourced criterion.** Is the person proficient in speaking and understanding both spoken English and at least one other spoken language or sign language, including any necessary specialized vocabulary, terminology and phraseology? [p1-0]\n2. **Check direct communication against the sourced criterion.** Can the person effectively, accurately, and impartially communicate directly with individuals who use sign language or who have limited English proficiency? [p1-0]\n3. **If both criteria are met,** the source's qualified condition is met for purposes of this test.\n4. **If either criterion is not met,** the source's rule is that such staff \"can only provide interpretation services in an emergency involving imminent threat to the safety or welfare of an individual or the public.\" [p1-0]\n5. *Inferred teaching design:* If qualification has not been established, do not treat the person as qualified for a routine assignment. This treats \"not established\" cautiously for teaching purposes; the passage itself does not define an assessment status or equate \"not established\" with failing the test.\n6. **If it is not an emergency involving imminent threat,** the source does not permit that unqualified staff member to provide interpretation services. The word \"only\" controls this step: staff who do not meet the criteria \"can only provide interpretation services in an emergency involving imminent threat to the safety or welfare of an individual or the public.\" [p1-0]\n\n## The consequential distinction\n\n**Bilingual vs. qualified.** A staff member may be genuinely bilingual and still not be qualified under this test, because the test additionally requires specialized vocabulary, terminology and phraseology, and effective, accurate, impartial direct communication. [p1-0]\n\n**Imminent-threat emergency vs. ordinary urgency.** *Inferred teaching distinction:* The exception is not written for convenience, delay, workload, or a wish to avoid rescheduling. It is written for \"an emergency involving imminent threat to the safety or welfare of an individual or the public.\" [p1-0] Reading \"emergency\" more broadly than \"imminent threat\" would expand the exception beyond what the source states.\n\n## Worked examples\n\n**Synthetic example — routine assignment.** A supervisor is about to assign a bilingual employee to interpret at a routine appointment. The employee converses fluently in English and another language but has not shown proficiency in the necessary specialized terminology, and impartial direct communication has not been established. Under the two-part test, the supervisor should not treat everyday bilingual fluency as qualification, because qualification requires proficiency \"including any necessary specialized vocabulary, terminology and phraseology\" and the ability to \"effectively, accurately, and impartially communicate directly\" with the patient. [p1-0] On these synthetic facts, and with no imminent-threat emergency stated, the emergency exception does not supply a routine-work substitute.\n\n**Synthetic example — applying the exception narrowly.** A bilingual employee who does not meet the qualified criteria is present when a situation is identified as an emergency involving an imminent threat to an individual's safety. The relevant source rule is that such staff \"can only provide interpretation services in an emergency involving imminent threat to the safety or welfare of an individual or the public.\" [p1-0] The synthetic teaching point is the boundary: the exception is tied to imminent threat to safety or welfare, not to the employee's availability.\n\n## Misconceptions to correct\n\n**Misconception: \"Bilingual equals qualified.\"** Correction: the source makes bilingual staff use permissible only when the staff member is qualified, and defines qualified through both proficiency with specialized language and effective, accurate, impartial direct communication. [p1-0]\n\n**Misconception: \"Emergency means any urgent or busy situation.\"** Correction: the source narrows the exception to \"an emergency involving imminent threat to the safety or welfare of an individual or the public.\" [p1-0] A full schedule or a desire to avoid delay is not, by itself, that stated condition.\n\n**Misconception: \"Meeting one part of the test is enough.\"** Correction: the definition lists the proficiency criterion and the direct-communication criterion together; a person who has language proficiency but cannot communicate effectively, accurately, and impartially directly with the individual has not met the definition as stated. [p1-0]\n\n## Application at the desk — inferred local procedure\n\n*Inferred local procedure — not in the source:* A workplace may choose to name its decision \"qualified, not qualified, or not yet established\" and to record which part of the test is unmet or unestablished, rather than recording only that the employee \"speaks the language.\" Those labels and that recording practice are a local teaching and documentation design; the passage specifies no assessment status, decision label, or recording practice, so they must not be cited as source requirements. What the source does require is the substance behind any such local procedure: apply the two qualified criteria as written, and, if the person does not meet them, apply the emergency question exactly as written — imminent threat to the safety or welfare of an individual or the public — without substituting staffing pressure for that condition. [p1-0]\n\n## Scope note\n\nThis chapter establishes only the source's two-part qualified test for bilingual/multilingual staff and its imminent-threat emergency exception. It does not establish how qualification must be assessed or credentialed, define further operational thresholds for \"imminent threat,\" teach clinical interpreting technique, or provide Spanish, Mandarin, or other language equivalents, none of which the cited passage supplies.",
+        "scopeNote": "This chapter does not establish an assessment or credentialing method for qualification, further thresholds for imminent threat, clinical interpreting technique, or any non-English translation equivalents.",
+        "title": "Who May Interpret: Qualified Bilingual Staff and the Narrow Emergency Exception"
+      },
+      {
+        "chapterId": "find-interpreters-registry-provider-duty",
+        "citations": [
+          {
+            "passageId": "p1-0",
+            "quote": "Use the Health Care Interpreter Registry to find qualified and certified health care interpreters in Oregon."
+          },
+          {
+            "passageId": "p1-0",
+            "quote": "The provider is responsible for ensuring that any interpreter used is a qualified or certified interpreter."
+          },
+          {
+            "passageId": "p1-0",
+            "quote": "To learn more about federal and state interpreter service requirements, read OHA’s fact sheet and visit OHA’s Health Care Interpreter Program page."
+          }
+        ],
+        "conceptIds": [
+          "b1-health-care-interpreter-registry",
+          "b1-provider-responsibility-for-interpreter"
+        ],
+        "markdown": "# Finding Interpreters in Oregon: The Registry and the Provider's Separate Responsibility\n\n## The work problem\n\nWhen interpreter services are needed in Oregon, staff must know where the source directs them to look and what responsibility the source separately assigns to the provider. Keeping those two statements distinct prevents a search tool from being mistaken, in teaching or practice, for the whole of the provider's stated responsibility.\n\n## The conceptual model: two separate statements\n\nThe source names a finding resource: \"Use the Health Care Interpreter Registry to find qualified and certified health care interpreters in Oregon.\" [p1-0]\n\nIn a separate statement, it assigns responsibility: \"The provider is responsible for ensuring that any interpreter used is a qualified or certified interpreter.\" [p1-0] Note the breadth of the documented wording — *any interpreter used*.\n\nThe passage does not state that this ensuring responsibility cannot be delegated, who may perform any verification task, or what documentation would show that it was met. This chapter therefore describes it only as a **separate provider responsibility**, not as a non-delegable duty.\n\n## Terms in context\n\n- **Health Care Interpreter Registry** — the Oregon resource named by the source for finding qualified and certified health care interpreters in Oregon. [p1-0] It is an institutional proper name. No Spanish or Mandarin equivalent is established in the passage, and none is presented here as a sourced translation.\n- **Qualified or certified interpreter** — the wording of the standard in the provider-responsibility statement. [p1-0] This passage does not define \"qualified\" or \"certified\" or explain how they differ.\n- **Provider responsibility** — responsibility for ensuring that any interpreter used is a qualified or certified interpreter. [p1-0]\n\n## Workflow documented by the source\n\n1. Use the Health Care Interpreter Registry to find qualified and certified health care interpreters in Oregon. [p1-0]\n2. Recognize the provider's separate responsibility for ensuring that any interpreter used is a qualified or certified interpreter. [p1-0]\n3. For further requirements, follow the source's pointer: \"To learn more about federal and state interpreter service requirements, read OHA’s fact sheet and visit OHA’s Health Care Interpreter Program page.\" [p1-0] The contents of those resources are not reproduced in this passage and are not summarized here.\n\n**Inferred teaching design:** Presenting the two documented statements as successive desk steps is an instructional ordering, not a procedure, sequence, verification method, or documentation process specified in the passage.\n\n## Consequential distinction\n\n| Question | Health Care Interpreter Registry | Provider |\n|---|---|---|\n| What does the passage state? | It is used to *find* qualified and certified health care interpreters in Oregon [p1-0] | The provider is *responsible for ensuring* that any interpreter used is a qualified or certified interpreter [p1-0] |\n| What must not be added? | The passage does not describe search steps or a Registry URL | The passage does not describe delegation, verification tasks, or documentation mechanics |\n\n## Worked example\n\n**Synthetic example:** A scheduler in an Oregon practice uses the Health Care Interpreter Registry to identify a health care interpreter. [p1-0] In this teaching example, the scheduler then brings the separate provider-responsibility statement to the provider's attention: the provider is responsible for ensuring that any interpreter used is a qualified or certified interpreter. [p1-0] The example illustrates the distinction between the two statements; it does not establish how ensuring is performed, who performs any supporting task, or what record is required.\n\n## Misconception to correct\n\n**Inferred teaching design — misconception:** Locating an interpreter through the Registry, by itself, is the same thing as the provider ensuring that the interpreter used is qualified or certified.\n\n**Correction:** The passage makes two separate statements: the Registry is used to find qualified and certified health care interpreters in Oregon [p1-0], and \"The provider is responsible for ensuring that any interpreter used is a qualified or certified interpreter.\" [p1-0] The passage does not say that a Registry finding satisfies the ensuring responsibility. Diagnostic check: ask which documented statement concerns finding and which concerns ensuring, and identify the actor named in the ensuring statement — the provider. [p1-0]\n\nA related misconception is that the passage places the ensuring responsibility only on the interpreter. It expressly assigns that responsibility to the provider. [p1-0]\n\n## Application at the desk\n\n- For Oregon interpreter services, use the Health Care Interpreter Registry as the source-directed place to find qualified and certified health care interpreters. [p1-0]\n- Keep the provider's ensuring responsibility visible as a separate documented responsibility covering any interpreter used. [p1-0]\n- For federal and state interpreter service requirements, consult OHA's fact sheet and OHA's Health Care Interpreter Program page, as directed by the source. [p1-0]\n\n**Inferred teaching design:** Keeping the ensuring responsibility \"visible\" in a local process is a teaching recommendation for applying the distinction. The passage does not prescribe a checklist, readiness check, recording practice, escalation route, timing, verification step, or documentation method.",
+        "scopeNote": "This chapter does not establish that the provider's ensuring responsibility is non-delegable, who may perform verification tasks, Registry search steps or a URL, verification or documentation mechanics, timing or escalation procedures, the difference between qualified and certified, the contents of OHA's fact sheet or Health Care Interpreter Program page, or any Spanish or Mandarin equivalent.",
+        "title": "Finding Interpreters in Oregon: The Registry and the Provider's Separate Responsibility"
+      },
+      {
+        "chapterId": "intake-tools-patients-signal-language-need",
+        "citations": [
+          {
+            "passageId": "p2-0",
+            "quote": "preferred language cards are a tool for patients to communicate their language"
+          },
+          {
+            "passageId": "p2-0",
+            "quote": "Preferred Language cards are available in 10 languages."
+          },
+          {
+            "passageId": "p2-0",
+            "quote": "I Speak Identification Cards that should be readily available at your reception desk"
+          },
+          {
+            "passageId": "p2-0",
+            "quote": "allow people with LEP to identify their language easily"
+          },
+          {
+            "passageId": "p2-0",
+            "quote": "For individuals who cannot speak you may want to have a communication card available."
+          },
+          {
+            "passageId": "p2-0",
+            "quote": "COVID-19 Communication Card and Covid-19 Vaccine Communication Card"
+          }
+        ],
+        "conceptIds": [
+          "b2-preferred-language-cards",
+          "b2-i-speak-cards",
+          "b2-communication-cards-nonspeaking"
+        ],
+        "markdown": "# At Intake: Cards That Let Patients Signal Language and Communication Needs\n\nThe first work problem at intake is identification, not interpretation itself: before registration and clinical communication can proceed appropriately, the patient needs a way to signal what language they use, or that they cannot speak. This chapter covers three patient-facing cards described in the source. They are easily confused because all are called cards, but the source assigns them different purposes, one specific placement, and different modalities. Keeping those differences intact is the professional skill.\n\nThroughout this chapter, documented statements are distinguished from inferred teaching and application design. Steps, checks, and escalation actions that the source does not prescribe are explicitly labeled as inferred and must not be read as documented workflow.\n\n## The three tools, distinguished\n\n| Tool | What the source says it does | Key condition in the source |\n|---|---|---|\n| **Preferred Language cards** | They are \"a tool for patients to communicate their language\" needs [p2-0]. | \"Preferred Language cards are available in 10 languages.\" [p2-0] The source does not name those 10 languages. |\n| **I Speak Identification Cards** | They \"allow people with LEP to identify their language easily\" [p2-0]. The source does not expand the abbreviation LEP. | There are \"I Speak Identification Cards that should be readily available at your reception desk\" [p2-0]. |\n| **Communication card for individuals who cannot speak** | A card to have available for a person who cannot speak, addressing non-speech communication rather than spoken-language identification. | \"For individuals who cannot speak you may want to have a communication card available.\" [p2-0] |\n\n**Inferred distinction (teaching design drawn from the documented purposes above):** identifying a spoken language and communicating without speech are different needs. An I Speak card helps a person identify a language; a communication card is introduced separately for individuals who cannot speak. This comparison is inferred from the separate documented purposes; the passage does not state that the tools are interchangeable products.\n\nTreating either card as a substitute for arranging qualified interpreting would go beyond this passage: the source presents the cards as intake signalling tools and states no substitution rule.\n\nFor the communication card, the source names two examples: \"COVID-19 Communication Card and Covid-19 Vaccine Communication Card\" [p2-0]. It does not describe their symbols, languages, wording, or clinical use, and it does not establish Spanish or Mandarin equivalents for any of the card names in this chapter. No translation is sourced here, so none should be presented to patients as a documented equivalent on the basis of this chapter.\n\n## Intake workflow: documented basis and inferred application\n\nThe passage documents the tools, one placement, and their purposes. It does not prescribe a step-by-step intake procedure, an escalation procedure, a recording procedure, or a readiness-check procedure. The numbered sequence below is therefore an **inferred teaching/application design** built around the documented statements, not a documented workflow.\n\n1. **Documented placement; inferred readiness application:** The source states there are \"I Speak Identification Cards that should be readily available at your reception desk\" [p2-0] to \"allow people with LEP to identify their language easily\" [p2-0]. *Inferred teaching/application design:* keeping the cards physically reachable at the desk before a patient arrives is an operational way to implement that documented placement; the passage itself does not describe a readiness check, storage system, or staff assignment.\n2. **Documented signalling tool; inferred caution and escalation:** The source states that \"preferred language cards are a tool for patients to communicate their language\" needs [p2-0] and that \"Preferred Language cards are available in 10 languages.\" [p2-0] It does not name those languages. *Inferred teaching/application design, not a documented workflow step:* if coverage in the individual patient's language cannot be confirmed, escalate to identify the language another way rather than handing over a card anyway. The passage does not prescribe this escalation, name an escalation route, or say who should perform it; sites must obtain that procedure from other authoritative guidance.\n3. **Documented tentative suggestion for non-speech communication:** If the individual cannot speak, the source says \"you may want to have a communication card available\" [p2-0]. The named examples are the \"COVID-19 Communication Card and Covid-19 Vaccine Communication Card\" [p2-0]. *Inferred teaching/application design:* treating speech ability as a separate question from language identification helps staff avoid using a language-identification card to solve a non-speech communication need; the passage does not provide instructions for using either example card.\n4. **Scope boundary, not a documented next step:** The card signals a need. This passage does not describe the subsequent interpreting arrangement, card wording, format, or distribution procedure, so those steps must come from other authoritative guidance, not from inference here.\n\n## Worked examples\n\n**Synthetic example — reception desk readiness:** A receptionist keeps I Speak Identification Cards visible at the front desk. A newly arrived patient points to their language without needing English to ask. This illustrates the placement and purpose stated in the source [p2-0]; the scenario itself is synthetic and not a sourced case.\n\n**Synthetic example — vaccine visit, non-speech communication:** During a vaccine visit, staff offer the Covid-19 Vaccine Communication Card, one of the two examples named in the source [p2-0], to a patient who cannot speak so the patient can point to communicate. This is a synthetic teaching example; the source does not describe the card's contents or instructions for use.\n\n**Synthetic example — unconfirmed language coverage:** A patient needs a language that staff cannot confirm is among the 10 languages for Preferred Language cards [p2-0]. *Inferred teaching/application design:* staff do not assume coverage and instead escalate to identify the language another way. This escalation action is a synthetic, inferred application for teaching; it is not prescribed in p2-0.\n\n## Misconceptions to correct\n\n- **\"Ten languages means this patient's language is covered.\"** The source says the Preferred Language cards are available in 10 languages but does not name them [p2-0]. Availability for a specific patient must be confirmed, not assumed.\n- **\"Filed cards count as available.\"** Cards kept in a manager's office and brought out on request do not match \"readily available at your reception desk\" [p2-0]; delay at first contact is exactly what the placement instruction avoids.\n- **\"'May want to have' is a mandate — or is meaningless.\"** The source's modality for communication cards is a recommendation, \"you may want to have\" [p2-0], not \"must.\" Read it as a suggestion to consider, neither a strict requirement nor permission to ignore the need.\n- **\"A communication card replaces interpreting.\"** The passage presents the card only as something to have available for individuals who cannot speak [p2-0]. A nonspeaking patient may also need a language other than English; this passage alone authorizes no conclusion about interpreting arrangements.\n- **\"The escalation step is in the source.\"** It is not. Escalation when Preferred Language card coverage cannot be confirmed is labeled above as an inferred teaching/application design; p2-0 states only that the cards are available in 10 languages and does not name them or prescribe what to do next [p2-0].\n\n## Application at the desk\n\n**Inferred teaching/application design (not a documented checklist in the source):** before the next shift, a site could check three things: I Speak cards are physically at the reception desk, not stored elsewhere [p2-0]; staff know the Preferred Language cards exist as a tool for patients to communicate language needs and are available in 10 languages, without claiming to know which 10 [p2-0]; and staff can name the two communication-card examples for individuals who cannot speak while using the source's tentative \"may want to have\" framing [p2-0]. This readiness check, and any escalation route used when coverage cannot be confirmed, are inferred operational scaffolding for training and local implementation; they are not documented procedures in p2-0 and require local authoritative guidance to operationalize.\n\n**Scope limit:** This chapter is limited to the three card tools as described in the cited passage. It does not describe card wording, format, symbols, the languages covered, or how interpreting is arranged after a need is signalled.",
+        "scopeNote": "This chapter does not establish card wording, format, symbols, the 10 languages covered, Spanish or Mandarin equivalents, any expansion of the abbreviation LEP, an escalation or readiness-check procedure, or how interpreting must be arranged after a patient signals a language or communication need.",
+        "title": "At Intake: Cards That Let Patients Signal Language and Communication Needs"
+      },
+      {
+        "chapterId": "external-resources-without-overreading-titles",
+        "citations": [
+          {
+            "passageId": "p2-0",
+            "quote": "Where can I go for additional language access resources?"
+          },
+          {
+            "passageId": "p2-0",
+            "quote": "A BluePrint for Advancing National Standards for Culturally and Linguistically Appropriate\n     Services (CLAS)"
+          },
+          {
+            "passageId": "p2-0",
+            "quote": "United States Department of Health & Human Services Guidance to Federal Financial\n     Assistance Recipients"
+          },
+          {
+            "passageId": "p2-0",
+            "quote": "Civil Rights for Providers of Health Care and Human Services"
+          },
+          {
+            "passageId": "p2-0",
+            "quote": "HHS OCR link to LEP Resources and Guidance Documents"
+          },
+          {
+            "passageId": "p2-0",
+            "quote": "National Origin Discrimination – to assist agencies with benefit applications and other\n     administrative procedures, to ensure they do not deter or deny eligible national origin groups\n     from obtaining services"
+          },
+          {
+            "passageId": "p2-0",
+            "quote": "Effective communication YouTube video on improving patient-provider communications"
+          },
+          {
+            "passageId": "p2-0",
+            "quote": "Medical School Curriculum Facilitator's Guide and PowerPoint: “Stopping Discrimination\n     before it Starts: the Impact of Civil Rights Laws on Healthcare Disparities.” (MedEdPORTAL:\n     Pub Id #7740)"
+          },
+          {
+            "passageId": "p2-0",
+            "quote": "LEP Video on Breaking down the Language Barrier: Translating English Proficiency Policy\n     into Practice"
+          },
+          {
+            "passageId": "p2-0",
+            "quote": "Language Access Assessment and Planning Tool: A guide to walk you through your office to\n     review for access"
+          },
+          {
+            "passageId": "p2-0",
+            "quote": "How interpreters juggle two languages at Once Ted-Ed"
+          },
+          {
+            "passageId": "p2-0",
+            "quote": "Hearing Hands Samsung Ad illustrating barrier reduction for Deaf Community Member"
+          },
+          {
+            "passageId": "p2-0",
+            "quote": "Last updated 06/10/2021"
+          }
+        ],
+        "conceptIds": [
+          "b2-additional-language-access-resources"
+        ],
+        "markdown": "# Using the Additional-Resources List Without Overreading It\n\n## The work problem\n\nYou have finished the immediate task in front of you and now need deeper guidance. This source answers the question, \"Where can I go for additional language access resources?\" [p2-0] — but it answers it with a list of pointers, not with the content of those resources. The professional skill in this chapter is therefore not memorization. It is restraint: knowing exactly what a title or one-line descriptor entitles you to do next, and what it does not.\n\n## Conceptual model: a pointer list, not substantive guidance\n\nTreat the list as a set of signposts. A signpost can tell you where to look; it cannot tell you what you will find, whether it is current, or what it requires. That distinction is an *inferred teaching design* drawn from the form of the passage: the passage gives titles and, for only some items, a brief descriptor, and it reproduces no requirements, procedures, thresholds, or obligations from any listed item [p2-0].\n\nThe document itself is dated, ending with \"Last updated 06/10/2021\" [p2-0]. A 2021 pointer therefore requires a currency check before use: the passage gives no URLs, publication dates, or current status for the listed resources, so none of that can be assumed from the listing alone.\n\n## Terms in context: what is actually listed\n\nThe following are the items as named in the source. Where the source gives no descriptor, none is invented here.\n\n| Listed item, as named in the source | Descriptor given by the source |\n|---|---|\n| \"A BluePrint for Advancing National Standards for Culturally and Linguistically Appropriate Services (CLAS)\" [p2-0] | None given |\n| \"United States Department of Health & Human Services Guidance to Federal Financial Assistance Recipients\" [p2-0] | None given |\n| \"Civil Rights for Providers of Health Care and Human Services\" [p2-0] | None given |\n| \"HHS OCR link to LEP Resources and Guidance Documents\" [p2-0] | Described only as a link to LEP resources and guidance documents |\n| \"National Origin Discrimination\" [p2-0] | \"to assist agencies with benefit applications and other administrative procedures, to ensure they do not deter or deny eligible national origin groups from obtaining services\" [p2-0] |\n| \"Effective communication YouTube video\" [p2-0] | \"on improving patient-provider communications\" [p2-0] |\n| \"Medical School Curriculum Facilitator's Guide and PowerPoint: 'Stopping Discrimination before it Starts: the Impact of Civil Rights Laws on Healthcare Disparities.' (MedEdPORTAL: Pub Id #7740)\" [p2-0] | Identified as a facilitator's guide and PowerPoint with that publication ID |\n| \"LEP Video on Breaking down the Language Barrier: Translating English Proficiency Policy into Practice\" [p2-0] | None beyond its title |\n| \"Language Access Assessment and Planning Tool\" [p2-0] | \"A guide to walk you through your office to review for access\" [p2-0] |\n| \"How interpreters juggle two languages at Once Ted-Ed\" [p2-0] | None given |\n| \"Hearing Hands Samsung Ad\" [p2-0] | \"illustrating barrier reduction for Deaf Community Member\" [p2-0] |\n\nGrouping these into standards/guidance items, assessment or planning tools, and educational videos or media is an *inferred* organizational aid for reading the list; the source presents them as one undifferentiated list [p2-0].\n\n## Misconception: title-as-rule\n\n**Misconception.** A listed title states a rule you can apply. For example, seeing the CLAS Blueprint or a civil-rights item in the list and then citing this document as if it had stated what those resources require.\n\n**Why it fails.** The passage provides no content from those resources [p2-0]. A title can support only one defensible action: locating and verifying the actual resource.\n\n**Diagnostic.** Ask: \"What specific obligation does this passage itself impose through this listing, and what would I need to check outside the passage before acting?\" If the answer names an obligation, it has been imported from outside the source.\n\n## Worked example\n\n**Synthetic example (inferred teaching example, not a sourced case).** A staff member preparing an office access review notices the \"Language Access Assessment and Planning Tool: A guide to walk you through your office to review for access\" [p2-0]. Used correctly, the listing is a lead: the staff member locates the actual tool, confirms what it is and whether it is current, and only then performs a review. Used incorrectly, the staff member writes \"office reviewed per the Language Access Assessment and Planning Tool\" based solely on having read the title in this document. The listing is not the review, and this document does not describe the tool's contents beyond that one-line descriptor [p2-0].\n\n## Application: a verification workflow\n\nThis workflow is an *inferred teaching design* built from the limits of the passage; the source itself prescribes no such steps.\n\n1. **Record the pointer exactly as listed.** Keep the title in English as a proper name; this passage establishes no Spanish or Mandarin rendering of any listed title [p2-0].\n2. **Note what the passage does and does not say.** If no descriptor is given, record \"no descriptor in source\" rather than summarizing from memory [p2-0].\n3. **Locate the actual resource outside this document** and verify its publisher, date, and current status before relying on it — none of that information is in the passage, which is dated \"Last updated 06/10/2021\" [p2-0].\n4. **Cite the external resource itself, once verified,** for any rule or procedure you adopt — never cite this list as authority for content it does not contain [p2-0].\n5. **Match the pointer to the task.** For example, the only item the source describes as an office walk-through is the \"Language Access Assessment and Planning Tool\" [p2-0]; do not assign that function to another listed item.\n\n## Scope limit\n\nThis chapter establishes only that the source lists these external resources, with the brief descriptors quoted above [p2-0]. It does not establish the content, requirements, currency, authority, or availability of any listed resource, and it provides no clinical interpreting guidance and no Spanish or Mandarin equivalents.",
+        "scopeNote": "This chapter does not establish the content, currency, authority, URLs, or requirements of any listed external resource, nor any clinical interpreting guidance or Spanish or Mandarin equivalents for the listed titles.",
+        "title": "Using the Additional-Resources List Without Overreading It"
+      }
+    ],
+    "audit": {
+      "chapterFindings": [],
+      "findings": [],
+      "limitations": [
+        "This is a two-page Oregon Health Authority guidance document last updated 06/10/2021; current federal and Oregon law, Section 1557 interpretation, Registry operation, Census Business Builder interface, and linked external tools must be verified separately.",
+        "The source is organizational language-access guidance, not encounter-specific medical advice and not training in consecutive or sight interpreting technique.",
+        "No Spanish (es) or Mandarin (zh) equivalents are established for any concept; no translation in this handbook may be presented as sourced from these passages.",
+        "The source does not define 'certified' versus 'qualified,' specify how providers verify qualification or certification, or specify how bilingual staff qualification is assessed.",
+        "The source does not define operational thresholds for 'imminent threat' beyond safety or welfare of an individual or the public; routine urgency, delay, or workload is not stated to qualify.",
+        "LEP is used but not expanded in the passage; the 10 languages for Preferred Language cards, I Speak card languages and wording, and communication-card contents, symbols, and instructions are not specified.",
+        "Configured areas history-symptoms, diagnosis-explanation, informed-consent, treatment-plan, and discharge-followup receive no direct content; only intake-registration and professional-judgment-med are supported.",
+        "The source supports conceptual understanding and distinction, with limited application through documented planning, Registry, and card-availability procedures; it does not support equivalent recall, rapid retrieval, spoken production, or interpretation performance claims.",
+        "External resources are listed by title and brief descriptor only, with no URLs, dates, or current status; no rule may be derived from a title alone."
+      ],
+      "missingTopics": [
+        "Spanish and Mandarin equivalents for all key terms",
+        "History and symptoms interpreting",
+        "Diagnosis explanation and prognosis communication",
+        "Informed consent interpreting",
+        "Treatment plans, dose and dosage",
+        "Discharge and follow-up instructions",
+        "Qualified versus certified: definitions and provider verification",
+        "Assessing whether bilingual staff meet the qualified criteria",
+        "Operational thresholds for imminent threat",
+        "Card languages, contents, and instructions for use",
+        "Current law and tools after the 2021 publication",
+        "Interpreter ethics, role boundaries, and interpreting performance skills"
+      ],
+      "verdict": "accept"
+    },
+    "metrics": {
+      "chapters": 5,
+      "words": 5424,
+      "characters": 36081,
+      "citedPassages": 2,
+      "passages": 2,
+      "conceptsInChapters": 9,
+      "concepts": 9,
+      "missingTopics": 12,
+      "syntheticLabels": 13
+    }
+  },
+  "provider": "meta"
+}

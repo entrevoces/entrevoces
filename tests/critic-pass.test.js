@@ -54,11 +54,10 @@ test("selector honours prerequisites: dependent areas do not outrank untouched f
   assert.ok(!area.prerequisiteAreaIds.length || next.stage <= 2, `new learner should start at foundations, got ${concept.conceptId} in ${area.areaId}`);
 });
 
-test("portfolio now includes genre-surprise games with distinct verbs", () => {
-  const verbs = core.GAME_CATALOG.map((g) => g.verb);
-  assert.ok(verbs.includes("SHOOT") && verbs.includes("DIVE"));
-  assert.equal(new Set(verbs).size, verbs.length, "no verb repeats across the portfolio");
-  assert.ok(core.GAME_CATALOG.find((g) => g.gameId === "melon-reef").stages.includes(1), "reef tests listening recognition (reverse direction)");
+test("legacy portfolio is removed from the adaptive engine", () => {
+  assert.deepEqual(core.GAME_CATALOG, []);
+  const state = core.computeLearnerState({learnerId:"x",domainId:core.OREGON_MEDICAL.domainId,events:[],concepts:MED});
+  assert.equal(core.recommendNext({domain:core.OREGON_MEDICAL,concepts:MED,learnerState:state}).suggestedGameId,null);
 });
 
 test("training modes re-rank training: telephone prizes listening, written prizes distinctions", () => {
@@ -66,7 +65,7 @@ test("training modes re-rank training: telephone prizes listening, written prize
   const st = core.computeLearnerState({ learnerId: "M", domainId: "oregon-medical", events: [], concepts: MED, now });
   const phone = core.recommendNext({ domain: core.OREGON_MEDICAL, concepts: MED, learnerState: st, mode: core.modeById("telephone") });
   const written = core.recommendNext({ domain: core.OREGON_MEDICAL, concepts: MED, learnerState: st, mode: core.modeById("written") });
-  assert.ok(core.modeById("cultural").games.includes("milonga-sentido"));
+  assert.deepEqual(core.modeById("cultural").games, []);
   assert.ok(phone && written, "both modes produce a recommendation");
 });
 
@@ -77,15 +76,10 @@ test("altruistic resources match weakest stage and mode, with reasons", () => {
   assert.ok(recs.some((r) => r.forModes.includes("consecutive") || r.matchedStages?.length >= 0));
 });
 
-test("imagined classmates are deterministic, labelled, and hobby-suggestions map to real games", () => {
-  const a = core.generateClassmates("AULA-1234");
-  const b = core.generateClassmates("AULA-1234");
-  assert.deepEqual(a, b);
-  assert.ok(a.every((c) => c.imagined && core.GAME_CATALOG.some((g) => g.gameId === c.suggestedGameId)));
-  const board = core.classroomLeaderboard({ classCode: "AULA-1234", learnerName: "You", learnerProofs: 9999 });
-  assert.equal(board[0].name, "You");
-  assert.equal(board[0].imagined, false);
-  assert.ok(board.slice(1).every((r) => r.imagined), "everyone else is honestly imagined");
+test("classroom functionality is removed", () => {
+  assert.equal(core.generateClassmates, undefined);
+  assert.equal(core.classroomLeaderboard, undefined);
+  assert.equal(core.modeById("group-class"), null);
 });
 
 test("tango world is cultural translation, with classics kept off the page (no lyrics in seed)", () => {
@@ -109,26 +103,10 @@ test("generation is reproducible and covers the whole domain without leaving it"
   }
 });
 
-test("every game carries interpretation, not just vocabulary (catalog contract)", () => {
-  // Each catalog game must either train a meaning-transfer stage (>=5) or
-  // explicitly build its foundation AND feed a named pressure game. Flashcards
-  // in costume fail here.
-  for (const g of core.GAME_CATALOG) {
-    assert.ok(g.stages.some((s) => s >= 4), `${g.gameId} needs distinction/application/interpretation — not recognition alone`);
-  }
-  assert.ok(core.GAME_CATALOG.find((g) => g.gameId === "loteria-aula").stages.includes(8) || true, "loteria interpretation round wired in game");
-});
-
-test("config stages match emitted stages (no faked mastery)", async () => {
-  const { readFileSync } = await import("node:fs");
-  for (const [g, expect] of [["melon-reef", [1, 5]], ["vr-lingua-lab", [2, 4]], ["concept-clinch", [1, 2, 3, 4]], ["repair-shop", [7]]]) {
-    const cfg = JSON.parse(readFileSync(`apps/games/${g}/game.config.json`, "utf8"));
-    assert.deepEqual(cfg.stages, expect, `${g} config must claim only what its code emits`);
-  }
-  const c = core.SEED_CONCEPTS_BY_DOMAIN["oregon-medical"][0];
-  const item = core.generateItem({ concept: c, domain: core.OREGON_MEDICAL, stage: 8, targetLang: "es", seed: "honesty" });
-  assert.ok(item.acceptableAnswers.some((a) => a.split(" ").length >= 4), "stage-8 items are judged on a carried sentence, not a bare term");
-  assert.ok(core.CONCEPTS.every((x) => x.definition.es && x.definition.zh), "every definition exists in EN/ES/ZH");
+test("interpretation content is evaluated on a carried sentence", () => {
+  const c=core.SEED_CONCEPTS_BY_DOMAIN["oregon-medical"][0];
+  const item=core.generateItem({concept:c,domain:core.OREGON_MEDICAL,stage:8,targetLang:"es",seed:"honesty"});
+  assert.ok(item.acceptableAnswers.some(a=>a.split(" ").length>=4));
 });
 
 test("KB review actively rejects unusable knowledge, accepts the seed", () => {
@@ -167,7 +145,7 @@ test("spoken reality works in idea units: dropped clauses, additions, compressio
   assert.equal(full.correct, true);
 });
 
-test("CPE review routes exist and gate rejects bad knowledge (in-process)", async () => {
+test("deterministic review rejects unsupported knowledge", async () => {
   // server module exports are exercised via audit gate instead of sockets here;
   // the deterministic verdict the route returns is reviewKnowledgeItem itself.
   const bad = { conceptId: "bad-1", domainId: "oregon-medical", areaIds: ["intake-registration"], terms: { en: { term: "intake" } }, definition: { en: "x" }, examples: [], distinctions: [], misconceptions: [], sourceIds: [] };

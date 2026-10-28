@@ -1,0 +1,194 @@
+# Marginfall — game_framework
+
+Status: agent-authored design specification. Implementation and playtesting remain separate gates.
+
+Domain: language-foundations. Concepts: interpreting-skill-1.
+
+## Candidate exploration
+
+### Marginfall — selected
+
+Traverse a folding world where a short instruction changes the viable route. Read intent ahead of movement, preserve a negative or conditional constraint, and use a reversible air dash to recover. Selected because its state space adds a distinct interpreting responsibility and can be expressed as consequential game-world actions.
+
+### Dialog-driven interpretation desk — rejected
+
+Rejected because it would concentrate play into reading and answer choices, repeat the old text-heavy presentation and add little mechanical distinction to the collection.
+
+### Generic recall challenge with a new theme — rejected
+
+Rejected because swapping colors, vocabulary and cover art would not change the primary verb, decision topology or the evidence produced by the existing games.
+
+## 01 · charter
+
+Marginfall owns a specific interpreting responsibility: Traverse a folding world where a short instruction changes the viable route. Read intent ahead of movement, preserve a negative or conditional constraint, and use a reversible air dash to recover. It is one part of a five-world curriculum and does not certify a professional. Its primary verb is traverse; its decision space is described below rather than inherited from a quiz template.
+
+## 02 · audience
+
+Developing and working interpreters who want practical attention and meaning-transfer exercises. Sessions last roughly three to eight minutes and support mouse, touch and keyboard. English–Spanish and English–Chinese use existing terms; synthetic world instructions are labeled practice. No prior clinical or legal credential is required to explore Marginfall.
+
+## 03 · creative-direction
+
+An ivory and ultramarine paper landscape with sculpted black silhouettes, ink blooms, floating margins and warm amber checkpoints. The player is a luminous brushstroke with a short trail. World geometry, movement and shadows dominate; the instruction is a single short line. Responsive acceleration, 110 ms coyote time, 120 ms jump buffer, a 140 ms dash and forgiving edge contacts. Camera framing shows the next decision before it becomes a jump. A failed jump should invite another attempt, while a wrong interpretation should visibly change the gate. Preserve this identity across title, play and result. Other games in the collection use different geometry and temporal structure; sharing the host controls must not make their worlds look or play alike.
+
+## 04 · gameplay-loops
+
+A fixed-step platform body owns position, velocity, grounded state and one air dash. Gravity, coyote time and buffered jumps make input reliable. Each chamber generates a solvable left-to-right platform route with two physically traversable branches; a brief specifies the allowed crest, prohibited color/shape or required checkpoint order. Physics collisions happen before checkpoint assessment; falling is a motor error and produces no language evidence. Only passage through an explicit semantic gate assesses whether the instruction was preserved. Ten chambers across a continuous ink canyon. Early chambers teach jump and landing safely; later ones add a dash, moving ledges, conditional gates and route planning. A fall returns to the last stable ledge. Three semantic gate errors reset the chamber. Motor difficulty and semantic evidence remain separate. The recurring loop is input, world change, feedback, and a consequential next action. Explanatory prose stays in optional help; the world and its changing state remain the primary interface.
+
+## 05 · state
+
+SceneMachine owns title, play, paused, interlude and result. Marginfall's world owns its level-local entities and counters; the host owns session ID, level checkpoint, assistance, assessed-attempt IDs and settings. No timer advances while paused. Restart replaces level-local state, retaining prior evidence and the assistance flag for a repeated challenge.
+
+## 06 · mechanics
+
+A fixed-step platform body owns position, velocity, grounded state and one air dash. Gravity, coyote time and buffered jumps make input reliable. Each chamber generates a solvable left-to-right platform route with two physically traversable branches; a brief specifies the allowed crest, prohibited color/shape or required checkpoint order. Physics collisions happen before checkpoint assessment; falling is a motor error and produces no language evidence. Only passage through an explicit semantic gate assesses whether the instruction was preserved. Completion requires a real state transition through the relevant target or encounter, never clicking a generic correct-answer button. Geometric/motor scoring is separate from language assessment, and omitted or unknown meaning cannot be silently substituted.
+
+## 07 · entities
+
+A fixed-step platform body owns position, velocity, grounded state and one air dash. Gravity, coyote time and buffered jumps make input reliable. Each chamber generates a solvable left-to-right platform route with two physically traversable branches; a brief specifies the allowed crest, prohibited color/shape or required checkpoint order. Physics collisions happen before checkpoint assessment; falling is a motor error and produces no language evidence. Only passage through an explicit semantic gate assesses whether the instruction was preserved. Each entity has a stable level-local ID, CSS-pixel or grid position, type, active state and explicit owner. Draw-only particles have no collision or assessment authority. Labels name only immediate world objects; no decorative entity is counted as authored learning content.
+
+## 08 · interactions
+
+Input is sampled before simulation; movement and physical collisions resolve next; semantic gate/receiver/encounter assessment resolves once per unique attempt; feedback and checkpoint persistence follow. A/D or arrows move, Space/W jumps, Shift dashes once in the air. On touch, three large controls provide left, right and jump; a separate dash button appears after onboarding. Tap controls and keyboard share the same held-state input. R resets the current chamber without awarding evidence. Paused, title and result scenes reject world actions, and a release/cancel clears held inputs before a new scene begins.
+
+## 09 · simulation
+
+A fixed-step platform body owns position, velocity, grounded state and one air dash. Gravity, coyote time and buffered jumps make input reliable. Each chamber generates a solvable left-to-right platform route with two physically traversable branches; a brief specifies the allowed crest, prohibited color/shape or required checkpoint order. Physics collisions happen before checkpoint assessment; falling is a motor error and produces no language evidence. Only passage through an explicit semantic gate assesses whether the instruction was preserved. Use the shared fixed 60 Hz GameLoop and bounded catch-up. World positions are CSS pixels calculated from viewport layout, while grids keep discrete coordinates. A visited-state cap, finite packet/particle capacity and explicit level boundaries prevent runaway loops and unbounded accumulation.
+
+## 10 · ai
+
+There is no runtime model or adaptive NPC model in Marginfall. Any NPC timing, path selection or decorative motion follows deterministic seeded rules. Authoring happened in the chat under the user's explicit quota exception. Independent CLI critique is still pending and must not be represented as completed by these deterministic agents.
+
+## 11 · levels
+
+Ten chambers across a continuous ink canyon. Early chambers teach jump and landing safely; later ones add a dash, moving ledges, conditional gates and route planning. A fall returns to the last stable ledge. Three semantic gate errors reset the chamber. Motor difficulty and semantic evidence remain separate. A level begins from a reproducible seed and a validated reachable construction. Onboarding introduces only one load-bearing rule before combining it with another. Replay changes topology, state and decision order, not only names or colors. An unreachable or contradictory generated level is rejected before play.
+
+## 12 · content
+
+Traverse a folding world where a short instruction changes the viable route. Read intent ahead of movement, preserve a negative or conditional constraint, and use a reversible air dash to recover. Reuse the selected concept definitions and English/Spanish/Chinese terms from the existing knowledge snapshot. Synthetic world messages are authored practice, not medical advice or jurisdiction-universal law. Missing target-language terms are shown as missing, never replaced by an unrelated language.
+
+## 13 · difficulty
+
+Difficulty and evidence eligibility remain deterministic engine-core policy. Ten chambers across a continuous ink canyon. Early chambers teach jump and landing safely; later ones add a dash, moving ledges, conditional gates and route planning. A fall returns to the last stable ledge. Three semantic gate errors reset the chamber. Motor difficulty and semantic evidence remain separate. Level escalation changes interacting gameplay constraints; it does not overwrite mastery estimates. Comfort mode removes unnecessary time pressure and logs assistance where it changes assessment. Motor success alone cannot promote language difficulty.
+
+## 14 · progression
+
+Marginfall follows the previous worlds in the collection and prepares common-ground. Every game remains explorable as a local experiment. Level checkpoints guide continuation; no fake stars or automatic evidence are awarded for title, help, reading, settings, pause, restart or result views.
+
+## 15 · narrative
+
+The player is a carrier of meaning inside an original abstract world. Traverse a folding world where a short instruction changes the viable route. Read intent ahead of movement, preserve a negative or conditional constraint, and use a reversible air dash to recover. There are no borrowed characters, commercial artwork or claims that fictional cases happened. Narrative is expressed through the world's state and responses rather than long dialogue; source-specific professional content remains a reference boundary.
+
+## 16 · controls-camera
+
+A/D or arrows move, Space/W jumps, Shift dashes once in the air. On touch, three large controls provide left, right and jump; a separate dash button appears after onboarding. Tap controls and keyboard share the same held-state input. R resets the current chamber without awarding evidence. Layout uses actual CSS viewport dimensions, with world reflow and targets around 44 pixels or larger rather than a shrunken desktop canvas. The camera shows the next consequential action. Keyboard focus is drawn in the world, and touch controls provide alternatives to precision dragging or held mouse gestures.
+
+## 17 · ui-ux
+
+Open on a full-screen art-directed title for Marginfall, with one primary Play/Continue action. During play, the world occupies at least 80% of the viewport; the source is one short utterance, and HUD shows only level, immediate state and essential tools. Definitions, citations, full controls and production limitations live in optional help, not stacked model-text cards.
+
+## 18 · art
+
+An ivory and ultramarine paper landscape with sculpted black silhouettes, ink blooms, floating margins and warm amber checkpoints. The player is a luminous brushstroke with a short trail. World geometry, movement and shadows dominate; the instruction is a single short line. Author original local SVG title layers and draw interactive geometry/entities live on canvas. Never bake authoritative text, the complete HUD or the game itself into an image. Essential objects use distinct shape and motion as well as color, and asset failure has an explicit recoverable title fallback.
+
+## 19 · animation-vfx
+
+Responsive acceleration, 110 ms coyote time, 120 ms jump buffer, a 140 ms dash and forgiving edge contacts. Camera framing shows the next decision before it becomes a jump. A failed jump should invite another attempt, while a wrong interpretation should visibly change the gate. Draw a bounded particle pool, eased transitions and short state cues. Reduced motion removes shake, trails and nonessential parallax while retaining necessary position/state feedback. Animation never delays assessment or hides a control; draw order is background, world, agents, feedback, focus and HUD.
+
+## 20 · audio
+
+Bundle original build-time rendered WAV cues and a restrained ambient score appropriate to this identity: Responsive acceleration, 110 ms coyote time, 120 ms jump buffer, a 140 ms dash and forgiving edge contacts. Camera framing shows the next decision before it becomes a jump. A failed jump should invite another attempt, while a wrong interpretation should visibly change the gate. AudioMixer unlocks after the first gesture, exposes mute and volume, and keeps play functional in silence. Musical cues are feedback rather than a claim of synthesized speech or spoken-source assessment.
+
+## 21 · accessibility
+
+Keyboard and touch have complete control parity. A/D or arrows move, Space/W jumps, Shift dashes once in the air. On touch, three large controls provide left, right and jump; a separate dash button appears after onboarding. Tap controls and keyboard share the same held-state input. R resets the current chamber without awarding evidence. Provide visible focus, readable source text, shape-coded state, a pause affordance, reduced motion, mute/volume and comfort mode. Blur cancels input and opens pause; returning cannot silently resume an active timer. Help explains exact controls and the limited learning responsibility.
+
+## 22 · architecture
+
+Use one shared host for lifecycle, assets, audio, input, persistence and validated multi-domain EngineClient instances, plus a separate marginfall world module implementing its own state space and rules. The host imports actual engine-core and game-runtime APIs. Rendering has no authority to update learning state, and worlds never duplicate mastery or retention math.
+
+## 23 · performance
+
+Target 60 Hz on desktop and mobile with DPR capped at two, finite entities and bounded effects. A fixed-step platform body owns position, velocity, grounded state and one air dash. Gravity, coyote time and buffered jumps make input reliable. Each chamber generates a solvable left-to-right platform route with two physically traversable branches; a brief specifies the allowed crest, prohibited color/shape or required checkpoint order. Physics collisions happen before checkpoint assessment; falling is a motor error and produces no language evidence. Only passage through an explicit semantic gate assesses whether the instruction was preserved. Avoid per-frame DOM rebuilds and runtime network dependencies. Fixed-step catch-up drops excess time rather than fast-forwarding an invisible world. Large source/reference prose is loaded only for optional reading, not every frame.
+
+## 24 · persistence
+
+VersionedStore keeps the level checkpoint, seed, settings, best local run and assistance markers. EngineClient separately owns append-only domain-isolated evidence. Reload resumes the current level, not a fabricated exact-frame snapshot. Corrupt data resets safely; blocked/quota storage leaves play possible and exposes exportable in-session progress.
+
+## 25 · generation
+
+A fixed-step platform body owns position, velocity, grounded state and one air dash. Gravity, coyote time and buffered jumps make input reliable. Each chamber generates a solvable left-to-right platform route with two physically traversable branches; a brief specifies the allowed crest, prohibited color/shape or required checkpoint order. Physics collisions happen before checkpoint assessment; falling is a motor error and produces no language evidence. Only passage through an explicit semantic gate assesses whether the instruction was preserved. Seeds determine topology, content order and timing. Generate a valid solution or feasible schedule first, scramble the presentation second, then validate reachability and resource budgets. Do not claim variation from color/name swaps. Failed validation regenerates within a bounded attempt count or reports an explicit error.
+
+## 26 · testing
+
+Exercise a full Ten chambers across a continuous ink canyon. Early chambers teach jump and landing safely; later ones add a dash, moving ledges, conditional gates and route planning. A fall returns to the last stable ledge. Three semantic gate errors reset the chamber. Motor difficulty and semantic evidence remain separate. Test keyboard and portrait touch, pause/blur, restart, hint persistence, seeded replay, repeated completion, malformed storage, missing audio, and the distinction between motor errors and assessed meaning errors. Logic tests cover reachable solutions and finite event ordering; real browser play is separately recorded.
+
+## 27 · acceptance
+
+A complete session in Marginfall must be reachable through actual world actions, with escalation, meaningful consequence, win/result, recoverable failure and replay. The saved definition, required assets, lifecycle controls and shared evidence integration must exist. Independent CLI design/code reviews remain pending; do not mark a model or human quality gate passed merely because files compile.
+
+## 28 · delivery
+
+Deliver a static standalone package for marginfall: index, style, source modules, bundled art/audio, knowledge snapshot, shared learning/runtime modules, this framework and an honest acceptance report. Include it in the local learning hub as an experiment. The author can hide/remove it easily; no automatic publication follows a successful build.
+
+## 29 · risks
+
+Risks include a motor or routing solution that bypasses the meaning task, a dominant waiting strategy, repeated-seed farming, tiny mobile targets, source ambiguity and overclaiming evidence. Traverse a folding world where a short instruction changes the viable route. Read intent ahead of movement, preserve a negative or conditional constraint, and use a reversible air dash to recover. Keep the assessed responsibility narrow and inspect real play. Aesthetic ambition does not waive state correctness or the still-pending independent critiques.
+
+## 30 · traceability
+
+Trace WORLD-marginfall to the unique traverse loop, SOURCE-interpreting-skill-1 to the reused knowledge, LIFE-01 to host scenes, ACCESS-01 to keyboard/touch, SAVE-01 to checkpoint recovery and EVIDENCE-01 to the assessed-action event. Every advertised feature needs actual code and observed or tested evidence; limitations remain explicit in the build report.
+
+## Operational mechanic contracts
+
+### marginfall-world
+
+**decision:** A/D or arrows move, Space/W jumps, Shift dashes once in the air. On touch, three large controls provide left, right and jump; a separate dash button appears after onboarding. Tap controls and keyboard share the same held-state input. R resets the current chamber without awarding evidence.
+
+**trigger:** A real player world action during the play scene reaches a consequential state transition.
+
+**preconditions:** The level is active, its deterministic seed is initialized, and this attempt has not already been assessed.
+
+**inputs:** A/D or arrows move, Space/W jumps, Shift dashes once in the air. On touch, three large controls provide left, right and jump; a separate dash button appears after onboarding. Tap controls and keyboard share the same held-state input. R resets the current chamber without awarding evidence.
+
+**algorithm:** A fixed-step platform body owns position, velocity, grounded state and one air dash. Gravity, coyote time and buffered jumps make input reliable. Each chamber generates a solvable left-to-right platform route with two physically traversable branches; a brief specifies the allowed crest, prohibited color/shape or required checkpoint order. Physics collisions happen before checkpoint assessment; falling is a motor error and produces no language evidence. Only passage through an explicit semantic gate assesses whether the instruction was preserved.
+
+**parameters:** Ten chambers across a continuous ink canyon. Early chambers teach jump and landing safely; later ones add a dash, moving ledges, conditional gates and route planning. A fall returns to the last stable ledge. Three semantic gate errors reset the chamber. Motor difficulty and semantic evidence remain separate.
+
+**costs:** Actions consume the explicitly defined time, movement, attention or error budget; hints are recorded as assistance.
+
+**stateChanges:** Update only world-owned entities first, then emit at most one domain-qualified evidence event for an assessed response.
+
+**feedback:** Responsive acceleration, 110 ms coyote time, 120 ms jump buffer, a 140 ms dash and forgiving edge contacts. Camera framing shows the next decision before it becomes a jump. A failed jump should invite another attempt, while a wrong interpretation should visibly change the gate.
+
+**interactions:** Physical state resolves before semantic assessment; feedback and checkpoint writes follow the accepted transition.
+
+**edgeCases:** Pause, blur, restart, repeated input, invalid storage, simultaneous arrivals and failed assets must recover without duplicate evidence.
+
+**tests:** Validate seeded reachability, a complete session, keyboard/touch equivalence, finite event ordering and no mastery from motor-only actions.
+
+### marginfall-meaning
+
+**decision:** Traverse a folding world where a short instruction changes the viable route. Read intent ahead of movement, preserve a negative or conditional constraint, and use a reversible air dash to recover.
+
+**trigger:** A real player world action during the play scene reaches a consequential state transition.
+
+**preconditions:** The level is active, its deterministic seed is initialized, and this attempt has not already been assessed.
+
+**inputs:** A/D or arrows move, Space/W jumps, Shift dashes once in the air. On touch, three large controls provide left, right and jump; a separate dash button appears after onboarding. Tap controls and keyboard share the same held-state input. R resets the current chamber without awarding evidence.
+
+**algorithm:** A fixed-step platform body owns position, velocity, grounded state and one air dash. Gravity, coyote time and buffered jumps make input reliable. Each chamber generates a solvable left-to-right platform route with two physically traversable branches; a brief specifies the allowed crest, prohibited color/shape or required checkpoint order. Physics collisions happen before checkpoint assessment; falling is a motor error and produces no language evidence. Only passage through an explicit semantic gate assesses whether the instruction was preserved.
+
+**parameters:** Ten chambers across a continuous ink canyon. Early chambers teach jump and landing safely; later ones add a dash, moving ledges, conditional gates and route planning. A fall returns to the last stable ledge. Three semantic gate errors reset the chamber. Motor difficulty and semantic evidence remain separate.
+
+**costs:** Actions consume the explicitly defined time, movement, attention or error budget; hints are recorded as assistance.
+
+**stateChanges:** Update only world-owned entities first, then emit at most one domain-qualified evidence event for an assessed response.
+
+**feedback:** Responsive acceleration, 110 ms coyote time, 120 ms jump buffer, a 140 ms dash and forgiving edge contacts. Camera framing shows the next decision before it becomes a jump. A failed jump should invite another attempt, while a wrong interpretation should visibly change the gate.
+
+**interactions:** Physical state resolves before semantic assessment; feedback and checkpoint writes follow the accepted transition.
+
+**edgeCases:** Pause, blur, restart, repeated input, invalid storage, simultaneous arrivals and failed assets must recover without duplicate evidence.
+
+**tests:** Validate seeded reachability, a complete session, keyboard/touch equivalence, finite event ordering and no mastery from motor-only actions.
+

@@ -117,8 +117,7 @@ teaches interpreting.
 ## 6. Limits stated honestly
 
 - ES/ZH seed renderings are authored for the demo without certified SME review;
-  every concept accepts *variation sets* and the Console flags inferred content.
-- Automated fidelity is idea-unit heuristics + (optionally) Meta-model
-  assistance via the CPE — never presented as professional evaluation.
+  every concept accepts *variation sets* and generated artifacts label inferred content.
+- Automated fidelity uses deterministic idea-unit heuristics — never presented as professional evaluation.
 - Stability scheduling is FSRS-inspired, not FSRS-trained. Claims stay inside
   the evidence.

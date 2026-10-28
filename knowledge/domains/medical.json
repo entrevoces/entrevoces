@@ -1,0 +1,152 @@
+{
+  "domainId": "medical",
+  "label": {
+    "en": "Medical interpreting: clinical encounters and meaning"
+  },
+  "jurisdiction": {
+    "country": "cross-jurisdictional",
+    "region": "General interpreter practice; specific legal/clinical rules labeled by source"
+  },
+  "profession": "medical",
+  "languagePairs": [
+    {
+      "source": "en",
+      "target": "es",
+      "direction": "both"
+    },
+    {
+      "source": "en",
+      "target": "zh",
+      "direction": "both"
+    }
+  ],
+  "modalities": [
+    "consecutive",
+    "simultaneous",
+    "sight",
+    "remote"
+  ],
+  "translationAreas": [
+    {
+      "areaId": "encounter-access-and-role",
+      "label": {
+        "en": "Access, encounter structure and interpreter role"
+      },
+      "prerequisiteAreaIds": [],
+      "riskIfMistranslated": "high",
+      "description": "Important. Map referral, scheduling, intake, team introductions, handoffs and remote participation; distinguish interpreting from advocacy, explanation and clinical decision making within sourced standards. Evidence responsibility: a sourced encounter map and role-boundary cases including access barriers and communication repair. Sources: professional interpreter standards and health-system language-access guidance. Queries: 'healthcare interpreter standards role boundaries remote encounter'; 'hospital interpreter patient language access workflow'."
+    },
+    {
+      "areaId": "history-examination-and-reasoning",
+      "label": {
+        "en": "History, examination and diagnostic uncertainty"
+      },
+      "prerequisiteAreaIds": [],
+      "riskIfMistranslated": "critical",
+      "description": "Critical. Cover presenting concern, history, allergies, prior care, family/social context, symptom chronology and examination speech. Evidence responsibility: source-grounded distinctions among reported symptom, observed sign, tentative explanation, differential consideration and established diagnosis; preserve attribution, uncertainty, negatives and time. Sources: public clinical encounter explanations and patient history materials. Queries: 'patient history physical examination symptoms signs diagnosis uncertainty patient information'; 'medical history allergy adverse reaction patient information'."
+    },
+    {
+      "areaId": "anatomy-and-body-systems",
+      "label": {
+        "en": "Functional anatomy, physiology and common conditions"
+      },
+      "prerequisiteAreaIds": [],
+      "riskIfMistranslated": "high",
+      "description": "Important. Build functional models for cardiovascular, respiratory, gastrointestinal/hepatobiliary, renal/urinary, endocrine/metabolic, neurologic, musculoskeletal, skin, sensory, hematologic/immune and infectious-disease encounters. Evidence responsibility: each system receives a relevant structure/function model, common consequential presentations and condition distinctions linked to actual encounter tasks; justify depth through frequency and consequence rather than encyclopedic disease lists. Sources: national health agencies and institutional patient education. Queries: '[body system] anatomy symptoms diagnosis treatment patient information'; '[condition] patient information complications follow-up'."
+    },
+    {
+      "areaId": "tests-imaging-and-results",
+      "label": {
+        "en": "Investigations, preparation and result communication"
+      },
+      "prerequisiteAreaIds": [],
+      "riskIfMistranslated": "critical",
+      "description": "Critical. Cover specimens, laboratory tests, imaging, screening, diagnostic testing, preparation and result follow-up. Evidence responsibility: contextual distinctions among indication, preparation, procedure, finding, interpretation and next step; investigate positive/negative, normal/abnormal, screening/confirmation and uncertainty without inventing universal thresholds. Sources: public laboratory, imaging and screening explanations. Queries: 'medical tests understanding results reference ranges patient information'; 'imaging contrast preparation patient information'; 'screening diagnostic test false positive patient information'."
+    },
+    {
+      "areaId": "medicines-and-regimens",
+      "label": {
+        "en": "Medication communication and reconciliation"
+      },
+      "prerequisiteAreaIds": [],
+      "riskIfMistranslated": "critical",
+      "description": "Critical. Cover medicine identity, purpose, formulation, route, strength, dose, frequency, duration, changes, missed-dose questions, allergies, adverse effects and reconciliation. Evidence responsibility: preserve quantity relationships, units, instructions and conditional wording; distinguish source-supported medication concepts without supplying treatment advice or unsupported conversions. Sources: official medicine labels, public medicines agencies and patient medication instructions. Queries: 'medicine patient information strength dose route frequency'; 'medication reconciliation patient information allergy side effects'; 'Spanish Chinese official medication patient information'."
+    },
+    {
+      "areaId": "treatment-procedures-and-rehabilitation",
+      "label": {
+        "en": "Treatment, procedures and recovery"
+      },
+      "prerequisiteAreaIds": [],
+      "riskIfMistranslated": "critical",
+      "description": "Critical. Research common surgery, anesthesia, bedside procedures, devices, wound care, rehabilitation and supportive treatment according to encounter importance. Evidence responsibility: source-linked preparation–procedure–recovery models, participant roles, choices, restrictions and follow-up language; preserve conditional instructions and avoid implying universal protocols. Sources: hospital and professional-body patient materials. Queries: 'procedure anesthesia recovery patient information'; 'rehabilitation wound care device instructions patient education'."
+    },
+    {
+      "areaId": "consent-risk-and-decisions",
+      "label": {
+        "en": "Consent, risk and shared decisions"
+      },
+      "prerequisiteAreaIds": [],
+      "riskIfMistranslated": "critical",
+      "description": "Critical. Cover options, benefits, harms, alternatives, refusal, consent discussions, understanding checks and source-specific capacity arrangements. Evidence responsibility: preserve voluntariness, actor, uncertainty, probability framing and distinctions between permission, understanding and agreement. Label jurisdictional rules rather than presenting one consent model as universal. Sources: public consent policies, patient decision resources and interpreting standards. Queries: 'patient informed consent shared decision making risks alternatives'; '[jurisdiction] healthcare consent capacity interpreter official guidance'."
+    },
+    {
+      "areaId": "pain-and-emergency-care",
+      "label": {
+        "en": "Pain, urgent assessment and emergency transitions"
+      },
+      "prerequisiteAreaIds": [],
+      "riskIfMistranslated": "critical",
+      "description": "Critical. Cover pain quality/location/radiation/severity, injury, triage, acute deterioration, emergency procedures and rapid handoffs. Evidence responsibility: retain sequence, onset, attribution, severity wording and urgent instructions under interruption; distinguish emergency workflow language from interpreter-led clinical triage. Sources: emergency-care patient materials and professional interpreting guidance. Queries: 'emergency department triage assessment patient information'; 'pain description onset severity patient assessment'; 'emergency medical interpreting communication standards'."
+    },
+    {
+      "areaId": "mental-health-and-substance-care",
+      "label": {
+        "en": "Mental health, distress and substance-related encounters"
+      },
+      "prerequisiteAreaIds": [],
+      "riskIfMistranslated": "critical",
+      "description": "Critical. Cover assessment, therapy, crisis conversations, substance use, withdrawal and safety-related language as supported by sources. Evidence responsibility: preserve speaker perspective, disfluency, idiom, reported experience, intent and uncertainty; investigate stigma, euphemism and interpreter role boundaries. Source every legal restriction or disclosure duty by jurisdiction. Sources: public mental-health services, patient resources and specialist interpreting standards. Queries: 'mental health interpreting assessment idiom interpreter guidance'; 'mental health crisis substance use patient information'; '[jurisdiction] mental health consent confidentiality official'."
+    },
+    {
+      "areaId": "sexual-reproductive-and-sensitive-care",
+      "label": {
+        "en": "Sexual, reproductive and sensitive care"
+      },
+      "prerequisiteAreaIds": [],
+      "riskIfMistranslated": "critical",
+      "description": "Critical. Cover sexual history, reproductive anatomy, contraception, pregnancy, birth, postpartum care and pregnancy loss; investigate violence-related encounters and safeguarding boundaries through appropriate evidence. Evidence responsibility: accurate anatomical and patient-preferred language, chronology, privacy concerns, euphemism and sensitive clarification without assumptions about identity or family structure. Sources: authoritative sexual/reproductive patient education and jurisdiction-labeled safeguarding guidance. Queries: 'sexual reproductive health patient information interpreter'; 'pregnancy childbirth postpartum loss patient information'; '[jurisdiction] safeguarding healthcare interpreter guidance'."
+    },
+    {
+      "areaId": "longitudinal-and-life-course-care",
+      "label": {
+        "en": "Chronic care, life course and serious illness"
+      },
+      "prerequisiteAreaIds": [],
+      "riskIfMistranslated": "high",
+      "description": "Important. Cover recurring chronic-care visits, self-management discussions, prevention, pediatric/developmental encounters, older-person care, disability-related access and serious-illness/palliative conversations. Evidence responsibility: preserve goals, baseline/change, prognosis uncertainty, caregiver versus patient attribution and follow-up responsibilities; distinguish care concepts that lack institutional equivalents. Sources: public disease-management, pediatric, geriatric and palliative patient resources. Queries: 'chronic condition self management follow-up patient information'; 'pediatric older adult healthcare communication interpreter'; 'palliative goals of care prognosis patient information'."
+    },
+    {
+      "areaId": "discharge-navigation-and-follow-up",
+      "label": {
+        "en": "Discharge, transitions and continuity"
+      },
+      "prerequisiteAreaIds": [],
+      "riskIfMistranslated": "critical",
+      "description": "Critical. Cover discharge instructions, medication changes, referrals, appointments, home care, return precautions and administrative access language. Evidence responsibility: complete source-grounded transitions identifying who must do what, when, where and under which condition, including unresolved results and failed communication. Sources: institutional discharge and referral materials. Queries: 'hospital discharge instructions medication follow-up pending results patient'; 'patient referral appointment preparation language access'."
+    },
+    {
+      "areaId": "clinical-language-and-documents",
+      "label": {
+        "en": "Clinical register, quantities and document interpretation"
+      },
+      "prerequisiteAreaIds": [],
+      "riskIfMistranslated": "critical",
+      "description": "Critical cross-cutting responsibility. Audit every chapter for abbreviations, names, numbers, units, dates, negation, probability, time, professional/patient register and supported Spanish/Chinese false friends or variants. Evidence responsibility: contextual bilingual dossiers and sight/remote document cases with ambiguity and clarification boundaries; no invented equivalents or decontextualized abbreviation expansions. Sources: originating clinical documents, authoritative multilingual patient materials and language references. Queries: '[clinical concept] official patient information español 中文'; '[abbreviation] [clinical context] official patient information'."
+    }
+  ],
+  "competencyWeights": {
+    "competence": 1
+  },
+  "status": "draft"
+}

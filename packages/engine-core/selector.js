@@ -1,12 +1,12 @@
 // ENTRE VOCES engine-core — adaptive selector (spec §6)
-// Explainable rules, no opaque scores. Same function on server and offline client.
+// Explainable rules, no opaque scores. Shared by authoring checks and static games.
 import { STAGE_COMPETENCES } from "./learner.js";
 
 const STAGE_ACTIVITY = {
   1: "terminology", 2: "bilingual", 3: "conceptual", 4: "conceptual",
   5: "contextual-usage", 6: "retrieval", 7: "spoken-production", 8: "interpretation",
 };
-const STAGE_GAME_HINT = { 1: "concept-clinch", 2: "concept-clinch", 3: "concept-clinch", 4: "concept-clinch", 5: "the-table", 6: "term-rush", 7: "echo-sequence", 8: "shift-consecutive" };
+
 
 /**
  * Recommend the next learning step.
@@ -101,9 +101,7 @@ export function recommendNext({ domain, concepts = [], learnerState, excludeGame
     purpose: s === 1 ? "Can they recognize it when heard/seen?" : s === 2 ? "Can they recall the equivalent without pressure?" : "Do they understand what it means, not just its translation?",
   })) : null;
   const activityType = needsDiagnostic ? "diagnostic" : STAGE_ACTIVITY[pick.stage];
-  let suggestedGameId = STAGE_GAME_HINT[pick.stage];
-  if (pick.concept.competences?.includes("professional-judgment") && pick.stage <= 5) suggestedGameId = "bench-call";
-  if (excludeGameId && suggestedGameId === excludeGameId) suggestedGameId = suggestedGameId === "concept-clinch" ? "shift-consecutive" : "concept-clinch";
+  const suggestedGameId = null; // Rebuilt portfolio is populated by reviewed Meta builds, never deleted seed games.
 
   const rationaleParts = [];
   if (needsDiagnostic && diagnosticReason) rationaleParts.push(diagnosticReason + " — a short diagnostic activity will separate the causes before more practice.");
@@ -135,66 +133,10 @@ export function recommendNext({ domain, concepts = [], learnerState, excludeGame
   };
 }
 
-export const GAME_CATALOG = [
-  { gameId: "concept-clinch", name: "Voice Atelier", verb: "BUILD", stages: [1, 2, 3, 4], promise: "Build the studio; craft each term four ways." },
-  { gameId: "term-rush", name: "Term Rush", verb: "RUSH", stages: [6], promise: "Arcade rain for retrieval under pressure." },
-  { gameId: "echo-sequence", name: "Echo Sequence", verb: "ECHO", stages: [6, 7], promise: "Hold ordered threads from memory, aloud." },
-  { gameId: "shift-consecutive", name: "Night Shift", verb: "ENDURE", stages: [6, 7, 8], promise: "Catch, stack notes, render whole turns live." },
-  { gameId: "the-table", name: "The Table", verb: "NEGOTIATE", stages: [5, 8], promise: "Handle the turn strategically, then stand behind words." },
-  { gameId: "bench-call", name: "Bench Call", verb: "DECIDE", stages: [3, 5], promise: "Sight paper and judgment, stamped on the record." },
-  { gameId: "repair-shop", name: "Repair Shop", verb: "REPAIR", stages: [7], promise: "Hear betrayals in renderings and fix them." },
-  { gameId: "vr-lingua-lab", name: "Lingua Lab VR", verb: "IMMERSE", stages: [2, 4], promise: "Carry terms into English inside the lab (gaze/controllers)." },
-  { gameId: "vocab-craft", name: "VocabCraft", verb: "MINE & BUILD", stages: [2, 5], promise: "Mine term-blocks, craft the bridge, walk across it." },
-  { gameId: "neon-bastion", name: "Neon Bastion", verb: "SHOOT", stages: [2, 6], promise: "Platform-shooter retrieval: blast only the true-equivalent drone." },
-  { gameId: "melon-reef", name: "Melon Reef", verb: "DIVE", stages: [1, 5], promise: "Underwater listening harvest — hear it, swim it, surface with it." },
-  { gameId: "loteria-aula", name: "Lotería de Aula", verb: "GATHER", stages: [1, 2, 8], promise: "The classroom lotería: one caller, every board listening. Group play, stealth assessment." },
-  { gameId: "milonga-sentido", name: "Milonga del Sentido", verb: "FEEL", stages: [3, 4, 8], promise: "Cultural translation of tango: carry the vibe, unlock the classics." },
-];
-
-/**
- * Ranked game suggestions aligned to the learner's actual gaps (player-facing).
- * Each suggestion names the gap it serves — no generic "play more."
- */
-export function recommendGames({ domain, concepts = [], learnerState, limit = 3, modes = [], comfort = false }) {
-  const COMFORT_VERBS = new Set(["BUILD", "GATHER", "DIVE", "FEEL", "ECHO", "MINE & BUILD"]);
-  const PRESSURE = { "term-rush": "timed rain, three lives", "neon-bastion": "shield and shooting", "shift-consecutive": "live stamina night" };
-  const modeGames = new Set((modes || []).flatMap((m) => (typeof m === "string" ? [] : m.games || [])));
-  if (!learnerState || !concepts.length) {
-    return [
-      { gameId: "concept-clinch", name: "Voice Atelier", verb: "BUILD", reason: "Start here: the Atelier maps what you know, proof by proof.", gapStage: 1, conceptId: concepts[0]?.conceptId || null },
-      { gameId: "shift-consecutive", name: "Night Shift", verb: "ENDURE", reason: "Then survive a live turn — listening, notes, memory together.", gapStage: 8, conceptId: concepts[0]?.conceptId || null },
-    ];
-  }
-  // Aggregate mastery per stage across concepts (practiced cells only; unseen = gap 1).
-  const stageGap = [1, 2, 3, 4, 5, 6, 7, 8].map((s) => {
-    let sum = 0, n = 0, weakest = null, weakestVal = 2;
-    for (const c of concepts) {
-      const cell = learnerState.stages?.[c.conceptId]?.[s];
-      if (cell?.evidenceCount) { sum += cell.estimate; n++; if (cell.estimate < weakestVal) { weakestVal = cell.estimate; weakest = c; } }
-    }
-    return { stage: s, gap: n ? 1 - sum / n : 1, practiced: n, concept: weakest || concepts[0] };
-  }).sort((a, b) => b.gap - a.gap);
-
-  const due = learnerState.dueForReview?.[0];
-  const scored = GAME_CATALOG.map((g) => {
-    const best = Math.max(...g.stages.map((s) => stageGap.find((x) => x.stage === s)?.gap ?? 0));
-    const gapStage = g.stages.reduce((a, s) => ((stageGap.find((x) => x.stage === s)?.gap ?? 0) > (stageGap.find((x) => x.stage === a)?.gap ?? 0) ? s : a), g.stages[0]);
-    return { ...g, gap: best + (modeGames.has(g.gameId) ? 0.25 : 0) + (comfort ? (COMFORT_VERBS.has(g.verb) ? 0.35 : -0.2) : 0), gapStage, modeMatch: modeGames.has(g.gameId), pressureNote: comfort ? (PRESSURE[g.gameId] || null) : null };
-  }).sort((a, b) => b.gap - a.gap);
-
-  return scored.slice(0, limit).map((g) => {
-    const gapInfo = stageGap.find((x) => x.stage === g.gapStage);
-    const pct = gapInfo?.practiced ? Math.round((1 - gapInfo.gap) * 100) : 0;
-    return {
-      gameId: g.gameId, name: g.name, verb: g.verb, gapStage: g.gapStage,
-      conceptId: gapInfo?.concept?.conceptId || due?.conceptId || null,
-      reason: due && g.gameId === "concept-clinch"
-        ? `Due first: “${due.conceptId}” is fading (retention ~${Math.round((due.lowestRetention ?? 1) * 100)}%). ${g.promise}`
-        : gapInfo?.practiced
-          ? `Your Stage ${g.gapStage} (${stageLabel(g.gapStage)}) sits at ${pct}% — the thinnest thread. ${g.promise}`
-          : `Stage ${g.gapStage} (${stageLabel(g.gapStage)}) has no evidence yet. ${g.promise}`,
-    };
-  });
+// No legacy game survives the portfolio reset. Runtime builds live in the CPE registry.
+export const GAME_CATALOG = [];
+export function recommendGames({ catalog = [], domain, limit = 3 } = {}) {
+  return catalog.filter((g) => g.domainIds?.includes(domain?.domainId) && g.status === "approved").slice(0, limit);
 }
 
 function stageLabel(s) {

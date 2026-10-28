@@ -1,0 +1,138 @@
+{
+  "version": 1,
+  "runtime": "local-workspace",
+  "agents": [
+    {
+      "id": "spec-analyst",
+      "title": "Specification analyst",
+      "file": "spec-analyst.md",
+      "output": "project_brief.md and project_brief.json"
+    },
+    {
+      "id": "research-planner",
+      "title": "Research planner",
+      "file": "research-planner.md",
+      "output": "research blueprint and evidence responsibilities"
+    },
+    {
+      "id": "source-researcher",
+      "title": "Source researcher",
+      "file": "source-researcher.md",
+      "output": "source candidates with search trace and citations"
+    },
+    {
+      "id": "source-curator",
+      "title": "Source curator",
+      "file": "source-curator.md",
+      "output": "balanced reading plan"
+    },
+    {
+      "id": "coverage-auditor",
+      "title": "Coverage auditor",
+      "file": "coverage-auditor.md",
+      "output": "topic-by-topic coverage verdict and follow-up queries"
+    },
+    {
+      "id": "knowledge-reader",
+      "title": "Knowledge reader",
+      "file": "knowledge-reader.md",
+      "output": "grounded passage draft"
+    },
+    {
+      "id": "knowledge-architect",
+      "title": "Knowledge architect",
+      "file": "knowledge-architect.md",
+      "output": "knowledgebase.json and provenance/coverage ledger"
+    },
+    {
+      "id": "knowledge-critic",
+      "title": "Knowledge critic",
+      "file": "knowledge-critic.md",
+      "output": "independent source-grounding review"
+    },
+    {
+      "id": "handbook-editor",
+      "title": "Handbook editor",
+      "file": "handbook-editor.md",
+      "output": "chapter plan and scope contract"
+    },
+    {
+      "id": "handbook-writer",
+      "title": "Handbook writer",
+      "file": "handbook-writer.md",
+      "output": "one complete grounded chapter"
+    },
+    {
+      "id": "editorial-critic",
+      "title": "Editorial critic",
+      "file": "editorial-critic.md",
+      "output": "editorial audit and targeted repair requirements"
+    },
+    {
+      "id": "game-designer",
+      "title": "Game designer",
+      "file": "game-designer.md",
+      "output": "game_framework.md and game_framework.json"
+    },
+    {
+      "id": "gameplay-critic",
+      "title": "Gameplay adversary",
+      "file": "gameplay-critic.md",
+      "output": "gameplay adversarial report and revised definition"
+    },
+    {
+      "id": "learning-critic",
+      "title": "Learning validity adversary",
+      "file": "learning-critic.md",
+      "output": "learning validity adversarial report"
+    },
+    {
+      "id": "originality-critic",
+      "title": "Distinctness adversary",
+      "file": "originality-critic.md",
+      "output": "portfolio distinctness and repetition report"
+    },
+    {
+      "id": "systems-critic",
+      "title": "Systems adversary",
+      "file": "systems-critic.md",
+      "output": "implementation-ready systems review"
+    },
+    {
+      "id": "art-director",
+      "title": "Art director",
+      "file": "art-director.md",
+      "output": "asset manifest and substantial art direction"
+    },
+    {
+      "id": "asset-builder",
+      "title": "Asset builder",
+      "file": "asset-builder.md",
+      "output": "bundled original SVG assets"
+    },
+    {
+      "id": "sound-designer",
+      "title": "Sound designer",
+      "file": "sound-designer.md",
+      "output": "sound plan and bundled WAV cues"
+    },
+    {
+      "id": "game-builder",
+      "title": "Game builder",
+      "file": "game-builder.md",
+      "output": "complete standalone source and acceptance report"
+    },
+    {
+      "id": "code-critic",
+      "title": "Code critic",
+      "file": "code-critic.md",
+      "output": "code findings and bounded repair requirements"
+    },
+    {
+      "id": "playtest-analyst",
+      "title": "Playtest analyst",
+      "file": "playtest-analyst.md",
+      "output": "evidence-based refinement brief"
+    }
+  ]
+}

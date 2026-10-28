@@ -33,7 +33,8 @@ export function generateItem({ concept, domain, area = null, stage = 2, targetLa
   const meta = STAGE_META[stage] || STAGE_META[2];
   const rnd = hashSeed(`${concept.conceptId}:${stage}:${targetLang}:${seed}`);
   const en = concept.terms.en;
-  const tgt = concept.terms[targetLang] || concept.terms.es || concept.terms.zh;
+  const tgt = concept.terms[targetLang];
+  if (!tgt?.term) throw Object.assign(new Error(`No reviewed ${targetLang} term for ${concept.conceptId}; choose a supported language instead of silently substituting another.`), { status: 422 });
   const areaLabel = area?.label?.en || concept.areaIds?.[0] || "general practice";
   const example = concept.examples?.[0];
   const acceptable = tgt ? [tgt.term, ...(tgt.alternatives || [])] : [en.term];
@@ -61,7 +62,7 @@ export function generateItem({ concept, domain, area = null, stage = 2, targetLa
     prompt = example?.en || `Interpret: "We need to discuss ${en.term} before we proceed."`;
     // Interpretation is judged on the carried sentence, not the bare term:
     // the faithful example rendering leads the answer set.
-    expected = example?.[targetLang] ? [example[targetLang], ...acceptable] : acceptable;
+    expected = example?.[targetLang] ? [example[targetLang]] : [];
   }
 
   return {
@@ -118,7 +119,7 @@ export function validateItems(items = [], { concepts = [] } = {}) {
     if (!item.prompt) reasons.push("missing prompt");
     if (!Array.isArray(item.acceptableAnswers) || item.acceptableAnswers.length === 0) reasons.push("no acceptable answers");
     if (!item.sourceIds || item.sourceIds.length === 0) reasons.push("no sourceIds — cannot prove provenance");
-    if (item.stage === 8 && !(item.acceptableAnswers || []).some((a) => String(a).split(/\s+/).length >= 4)) reasons.push("stage-8 item graded on a bare term — interpretation needs a carried sentence");
+    if (item.stage === 8 && !(item.acceptableAnswers || []).some((a) => /[。！？]/u.test(String(a)) && String(a).length >= 12 || String(a).split(/\s+/).length >= 4)) reasons.push("stage-8 item graded on a bare term — interpretation needs a carried sentence");
     if (item.stage === 1 && item.choices && concepts.length) {
       const own = concepts.find((c) => c.conceptId === item.conceptId);
       if (own?.definition?.en && !item.choices.includes(own.definition.en)) reasons.push("stage-1 choices do not include the concept's own definition");
@@ -129,6 +130,7 @@ export function validateItems(items = [], { concepts = [] } = {}) {
         const clash = concepts.find((c) => c.conceptId !== item.conceptId && c.domainId === item.domainId && Object.values(c.terms || {}).some((t) => (t?.term || "").toLowerCase() === String(a).toLowerCase()));
         if (clash) reasons.push(`acceptable answer "${a}" is ${clash.conceptId}'s term — the item grades a neighbour as correct`);
       }
+      if (own && item.stage === 8 && (item.acceptableAnswers || []).some(a => Object.values(own.terms || {}).some(t => [t.term,...(t.alternatives || [])].some(term => String(term).toLowerCase() === String(a).toLowerCase())))) reasons.push("stage-8 answer set accepts a bare term alongside a full rendering");
       if (own && (item.stage === 2 || item.stage === 6)) {
         const tgtTerm = own.terms?.[item.languageDirection?.split("->")[1]]?.term;
         if (tgtTerm && item.prompt.toLowerCase().includes(tgtTerm.toLowerCase())) reasons.push("prompt leaks the target-language answer it claims to test");

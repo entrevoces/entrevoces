@@ -1,0 +1,23 @@
+// Orchestration fixtures only: no live fun, art or model-quality claims.
+import test from 'node:test';import assert from 'node:assert/strict';import {mkdtempSync,readFileSync}from'node:fs';
+import {GenerationJobs}from'../generator/generation.js';import{prepareGameMedia}from'../generator/game-media.js';import*as core from'../packages/engine-core/index.js';
+const domain=core.OREGON_MEDICAL,concepts=core.CONCEPTS.filter(c=>c.domainId===domain.domainId);
+const framework={name:'Production gate fixture',domainId:domain.domainId,conceptIds:[concepts[0].conceptId],candidates:[0,1,2].map(i=>({name:`Fixture ${i}`,selected:i===0,rationale:'Non-creative orchestration fixture comparing structural candidates only, with no claim that any is an actual playable or useful game.'})),sections:core.FRAMEWORK_SECTIONS.map(id=>({id,title:id,body:'Orchestration fixture, not a game: the behavior is specified by an input, deterministic state transition and observable consequence. Independent live design quality is not exercised. '.repeat(3)})),mechanics:[0,1].map(i=>Object.fromEntries([['id',`M${i}`],...['decision','trigger','preconditions','inputs','algorithm','parameters','costs','stateChanges','feedback','interactions','edgeCases','tests'].map(k=>[k,'Test-only operational behavior with explicit input, transition and consequence.'])]))};
+const accept={verdict:'accept',findings:[],missingPassageIds:[],limitations:[]};
+function harness(call){const store={jobs:[]},folder=mkdtempSync('/tmp/ev-production-');const jobs=new GenerationJobs({getStore:()=>store,save:()=>{},artifactRoot:folder,configured:()=>true,call,media:null});const job={jobId:'test-job',input:{domain,concepts,portfolio:[]},checkpoints:{framework:structuredClone(framework),build:{old:true}},files:[],events:[]};return{jobs,job,folder};}
+test('four distinct critics must accept the same unmodified definition; revision invalidates earlier reviews',async()=>{
+ const calls=[];let repaired=false;
+ const h=harness(async({task,user,agent})=>{calls.push({task,agent});if(task==='framework-review-revision'){repaired=true;return{...user.framework,name:'Revised fixture'};}if(task==='design-review-3'&&!repaired)return{...accept,verdict:'repair',findings:[{severity:'major',field:'loop',message:'Fixture requires revision.'}]};return accept;});
+ await h.jobs.reviewDefinition(h.job);
+ assert.equal(h.job.checkpoints.build,undefined);assert.deepEqual(calls.filter(c=>c.task==='design-review-1').length,2);assert.deepEqual(new Set(calls.filter(c=>c.task.startsWith('design-review')).map(c=>c.agent)),new Set(['gameplay-critic','learning-critic','originality-critic','systems-critic']));assert.equal(h.job.checkpoints.designReviews.length,4);assert.ok(h.job.checkpoints.designReviews.every(r=>r.review.verdict==='accept'));const n=calls.length;await h.jobs.reviewDefinition(h.job);assert.equal(calls.length,n);
+});
+test('unresolved design rejection cannot be waived by retry',async()=>{
+ const h=harness(async({task,user})=>task==='framework-review-revision'?user.framework:{...accept,verdict:'repair',findings:[{severity:'major',field:'loop',message:'Unresolved test defect.'}]});
+ await assert.rejects(h.jobs.reviewDefinition(h.job),/did not resolve/);await assert.rejects(h.jobs.reviewDefinition(h.job),/did not resolve/);assert.equal(h.job.checkpoints.designReviews[0].review.verdict,'repair');
+});
+test('local art and sound survive retry without repeating accepted art work',async()=>{
+ const calls=[];let fail=true;const job={checkpoints:{framework},files:[]};
+ const cue={path:'assets/test-cue.wav',purpose:'Fixture action sound.',duration:.1,events:[{time:0,duration:.1,wave:'sine',frequency:440,gain:.2}]};
+ const jobs={save(){},file(job,name,content,mediaType,options={}){job.files.push({name,content,mediaType,...options});},async checked(job,input){calls.push(input.task);if(input.task==='sound-plan'&&fail){fail=false;throw Error('Fixture interruption');}const d=input.task==='game-media-plan'?{composition:'Test-only art composition with explicit background, live entities above, lighting and restrained spatial hierarchy. '.repeat(2),assets:[{path:'assets/test-art.svg'}]}:input.task==='asset-production'?{files:[{path:'assets/test-art.svg',content:'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><rect width="100" height="100" fill="#123456"/></svg>'}]}:input.task==='asset-review'?accept:{cues:[cue]};assert.equal(input.validate(d).ok,true,JSON.stringify(input.validate(d)));return d;}};
+ await assert.rejects(prepareGameMedia(jobs,job),/interruption/);const assets=await prepareGameMedia(jobs,job);assert.equal(assets.length,2);assert.equal(calls.filter(t=>t==='asset-production').length,1);assert.equal(calls.filter(t=>t==='game-media-plan').length,1);
+});

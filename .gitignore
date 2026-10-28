@@ -1,6 +1,7 @@
 node_modules/
-services/progression-engine/data/store.json
 .DS_Store
-
-# publish bundles (generated; pushed to their own repos by tools/publish)
+data/
+outputs/
 dist/
+knowledge/generated/
+knowledge/game-suite/builds/
