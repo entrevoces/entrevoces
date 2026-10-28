@@ -13,6 +13,7 @@ The user's follow-up supersedes the archive's two-GPU deployment: Meta MMS multi
 - The first remote workflow exposed a missing Linux Poppler dependency in a real PDF-extraction test. CI now installs `poppler-utils`; the failing check is preserved in Actions.
 - The public endpoint variable is job-scoped so the test hook's rebuild cannot erase it.
 - Added actual FastAPI HTTP tests without charging for models: CORS, access code, task whitelisting, WAV validation, quota, service failure, and transcript-only evidence boundaries.
+- Preserved complete terminology on game targets (using the first canonical synonym where a label lists slash-separated equivalents), rather than cutting consequential labels mid-word.
 - Fixed word wrapping observed in the phone build, added collection navigation, corrected the collection count, and fixed the empty-collection hero after hiding every game.
 - Smoke harness waits for real knowledge initialization instead of a fragile 25 ms delay. `npm test` builds prerequisites automatically.
 - GPU Seamless input-argument defect discovered during audit; superseded entirely by the requested CPU Meta MMS implementation.
@@ -23,7 +24,7 @@ The user's follow-up supersedes the archive's two-GPU deployment: Meta MMS multi
 - Nine Python tests passed, including real HTTP handlers with injected recognizer. Injected inference is not a live model test.
 - Static artifact: three games, 49 files, no missing static dependencies or private/server files.
 - Browser: observed phone-size Río rendering, successful match and consequential cascade. Also observed a train delivery, a real ricochet launch, pause/collection navigation and honest offline Voice Lab; physical-device trials remain separate.
-- GitHub repository inspected; `main` and SSH push path confirmed; Pages Actions source saved.
+- GitHub repository inspected; `main` and SSH push path confirmed; Pages Actions source saved. The repaired run https://github.com/entrevoces/entrevoces/actions/runs/40720483309 succeeded, publishing https://entrevoces.github.io/entrevoces/. Public hub and game verified in the browser with no warning/error logs.
 
 ## Outstanding external verification
 

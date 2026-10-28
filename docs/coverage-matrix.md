@@ -41,7 +41,7 @@ The v4 ZIP integration and the user's CPU/Meta-ASR follow-ups supersede the earl
 | ID | Acceptance | Implementation | Verification | State |
 |---|---|---|---|---|
 | DEPLOY-01 | All three supplied games and shared learning changes integrate reproducibly | apps/games, manifest, build-hub | 171 JS tests; fresh static archive comparison | Verified locally |
-| DEPLOY-02 | Pages publishes only clean static files with working subpath dependencies | pages.yml, verify-site.mjs | 49 files, 3 games, 0 missing imports/server files; Pages Actions source enabled | Verified locally; remote publish pending |
+| DEPLOY-02 | Pages publishes only clean static files with working subpath dependencies | pages.yml, verify-site.mjs | 49 files, 3 games, 0 missing imports/server files; Pages Actions source enabled | Verified locally and in successful Pages run 40720483309; published hub/game observed |
 | CPU-01 | Meta ASR uses CPU with no GPU/Llama/HF credential requirement | modal_app.py | Meta language adapters verified from actual vocab; source inspection; live inference pending | Implemented, unverified live |
 | CPU-02 | API gates recording, validates WAV, bounds cost and never fabricates mastery from ASR | api.py, spoken-client.js | 9 Python tests including actual HTTP handlers; client regression tests | Verified with injected inference |
 | DEPLOY-03 | Upload containers, set public endpoint and verify live Pages-to-Modal flow | Modal CLI + GitHub variable | Temporary credential request rejected by automatic approval review pending user approval | Blocked on specific access approval |
