@@ -10,6 +10,7 @@ The user's follow-up supersedes the archive's two-GPU deployment: Meta MMS multi
 
 - Pages was disabled; enabled GitHub Actions publishing in repository settings.
 - Pages publishes only freshly rebuilt `dist/`, rather than the repository root. Artifact validation checks local dependencies, repository-subpath links, server-file exclusions and credential patterns.
+- The first remote workflow exposed a missing Linux Poppler dependency in a real PDF-extraction test. CI now installs `poppler-utils`; the failing check is preserved in Actions.
 - The public endpoint variable is job-scoped so the test hook's rebuild cannot erase it.
 - Added actual FastAPI HTTP tests without charging for models: CORS, access code, task whitelisting, WAV validation, quota, service failure, and transcript-only evidence boundaries.
 - Fixed word wrapping observed in the phone build, added collection navigation, corrected the collection count, and fixed the empty-collection hero after hiding every game.
@@ -21,7 +22,7 @@ The user's follow-up supersedes the archive's two-GPU deployment: Meta MMS multi
 - 171 JavaScript tests passed, including complete instrumented sessions for all three arcade modes at 320/390 CSS widths, deterministic physics, learning evidence and persistence.
 - Nine Python tests passed, including real HTTP handlers with injected recognizer. Injected inference is not a live model test.
 - Static artifact: three games, 49 files, no missing static dependencies or private/server files.
-- Browser: observed phone-size Río rendering, successful match and consequential cascade. Other browser journeys are tracked below as they are exercised.
+- Browser: observed phone-size Río rendering, successful match and consequential cascade. Also observed a train delivery, a real ricochet launch, pause/collection navigation and honest offline Voice Lab; physical-device trials remain separate.
 - GitHub repository inspected; `main` and SSH push path confirmed; Pages Actions source saved.
 
 ## Outstanding external verification

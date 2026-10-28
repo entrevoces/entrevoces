@@ -16,21 +16,10 @@ let state={},pointer=null,audio=null,loading=true,particles=[];
 // The headless canvas smoke harness deliberately has no DOM construction.
 const voice=typeof document.createElement==='function'?new SpokenPractice():{available:false,open:false,health:async()=>false,start:()=>{}};
 function voiceTask(){const target=state.lastConcept||state.target||state.board?.find(b=>b)?.id;return pool.find(c=>c.conceptId===target)?.conceptId||null;}
-function spokenFeedback(result,task){
-  const a=result.assessment;if(!a)return;
-  const alreadyRewarded=(state.spokenRewards||[]).includes(task.conceptId);
-  if(result.usableEvidence&&['faithful','needs-repair'].includes(a.verdict)){
-    const item=pool.find(c=>c.conceptId===task.conceptId);
-    if(item){try{clients[domain]?.recordEvidence({eventId:`${ID}:oral:${crypto.randomUUID()}`,gameId:ID,conceptId:item.conceptId,areaId:item.areaIds?.[0]||null,activityType:'spoken-production',stage:7,languageDirection:`${task.sourceLanguage}->${task.targetLanguage}`,responseModality:'speech',assessmentMethod:'spoken-rendering',correct:a.verdict==='faithful',score:a.verdict==='faithful'?1:.35,confidence:Math.min(.8,a.confidence),assistance:['visible-source','ai-provisional'],fidelity:a.verdict,responseSummary:'Audio response evaluated against source meaning units; practice-only provisional assessment.'});}catch(e){console.warn('Spoken evidence not stored',e);}}
-  }
-  if(a.verdict==='faithful'&&!alreadyRewarded){
-    state.spokenRewards=[...(state.spokenRewards||[]),task.conceptId];
-    state.voiceBoost=Math.min(3,(state.voiceBoost||0)+2);award(120);burst(195,420,'#a6f8ed',40);
-    announce('Voice meaning preserved · two powered moves earned!');persist();
-  }else if(a.verdict==='faithful'){
-    announce('Meaning preserved again! Power earned earlier this run.');
-  }else if(a.verdict==='needs-repair')announce('Your next voice try can repair the meaning.');
-  else announce('Voice assessment uncertain · no learning score recorded.');
+function spokenFeedback(result){
+  // ASR is a transcript aid, never an interpretation grade. Even an unexpected
+  // response claiming fidelity cannot mint learning evidence or power rewards.
+  announce(result.transcript?'Transcript ready · review it against the source.':'No clear speech detected · try recording again.');
 }
 function startVoice(){
   const conceptId=voiceTask();if(!conceptId){announce('Play one meaning first to unlock its speaking practice.');return;}

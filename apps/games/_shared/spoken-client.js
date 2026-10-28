@@ -27,7 +27,7 @@ export class SpokenPractice {
   constructor(){this.available=false;this.apiBaseUrl='';this.accessRequired=false;this.open=false;this.recording=false;this.busy=false;this.node=null;this.recorder=null;this.context=null;this.stream=null;this.samples=[];this.timer=null;this.startedAt=0;this.task=null;this.callback=null;this.closeCallback=null;this.generation=0;this.direction='forward';this.selection=null;
     this.root=document.createElement('div');this.root.className='spoken-shell';this.root.hidden=true;this.root.innerHTML=style;document.body.append(this.root);
     this.root.addEventListener('click',e=>{const action=e.target.closest('button[data-action]')?.dataset.action;if(!action)return;if(action==='close')this.close();if(action==='listen')this.listen();if(action==='record')this.recording?this.stop():this.record();if(action==='retry')this.resetAttempt();if(action==='swap')this.swap();});
-    document.addEventListener('keydown',e=>{if(this.open&&e.key==='Escape'){e.stopPropagation();this.close();}},{capture:true});
+    document.addEventListener('keydown',e=>{if(this.open&&e.key==='Tab'){const controls=[...(this.root.querySelectorAll?.('button:not(:disabled),input:not(:disabled)')||[])].filter(n=>n.offsetParent!==null);if(controls.length){const at=controls.indexOf(document.activeElement);e.preventDefault();controls[(at+(e.shiftKey?-1:1)+controls.length)%controls.length].focus();}}if(this.open&&e.key==='Escape'){e.stopPropagation();this.close();}},{capture:true});
   }
   field(name){return this.root.querySelector(`[data-output="${name}"]`);}
   action(name){return this.root.querySelector(`[data-action="${name}"]`);}
@@ -42,7 +42,8 @@ export class SpokenPractice {
     this.open=true;this.root.hidden=false;this.callback=onResolved;this.closeCallback=onClose;this.selection={domain,lang,conceptId};this.direction='forward';
     this.resetAttempt();this.field('prompt').textContent='Loading sourced scenario…';this.field('language').textContent=lang==='es'?'English → Spanish':'English → Mandarin';
     this.action('record').disabled=true;this.action('listen').disabled=true;
-    if(!this.available){this.status('Voice service is not configured or currently unavailable. The arcade games still work offline.');return;}
+    this.action('close').focus();
+    if(!this.available){this.field('prompt').textContent='Voice Lab is offline';this.action('swap').disabled=true;this.status('Voice service is not configured or currently unavailable. The arcade games still work offline.');return;}
     await this.loadTask();
   }
   async loadTask(){
@@ -58,7 +59,7 @@ export class SpokenPractice {
   }
   swap(){if(this.recording||this.busy||!this.available)return;window.speechSynthesis?.cancel();this.direction=this.direction==='forward'?'reverse':'forward';this.loadTask();}
   listen(){if(!this.task||!('speechSynthesis' in window))return;window.speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(this.task.sourceText);u.lang=this.task.sourceLanguage==='zh'?'zh-CN':this.task.sourceLanguage==='es'?'es-ES':'en-US';u.rate=.86;window.speechSynthesis.speak(u);this.status('Playing with your device’s speech synthesizer (not Meta-generated audio).');}
-  resetAttempt(){this.field('result').hidden=true;this.field('transcript').textContent='';this.field('units').replaceChildren();this.field('feedback').textContent='';this.status('');this.action('record').textContent='● Record answer';this.action('record').disabled=false;}
+  resetAttempt(){this.field('result').hidden=true;this.field('transcript').textContent='';this.field('units').replaceChildren();this.field('reference').textContent='';this.field('feedback').textContent='';this.status('');this.action('record').textContent='● Record answer';this.action('record').disabled=false;}
   async record(){if(!this.task||this.recording||this.busy)return;
     if(this.accessRequired&&!this.root.querySelector('[data-input="access"]')?.value?.trim()){this.status('Enter the demo access code first, then press Record.');this.root.querySelector('[data-input="access"]')?.focus();return;}
     if(!navigator.mediaDevices?.getUserMedia){this.status('Microphone capture needs a secure browser context (HTTPS or localhost).');return;}
