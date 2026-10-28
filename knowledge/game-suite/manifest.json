@@ -1,8 +1,44 @@
 {
   "version": 1,
   "games": [
-    {"id":"rio-de-palabras","name":"Río de Palabras","verb":"Chain reactions","responsibility":"Bilingual medical and legal terminology recognition, strategic matching and retrieval","tagline":"Catch the connection. Start the cascade.","color":"#174a56","path":"apps/games/rio-de-palabras","playable":true,"status":"experimental"},
-    {"id":"ultima-parada","name":"Última Parada","verb":"Switch the tracks","responsibility":"Contextual terminology selection, quick routing and attention management","tagline":"One train, three lines, and a city that will not wait.","color":"#523658","path":"apps/games/ultima-parada","playable":true,"status":"experimental"},
-    {"id":"pulso-de-luz","name":"Pulso de Luz","verb":"Aim and ricochet","responsibility":"Bilingual equivalence recognition with deliberate trajectory and timing","tagline":"A small perfect shot can change the whole sky.","color":"#293d61","path":"apps/games/pulso-de-luz","playable":true,"status":"experimental"}
+    {
+      "id": "rio-de-palabras",
+      "name": "Río de Palabras",
+      "verb": "Navigate & deliver",
+      "responsibility": "Bilingual medical and legal terminology recognition, strategic matching and retrieval",
+      "tagline": "A tide, a cargo hold, and a chain of islands waiting for you.",
+      "color": "#174a56",
+      "path": "apps/games/rio-de-palabras",
+      "playable": true,
+      "status": "experimental",
+      "cover": "../_shared/media/courier.svg",
+      "version": 5
+    },
+    {
+      "id": "ultima-parada",
+      "name": "Última Parada",
+      "verb": "Route a living railway",
+      "responsibility": "Contextual terminology selection, quick routing and attention management",
+      "tagline": "Six messages. One city. Keep the lines alive.",
+      "color": "#523658",
+      "path": "apps/games/ultima-parada",
+      "playable": true,
+      "status": "experimental",
+      "cover": "../_shared/media/conductor.svg",
+      "version": 5
+    },
+    {
+      "id": "pulso-de-luz",
+      "name": "Pulso de Luz",
+      "verb": "Shape the ricochet",
+      "responsibility": "Bilingual equivalence recognition with deliberate trajectory and timing",
+      "tagline": "Carry the light through a changing crystal chamber.",
+      "color": "#293d61",
+      "path": "apps/games/pulso-de-luz",
+      "playable": true,
+      "status": "experimental",
+      "cover": "../_shared/media/familiar.svg",
+      "version": 5
+    }
   ]
 }

@@ -21,4 +21,5 @@ try{if(process.env.CI)throw Error('Local authoring state is private.');const {re
 writeFileSync(join(out,'games.json'),JSON.stringify(gameManifest));
 for(const g of gameManifest.games){if(g.path&&existsSync(g.path))cpSync(g.path,join(out,'games',g.id),{recursive:true});}
 if(existsSync('apps/games/_shared'))cpSync('apps/games/_shared',join(out,'games/_shared'),{recursive:true});
+cpSync('assets/game-vectors',join(out,'games/_shared/media'),{recursive:true});
 console.log(JSON.stringify({directory:out,concepts:concepts.length,books:books.length,games:gameManifest.games.length}));

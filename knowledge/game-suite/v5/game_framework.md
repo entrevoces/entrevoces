@@ -1,0 +1,33 @@
+# Arcade revision: worlds, decisions and contextual language
+
+User trigger: the supplied trilogy is shallow, visually weak and repeats a tiny vocabulary with unsuitable dictionary labels. Revise all three games together. Existing IDs, hub links and local learning evidence remain compatible; old arcade saves are kept as legacy records, never silently deleted.
+
+## Content and learning responsibility
+
+Import the user's 865-term English–Spanish independent-study draft as a curriculum resource, retaining its draft review status and actual source scopes. Do not pretend category reference links verify every translation. Keep jurisdiction-specific terms in the library but exclude Oregon-agency/credential content from default play. Chinese coverage remains limited to existing source content; never fabricate matching Chinese equivalents.
+
+Create thematic decks from meaningful professional settings: anatomy, symptoms, treatment, investigation; court process, rights, testimony and civil matters. Deduplicate terms by clean language-specific play labels. Parenthetical context belongs in an optional glossary; use an explicit short contextual label when removing parentheses would create ambiguity (criminal charge, insurance claim, clinical discharge). Do not cut words or require labels that cannot fit. Retain full canonical terms and cautions in the field guide. A draw bag and recent-history exclusion prevent immediate repeats across sessions; constrained small decks disclose their actual size. Assess only explicit semantic choices at supported stage 2; strategic success, motor skill and ASR never become interpreting mastery.
+
+## Río de Palabras — archipelago logistics
+
+Responsibility: bilingual recognition, short ordered cargo manifests and planning. A living illustrated archipelago is the whole board. A courier boat must collect the correct target-language cargo for an English manifest, then deliver it to the lighthouse. Islands offer compact named cargo; selecting cargo explicitly assesses that choice. Movement costs tide actions, currents alter edge costs, reefs close routes, and capacity starts at two. Loading, sailing and delivery are separate actions. Finite island graph, complete path reachability, bounded capacity, ordered manifests and limited tide turns define genuine planning; a correct word alone does not win. Four expeditions, three contracts each, differing topology, currents and cargo availability. Upgrade capacity, current resistance or a spare tide after an expedition. Failed language choices can be repaired; exhausted tide returns to a recoverable planning state without discarding all campaign progress.
+
+Visual direction: teal estuary with live water and currents, compact ChatGPT-authored original SVG courier companions, boats and cargo objects. The user explicitly rejected generated full landscapes: environments are assembled from reusable small assets and live geometry. Water and lighting animate with reduced-motion support. Compact names sit on the island, detailed meanings behind optional inspection. Avoid a board of rectangular answer cards.
+
+## Última Parada — railway dispatch
+
+Responsibility: distinguish bilingual messages while managing concurrent deliveries. A night city has six stations and connected track segments. Up to three queued trains carry distinct source-language terms. Select a train and assign the matching translated station; this explicit assignment is assessed once. Dispatch sends the train along a real shortest track path. Junction occupancy, an intersection lock and limited brake resources make ordering consequential. Trains wait safely before occupied segments; delayed trains lose arcade punctuality, never language accuracy. Six shifts introduce multiple trains, cross routes, track outages and changing station assignments. A shift ends after six deliveries or a bounded error budget, with retry and district progression.
+
+Visual direction: an interactive miniature railway assembled from ChatGPT-authored original SVG small conductor characters, train and station sprites, live rails and route previews; no generated full-scene background. Warm lights, articulated carriages, intersection signals and rain reflections animate in code. Labels appear as station signs; the train/source selection is concise. No full-width translation buttons as the world.
+
+## Pulso de Luz — prism expedition
+
+Responsibility: bilingual selection plus spatial prediction; physics is not language evidence. Select a named crystal matching the source packet, then route a real energy shot through a changing physical chamber. Rooms have differently positioned deflectors, moving paddles, collectible charge and finite shot energy. Trajectory preview and flight use the exact same collision function and fixed timestep. A wrong crystal is one semantic attempt; a ricochet miss is only an arcade cost. Correctly locked targets remain locked after a motor miss. Three chambers per sector, four sectors, with room goals and temporary upgrade choices (battery, stabilizer, wide beam). No room may require a perfect subpixel shot; tests enumerate reachable shots and snapshots preserve checkpoints.
+
+Visual direction: a luminous observatory assembled from ChatGPT-authored original SVG small crystal companions and artifact sprites, with live star depth, orbital trails, crystal facets, collision effects and lighting. No generated full landscape. Avoid three flat answer circles floating over an empty background. Labels reflow and reveal on focus/selection; authoritative text is rendered live, never baked into imagery.
+
+## Shared systems and verification
+
+One shared host owns title/play/pause/interlude/results, seeded generation, fixed updates, local checkpoints, sound, help, content selection and evidence dispatch. Games own their world simulation, objectives, layout and exact input consequences. CSS-pixel layouts adapt to portrait and desktop; minimum 44px targets, keyboard parity, visible focus, reduced motion, mute, hidden/blur pause and safe restart. Settings are outside the main world. Reading, inspection and scene changes cannot award evidence.
+
+Acceptance: play complete campaigns in each world, verify reset/reload/blur, insufficient content and corrupt storage, validate finite reachable state machines across seeds, inspect phone and desktop rendering, and measure repetition rather than claiming variety from word count alone. Independent CLI critiques remain pending under the previously disclosed authoring quota exception; host skeptical checks are not independent approvals. Actual enjoyment still requires human playtesting.

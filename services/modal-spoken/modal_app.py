@@ -8,18 +8,20 @@ from pathlib import Path
 import modal
 
 app = modal.App('entre-voces-spoken')
-REPO = Path(__file__).resolve().parents[2]
-CORPUS = REPO / 'dist/curriculum.json'
-if not CORPUS.exists():
-    raise RuntimeError("Run 'npm run build' before deploying the Modal service.")
-
-api_image = (
-    modal.Image.debian_slim(python_version='3.11')
-    .pip_install('fastapi==0.115.8')
-    .add_local_file(str(REPO / 'services/modal-spoken/core.py'), '/srv/core.py')
-    .add_local_file(str(REPO / 'services/modal-spoken/api.py'), '/srv/api.py')
-    .add_local_file(str(CORPUS), '/srv/curriculum.json')
-)
+api_image = modal.Image.debian_slim(python_version='3.11').pip_install('fastapi==0.115.8')
+# Modal imports this module as /root/modal_app.py in workers. Repository paths
+# exist only on the deployment host; never resolve/check them in a container.
+if modal.is_local():
+    REPO = Path(__file__).resolve().parents[2]
+    CORPUS = REPO / 'dist/curriculum.json'
+    if not CORPUS.exists():
+        raise RuntimeError("Run 'npm run build' before deploying the Modal service.")
+    api_image = (
+        api_image
+        .add_local_file(str(REPO / 'services/modal-spoken/core.py'), '/srv/core.py')
+        .add_local_file(str(REPO / 'services/modal-spoken/api.py'), '/srv/api.py')
+        .add_local_file(str(CORPUS), '/srv/curriculum.json')
+    )
 # Install CPU PyTorch explicitly: ordinary Linux wheels pull large CUDA packages.
 speech_image = (
     modal.Image.debian_slim(python_version='3.11')
@@ -28,7 +30,52 @@ speech_image = (
 )
 cache = modal.Volume.from_name('entre-voces-mms-cache', create_if_missing=True)
 
-@app.cls(image=speech_image, cpu=2, memory=6144, timeout=300,
+@app.function(image=speech_image, cpu=2, memory=12288, timeout=900,
+              max_containers=1, scaledown_window=2,
+              volumes={'/root/.cache/huggingface': cache})
+def prepare_models():
+    """One-time CPU quantization, so serving workers never load full weights."""
+    import gc
+    import json
+    import torch
+    from transformers import AutoProcessor, Wav2Vec2ForCTC
+    torch.set_num_threads(2)
+    folder = Path('/root/.cache/huggingface/ev-mms-int8-v1')
+    folder.mkdir(exist_ok=True)
+    results = []
+    for language, adapter in {'en':'eng','es':'spa','zh':'cmn-script_simplified'}.items():
+        path = folder / (language + '.pt')
+        if not path.exists():
+            model = Wav2Vec2ForCTC.from_pretrained(
+                'facebook/mms-1b-all', target_lang=adapter,
+                ignore_mismatched_sizes=True, low_cpu_mem_usage=False,
+            ).eval()
+            # MMS adapters must materialize before int8 conversion. Low-memory
+            # meta initialization leaves adapter tensors unmaterialized.
+            torch.ao.quantization.quantize_dynamic(
+                model, {torch.nn.Linear}, dtype=torch.qint8, inplace=True,
+            )
+            AutoProcessor.from_pretrained('facebook/mms-1b-all', target_lang=adapter).save_pretrained(str(folder / language))
+            # Materialize weight-normalized convolution parametrizations before
+            # serializing our trusted inference artifact. PyTorch otherwise
+            # refuses whole-module serialization of parametrized modules.
+            for module in list(model.modules()):
+                for name in list(getattr(module, 'parametrizations', {})):
+                    torch.nn.utils.parametrize.remove_parametrizations(module, name, leave_parametrized=True)
+                # Loading compatibility closures are unnecessary in an already
+                # materialized inference artifact and are not pickleable.
+                module._load_state_dict_pre_hooks.clear()
+                module._load_state_dict_post_hooks.clear()
+            temporary = folder / (language + '.pending')
+            torch.save(model, str(temporary))
+            temporary.replace(path)
+            del model
+            gc.collect()
+        results.append({'language':language, 'bytes':path.stat().st_size})
+        cache.commit()
+    return results
+
+@app.cls(image=speech_image, cpu=2, memory=4096, timeout=300,
          max_containers=1, min_containers=0, scaledown_window=60,
          volumes={'/root/.cache/huggingface': cache})
 class Speech:
@@ -37,29 +84,23 @@ class Speech:
     @modal.enter()
     def load(self):
         import torch
-        from transformers import AutoProcessor, Wav2Vec2ForCTC, pipeline
-        codes = {'en': 'eng', 'es': 'spa', 'zh': 'cmn-script_simplified'}
-        if self.language not in codes:
+        from transformers import AutoProcessor, pipeline
+        if self.language not in {'en','es','zh'}:
             raise ValueError('Unsupported speech language')
         torch.set_num_threads(2)
-        checkpoint = 'facebook/mms-1b-all'
-        adapter = codes[self.language]
-        processor = AutoProcessor.from_pretrained(checkpoint, target_lang=adapter)
-        model = Wav2Vec2ForCTC.from_pretrained(
-            checkpoint, target_lang=adapter, ignore_mismatched_sizes=True,
-            low_cpu_mem_usage=True,
-        ).eval()
-        # Quantize after adapter loading. Each language has an isolated pool;
-        # no in-place adapter switching can race or corrupt a transcript.
-        torch.ao.quantization.quantize_dynamic(
-            model, {torch.nn.Linear}, dtype=torch.qint8, inplace=True,
-        )
+        folder = Path('/root/.cache/huggingface/ev-mms-int8-v1')
+        path = folder / (self.language + '.pt')
+        if not path.exists():
+            raise RuntimeError('Run modal run services/modal-spoken/modal_app.py::prepare before voice use.')
+        # Trusted artifact produced by prepare_models in our private volume,
+        # never a user-supplied or remotely uploaded pickle.
+        model = torch.load(str(path), map_location='cpu', weights_only=False).eval()
+        processor = AutoProcessor.from_pretrained(str(folder / self.language), local_files_only=True)
         self.recognizer = pipeline(
             'automatic-speech-recognition', model=model,
             tokenizer=processor.tokenizer, feature_extractor=processor.feature_extractor,
             device=-1, chunk_length_s=10, stride_length_s=1,
         )
-        cache.commit()
 
     @modal.method()
     def transcribe(self, pcm: bytes, language: str) -> dict:
@@ -91,3 +132,7 @@ def web():
         corpus, os.environ.get('EV_DEMO_ACCESS_CODE', ''), transcribe,
         origins=os.environ.get('EV_ALLOWED_ORIGINS', 'https://entrevoces.github.io,http://127.0.0.1:8014,http://localhost:8014'),
     )
+
+@app.local_entrypoint()
+def prepare():
+    print(prepare_models.remote())

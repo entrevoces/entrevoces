@@ -22,3 +22,5 @@ export { FRAMEWORK_SECTIONS, validateFramework } from "./framework.js";
 export { DIFFICULTY_POLICY, analyzeDifficulty } from "./difficulty.js";
 export { assessBilingualChoice } from "./choice-assessment.js";
 export {CURRICULUM_PHASES,compileCurriculum,curriculumProgress,suggestCurriculumPractice} from './curriculum.js';
+
+export { normalizeJourney, awardJourney, journeySummary } from "./journey.js";

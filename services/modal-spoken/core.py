@@ -21,7 +21,7 @@ MAX_UNITS = 12
 
 
 def approved_task(knowledge, domain, lang, concept_id, direction="forward"):
-    """Only actual reviewed/source-attributed bilingual examples are eligible."""
+    """Use attributed bilingual examples or terms; preserve draft review status."""
     if (domain not in ("medical", "legal") or lang not in ("es", "zh")
             or direction not in ("forward", "reverse")
             or not isinstance(concept_id, str) or not CONCEPT_ID.fullmatch(concept_id)):
@@ -29,7 +29,8 @@ def approved_task(knowledge, domain, lang, concept_id, direction="forward"):
     for concept in knowledge:
         if (concept.get("domainId") != domain or concept.get("conceptId") != concept_id
                 or concept.get("inferred") is True or not concept.get("sourceIds")
-                or not concept.get("terms", {}).get(lang, {}).get("term")):
+                or not concept.get("terms", {}).get(lang, {}).get("term")
+                or not concept.get("terms", {}).get("en", {}).get("term")):
             continue
         for example in concept.get("examples", []):
             english, other = example.get("en"), example.get(lang)
@@ -51,6 +52,18 @@ def approved_task(knowledge, domain, lang, concept_id, direction="forward"):
                 "areaId": (concept.get("areaIds") or [None])[0],
                 "mode": "spoken-sight-practice",
             }
+        # A short authored bilingual term is also a valid ASR practice task.
+        # No sentence is invented and this does not become fidelity evidence.
+        english = concept.get("playLabels", {}).get("en") or concept["terms"]["en"]["term"]
+        other = concept.get("playLabels", {}).get(lang) or concept["terms"][lang]["term"]
+        if isinstance(english, str) and isinstance(other, str) and 1 <= len(english) <= 150 and 1 <= len(other) <= 150:
+            reverse = direction == "reverse"
+            return {"taskId": f"{domain}:{lang}:{concept_id}:{direction}", "conceptId": concept_id,
+                    "domain": domain, "lang": lang, "direction": direction,
+                    "sourceLanguage": lang if reverse else "en", "targetLanguage": "en" if reverse else lang,
+                    "sourceText": other if reverse else english, "referenceText": english if reverse else other,
+                    "sourceIds": concept["sourceIds"], "areaId": (concept.get("areaIds") or [None])[0],
+                    "mode": "spoken-term-practice", "reviewState": concept.get("reviewState", "source-attributed-practice")}
     return None
 
 

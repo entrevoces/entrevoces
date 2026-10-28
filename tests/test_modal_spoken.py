@@ -1,4 +1,4 @@
-"""Model-independent checks for the future Modal GPU trust boundary."""
+"""Model-independent checks for the CPU-only Modal trust boundary."""
 
 import importlib.util
 import io
@@ -43,6 +43,19 @@ class ModalContractTests(unittest.TestCase):
         self.assertIsNone(core.approved_task(self.knowledge, "legal", "es", "dose"))
         self.assertIsNone(core.task_by_id(self.knowledge, "medical:es:dose"))
         self.assertIsNone(core.task_by_id(self.knowledge, "medical:es:../etc:forward"))
+
+    def test_term_practice_preserves_review_state_and_rejects_missing_languages(self):
+        item = {"conceptId": "rash", "domainId": "medical", "sourceIds": ["source-1"],
+                "terms": {"en": {"term": "rash"}, "es": {"term": "sarpullido"}},
+                "playLabels": {"en": "rash", "es": "sarpullido"},
+                "reviewState": "independent-study-draft"}
+        task = core.approved_task([item], "medical", "es", "rash")
+        self.assertEqual(task["mode"], "spoken-term-practice")
+        self.assertEqual(task["referenceText"], "sarpullido")
+        self.assertEqual(task["reviewState"], "independent-study-draft")
+        self.assertIsNone(core.approved_task([item], "medical", "zh", "rash"))
+        del item["terms"]["en"]
+        self.assertIsNone(core.approved_task([item], "medical", "es", "rash"))
 
     def test_audio_rejects_non_pcm_or_wrong_rate_or_duration(self):
         self.assertEqual(len(core.validate_audio(wav_bytes())), 32000)

@@ -1,0 +1,32 @@
+{
+  "provider": "ChatGPT-authored vector artwork",
+  "format": "SVG",
+  "scope": "Original small characters and props; no landscape images",
+  "runtimeGeneration": false,
+  "assets": [
+    {
+      "path": "assets/game-vectors/courier.svg",
+      "sha256": "0ddf8230cab7e93677c21dce5eb0e73b6afecd52ac47c9f2953d136f780e09d4"
+    },
+    {
+      "path": "assets/game-vectors/train.svg",
+      "sha256": "92491db31e6d4479190afc7317c6707b504910b5e828f050bde76ec559dd0d01"
+    },
+    {
+      "path": "assets/game-vectors/boat.svg",
+      "sha256": "f1f8e7dc2e36c305c9f17ed2d4dd4a31d9558367477a6bd5a451bc43e11493d0"
+    },
+    {
+      "path": "assets/game-vectors/familiar.svg",
+      "sha256": "1aa13467103e743a7b835a8a89b4ebef47573763cfacf385430054cfc3be52de"
+    },
+    {
+      "path": "assets/game-vectors/prism.svg",
+      "sha256": "718346256ee00369a497ac09ab04eebaf7c06c3ffeeeab5eb2e361355284c61f"
+    },
+    {
+      "path": "assets/game-vectors/conductor.svg",
+      "sha256": "a47f5d9a43159f26d939dcbeee2435b54ae800a406b2151938c45625a9bc1ba2"
+    }
+  ]
+}

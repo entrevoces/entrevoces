@@ -1,0 +1,37 @@
+{
+  "providerRequested": "Modal-hosted image model",
+  "metaApiStatus": "billing_not_configured",
+  "assetScope": "Small characters and props only; no full landscapes",
+  "tasks": [
+    {
+      "id": "river-courier",
+      "path": "assets/meta/river-courier.png",
+      "prompt": "Create one original highly appealing small game character: a cheerful river otter courier, warm chestnut fur, expressive kind eyes, teal canvas satchel, tiny amber raincoat, rolled delivery map tucked at belt. Full body, three-quarter view standing, compact strong silhouette, rounded collectible-toy 3D illustration with exquisitely painted fur/materials and lovely rim light. Character occupies 78% of square. Intended as a small interactive avatar in a premium phone game. Isolated subject on completely solid pure white background; no environment, no landscape, no scenery, no labels, no UI, no text, no watermark, no borrowed franchise design. Keep both feet and ears visible, soft minimal contact shadow only."
+    },
+    {
+      "id": "metro-conductor",
+      "path": "assets/meta/metro-conductor.png",
+      "prompt": "One original lovable small railway game character: a coral-pink axolotl conductor with tiny navy conductor cap, copper ticket punch, short dark indigo jacket and an expressive determined smile. Full body three-quarter standing view, balanced simple recognizable silhouette, beautifully crafted rounded 3D illustrated collectible toy, rich enamel and fabric textures, luminous gills, warm studio lighting. Occupies 78 percent of square. Isolated on completely solid pure white background. No scenery, no full landscape, no text, no badges with letters, no UI, no watermark, no known commercial characters. All extremities visible."
+    },
+    {
+      "id": "pulse-familiar",
+      "path": "assets/meta/pulse-familiar.png",
+      "prompt": "One original charming small game creature: a tiny crystalline fox-like star spirit with translucent apricot and lavender facets, sapphire belly, big curious luminous eyes, three small floating golden orbit beads and a short little starlight tail. Full body three-quarter standing pose, strong compact mobile-game silhouette, premium polished 3D illustrative toy design, delicate internal refraction and glow, playful personality. Occupies 78 percent of square, isolated on entirely solid pure white background with minimal contact shadow, no environment, no landscape, no lettering, no labels, no UI, no watermark, no commercial character imitation."
+    },
+    {
+      "id": "river-boat",
+      "path": "assets/meta/river-boat.png",
+      "prompt": "One small original isometric courier boat game prop, warm ivory hull with teal trim, varnished wood interior, tiny amber sail, a small rolled canvas mailbag and two colorful sealed parcel crates. Beautiful rounded hand-crafted 3D illustration, clean distinct silhouette, three-quarter elevated view facing upper right. Full object occupies 78 percent of square, isolated solid pure white background, only soft minimal contact shadow. No environment, no water landscape, no text, no letters, no UI, no watermark."
+    },
+    {
+      "id": "metro-train",
+      "path": "assets/meta/metro-train.png",
+      "prompt": "One small original whimsical railway locomotive game prop, midnight-indigo enamel body, warm amber window lights, copper wheels, a mint-green roof and tiny coral signal lamp. Compact rounded art-deco silhouette, charming premium 3D illustration, isometric three-quarter view facing upper right, extraordinary materials and warm studio rim lighting. Full prop occupies 78 percent of square, isolated entirely solid pure white background, no rails or landscape, no scenery, no text, no numbers, no UI or watermark."
+    },
+    {
+      "id": "pulse-prism",
+      "path": "assets/meta/pulse-prism.png",
+      "prompt": "One original small magical prism game artifact: a faceted floating amethyst energy crystal in a delicate warm gold three-ring gyroscope, tiny orbiting apricot light motes, luminous sapphire core, polished sculptural collectible object with beautiful translucent refraction. Isometric three-quarter view, compact bold silhouette, premium illustrated 3D game prop, fully visible occupying 75 percent of square. Isolated entirely solid pure white background, minimal contact shadow, no environment, no full landscape, no text, no UI, no watermark."
+    }
+  ]
+}

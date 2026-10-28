@@ -7,7 +7,7 @@ walk(root);
 for(const p of files){
  const rel=relative(root,p);
  if(/(^|\/)(services|data|\.git|\.env)(\/|$)|\.(py|zip|pem|key)$/.test(rel))throw Error(`Private/server file in public build: ${rel}`);
- if(!['.js','.html','.css','.json','.md',''].includes(extname(p)))continue;
+ if(!['.js','.html','.css','.json','.md','.svg',''].includes(extname(p)))continue;
  const text=readFileSync(p,'utf8');
  if(/LLM_\d{10,}_|hf_[A-Za-z0-9]{25,}|sk-[A-Za-z0-9]{25,}/.test(text))throw Error(`Credential pattern in ${rel}`);
  const source=text.replace(/^\s*\/\/.*$/gm,'');

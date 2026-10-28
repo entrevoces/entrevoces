@@ -1,0 +1,19 @@
+{
+  "libraryConcepts": 891,
+  "importedDrafts": 851,
+  "excludedFromDefaultPlay": 67,
+  "cleanedLabelConcepts": 36,
+  "playPools": {
+    "medical:es": 421,
+    "medical:zh": 13,
+    "legal:es": 378,
+    "legal:zh": 8
+  },
+  "rules": [
+    "Retain original dictionary wording and provenance in optional details",
+    "Do not invent Chinese equivalents",
+    "Exclude Oregon-agency categories from default play",
+    "Reject ambiguous normalized labels and oversized labels",
+    "Use topical decks and seeded draw bags; avoid the most recent 12 terms"
+  ]
+}

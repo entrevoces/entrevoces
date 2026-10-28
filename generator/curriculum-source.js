@@ -1,5 +1,6 @@
 // Structural reuse of existing content. No generated definitions or translations.
 import{readFileSync,existsSync}from'node:fs';import{fileURLToPath}from'node:url';import{join}from'node:path';import*as core from'../packages/engine-core/index.js';
+import{playLabel,suppliedPracticeLibrary}from'./practice-library.js';
 const root=fileURLToPath(new URL('../',import.meta.url));
 export function curriculumSource(){
  const medical={...structuredClone(core.OREGON_MEDICAL),domainId:'medical',label:{en:'Medical interpreting'},jurisdiction:{country:'cross-jurisdictional',region:'Source-specific clinical and institutional context'}};
@@ -14,5 +15,7 @@ export function curriculumSource(){
  }
  const path=join(root,'knowledge/imports/language-access/knowledgebase.json'),books=[];
  if(existsSync(path)){const kb=JSON.parse(readFileSync(path));concepts.push(...kb.draft.concepts.map(c=>({...structuredClone(c),domainId:foundations.domainId,sourceIds:[kb.source.sourceId],referenceOnly:true,provenance:{source:kb.source,kind:'historical-reviewed-draft'}})));books.push({id:'language-access',title:kb.source.title,path:'books/language-access/handbook.md',conceptIds:kb.draft.concepts.map(c=>c.conceptId),scope:'Historical handbook on language-access planning. Its institutional and jurisdiction-specific guidance is optional reference, not the organizing principle of this curriculum.'});}
+ const imported=suppliedPracticeLibrary(concepts,[medical,legal]);concepts.push(...imported.concepts);
+ for(const c of concepts)if(!c.playLabels)c.playLabels=Object.fromEntries(Object.entries(c.terms).map(([lang,t])=>[lang,playLabel(t.term)]));
  return{domains:[medical,legal,foundations],concepts,books};
 }
