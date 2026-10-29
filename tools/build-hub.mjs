@@ -1,6 +1,6 @@
 // Reproducible static hub assembly. No authoring endpoints or runtime AI.
 import{mkdirSync,readFileSync,writeFileSync,cpSync,existsSync,rmSync}from'node:fs';import{join,resolve}from'node:path';
-import*as core from'../packages/engine-core/index.js';import{learningRuntimeSources}from'../generator/runtime.js';
+import*as core from'../packages/engine-core/index.js';import{validateCollection}from'../generator/living-library.js';import{learningRuntimeSources}from'../generator/runtime.js';
 const out=resolve('dist');rmSync(out,{recursive:true,force:true});mkdirSync(out,{recursive:true});writeFileSync(join(out,'.nojekyll'),'');
 const {curriculumSource}=await import('../generator/curriculum-source.js');
 const {domains,concepts,books}=curriculumSource();
@@ -22,4 +22,8 @@ writeFileSync(join(out,'games.json'),JSON.stringify(gameManifest));
 for(const g of gameManifest.games){if(g.path&&existsSync(g.path))cpSync(g.path,join(out,'games',g.id),{recursive:true});}
 if(existsSync('apps/games/_shared'))cpSync('apps/games/_shared',join(out,'games/_shared'),{recursive:true});
 cpSync('assets/game-vectors',join(out,'games/_shared/media'),{recursive:true});
+// Static, locally bundled living-library experiences and authored audio.
+const collection=JSON.parse(readFileSync('content/living-library/collection.json'));const mediaErrors=validateCollection(collection);if(mediaErrors.length)throw Error(`Living library validation failed: ${mediaErrors.join('; ')}`);
+cpSync('apps/living-library',join(out,'living-library'),{recursive:true});
+cpSync('content/living-library/collection.json',join(out,'living-library/collection.json'));
 console.log(JSON.stringify({directory:out,concepts:concepts.length,books:books.length,games:gameManifest.games.length}));

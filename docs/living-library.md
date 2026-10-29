@@ -1,0 +1,17 @@
+# Biblioteca Viva
+
+The living library brings the user's reconstructed archive into the existing static site. The source archive is `entre-voces-biblioteca-viva-preview.zip` (SHA-256 `4cb96c6a11295b1fea1f411248b82093d20c08fc812a45138e5024fa49268b4f`). Its duplicate glossary is deliberately not imported: the field guide remains the canonical vocabulary source. Games and their local learning progress remain separate and available.
+
+`content/living-library/collection.json` is the editable catalog. Each experience has a stable ID, kind, title, content, review note and source context. `generator/living-library.js` rejects duplicate IDs, missing required content, unsafe or missing audio paths and broken story branches before `tools/build-hub.mjs` copies the catalog, UI and locally bundled audio into `dist/living-library`. Search, format filtering, story choices, native audio and locally saved favorites work without a learner account. Favorites do not claim competency or alter the shared learning engine.
+
+## Actual media and limitations
+
+The 24 imported entries comprise nine listening comparisons (five supplied synthetic demonstration recordings and four text-only), three episode scripts, three stories, one branching narrative, five song concepts and three film storyboards. These are creative educational drafts, not professionally reviewed translations or clinical advice. Recordings and creative work have not been reviewed by a qualified bilingual interpreter. The five supplied audio files are synthetic, not human voice performances. No Mandarin audio is included.
+
+One song, **Cada dos días**, was generated with Suno v6-mini on the user's free account on October 28, 2026, using original draft lyrics. It is linked through Suno's share page; its downloaded MP3/M4A are in the user's Downloads folder, not the published repository. Do not self-host or assert commercial rights without establishing the applicable license. Suno's [free-plan rights](https://help.suno.com/en/articles/2416769) and [download terms](https://help.suno.com/en/articles/13614785) describe current limitations. The sung recording has not received bilingual review.
+
+The film entries are production kits, not generated videos. Meta's [model catalog](https://dev.meta.ai/docs/models) documents video understanding and segmentation, but does not list a hosted video-generation endpoint. There is no verified automatic Suno or Meta video-generation integration in this build. A future creator workflow must obtain actual approved media, record source and rights, inspect the result, add transcripts/captions and secure bilingual review before promoting it. It must never substitute a storyboard for a finished film or represent a script as a recording.
+
+## Adding media
+
+Create or revise a catalog item with a unique ID and the fields for its format. For local audio use a lowercase `audio/<name>.mp3`, `.m4a` or `.wav` path under `apps/living-library` and record actual rights, creation method, transcript and review state. For a story, ensure every choice targets an existing node. `npm run build` validates paths and branch references. Check playback, subtitles/transcripts, translation accuracy, rights and mobile behavior independently; only then update the item's status. Keep credentials and provider calls in the authoring environment, never in static assets.

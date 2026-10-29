@@ -45,3 +45,14 @@ The v4 ZIP integration and the user's CPU/Meta-ASR follow-ups supersede the earl
 | CPU-01 | Meta ASR uses CPU with no GPU/Llama/HF credential requirement | modal_app.py | Meta language adapters verified from actual vocab; source inspection; live inference pending | Implemented, unverified live |
 | CPU-02 | API gates recording, validates WAV, bounds cost and never fabricates mastery from ASR | api.py, spoken-client.js | 9 Python tests including actual HTTP handlers; client regression tests | Verified with injected inference |
 | DEPLOY-03 | Upload containers, set public endpoint and verify live Pages-to-Modal flow | Modal CLI + GitHub variable | Temporary credential request rejected by automatic approval review pending user approval | Blocked on specific access approval |
+
+## October 28 living-library integration
+
+The ZIP is a standalone reconstruction, not a verified replacement for the repository. The present work integrates it additively.
+
+| ID | Acceptance | Implementation | Evidence | State |
+|---|---|---|---|---|
+| LIVE-01 | Learners can browse, filter, search, save and open distinct media formats from the existing hub | apps/living-library, apps/learning-hub/index.html | Browser exercised filter, audio controls, answer reveal, bookmark, and branching recovery; mobile layout still requires final check | Implemented; partial browser verification |
+| LIVE-02 | Media manifests reject missing assets, unsafe paths and broken branches; drafts remain clearly labeled | generator/living-library.js, content/living-library/collection.json | Two automated manifest tests; no expert review | Verified structurally; content review pending |
+| LIVE-03 | A real song can be heard from the library without embedding unsupported free-plan downloads | song01 externalAudio | Suno generated two versions; one MP3/M4A downloaded; logged-out share page exposes playback | Verified link/play control; bilingual listening review pending |
+| LIVE-04 | Generate and publish verified bilingual audio dramas, songs and stitched videos through a production pipeline | Future authoring and review workflow | Five existing synthetic demos and a Suno share link only; no Meta video generation endpoint verified | In progress / media production and review pending |
