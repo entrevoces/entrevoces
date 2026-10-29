@@ -1,0 +1,417 @@
+{
+  "schemaVersion": 2,
+  "mediaId": "podcast-la-pausa-tiene-duena",
+  "title": "Radio La Cosa Exacta: La pausa tiene dueña",
+  "kind": "podcast",
+  "status": "script-draft",
+  "intendedLanguagePair": "English/Spanish",
+  "licenseState": "uncleared",
+  "review": {
+    "bilingual": false,
+    "domain": false,
+    "editorial": false
+  },
+  "scriptSource": "authored project draft",
+  "speakers": [
+    "NORA",
+    "JAIME",
+    "MERCEDES",
+    "ACTOR, CLINICIAN",
+    "ACTOR, INTERPRETER",
+    "CALLER ELENA"
+  ],
+  "lines": [
+    {
+      "lineId": "cue-001",
+      "type": "production-cue",
+      "text": "OPENING JINGLE: hand percussion, upright bass, the sound of two cups placed on a table.",
+      "requiresHumanMix": true
+    },
+    {
+      "lineId": "line-002",
+      "speaker": "NORA",
+      "language": "unconfirmed",
+      "text": "The café has given us the corner table with the table leg that doesn't quite reach the floor. If you hear a clunk, that is not a microphone problem. It's a furniture opinion.",
+      "estimatedMs": 15556,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "line-003",
+      "speaker": "JAIME",
+      "language": "unconfirmed",
+      "text": "Welcome to La Cosa Exacta. Today is a call-in episode about something that makes kind people uncomfortable: sometimes the most helpful thing is to stop talking.",
+      "estimatedMs": 12000,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "line-004",
+      "speaker": "NORA",
+      "language": "unconfirmed",
+      "text": "I would like everyone to acknowledge that Jaime has asked me to stop talking while we're broadcasting a talk show.",
+      "estimatedMs": 9333,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "line-005",
+      "speaker": "JAIME",
+      "language": "unconfirmed",
+      "text": "For research. You're allowed to continue in a minute.",
+      "estimatedMs": 4444,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "line-006",
+      "speaker": "NORA",
+      "language": "unconfirmed",
+      "text": "Our first guest is Mercedes, an adult interpreter trainee. Last week she came to a simulation where the patient actor asked whether a form would guarantee a successful outcome. The interpreter knew several plausible answers from other jobs. Mercedes, what happened?",
+      "estimatedMs": 18222,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "line-007",
+      "speaker": "MERCEDES",
+      "language": "unconfirmed",
+      "text": "The interpreter actor said, in Spanish, “Sí, si firma, todo estará bien.” But the clinician had said only, “This form allows us to discuss the procedure; it doesn't guarantee the outcome.”",
+      "estimatedMs": 14222,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "line-008",
+      "speaker": "NORA",
+      "language": "unconfirmed",
+      "text": "That is an expensive extra promise.",
+      "estimatedMs": 2667,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "line-009",
+      "speaker": "MERCEDES",
+      "language": "unconfirmed",
+      "text": "It sounded comforting. Everyone was anxious. That's exactly why it was tempting.",
+      "estimatedMs": 5778,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "line-010",
+      "speaker": "JAIME",
+      "language": "unconfirmed",
+      "text": "If the interpreter is nervous too, what's the useful move?",
+      "estimatedMs": 4889,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "line-011",
+      "speaker": "MERCEDES",
+      "language": "unconfirmed",
+      "text": "Preserve the speaker's actual degree of certainty, and ask for clarification transparently when a phrase isn't understood. Do not invent reassurance. I'm learning how to say that without turning every minute into a debate.",
+      "estimatedMs": 16444,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "line-012",
+      "speaker": "NORA",
+      "language": "unconfirmed",
+      "text": "Let's do a small recorded comparison with actors. One line is faithful and one changes a condition. No private clinical records are involved.",
+      "estimatedMs": 10667,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "line-013",
+      "speaker": "ACTOR, CLINICIAN",
+      "language": "en",
+      "text": "We can explain the options, but I can't promise which option will work for you.",
+      "estimatedMs": 7111,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "line-014",
+      "speaker": "ACTOR, INTERPRETER",
+      "language": "es",
+      "text": "Podemos explicar las opciones, pero no puedo prometer cuál funcionará para usted.",
+      "estimatedMs": 5333,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "line-015",
+      "speaker": "ACTOR, INTERPRETER",
+      "language": "es",
+      "text": "Si escoge esta opción, seguro que le funcionará.",
+      "estimatedMs": 3556,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "cue-016",
+      "type": "production-cue",
+      "text": "An intentionally long pause. A spoon rolls across the table.",
+      "requiresHumanMix": true
+    },
+    {
+      "lineId": "line-017",
+      "speaker": "NORA",
+      "language": "unconfirmed",
+      "text": "Which one should make our listeners uncomfortable?",
+      "estimatedMs": 3111,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "line-018",
+      "speaker": "JAIME",
+      "language": "unconfirmed",
+      "text": "Not the silence. That spoon is far more troubling than the silence.",
+      "estimatedMs": 5333,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "line-019",
+      "speaker": "MERCEDES",
+      "language": "unconfirmed",
+      "text": "The second interpretation. It erased the limits on what the clinician knew and gave personalized advice that was never spoken.",
+      "estimatedMs": 8889,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "line-020",
+      "speaker": "NORA",
+      "language": "unconfirmed",
+      "text": "Exactly. The performance of certainty is not certainty. Still, can we make this entertaining without laughing at the patient?",
+      "estimatedMs": 8444,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "line-021",
+      "speaker": "MERCEDES",
+      "language": "unconfirmed",
+      "text": "We can laugh at ourselves. Everyone thinks they can tell what a person means by the way they look. My aunt can turn one raised eyebrow into a weather forecast. At work, eyebrows are not an authorized translation channel.",
+      "estimatedMs": 17333,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "line-022",
+      "speaker": "JAIME",
+      "language": "unconfirmed",
+      "text": "That's going on a mug.",
+      "estimatedMs": 2667,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "cue-023",
+      "type": "production-cue",
+      "text": "SHORT MUSIC BRIDGE. A caller enters.",
+      "requiresHumanMix": true
+    },
+    {
+      "lineId": "line-024",
+      "speaker": "CALLER ELENA",
+      "language": "unconfirmed",
+      "text": "I have a different problem. In a practice legal conversation, I heard, “The court has scheduled a hearing.” The trainee interpreted, “The judge has decided.” I caught it because my stomach dropped. But after the session I was afraid to say anything. The person who said it looked so confident.",
+      "estimatedMs": 22222,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "line-025",
+      "speaker": "NORA",
+      "language": "unconfirmed",
+      "text": "Confidence has excellent tailoring. Facts don't always wear jackets.",
+      "estimatedMs": 4444,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "line-026",
+      "speaker": "MERCEDES",
+      "language": "unconfirmed",
+      "text": "We can name the exact difference without humiliating anyone. Scheduled means there will be a proceeding. Decided means the outcome has been determined. Those are not the same. And we should be careful with the specific procedure and jurisdiction instead of guessing the consequences.",
+      "estimatedMs": 19556,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "line-027",
+      "speaker": "JAIME",
+      "language": "unconfirmed",
+      "text": "The interesting thing is that nobody needed a difficult vocabulary word to make that error. A verb did it.",
+      "estimatedMs": 8444,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "line-028",
+      "speaker": "NORA",
+      "language": "unconfirmed",
+      "text": "We have a recurring question from listeners: why not correct everything immediately, even a small change in tone?",
+      "estimatedMs": 8000,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "line-029",
+      "speaker": "MERCEDES",
+      "language": "unconfirmed",
+      "text": "Because a professional response depends on the setting and applicable protocol. The aim is accurate communication and transparent repair, not becoming another participant who controls the conversation. When you're learning, the question is what the speaker actually authorized you to say.",
+      "estimatedMs": 18667,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "line-030",
+      "speaker": "NORA",
+      "language": "unconfirmed",
+      "text": "Let me make a confession. Before this show, I translated my grandmother's message to the family chat. She said, “I'll probably be there after lunch.” I sent, “She is coming at one.”",
+      "estimatedMs": 15111,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "line-031",
+      "speaker": "JAIME",
+      "language": "unconfirmed",
+      "text": "Did she arrive at one?",
+      "estimatedMs": 2222,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "line-032",
+      "speaker": "NORA",
+      "language": "unconfirmed",
+      "text": "She arrived at four with an enormous cake and said she'd been very clear. She was correct. “Probably” wasn't decorative. “After lunch” wasn't a clock.",
+      "estimatedMs": 12444,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "line-033",
+      "speaker": "MERCEDES",
+      "language": "unconfirmed",
+      "text": "Did she forgive you?",
+      "estimatedMs": 1778,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "line-034",
+      "speaker": "NORA",
+      "language": "unconfirmed",
+      "text": "She gave me the cake. Then she made me carry it up three flights of stairs. That was her formal review process.",
+      "estimatedMs": 9778,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "cue-035",
+      "type": "production-cue",
+      "text": "A PHONE DINGS.",
+      "requiresHumanMix": true
+    },
+    {
+      "lineId": "line-036",
+      "speaker": "JAIME",
+      "language": "unconfirmed",
+      "text": "We have an email from a listener asking whether they can just put uncertain words in quotation marks.",
+      "estimatedMs": 8000,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "line-037",
+      "speaker": "MERCEDES",
+      "language": "unconfirmed",
+      "text": "Quotation marks don't repair a changed assertion. The listener needs to preserve the actual uncertainty. A careful rendering may sound less elegant than a confident invention. That's fine. It's doing the job.",
+      "estimatedMs": 15556,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "line-038",
+      "speaker": "NORA",
+      "language": "unconfirmed",
+      "text": "Before we go, I want to try something. I'll read a sentence; we won't provide the answer immediately. Our listeners can think for five seconds and decide what must stay in the interpretation.",
+      "estimatedMs": 15556,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "line-039",
+      "speaker": "NORA",
+      "language": "en",
+      "text": "I may have seen the person near the station, but I'm not sure it was the same person.",
+      "estimatedMs": 8444,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "cue-040",
+      "type": "production-cue",
+      "text": "Five seconds of real silence in the production mix. Only the air conditioning is audible.",
+      "requiresHumanMix": true
+    },
+    {
+      "lineId": "line-041",
+      "speaker": "JAIME",
+      "language": "unconfirmed",
+      "text": "Things worth keeping: the possibility, the location, and the uncertainty about identity. Nothing about ownership. Nothing about guilt.",
+      "estimatedMs": 8000,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "line-042",
+      "speaker": "NORA",
+      "language": "unconfirmed",
+      "text": "That was an unusually good summary from a man who insists our espresso machine is sentient.",
+      "estimatedMs": 7111,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "line-043",
+      "speaker": "JAIME",
+      "language": "unconfirmed",
+      "text": "It refused to give me coffee this morning. That's evidence.",
+      "estimatedMs": 4889,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "line-044",
+      "speaker": "MERCEDES",
+      "language": "unconfirmed",
+      "text": "That's a machine malfunction. You should get it repaired before you call a witness.",
+      "estimatedMs": 6667,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "cue-045",
+      "type": "production-cue",
+      "text": "THEME RETURNS. THE TABLE LEG CLUNKS A FINAL TIME.",
+      "requiresHumanMix": true
+    },
+    {
+      "lineId": "line-046",
+      "speaker": "NORA",
+      "language": "unconfirmed",
+      "text": "This has been La Cosa Exacta. Keep the words that belong to the speaker—even the small ones that aren't trying to impress anyone. If you want to replay the two takes, the transcript and the meaning-change notes are available with this episode. Thank you, Mercedes. Thank you, Jaime. And thank you to our opinionated table.",
+      "estimatedMs": 25778,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "line-047",
+      "speaker": "JAIME",
+      "language": "unconfirmed",
+      "text": "I still think the table is right.",
+      "estimatedMs": 3111,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "cue-048",
+      "type": "production-cue",
+      "text": "END.",
+      "requiresHumanMix": true
+    }
+  ],
+  "cues": [],
+  "wordCount": 1016,
+  "approximateDurationSec": 425,
+  "production": {
+    "speakerStemPolicy": "one dry mono WAV stem per actor + separately recorded SFX/music stems",
+    "masters": "lossless 48kHz 24-bit WAV project master, accessible web M4A/MP3 plus captions",
+    "intelligibility": "mix spoken words above music; proof numbers, negative particles, hedges and speaker identities in the final mix",
+    "playback": "recheck native audio playback in mobile Safari with headphones and speakers",
+    "languagePolicy": "review every unconfirmed line language; do not assume English/Spanish from speaker ethnicity",
+    "soundPolicy": "silence may carry emotion; preserve consonants and headroom; sound cues never obscure an error anchor",
+    "licensing": "collect actor/voice/talent releases, music/sample license, cover and performance rights before deployment",
+    "asr": "export 16/24 kHz mono PCM16 for Meta Voice Transcribe; ASR only advises, never certifies bilingual fidelity"
+  },
+  "pending": [
+    "language of 37 parsed lines must be confirmed",
+    "all planned pauses and timings must be replaced with real measurements",
+    "actual recording and listening-quality inspection",
+    "source-to-translation semantic review",
+    "legal and medical domain review",
+    "rights sign-off"
+  ],
+  "cannotClaim": "This packet does not include recorded audio, authentic performance, final cue alignment or professional validation."
+}

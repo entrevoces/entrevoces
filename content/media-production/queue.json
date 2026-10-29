@@ -1,0 +1,3301 @@
+[
+  {
+    "id": "catch-the-change-medical-1",
+    "kind": "catch-the-change",
+    "topic": "negation",
+    "domain": "medical",
+    "direction": "en-es",
+    "creativeDNA": {
+      "version": 1,
+      "world": "a small neighborhood print shop at closing time",
+      "soundscape": "slow photocopier drum, paper cutter, shop bell",
+      "stakes": "a printed claim is repeated as if it were official approval",
+      "tone": "tender intergenerational dramedy about autonomy",
+      "comicRhythm": "warm self-deprecation and conflicting sensible plans",
+      "music": "acoustic score only where it advances emotion",
+      "musicalHook": "use near-silence rather than constant underscores",
+      "choiceProblem": "How a subtle negation distinction changes a credible medical situation",
+      "emotionalTurn": "An initially sensible choice has a cost; the ending resolves that cost without sermonizing",
+      "adultAudience": "Curious adult learner, no stereotype-based personalization",
+      "noCopying": "Original roles, scene order, exact dialogue, lyric melody and production identity; never mimic a named living performer"
+    },
+    "audience": "Adult interpreters in training; mature warmth and wit, without gender or cultural stereotypes.",
+    "primarySkill": "negation",
+    "termIds": [
+      "M0038",
+      "M0087",
+      "M0129",
+      "M0119",
+      "M0060"
+    ],
+    "sourceIds": [
+      "MEDLINE_TOPICS",
+      "MEDLINE_MEDICINES"
+    ],
+    "knowledge": [
+      {
+        "id": "M0038",
+        "en": "pain",
+        "es": "dolor",
+        "context": "Unpleasant physical sensation that must be located and described.",
+        "caution": "",
+        "review": "needs_professional_bilingual_and_domain_review",
+        "source_id": "MEDLINE_TOPICS",
+        "groundingReason": "editorial-topic-anchor:pain"
+      },
+      {
+        "id": "M0087",
+        "en": "symptom",
+        "es": "síntoma",
+        "context": "Problem experienced by patient.",
+        "caution": "",
+        "review": "needs_professional_bilingual_and_domain_review",
+        "source_id": "MEDLINE_TOPICS",
+        "groundingReason": "editorial-topic-anchor:symptom"
+      },
+      {
+        "id": "M0129",
+        "en": "as needed",
+        "es": "según sea necesario",
+        "context": "Medication only when indicated by need.",
+        "caution": "PRN; preserve indication and limits.",
+        "review": "needs_professional_bilingual_and_domain_review",
+        "source_id": "MEDLINE_MEDICINES",
+        "groundingReason": "editorial-topic-anchor:as needed"
+      },
+      {
+        "id": "M0119",
+        "en": "dose",
+        "es": "dosis",
+        "context": "Amount of medication given at one time.",
+        "caution": "Distinguish from frequency.",
+        "review": "needs_professional_bilingual_and_domain_review",
+        "source_id": "MEDLINE_MEDICINES",
+        "groundingReason": "editorial-topic-anchor:dose"
+      },
+      {
+        "id": "M0060",
+        "en": "side effect",
+        "es": "efecto secundario",
+        "context": "Effect of treatment other than the intended one.",
+        "caution": "Not the same as allergic reaction.",
+        "review": "needs_professional_bilingual_and_domain_review",
+        "source_id": "MEDLINE_TOPICS",
+        "groundingReason": "editorial-topic-anchor:side effect"
+      }
+    ],
+    "brief": "A 3-person spoken interpreting simulation: source utterance, plausible incorrect interpretation, intervention, repair and continuation. Error is subtle but significant.",
+    "deliverable": "multiple turns, verbatim source and interpreted lines, exactly specified erroneous claims, correction, cue timing plan",
+    "minWords": 230,
+    "editorialConstraint": "Every important topic must be grounded in the selected domain. Treat clinical/legal guidance as provisional; write character-driven entertainment with truthful, explicitly fictional interpretation repairs.",
+    "review": "Every bilingual interpretation is a draft until reviewed by a qualified bilingual practitioner.",
+    "audioPolicy": "Author text, timing, sound-design and casting manifests now. Never call a transcription API a speech synthesizer; do not assert audio exists until ingested."
+  },
+  {
+    "id": "audio-drama-legal-2",
+    "kind": "audio-drama",
+    "topic": "frequency",
+    "domain": "legal",
+    "direction": "en-es",
+    "creativeDNA": {
+      "version": 1,
+      "world": "a rooftop garden shared by unlikely neighbors",
+      "soundscape": "wind in bamboo stakes, watering can, distant city buses",
+      "stakes": "an unreliable account threatens a friendship",
+      "tone": "soft speculative fiction grounded in real human choices",
+      "comicRhythm": "one absurd rule is treated with ordinary practicality",
+      "music": "acoustic score only where it advances emotion",
+      "musicalHook": "use near-silence rather than constant underscores",
+      "choiceProblem": "How a subtle frequency distinction changes a credible legal situation",
+      "emotionalTurn": "An initially sensible choice has a cost; the ending resolves that cost without sermonizing",
+      "adultAudience": "Curious adult learner, no stereotype-based personalization",
+      "noCopying": "Original roles, scene order, exact dialogue, lyric melody and production identity; never mimic a named living performer"
+    },
+    "audience": "Adult interpreters in training; mature warmth and wit, without gender or cultural stereotypes.",
+    "primarySkill": "frequency",
+    "termIds": [
+      "L0046",
+      "L0044",
+      "L0037",
+      "L0033",
+      "L0023"
+    ],
+    "sourceIds": [
+      "OJD_GLOSS"
+    ],
+    "knowledge": [
+      {
+        "id": "L0046",
+        "en": "deadline",
+        "es": "fecha límite",
+        "context": "Last permitted time for an action.",
+        "caution": "Preserve precise calendar date and clock time.",
+        "review": "needs_professional_bilingual_and_domain_review",
+        "source_id": "OJD_GLOSS",
+        "groundingReason": "editorial-topic-anchor:deadline"
+      },
+      {
+        "id": "L0044",
+        "en": "continuance",
+        "es": "aplazamiento",
+        "context": "Postponement of hearing or proceeding.",
+        "caution": "Not necessarily dismissal.",
+        "review": "needs_professional_bilingual_and_domain_review",
+        "source_id": "OJD_GLOSS",
+        "groundingReason": "editorial-topic-anchor:continuance"
+      },
+      {
+        "id": "L0037",
+        "en": "filing",
+        "es": "presentación de documentos",
+        "context": "Submission of papers to court clerk.",
+        "caution": "",
+        "review": "needs_professional_bilingual_and_domain_review",
+        "source_id": "OJD_GLOSS",
+        "groundingReason": "editorial-topic-anchor:filing"
+      },
+      {
+        "id": "L0033",
+        "en": "notice",
+        "es": "notificación",
+        "context": "Formal communication of case action or hearing.",
+        "caution": "",
+        "review": "needs_professional_bilingual_and_domain_review",
+        "source_id": "OJD_GLOSS",
+        "groundingReason": "editorial-topic-anchor:notice"
+      },
+      {
+        "id": "L0023",
+        "en": "hearing",
+        "es": "audiencia",
+        "context": "Scheduled proceeding before a court or adjudicator.",
+        "caution": "Not simply listening/audición.",
+        "review": "needs_professional_bilingual_and_domain_review",
+        "source_id": "OJD_GLOSS",
+        "groundingReason": "editorial-topic-anchor:hearing"
+      }
+    ],
+    "brief": "An original episodic audio drama with recurring adult characters, dry humor, layered motives, escalating stakes, believable speech, a satisfying ending and an episode hook.",
+    "deliverable": "full script with dialogue, SFX and music cues, characters, glossary, error moments and scene durations",
+    "minWords": 600,
+    "editorialConstraint": "Every important topic must be grounded in the selected domain. Treat clinical/legal guidance as provisional; write character-driven entertainment with truthful, explicitly fictional interpretation repairs.",
+    "review": "Every bilingual interpretation is a draft until reviewed by a qualified bilingual practitioner.",
+    "audioPolicy": "Author text, timing, sound-design and casting manifests now. Never call a transcription API a speech synthesizer; do not assert audio exists until ingested."
+  },
+  {
+    "id": "audio-mystery-medical-3",
+    "kind": "audio-mystery",
+    "topic": "uncertainty",
+    "domain": "medical",
+    "direction": "en-es",
+    "creativeDNA": {
+      "version": 1,
+      "world": "a sewing-machine repair studio beside a bakery",
+      "soundscape": "wheel turning by hand, bakery tins, kettle whistle",
+      "stakes": "a conditional promise is mistaken for an agreement",
+      "tone": "small domestic adventure with quiet stakes",
+      "comicRhythm": "a callback object changes meaning late in the scene",
+      "music": "acoustic score only where it advances emotion",
+      "musicalHook": "use near-silence rather than constant underscores",
+      "choiceProblem": "How a subtle uncertainty distinction changes a credible medical situation",
+      "emotionalTurn": "An initially sensible choice has a cost; the ending resolves that cost without sermonizing",
+      "adultAudience": "Curious adult learner, no stereotype-based personalization",
+      "noCopying": "Original roles, scene order, exact dialogue, lyric melody and production identity; never mimic a named living performer"
+    },
+    "audience": "Adult interpreters in training; mature warmth and wit, without gender or cultural stereotypes.",
+    "primarySkill": "uncertainty",
+    "termIds": [
+      "M0229",
+      "M0031",
+      "M0087",
+      "M0032",
+      "M0086"
+    ],
+    "sourceIds": [
+      "MEDLINE_TOPICS"
+    ],
+    "knowledge": [
+      {
+        "id": "M0229",
+        "en": "patient-reported",
+        "es": "según lo informado por el paciente",
+        "context": "Information attributed to patient, not independently confirmed.",
+        "caution": "Avoid changing 'reports' into 'diagnosed'.",
+        "review": "needs_professional_bilingual_and_domain_review",
+        "source_id": "MEDLINE_TOPICS",
+        "groundingReason": "editorial-topic-anchor:patient-reported"
+      },
+      {
+        "id": "M0031",
+        "en": "chief complaint",
+        "es": "motivo principal de consulta",
+        "context": "Main reason for seeking care.",
+        "caution": "Do not confuse complaint with a formal grievance.",
+        "review": "needs_professional_bilingual_and_domain_review",
+        "source_id": "MEDLINE_TOPICS",
+        "groundingReason": "editorial-topic-anchor:chief complaint"
+      },
+      {
+        "id": "M0087",
+        "en": "symptom",
+        "es": "síntoma",
+        "context": "Problem experienced by patient.",
+        "caution": "",
+        "review": "needs_professional_bilingual_and_domain_review",
+        "source_id": "MEDLINE_TOPICS",
+        "groundingReason": "editorial-topic-anchor:symptom"
+      },
+      {
+        "id": "M0032",
+        "en": "medical history",
+        "es": "antecedentes médicos",
+        "context": "Past and present information relevant to care.",
+        "caution": "",
+        "review": "needs_professional_bilingual_and_domain_review",
+        "source_id": "MEDLINE_TOPICS",
+        "groundingReason": "editorial-topic-anchor:medical history"
+      },
+      {
+        "id": "M0086",
+        "en": "diagnosis",
+        "es": "diagnóstico",
+        "context": "Identification of condition based on assessment.",
+        "caution": "Distinguish suspected from confirmed diagnosis.",
+        "review": "needs_professional_bilingual_and_domain_review",
+        "source_id": "MEDLINE_TOPICS",
+        "groundingReason": "editorial-topic-anchor:diagnosis"
+      }
+    ],
+    "brief": "An uncanny choice-driven audio mystery where chronology, probability, attribution, or negation changes the outcome. At least three meaningful choices.",
+    "deliverable": "complete reachable branch-node graph, dialogue, cues, alternate conclusions",
+    "minWords": 500,
+    "editorialConstraint": "Every important topic must be grounded in the selected domain. Treat clinical/legal guidance as provisional; write character-driven entertainment with truthful, explicitly fictional interpretation repairs.",
+    "review": "Every bilingual interpretation is a draft until reviewed by a qualified bilingual practitioner.",
+    "audioPolicy": "Author text, timing, sound-design and casting manifests now. Never call a transcription API a speech synthesizer; do not assert audio exists until ingested."
+  },
+  {
+    "id": "podcast-legal-4",
+    "kind": "podcast",
+    "topic": "informed consent",
+    "domain": "legal",
+    "direction": "en-es",
+    "creativeDNA": {
+      "version": 1,
+      "world": "a harbor-side diner after the breakfast rush",
+      "soundscape": "cutlery settling, coffee grinder, passing ferry horn",
+      "stakes": "a person must decide whether to disclose a misunderstanding",
+      "tone": "fast, humane call-in radio with competing interpretations",
+      "comicRhythm": "a spirited host and an unexpectedly precise caller",
+      "music": "acoustic score only where it advances emotion",
+      "musicalHook": "use near-silence rather than constant underscores",
+      "choiceProblem": "How a subtle informed consent distinction changes a credible legal situation",
+      "emotionalTurn": "An initially sensible choice has a cost; the ending resolves that cost without sermonizing",
+      "adultAudience": "Curious adult learner, no stereotype-based personalization",
+      "noCopying": "Original roles, scene order, exact dialogue, lyric melody and production identity; never mimic a named living performer"
+    },
+    "audience": "Adult interpreters in training; mature warmth and wit, without gender or cultural stereotypes.",
+    "primarySkill": "informed consent",
+    "termIds": [
+      "L0098",
+      "L0094",
+      "L0248",
+      "L0065",
+      "L0063"
+    ],
+    "sourceIds": [
+      "OJD_ETHICS",
+      "OPDC_GUIDE",
+      "OJD_GLOSS"
+    ],
+    "knowledge": [
+      {
+        "id": "L0098",
+        "en": "waiver",
+        "es": "renuncia voluntaria a un derecho",
+        "context": "Intentional relinquishment of a legal right.",
+        "caution": "Validity depends on informed and voluntary nature.",
+        "review": "needs_professional_bilingual_and_domain_review",
+        "source_id": "OJD_ETHICS",
+        "groundingReason": "editorial-topic-anchor:waiver"
+      },
+      {
+        "id": "L0094",
+        "en": "right to counsel",
+        "es": "derecho a un abogado",
+        "context": "Right to legal representation in applicable proceeding.",
+        "caution": "Scope depends on type of case.",
+        "review": "needs_professional_bilingual_and_domain_review",
+        "source_id": "OJD_ETHICS",
+        "groundingReason": "editorial-topic-anchor:right to counsel"
+      },
+      {
+        "id": "L0248",
+        "en": "plea colloquy",
+        "es": "interrogatorio judicial sobre declaración de culpabilidad",
+        "context": "Judge's questions to assess a plea.",
+        "caution": "Not the same as witness testimony.",
+        "review": "needs_professional_bilingual_and_domain_review",
+        "source_id": "OPDC_GUIDE",
+        "groundingReason": "editorial-topic-anchor:plea colloquy"
+      },
+      {
+        "id": "L0065",
+        "en": "plea agreement",
+        "es": "acuerdo de culpabilidad",
+        "context": "Negotiated resolution of criminal charge.",
+        "caution": "Acuerdo de declaración de culpabilidad.",
+        "review": "needs_professional_bilingual_and_domain_review",
+        "source_id": "OJD_GLOSS",
+        "groundingReason": "editorial-topic-anchor:plea agreement"
+      },
+      {
+        "id": "L0063",
+        "en": "not guilty plea",
+        "es": "declaración de no culpabilidad",
+        "context": "Formal response denying guilt for purposes of case.",
+        "caution": "Not necessarily assertion of factual innocence.",
+        "review": "needs_professional_bilingual_and_domain_review",
+        "source_id": "OJD_GLOSS",
+        "groundingReason": "editorial-topic-anchor:not guilty plea"
+      }
+    ],
+    "brief": "Friendly original talk-show, interview or call-in podcast episode with authentic host dynamics and memorable examples.",
+    "deliverable": "complete host/guest script, scene breaks, actionable listening prompts",
+    "minWords": 650,
+    "editorialConstraint": "Every important topic must be grounded in the selected domain. Treat clinical/legal guidance as provisional; write character-driven entertainment with truthful, explicitly fictional interpretation repairs.",
+    "review": "Every bilingual interpretation is a draft until reviewed by a qualified bilingual practitioner.",
+    "audioPolicy": "Author text, timing, sound-design and casting manifests now. Never call a transcription API a speech synthesizer; do not assert audio exists until ingested."
+  },
+  {
+    "id": "story-medical-5",
+    "kind": "story",
+    "topic": "hearing",
+    "domain": "medical",
+    "direction": "en-es",
+    "creativeDNA": {
+      "version": 1,
+      "world": "a harbor-side diner after the breakfast rush",
+      "soundscape": "cutlery settling, coffee grinder, passing ferry horn",
+      "stakes": "a person must decide whether to disclose a misunderstanding",
+      "tone": "soft speculative fiction grounded in real human choices",
+      "comicRhythm": "one absurd rule is treated with ordinary practicality",
+      "music": "acoustic score only where it advances emotion",
+      "musicalHook": "use near-silence rather than constant underscores",
+      "choiceProblem": "How a subtle hearing distinction changes a credible medical situation",
+      "emotionalTurn": "An initially sensible choice has a cost; the ending resolves that cost without sermonizing",
+      "adultAudience": "Curious adult learner, no stereotype-based personalization",
+      "noCopying": "Original roles, scene order, exact dialogue, lyric melody and production identity; never mimic a named living performer"
+    },
+    "audience": "Adult interpreters in training; mature warmth and wit, without gender or cultural stereotypes.",
+    "primarySkill": "hearing",
+    "termIds": [
+      "M0404",
+      "M0405"
+    ],
+    "sourceIds": [
+      "MEDLINE_TOPICS"
+    ],
+    "knowledge": [
+      {
+        "id": "M0404",
+        "en": "hearing loss",
+        "es": "pérdida auditiva",
+        "context": "Reduced ability to hear sounds.",
+        "caution": "",
+        "review": "needs_professional_bilingual_and_domain_review",
+        "source_id": "MEDLINE_TOPICS",
+        "groundingReason": "editorial-topic-anchor:hearing loss"
+      },
+      {
+        "id": "M0405",
+        "en": "hearing aid",
+        "es": "audífono",
+        "context": "Device amplifying sound.",
+        "caution": "In some regions audífonos means headphones; context matters.",
+        "review": "needs_professional_bilingual_and_domain_review",
+        "source_id": "MEDLINE_TOPICS",
+        "groundingReason": "editorial-topic-anchor:hearing aid"
+      }
+    ],
+    "brief": "An emotionally engaging, warm and surprising standalone narrative, told as entertainment rather than instructional prose.",
+    "deliverable": "complete narrative, characters, voice narration beats and learning takeaway",
+    "minWords": 450,
+    "editorialConstraint": "Every important topic must be grounded in the selected domain. Treat clinical/legal guidance as provisional; write character-driven entertainment with truthful, explicitly fictional interpretation repairs.",
+    "review": "Every bilingual interpretation is a draft until reviewed by a qualified bilingual practitioner.",
+    "audioPolicy": "Author text, timing, sound-design and casting manifests now. Never call a transcription API a speech synthesizer; do not assert audio exists until ingested."
+  },
+  {
+    "id": "song-legal-6",
+    "kind": "song",
+    "topic": "attribution",
+    "domain": "legal",
+    "direction": "en-es",
+    "creativeDNA": {
+      "version": 1,
+      "world": "an intercity bus terminal during a rainstorm",
+      "soundscape": "receding bus brakes, zipper, rain on shelter glass",
+      "stakes": "a misheard date threatens someone’s carefully saved travel plan",
+      "tone": "soft speculative fiction grounded in real human choices",
+      "comicRhythm": "one absurd rule is treated with ordinary practicality",
+      "music": "warm contemporary chamber-pop with intimate alto and strings",
+      "musicalHook": "sparse verse followed by a surprising harmonic release",
+      "choiceProblem": "How a subtle attribution distinction changes a credible legal situation",
+      "emotionalTurn": "An initially sensible choice has a cost; the ending resolves that cost without sermonizing",
+      "adultAudience": "Curious adult learner, no stereotype-based personalization",
+      "noCopying": "Original roles, scene order, exact dialogue, lyric melody and production identity; never mimic a named living performer"
+    },
+    "audience": "Adult interpreters in training; mature warmth and wit, without gender or cultural stereotypes.",
+    "primarySkill": "attribution",
+    "termIds": [
+      "L0014",
+      "L0074",
+      "L0041",
+      "L0073",
+      "L0042",
+      "L0093"
+    ],
+    "sourceIds": [
+      "OJD_GLOSS"
+    ],
+    "knowledge": [
+      {
+        "id": "L0014",
+        "en": "witness",
+        "es": "testigo",
+        "context": "Person who gives relevant evidence or testimony.",
+        "caution": "",
+        "review": "needs_professional_bilingual_and_domain_review",
+        "source_id": "OJD_GLOSS",
+        "groundingReason": "editorial-topic-anchor:witness"
+      },
+      {
+        "id": "L0074",
+        "en": "testimony",
+        "es": "testimonio",
+        "context": "Evidence given orally by witness under oath.",
+        "caution": "",
+        "review": "needs_professional_bilingual_and_domain_review",
+        "source_id": "OJD_GLOSS",
+        "groundingReason": "editorial-topic-anchor:testimony"
+      },
+      {
+        "id": "L0041",
+        "en": "affidavit",
+        "es": "declaración jurada",
+        "context": "Written sworn statement.",
+        "caution": "Juramentada is also accepted.",
+        "review": "needs_professional_bilingual_and_domain_review",
+        "source_id": "OJD_GLOSS",
+        "groundingReason": "editorial-topic-anchor:affidavit"
+      },
+      {
+        "id": "L0073",
+        "en": "evidence",
+        "es": "prueba",
+        "context": "Information or objects used to establish facts.",
+        "caution": "Evidencia widely used but evidence has procedural meaning.",
+        "review": "needs_professional_bilingual_and_domain_review",
+        "source_id": "OJD_GLOSS",
+        "groundingReason": "editorial-topic-anchor:evidence"
+      },
+      {
+        "id": "L0042",
+        "en": "declaration",
+        "es": "declaración",
+        "context": "Formal statement, sometimes under penalty of perjury.",
+        "caution": "Not always sworn before notary.",
+        "review": "needs_professional_bilingual_and_domain_review",
+        "source_id": "OJD_GLOSS",
+        "groundingReason": "editorial-topic-anchor:declaration"
+      },
+      {
+        "id": "L0093",
+        "en": "credibility",
+        "es": "credibilidad",
+        "context": "Believability of evidence or witness.",
+        "caution": "",
+        "review": "needs_professional_bilingual_and_domain_review",
+        "source_id": "OJD_GLOSS",
+        "groundingReason": "editorial-topic-anchor:credibility"
+      }
+    ],
+    "brief": "Memorable original Spanish-language song using elegant or witty metaphor, with meaningful chorus, emotional arc, varied rhyme and singable lines.",
+    "deliverable": "complete original lyrics, production concept, <=1000-character Suno prompt, curriculum connections",
+    "minWords": 140,
+    "editorialConstraint": "Every important topic must be grounded in the selected domain. Treat clinical/legal guidance as provisional; write character-driven entertainment with truthful, explicitly fictional interpretation repairs.",
+    "review": "Every bilingual interpretation is a draft until reviewed by a qualified bilingual practitioner.",
+    "audioPolicy": "Author text, timing, sound-design and casting manifests now. Never call a transcription API a speech synthesizer; do not assert audio exists until ingested."
+  },
+  {
+    "id": "film-medical-7",
+    "kind": "film",
+    "topic": "conditional",
+    "domain": "medical",
+    "direction": "en-es",
+    "creativeDNA": {
+      "version": 1,
+      "world": "a community theater rehearsing a one-night show",
+      "soundscape": "footsteps on empty stage, distant curtain pulley, rehearsal clap",
+      "stakes": "the performer must reveal a mistake without ruining the show",
+      "tone": "fast, humane call-in radio with competing interpretations",
+      "comicRhythm": "a spirited host and an unexpectedly precise caller",
+      "music": "acoustic score only where it advances emotion",
+      "musicalHook": "use near-silence rather than constant underscores",
+      "choiceProblem": "How a subtle conditional distinction changes a credible medical situation",
+      "emotionalTurn": "An initially sensible choice has a cost; the ending resolves that cost without sermonizing",
+      "adultAudience": "Curious adult learner, no stereotype-based personalization",
+      "noCopying": "Original roles, scene order, exact dialogue, lyric melody and production identity; never mimic a named living performer"
+    },
+    "audience": "Adult interpreters in training; mature warmth and wit, without gender or cultural stereotypes.",
+    "primarySkill": "conditional",
+    "termIds": [
+      "M0129",
+      "M0119",
+      "M0143",
+      "M0142",
+      "M0060"
+    ],
+    "sourceIds": [
+      "MEDLINE_MEDICINES",
+      "MEDLINE_TOPICS"
+    ],
+    "knowledge": [
+      {
+        "id": "M0129",
+        "en": "as needed",
+        "es": "según sea necesario",
+        "context": "Medication only when indicated by need.",
+        "caution": "PRN; preserve indication and limits.",
+        "review": "needs_professional_bilingual_and_domain_review",
+        "source_id": "MEDLINE_MEDICINES",
+        "groundingReason": "editorial-topic-anchor:as needed"
+      },
+      {
+        "id": "M0119",
+        "en": "dose",
+        "es": "dosis",
+        "context": "Amount of medication given at one time.",
+        "caution": "Distinguish from frequency.",
+        "review": "needs_professional_bilingual_and_domain_review",
+        "source_id": "MEDLINE_MEDICINES",
+        "groundingReason": "editorial-topic-anchor:dose"
+      },
+      {
+        "id": "M0143",
+        "en": "follow-up appointment",
+        "es": "cita de seguimiento",
+        "context": "Later visit to review progress.",
+        "caution": "",
+        "review": "needs_professional_bilingual_and_domain_review",
+        "source_id": "MEDLINE_MEDICINES",
+        "groundingReason": "editorial-topic-anchor:follow-up"
+      },
+      {
+        "id": "M0142",
+        "en": "discharge instructions",
+        "es": "instrucciones al alta",
+        "context": "Directions provided when leaving care.",
+        "caution": "Discharge can also mean secretion (secreción).",
+        "review": "needs_professional_bilingual_and_domain_review",
+        "source_id": "MEDLINE_MEDICINES",
+        "groundingReason": "editorial-topic-anchor:discharge instructions"
+      },
+      {
+        "id": "M0060",
+        "en": "side effect",
+        "es": "efecto secundario",
+        "context": "Effect of treatment other than the intended one.",
+        "caution": "Not the same as allergic reaction.",
+        "review": "needs_professional_bilingual_and_domain_review",
+        "source_id": "MEDLINE_TOPICS",
+        "groundingReason": "editorial-topic-anchor:side effect"
+      }
+    ],
+    "brief": "An emotionally vivid short film with striking situation, audible dialogue and visual punchline. Realistic iPhone production strategy.",
+    "deliverable": "complete script, timecoded storyboard, captions, iPhone production directions; mark video pending",
+    "minWords": 180,
+    "editorialConstraint": "Every important topic must be grounded in the selected domain. Treat clinical/legal guidance as provisional; write character-driven entertainment with truthful, explicitly fictional interpretation repairs.",
+    "review": "Every bilingual interpretation is a draft until reviewed by a qualified bilingual practitioner.",
+    "audioPolicy": "Author text, timing, sound-design and casting manifests now. Never call a transcription API a speech synthesizer; do not assert audio exists until ingested."
+  },
+  {
+    "id": "catch-the-change-legal-8",
+    "kind": "catch-the-change",
+    "topic": "eviction",
+    "domain": "legal",
+    "direction": "en-es",
+    "creativeDNA": {
+      "version": 1,
+      "world": "a small neighborhood print shop at closing time",
+      "soundscape": "slow photocopier drum, paper cutter, shop bell",
+      "stakes": "a printed claim is repeated as if it were official approval",
+      "tone": "small domestic adventure with quiet stakes",
+      "comicRhythm": "a callback object changes meaning late in the scene",
+      "music": "acoustic score only where it advances emotion",
+      "musicalHook": "use near-silence rather than constant underscores",
+      "choiceProblem": "How a subtle eviction distinction changes a credible legal situation",
+      "emotionalTurn": "An initially sensible choice has a cost; the ending resolves that cost without sermonizing",
+      "adultAudience": "Curious adult learner, no stereotype-based personalization",
+      "noCopying": "Original roles, scene order, exact dialogue, lyric melody and production identity; never mimic a named living performer"
+    },
+    "audience": "Adult interpreters in training; mature warmth and wit, without gender or cultural stereotypes.",
+    "primarySkill": "eviction",
+    "termIds": [
+      "L0153",
+      "L0152",
+      "L0330",
+      "L0331",
+      "L0329",
+      "L0333",
+      "L0332"
+    ],
+    "sourceIds": [
+      "OREGON_ORS",
+      "OJD_EVICTION"
+    ],
+    "knowledge": [
+      {
+        "id": "L0153",
+        "en": "eviction",
+        "es": "desalojo judicial",
+        "context": "Legal process removing occupant from property.",
+        "caution": "Oregon residential eviction procedure has specific steps.",
+        "review": "needs_professional_bilingual_and_domain_review",
+        "source_id": "OREGON_ORS",
+        "groundingReason": "editorial-topic-anchor:eviction"
+      },
+      {
+        "id": "L0152",
+        "en": "notice to vacate",
+        "es": "aviso para desocupar",
+        "context": "Notice relating to ending occupancy.",
+        "caution": "Does not by itself mean court eviction order.",
+        "review": "needs_professional_bilingual_and_domain_review",
+        "source_id": "OREGON_ORS",
+        "groundingReason": "editorial-topic-anchor:notice to vacate"
+      },
+      {
+        "id": "L0330",
+        "en": "eviction summons",
+        "es": "citación judicial por desalojo",
+        "context": "Document calling tenant to eviction court.",
+        "caution": "",
+        "review": "needs_professional_bilingual_and_domain_review",
+        "source_id": "OJD_EVICTION",
+        "groundingReason": "editorial-topic-anchor:eviction summons"
+      },
+      {
+        "id": "L0331",
+        "en": "first eviction hearing",
+        "es": "primera comparecencia en desalojo",
+        "context": "Initial scheduled court appearance in FED action.",
+        "caution": "Missing it can have procedural consequences.",
+        "review": "needs_professional_bilingual_and_domain_review",
+        "source_id": "OJD_EVICTION",
+        "groundingReason": "editorial-topic-anchor:eviction hearing"
+      },
+      {
+        "id": "L0329",
+        "en": "residential eviction complaint",
+        "es": "demanda de desalojo de vivienda",
+        "context": "Court filing asking to remove a residential tenant.",
+        "caution": "Not the prior notice to vacate.",
+        "review": "needs_professional_bilingual_and_domain_review",
+        "source_id": "OJD_EVICTION",
+        "groundingReason": "editorial-topic-anchor:residential eviction complaint"
+      },
+      {
+        "id": "L0333",
+        "en": "judgment of restitution",
+        "es": "sentencia de restitución de posesión",
+        "context": "Judgment awarding possession to landlord.",
+        "caution": "Not monetary restitution in criminal case.",
+        "review": "needs_professional_bilingual_and_domain_review",
+        "source_id": "OJD_EVICTION",
+        "groundingReason": "editorial-topic-anchor:judgment of restitution"
+      },
+      {
+        "id": "L0332",
+        "en": "stipulated eviction agreement",
+        "es": "acuerdo estipulado de desalojo",
+        "context": "Court agreement setting obligations for case resolution.",
+        "caution": "Do not describe as voluntary without full context.",
+        "review": "needs_professional_bilingual_and_domain_review",
+        "source_id": "OJD_EVICTION",
+        "groundingReason": "term-title-topic-match:eviction"
+      }
+    ],
+    "brief": "A 3-person spoken interpreting simulation: source utterance, plausible incorrect interpretation, intervention, repair and continuation. Error is subtle but significant.",
+    "deliverable": "multiple turns, verbatim source and interpreted lines, exactly specified erroneous claims, correction, cue timing plan",
+    "minWords": 230,
+    "editorialConstraint": "Every important topic must be grounded in the selected domain. Treat clinical/legal guidance as provisional; write character-driven entertainment with truthful, explicitly fictional interpretation repairs.",
+    "review": "Every bilingual interpretation is a draft until reviewed by a qualified bilingual practitioner.",
+    "audioPolicy": "Author text, timing, sound-design and casting manifests now. Never call a transcription API a speech synthesizer; do not assert audio exists until ingested."
+  },
+  {
+    "id": "audio-drama-medical-9",
+    "kind": "audio-drama",
+    "topic": "negation",
+    "domain": "medical",
+    "direction": "en-es",
+    "creativeDNA": {
+      "version": 1,
+      "world": "a small neighborhood print shop at closing time",
+      "soundscape": "slow photocopier drum, paper cutter, shop bell",
+      "stakes": "a printed claim is repeated as if it were official approval",
+      "tone": "tender intergenerational dramedy about autonomy",
+      "comicRhythm": "warm self-deprecation and conflicting sensible plans",
+      "music": "acoustic score only where it advances emotion",
+      "musicalHook": "use near-silence rather than constant underscores",
+      "choiceProblem": "How a subtle negation distinction changes a credible medical situation",
+      "emotionalTurn": "An initially sensible choice has a cost; the ending resolves that cost without sermonizing",
+      "adultAudience": "Curious adult learner, no stereotype-based personalization",
+      "noCopying": "Original roles, scene order, exact dialogue, lyric melody and production identity; never mimic a named living performer"
+    },
+    "audience": "Adult interpreters in training; mature warmth and wit, without gender or cultural stereotypes.",
+    "primarySkill": "negation",
+    "termIds": [
+      "M0038",
+      "M0087",
+      "M0129",
+      "M0119",
+      "M0060"
+    ],
+    "sourceIds": [
+      "MEDLINE_TOPICS",
+      "MEDLINE_MEDICINES"
+    ],
+    "knowledge": [
+      {
+        "id": "M0038",
+        "en": "pain",
+        "es": "dolor",
+        "context": "Unpleasant physical sensation that must be located and described.",
+        "caution": "",
+        "review": "needs_professional_bilingual_and_domain_review",
+        "source_id": "MEDLINE_TOPICS",
+        "groundingReason": "editorial-topic-anchor:pain"
+      },
+      {
+        "id": "M0087",
+        "en": "symptom",
+        "es": "síntoma",
+        "context": "Problem experienced by patient.",
+        "caution": "",
+        "review": "needs_professional_bilingual_and_domain_review",
+        "source_id": "MEDLINE_TOPICS",
+        "groundingReason": "editorial-topic-anchor:symptom"
+      },
+      {
+        "id": "M0129",
+        "en": "as needed",
+        "es": "según sea necesario",
+        "context": "Medication only when indicated by need.",
+        "caution": "PRN; preserve indication and limits.",
+        "review": "needs_professional_bilingual_and_domain_review",
+        "source_id": "MEDLINE_MEDICINES",
+        "groundingReason": "editorial-topic-anchor:as needed"
+      },
+      {
+        "id": "M0119",
+        "en": "dose",
+        "es": "dosis",
+        "context": "Amount of medication given at one time.",
+        "caution": "Distinguish from frequency.",
+        "review": "needs_professional_bilingual_and_domain_review",
+        "source_id": "MEDLINE_MEDICINES",
+        "groundingReason": "editorial-topic-anchor:dose"
+      },
+      {
+        "id": "M0060",
+        "en": "side effect",
+        "es": "efecto secundario",
+        "context": "Effect of treatment other than the intended one.",
+        "caution": "Not the same as allergic reaction.",
+        "review": "needs_professional_bilingual_and_domain_review",
+        "source_id": "MEDLINE_TOPICS",
+        "groundingReason": "editorial-topic-anchor:side effect"
+      }
+    ],
+    "brief": "An original episodic audio drama with recurring adult characters, dry humor, layered motives, escalating stakes, believable speech, a satisfying ending and an episode hook.",
+    "deliverable": "full script with dialogue, SFX and music cues, characters, glossary, error moments and scene durations",
+    "minWords": 600,
+    "editorialConstraint": "Every important topic must be grounded in the selected domain. Treat clinical/legal guidance as provisional; write character-driven entertainment with truthful, explicitly fictional interpretation repairs.",
+    "review": "Every bilingual interpretation is a draft until reviewed by a qualified bilingual practitioner.",
+    "audioPolicy": "Author text, timing, sound-design and casting manifests now. Never call a transcription API a speech synthesizer; do not assert audio exists until ingested."
+  },
+  {
+    "id": "audio-mystery-legal-10",
+    "kind": "audio-mystery",
+    "topic": "frequency",
+    "domain": "legal",
+    "direction": "en-es",
+    "creativeDNA": {
+      "version": 1,
+      "world": "a sewing-machine repair studio beside a bakery",
+      "soundscape": "wheel turning by hand, bakery tins, kettle whistle",
+      "stakes": "a conditional promise is mistaken for an agreement",
+      "tone": "warm ensemble comedy with a melancholy undertow",
+      "comicRhythm": "understated conversational reversals and long affectionate pauses",
+      "music": "acoustic score only where it advances emotion",
+      "musicalHook": "use near-silence rather than constant underscores",
+      "choiceProblem": "How a subtle frequency distinction changes a credible legal situation",
+      "emotionalTurn": "An initially sensible choice has a cost; the ending resolves that cost without sermonizing",
+      "adultAudience": "Curious adult learner, no stereotype-based personalization",
+      "noCopying": "Original roles, scene order, exact dialogue, lyric melody and production identity; never mimic a named living performer"
+    },
+    "audience": "Adult interpreters in training; mature warmth and wit, without gender or cultural stereotypes.",
+    "primarySkill": "frequency",
+    "termIds": [
+      "L0046",
+      "L0044",
+      "L0037",
+      "L0033",
+      "L0023"
+    ],
+    "sourceIds": [
+      "OJD_GLOSS"
+    ],
+    "knowledge": [
+      {
+        "id": "L0046",
+        "en": "deadline",
+        "es": "fecha límite",
+        "context": "Last permitted time for an action.",
+        "caution": "Preserve precise calendar date and clock time.",
+        "review": "needs_professional_bilingual_and_domain_review",
+        "source_id": "OJD_GLOSS",
+        "groundingReason": "editorial-topic-anchor:deadline"
+      },
+      {
+        "id": "L0044",
+        "en": "continuance",
+        "es": "aplazamiento",
+        "context": "Postponement of hearing or proceeding.",
+        "caution": "Not necessarily dismissal.",
+        "review": "needs_professional_bilingual_and_domain_review",
+        "source_id": "OJD_GLOSS",
+        "groundingReason": "editorial-topic-anchor:continuance"
+      },
+      {
+        "id": "L0037",
+        "en": "filing",
+        "es": "presentación de documentos",
+        "context": "Submission of papers to court clerk.",
+        "caution": "",
+        "review": "needs_professional_bilingual_and_domain_review",
+        "source_id": "OJD_GLOSS",
+        "groundingReason": "editorial-topic-anchor:filing"
+      },
+      {
+        "id": "L0033",
+        "en": "notice",
+        "es": "notificación",
+        "context": "Formal communication of case action or hearing.",
+        "caution": "",
+        "review": "needs_professional_bilingual_and_domain_review",
+        "source_id": "OJD_GLOSS",
+        "groundingReason": "editorial-topic-anchor:notice"
+      },
+      {
+        "id": "L0023",
+        "en": "hearing",
+        "es": "audiencia",
+        "context": "Scheduled proceeding before a court or adjudicator.",
+        "caution": "Not simply listening/audición.",
+        "review": "needs_professional_bilingual_and_domain_review",
+        "source_id": "OJD_GLOSS",
+        "groundingReason": "editorial-topic-anchor:hearing"
+      }
+    ],
+    "brief": "An uncanny choice-driven audio mystery where chronology, probability, attribution, or negation changes the outcome. At least three meaningful choices.",
+    "deliverable": "complete reachable branch-node graph, dialogue, cues, alternate conclusions",
+    "minWords": 500,
+    "editorialConstraint": "Every important topic must be grounded in the selected domain. Treat clinical/legal guidance as provisional; write character-driven entertainment with truthful, explicitly fictional interpretation repairs.",
+    "review": "Every bilingual interpretation is a draft until reviewed by a qualified bilingual practitioner.",
+    "audioPolicy": "Author text, timing, sound-design and casting manifests now. Never call a transcription API a speech synthesizer; do not assert audio exists until ingested."
+  },
+  {
+    "id": "podcast-medical-11",
+    "kind": "podcast",
+    "topic": "uncertainty",
+    "domain": "medical",
+    "direction": "en-es",
+    "creativeDNA": {
+      "version": 1,
+      "world": "a sewing-machine repair studio beside a bakery",
+      "soundscape": "wheel turning by hand, bakery tins, kettle whistle",
+      "stakes": "a conditional promise is mistaken for an agreement",
+      "tone": "tender intergenerational dramedy about autonomy",
+      "comicRhythm": "warm self-deprecation and conflicting sensible plans",
+      "music": "acoustic score only where it advances emotion",
+      "musicalHook": "use near-silence rather than constant underscores",
+      "choiceProblem": "How a subtle uncertainty distinction changes a credible medical situation",
+      "emotionalTurn": "An initially sensible choice has a cost; the ending resolves that cost without sermonizing",
+      "adultAudience": "Curious adult learner, no stereotype-based personalization",
+      "noCopying": "Original roles, scene order, exact dialogue, lyric melody and production identity; never mimic a named living performer"
+    },
+    "audience": "Adult interpreters in training; mature warmth and wit, without gender or cultural stereotypes.",
+    "primarySkill": "uncertainty",
+    "termIds": [
+      "M0229",
+      "M0031",
+      "M0087",
+      "M0032",
+      "M0086"
+    ],
+    "sourceIds": [
+      "MEDLINE_TOPICS"
+    ],
+    "knowledge": [
+      {
+        "id": "M0229",
+        "en": "patient-reported",
+        "es": "según lo informado por el paciente",
+        "context": "Information attributed to patient, not independently confirmed.",
+        "caution": "Avoid changing 'reports' into 'diagnosed'.",
+        "review": "needs_professional_bilingual_and_domain_review",
+        "source_id": "MEDLINE_TOPICS",
+        "groundingReason": "editorial-topic-anchor:patient-reported"
+      },
+      {
+        "id": "M0031",
+        "en": "chief complaint",
+        "es": "motivo principal de consulta",
+        "context": "Main reason for seeking care.",
+        "caution": "Do not confuse complaint with a formal grievance.",
+        "review": "needs_professional_bilingual_and_domain_review",
+        "source_id": "MEDLINE_TOPICS",
+        "groundingReason": "editorial-topic-anchor:chief complaint"
+      },
+      {
+        "id": "M0087",
+        "en": "symptom",
+        "es": "síntoma",
+        "context": "Problem experienced by patient.",
+        "caution": "",
+        "review": "needs_professional_bilingual_and_domain_review",
+        "source_id": "MEDLINE_TOPICS",
+        "groundingReason": "editorial-topic-anchor:symptom"
+      },
+      {
+        "id": "M0032",
+        "en": "medical history",
+        "es": "antecedentes médicos",
+        "context": "Past and present information relevant to care.",
+        "caution": "",
+        "review": "needs_professional_bilingual_and_domain_review",
+        "source_id": "MEDLINE_TOPICS",
+        "groundingReason": "editorial-topic-anchor:medical history"
+      },
+      {
+        "id": "M0086",
+        "en": "diagnosis",
+        "es": "diagnóstico",
+        "context": "Identification of condition based on assessment.",
+        "caution": "Distinguish suspected from confirmed diagnosis.",
+        "review": "needs_professional_bilingual_and_domain_review",
+        "source_id": "MEDLINE_TOPICS",
+        "groundingReason": "editorial-topic-anchor:diagnosis"
+      }
+    ],
+    "brief": "Friendly original talk-show, interview or call-in podcast episode with authentic host dynamics and memorable examples.",
+    "deliverable": "complete host/guest script, scene breaks, actionable listening prompts",
+    "minWords": 650,
+    "editorialConstraint": "Every important topic must be grounded in the selected domain. Treat clinical/legal guidance as provisional; write character-driven entertainment with truthful, explicitly fictional interpretation repairs.",
+    "review": "Every bilingual interpretation is a draft until reviewed by a qualified bilingual practitioner.",
+    "audioPolicy": "Author text, timing, sound-design and casting manifests now. Never call a transcription API a speech synthesizer; do not assert audio exists until ingested."
+  },
+  {
+    "id": "story-legal-12",
+    "kind": "story",
+    "topic": "informed consent",
+    "domain": "legal",
+    "direction": "en-es",
+    "creativeDNA": {
+      "version": 1,
+      "world": "a sewing-machine repair studio beside a bakery",
+      "soundscape": "wheel turning by hand, bakery tins, kettle whistle",
+      "stakes": "a conditional promise is mistaken for an agreement",
+      "tone": "noir mystery that resolves through what was actually said",
+      "comicRhythm": "deadpan sensory detail, not eccentric caricatures",
+      "music": "acoustic score only where it advances emotion",
+      "musicalHook": "use near-silence rather than constant underscores",
+      "choiceProblem": "How a subtle informed consent distinction changes a credible legal situation",
+      "emotionalTurn": "An initially sensible choice has a cost; the ending resolves that cost without sermonizing",
+      "adultAudience": "Curious adult learner, no stereotype-based personalization",
+      "noCopying": "Original roles, scene order, exact dialogue, lyric melody and production identity; never mimic a named living performer"
+    },
+    "audience": "Adult interpreters in training; mature warmth and wit, without gender or cultural stereotypes.",
+    "primarySkill": "informed consent",
+    "termIds": [
+      "L0098",
+      "L0094",
+      "L0248",
+      "L0065",
+      "L0063"
+    ],
+    "sourceIds": [
+      "OJD_ETHICS",
+      "OPDC_GUIDE",
+      "OJD_GLOSS"
+    ],
+    "knowledge": [
+      {
+        "id": "L0098",
+        "en": "waiver",
+        "es": "renuncia voluntaria a un derecho",
+        "context": "Intentional relinquishment of a legal right.",
+        "caution": "Validity depends on informed and voluntary nature.",
+        "review": "needs_professional_bilingual_and_domain_review",
+        "source_id": "OJD_ETHICS",
+        "groundingReason": "editorial-topic-anchor:waiver"
+      },
+      {
+        "id": "L0094",
+        "en": "right to counsel",
+        "es": "derecho a un abogado",
+        "context": "Right to legal representation in applicable proceeding.",
+        "caution": "Scope depends on type of case.",
+        "review": "needs_professional_bilingual_and_domain_review",
+        "source_id": "OJD_ETHICS",
+        "groundingReason": "editorial-topic-anchor:right to counsel"
+      },
+      {
+        "id": "L0248",
+        "en": "plea colloquy",
+        "es": "interrogatorio judicial sobre declaración de culpabilidad",
+        "context": "Judge's questions to assess a plea.",
+        "caution": "Not the same as witness testimony.",
+        "review": "needs_professional_bilingual_and_domain_review",
+        "source_id": "OPDC_GUIDE",
+        "groundingReason": "editorial-topic-anchor:plea colloquy"
+      },
+      {
+        "id": "L0065",
+        "en": "plea agreement",
+        "es": "acuerdo de culpabilidad",
+        "context": "Negotiated resolution of criminal charge.",
+        "caution": "Acuerdo de declaración de culpabilidad.",
+        "review": "needs_professional_bilingual_and_domain_review",
+        "source_id": "OJD_GLOSS",
+        "groundingReason": "editorial-topic-anchor:plea agreement"
+      },
+      {
+        "id": "L0063",
+        "en": "not guilty plea",
+        "es": "declaración de no culpabilidad",
+        "context": "Formal response denying guilt for purposes of case.",
+        "caution": "Not necessarily assertion of factual innocence.",
+        "review": "needs_professional_bilingual_and_domain_review",
+        "source_id": "OJD_GLOSS",
+        "groundingReason": "editorial-topic-anchor:not guilty plea"
+      }
+    ],
+    "brief": "An emotionally engaging, warm and surprising standalone narrative, told as entertainment rather than instructional prose.",
+    "deliverable": "complete narrative, characters, voice narration beats and learning takeaway",
+    "minWords": 450,
+    "editorialConstraint": "Every important topic must be grounded in the selected domain. Treat clinical/legal guidance as provisional; write character-driven entertainment with truthful, explicitly fictional interpretation repairs.",
+    "review": "Every bilingual interpretation is a draft until reviewed by a qualified bilingual practitioner.",
+    "audioPolicy": "Author text, timing, sound-design and casting manifests now. Never call a transcription API a speech synthesizer; do not assert audio exists until ingested."
+  },
+  {
+    "id": "song-medical-13",
+    "kind": "song",
+    "topic": "hearing",
+    "domain": "medical",
+    "direction": "en-es",
+    "creativeDNA": {
+      "version": 1,
+      "world": "an independent late-night community radio booth",
+      "soundscape": "phone-line click, breathing room tone, out-of-tune station ident",
+      "stakes": "a public correction threatens the host’s credibility",
+      "tone": "tender intergenerational dramedy about autonomy",
+      "comicRhythm": "warm self-deprecation and conflicting sensible plans",
+      "music": "Latin folk song with a small, human choir",
+      "musicalHook": "the last verse changes the emotional reading of the first",
+      "choiceProblem": "How a subtle hearing distinction changes a credible medical situation",
+      "emotionalTurn": "An initially sensible choice has a cost; the ending resolves that cost without sermonizing",
+      "adultAudience": "Curious adult learner, no stereotype-based personalization",
+      "noCopying": "Original roles, scene order, exact dialogue, lyric melody and production identity; never mimic a named living performer"
+    },
+    "audience": "Adult interpreters in training; mature warmth and wit, without gender or cultural stereotypes.",
+    "primarySkill": "hearing",
+    "termIds": [
+      "M0404",
+      "M0405"
+    ],
+    "sourceIds": [
+      "MEDLINE_TOPICS"
+    ],
+    "knowledge": [
+      {
+        "id": "M0404",
+        "en": "hearing loss",
+        "es": "pérdida auditiva",
+        "context": "Reduced ability to hear sounds.",
+        "caution": "",
+        "review": "needs_professional_bilingual_and_domain_review",
+        "source_id": "MEDLINE_TOPICS",
+        "groundingReason": "editorial-topic-anchor:hearing loss"
+      },
+      {
+        "id": "M0405",
+        "en": "hearing aid",
+        "es": "audífono",
+        "context": "Device amplifying sound.",
+        "caution": "In some regions audífonos means headphones; context matters.",
+        "review": "needs_professional_bilingual_and_domain_review",
+        "source_id": "MEDLINE_TOPICS",
+        "groundingReason": "editorial-topic-anchor:hearing aid"
+      }
+    ],
+    "brief": "Memorable original Spanish-language song using elegant or witty metaphor, with meaningful chorus, emotional arc, varied rhyme and singable lines.",
+    "deliverable": "complete original lyrics, production concept, <=1000-character Suno prompt, curriculum connections",
+    "minWords": 140,
+    "editorialConstraint": "Every important topic must be grounded in the selected domain. Treat clinical/legal guidance as provisional; write character-driven entertainment with truthful, explicitly fictional interpretation repairs.",
+    "review": "Every bilingual interpretation is a draft until reviewed by a qualified bilingual practitioner.",
+    "audioPolicy": "Author text, timing, sound-design and casting manifests now. Never call a transcription API a speech synthesizer; do not assert audio exists until ingested."
+  },
+  {
+    "id": "film-legal-14",
+    "kind": "film",
+    "topic": "attribution",
+    "domain": "legal",
+    "direction": "en-es",
+    "creativeDNA": {
+      "version": 1,
+      "world": "a small neighborhood print shop at closing time",
+      "soundscape": "slow photocopier drum, paper cutter, shop bell",
+      "stakes": "a printed claim is repeated as if it were official approval",
+      "tone": "noir mystery that resolves through what was actually said",
+      "comicRhythm": "deadpan sensory detail, not eccentric caricatures",
+      "music": "acoustic score only where it advances emotion",
+      "musicalHook": "use near-silence rather than constant underscores",
+      "choiceProblem": "How a subtle attribution distinction changes a credible legal situation",
+      "emotionalTurn": "An initially sensible choice has a cost; the ending resolves that cost without sermonizing",
+      "adultAudience": "Curious adult learner, no stereotype-based personalization",
+      "noCopying": "Original roles, scene order, exact dialogue, lyric melody and production identity; never mimic a named living performer"
+    },
+    "audience": "Adult interpreters in training; mature warmth and wit, without gender or cultural stereotypes.",
+    "primarySkill": "attribution",
+    "termIds": [
+      "L0014",
+      "L0074",
+      "L0041",
+      "L0073",
+      "L0042",
+      "L0093"
+    ],
+    "sourceIds": [
+      "OJD_GLOSS"
+    ],
+    "knowledge": [
+      {
+        "id": "L0014",
+        "en": "witness",
+        "es": "testigo",
+        "context": "Person who gives relevant evidence or testimony.",
+        "caution": "",
+        "review": "needs_professional_bilingual_and_domain_review",
+        "source_id": "OJD_GLOSS",
+        "groundingReason": "editorial-topic-anchor:witness"
+      },
+      {
+        "id": "L0074",
+        "en": "testimony",
+        "es": "testimonio",
+        "context": "Evidence given orally by witness under oath.",
+        "caution": "",
+        "review": "needs_professional_bilingual_and_domain_review",
+        "source_id": "OJD_GLOSS",
+        "groundingReason": "editorial-topic-anchor:testimony"
+      },
+      {
+        "id": "L0041",
+        "en": "affidavit",
+        "es": "declaración jurada",
+        "context": "Written sworn statement.",
+        "caution": "Juramentada is also accepted.",
+        "review": "needs_professional_bilingual_and_domain_review",
+        "source_id": "OJD_GLOSS",
+        "groundingReason": "editorial-topic-anchor:affidavit"
+      },
+      {
+        "id": "L0073",
+        "en": "evidence",
+        "es": "prueba",
+        "context": "Information or objects used to establish facts.",
+        "caution": "Evidencia widely used but evidence has procedural meaning.",
+        "review": "needs_professional_bilingual_and_domain_review",
+        "source_id": "OJD_GLOSS",
+        "groundingReason": "editorial-topic-anchor:evidence"
+      },
+      {
+        "id": "L0042",
+        "en": "declaration",
+        "es": "declaración",
+        "context": "Formal statement, sometimes under penalty of perjury.",
+        "caution": "Not always sworn before notary.",
+        "review": "needs_professional_bilingual_and_domain_review",
+        "source_id": "OJD_GLOSS",
+        "groundingReason": "editorial-topic-anchor:declaration"
+      },
+      {
+        "id": "L0093",
+        "en": "credibility",
+        "es": "credibilidad",
+        "context": "Believability of evidence or witness.",
+        "caution": "",
+        "review": "needs_professional_bilingual_and_domain_review",
+        "source_id": "OJD_GLOSS",
+        "groundingReason": "editorial-topic-anchor:credibility"
+      }
+    ],
+    "brief": "An emotionally vivid short film with striking situation, audible dialogue and visual punchline. Realistic iPhone production strategy.",
+    "deliverable": "complete script, timecoded storyboard, captions, iPhone production directions; mark video pending",
+    "minWords": 180,
+    "editorialConstraint": "Every important topic must be grounded in the selected domain. Treat clinical/legal guidance as provisional; write character-driven entertainment with truthful, explicitly fictional interpretation repairs.",
+    "review": "Every bilingual interpretation is a draft until reviewed by a qualified bilingual practitioner.",
+    "audioPolicy": "Author text, timing, sound-design and casting manifests now. Never call a transcription API a speech synthesizer; do not assert audio exists until ingested."
+  },
+  {
+    "id": "catch-the-change-medical-15",
+    "kind": "catch-the-change",
+    "topic": "conditional",
+    "domain": "medical",
+    "direction": "en-es",
+    "creativeDNA": {
+      "version": 1,
+      "world": "a public library book club after an unexpected blackout",
+      "soundscape": "paper pages, emergency lamp click, distant thunder",
+      "stakes": "one borrowed story has acquired an extra witness",
+      "tone": "warm ensemble comedy with a melancholy undertow",
+      "comicRhythm": "understated conversational reversals and long affectionate pauses",
+      "music": "acoustic score only where it advances emotion",
+      "musicalHook": "use near-silence rather than constant underscores",
+      "choiceProblem": "How a subtle conditional distinction changes a credible medical situation",
+      "emotionalTurn": "An initially sensible choice has a cost; the ending resolves that cost without sermonizing",
+      "adultAudience": "Curious adult learner, no stereotype-based personalization",
+      "noCopying": "Original roles, scene order, exact dialogue, lyric melody and production identity; never mimic a named living performer"
+    },
+    "audience": "Adult interpreters in training; mature warmth and wit, without gender or cultural stereotypes.",
+    "primarySkill": "conditional",
+    "termIds": [
+      "M0129",
+      "M0119",
+      "M0143",
+      "M0142",
+      "M0060"
+    ],
+    "sourceIds": [
+      "MEDLINE_MEDICINES",
+      "MEDLINE_TOPICS"
+    ],
+    "knowledge": [
+      {
+        "id": "M0129",
+        "en": "as needed",
+        "es": "según sea necesario",
+        "context": "Medication only when indicated by need.",
+        "caution": "PRN; preserve indication and limits.",
+        "review": "needs_professional_bilingual_and_domain_review",
+        "source_id": "MEDLINE_MEDICINES",
+        "groundingReason": "editorial-topic-anchor:as needed"
+      },
+      {
+        "id": "M0119",
+        "en": "dose",
+        "es": "dosis",
+        "context": "Amount of medication given at one time.",
+        "caution": "Distinguish from frequency.",
+        "review": "needs_professional_bilingual_and_domain_review",
+        "source_id": "MEDLINE_MEDICINES",
+        "groundingReason": "editorial-topic-anchor:dose"
+      },
+      {
+        "id": "M0143",
+        "en": "follow-up appointment",
+        "es": "cita de seguimiento",
+        "context": "Later visit to review progress.",
+        "caution": "",
+        "review": "needs_professional_bilingual_and_domain_review",
+        "source_id": "MEDLINE_MEDICINES",
+        "groundingReason": "editorial-topic-anchor:follow-up"
+      },
+      {
+        "id": "M0142",
+        "en": "discharge instructions",
+        "es": "instrucciones al alta",
+        "context": "Directions provided when leaving care.",
+        "caution": "Discharge can also mean secretion (secreción).",
+        "review": "needs_professional_bilingual_and_domain_review",
+        "source_id": "MEDLINE_MEDICINES",
+        "groundingReason": "editorial-topic-anchor:discharge instructions"
+      },
+      {
+        "id": "M0060",
+        "en": "side effect",
+        "es": "efecto secundario",
+        "context": "Effect of treatment other than the intended one.",
+        "caution": "Not the same as allergic reaction.",
+        "review": "needs_professional_bilingual_and_domain_review",
+        "source_id": "MEDLINE_TOPICS",
+        "groundingReason": "editorial-topic-anchor:side effect"
+      }
+    ],
+    "brief": "A 3-person spoken interpreting simulation: source utterance, plausible incorrect interpretation, intervention, repair and continuation. Error is subtle but significant.",
+    "deliverable": "multiple turns, verbatim source and interpreted lines, exactly specified erroneous claims, correction, cue timing plan",
+    "minWords": 230,
+    "editorialConstraint": "Every important topic must be grounded in the selected domain. Treat clinical/legal guidance as provisional; write character-driven entertainment with truthful, explicitly fictional interpretation repairs.",
+    "review": "Every bilingual interpretation is a draft until reviewed by a qualified bilingual practitioner.",
+    "audioPolicy": "Author text, timing, sound-design and casting manifests now. Never call a transcription API a speech synthesizer; do not assert audio exists until ingested."
+  },
+  {
+    "id": "audio-drama-legal-16",
+    "kind": "audio-drama",
+    "topic": "eviction",
+    "domain": "legal",
+    "direction": "en-es",
+    "creativeDNA": {
+      "version": 1,
+      "world": "an intercity bus terminal during a rainstorm",
+      "soundscape": "receding bus brakes, zipper, rain on shelter glass",
+      "stakes": "a misheard date threatens someone’s carefully saved travel plan",
+      "tone": "small domestic adventure with quiet stakes",
+      "comicRhythm": "a callback object changes meaning late in the scene",
+      "music": "acoustic score only where it advances emotion",
+      "musicalHook": "use near-silence rather than constant underscores",
+      "choiceProblem": "How a subtle eviction distinction changes a credible legal situation",
+      "emotionalTurn": "An initially sensible choice has a cost; the ending resolves that cost without sermonizing",
+      "adultAudience": "Curious adult learner, no stereotype-based personalization",
+      "noCopying": "Original roles, scene order, exact dialogue, lyric melody and production identity; never mimic a named living performer"
+    },
+    "audience": "Adult interpreters in training; mature warmth and wit, without gender or cultural stereotypes.",
+    "primarySkill": "eviction",
+    "termIds": [
+      "L0153",
+      "L0330",
+      "L0331",
+      "L0329",
+      "L0333",
+      "L0332",
+      "L0341"
+    ],
+    "sourceIds": [
+      "OREGON_ORS",
+      "OJD_EVICTION"
+    ],
+    "knowledge": [
+      {
+        "id": "L0153",
+        "en": "eviction",
+        "es": "desalojo judicial",
+        "context": "Legal process removing occupant from property.",
+        "caution": "Oregon residential eviction procedure has specific steps.",
+        "review": "needs_professional_bilingual_and_domain_review",
+        "source_id": "OREGON_ORS",
+        "groundingReason": "editorial-topic-anchor:eviction"
+      },
+      {
+        "id": "L0330",
+        "en": "eviction summons",
+        "es": "citación judicial por desalojo",
+        "context": "Document calling tenant to eviction court.",
+        "caution": "",
+        "review": "needs_professional_bilingual_and_domain_review",
+        "source_id": "OJD_EVICTION",
+        "groundingReason": "editorial-topic-anchor:eviction summons"
+      },
+      {
+        "id": "L0331",
+        "en": "first eviction hearing",
+        "es": "primera comparecencia en desalojo",
+        "context": "Initial scheduled court appearance in FED action.",
+        "caution": "Missing it can have procedural consequences.",
+        "review": "needs_professional_bilingual_and_domain_review",
+        "source_id": "OJD_EVICTION",
+        "groundingReason": "editorial-topic-anchor:eviction hearing"
+      },
+      {
+        "id": "L0329",
+        "en": "residential eviction complaint",
+        "es": "demanda de desalojo de vivienda",
+        "context": "Court filing asking to remove a residential tenant.",
+        "caution": "Not the prior notice to vacate.",
+        "review": "needs_professional_bilingual_and_domain_review",
+        "source_id": "OJD_EVICTION",
+        "groundingReason": "editorial-topic-anchor:residential eviction complaint"
+      },
+      {
+        "id": "L0333",
+        "en": "judgment of restitution",
+        "es": "sentencia de restitución de posesión",
+        "context": "Judgment awarding possession to landlord.",
+        "caution": "Not monetary restitution in criminal case.",
+        "review": "needs_professional_bilingual_and_domain_review",
+        "source_id": "OJD_EVICTION",
+        "groundingReason": "editorial-topic-anchor:judgment of restitution"
+      },
+      {
+        "id": "L0332",
+        "en": "stipulated eviction agreement",
+        "es": "acuerdo estipulado de desalojo",
+        "context": "Court agreement setting obligations for case resolution.",
+        "caution": "Do not describe as voluntary without full context.",
+        "review": "needs_professional_bilingual_and_domain_review",
+        "source_id": "OJD_EVICTION",
+        "groundingReason": "term-title-topic-match:eviction"
+      },
+      {
+        "id": "L0341",
+        "en": "retaliatory eviction",
+        "es": "desalojo en represalia",
+        "context": "Eviction alleged in response to protected tenant conduct.",
+        "caution": "Whether unlawful depends on facts and statute.",
+        "review": "needs_professional_bilingual_and_domain_review",
+        "source_id": "OJD_EVICTION",
+        "groundingReason": "term-title-topic-match:eviction"
+      }
+    ],
+    "brief": "An original episodic audio drama with recurring adult characters, dry humor, layered motives, escalating stakes, believable speech, a satisfying ending and an episode hook.",
+    "deliverable": "full script with dialogue, SFX and music cues, characters, glossary, error moments and scene durations",
+    "minWords": 600,
+    "editorialConstraint": "Every important topic must be grounded in the selected domain. Treat clinical/legal guidance as provisional; write character-driven entertainment with truthful, explicitly fictional interpretation repairs.",
+    "review": "Every bilingual interpretation is a draft until reviewed by a qualified bilingual practitioner.",
+    "audioPolicy": "Author text, timing, sound-design and casting manifests now. Never call a transcription API a speech synthesizer; do not assert audio exists until ingested."
+  },
+  {
+    "id": "audio-mystery-medical-17",
+    "kind": "audio-mystery",
+    "topic": "negation",
+    "domain": "medical",
+    "direction": "en-es",
+    "creativeDNA": {
+      "version": 1,
+      "world": "a rooftop garden shared by unlikely neighbors",
+      "soundscape": "wind in bamboo stakes, watering can, distant city buses",
+      "stakes": "an unreliable account threatens a friendship",
+      "tone": "soft speculative fiction grounded in real human choices",
+      "comicRhythm": "one absurd rule is treated with ordinary practicality",
+      "music": "acoustic score only where it advances emotion",
+      "musicalHook": "use near-silence rather than constant underscores",
+      "choiceProblem": "How a subtle negation distinction changes a credible medical situation",
+      "emotionalTurn": "An initially sensible choice has a cost; the ending resolves that cost without sermonizing",
+      "adultAudience": "Curious adult learner, no stereotype-based personalization",
+      "noCopying": "Original roles, scene order, exact dialogue, lyric melody and production identity; never mimic a named living performer"
+    },
+    "audience": "Adult interpreters in training; mature warmth and wit, without gender or cultural stereotypes.",
+    "primarySkill": "negation",
+    "termIds": [
+      "M0038",
+      "M0087",
+      "M0129",
+      "M0119",
+      "M0060"
+    ],
+    "sourceIds": [
+      "MEDLINE_TOPICS",
+      "MEDLINE_MEDICINES"
+    ],
+    "knowledge": [
+      {
+        "id": "M0038",
+        "en": "pain",
+        "es": "dolor",
+        "context": "Unpleasant physical sensation that must be located and described.",
+        "caution": "",
+        "review": "needs_professional_bilingual_and_domain_review",
+        "source_id": "MEDLINE_TOPICS",
+        "groundingReason": "editorial-topic-anchor:pain"
+      },
+      {
+        "id": "M0087",
+        "en": "symptom",
+        "es": "síntoma",
+        "context": "Problem experienced by patient.",
+        "caution": "",
+        "review": "needs_professional_bilingual_and_domain_review",
+        "source_id": "MEDLINE_TOPICS",
+        "groundingReason": "editorial-topic-anchor:symptom"
+      },
+      {
+        "id": "M0129",
+        "en": "as needed",
+        "es": "según sea necesario",
+        "context": "Medication only when indicated by need.",
+        "caution": "PRN; preserve indication and limits.",
+        "review": "needs_professional_bilingual_and_domain_review",
+        "source_id": "MEDLINE_MEDICINES",
+        "groundingReason": "editorial-topic-anchor:as needed"
+      },
+      {
+        "id": "M0119",
+        "en": "dose",
+        "es": "dosis",
+        "context": "Amount of medication given at one time.",
+        "caution": "Distinguish from frequency.",
+        "review": "needs_professional_bilingual_and_domain_review",
+        "source_id": "MEDLINE_MEDICINES",
+        "groundingReason": "editorial-topic-anchor:dose"
+      },
+      {
+        "id": "M0060",
+        "en": "side effect",
+        "es": "efecto secundario",
+        "context": "Effect of treatment other than the intended one.",
+        "caution": "Not the same as allergic reaction.",
+        "review": "needs_professional_bilingual_and_domain_review",
+        "source_id": "MEDLINE_TOPICS",
+        "groundingReason": "editorial-topic-anchor:side effect"
+      }
+    ],
+    "brief": "An uncanny choice-driven audio mystery where chronology, probability, attribution, or negation changes the outcome. At least three meaningful choices.",
+    "deliverable": "complete reachable branch-node graph, dialogue, cues, alternate conclusions",
+    "minWords": 500,
+    "editorialConstraint": "Every important topic must be grounded in the selected domain. Treat clinical/legal guidance as provisional; write character-driven entertainment with truthful, explicitly fictional interpretation repairs.",
+    "review": "Every bilingual interpretation is a draft until reviewed by a qualified bilingual practitioner.",
+    "audioPolicy": "Author text, timing, sound-design and casting manifests now. Never call a transcription API a speech synthesizer; do not assert audio exists until ingested."
+  },
+  {
+    "id": "podcast-legal-18",
+    "kind": "podcast",
+    "topic": "frequency",
+    "domain": "legal",
+    "direction": "en-es",
+    "creativeDNA": {
+      "version": 1,
+      "world": "a small neighborhood print shop at closing time",
+      "soundscape": "slow photocopier drum, paper cutter, shop bell",
+      "stakes": "a printed claim is repeated as if it were official approval",
+      "tone": "tender intergenerational dramedy about autonomy",
+      "comicRhythm": "warm self-deprecation and conflicting sensible plans",
+      "music": "acoustic score only where it advances emotion",
+      "musicalHook": "use near-silence rather than constant underscores",
+      "choiceProblem": "How a subtle frequency distinction changes a credible legal situation",
+      "emotionalTurn": "An initially sensible choice has a cost; the ending resolves that cost without sermonizing",
+      "adultAudience": "Curious adult learner, no stereotype-based personalization",
+      "noCopying": "Original roles, scene order, exact dialogue, lyric melody and production identity; never mimic a named living performer"
+    },
+    "audience": "Adult interpreters in training; mature warmth and wit, without gender or cultural stereotypes.",
+    "primarySkill": "frequency",
+    "termIds": [
+      "L0046",
+      "L0044",
+      "L0037",
+      "L0033",
+      "L0023"
+    ],
+    "sourceIds": [
+      "OJD_GLOSS"
+    ],
+    "knowledge": [
+      {
+        "id": "L0046",
+        "en": "deadline",
+        "es": "fecha límite",
+        "context": "Last permitted time for an action.",
+        "caution": "Preserve precise calendar date and clock time.",
+        "review": "needs_professional_bilingual_and_domain_review",
+        "source_id": "OJD_GLOSS",
+        "groundingReason": "editorial-topic-anchor:deadline"
+      },
+      {
+        "id": "L0044",
+        "en": "continuance",
+        "es": "aplazamiento",
+        "context": "Postponement of hearing or proceeding.",
+        "caution": "Not necessarily dismissal.",
+        "review": "needs_professional_bilingual_and_domain_review",
+        "source_id": "OJD_GLOSS",
+        "groundingReason": "editorial-topic-anchor:continuance"
+      },
+      {
+        "id": "L0037",
+        "en": "filing",
+        "es": "presentación de documentos",
+        "context": "Submission of papers to court clerk.",
+        "caution": "",
+        "review": "needs_professional_bilingual_and_domain_review",
+        "source_id": "OJD_GLOSS",
+        "groundingReason": "editorial-topic-anchor:filing"
+      },
+      {
+        "id": "L0033",
+        "en": "notice",
+        "es": "notificación",
+        "context": "Formal communication of case action or hearing.",
+        "caution": "",
+        "review": "needs_professional_bilingual_and_domain_review",
+        "source_id": "OJD_GLOSS",
+        "groundingReason": "editorial-topic-anchor:notice"
+      },
+      {
+        "id": "L0023",
+        "en": "hearing",
+        "es": "audiencia",
+        "context": "Scheduled proceeding before a court or adjudicator.",
+        "caution": "Not simply listening/audición.",
+        "review": "needs_professional_bilingual_and_domain_review",
+        "source_id": "OJD_GLOSS",
+        "groundingReason": "editorial-topic-anchor:hearing"
+      }
+    ],
+    "brief": "Friendly original talk-show, interview or call-in podcast episode with authentic host dynamics and memorable examples.",
+    "deliverable": "complete host/guest script, scene breaks, actionable listening prompts",
+    "minWords": 650,
+    "editorialConstraint": "Every important topic must be grounded in the selected domain. Treat clinical/legal guidance as provisional; write character-driven entertainment with truthful, explicitly fictional interpretation repairs.",
+    "review": "Every bilingual interpretation is a draft until reviewed by a qualified bilingual practitioner.",
+    "audioPolicy": "Author text, timing, sound-design and casting manifests now. Never call a transcription API a speech synthesizer; do not assert audio exists until ingested."
+  },
+  {
+    "id": "story-medical-19",
+    "kind": "story",
+    "topic": "uncertainty",
+    "domain": "medical",
+    "direction": "en-es",
+    "creativeDNA": {
+      "version": 1,
+      "world": "a community theater rehearsing a one-night show",
+      "soundscape": "footsteps on empty stage, distant curtain pulley, rehearsal clap",
+      "stakes": "the performer must reveal a mistake without ruining the show",
+      "tone": "soft speculative fiction grounded in real human choices",
+      "comicRhythm": "one absurd rule is treated with ordinary practicality",
+      "music": "acoustic score only where it advances emotion",
+      "musicalHook": "use near-silence rather than constant underscores",
+      "choiceProblem": "How a subtle uncertainty distinction changes a credible medical situation",
+      "emotionalTurn": "An initially sensible choice has a cost; the ending resolves that cost without sermonizing",
+      "adultAudience": "Curious adult learner, no stereotype-based personalization",
+      "noCopying": "Original roles, scene order, exact dialogue, lyric melody and production identity; never mimic a named living performer"
+    },
+    "audience": "Adult interpreters in training; mature warmth and wit, without gender or cultural stereotypes.",
+    "primarySkill": "uncertainty",
+    "termIds": [
+      "M0229",
+      "M0031",
+      "M0087",
+      "M0032",
+      "M0086"
+    ],
+    "sourceIds": [
+      "MEDLINE_TOPICS"
+    ],
+    "knowledge": [
+      {
+        "id": "M0229",
+        "en": "patient-reported",
+        "es": "según lo informado por el paciente",
+        "context": "Information attributed to patient, not independently confirmed.",
+        "caution": "Avoid changing 'reports' into 'diagnosed'.",
+        "review": "needs_professional_bilingual_and_domain_review",
+        "source_id": "MEDLINE_TOPICS",
+        "groundingReason": "editorial-topic-anchor:patient-reported"
+      },
+      {
+        "id": "M0031",
+        "en": "chief complaint",
+        "es": "motivo principal de consulta",
+        "context": "Main reason for seeking care.",
+        "caution": "Do not confuse complaint with a formal grievance.",
+        "review": "needs_professional_bilingual_and_domain_review",
+        "source_id": "MEDLINE_TOPICS",
+        "groundingReason": "editorial-topic-anchor:chief complaint"
+      },
+      {
+        "id": "M0087",
+        "en": "symptom",
+        "es": "síntoma",
+        "context": "Problem experienced by patient.",
+        "caution": "",
+        "review": "needs_professional_bilingual_and_domain_review",
+        "source_id": "MEDLINE_TOPICS",
+        "groundingReason": "editorial-topic-anchor:symptom"
+      },
+      {
+        "id": "M0032",
+        "en": "medical history",
+        "es": "antecedentes médicos",
+        "context": "Past and present information relevant to care.",
+        "caution": "",
+        "review": "needs_professional_bilingual_and_domain_review",
+        "source_id": "MEDLINE_TOPICS",
+        "groundingReason": "editorial-topic-anchor:medical history"
+      },
+      {
+        "id": "M0086",
+        "en": "diagnosis",
+        "es": "diagnóstico",
+        "context": "Identification of condition based on assessment.",
+        "caution": "Distinguish suspected from confirmed diagnosis.",
+        "review": "needs_professional_bilingual_and_domain_review",
+        "source_id": "MEDLINE_TOPICS",
+        "groundingReason": "editorial-topic-anchor:diagnosis"
+      }
+    ],
+    "brief": "An emotionally engaging, warm and surprising standalone narrative, told as entertainment rather than instructional prose.",
+    "deliverable": "complete narrative, characters, voice narration beats and learning takeaway",
+    "minWords": 450,
+    "editorialConstraint": "Every important topic must be grounded in the selected domain. Treat clinical/legal guidance as provisional; write character-driven entertainment with truthful, explicitly fictional interpretation repairs.",
+    "review": "Every bilingual interpretation is a draft until reviewed by a qualified bilingual practitioner.",
+    "audioPolicy": "Author text, timing, sound-design and casting manifests now. Never call a transcription API a speech synthesizer; do not assert audio exists until ingested."
+  },
+  {
+    "id": "song-legal-20",
+    "kind": "song",
+    "topic": "informed consent",
+    "domain": "legal",
+    "direction": "en-es",
+    "creativeDNA": {
+      "version": 1,
+      "world": "an independent late-night community radio booth",
+      "soundscape": "phone-line click, breathing room tone, out-of-tune station ident",
+      "stakes": "a public correction threatens the host’s credibility",
+      "tone": "small domestic adventure with quiet stakes",
+      "comicRhythm": "a callback object changes meaning late in the scene",
+      "music": "witty milonga with bandoneon and subtle piano",
+      "musicalHook": "instrumental stop-time around the semantic pivot",
+      "choiceProblem": "How a subtle informed consent distinction changes a credible legal situation",
+      "emotionalTurn": "An initially sensible choice has a cost; the ending resolves that cost without sermonizing",
+      "adultAudience": "Curious adult learner, no stereotype-based personalization",
+      "noCopying": "Original roles, scene order, exact dialogue, lyric melody and production identity; never mimic a named living performer"
+    },
+    "audience": "Adult interpreters in training; mature warmth and wit, without gender or cultural stereotypes.",
+    "primarySkill": "informed consent",
+    "termIds": [
+      "L0098",
+      "L0094",
+      "L0248",
+      "L0065",
+      "L0063"
+    ],
+    "sourceIds": [
+      "OJD_ETHICS",
+      "OPDC_GUIDE",
+      "OJD_GLOSS"
+    ],
+    "knowledge": [
+      {
+        "id": "L0098",
+        "en": "waiver",
+        "es": "renuncia voluntaria a un derecho",
+        "context": "Intentional relinquishment of a legal right.",
+        "caution": "Validity depends on informed and voluntary nature.",
+        "review": "needs_professional_bilingual_and_domain_review",
+        "source_id": "OJD_ETHICS",
+        "groundingReason": "editorial-topic-anchor:waiver"
+      },
+      {
+        "id": "L0094",
+        "en": "right to counsel",
+        "es": "derecho a un abogado",
+        "context": "Right to legal representation in applicable proceeding.",
+        "caution": "Scope depends on type of case.",
+        "review": "needs_professional_bilingual_and_domain_review",
+        "source_id": "OJD_ETHICS",
+        "groundingReason": "editorial-topic-anchor:right to counsel"
+      },
+      {
+        "id": "L0248",
+        "en": "plea colloquy",
+        "es": "interrogatorio judicial sobre declaración de culpabilidad",
+        "context": "Judge's questions to assess a plea.",
+        "caution": "Not the same as witness testimony.",
+        "review": "needs_professional_bilingual_and_domain_review",
+        "source_id": "OPDC_GUIDE",
+        "groundingReason": "editorial-topic-anchor:plea colloquy"
+      },
+      {
+        "id": "L0065",
+        "en": "plea agreement",
+        "es": "acuerdo de culpabilidad",
+        "context": "Negotiated resolution of criminal charge.",
+        "caution": "Acuerdo de declaración de culpabilidad.",
+        "review": "needs_professional_bilingual_and_domain_review",
+        "source_id": "OJD_GLOSS",
+        "groundingReason": "editorial-topic-anchor:plea agreement"
+      },
+      {
+        "id": "L0063",
+        "en": "not guilty plea",
+        "es": "declaración de no culpabilidad",
+        "context": "Formal response denying guilt for purposes of case.",
+        "caution": "Not necessarily assertion of factual innocence.",
+        "review": "needs_professional_bilingual_and_domain_review",
+        "source_id": "OJD_GLOSS",
+        "groundingReason": "editorial-topic-anchor:not guilty plea"
+      }
+    ],
+    "brief": "Memorable original Spanish-language song using elegant or witty metaphor, with meaningful chorus, emotional arc, varied rhyme and singable lines.",
+    "deliverable": "complete original lyrics, production concept, <=1000-character Suno prompt, curriculum connections",
+    "minWords": 140,
+    "editorialConstraint": "Every important topic must be grounded in the selected domain. Treat clinical/legal guidance as provisional; write character-driven entertainment with truthful, explicitly fictional interpretation repairs.",
+    "review": "Every bilingual interpretation is a draft until reviewed by a qualified bilingual practitioner.",
+    "audioPolicy": "Author text, timing, sound-design and casting manifests now. Never call a transcription API a speech synthesizer; do not assert audio exists until ingested."
+  },
+  {
+    "id": "film-medical-21",
+    "kind": "film",
+    "topic": "hearing",
+    "domain": "medical",
+    "direction": "en-es",
+    "creativeDNA": {
+      "version": 1,
+      "world": "an intercity bus terminal during a rainstorm",
+      "soundscape": "receding bus brakes, zipper, rain on shelter glass",
+      "stakes": "a misheard date threatens someone’s carefully saved travel plan",
+      "tone": "warm ensemble comedy with a melancholy undertow",
+      "comicRhythm": "understated conversational reversals and long affectionate pauses",
+      "music": "acoustic score only where it advances emotion",
+      "musicalHook": "use near-silence rather than constant underscores",
+      "choiceProblem": "How a subtle hearing distinction changes a credible medical situation",
+      "emotionalTurn": "An initially sensible choice has a cost; the ending resolves that cost without sermonizing",
+      "adultAudience": "Curious adult learner, no stereotype-based personalization",
+      "noCopying": "Original roles, scene order, exact dialogue, lyric melody and production identity; never mimic a named living performer"
+    },
+    "audience": "Adult interpreters in training; mature warmth and wit, without gender or cultural stereotypes.",
+    "primarySkill": "hearing",
+    "termIds": [
+      "M0404",
+      "M0405"
+    ],
+    "sourceIds": [
+      "MEDLINE_TOPICS"
+    ],
+    "knowledge": [
+      {
+        "id": "M0404",
+        "en": "hearing loss",
+        "es": "pérdida auditiva",
+        "context": "Reduced ability to hear sounds.",
+        "caution": "",
+        "review": "needs_professional_bilingual_and_domain_review",
+        "source_id": "MEDLINE_TOPICS",
+        "groundingReason": "editorial-topic-anchor:hearing loss"
+      },
+      {
+        "id": "M0405",
+        "en": "hearing aid",
+        "es": "audífono",
+        "context": "Device amplifying sound.",
+        "caution": "In some regions audífonos means headphones; context matters.",
+        "review": "needs_professional_bilingual_and_domain_review",
+        "source_id": "MEDLINE_TOPICS",
+        "groundingReason": "editorial-topic-anchor:hearing aid"
+      }
+    ],
+    "brief": "An emotionally vivid short film with striking situation, audible dialogue and visual punchline. Realistic iPhone production strategy.",
+    "deliverable": "complete script, timecoded storyboard, captions, iPhone production directions; mark video pending",
+    "minWords": 180,
+    "editorialConstraint": "Every important topic must be grounded in the selected domain. Treat clinical/legal guidance as provisional; write character-driven entertainment with truthful, explicitly fictional interpretation repairs.",
+    "review": "Every bilingual interpretation is a draft until reviewed by a qualified bilingual practitioner.",
+    "audioPolicy": "Author text, timing, sound-design and casting manifests now. Never call a transcription API a speech synthesizer; do not assert audio exists until ingested."
+  },
+  {
+    "id": "catch-the-change-legal-22",
+    "kind": "catch-the-change",
+    "topic": "attribution",
+    "domain": "legal",
+    "direction": "en-es",
+    "creativeDNA": {
+      "version": 1,
+      "world": "a sewing-machine repair studio beside a bakery",
+      "soundscape": "wheel turning by hand, bakery tins, kettle whistle",
+      "stakes": "a conditional promise is mistaken for an agreement",
+      "tone": "small domestic adventure with quiet stakes",
+      "comicRhythm": "a callback object changes meaning late in the scene",
+      "music": "acoustic score only where it advances emotion",
+      "musicalHook": "use near-silence rather than constant underscores",
+      "choiceProblem": "How a subtle attribution distinction changes a credible legal situation",
+      "emotionalTurn": "An initially sensible choice has a cost; the ending resolves that cost without sermonizing",
+      "adultAudience": "Curious adult learner, no stereotype-based personalization",
+      "noCopying": "Original roles, scene order, exact dialogue, lyric melody and production identity; never mimic a named living performer"
+    },
+    "audience": "Adult interpreters in training; mature warmth and wit, without gender or cultural stereotypes.",
+    "primarySkill": "attribution",
+    "termIds": [
+      "L0014",
+      "L0074",
+      "L0041",
+      "L0073",
+      "L0042",
+      "L0093"
+    ],
+    "sourceIds": [
+      "OJD_GLOSS"
+    ],
+    "knowledge": [
+      {
+        "id": "L0014",
+        "en": "witness",
+        "es": "testigo",
+        "context": "Person who gives relevant evidence or testimony.",
+        "caution": "",
+        "review": "needs_professional_bilingual_and_domain_review",
+        "source_id": "OJD_GLOSS",
+        "groundingReason": "editorial-topic-anchor:witness"
+      },
+      {
+        "id": "L0074",
+        "en": "testimony",
+        "es": "testimonio",
+        "context": "Evidence given orally by witness under oath.",
+        "caution": "",
+        "review": "needs_professional_bilingual_and_domain_review",
+        "source_id": "OJD_GLOSS",
+        "groundingReason": "editorial-topic-anchor:testimony"
+      },
+      {
+        "id": "L0041",
+        "en": "affidavit",
+        "es": "declaración jurada",
+        "context": "Written sworn statement.",
+        "caution": "Juramentada is also accepted.",
+        "review": "needs_professional_bilingual_and_domain_review",
+        "source_id": "OJD_GLOSS",
+        "groundingReason": "editorial-topic-anchor:affidavit"
+      },
+      {
+        "id": "L0073",
+        "en": "evidence",
+        "es": "prueba",
+        "context": "Information or objects used to establish facts.",
+        "caution": "Evidencia widely used but evidence has procedural meaning.",
+        "review": "needs_professional_bilingual_and_domain_review",
+        "source_id": "OJD_GLOSS",
+        "groundingReason": "editorial-topic-anchor:evidence"
+      },
+      {
+        "id": "L0042",
+        "en": "declaration",
+        "es": "declaración",
+        "context": "Formal statement, sometimes under penalty of perjury.",
+        "caution": "Not always sworn before notary.",
+        "review": "needs_professional_bilingual_and_domain_review",
+        "source_id": "OJD_GLOSS",
+        "groundingReason": "editorial-topic-anchor:declaration"
+      },
+      {
+        "id": "L0093",
+        "en": "credibility",
+        "es": "credibilidad",
+        "context": "Believability of evidence or witness.",
+        "caution": "",
+        "review": "needs_professional_bilingual_and_domain_review",
+        "source_id": "OJD_GLOSS",
+        "groundingReason": "editorial-topic-anchor:credibility"
+      }
+    ],
+    "brief": "A 3-person spoken interpreting simulation: source utterance, plausible incorrect interpretation, intervention, repair and continuation. Error is subtle but significant.",
+    "deliverable": "multiple turns, verbatim source and interpreted lines, exactly specified erroneous claims, correction, cue timing plan",
+    "minWords": 230,
+    "editorialConstraint": "Every important topic must be grounded in the selected domain. Treat clinical/legal guidance as provisional; write character-driven entertainment with truthful, explicitly fictional interpretation repairs.",
+    "review": "Every bilingual interpretation is a draft until reviewed by a qualified bilingual practitioner.",
+    "audioPolicy": "Author text, timing, sound-design and casting manifests now. Never call a transcription API a speech synthesizer; do not assert audio exists until ingested."
+  },
+  {
+    "id": "audio-drama-medical-23",
+    "kind": "audio-drama",
+    "topic": "conditional",
+    "domain": "medical",
+    "direction": "en-es",
+    "creativeDNA": {
+      "version": 1,
+      "world": "a small neighborhood print shop at closing time",
+      "soundscape": "slow photocopier drum, paper cutter, shop bell",
+      "stakes": "a printed claim is repeated as if it were official approval",
+      "tone": "warm ensemble comedy with a melancholy undertow",
+      "comicRhythm": "understated conversational reversals and long affectionate pauses",
+      "music": "acoustic score only where it advances emotion",
+      "musicalHook": "use near-silence rather than constant underscores",
+      "choiceProblem": "How a subtle conditional distinction changes a credible medical situation",
+      "emotionalTurn": "An initially sensible choice has a cost; the ending resolves that cost without sermonizing",
+      "adultAudience": "Curious adult learner, no stereotype-based personalization",
+      "noCopying": "Original roles, scene order, exact dialogue, lyric melody and production identity; never mimic a named living performer"
+    },
+    "audience": "Adult interpreters in training; mature warmth and wit, without gender or cultural stereotypes.",
+    "primarySkill": "conditional",
+    "termIds": [
+      "M0129",
+      "M0119",
+      "M0143",
+      "M0142",
+      "M0060"
+    ],
+    "sourceIds": [
+      "MEDLINE_MEDICINES",
+      "MEDLINE_TOPICS"
+    ],
+    "knowledge": [
+      {
+        "id": "M0129",
+        "en": "as needed",
+        "es": "según sea necesario",
+        "context": "Medication only when indicated by need.",
+        "caution": "PRN; preserve indication and limits.",
+        "review": "needs_professional_bilingual_and_domain_review",
+        "source_id": "MEDLINE_MEDICINES",
+        "groundingReason": "editorial-topic-anchor:as needed"
+      },
+      {
+        "id": "M0119",
+        "en": "dose",
+        "es": "dosis",
+        "context": "Amount of medication given at one time.",
+        "caution": "Distinguish from frequency.",
+        "review": "needs_professional_bilingual_and_domain_review",
+        "source_id": "MEDLINE_MEDICINES",
+        "groundingReason": "editorial-topic-anchor:dose"
+      },
+      {
+        "id": "M0143",
+        "en": "follow-up appointment",
+        "es": "cita de seguimiento",
+        "context": "Later visit to review progress.",
+        "caution": "",
+        "review": "needs_professional_bilingual_and_domain_review",
+        "source_id": "MEDLINE_MEDICINES",
+        "groundingReason": "editorial-topic-anchor:follow-up"
+      },
+      {
+        "id": "M0142",
+        "en": "discharge instructions",
+        "es": "instrucciones al alta",
+        "context": "Directions provided when leaving care.",
+        "caution": "Discharge can also mean secretion (secreción).",
+        "review": "needs_professional_bilingual_and_domain_review",
+        "source_id": "MEDLINE_MEDICINES",
+        "groundingReason": "editorial-topic-anchor:discharge instructions"
+      },
+      {
+        "id": "M0060",
+        "en": "side effect",
+        "es": "efecto secundario",
+        "context": "Effect of treatment other than the intended one.",
+        "caution": "Not the same as allergic reaction.",
+        "review": "needs_professional_bilingual_and_domain_review",
+        "source_id": "MEDLINE_TOPICS",
+        "groundingReason": "editorial-topic-anchor:side effect"
+      }
+    ],
+    "brief": "An original episodic audio drama with recurring adult characters, dry humor, layered motives, escalating stakes, believable speech, a satisfying ending and an episode hook.",
+    "deliverable": "full script with dialogue, SFX and music cues, characters, glossary, error moments and scene durations",
+    "minWords": 600,
+    "editorialConstraint": "Every important topic must be grounded in the selected domain. Treat clinical/legal guidance as provisional; write character-driven entertainment with truthful, explicitly fictional interpretation repairs.",
+    "review": "Every bilingual interpretation is a draft until reviewed by a qualified bilingual practitioner.",
+    "audioPolicy": "Author text, timing, sound-design and casting manifests now. Never call a transcription API a speech synthesizer; do not assert audio exists until ingested."
+  },
+  {
+    "id": "audio-mystery-legal-24",
+    "kind": "audio-mystery",
+    "topic": "eviction",
+    "domain": "legal",
+    "direction": "en-es",
+    "creativeDNA": {
+      "version": 1,
+      "world": "a public library book club after an unexpected blackout",
+      "soundscape": "paper pages, emergency lamp click, distant thunder",
+      "stakes": "one borrowed story has acquired an extra witness",
+      "tone": "small domestic adventure with quiet stakes",
+      "comicRhythm": "a callback object changes meaning late in the scene",
+      "music": "acoustic score only where it advances emotion",
+      "musicalHook": "use near-silence rather than constant underscores",
+      "choiceProblem": "How a subtle eviction distinction changes a credible legal situation",
+      "emotionalTurn": "An initially sensible choice has a cost; the ending resolves that cost without sermonizing",
+      "adultAudience": "Curious adult learner, no stereotype-based personalization",
+      "noCopying": "Original roles, scene order, exact dialogue, lyric melody and production identity; never mimic a named living performer"
+    },
+    "audience": "Adult interpreters in training; mature warmth and wit, without gender or cultural stereotypes.",
+    "primarySkill": "eviction",
+    "termIds": [
+      "L0153",
+      "L0331",
+      "L0329",
+      "L0333",
+      "L0332",
+      "L0341",
+      "L0152"
+    ],
+    "sourceIds": [
+      "OREGON_ORS",
+      "OJD_EVICTION"
+    ],
+    "knowledge": [
+      {
+        "id": "L0153",
+        "en": "eviction",
+        "es": "desalojo judicial",
+        "context": "Legal process removing occupant from property.",
+        "caution": "Oregon residential eviction procedure has specific steps.",
+        "review": "needs_professional_bilingual_and_domain_review",
+        "source_id": "OREGON_ORS",
+        "groundingReason": "editorial-topic-anchor:eviction"
+      },
+      {
+        "id": "L0331",
+        "en": "first eviction hearing",
+        "es": "primera comparecencia en desalojo",
+        "context": "Initial scheduled court appearance in FED action.",
+        "caution": "Missing it can have procedural consequences.",
+        "review": "needs_professional_bilingual_and_domain_review",
+        "source_id": "OJD_EVICTION",
+        "groundingReason": "editorial-topic-anchor:eviction hearing"
+      },
+      {
+        "id": "L0329",
+        "en": "residential eviction complaint",
+        "es": "demanda de desalojo de vivienda",
+        "context": "Court filing asking to remove a residential tenant.",
+        "caution": "Not the prior notice to vacate.",
+        "review": "needs_professional_bilingual_and_domain_review",
+        "source_id": "OJD_EVICTION",
+        "groundingReason": "editorial-topic-anchor:residential eviction complaint"
+      },
+      {
+        "id": "L0333",
+        "en": "judgment of restitution",
+        "es": "sentencia de restitución de posesión",
+        "context": "Judgment awarding possession to landlord.",
+        "caution": "Not monetary restitution in criminal case.",
+        "review": "needs_professional_bilingual_and_domain_review",
+        "source_id": "OJD_EVICTION",
+        "groundingReason": "editorial-topic-anchor:judgment of restitution"
+      },
+      {
+        "id": "L0332",
+        "en": "stipulated eviction agreement",
+        "es": "acuerdo estipulado de desalojo",
+        "context": "Court agreement setting obligations for case resolution.",
+        "caution": "Do not describe as voluntary without full context.",
+        "review": "needs_professional_bilingual_and_domain_review",
+        "source_id": "OJD_EVICTION",
+        "groundingReason": "term-title-topic-match:eviction"
+      },
+      {
+        "id": "L0341",
+        "en": "retaliatory eviction",
+        "es": "desalojo en represalia",
+        "context": "Eviction alleged in response to protected tenant conduct.",
+        "caution": "Whether unlawful depends on facts and statute.",
+        "review": "needs_professional_bilingual_and_domain_review",
+        "source_id": "OJD_EVICTION",
+        "groundingReason": "term-title-topic-match:eviction"
+      },
+      {
+        "id": "L0152",
+        "en": "notice to vacate",
+        "es": "aviso para desocupar",
+        "context": "Notice relating to ending occupancy.",
+        "caution": "Does not by itself mean court eviction order.",
+        "review": "needs_professional_bilingual_and_domain_review",
+        "source_id": "OREGON_ORS",
+        "groundingReason": "editorial-topic-anchor:notice to vacate"
+      }
+    ],
+    "brief": "An uncanny choice-driven audio mystery where chronology, probability, attribution, or negation changes the outcome. At least three meaningful choices.",
+    "deliverable": "complete reachable branch-node graph, dialogue, cues, alternate conclusions",
+    "minWords": 500,
+    "editorialConstraint": "Every important topic must be grounded in the selected domain. Treat clinical/legal guidance as provisional; write character-driven entertainment with truthful, explicitly fictional interpretation repairs.",
+    "review": "Every bilingual interpretation is a draft until reviewed by a qualified bilingual practitioner.",
+    "audioPolicy": "Author text, timing, sound-design and casting manifests now. Never call a transcription API a speech synthesizer; do not assert audio exists until ingested."
+  },
+  {
+    "id": "podcast-medical-25",
+    "kind": "podcast",
+    "topic": "negation",
+    "domain": "medical",
+    "direction": "en-es",
+    "creativeDNA": {
+      "version": 1,
+      "world": "a sewing-machine repair studio beside a bakery",
+      "soundscape": "wheel turning by hand, bakery tins, kettle whistle",
+      "stakes": "a conditional promise is mistaken for an agreement",
+      "tone": "fast, humane call-in radio with competing interpretations",
+      "comicRhythm": "a spirited host and an unexpectedly precise caller",
+      "music": "acoustic score only where it advances emotion",
+      "musicalHook": "use near-silence rather than constant underscores",
+      "choiceProblem": "How a subtle negation distinction changes a credible medical situation",
+      "emotionalTurn": "An initially sensible choice has a cost; the ending resolves that cost without sermonizing",
+      "adultAudience": "Curious adult learner, no stereotype-based personalization",
+      "noCopying": "Original roles, scene order, exact dialogue, lyric melody and production identity; never mimic a named living performer"
+    },
+    "audience": "Adult interpreters in training; mature warmth and wit, without gender or cultural stereotypes.",
+    "primarySkill": "negation",
+    "termIds": [
+      "M0038",
+      "M0087",
+      "M0129",
+      "M0119",
+      "M0060"
+    ],
+    "sourceIds": [
+      "MEDLINE_TOPICS",
+      "MEDLINE_MEDICINES"
+    ],
+    "knowledge": [
+      {
+        "id": "M0038",
+        "en": "pain",
+        "es": "dolor",
+        "context": "Unpleasant physical sensation that must be located and described.",
+        "caution": "",
+        "review": "needs_professional_bilingual_and_domain_review",
+        "source_id": "MEDLINE_TOPICS",
+        "groundingReason": "editorial-topic-anchor:pain"
+      },
+      {
+        "id": "M0087",
+        "en": "symptom",
+        "es": "síntoma",
+        "context": "Problem experienced by patient.",
+        "caution": "",
+        "review": "needs_professional_bilingual_and_domain_review",
+        "source_id": "MEDLINE_TOPICS",
+        "groundingReason": "editorial-topic-anchor:symptom"
+      },
+      {
+        "id": "M0129",
+        "en": "as needed",
+        "es": "según sea necesario",
+        "context": "Medication only when indicated by need.",
+        "caution": "PRN; preserve indication and limits.",
+        "review": "needs_professional_bilingual_and_domain_review",
+        "source_id": "MEDLINE_MEDICINES",
+        "groundingReason": "editorial-topic-anchor:as needed"
+      },
+      {
+        "id": "M0119",
+        "en": "dose",
+        "es": "dosis",
+        "context": "Amount of medication given at one time.",
+        "caution": "Distinguish from frequency.",
+        "review": "needs_professional_bilingual_and_domain_review",
+        "source_id": "MEDLINE_MEDICINES",
+        "groundingReason": "editorial-topic-anchor:dose"
+      },
+      {
+        "id": "M0060",
+        "en": "side effect",
+        "es": "efecto secundario",
+        "context": "Effect of treatment other than the intended one.",
+        "caution": "Not the same as allergic reaction.",
+        "review": "needs_professional_bilingual_and_domain_review",
+        "source_id": "MEDLINE_TOPICS",
+        "groundingReason": "editorial-topic-anchor:side effect"
+      }
+    ],
+    "brief": "Friendly original talk-show, interview or call-in podcast episode with authentic host dynamics and memorable examples.",
+    "deliverable": "complete host/guest script, scene breaks, actionable listening prompts",
+    "minWords": 650,
+    "editorialConstraint": "Every important topic must be grounded in the selected domain. Treat clinical/legal guidance as provisional; write character-driven entertainment with truthful, explicitly fictional interpretation repairs.",
+    "review": "Every bilingual interpretation is a draft until reviewed by a qualified bilingual practitioner.",
+    "audioPolicy": "Author text, timing, sound-design and casting manifests now. Never call a transcription API a speech synthesizer; do not assert audio exists until ingested."
+  },
+  {
+    "id": "story-legal-26",
+    "kind": "story",
+    "topic": "frequency",
+    "domain": "legal",
+    "direction": "en-es",
+    "creativeDNA": {
+      "version": 1,
+      "world": "a small neighborhood print shop at closing time",
+      "soundscape": "slow photocopier drum, paper cutter, shop bell",
+      "stakes": "a printed claim is repeated as if it were official approval",
+      "tone": "fast, humane call-in radio with competing interpretations",
+      "comicRhythm": "a spirited host and an unexpectedly precise caller",
+      "music": "acoustic score only where it advances emotion",
+      "musicalHook": "use near-silence rather than constant underscores",
+      "choiceProblem": "How a subtle frequency distinction changes a credible legal situation",
+      "emotionalTurn": "An initially sensible choice has a cost; the ending resolves that cost without sermonizing",
+      "adultAudience": "Curious adult learner, no stereotype-based personalization",
+      "noCopying": "Original roles, scene order, exact dialogue, lyric melody and production identity; never mimic a named living performer"
+    },
+    "audience": "Adult interpreters in training; mature warmth and wit, without gender or cultural stereotypes.",
+    "primarySkill": "frequency",
+    "termIds": [
+      "L0046",
+      "L0044",
+      "L0037",
+      "L0033",
+      "L0023"
+    ],
+    "sourceIds": [
+      "OJD_GLOSS"
+    ],
+    "knowledge": [
+      {
+        "id": "L0046",
+        "en": "deadline",
+        "es": "fecha límite",
+        "context": "Last permitted time for an action.",
+        "caution": "Preserve precise calendar date and clock time.",
+        "review": "needs_professional_bilingual_and_domain_review",
+        "source_id": "OJD_GLOSS",
+        "groundingReason": "editorial-topic-anchor:deadline"
+      },
+      {
+        "id": "L0044",
+        "en": "continuance",
+        "es": "aplazamiento",
+        "context": "Postponement of hearing or proceeding.",
+        "caution": "Not necessarily dismissal.",
+        "review": "needs_professional_bilingual_and_domain_review",
+        "source_id": "OJD_GLOSS",
+        "groundingReason": "editorial-topic-anchor:continuance"
+      },
+      {
+        "id": "L0037",
+        "en": "filing",
+        "es": "presentación de documentos",
+        "context": "Submission of papers to court clerk.",
+        "caution": "",
+        "review": "needs_professional_bilingual_and_domain_review",
+        "source_id": "OJD_GLOSS",
+        "groundingReason": "editorial-topic-anchor:filing"
+      },
+      {
+        "id": "L0033",
+        "en": "notice",
+        "es": "notificación",
+        "context": "Formal communication of case action or hearing.",
+        "caution": "",
+        "review": "needs_professional_bilingual_and_domain_review",
+        "source_id": "OJD_GLOSS",
+        "groundingReason": "editorial-topic-anchor:notice"
+      },
+      {
+        "id": "L0023",
+        "en": "hearing",
+        "es": "audiencia",
+        "context": "Scheduled proceeding before a court or adjudicator.",
+        "caution": "Not simply listening/audición.",
+        "review": "needs_professional_bilingual_and_domain_review",
+        "source_id": "OJD_GLOSS",
+        "groundingReason": "editorial-topic-anchor:hearing"
+      }
+    ],
+    "brief": "An emotionally engaging, warm and surprising standalone narrative, told as entertainment rather than instructional prose.",
+    "deliverable": "complete narrative, characters, voice narration beats and learning takeaway",
+    "minWords": 450,
+    "editorialConstraint": "Every important topic must be grounded in the selected domain. Treat clinical/legal guidance as provisional; write character-driven entertainment with truthful, explicitly fictional interpretation repairs.",
+    "review": "Every bilingual interpretation is a draft until reviewed by a qualified bilingual practitioner.",
+    "audioPolicy": "Author text, timing, sound-design and casting manifests now. Never call a transcription API a speech synthesizer; do not assert audio exists until ingested."
+  },
+  {
+    "id": "song-medical-27",
+    "kind": "song",
+    "topic": "uncertainty",
+    "domain": "medical",
+    "direction": "en-es",
+    "creativeDNA": {
+      "version": 1,
+      "world": "an intercity bus terminal during a rainstorm",
+      "soundscape": "receding bus brakes, zipper, rain on shelter glass",
+      "stakes": "a misheard date threatens someone’s carefully saved travel plan",
+      "tone": "fast, humane call-in radio with competing interpretations",
+      "comicRhythm": "a spirited host and an unexpectedly precise caller",
+      "music": "intimate bolero with brushed percussion and nylon guitar",
+      "musicalHook": "a chorus that adds one twist on its second repetition",
+      "choiceProblem": "How a subtle uncertainty distinction changes a credible medical situation",
+      "emotionalTurn": "An initially sensible choice has a cost; the ending resolves that cost without sermonizing",
+      "adultAudience": "Curious adult learner, no stereotype-based personalization",
+      "noCopying": "Original roles, scene order, exact dialogue, lyric melody and production identity; never mimic a named living performer"
+    },
+    "audience": "Adult interpreters in training; mature warmth and wit, without gender or cultural stereotypes.",
+    "primarySkill": "uncertainty",
+    "termIds": [
+      "M0229",
+      "M0031",
+      "M0087",
+      "M0032",
+      "M0086"
+    ],
+    "sourceIds": [
+      "MEDLINE_TOPICS"
+    ],
+    "knowledge": [
+      {
+        "id": "M0229",
+        "en": "patient-reported",
+        "es": "según lo informado por el paciente",
+        "context": "Information attributed to patient, not independently confirmed.",
+        "caution": "Avoid changing 'reports' into 'diagnosed'.",
+        "review": "needs_professional_bilingual_and_domain_review",
+        "source_id": "MEDLINE_TOPICS",
+        "groundingReason": "editorial-topic-anchor:patient-reported"
+      },
+      {
+        "id": "M0031",
+        "en": "chief complaint",
+        "es": "motivo principal de consulta",
+        "context": "Main reason for seeking care.",
+        "caution": "Do not confuse complaint with a formal grievance.",
+        "review": "needs_professional_bilingual_and_domain_review",
+        "source_id": "MEDLINE_TOPICS",
+        "groundingReason": "editorial-topic-anchor:chief complaint"
+      },
+      {
+        "id": "M0087",
+        "en": "symptom",
+        "es": "síntoma",
+        "context": "Problem experienced by patient.",
+        "caution": "",
+        "review": "needs_professional_bilingual_and_domain_review",
+        "source_id": "MEDLINE_TOPICS",
+        "groundingReason": "editorial-topic-anchor:symptom"
+      },
+      {
+        "id": "M0032",
+        "en": "medical history",
+        "es": "antecedentes médicos",
+        "context": "Past and present information relevant to care.",
+        "caution": "",
+        "review": "needs_professional_bilingual_and_domain_review",
+        "source_id": "MEDLINE_TOPICS",
+        "groundingReason": "editorial-topic-anchor:medical history"
+      },
+      {
+        "id": "M0086",
+        "en": "diagnosis",
+        "es": "diagnóstico",
+        "context": "Identification of condition based on assessment.",
+        "caution": "Distinguish suspected from confirmed diagnosis.",
+        "review": "needs_professional_bilingual_and_domain_review",
+        "source_id": "MEDLINE_TOPICS",
+        "groundingReason": "editorial-topic-anchor:diagnosis"
+      }
+    ],
+    "brief": "Memorable original Spanish-language song using elegant or witty metaphor, with meaningful chorus, emotional arc, varied rhyme and singable lines.",
+    "deliverable": "complete original lyrics, production concept, <=1000-character Suno prompt, curriculum connections",
+    "minWords": 140,
+    "editorialConstraint": "Every important topic must be grounded in the selected domain. Treat clinical/legal guidance as provisional; write character-driven entertainment with truthful, explicitly fictional interpretation repairs.",
+    "review": "Every bilingual interpretation is a draft until reviewed by a qualified bilingual practitioner.",
+    "audioPolicy": "Author text, timing, sound-design and casting manifests now. Never call a transcription API a speech synthesizer; do not assert audio exists until ingested."
+  },
+  {
+    "id": "film-legal-28",
+    "kind": "film",
+    "topic": "informed consent",
+    "domain": "legal",
+    "direction": "en-es",
+    "creativeDNA": {
+      "version": 1,
+      "world": "a community theater rehearsing a one-night show",
+      "soundscape": "footsteps on empty stage, distant curtain pulley, rehearsal clap",
+      "stakes": "the performer must reveal a mistake without ruining the show",
+      "tone": "fast, humane call-in radio with competing interpretations",
+      "comicRhythm": "a spirited host and an unexpectedly precise caller",
+      "music": "acoustic score only where it advances emotion",
+      "musicalHook": "use near-silence rather than constant underscores",
+      "choiceProblem": "How a subtle informed consent distinction changes a credible legal situation",
+      "emotionalTurn": "An initially sensible choice has a cost; the ending resolves that cost without sermonizing",
+      "adultAudience": "Curious adult learner, no stereotype-based personalization",
+      "noCopying": "Original roles, scene order, exact dialogue, lyric melody and production identity; never mimic a named living performer"
+    },
+    "audience": "Adult interpreters in training; mature warmth and wit, without gender or cultural stereotypes.",
+    "primarySkill": "informed consent",
+    "termIds": [
+      "L0098",
+      "L0094",
+      "L0248",
+      "L0065",
+      "L0063"
+    ],
+    "sourceIds": [
+      "OJD_ETHICS",
+      "OPDC_GUIDE",
+      "OJD_GLOSS"
+    ],
+    "knowledge": [
+      {
+        "id": "L0098",
+        "en": "waiver",
+        "es": "renuncia voluntaria a un derecho",
+        "context": "Intentional relinquishment of a legal right.",
+        "caution": "Validity depends on informed and voluntary nature.",
+        "review": "needs_professional_bilingual_and_domain_review",
+        "source_id": "OJD_ETHICS",
+        "groundingReason": "editorial-topic-anchor:waiver"
+      },
+      {
+        "id": "L0094",
+        "en": "right to counsel",
+        "es": "derecho a un abogado",
+        "context": "Right to legal representation in applicable proceeding.",
+        "caution": "Scope depends on type of case.",
+        "review": "needs_professional_bilingual_and_domain_review",
+        "source_id": "OJD_ETHICS",
+        "groundingReason": "editorial-topic-anchor:right to counsel"
+      },
+      {
+        "id": "L0248",
+        "en": "plea colloquy",
+        "es": "interrogatorio judicial sobre declaración de culpabilidad",
+        "context": "Judge's questions to assess a plea.",
+        "caution": "Not the same as witness testimony.",
+        "review": "needs_professional_bilingual_and_domain_review",
+        "source_id": "OPDC_GUIDE",
+        "groundingReason": "editorial-topic-anchor:plea colloquy"
+      },
+      {
+        "id": "L0065",
+        "en": "plea agreement",
+        "es": "acuerdo de culpabilidad",
+        "context": "Negotiated resolution of criminal charge.",
+        "caution": "Acuerdo de declaración de culpabilidad.",
+        "review": "needs_professional_bilingual_and_domain_review",
+        "source_id": "OJD_GLOSS",
+        "groundingReason": "editorial-topic-anchor:plea agreement"
+      },
+      {
+        "id": "L0063",
+        "en": "not guilty plea",
+        "es": "declaración de no culpabilidad",
+        "context": "Formal response denying guilt for purposes of case.",
+        "caution": "Not necessarily assertion of factual innocence.",
+        "review": "needs_professional_bilingual_and_domain_review",
+        "source_id": "OJD_GLOSS",
+        "groundingReason": "editorial-topic-anchor:not guilty plea"
+      }
+    ],
+    "brief": "An emotionally vivid short film with striking situation, audible dialogue and visual punchline. Realistic iPhone production strategy.",
+    "deliverable": "complete script, timecoded storyboard, captions, iPhone production directions; mark video pending",
+    "minWords": 180,
+    "editorialConstraint": "Every important topic must be grounded in the selected domain. Treat clinical/legal guidance as provisional; write character-driven entertainment with truthful, explicitly fictional interpretation repairs.",
+    "review": "Every bilingual interpretation is a draft until reviewed by a qualified bilingual practitioner.",
+    "audioPolicy": "Author text, timing, sound-design and casting manifests now. Never call a transcription API a speech synthesizer; do not assert audio exists until ingested."
+  },
+  {
+    "id": "catch-the-change-medical-29",
+    "kind": "catch-the-change",
+    "topic": "hearing",
+    "domain": "medical",
+    "direction": "en-es",
+    "creativeDNA": {
+      "version": 1,
+      "world": "a rooftop garden shared by unlikely neighbors",
+      "soundscape": "wind in bamboo stakes, watering can, distant city buses",
+      "stakes": "an unreliable account threatens a friendship",
+      "tone": "warm ensemble comedy with a melancholy undertow",
+      "comicRhythm": "understated conversational reversals and long affectionate pauses",
+      "music": "acoustic score only where it advances emotion",
+      "musicalHook": "use near-silence rather than constant underscores",
+      "choiceProblem": "How a subtle hearing distinction changes a credible medical situation",
+      "emotionalTurn": "An initially sensible choice has a cost; the ending resolves that cost without sermonizing",
+      "adultAudience": "Curious adult learner, no stereotype-based personalization",
+      "noCopying": "Original roles, scene order, exact dialogue, lyric melody and production identity; never mimic a named living performer"
+    },
+    "audience": "Adult interpreters in training; mature warmth and wit, without gender or cultural stereotypes.",
+    "primarySkill": "hearing",
+    "termIds": [
+      "M0404",
+      "M0405"
+    ],
+    "sourceIds": [
+      "MEDLINE_TOPICS"
+    ],
+    "knowledge": [
+      {
+        "id": "M0404",
+        "en": "hearing loss",
+        "es": "pérdida auditiva",
+        "context": "Reduced ability to hear sounds.",
+        "caution": "",
+        "review": "needs_professional_bilingual_and_domain_review",
+        "source_id": "MEDLINE_TOPICS",
+        "groundingReason": "editorial-topic-anchor:hearing loss"
+      },
+      {
+        "id": "M0405",
+        "en": "hearing aid",
+        "es": "audífono",
+        "context": "Device amplifying sound.",
+        "caution": "In some regions audífonos means headphones; context matters.",
+        "review": "needs_professional_bilingual_and_domain_review",
+        "source_id": "MEDLINE_TOPICS",
+        "groundingReason": "editorial-topic-anchor:hearing aid"
+      }
+    ],
+    "brief": "A 3-person spoken interpreting simulation: source utterance, plausible incorrect interpretation, intervention, repair and continuation. Error is subtle but significant.",
+    "deliverable": "multiple turns, verbatim source and interpreted lines, exactly specified erroneous claims, correction, cue timing plan",
+    "minWords": 230,
+    "editorialConstraint": "Every important topic must be grounded in the selected domain. Treat clinical/legal guidance as provisional; write character-driven entertainment with truthful, explicitly fictional interpretation repairs.",
+    "review": "Every bilingual interpretation is a draft until reviewed by a qualified bilingual practitioner.",
+    "audioPolicy": "Author text, timing, sound-design and casting manifests now. Never call a transcription API a speech synthesizer; do not assert audio exists until ingested."
+  },
+  {
+    "id": "audio-drama-legal-30",
+    "kind": "audio-drama",
+    "topic": "attribution",
+    "domain": "legal",
+    "direction": "en-es",
+    "creativeDNA": {
+      "version": 1,
+      "world": "an independent late-night community radio booth",
+      "soundscape": "phone-line click, breathing room tone, out-of-tune station ident",
+      "stakes": "a public correction threatens the host’s credibility",
+      "tone": "warm ensemble comedy with a melancholy undertow",
+      "comicRhythm": "understated conversational reversals and long affectionate pauses",
+      "music": "acoustic score only where it advances emotion",
+      "musicalHook": "use near-silence rather than constant underscores",
+      "choiceProblem": "How a subtle attribution distinction changes a credible legal situation",
+      "emotionalTurn": "An initially sensible choice has a cost; the ending resolves that cost without sermonizing",
+      "adultAudience": "Curious adult learner, no stereotype-based personalization",
+      "noCopying": "Original roles, scene order, exact dialogue, lyric melody and production identity; never mimic a named living performer"
+    },
+    "audience": "Adult interpreters in training; mature warmth and wit, without gender or cultural stereotypes.",
+    "primarySkill": "attribution",
+    "termIds": [
+      "L0014",
+      "L0074",
+      "L0041",
+      "L0073",
+      "L0042",
+      "L0093"
+    ],
+    "sourceIds": [
+      "OJD_GLOSS"
+    ],
+    "knowledge": [
+      {
+        "id": "L0014",
+        "en": "witness",
+        "es": "testigo",
+        "context": "Person who gives relevant evidence or testimony.",
+        "caution": "",
+        "review": "needs_professional_bilingual_and_domain_review",
+        "source_id": "OJD_GLOSS",
+        "groundingReason": "editorial-topic-anchor:witness"
+      },
+      {
+        "id": "L0074",
+        "en": "testimony",
+        "es": "testimonio",
+        "context": "Evidence given orally by witness under oath.",
+        "caution": "",
+        "review": "needs_professional_bilingual_and_domain_review",
+        "source_id": "OJD_GLOSS",
+        "groundingReason": "editorial-topic-anchor:testimony"
+      },
+      {
+        "id": "L0041",
+        "en": "affidavit",
+        "es": "declaración jurada",
+        "context": "Written sworn statement.",
+        "caution": "Juramentada is also accepted.",
+        "review": "needs_professional_bilingual_and_domain_review",
+        "source_id": "OJD_GLOSS",
+        "groundingReason": "editorial-topic-anchor:affidavit"
+      },
+      {
+        "id": "L0073",
+        "en": "evidence",
+        "es": "prueba",
+        "context": "Information or objects used to establish facts.",
+        "caution": "Evidencia widely used but evidence has procedural meaning.",
+        "review": "needs_professional_bilingual_and_domain_review",
+        "source_id": "OJD_GLOSS",
+        "groundingReason": "editorial-topic-anchor:evidence"
+      },
+      {
+        "id": "L0042",
+        "en": "declaration",
+        "es": "declaración",
+        "context": "Formal statement, sometimes under penalty of perjury.",
+        "caution": "Not always sworn before notary.",
+        "review": "needs_professional_bilingual_and_domain_review",
+        "source_id": "OJD_GLOSS",
+        "groundingReason": "editorial-topic-anchor:declaration"
+      },
+      {
+        "id": "L0093",
+        "en": "credibility",
+        "es": "credibilidad",
+        "context": "Believability of evidence or witness.",
+        "caution": "",
+        "review": "needs_professional_bilingual_and_domain_review",
+        "source_id": "OJD_GLOSS",
+        "groundingReason": "editorial-topic-anchor:credibility"
+      }
+    ],
+    "brief": "An original episodic audio drama with recurring adult characters, dry humor, layered motives, escalating stakes, believable speech, a satisfying ending and an episode hook.",
+    "deliverable": "full script with dialogue, SFX and music cues, characters, glossary, error moments and scene durations",
+    "minWords": 600,
+    "editorialConstraint": "Every important topic must be grounded in the selected domain. Treat clinical/legal guidance as provisional; write character-driven entertainment with truthful, explicitly fictional interpretation repairs.",
+    "review": "Every bilingual interpretation is a draft until reviewed by a qualified bilingual practitioner.",
+    "audioPolicy": "Author text, timing, sound-design and casting manifests now. Never call a transcription API a speech synthesizer; do not assert audio exists until ingested."
+  },
+  {
+    "id": "audio-mystery-medical-31",
+    "kind": "audio-mystery",
+    "topic": "conditional",
+    "domain": "medical",
+    "direction": "en-es",
+    "creativeDNA": {
+      "version": 1,
+      "world": "a public library book club after an unexpected blackout",
+      "soundscape": "paper pages, emergency lamp click, distant thunder",
+      "stakes": "one borrowed story has acquired an extra witness",
+      "tone": "fast, humane call-in radio with competing interpretations",
+      "comicRhythm": "a spirited host and an unexpectedly precise caller",
+      "music": "acoustic score only where it advances emotion",
+      "musicalHook": "use near-silence rather than constant underscores",
+      "choiceProblem": "How a subtle conditional distinction changes a credible medical situation",
+      "emotionalTurn": "An initially sensible choice has a cost; the ending resolves that cost without sermonizing",
+      "adultAudience": "Curious adult learner, no stereotype-based personalization",
+      "noCopying": "Original roles, scene order, exact dialogue, lyric melody and production identity; never mimic a named living performer"
+    },
+    "audience": "Adult interpreters in training; mature warmth and wit, without gender or cultural stereotypes.",
+    "primarySkill": "conditional",
+    "termIds": [
+      "M0129",
+      "M0119",
+      "M0143",
+      "M0142",
+      "M0060"
+    ],
+    "sourceIds": [
+      "MEDLINE_MEDICINES",
+      "MEDLINE_TOPICS"
+    ],
+    "knowledge": [
+      {
+        "id": "M0129",
+        "en": "as needed",
+        "es": "según sea necesario",
+        "context": "Medication only when indicated by need.",
+        "caution": "PRN; preserve indication and limits.",
+        "review": "needs_professional_bilingual_and_domain_review",
+        "source_id": "MEDLINE_MEDICINES",
+        "groundingReason": "editorial-topic-anchor:as needed"
+      },
+      {
+        "id": "M0119",
+        "en": "dose",
+        "es": "dosis",
+        "context": "Amount of medication given at one time.",
+        "caution": "Distinguish from frequency.",
+        "review": "needs_professional_bilingual_and_domain_review",
+        "source_id": "MEDLINE_MEDICINES",
+        "groundingReason": "editorial-topic-anchor:dose"
+      },
+      {
+        "id": "M0143",
+        "en": "follow-up appointment",
+        "es": "cita de seguimiento",
+        "context": "Later visit to review progress.",
+        "caution": "",
+        "review": "needs_professional_bilingual_and_domain_review",
+        "source_id": "MEDLINE_MEDICINES",
+        "groundingReason": "editorial-topic-anchor:follow-up"
+      },
+      {
+        "id": "M0142",
+        "en": "discharge instructions",
+        "es": "instrucciones al alta",
+        "context": "Directions provided when leaving care.",
+        "caution": "Discharge can also mean secretion (secreción).",
+        "review": "needs_professional_bilingual_and_domain_review",
+        "source_id": "MEDLINE_MEDICINES",
+        "groundingReason": "editorial-topic-anchor:discharge instructions"
+      },
+      {
+        "id": "M0060",
+        "en": "side effect",
+        "es": "efecto secundario",
+        "context": "Effect of treatment other than the intended one.",
+        "caution": "Not the same as allergic reaction.",
+        "review": "needs_professional_bilingual_and_domain_review",
+        "source_id": "MEDLINE_TOPICS",
+        "groundingReason": "editorial-topic-anchor:side effect"
+      }
+    ],
+    "brief": "An uncanny choice-driven audio mystery where chronology, probability, attribution, or negation changes the outcome. At least three meaningful choices.",
+    "deliverable": "complete reachable branch-node graph, dialogue, cues, alternate conclusions",
+    "minWords": 500,
+    "editorialConstraint": "Every important topic must be grounded in the selected domain. Treat clinical/legal guidance as provisional; write character-driven entertainment with truthful, explicitly fictional interpretation repairs.",
+    "review": "Every bilingual interpretation is a draft until reviewed by a qualified bilingual practitioner.",
+    "audioPolicy": "Author text, timing, sound-design and casting manifests now. Never call a transcription API a speech synthesizer; do not assert audio exists until ingested."
+  },
+  {
+    "id": "podcast-legal-32",
+    "kind": "podcast",
+    "topic": "eviction",
+    "domain": "legal",
+    "direction": "en-es",
+    "creativeDNA": {
+      "version": 1,
+      "world": "a rooftop garden shared by unlikely neighbors",
+      "soundscape": "wind in bamboo stakes, watering can, distant city buses",
+      "stakes": "an unreliable account threatens a friendship",
+      "tone": "tender intergenerational dramedy about autonomy",
+      "comicRhythm": "warm self-deprecation and conflicting sensible plans",
+      "music": "acoustic score only where it advances emotion",
+      "musicalHook": "use near-silence rather than constant underscores",
+      "choiceProblem": "How a subtle eviction distinction changes a credible legal situation",
+      "emotionalTurn": "An initially sensible choice has a cost; the ending resolves that cost without sermonizing",
+      "adultAudience": "Curious adult learner, no stereotype-based personalization",
+      "noCopying": "Original roles, scene order, exact dialogue, lyric melody and production identity; never mimic a named living performer"
+    },
+    "audience": "Adult interpreters in training; mature warmth and wit, without gender or cultural stereotypes.",
+    "primarySkill": "eviction",
+    "termIds": [
+      "L0153",
+      "L0329",
+      "L0333",
+      "L0332",
+      "L0341",
+      "L0152",
+      "L0330"
+    ],
+    "sourceIds": [
+      "OREGON_ORS",
+      "OJD_EVICTION"
+    ],
+    "knowledge": [
+      {
+        "id": "L0153",
+        "en": "eviction",
+        "es": "desalojo judicial",
+        "context": "Legal process removing occupant from property.",
+        "caution": "Oregon residential eviction procedure has specific steps.",
+        "review": "needs_professional_bilingual_and_domain_review",
+        "source_id": "OREGON_ORS",
+        "groundingReason": "editorial-topic-anchor:eviction"
+      },
+      {
+        "id": "L0329",
+        "en": "residential eviction complaint",
+        "es": "demanda de desalojo de vivienda",
+        "context": "Court filing asking to remove a residential tenant.",
+        "caution": "Not the prior notice to vacate.",
+        "review": "needs_professional_bilingual_and_domain_review",
+        "source_id": "OJD_EVICTION",
+        "groundingReason": "editorial-topic-anchor:residential eviction complaint"
+      },
+      {
+        "id": "L0333",
+        "en": "judgment of restitution",
+        "es": "sentencia de restitución de posesión",
+        "context": "Judgment awarding possession to landlord.",
+        "caution": "Not monetary restitution in criminal case.",
+        "review": "needs_professional_bilingual_and_domain_review",
+        "source_id": "OJD_EVICTION",
+        "groundingReason": "editorial-topic-anchor:judgment of restitution"
+      },
+      {
+        "id": "L0332",
+        "en": "stipulated eviction agreement",
+        "es": "acuerdo estipulado de desalojo",
+        "context": "Court agreement setting obligations for case resolution.",
+        "caution": "Do not describe as voluntary without full context.",
+        "review": "needs_professional_bilingual_and_domain_review",
+        "source_id": "OJD_EVICTION",
+        "groundingReason": "term-title-topic-match:eviction"
+      },
+      {
+        "id": "L0341",
+        "en": "retaliatory eviction",
+        "es": "desalojo en represalia",
+        "context": "Eviction alleged in response to protected tenant conduct.",
+        "caution": "Whether unlawful depends on facts and statute.",
+        "review": "needs_professional_bilingual_and_domain_review",
+        "source_id": "OJD_EVICTION",
+        "groundingReason": "term-title-topic-match:eviction"
+      },
+      {
+        "id": "L0152",
+        "en": "notice to vacate",
+        "es": "aviso para desocupar",
+        "context": "Notice relating to ending occupancy.",
+        "caution": "Does not by itself mean court eviction order.",
+        "review": "needs_professional_bilingual_and_domain_review",
+        "source_id": "OREGON_ORS",
+        "groundingReason": "editorial-topic-anchor:notice to vacate"
+      },
+      {
+        "id": "L0330",
+        "en": "eviction summons",
+        "es": "citación judicial por desalojo",
+        "context": "Document calling tenant to eviction court.",
+        "caution": "",
+        "review": "needs_professional_bilingual_and_domain_review",
+        "source_id": "OJD_EVICTION",
+        "groundingReason": "editorial-topic-anchor:eviction summons"
+      }
+    ],
+    "brief": "Friendly original talk-show, interview or call-in podcast episode with authentic host dynamics and memorable examples.",
+    "deliverable": "complete host/guest script, scene breaks, actionable listening prompts",
+    "minWords": 650,
+    "editorialConstraint": "Every important topic must be grounded in the selected domain. Treat clinical/legal guidance as provisional; write character-driven entertainment with truthful, explicitly fictional interpretation repairs.",
+    "review": "Every bilingual interpretation is a draft until reviewed by a qualified bilingual practitioner.",
+    "audioPolicy": "Author text, timing, sound-design and casting manifests now. Never call a transcription API a speech synthesizer; do not assert audio exists until ingested."
+  },
+  {
+    "id": "story-medical-33",
+    "kind": "story",
+    "topic": "negation",
+    "domain": "medical",
+    "direction": "en-es",
+    "creativeDNA": {
+      "version": 1,
+      "world": "an intercity bus terminal during a rainstorm",
+      "soundscape": "receding bus brakes, zipper, rain on shelter glass",
+      "stakes": "a misheard date threatens someone’s carefully saved travel plan",
+      "tone": "warm ensemble comedy with a melancholy undertow",
+      "comicRhythm": "understated conversational reversals and long affectionate pauses",
+      "music": "acoustic score only where it advances emotion",
+      "musicalHook": "use near-silence rather than constant underscores",
+      "choiceProblem": "How a subtle negation distinction changes a credible medical situation",
+      "emotionalTurn": "An initially sensible choice has a cost; the ending resolves that cost without sermonizing",
+      "adultAudience": "Curious adult learner, no stereotype-based personalization",
+      "noCopying": "Original roles, scene order, exact dialogue, lyric melody and production identity; never mimic a named living performer"
+    },
+    "audience": "Adult interpreters in training; mature warmth and wit, without gender or cultural stereotypes.",
+    "primarySkill": "negation",
+    "termIds": [
+      "M0038",
+      "M0087",
+      "M0129",
+      "M0119",
+      "M0060"
+    ],
+    "sourceIds": [
+      "MEDLINE_TOPICS",
+      "MEDLINE_MEDICINES"
+    ],
+    "knowledge": [
+      {
+        "id": "M0038",
+        "en": "pain",
+        "es": "dolor",
+        "context": "Unpleasant physical sensation that must be located and described.",
+        "caution": "",
+        "review": "needs_professional_bilingual_and_domain_review",
+        "source_id": "MEDLINE_TOPICS",
+        "groundingReason": "editorial-topic-anchor:pain"
+      },
+      {
+        "id": "M0087",
+        "en": "symptom",
+        "es": "síntoma",
+        "context": "Problem experienced by patient.",
+        "caution": "",
+        "review": "needs_professional_bilingual_and_domain_review",
+        "source_id": "MEDLINE_TOPICS",
+        "groundingReason": "editorial-topic-anchor:symptom"
+      },
+      {
+        "id": "M0129",
+        "en": "as needed",
+        "es": "según sea necesario",
+        "context": "Medication only when indicated by need.",
+        "caution": "PRN; preserve indication and limits.",
+        "review": "needs_professional_bilingual_and_domain_review",
+        "source_id": "MEDLINE_MEDICINES",
+        "groundingReason": "editorial-topic-anchor:as needed"
+      },
+      {
+        "id": "M0119",
+        "en": "dose",
+        "es": "dosis",
+        "context": "Amount of medication given at one time.",
+        "caution": "Distinguish from frequency.",
+        "review": "needs_professional_bilingual_and_domain_review",
+        "source_id": "MEDLINE_MEDICINES",
+        "groundingReason": "editorial-topic-anchor:dose"
+      },
+      {
+        "id": "M0060",
+        "en": "side effect",
+        "es": "efecto secundario",
+        "context": "Effect of treatment other than the intended one.",
+        "caution": "Not the same as allergic reaction.",
+        "review": "needs_professional_bilingual_and_domain_review",
+        "source_id": "MEDLINE_TOPICS",
+        "groundingReason": "editorial-topic-anchor:side effect"
+      }
+    ],
+    "brief": "An emotionally engaging, warm and surprising standalone narrative, told as entertainment rather than instructional prose.",
+    "deliverable": "complete narrative, characters, voice narration beats and learning takeaway",
+    "minWords": 450,
+    "editorialConstraint": "Every important topic must be grounded in the selected domain. Treat clinical/legal guidance as provisional; write character-driven entertainment with truthful, explicitly fictional interpretation repairs.",
+    "review": "Every bilingual interpretation is a draft until reviewed by a qualified bilingual practitioner.",
+    "audioPolicy": "Author text, timing, sound-design and casting manifests now. Never call a transcription API a speech synthesizer; do not assert audio exists until ingested."
+  },
+  {
+    "id": "song-legal-34",
+    "kind": "song",
+    "topic": "frequency",
+    "domain": "legal",
+    "direction": "en-es",
+    "creativeDNA": {
+      "version": 1,
+      "world": "a sewing-machine repair studio beside a bakery",
+      "soundscape": "wheel turning by hand, bakery tins, kettle whistle",
+      "stakes": "a conditional promise is mistaken for an agreement",
+      "tone": "fast, humane call-in radio with competing interpretations",
+      "comicRhythm": "a spirited host and an unexpectedly precise caller",
+      "music": "Latin folk song with a small, human choir",
+      "musicalHook": "the last verse changes the emotional reading of the first",
+      "choiceProblem": "How a subtle frequency distinction changes a credible legal situation",
+      "emotionalTurn": "An initially sensible choice has a cost; the ending resolves that cost without sermonizing",
+      "adultAudience": "Curious adult learner, no stereotype-based personalization",
+      "noCopying": "Original roles, scene order, exact dialogue, lyric melody and production identity; never mimic a named living performer"
+    },
+    "audience": "Adult interpreters in training; mature warmth and wit, without gender or cultural stereotypes.",
+    "primarySkill": "frequency",
+    "termIds": [
+      "L0046",
+      "L0044",
+      "L0037",
+      "L0033",
+      "L0023"
+    ],
+    "sourceIds": [
+      "OJD_GLOSS"
+    ],
+    "knowledge": [
+      {
+        "id": "L0046",
+        "en": "deadline",
+        "es": "fecha límite",
+        "context": "Last permitted time for an action.",
+        "caution": "Preserve precise calendar date and clock time.",
+        "review": "needs_professional_bilingual_and_domain_review",
+        "source_id": "OJD_GLOSS",
+        "groundingReason": "editorial-topic-anchor:deadline"
+      },
+      {
+        "id": "L0044",
+        "en": "continuance",
+        "es": "aplazamiento",
+        "context": "Postponement of hearing or proceeding.",
+        "caution": "Not necessarily dismissal.",
+        "review": "needs_professional_bilingual_and_domain_review",
+        "source_id": "OJD_GLOSS",
+        "groundingReason": "editorial-topic-anchor:continuance"
+      },
+      {
+        "id": "L0037",
+        "en": "filing",
+        "es": "presentación de documentos",
+        "context": "Submission of papers to court clerk.",
+        "caution": "",
+        "review": "needs_professional_bilingual_and_domain_review",
+        "source_id": "OJD_GLOSS",
+        "groundingReason": "editorial-topic-anchor:filing"
+      },
+      {
+        "id": "L0033",
+        "en": "notice",
+        "es": "notificación",
+        "context": "Formal communication of case action or hearing.",
+        "caution": "",
+        "review": "needs_professional_bilingual_and_domain_review",
+        "source_id": "OJD_GLOSS",
+        "groundingReason": "editorial-topic-anchor:notice"
+      },
+      {
+        "id": "L0023",
+        "en": "hearing",
+        "es": "audiencia",
+        "context": "Scheduled proceeding before a court or adjudicator.",
+        "caution": "Not simply listening/audición.",
+        "review": "needs_professional_bilingual_and_domain_review",
+        "source_id": "OJD_GLOSS",
+        "groundingReason": "editorial-topic-anchor:hearing"
+      }
+    ],
+    "brief": "Memorable original Spanish-language song using elegant or witty metaphor, with meaningful chorus, emotional arc, varied rhyme and singable lines.",
+    "deliverable": "complete original lyrics, production concept, <=1000-character Suno prompt, curriculum connections",
+    "minWords": 140,
+    "editorialConstraint": "Every important topic must be grounded in the selected domain. Treat clinical/legal guidance as provisional; write character-driven entertainment with truthful, explicitly fictional interpretation repairs.",
+    "review": "Every bilingual interpretation is a draft until reviewed by a qualified bilingual practitioner.",
+    "audioPolicy": "Author text, timing, sound-design and casting manifests now. Never call a transcription API a speech synthesizer; do not assert audio exists until ingested."
+  },
+  {
+    "id": "film-medical-35",
+    "kind": "film",
+    "topic": "uncertainty",
+    "domain": "medical",
+    "direction": "en-es",
+    "creativeDNA": {
+      "version": 1,
+      "world": "a public library book club after an unexpected blackout",
+      "soundscape": "paper pages, emergency lamp click, distant thunder",
+      "stakes": "one borrowed story has acquired an extra witness",
+      "tone": "soft speculative fiction grounded in real human choices",
+      "comicRhythm": "one absurd rule is treated with ordinary practicality",
+      "music": "acoustic score only where it advances emotion",
+      "musicalHook": "use near-silence rather than constant underscores",
+      "choiceProblem": "How a subtle uncertainty distinction changes a credible medical situation",
+      "emotionalTurn": "An initially sensible choice has a cost; the ending resolves that cost without sermonizing",
+      "adultAudience": "Curious adult learner, no stereotype-based personalization",
+      "noCopying": "Original roles, scene order, exact dialogue, lyric melody and production identity; never mimic a named living performer"
+    },
+    "audience": "Adult interpreters in training; mature warmth and wit, without gender or cultural stereotypes.",
+    "primarySkill": "uncertainty",
+    "termIds": [
+      "M0229",
+      "M0031",
+      "M0087",
+      "M0032",
+      "M0086"
+    ],
+    "sourceIds": [
+      "MEDLINE_TOPICS"
+    ],
+    "knowledge": [
+      {
+        "id": "M0229",
+        "en": "patient-reported",
+        "es": "según lo informado por el paciente",
+        "context": "Information attributed to patient, not independently confirmed.",
+        "caution": "Avoid changing 'reports' into 'diagnosed'.",
+        "review": "needs_professional_bilingual_and_domain_review",
+        "source_id": "MEDLINE_TOPICS",
+        "groundingReason": "editorial-topic-anchor:patient-reported"
+      },
+      {
+        "id": "M0031",
+        "en": "chief complaint",
+        "es": "motivo principal de consulta",
+        "context": "Main reason for seeking care.",
+        "caution": "Do not confuse complaint with a formal grievance.",
+        "review": "needs_professional_bilingual_and_domain_review",
+        "source_id": "MEDLINE_TOPICS",
+        "groundingReason": "editorial-topic-anchor:chief complaint"
+      },
+      {
+        "id": "M0087",
+        "en": "symptom",
+        "es": "síntoma",
+        "context": "Problem experienced by patient.",
+        "caution": "",
+        "review": "needs_professional_bilingual_and_domain_review",
+        "source_id": "MEDLINE_TOPICS",
+        "groundingReason": "editorial-topic-anchor:symptom"
+      },
+      {
+        "id": "M0032",
+        "en": "medical history",
+        "es": "antecedentes médicos",
+        "context": "Past and present information relevant to care.",
+        "caution": "",
+        "review": "needs_professional_bilingual_and_domain_review",
+        "source_id": "MEDLINE_TOPICS",
+        "groundingReason": "editorial-topic-anchor:medical history"
+      },
+      {
+        "id": "M0086",
+        "en": "diagnosis",
+        "es": "diagnóstico",
+        "context": "Identification of condition based on assessment.",
+        "caution": "Distinguish suspected from confirmed diagnosis.",
+        "review": "needs_professional_bilingual_and_domain_review",
+        "source_id": "MEDLINE_TOPICS",
+        "groundingReason": "editorial-topic-anchor:diagnosis"
+      }
+    ],
+    "brief": "An emotionally vivid short film with striking situation, audible dialogue and visual punchline. Realistic iPhone production strategy.",
+    "deliverable": "complete script, timecoded storyboard, captions, iPhone production directions; mark video pending",
+    "minWords": 180,
+    "editorialConstraint": "Every important topic must be grounded in the selected domain. Treat clinical/legal guidance as provisional; write character-driven entertainment with truthful, explicitly fictional interpretation repairs.",
+    "review": "Every bilingual interpretation is a draft until reviewed by a qualified bilingual practitioner.",
+    "audioPolicy": "Author text, timing, sound-design and casting manifests now. Never call a transcription API a speech synthesizer; do not assert audio exists until ingested."
+  },
+  {
+    "id": "catch-the-change-legal-36",
+    "kind": "catch-the-change",
+    "topic": "informed consent",
+    "domain": "legal",
+    "direction": "en-es",
+    "creativeDNA": {
+      "version": 1,
+      "world": "a rooftop garden shared by unlikely neighbors",
+      "soundscape": "wind in bamboo stakes, watering can, distant city buses",
+      "stakes": "an unreliable account threatens a friendship",
+      "tone": "soft speculative fiction grounded in real human choices",
+      "comicRhythm": "one absurd rule is treated with ordinary practicality",
+      "music": "acoustic score only where it advances emotion",
+      "musicalHook": "use near-silence rather than constant underscores",
+      "choiceProblem": "How a subtle informed consent distinction changes a credible legal situation",
+      "emotionalTurn": "An initially sensible choice has a cost; the ending resolves that cost without sermonizing",
+      "adultAudience": "Curious adult learner, no stereotype-based personalization",
+      "noCopying": "Original roles, scene order, exact dialogue, lyric melody and production identity; never mimic a named living performer"
+    },
+    "audience": "Adult interpreters in training; mature warmth and wit, without gender or cultural stereotypes.",
+    "primarySkill": "informed consent",
+    "termIds": [
+      "L0098",
+      "L0094",
+      "L0248",
+      "L0065",
+      "L0063"
+    ],
+    "sourceIds": [
+      "OJD_ETHICS",
+      "OPDC_GUIDE",
+      "OJD_GLOSS"
+    ],
+    "knowledge": [
+      {
+        "id": "L0098",
+        "en": "waiver",
+        "es": "renuncia voluntaria a un derecho",
+        "context": "Intentional relinquishment of a legal right.",
+        "caution": "Validity depends on informed and voluntary nature.",
+        "review": "needs_professional_bilingual_and_domain_review",
+        "source_id": "OJD_ETHICS",
+        "groundingReason": "editorial-topic-anchor:waiver"
+      },
+      {
+        "id": "L0094",
+        "en": "right to counsel",
+        "es": "derecho a un abogado",
+        "context": "Right to legal representation in applicable proceeding.",
+        "caution": "Scope depends on type of case.",
+        "review": "needs_professional_bilingual_and_domain_review",
+        "source_id": "OJD_ETHICS",
+        "groundingReason": "editorial-topic-anchor:right to counsel"
+      },
+      {
+        "id": "L0248",
+        "en": "plea colloquy",
+        "es": "interrogatorio judicial sobre declaración de culpabilidad",
+        "context": "Judge's questions to assess a plea.",
+        "caution": "Not the same as witness testimony.",
+        "review": "needs_professional_bilingual_and_domain_review",
+        "source_id": "OPDC_GUIDE",
+        "groundingReason": "editorial-topic-anchor:plea colloquy"
+      },
+      {
+        "id": "L0065",
+        "en": "plea agreement",
+        "es": "acuerdo de culpabilidad",
+        "context": "Negotiated resolution of criminal charge.",
+        "caution": "Acuerdo de declaración de culpabilidad.",
+        "review": "needs_professional_bilingual_and_domain_review",
+        "source_id": "OJD_GLOSS",
+        "groundingReason": "editorial-topic-anchor:plea agreement"
+      },
+      {
+        "id": "L0063",
+        "en": "not guilty plea",
+        "es": "declaración de no culpabilidad",
+        "context": "Formal response denying guilt for purposes of case.",
+        "caution": "Not necessarily assertion of factual innocence.",
+        "review": "needs_professional_bilingual_and_domain_review",
+        "source_id": "OJD_GLOSS",
+        "groundingReason": "editorial-topic-anchor:not guilty plea"
+      }
+    ],
+    "brief": "A 3-person spoken interpreting simulation: source utterance, plausible incorrect interpretation, intervention, repair and continuation. Error is subtle but significant.",
+    "deliverable": "multiple turns, verbatim source and interpreted lines, exactly specified erroneous claims, correction, cue timing plan",
+    "minWords": 230,
+    "editorialConstraint": "Every important topic must be grounded in the selected domain. Treat clinical/legal guidance as provisional; write character-driven entertainment with truthful, explicitly fictional interpretation repairs.",
+    "review": "Every bilingual interpretation is a draft until reviewed by a qualified bilingual practitioner.",
+    "audioPolicy": "Author text, timing, sound-design and casting manifests now. Never call a transcription API a speech synthesizer; do not assert audio exists until ingested."
+  }
+]

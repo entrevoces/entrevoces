@@ -1,0 +1,357 @@
+{
+  "schemaVersion": 2,
+  "mediaId": "song-los-zapatos-del-tal-vez",
+  "title": "Los zapatos del tal vez",
+  "kind": "song",
+  "status": "script-draft",
+  "intendedLanguagePair": "English/Spanish",
+  "licenseState": "uncleared",
+  "review": {
+    "bilingual": false,
+    "domain": false,
+    "editorial": false
+  },
+  "scriptSource": "authored project draft",
+  "speakers": [
+    "NARRATOR",
+    "Dijiste"
+  ],
+  "lines": [
+    {
+      "lineId": "cue-001",
+      "type": "production-cue",
+      "text": "Verso 1",
+      "requiresHumanMix": true
+    },
+    {
+      "lineId": "line-002",
+      "speaker": "NARRATOR",
+      "language": "unconfirmed",
+      "text": "Llegaste con la historia bien peinada,",
+      "estimatedMs": 2667,
+      "source": "narrative-body"
+    },
+    {
+      "lineId": "line-003",
+      "speaker": "NARRATOR",
+      "language": "unconfirmed",
+      "text": "la mesa lista, el nombre en el mantel.",
+      "estimatedMs": 3556,
+      "source": "narrative-body"
+    },
+    {
+      "lineId": "line-004",
+      "speaker": "Dijiste",
+      "language": "unconfirmed",
+      "text": "«Lo vi», con voz prestada,",
+      "estimatedMs": 2222,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "line-005",
+      "speaker": "NARRATOR",
+      "language": "unconfirmed",
+      "text": "pero al principio habías dicho «tal vez».",
+      "estimatedMs": 3111,
+      "source": "narrative-body"
+    },
+    {
+      "lineId": "cue-006",
+      "type": "production-cue",
+      "text": "Pre-coro",
+      "requiresHumanMix": true
+    },
+    {
+      "lineId": "line-007",
+      "speaker": "NARRATOR",
+      "language": "unconfirmed",
+      "text": "La duda no se esconde en el bolsillo,",
+      "estimatedMs": 3556,
+      "source": "narrative-body"
+    },
+    {
+      "lineId": "line-008",
+      "speaker": "NARRATOR",
+      "language": "unconfirmed",
+      "text": "ni es una mancha que haya que quitar.",
+      "estimatedMs": 3556,
+      "source": "narrative-body"
+    },
+    {
+      "lineId": "line-009",
+      "speaker": "NARRATOR",
+      "language": "unconfirmed",
+      "text": "Hay un poquito de aire en el pasillo,",
+      "estimatedMs": 3556,
+      "source": "narrative-body"
+    },
+    {
+      "lineId": "line-010",
+      "speaker": "NARRATOR",
+      "language": "unconfirmed",
+      "text": "por donde la verdad puede pasar.",
+      "estimatedMs": 2667,
+      "source": "narrative-body"
+    },
+    {
+      "lineId": "cue-011",
+      "type": "production-cue",
+      "text": "Coro",
+      "requiresHumanMix": true
+    },
+    {
+      "lineId": "line-012",
+      "speaker": "NARRATOR",
+      "language": "unconfirmed",
+      "text": "El tal vez tiene zapatos,",
+      "estimatedMs": 2222,
+      "source": "narrative-body"
+    },
+    {
+      "lineId": "line-013",
+      "speaker": "NARRATOR",
+      "language": "unconfirmed",
+      "text": "camina sin hacer ruido.",
+      "estimatedMs": 1778,
+      "source": "narrative-body"
+    },
+    {
+      "lineId": "line-014",
+      "speaker": "NARRATOR",
+      "language": "unconfirmed",
+      "text": "No le cambies los retratos,",
+      "estimatedMs": 2222,
+      "source": "narrative-body"
+    },
+    {
+      "lineId": "line-015",
+      "speaker": "NARRATOR",
+      "language": "unconfirmed",
+      "text": "ni le inventes lo vivido.",
+      "estimatedMs": 2222,
+      "source": "narrative-body"
+    },
+    {
+      "lineId": "line-016",
+      "speaker": "NARRATOR",
+      "language": "unconfirmed",
+      "text": "Si dijo «creo», deja el creo,",
+      "estimatedMs": 2667,
+      "source": "narrative-body"
+    },
+    {
+      "lineId": "line-017",
+      "speaker": "NARRATOR",
+      "language": "unconfirmed",
+      "text": "si dijo «no sé», déjalo estar.",
+      "estimatedMs": 2667,
+      "source": "narrative-body"
+    },
+    {
+      "lineId": "line-018",
+      "speaker": "NARRATOR",
+      "language": "unconfirmed",
+      "text": "Que una palabra pequeñita",
+      "estimatedMs": 1778,
+      "source": "narrative-body"
+    },
+    {
+      "lineId": "line-019",
+      "speaker": "NARRATOR",
+      "language": "unconfirmed",
+      "text": "puede cambiar la ciudad.",
+      "estimatedMs": 1778,
+      "source": "narrative-body"
+    },
+    {
+      "lineId": "cue-020",
+      "type": "production-cue",
+      "text": "Verso 2",
+      "requiresHumanMix": true
+    },
+    {
+      "lineId": "line-021",
+      "speaker": "NARRATOR",
+      "language": "unconfirmed",
+      "text": "Mi tía escucha todo desde el patio,",
+      "estimatedMs": 3111,
+      "source": "narrative-body"
+    },
+    {
+      "lineId": "line-022",
+      "speaker": "NARRATOR",
+      "language": "unconfirmed",
+      "text": "ella sabe cuándo va a llover.",
+      "estimatedMs": 2667,
+      "source": "narrative-body"
+    },
+    {
+      "lineId": "line-023",
+      "speaker": "NARRATOR",
+      "language": "unconfirmed",
+      "text": "Pero ni el cielo firma un calendario,",
+      "estimatedMs": 3111,
+      "source": "narrative-body"
+    },
+    {
+      "lineId": "line-024",
+      "speaker": "NARRATOR",
+      "language": "unconfirmed",
+      "text": "ni un rumor es lo que alguien pudo ver.",
+      "estimatedMs": 4000,
+      "source": "narrative-body"
+    },
+    {
+      "lineId": "cue-025",
+      "type": "production-cue",
+      "text": "Puente",
+      "requiresHumanMix": true
+    },
+    {
+      "lineId": "line-026",
+      "speaker": "NARRATOR",
+      "language": "unconfirmed",
+      "text": "Tal vez mañana llegue el tren,",
+      "estimatedMs": 2667,
+      "source": "narrative-body"
+    },
+    {
+      "lineId": "line-027",
+      "speaker": "NARRATOR",
+      "language": "unconfirmed",
+      "text": "tal vez esa luz sea de otro hogar.",
+      "estimatedMs": 3556,
+      "source": "narrative-body"
+    },
+    {
+      "lineId": "line-028",
+      "speaker": "NARRATOR",
+      "language": "unconfirmed",
+      "text": "No necesito hablar por quien",
+      "estimatedMs": 2222,
+      "source": "narrative-body"
+    },
+    {
+      "lineId": "line-029",
+      "speaker": "NARRATOR",
+      "language": "unconfirmed",
+      "text": "no sabe todavía qué pensar.",
+      "estimatedMs": 2222,
+      "source": "narrative-body"
+    },
+    {
+      "lineId": "cue-030",
+      "type": "production-cue",
+      "text": "Coro final",
+      "requiresHumanMix": true
+    },
+    {
+      "lineId": "line-031",
+      "speaker": "NARRATOR",
+      "language": "unconfirmed",
+      "text": "El tal vez tiene zapatos,",
+      "estimatedMs": 2222,
+      "source": "narrative-body"
+    },
+    {
+      "lineId": "line-032",
+      "speaker": "NARRATOR",
+      "language": "unconfirmed",
+      "text": "se despide al amanecer.",
+      "estimatedMs": 1778,
+      "source": "narrative-body"
+    },
+    {
+      "lineId": "line-033",
+      "speaker": "NARRATOR",
+      "language": "unconfirmed",
+      "text": "No le quites su camino,",
+      "estimatedMs": 2222,
+      "source": "narrative-body"
+    },
+    {
+      "lineId": "line-034",
+      "speaker": "NARRATOR",
+      "language": "unconfirmed",
+      "text": "no lo obligues a volver.",
+      "estimatedMs": 2222,
+      "source": "narrative-body"
+    },
+    {
+      "lineId": "line-035",
+      "speaker": "NARRATOR",
+      "language": "unconfirmed",
+      "text": "Si dijo «creo», deja el creo,",
+      "estimatedMs": 2667,
+      "source": "narrative-body"
+    },
+    {
+      "lineId": "line-036",
+      "speaker": "NARRATOR",
+      "language": "unconfirmed",
+      "text": "si dijo «no sé», déjalo estar.",
+      "estimatedMs": 2667,
+      "source": "narrative-body"
+    },
+    {
+      "lineId": "line-037",
+      "speaker": "NARRATOR",
+      "language": "unconfirmed",
+      "text": "La verdad también respira",
+      "estimatedMs": 1778,
+      "source": "narrative-body"
+    },
+    {
+      "lineId": "line-038",
+      "speaker": "NARRATOR",
+      "language": "unconfirmed",
+      "text": "cuando la dejamos dudar.",
+      "estimatedMs": 1778,
+      "source": "narrative-body"
+    },
+    {
+      "lineId": "cue-039",
+      "type": "production-cue",
+      "text": "Salida hablada",
+      "requiresHumanMix": true
+    },
+    {
+      "lineId": "line-040",
+      "speaker": "NARRATOR",
+      "language": "unconfirmed",
+      "text": "«No sé» también cuenta una historia.",
+      "estimatedMs": 2667,
+      "source": "narrative-body"
+    },
+    {
+      "lineId": "line-041",
+      "speaker": "NARRATOR",
+      "language": "unconfirmed",
+      "text": "Déjala terminar.",
+      "estimatedMs": 889,
+      "source": "narrative-body"
+    }
+  ],
+  "cues": [],
+  "wordCount": 208,
+  "approximateDurationSec": 107,
+  "production": {
+    "speakerStemPolicy": "one dry mono WAV stem per actor + separately recorded SFX/music stems",
+    "masters": "lossless 48kHz 24-bit WAV project master, accessible web M4A/MP3 plus captions",
+    "intelligibility": "mix spoken words above music; proof numbers, negative particles, hedges and speaker identities in the final mix",
+    "playback": "recheck native audio playback in mobile Safari with headphones and speakers",
+    "languagePolicy": "review every unconfirmed line language; do not assume English/Spanish from speaker ethnicity",
+    "soundPolicy": "silence may carry emotion; preserve consonants and headroom; sound cues never obscure an error anchor",
+    "licensing": "collect actor/voice/talent releases, music/sample license, cover and performance rights before deployment",
+    "asr": "export 16/24 kHz mono PCM16 for Meta Voice Transcribe; ASR only advises, never certifies bilingual fidelity"
+  },
+  "pending": [
+    "language of 34 parsed lines must be confirmed",
+    "all planned pauses and timings must be replaced with real measurements",
+    "actual recording and listening-quality inspection",
+    "source-to-translation semantic review",
+    "legal and medical domain review",
+    "rights sign-off"
+  ],
+  "cannotClaim": "This packet does not include recorded audio, authentic performance, final cue alignment or professional validation."
+}

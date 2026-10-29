@@ -1,0 +1,102 @@
+{
+  "schemaVersion": 2,
+  "mediaId": "voice-witness-maybe",
+  "title": "Tal vez vi la camioneta",
+  "kind": "catch-the-change",
+  "status": "script-draft",
+  "intendedLanguagePair": "English/Spanish",
+  "licenseState": "uncleared",
+  "review": {
+    "bilingual": false,
+    "domain": false,
+    "editorial": false
+  },
+  "scriptSource": "authored project draft",
+  "speakers": [
+    "Witness",
+    "Interpreter",
+    "Trainer",
+    "Interpreter corrected"
+  ],
+  "lines": [
+    {
+      "lineId": "line-001",
+      "speaker": "Witness",
+      "language": "en",
+      "text": "I think I might have seen a red truck. I cannot say whose it was.",
+      "estimatedMs": 6667,
+      "source": "explicit-bilingual-turn"
+    },
+    {
+      "lineId": "line-002",
+      "speaker": "Interpreter",
+      "language": "es",
+      "text": "Vi la camioneta roja del acusado.",
+      "estimatedMs": 2667,
+      "source": "explicit-bilingual-turn"
+    },
+    {
+      "lineId": "line-003",
+      "speaker": "Trainer",
+      "language": "en",
+      "text": "Which qualifications were lost?",
+      "estimatedMs": 1778,
+      "source": "explicit-bilingual-turn"
+    },
+    {
+      "lineId": "line-004",
+      "speaker": "Interpreter corrected",
+      "language": "es",
+      "text": "Creo que tal vez vi una camioneta roja. No puedo decir de quién era.",
+      "estimatedMs": 6222,
+      "source": "explicit-bilingual-turn"
+    }
+  ],
+  "cues": [
+    {
+      "errorId": "certainty",
+      "category": "uncertainty",
+      "original": "I think I might have seen a red truck",
+      "wrong": "Vi la camioneta roja del acusado",
+      "repair": "Creo que tal vez vi una camioneta roja",
+      "sourceTurnIndex": 0,
+      "wrongTurnIndex": 1,
+      "repairTurnIndex": 3,
+      "requiredAfterRecording": "mark true phrase boundaries in final audio waveform; verify by a bilingual human; do not use estimated timestamps",
+      "alignmentState": "not-aligned"
+    },
+    {
+      "errorId": "ownership",
+      "category": "attribution",
+      "original": "I cannot say whose it was",
+      "wrong": "del acusado",
+      "repair": "No puedo decir de quién era",
+      "sourceTurnIndex": 0,
+      "wrongTurnIndex": 1,
+      "repairTurnIndex": 3,
+      "requiredAfterRecording": "mark true phrase boundaries in final audio waveform; verify by a bilingual human; do not use estimated timestamps",
+      "alignmentState": "not-aligned"
+    }
+  ],
+  "wordCount": 287,
+  "approximateDurationSec": 19,
+  "production": {
+    "speakerStemPolicy": "one dry mono WAV stem per actor + separately recorded SFX/music stems",
+    "masters": "lossless 48kHz 24-bit WAV project master, accessible web M4A/MP3 plus captions",
+    "intelligibility": "mix spoken words above music; proof numbers, negative particles, hedges and speaker identities in the final mix",
+    "playback": "recheck native audio playback in mobile Safari with headphones and speakers",
+    "languagePolicy": "review every unconfirmed line language; do not assume English/Spanish from speaker ethnicity",
+    "soundPolicy": "silence may carry emotion; preserve consonants and headroom; sound cues never obscure an error anchor",
+    "licensing": "collect actor/voice/talent releases, music/sample license, cover and performance rights before deployment",
+    "asr": "export 16/24 kHz mono PCM16 for Meta Voice Transcribe; ASR only advises, never certifies bilingual fidelity"
+  },
+  "pending": [
+    "language of 0 parsed lines must be confirmed",
+    "all planned pauses and timings must be replaced with real measurements",
+    "actual recording and listening-quality inspection",
+    "source-to-translation semantic review",
+    "legal and medical domain review",
+    "rights sign-off"
+  ],
+  "cannotClaim": "This packet does not include recorded audio, authentic performance, final cue alignment or professional validation."
+}

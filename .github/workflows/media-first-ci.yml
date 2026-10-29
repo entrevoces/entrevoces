@@ -1,0 +1,36 @@
+name: Media-first offline regression checks
+# Public PR checks use no Meta credentials and cannot spend money.
+on:
+  pull_request:
+  push:
+    branches: [main]
+permissions:
+  contents: read
+jobs:
+  content-and-engine:
+    runs-on: ubuntu-latest
+    timeout-minutes: 18
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Original handbook/PDF dependencies
+        run: sudo apt-get update && sudo apt-get install -y poppler-utils ffmpeg
+      - name: Knowledge + content audit
+        run: |
+          node tools/media-studio.mjs audit
+          node --test tests/meta-real-contract.test.js tests/media-first.test.js tests/media-professional.test.js tests/media-quality-v2.test.js tests/media-voice-production.test.js tests/media-stage-schemas.test.js tests/media-legacy-audit.test.js
+      - name: Verify video assembly and provider contracts
+        run: python3 -m unittest discover -s tests -p 'test_media_studio.py' -v
+      - name: Build static library and existing games
+        run: npm run build
+      - name: Run full preexisting JS suite plus media checks
+        run: npm test
+      - name: Verify safe Pages artifact, original games and citations
+        run: |
+          node tools/media-build-verify.mjs
+          npm run verify:site

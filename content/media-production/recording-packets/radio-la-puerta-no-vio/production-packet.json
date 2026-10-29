@@ -1,0 +1,405 @@
+{
+  "schemaVersion": 2,
+  "mediaId": "radio-la-puerta-no-vio",
+  "title": "Radio La Cosa Exacta: La puerta no vio nada",
+  "kind": "audio-drama",
+  "status": "script-draft",
+  "intendedLanguagePair": "English/Spanish",
+  "licenseState": "uncleared",
+  "review": {
+    "bilingual": false,
+    "domain": false,
+    "editorial": false
+  },
+  "scriptSource": "authored project draft",
+  "speakers": [
+    "NORA",
+    "JAIME",
+    "ANTONIA",
+    "MERCEDES",
+    "WITNESS ACTOR",
+    "INTERPRETER ACTOR"
+  ],
+  "lines": [
+    {
+      "lineId": "cue-001",
+      "type": "production-cue",
+      "text": "COLD OPEN. A bus kneels at a curb. A zipper catches. At the end of an old corridor, a latch taps twice in the wind.",
+      "requiresHumanMix": true
+    },
+    {
+      "lineId": "line-002",
+      "speaker": "NORA",
+      "language": "unconfirmed",
+      "text": "On the radio you can see everything. That's the first lie I told myself when I took this job.",
+      "estimatedMs": 8889,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "line-003",
+      "speaker": "JAIME",
+      "language": "unconfirmed",
+      "text": "(over intercom) The first lie was that you knew how to operate the espresso machine.",
+      "estimatedMs": 6667,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "line-004",
+      "speaker": "NORA",
+      "language": "unconfirmed",
+      "text": "I know how to operate it. I refuse to negotiate with its values.",
+      "estimatedMs": 5778,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "cue-005",
+      "type": "production-cue",
+      "text": "THEME: three notes from a muted trumpet. A telephone line clicks.",
+      "requiresHumanMix": true
+    },
+    {
+      "lineId": "line-006",
+      "speaker": "NORA",
+      "language": "unconfirmed",
+      "text": "Good evening, neighbors. This is Radio La Cosa Exacta, where we ask what happened before announcing what we wish had happened. Tonight: somebody has sent us a picture of an apartment door, and somehow the whole building believes it proves a crime. Our producer Jaime has put the photograph in an envelope so I can't embellish it with my eyebrows.",
+      "estimatedMs": 27111,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "line-007",
+      "speaker": "JAIME",
+      "language": "unconfirmed",
+      "text": "Your eyebrows have never accepted a chain of custody.",
+      "estimatedMs": 4000,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "line-008",
+      "speaker": "NORA",
+      "language": "unconfirmed",
+      "text": "We are not a courtroom, Jaime. That is exactly why we must be careful. First call—Antonia, you're on.",
+      "estimatedMs": 8889,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "line-009",
+      "speaker": "ANTONIA",
+      "language": "unconfirmed",
+      "text": "Mi vecina me dijo que vio la puerta abierta a las diez. That's what I said. But the neighborhood message says I saw a stranger forcing it.",
+      "estimatedMs": 12444,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "line-010",
+      "speaker": "NORA",
+      "language": "unconfirmed",
+      "text": "What did you actually see?",
+      "estimatedMs": 2222,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "line-011",
+      "speaker": "ANTONIA",
+      "language": "unconfirmed",
+      "text": "La foto. On my niece's phone. The door was closed in the photo, anyway. My neighbor said she saw it open earlier. I was buying bread.",
+      "estimatedMs": 12000,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "line-012",
+      "speaker": "JAIME",
+      "language": "unconfirmed",
+      "text": "For the record, the bread was innocent.",
+      "estimatedMs": 3111,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "line-013",
+      "speaker": "ANTONIA",
+      "language": "unconfirmed",
+      "text": "No lo sé. It was very expensive.",
+      "estimatedMs": 3111,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "line-014",
+      "speaker": "NORA",
+      "language": "unconfirmed",
+      "text": "We have three separate things: what the neighbor reported, what Antonia saw in the picture, and what someone imagined between them. Which one of those does the chat remember?",
+      "estimatedMs": 12889,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "line-015",
+      "speaker": "ANTONIA",
+      "language": "unconfirmed",
+      "text": "The imagined one. It has better punctuation.",
+      "estimatedMs": 3111,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "cue-016",
+      "type": "production-cue",
+      "text": "The studio door opens. A quiet woman in a raincoat enters without making eye contact with the microphone.",
+      "requiresHumanMix": true
+    },
+    {
+      "lineId": "line-017",
+      "speaker": "MERCEDES",
+      "language": "unconfirmed",
+      "text": "I'm the building's evening caretaker. I heard you're describing our door.",
+      "estimatedMs": 6222,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "line-018",
+      "speaker": "NORA",
+      "language": "unconfirmed",
+      "text": "You can choose not to come on the air.",
+      "estimatedMs": 4000,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "line-019",
+      "speaker": "MERCEDES",
+      "language": "unconfirmed",
+      "text": "I know. But I want to tell my side before the door acquires an attorney. I was closing the upper window when the wind pushed the latch. The door was open for perhaps twenty seconds. Nobody was forcing it.",
+      "estimatedMs": 17333,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "line-020",
+      "speaker": "NORA",
+      "language": "unconfirmed",
+      "text": "Are you certain about the twenty seconds?",
+      "estimatedMs": 3111,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "line-021",
+      "speaker": "MERCEDES",
+      "language": "unconfirmed",
+      "text": "Approximately. I did not time it. The radio at the bakery was playing the chorus of something terrible.",
+      "estimatedMs": 8000,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "line-022",
+      "speaker": "JAIME",
+      "language": "unconfirmed",
+      "text": "Please don't tell me it was our morning show.",
+      "estimatedMs": 4444,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "line-023",
+      "speaker": "MERCEDES",
+      "language": "unconfirmed",
+      "text": "It was. The chorus was the weather forecast. Twice.",
+      "estimatedMs": 4000,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "cue-024",
+      "type": "production-cue",
+      "text": "A second telephone line flashes. The tiny light in the booth looks like an impatient firefly.",
+      "requiresHumanMix": true
+    },
+    {
+      "lineId": "line-025",
+      "speaker": "NORA",
+      "language": "unconfirmed",
+      "text": "We also have an interpretation exercise, recorded by actors, that shows how a rumor can escape its owner. Let's hear the original witness account first.",
+      "estimatedMs": 11556,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "line-026",
+      "speaker": "WITNESS ACTOR",
+      "language": "en",
+      "text": "My neighbor told me that the door was open. I didn't see anyone enter.",
+      "estimatedMs": 6667,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "line-027",
+      "speaker": "INTERPRETER ACTOR",
+      "language": "es",
+      "text": "Mi vecina me dijo que la puerta estaba abierta. No vi entrar a nadie.",
+      "estimatedMs": 6222,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "line-028",
+      "speaker": "NORA",
+      "language": "unconfirmed",
+      "text": "That was the faithful version. Now listen to the fictional mistake.",
+      "estimatedMs": 4889,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "line-029",
+      "speaker": "INTERPRETER ACTOR",
+      "language": "es",
+      "text": "Vi a una persona entrar por la puerta abierta.",
+      "estimatedMs": 4000,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "cue-030",
+      "type": "production-cue",
+      "text": "A bell sounds once, dry as a teaspoon striking a glass.",
+      "requiresHumanMix": true
+    },
+    {
+      "lineId": "line-031",
+      "speaker": "ANTONIA",
+      "language": "unconfirmed",
+      "text": "¡No! That's a completely different witness.",
+      "estimatedMs": 3111,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "line-032",
+      "speaker": "JAIME",
+      "language": "unconfirmed",
+      "text": "In one sentence we've created a spectator, an entrant, and a certainty that weren't there.",
+      "estimatedMs": 7556,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "line-033",
+      "speaker": "NORA",
+      "language": "unconfirmed",
+      "text": "Exactly. The problem isn't the accent. It isn't whether the Spanish is elegant. It's that the speaker's limits were stolen. Can we repair it without turning the whole segment into a sermon?",
+      "estimatedMs": 16000,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "line-034",
+      "speaker": "MERCEDES",
+      "language": "unconfirmed",
+      "text": "Play the original again. The people listening can do the work.",
+      "estimatedMs": 4889,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "cue-035",
+      "type": "production-cue",
+      "text": "They do. This time the silence after the sentence is long enough to hear rain touch the studio window.",
+      "requiresHumanMix": true
+    },
+    {
+      "lineId": "line-036",
+      "speaker": "NORA",
+      "language": "unconfirmed",
+      "text": "Mercedes, what do you want the neighbors to know?",
+      "estimatedMs": 4000,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "line-037",
+      "speaker": "MERCEDES",
+      "language": "unconfirmed",
+      "text": "That somebody should repair the latch, and somebody else should apologize to the woman they accused. I have more important gossip: the community garden has grown three tomatoes in October.",
+      "estimatedMs": 13333,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "line-038",
+      "speaker": "ANTONIA",
+      "language": "unconfirmed",
+      "text": "Three? They said there were nine.",
+      "estimatedMs": 2667,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "line-039",
+      "speaker": "JAIME",
+      "language": "unconfirmed",
+      "text": "Here we go again.",
+      "estimatedMs": 1778,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "line-040",
+      "speaker": "NORA",
+      "language": "unconfirmed",
+      "text": "(softening) We may have solved the door. We have not solved the internet. At least the tomatoes are still negotiable.",
+      "estimatedMs": 8889,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "cue-041",
+      "type": "production-cue",
+      "text": "The photograph is finally removed from its envelope. It's a close-up of the latch, taken a week before the rumor. A penciled note on the back says, “Ask maintenance.”",
+      "requiresHumanMix": true
+    },
+    {
+      "lineId": "line-042",
+      "speaker": "NORA",
+      "language": "unconfirmed",
+      "text": "That is our final fact for tonight: a photo can show a latch; it cannot show what somebody witnessed on another day.",
+      "estimatedMs": 9778,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "cue-043",
+      "type": "production-cue",
+      "text": "THEME RETURNS, interrupted by Jaime's espresso machine grinding with the determination of a small construction vehicle.",
+      "requiresHumanMix": true
+    },
+    {
+      "lineId": "line-044",
+      "speaker": "JAIME",
+      "language": "unconfirmed",
+      "text": "I got it to make coffee.",
+      "estimatedMs": 2667,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "line-045",
+      "speaker": "NORA",
+      "language": "unconfirmed",
+      "text": "Is it coffee?",
+      "estimatedMs": 1333,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "line-046",
+      "speaker": "JAIME",
+      "language": "unconfirmed",
+      "text": "I wouldn't testify to that.",
+      "estimatedMs": 2667,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "cue-047",
+      "type": "production-cue",
+      "text": "END. The call-in line remains open for listeners who want to hear the two versions again.",
+      "requiresHumanMix": true
+    }
+  ],
+  "cues": [],
+  "wordCount": 817,
+  "approximateDurationSec": 293,
+  "production": {
+    "speakerStemPolicy": "one dry mono WAV stem per actor + separately recorded SFX/music stems",
+    "masters": "lossless 48kHz 24-bit WAV project master, accessible web M4A/MP3 plus captions",
+    "intelligibility": "mix spoken words above music; proof numbers, negative particles, hedges and speaker identities in the final mix",
+    "playback": "recheck native audio playback in mobile Safari with headphones and speakers",
+    "languagePolicy": "review every unconfirmed line language; do not assume English/Spanish from speaker ethnicity",
+    "soundPolicy": "silence may carry emotion; preserve consonants and headroom; sound cues never obscure an error anchor",
+    "licensing": "collect actor/voice/talent releases, music/sample license, cover and performance rights before deployment",
+    "asr": "export 16/24 kHz mono PCM16 for Meta Voice Transcribe; ASR only advises, never certifies bilingual fidelity"
+  },
+  "pending": [
+    "language of 35 parsed lines must be confirmed",
+    "all planned pauses and timings must be replaced with real measurements",
+    "actual recording and listening-quality inspection",
+    "source-to-translation semantic review",
+    "legal and medical domain review",
+    "rights sign-off"
+  ],
+  "cannotClaim": "This packet does not include recorded audio, authentic performance, final cue alignment or professional validation."
+}

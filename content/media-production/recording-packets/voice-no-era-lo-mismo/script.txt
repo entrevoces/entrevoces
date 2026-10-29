@@ -1,0 +1,21 @@
+[A neighborhood radio drama recorded as a bilingual simulation. Each take will be produced as separate, aligned stems.]
+
+NORA (ENGLISH): Thank you for calling us. You can keep your name off air. What did you personally see?
+
+CALLER (ENGLISH): I didn't see anyone at the door. My neighbor told me somebody had left a bag outside. I saw the bag later, when I returned.
+
+INTERPRETER (SPANISH, INTENTIONALLY WRONG TAKE): Vi a alguien dejar una bolsa afuera de la puerta.
+
+NORA (ENGLISH): Stop the tape there. That was the wrong practice rendering. The original caller saw a bag later. She never claimed to watch somebody place it. The altered line makes her an eyewitness.
+
+INTERPRETER (SPANISH, REPAIRED TAKE): No vi a nadie en la puerta. Mi vecina me dijo que alguien había dejado una bolsa afuera. Vi la bolsa después, cuando regresé.
+
+CALLER (ENGLISH): That's what I meant. I don't know who left it. It might have been somebody from the building, but that's only a guess.
+
+NORA (ENGLISH): And the guess stays a guess. We also have to keep the two time points apart. Hearing about a bag is not watching the bag arrive.
+
+JAIME (ENGLISH): I have once again become interested in the bag. Can it contain a microphone? Because ours is making a noise like a suitcase rolling down stairs.
+
+NORA (ENGLISH): No, Jaime, the bag does not contain our budget. The neighbors have kindly agreed to turn this entire misunderstanding into a training example, with actors and no real personal details.
+
+[For the game version, start with the original call; follow with the single wrong interpretation; leave a generous space after the wrong phrase for a tap or spoken interruption. The repair is a separate reveal, never part of the first audio take.]

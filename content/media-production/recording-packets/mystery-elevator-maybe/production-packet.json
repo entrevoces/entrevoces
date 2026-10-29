@@ -1,0 +1,230 @@
+{
+  "schemaVersion": 2,
+  "mediaId": "mystery-elevator-maybe",
+  "title": "El ascensor de los tal vez",
+  "kind": "audio-mystery",
+  "status": "script-draft",
+  "intendedLanguagePair": "English/Spanish",
+  "licenseState": "uncleared",
+  "review": {
+    "bilingual": false,
+    "domain": false,
+    "editorial": false
+  },
+  "scriptSource": "authored project draft",
+  "speakers": [
+    "NARRATOR",
+    "ELENA",
+    "VOICE ON INTERCOM"
+  ],
+  "lines": [
+    {
+      "lineId": "cue-001",
+      "type": "production-cue",
+      "text": "AUDIO MYSTERY: El ascensor de los tal vez. Opening sound: an elevator arrives on a floor that has no number. A restrained thriller soundtrack hums beneath dialogue.",
+      "requiresHumanMix": true
+    },
+    {
+      "lineId": "line-002",
+      "speaker": "NARRATOR",
+      "language": "unconfirmed",
+      "text": "Elena enters an empty office building carrying a file with four handwritten words: before, after, maybe and never. The elevator doors open without anyone pressing a button. Inside is a brass plaque: The Floor You Heard.",
+      "estimatedMs": 16000,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "line-003",
+      "speaker": "ELENA",
+      "language": "unconfirmed",
+      "text": "Is this a dream?",
+      "estimatedMs": 1778,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "line-004",
+      "speaker": "VOICE ON INTERCOM",
+      "language": "unconfirmed",
+      "text": "Only if you are sure.",
+      "estimatedMs": 2222,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "line-005",
+      "speaker": "NARRATOR",
+      "language": "unconfirmed",
+      "text": "The intercom tells her that a witness may have seen a red truck. The voice has a warm accent but no identifiable source. Elena asks, “May have seen, or did see?” The floor indicator flickers between 5 and 15.",
+      "estimatedMs": 17333,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "line-006",
+      "speaker": "VOICE ON INTERCOM",
+      "language": "unconfirmed",
+      "text": "Choose the sentence that you actually heard, not the one that feels complete.",
+      "estimatedMs": 5778,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "cue-007",
+      "type": "production-cue",
+      "text": "First choice: preserve “might have seen” or announce the person saw it with certainty. Both change the elevator's path. A careful listener can return and compare.",
+      "requiresHumanMix": true
+    },
+    {
+      "lineId": "line-008",
+      "speaker": "NARRATOR",
+      "language": "unconfirmed",
+      "text": "On the next floor, a clinician says a fictional patient has not had a symptom today. In one recording a tiny negation vanishes. The elevator doors are different colors, but the player must rely on sound; no icon gives away the answer.",
+      "estimatedMs": 18667,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "line-009",
+      "speaker": "ELENA",
+      "language": "unconfirmed",
+      "text": "Not having a symptom and having a symptom are not the same story.",
+      "estimatedMs": 5778,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "line-010",
+      "speaker": "VOICE ON INTERCOM",
+      "language": "unconfirmed",
+      "text": "True. But does the interpreter know enough to replace what was said?",
+      "estimatedMs": 5333,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "line-011",
+      "speaker": "ELENA",
+      "language": "unconfirmed",
+      "text": "No. If the words are unclear, the interpreter should disclose the difficulty and request clarification.",
+      "estimatedMs": 6667,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "cue-012",
+      "type": "production-cue",
+      "text": "Second choice: admit hearing difficulty or invent a plausible answer. The hall beyond each opens onto a different recorded memory.",
+      "requiresHumanMix": true
+    },
+    {
+      "lineId": "line-013",
+      "speaker": "NARRATOR",
+      "language": "unconfirmed",
+      "text": "A third voice, which Elena recognizes as her own, says, “A hearing is scheduled for Tuesday.” Then another version announces the judge has already made a decision. The building shakes as if certainty were a weight on its beams.",
+      "estimatedMs": 17333,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "line-014",
+      "speaker": "ELENA",
+      "language": "unconfirmed",
+      "text": "A scheduled proceeding isn't the same as a ruling. Stop the recording.",
+      "estimatedMs": 5778,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "cue-015",
+      "type": "production-cue",
+      "text": "Third choice: mark the procedural difference or follow a misleading summary. No gory outcome; the world simply becomes less reliable.",
+      "requiresHumanMix": true
+    },
+    {
+      "lineId": "line-016",
+      "speaker": "VOICE ON INTERCOM",
+      "language": "unconfirmed",
+      "text": "You made the building more honest. That does not mean you decided what happened.",
+      "estimatedMs": 6222,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "line-017",
+      "speaker": "ELENA",
+      "language": "unconfirmed",
+      "text": "I only kept what was actually said.",
+      "estimatedMs": 3111,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "cue-018",
+      "type": "production-cue",
+      "text": "Endings: the elevator arrives at a quiet library where the sentences can be heard in their original forms, or loops back to the same floor with a new invitation to listen again. None of the fictional consequences count as evidence of real legal knowledge.",
+      "requiresHumanMix": true
+    },
+    {
+      "lineId": "line-019",
+      "speaker": "NARRATOR",
+      "language": "unconfirmed",
+      "text": "In the building that remembers every word, the only way out is to refuse the words you never heard.",
+      "estimatedMs": 8444,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "cue-020",
+      "type": "production-cue",
+      "text": "Afterword — The elevator returns in the listener's imagination. The narrator names the four doors without revealing which option to choose. Elena hears a grandmother say in Spanish, “Tal vez no,” and this time the building waits rather than filling in the silence.",
+      "requiresHumanMix": true
+    },
+    {
+      "lineId": "line-021",
+      "speaker": "ELENA",
+      "language": "unconfirmed",
+      "text": "A pause may be uncomfortable, but a false certainty can reshape what follows.",
+      "estimatedMs": 5778,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "line-022",
+      "speaker": "VOICE ON INTERCOM",
+      "language": "unconfirmed",
+      "text": "What if you don't know which word you heard?",
+      "estimatedMs": 4444,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "line-023",
+      "speaker": "ELENA",
+      "language": "unconfirmed",
+      "text": "Then I ask for it again. The corridor can remain a corridor for another minute.",
+      "estimatedMs": 6667,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "line-024",
+      "speaker": "NARRATOR",
+      "language": "unconfirmed",
+      "text": "Outside the window, city buses are still taking people home. The ordinary world looks strange enough when everyone stops guessing what other people must have meant.",
+      "estimatedMs": 11556,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "cue-025",
+      "type": "production-cue",
+      "text": "Soft door chime, then silence. Credits identify the fiction and the source concepts behind it.",
+      "requiresHumanMix": true
+    }
+  ],
+  "cues": [],
+  "wordCount": 559,
+  "approximateDurationSec": 163,
+  "production": {
+    "speakerStemPolicy": "one dry mono WAV stem per actor + separately recorded SFX/music stems",
+    "masters": "lossless 48kHz 24-bit WAV project master, accessible web M4A/MP3 plus captions",
+    "intelligibility": "mix spoken words above music; proof numbers, negative particles, hedges and speaker identities in the final mix",
+    "playback": "recheck native audio playback in mobile Safari with headphones and speakers",
+    "languagePolicy": "review every unconfirmed line language; do not assume English/Spanish from speaker ethnicity",
+    "soundPolicy": "silence may carry emotion; preserve consonants and headroom; sound cues never obscure an error anchor",
+    "licensing": "collect actor/voice/talent releases, music/sample license, cover and performance rights before deployment",
+    "asr": "export 16/24 kHz mono PCM16 for Meta Voice Transcribe; ASR only advises, never certifies bilingual fidelity"
+  },
+  "pending": [
+    "language of 18 parsed lines must be confirmed",
+    "all planned pauses and timings must be replaced with real measurements",
+    "actual recording and listening-quality inspection",
+    "source-to-translation semantic review",
+    "legal and medical domain review",
+    "rights sign-off"
+  ],
+  "cannotClaim": "This packet does not include recorded audio, authentic performance, final cue alignment or professional validation."
+}

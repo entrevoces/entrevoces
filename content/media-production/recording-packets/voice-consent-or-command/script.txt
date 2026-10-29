@@ -1,0 +1,27 @@
+[Training simulation in a consultation room. Paper rustles; one person moves a chair to include the patient in the conversation.]
+
+CLINICIAN: You may ask any questions before deciding whether to sign. If you need more information, tell us what is unclear.
+
+INTERPRETER (altered practice): Debe firmar ahora. Si no entiende algo, está bien.
+
+PATIENT: Wait, I wanted to know what the form means. I did not hear an answer to my question.
+
+TRAINER: Notice that “you may ask” was changed to “you must sign.” A process designed to inform a decision became a command.
+
+TRAINEE: It sounded confident, but confident is not faithful. We must preserve the option to ask and the timing of the decision.
+
+CLINICIAN: I have not instructed the patient to sign. I offered to explain the form first.
+
+INTERPRETER (corrected simulation): Puede hacer todas las preguntas que quiera antes de decidir si firma. Si necesita más información, díganos qué no está claro.
+
+PATIENT: That is different. I have questions about the next step.
+
+[The simulation stops at this point. It does not pretend that interpreting a form itself establishes informed consent or gives medical advice.]
+
+TRAINER: At a real appointment, a qualified healthcare professional explains the procedure and the patient's options. The interpreter preserves the exchange and appropriately manages clarification when needed.
+
+TRAINEE: So a single word could change whether a patient knows they can ask.
+
+TRAINER: Yes. And that is why we practice hearing the small words with the same care as the big terminology.
+
+[End: the sound of a pen is replaced by a chair sliding closer to the table.]

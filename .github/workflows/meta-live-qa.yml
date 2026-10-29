@@ -1,0 +1,56 @@
+name: Real Meta Muse model verification
+# Paid API: deliberately manual. This does not run in PRs or on untrusted forks.
+on:
+  workflow_dispatch:
+    inputs:
+      include_image:
+        description: 'Generate and verify one real Muse Image asset (paid)'
+        type: boolean
+        default: false
+      include_voice:
+        description: 'Run real Voice Transcribe on a checked-in, rights-cleared synthetic WAV (paid)'
+        type: boolean
+        default: false
+permissions:
+  contents: read
+concurrency:
+  group: meta-paid-qa
+  cancel-in-progress: false
+jobs:
+  actual-meta-inference:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    environment: meta-production
+    env:
+      MODEL_API_KEY: ${{ secrets.MODEL_API_KEY }}
+      EV_VOICE_FIXTURE: tests/fixtures/voice-sample.wav
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Verify credential presence before paid requests
+        run: |
+          if [ -z "$MODEL_API_KEY" ]; then
+            echo 'MODEL_API_KEY GitHub Environment secret missing; paid QA cannot pass.' >&2
+            exit 1
+          fi
+      - name: Offline contract tests
+        run: node --test tests/meta-real-contract.test.js
+      - name: Run actual Muse Spark and Muse Wonder; record real outputs
+        run: |
+          ARGS=()
+          if [ '${{ inputs.include_image }}' = 'true' ]; then ARGS+=(--image); fi
+          if [ '${{ inputs.include_voice }}' = 'true' ]; then
+            test -f "$EV_VOICE_FIXTURE" || { echo 'Provide reviewed, rights-cleared WAV fixture first'; exit 1; }
+            ARGS+=(--voice)
+          fi
+          node tools/meta-live-verify.mjs "${ARGS[@]}"
+      - name: Upload observed provider results (NOT published to Pages)
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: meta-actual-output-${{ github.run_id }}
+          path: artifacts/meta-live-report.json
+          if-no-files-found: warn
+          retention-days: 7

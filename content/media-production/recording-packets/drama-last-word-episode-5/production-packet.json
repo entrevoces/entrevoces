@@ -1,0 +1,343 @@
+{
+  "schemaVersion": 2,
+  "mediaId": "drama-last-word-episode-5",
+  "title": "La última palabra · Antes de firmar",
+  "kind": "audio-drama",
+  "status": "script-draft",
+  "intendedLanguagePair": "English/Spanish",
+  "licenseState": "uncleared",
+  "review": {
+    "bilingual": false,
+    "domain": false,
+    "editorial": false
+  },
+  "scriptSource": "authored project draft",
+  "speakers": [
+    "NARRATOR",
+    "LUPE",
+    "TERESA",
+    "CLINICIAN",
+    "PATIENT",
+    "NOVICE INTERPRETER",
+    "SUPERVISOR",
+    "RAFA"
+  ],
+  "lines": [
+    {
+      "lineId": "cue-001",
+      "type": "production-cue",
+      "text": "EPISODE: Before the Signature. Scene 1 — A bus stop near an Oregon clinic. Distant rain, bus brakes, a phone notification.",
+      "requiresHumanMix": true
+    },
+    {
+      "lineId": "line-002",
+      "speaker": "NARRATOR",
+      "language": "unconfirmed",
+      "text": "Teresa's training exam was tomorrow. She had rehearsed chest pains, procedures, consultations and every word that sounded like a different word. But one sentence, written in tiny print, kept bothering her: “You may ask.”",
+      "estimatedMs": 15556,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "line-003",
+      "speaker": "LUPE",
+      "language": "unconfirmed",
+      "text": "You may ask for a bigger coffee, but the cafe may charge you for it. Permission is not a promise.",
+      "estimatedMs": 8889,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "line-004",
+      "speaker": "TERESA",
+      "language": "unconfirmed",
+      "text": "You have managed to explain modality and budgeting at the same time.",
+      "estimatedMs": 5333,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "line-005",
+      "speaker": "LUPE",
+      "language": "unconfirmed",
+      "text": "My methods are not approved by any university.",
+      "estimatedMs": 3556,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "cue-006",
+      "type": "production-cue",
+      "text": "They enter a supervised simulation room. An actor is playing a patient, another actor is playing a clinician.",
+      "requiresHumanMix": true
+    },
+    {
+      "lineId": "line-007",
+      "speaker": "CLINICIAN",
+      "language": "unconfirmed",
+      "text": "Before you decide whether to sign the consent form, I can explain the options and answer any questions.",
+      "estimatedMs": 8000,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "line-008",
+      "speaker": "PATIENT",
+      "language": "unconfirmed",
+      "text": "I'm not sure I understand the difference between what will happen and what might happen.",
+      "estimatedMs": 7111,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "line-009",
+      "speaker": "NOVICE INTERPRETER",
+      "language": "unconfirmed",
+      "text": "Tiene que firmar para que le expliquen el procedimiento.",
+      "estimatedMs": 4000,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "cue-010",
+      "type": "production-cue",
+      "text": "The supervisor signals pause. It is not a rebuke; it is an invitation to examine the information.",
+      "requiresHumanMix": true
+    },
+    {
+      "lineId": "line-011",
+      "speaker": "SUPERVISOR",
+      "language": "unconfirmed",
+      "text": "What was the speaker offering? And what did the interpreter add?",
+      "estimatedMs": 4889,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "line-012",
+      "speaker": "TERESA",
+      "language": "unconfirmed",
+      "text": "The clinician offered information before a choice. The interpreted sentence made signing a requirement before the explanation. It reversed the order and changed the patient's options.",
+      "estimatedMs": 12000,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "line-013",
+      "speaker": "PATIENT",
+      "language": "unconfirmed",
+      "text": "I was asking about what might happen. “Might” did not mean “will.”",
+      "estimatedMs": 5333,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "line-014",
+      "speaker": "SUPERVISOR",
+      "language": "unconfirmed",
+      "text": "Good. Let the original uncertainty stay uncertain. If an interpreter needs clarification, that can be handled transparently, without a guess.",
+      "estimatedMs": 8889,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "cue-015",
+      "type": "production-cue",
+      "text": "Scene 2 — Lunch outside. The wind steals Lupe's napkin, which makes three dignified attempts to escape.",
+      "requiresHumanMix": true
+    },
+    {
+      "lineId": "line-016",
+      "speaker": "LUPE",
+      "language": "unconfirmed",
+      "text": "I have a question. If the interpreter knows the answer, why can't she just explain the medicine herself?",
+      "estimatedMs": 8444,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "line-017",
+      "speaker": "TERESA",
+      "language": "unconfirmed",
+      "text": "Because the professional explaining it has the clinical responsibility. The interpreter carries the exchange accurately and can ask for clarification when needed.",
+      "estimatedMs": 9778,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "line-018",
+      "speaker": "LUPE",
+      "language": "unconfirmed",
+      "text": "So the interpreter is not a human search engine with a stethoscope.",
+      "estimatedMs": 5333,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "line-019",
+      "speaker": "TERESA",
+      "language": "unconfirmed",
+      "text": "Correct, and I would be terrible at hearing heartbeats. My ears are full of commas.",
+      "estimatedMs": 6667,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "cue-020",
+      "type": "production-cue",
+      "text": "Scene 3 — Afternoon practice. The actors return with a new statement.",
+      "requiresHumanMix": true
+    },
+    {
+      "lineId": "line-021",
+      "speaker": "CLINICIAN",
+      "language": "unconfirmed",
+      "text": "The instructions say one tablet every other day. Please check with your team before changing the dose.",
+      "estimatedMs": 7556,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "line-022",
+      "speaker": "PATIENT",
+      "language": "unconfirmed",
+      "text": "Does that mean a tablet today, none tomorrow, and one the next day?",
+      "estimatedMs": 5778,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "line-023",
+      "speaker": "TERESA",
+      "language": "unconfirmed",
+      "text": "¿Eso significa una tableta hoy, ninguna mañana y otra pasado mañana?",
+      "estimatedMs": 4889,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "line-024",
+      "speaker": "SUPERVISOR",
+      "language": "unconfirmed",
+      "text": "That preserves the question. It doesn't answer on behalf of the clinician.",
+      "estimatedMs": 5778,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "line-025",
+      "speaker": "CLINICIAN",
+      "language": "unconfirmed",
+      "text": "That's what the schedule says in this training example. For an actual prescription, the patient should follow the clinician's individualized instructions.",
+      "estimatedMs": 10222,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "cue-026",
+      "type": "production-cue",
+      "text": "Scene 4 — Evening, apartment elevator. A new notice is taped crookedly, with no name or date.",
+      "requiresHumanMix": true
+    },
+    {
+      "lineId": "line-027",
+      "speaker": "LUPE",
+      "language": "unconfirmed",
+      "text": "Oh no. Another mysterious paper. It says “final notice.”",
+      "estimatedMs": 4000,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "line-028",
+      "speaker": "TERESA",
+      "language": "unconfirmed",
+      "text": "Final notice of what? Who sent it? What authority does it have? A dramatic label is not the full story.",
+      "estimatedMs": 8889,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "line-029",
+      "speaker": "LUPE",
+      "language": "unconfirmed",
+      "text": "I was hoping this episode would end with dessert.",
+      "estimatedMs": 4000,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "line-030",
+      "speaker": "NARRATOR",
+      "language": "unconfirmed",
+      "text": "They walk past the elevator without concluding anything. By now Teresa knows that a sentence can be dramatic and still be incomplete.",
+      "estimatedMs": 9778,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "cue-031",
+      "type": "production-cue",
+      "text": "Scene 5 — Teresa's apartment, later. A page of notes sits beside a bowl of oranges.",
+      "requiresHumanMix": true
+    },
+    {
+      "lineId": "line-032",
+      "speaker": "TERESA",
+      "language": "unconfirmed",
+      "text": "In this training recording, I changed a permission into an obligation. I didn't even notice until I replayed it.",
+      "estimatedMs": 8889,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "line-033",
+      "speaker": "LUPE",
+      "language": "unconfirmed",
+      "text": "You have been replaying the same twelve seconds for an hour. The oranges are getting nervous.",
+      "estimatedMs": 7111,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "line-034",
+      "speaker": "TERESA",
+      "language": "unconfirmed",
+      "text": "It sounds different now. What was offered was an explanation before a decision. What I heard after the mistranslation was a command.",
+      "estimatedMs": 9778,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "line-035",
+      "speaker": "RAFA",
+      "language": "unconfirmed",
+      "text": "I used to think a confident voice made a sentence correct. Then I watched Lupe explain the dishwasher instructions with total confidence and flood the kitchen.",
+      "estimatedMs": 11556,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "line-036",
+      "speaker": "LUPE",
+      "language": "unconfirmed",
+      "text": "Those instructions were unclear. Also, the dishwasher was very dramatic.",
+      "estimatedMs": 4444,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "line-037",
+      "speaker": "TERESA",
+      "language": "unconfirmed",
+      "text": "Confidence isn't evidence. Listening closely and asking when necessary is the work.",
+      "estimatedMs": 5778,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "cue-038",
+      "type": "production-cue",
+      "text": "Music softens. She closes the notebook instead of adding another answer. For once the room is quiet.",
+      "requiresHumanMix": true
+    },
+    {
+      "lineId": "cue-039",
+      "type": "production-cue",
+      "text": "Outro: warm guitar and one tiny bell. NEXT EPISODE: The Red Truck.",
+      "requiresHumanMix": true
+    }
+  ],
+  "cues": [],
+  "wordCount": 680,
+  "approximateDurationSec": 243,
+  "production": {
+    "speakerStemPolicy": "one dry mono WAV stem per actor + separately recorded SFX/music stems",
+    "masters": "lossless 48kHz 24-bit WAV project master, accessible web M4A/MP3 plus captions",
+    "intelligibility": "mix spoken words above music; proof numbers, negative particles, hedges and speaker identities in the final mix",
+    "playback": "recheck native audio playback in mobile Safari with headphones and speakers",
+    "languagePolicy": "review every unconfirmed line language; do not assume English/Spanish from speaker ethnicity",
+    "soundPolicy": "silence may carry emotion; preserve consonants and headroom; sound cues never obscure an error anchor",
+    "licensing": "collect actor/voice/talent releases, music/sample license, cover and performance rights before deployment",
+    "asr": "export 16/24 kHz mono PCM16 for Meta Voice Transcribe; ASR only advises, never certifies bilingual fidelity"
+  },
+  "pending": [
+    "language of 30 parsed lines must be confirmed",
+    "all planned pauses and timings must be replaced with real measurements",
+    "actual recording and listening-quality inspection",
+    "source-to-translation semantic review",
+    "legal and medical domain review",
+    "rights sign-off"
+  ],
+  "cannotClaim": "This packet does not include recorded audio, authentic performance, final cue alignment or professional validation."
+}

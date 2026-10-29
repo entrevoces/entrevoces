@@ -1,0 +1,33 @@
+[Hallway of an apartment building, evening. Keys jingle. Neighbors overlap, but their voices are always intelligible.]
+
+MARTA: The paper says they scheduled a hearing for next Tuesday. I don't know what the judge will decide.
+
+INTERPRETER (deliberately altered training version): El juez decidió que tenemos que irnos el martes.
+
+[Pause; a notification chimes, then three more. The disagreement is supposed to sound small.]
+
+LUPE: Wait—who decided we have to leave? The paper says something about going to court, not moving trucks.
+
+TERESA: In this simulation, the English speaker described a future hearing and uncertainty. The Spanish version changed that into a completed judicial decision.
+
+MARTA: My cousin already borrowed a truck. I was going to pack the refrigerator before dinner.
+
+VIOLETA: A scheduled hearing is not a final judgment. I am not deciding your case; I am saying what that notice actually says. If you need legal guidance, speak with a qualified source.
+
+LUPE: So the refrigerator is not on trial?
+
+VIOLETA: Not unless it files a motion.
+
+[The practice version replays, this time with the correct line and a beat of silence after “no sé.”]
+
+INTERPRETER (corrected training version): El documento dice que programaron una audiencia para el próximo martes. No sé qué decidirá el juez.
+
+[The actors repeat the original in a new order, one speaker stopping mid-sentence for a repair. The learner listens for tense, attribution and certainty instead of isolated nouns.]
+
+MARTA: I was scared because I thought a hearing meant the case was over.
+
+LUPE: You were scared because the words arrived wearing the wrong uniform.
+
+TERESA: And the interpreter's job is not to dress the words up. It's to carry what was actually said.
+
+[End: the apartment group chat buzzes, but nobody has sent the refrigerator emoji yet.]

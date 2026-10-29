@@ -1,0 +1,5 @@
+"lineId","speaker","language","estimatedMs","text"
+"line-001","Clinician","en","4000","You may ask questions before deciding whether to sign."
+"line-002","Interpreter","es","1333","Debe firmar ahora."
+"line-003","Patient","es","1333","Quiero preguntar primero."
+"line-004","Interpreter corrected","es","3556","Puede hacer preguntas antes de decidir si firma."

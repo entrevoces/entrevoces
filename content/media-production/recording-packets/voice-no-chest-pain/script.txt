@@ -1,0 +1,25 @@
+[Clinical simulation. There is no real patient information. A careful interviewer and a patient actor speak over low room ambience.]
+
+PATIENT: I have not had chest pain today. Yesterday I felt pressure, but I am not sure what caused it.
+
+INTERPRETER (altered practice line): Hoy he tenido dolor de pecho. Ayer tuve dolor agudo por el medicamento.
+
+[Silence. The clinician prepares to write a note; the supervising interpreter stops the exercise.]
+
+SUPERVISOR: We heard three new facts that the patient did not give. Today changed from no chest pain to chest pain. Pressure became sharp pain. Uncertainty about cause became a claim about medication.
+
+TRAINEE: It sounded like the same story because most words were familiar. I was listening for medical vocabulary rather than relationships.
+
+PATIENT: What does “not sure” sound like? I do not want someone else to sound more certain than me.
+
+SUPERVISOR: Preserve the uncertainty. If you miss a sound, disclose the difficulty and ask for repetition instead of making a clinically significant guess.
+
+[The same actors repeat with a corrected version, leaving the hedging intact.]
+
+INTERPRETER (corrected practice line): Hoy no he tenido dolor de pecho. Ayer sentí presión, pero no estoy seguro de qué la causó.
+
+TRAINEE: I hear the opposite of the original error now. The small “no” carries a big difference.
+
+SUPERVISOR: Exactly. The lesson is not a claim that every symptom means the same condition. It is the accuracy of what a person actually reported.
+
+[The ambient room sound gives way to a soft bell; the scene ends before any diagnosis is invented.]

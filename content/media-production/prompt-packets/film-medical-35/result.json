@@ -1,0 +1,1110 @@
+{
+  "brief": {
+    "id": "film-medical-35",
+    "kind": "film",
+    "topic": "uncertainty",
+    "domain": "medical",
+    "direction": "en-es",
+    "creativeDNA": {
+      "version": 1,
+      "world": "a public library book club after an unexpected blackout",
+      "soundscape": "paper pages, emergency lamp click, distant thunder",
+      "stakes": "one borrowed story has acquired an extra witness",
+      "tone": "soft speculative fiction grounded in real human choices",
+      "comicRhythm": "one absurd rule is treated with ordinary practicality",
+      "music": "acoustic score only where it advances emotion",
+      "musicalHook": "use near-silence rather than constant underscores",
+      "choiceProblem": "How a subtle uncertainty distinction changes a credible medical situation",
+      "emotionalTurn": "An initially sensible choice has a cost; the ending resolves that cost without sermonizing",
+      "adultAudience": "Curious adult learner, no stereotype-based personalization",
+      "noCopying": "Original roles, scene order, exact dialogue, lyric melody and production identity; never mimic a named living performer"
+    },
+    "audience": "Adult interpreters in training; mature warmth and wit, without gender or cultural stereotypes.",
+    "primarySkill": "uncertainty",
+    "termIds": [
+      "M0229",
+      "M0031",
+      "M0087",
+      "M0032",
+      "M0086"
+    ],
+    "sourceIds": [
+      "MEDLINE_TOPICS"
+    ],
+    "knowledge": [
+      {
+        "id": "M0229",
+        "en": "patient-reported",
+        "es": "según lo informado por el paciente",
+        "context": "Information attributed to patient, not independently confirmed.",
+        "caution": "Avoid changing 'reports' into 'diagnosed'.",
+        "review": "needs_professional_bilingual_and_domain_review",
+        "source_id": "MEDLINE_TOPICS",
+        "groundingReason": "editorial-topic-anchor:patient-reported"
+      },
+      {
+        "id": "M0031",
+        "en": "chief complaint",
+        "es": "motivo principal de consulta",
+        "context": "Main reason for seeking care.",
+        "caution": "Do not confuse complaint with a formal grievance.",
+        "review": "needs_professional_bilingual_and_domain_review",
+        "source_id": "MEDLINE_TOPICS",
+        "groundingReason": "editorial-topic-anchor:chief complaint"
+      },
+      {
+        "id": "M0087",
+        "en": "symptom",
+        "es": "síntoma",
+        "context": "Problem experienced by patient.",
+        "caution": "",
+        "review": "needs_professional_bilingual_and_domain_review",
+        "source_id": "MEDLINE_TOPICS",
+        "groundingReason": "editorial-topic-anchor:symptom"
+      },
+      {
+        "id": "M0032",
+        "en": "medical history",
+        "es": "antecedentes médicos",
+        "context": "Past and present information relevant to care.",
+        "caution": "",
+        "review": "needs_professional_bilingual_and_domain_review",
+        "source_id": "MEDLINE_TOPICS",
+        "groundingReason": "editorial-topic-anchor:medical history"
+      },
+      {
+        "id": "M0086",
+        "en": "diagnosis",
+        "es": "diagnóstico",
+        "context": "Identification of condition based on assessment.",
+        "caution": "Distinguish suspected from confirmed diagnosis.",
+        "review": "needs_professional_bilingual_and_domain_review",
+        "source_id": "MEDLINE_TOPICS",
+        "groundingReason": "editorial-topic-anchor:diagnosis"
+      }
+    ],
+    "brief": "An emotionally vivid short film with striking situation, audible dialogue and visual punchline. Realistic iPhone production strategy.",
+    "deliverable": "complete script, timecoded storyboard, captions, iPhone production directions; mark video pending",
+    "minWords": 180,
+    "editorialConstraint": "Every important topic must be grounded in the selected domain. Treat clinical/legal guidance as provisional; write character-driven entertainment with truthful, explicitly fictional interpretation repairs.",
+    "review": "Every bilingual interpretation is a draft until reviewed by a qualified bilingual practitioner.",
+    "audioPolicy": "Author text, timing, sound-design and casting manifests now. Never call a transcription API a speech synthesizer; do not assert audio exists until ingested."
+  },
+  "proposed": {
+    "id": "film-medical-35",
+    "kind": "film",
+    "topic": "uncertainty",
+    "domain": "medical",
+    "status": "proposed",
+    "title": "film: uncertainty",
+    "synopsis": "Creative concept awaiting authorship",
+    "termIds": [
+      "M0229",
+      "M0031",
+      "M0087",
+      "M0032",
+      "M0086"
+    ],
+    "sourceIds": [
+      "MEDLINE_TOPICS"
+    ],
+    "knowledgeHash": "45f5ffb2b159cddde9f448e310921bfd430a87dc9779bb720efa6efe507d7a73",
+    "direction": "en-es",
+    "script": "",
+    "turns": [],
+    "errors": [],
+    "casting": [],
+    "audio": null,
+    "cover": null,
+    "review": {
+      "bilingualApproved": false,
+      "domainApproved": false,
+      "editorialApproved": false
+    },
+    "rights": {
+      "status": "uncleared",
+      "license": null
+    },
+    "transcript": null,
+    "generation": {
+      "model": null,
+      "stages": [],
+      "usage": [],
+      "stageOutputs": {},
+      "briefHash": "fa499c8219b7ad00cb0cf4bfefe44da9dc0a3e6002f5c3ca6057420844c674cb",
+      "template": "media-studio-v1"
+    },
+    "prompts": {
+      "suno": null,
+      "image": null,
+      "voice": null,
+      "video": null
+    },
+    "reviewerNotes": [],
+    "limitations": [
+      "No generated speech is automatically provided by Meta Voice Transcribe.",
+      "Medical/legal equivalents require qualified bilingual review."
+    ]
+  },
+  "prompts": [
+    {
+      "stage": "creative-direction",
+      "model": "muse-wonder-1.0",
+      "schema": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "title": {
+            "type": "string"
+          },
+          "synopsis": {
+            "type": "string"
+          },
+          "concept": {
+            "type": "string"
+          },
+          "emotionalArc": {
+            "type": "string"
+          },
+          "cast": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "voice": {
+                  "type": "string"
+                },
+                "role": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "name",
+                "voice",
+                "role"
+              ]
+            }
+          },
+          "originality": {
+            "type": "string"
+          },
+          "episodeBeats": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "required": [
+          "title",
+          "synopsis",
+          "concept",
+          "emotionalArc",
+          "cast",
+          "originality",
+          "episodeBeats"
+        ]
+      },
+      "system": "You are the Entre Voces creative studio. Produce sophisticated, delightful entertainment for adult bilingual interpreter trainees. Avoid stereotypes and classroom quizzes. The submitted corpus is a provisional, unreviewed research draft: never assert that entry-level synonyms are clinically/legal-authoritatively verified. Preserve negation, numbers, deadlines, permissions, uncertainty, attribution, and person-first language. Fictional scenarios must not masquerade as official case records. All content is original and culturally nuanced. All output must be plain valid JSON without markdown.\nReturn {title,synopsis,concept,emotionalArc,cast:[{name,voice,role}],originality,episodeBeats:[string]}.\nAn emotionally vivid short film with striking situation, audible dialogue and visual punchline. Realistic iPhone production strategy.\nFormat film. Aim for at least 180 words of distinct, substantive, performable content. Creative north star: produce audio storytelling that someone chooses for pleasure, not a lecture or vocabulary drill.\n\nCraft requirements: start in a surprising specific human situation; recurring characters have incompatible reasonable desires; allow subtext, silence, interruption and a comic turn rooted in personality. Each scene changes someone's plan, status or knowledge. The interpreting distinction must cause an actual believable consequence, not appear in a final lecture. Adult humor is affectionate, layered, never an ethnic stereotype or a caricatured accent. Write natural conversational Spanish and English at the level of the character, with explicit language labels and appropriate registers. Preserve all key numbers, negation, uncertainty, attribution, jurisdiction and consent boundaries. Never invent authoritatively correct clinical advice or court outcomes; let a character ask a qualified person when necessary. Avoid procedural trivia as emotional resolution. No 'today we learned', 'the lesson is', generic mentor monologues, cliffhanger without preceding payoff, or token-length padding. Add moments of sound and atmosphere that remain meaningful without a screen.",
+      "user": {
+        "brief": {
+          "id": "film-medical-35",
+          "kind": "film",
+          "topic": "uncertainty",
+          "domain": "medical",
+          "direction": "en-es",
+          "creativeDNA": {
+            "version": 1,
+            "world": "a public library book club after an unexpected blackout",
+            "soundscape": "paper pages, emergency lamp click, distant thunder",
+            "stakes": "one borrowed story has acquired an extra witness",
+            "tone": "soft speculative fiction grounded in real human choices",
+            "comicRhythm": "one absurd rule is treated with ordinary practicality",
+            "music": "acoustic score only where it advances emotion",
+            "musicalHook": "use near-silence rather than constant underscores",
+            "choiceProblem": "How a subtle uncertainty distinction changes a credible medical situation",
+            "emotionalTurn": "An initially sensible choice has a cost; the ending resolves that cost without sermonizing",
+            "adultAudience": "Curious adult learner, no stereotype-based personalization",
+            "noCopying": "Original roles, scene order, exact dialogue, lyric melody and production identity; never mimic a named living performer"
+          },
+          "audience": "Adult interpreters in training; mature warmth and wit, without gender or cultural stereotypes.",
+          "primarySkill": "uncertainty",
+          "termIds": [
+            "M0229",
+            "M0031",
+            "M0087",
+            "M0032",
+            "M0086"
+          ],
+          "sourceIds": [
+            "MEDLINE_TOPICS"
+          ],
+          "knowledge": [
+            {
+              "id": "M0229",
+              "en": "patient-reported",
+              "es": "según lo informado por el paciente",
+              "context": "Information attributed to patient, not independently confirmed.",
+              "caution": "Avoid changing 'reports' into 'diagnosed'.",
+              "review": "needs_professional_bilingual_and_domain_review",
+              "source_id": "MEDLINE_TOPICS",
+              "groundingReason": "editorial-topic-anchor:patient-reported"
+            },
+            {
+              "id": "M0031",
+              "en": "chief complaint",
+              "es": "motivo principal de consulta",
+              "context": "Main reason for seeking care.",
+              "caution": "Do not confuse complaint with a formal grievance.",
+              "review": "needs_professional_bilingual_and_domain_review",
+              "source_id": "MEDLINE_TOPICS",
+              "groundingReason": "editorial-topic-anchor:chief complaint"
+            },
+            {
+              "id": "M0087",
+              "en": "symptom",
+              "es": "síntoma",
+              "context": "Problem experienced by patient.",
+              "caution": "",
+              "review": "needs_professional_bilingual_and_domain_review",
+              "source_id": "MEDLINE_TOPICS",
+              "groundingReason": "editorial-topic-anchor:symptom"
+            },
+            {
+              "id": "M0032",
+              "en": "medical history",
+              "es": "antecedentes médicos",
+              "context": "Past and present information relevant to care.",
+              "caution": "",
+              "review": "needs_professional_bilingual_and_domain_review",
+              "source_id": "MEDLINE_TOPICS",
+              "groundingReason": "editorial-topic-anchor:medical history"
+            },
+            {
+              "id": "M0086",
+              "en": "diagnosis",
+              "es": "diagnóstico",
+              "context": "Identification of condition based on assessment.",
+              "caution": "Distinguish suspected from confirmed diagnosis.",
+              "review": "needs_professional_bilingual_and_domain_review",
+              "source_id": "MEDLINE_TOPICS",
+              "groundingReason": "editorial-topic-anchor:diagnosis"
+            }
+          ],
+          "brief": "An emotionally vivid short film with striking situation, audible dialogue and visual punchline. Realistic iPhone production strategy.",
+          "deliverable": "complete script, timecoded storyboard, captions, iPhone production directions; mark video pending",
+          "minWords": 180,
+          "editorialConstraint": "Every important topic must be grounded in the selected domain. Treat clinical/legal guidance as provisional; write character-driven entertainment with truthful, explicitly fictional interpretation repairs.",
+          "review": "Every bilingual interpretation is a draft until reviewed by a qualified bilingual practitioner.",
+          "audioPolicy": "Author text, timing, sound-design and casting manifests now. Never call a transcription API a speech synthesizer; do not assert audio exists until ingested."
+        },
+        "context": {}
+      }
+    },
+    {
+      "stage": "script",
+      "model": "muse-spark-1.3",
+      "schema": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "script": {
+            "type": "string"
+          },
+          "sceneDirections": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "scene": {
+                  "type": "string"
+                },
+                "setting": {
+                  "type": "string"
+                },
+                "sound": {
+                  "type": "string"
+                },
+                "camera": {
+                  "type": "string"
+                },
+                "expectedDurationSec": {
+                  "type": "number"
+                }
+              },
+              "required": [
+                "scene",
+                "setting",
+                "sound",
+                "camera",
+                "expectedDurationSec"
+              ]
+            }
+          },
+          "productionNotes": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "sourceClaims": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "termId": {
+                  "type": "string"
+                },
+                "claim": {
+                  "type": "string"
+                },
+                "reviewNeeded": {
+                  "type": "boolean"
+                }
+              },
+              "required": [
+                "termId",
+                "claim",
+                "reviewNeeded"
+              ]
+            }
+          }
+        },
+        "required": [
+          "script",
+          "sceneDirections",
+          "productionNotes",
+          "sourceClaims"
+        ]
+      },
+      "system": "You are the Entre Voces creative studio. Produce sophisticated, delightful entertainment for adult bilingual interpreter trainees. Avoid stereotypes and classroom quizzes. The submitted corpus is a provisional, unreviewed research draft: never assert that entry-level synonyms are clinically/legal-authoritatively verified. Preserve negation, numbers, deadlines, permissions, uncertainty, attribution, and person-first language. Fictional scenarios must not masquerade as official case records. All content is original and culturally nuanced. All output must be plain valid JSON without markdown.\nReturn {script: a FULL-length complete script,sceneDirections:[{scene,setting,sound,camera,expectedDurationSec}],productionNotes:[string],sourceClaims:[{termId,claim,reviewNeeded}]}. For catch-the-change ALSO return turns:[{speaker,language,text}], errors:[{id,category,original,wrong,repair,recognizedPhrases:[string],audibleSource:string,audibleWrong:string,audibleRepair:string,sourceTurnIndex:integer,wrongTurnIndex:integer,repairTurnIndex:integer}]. Every audible* phrase must occur EXACTLY in its referenced actual spoken turn; the deliberately wrong utterance is in Spanish and the source utterance in English. No paraphrased-only cue metadata.  For audio-mystery ALSO return start:string, nodes:{[nodeId]:{text:string,choices:[{label,next}]}} with at least two reachable terminal endings. Do not write a teaser or outline; satisfy minimum word target.\nAn emotionally vivid short film with striking situation, audible dialogue and visual punchline. Realistic iPhone production strategy.\nFormat film. Aim for at least 180 words of distinct, substantive, performable content. Creative north star: produce audio storytelling that someone chooses for pleasure, not a lecture or vocabulary drill.\n\nCraft requirements: start in a surprising specific human situation; recurring characters have incompatible reasonable desires; allow subtext, silence, interruption and a comic turn rooted in personality. Each scene changes someone's plan, status or knowledge. The interpreting distinction must cause an actual believable consequence, not appear in a final lecture. Adult humor is affectionate, layered, never an ethnic stereotype or a caricatured accent. Write natural conversational Spanish and English at the level of the character, with explicit language labels and appropriate registers. Preserve all key numbers, negation, uncertainty, attribution, jurisdiction and consent boundaries. Never invent authoritatively correct clinical advice or court outcomes; let a character ask a qualified person when necessary. Avoid procedural trivia as emotional resolution. No 'today we learned', 'the lesson is', generic mentor monologues, cliffhanger without preceding payoff, or token-length padding. Add moments of sound and atmosphere that remain meaningful without a screen.",
+      "user": {
+        "brief": {
+          "id": "film-medical-35",
+          "kind": "film",
+          "topic": "uncertainty",
+          "domain": "medical",
+          "direction": "en-es",
+          "creativeDNA": {
+            "version": 1,
+            "world": "a public library book club after an unexpected blackout",
+            "soundscape": "paper pages, emergency lamp click, distant thunder",
+            "stakes": "one borrowed story has acquired an extra witness",
+            "tone": "soft speculative fiction grounded in real human choices",
+            "comicRhythm": "one absurd rule is treated with ordinary practicality",
+            "music": "acoustic score only where it advances emotion",
+            "musicalHook": "use near-silence rather than constant underscores",
+            "choiceProblem": "How a subtle uncertainty distinction changes a credible medical situation",
+            "emotionalTurn": "An initially sensible choice has a cost; the ending resolves that cost without sermonizing",
+            "adultAudience": "Curious adult learner, no stereotype-based personalization",
+            "noCopying": "Original roles, scene order, exact dialogue, lyric melody and production identity; never mimic a named living performer"
+          },
+          "audience": "Adult interpreters in training; mature warmth and wit, without gender or cultural stereotypes.",
+          "primarySkill": "uncertainty",
+          "termIds": [
+            "M0229",
+            "M0031",
+            "M0087",
+            "M0032",
+            "M0086"
+          ],
+          "sourceIds": [
+            "MEDLINE_TOPICS"
+          ],
+          "knowledge": [
+            {
+              "id": "M0229",
+              "en": "patient-reported",
+              "es": "según lo informado por el paciente",
+              "context": "Information attributed to patient, not independently confirmed.",
+              "caution": "Avoid changing 'reports' into 'diagnosed'.",
+              "review": "needs_professional_bilingual_and_domain_review",
+              "source_id": "MEDLINE_TOPICS",
+              "groundingReason": "editorial-topic-anchor:patient-reported"
+            },
+            {
+              "id": "M0031",
+              "en": "chief complaint",
+              "es": "motivo principal de consulta",
+              "context": "Main reason for seeking care.",
+              "caution": "Do not confuse complaint with a formal grievance.",
+              "review": "needs_professional_bilingual_and_domain_review",
+              "source_id": "MEDLINE_TOPICS",
+              "groundingReason": "editorial-topic-anchor:chief complaint"
+            },
+            {
+              "id": "M0087",
+              "en": "symptom",
+              "es": "síntoma",
+              "context": "Problem experienced by patient.",
+              "caution": "",
+              "review": "needs_professional_bilingual_and_domain_review",
+              "source_id": "MEDLINE_TOPICS",
+              "groundingReason": "editorial-topic-anchor:symptom"
+            },
+            {
+              "id": "M0032",
+              "en": "medical history",
+              "es": "antecedentes médicos",
+              "context": "Past and present information relevant to care.",
+              "caution": "",
+              "review": "needs_professional_bilingual_and_domain_review",
+              "source_id": "MEDLINE_TOPICS",
+              "groundingReason": "editorial-topic-anchor:medical history"
+            },
+            {
+              "id": "M0086",
+              "en": "diagnosis",
+              "es": "diagnóstico",
+              "context": "Identification of condition based on assessment.",
+              "caution": "Distinguish suspected from confirmed diagnosis.",
+              "review": "needs_professional_bilingual_and_domain_review",
+              "source_id": "MEDLINE_TOPICS",
+              "groundingReason": "editorial-topic-anchor:diagnosis"
+            }
+          ],
+          "brief": "An emotionally vivid short film with striking situation, audible dialogue and visual punchline. Realistic iPhone production strategy.",
+          "deliverable": "complete script, timecoded storyboard, captions, iPhone production directions; mark video pending",
+          "minWords": 180,
+          "editorialConstraint": "Every important topic must be grounded in the selected domain. Treat clinical/legal guidance as provisional; write character-driven entertainment with truthful, explicitly fictional interpretation repairs.",
+          "review": "Every bilingual interpretation is a draft until reviewed by a qualified bilingual practitioner.",
+          "audioPolicy": "Author text, timing, sound-design and casting manifests now. Never call a transcription API a speech synthesizer; do not assert audio exists until ingested."
+        },
+        "context": {}
+      }
+    },
+    {
+      "stage": "semantic-critique",
+      "model": "muse-wonder-1.0",
+      "schema": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "verdict": {
+            "type": "string",
+            "enum": [
+              "accept",
+              "revise",
+              "reject"
+            ]
+          },
+          "findings": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "severity": {
+                  "type": "string",
+                  "enum": [
+                    "minor",
+                    "major",
+                    "blocker"
+                  ]
+                },
+                "passage": {
+                  "type": "string"
+                },
+                "problem": {
+                  "type": "string"
+                },
+                "suggestion": {
+                  "type": "string"
+                },
+                "termId": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "severity",
+                "passage",
+                "problem",
+                "suggestion",
+                "termId"
+              ]
+            }
+          },
+          "criticalMeaningUnits": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "text": {
+                  "type": "string"
+                },
+                "language": {
+                  "type": "string"
+                },
+                "semanticType": {
+                  "type": "string"
+                },
+                "sourceTermId": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "text",
+                "language",
+                "semanticType",
+                "sourceTermId"
+              ]
+            }
+          }
+        },
+        "required": [
+          "verdict",
+          "findings",
+          "criticalMeaningUnits"
+        ]
+      },
+      "system": "You are the Entre Voces creative studio. Produce sophisticated, delightful entertainment for adult bilingual interpreter trainees. Avoid stereotypes and classroom quizzes. The submitted corpus is a provisional, unreviewed research draft: never assert that entry-level synonyms are clinically/legal-authoritatively verified. Preserve negation, numbers, deadlines, permissions, uncertainty, attribution, and person-first language. Fictional scenarios must not masquerade as official case records. All content is original and culturally nuanced. All output must be plain valid JSON without markdown.\nReturn {verdict:\"accept\"|\"revise\"|\"reject\",findings:[{severity:\"minor\"|\"major\"|\"blocker\",passage,problem,suggestion,termId}],criticalMeaningUnits:[{text,language,semanticType,sourceTermId}]}. Inspect dates/negation/amounts/uncertainty, legal/medical accuracy, language direction and authoritativeness.\nAn emotionally vivid short film with striking situation, audible dialogue and visual punchline. Realistic iPhone production strategy.\nFormat film. Aim for at least 180 words of distinct, substantive, performable content. Creative north star: produce audio storytelling that someone chooses for pleasure, not a lecture or vocabulary drill.\n\nCraft requirements: start in a surprising specific human situation; recurring characters have incompatible reasonable desires; allow subtext, silence, interruption and a comic turn rooted in personality. Each scene changes someone's plan, status or knowledge. The interpreting distinction must cause an actual believable consequence, not appear in a final lecture. Adult humor is affectionate, layered, never an ethnic stereotype or a caricatured accent. Write natural conversational Spanish and English at the level of the character, with explicit language labels and appropriate registers. Preserve all key numbers, negation, uncertainty, attribution, jurisdiction and consent boundaries. Never invent authoritatively correct clinical advice or court outcomes; let a character ask a qualified person when necessary. Avoid procedural trivia as emotional resolution. No 'today we learned', 'the lesson is', generic mentor monologues, cliffhanger without preceding payoff, or token-length padding. Add moments of sound and atmosphere that remain meaningful without a screen.",
+      "user": {
+        "brief": {
+          "id": "film-medical-35",
+          "kind": "film",
+          "topic": "uncertainty",
+          "domain": "medical",
+          "direction": "en-es",
+          "creativeDNA": {
+            "version": 1,
+            "world": "a public library book club after an unexpected blackout",
+            "soundscape": "paper pages, emergency lamp click, distant thunder",
+            "stakes": "one borrowed story has acquired an extra witness",
+            "tone": "soft speculative fiction grounded in real human choices",
+            "comicRhythm": "one absurd rule is treated with ordinary practicality",
+            "music": "acoustic score only where it advances emotion",
+            "musicalHook": "use near-silence rather than constant underscores",
+            "choiceProblem": "How a subtle uncertainty distinction changes a credible medical situation",
+            "emotionalTurn": "An initially sensible choice has a cost; the ending resolves that cost without sermonizing",
+            "adultAudience": "Curious adult learner, no stereotype-based personalization",
+            "noCopying": "Original roles, scene order, exact dialogue, lyric melody and production identity; never mimic a named living performer"
+          },
+          "audience": "Adult interpreters in training; mature warmth and wit, without gender or cultural stereotypes.",
+          "primarySkill": "uncertainty",
+          "termIds": [
+            "M0229",
+            "M0031",
+            "M0087",
+            "M0032",
+            "M0086"
+          ],
+          "sourceIds": [
+            "MEDLINE_TOPICS"
+          ],
+          "knowledge": [
+            {
+              "id": "M0229",
+              "en": "patient-reported",
+              "es": "según lo informado por el paciente",
+              "context": "Information attributed to patient, not independently confirmed.",
+              "caution": "Avoid changing 'reports' into 'diagnosed'.",
+              "review": "needs_professional_bilingual_and_domain_review",
+              "source_id": "MEDLINE_TOPICS",
+              "groundingReason": "editorial-topic-anchor:patient-reported"
+            },
+            {
+              "id": "M0031",
+              "en": "chief complaint",
+              "es": "motivo principal de consulta",
+              "context": "Main reason for seeking care.",
+              "caution": "Do not confuse complaint with a formal grievance.",
+              "review": "needs_professional_bilingual_and_domain_review",
+              "source_id": "MEDLINE_TOPICS",
+              "groundingReason": "editorial-topic-anchor:chief complaint"
+            },
+            {
+              "id": "M0087",
+              "en": "symptom",
+              "es": "síntoma",
+              "context": "Problem experienced by patient.",
+              "caution": "",
+              "review": "needs_professional_bilingual_and_domain_review",
+              "source_id": "MEDLINE_TOPICS",
+              "groundingReason": "editorial-topic-anchor:symptom"
+            },
+            {
+              "id": "M0032",
+              "en": "medical history",
+              "es": "antecedentes médicos",
+              "context": "Past and present information relevant to care.",
+              "caution": "",
+              "review": "needs_professional_bilingual_and_domain_review",
+              "source_id": "MEDLINE_TOPICS",
+              "groundingReason": "editorial-topic-anchor:medical history"
+            },
+            {
+              "id": "M0086",
+              "en": "diagnosis",
+              "es": "diagnóstico",
+              "context": "Identification of condition based on assessment.",
+              "caution": "Distinguish suspected from confirmed diagnosis.",
+              "review": "needs_professional_bilingual_and_domain_review",
+              "source_id": "MEDLINE_TOPICS",
+              "groundingReason": "editorial-topic-anchor:diagnosis"
+            }
+          ],
+          "brief": "An emotionally vivid short film with striking situation, audible dialogue and visual punchline. Realistic iPhone production strategy.",
+          "deliverable": "complete script, timecoded storyboard, captions, iPhone production directions; mark video pending",
+          "minWords": 180,
+          "editorialConstraint": "Every important topic must be grounded in the selected domain. Treat clinical/legal guidance as provisional; write character-driven entertainment with truthful, explicitly fictional interpretation repairs.",
+          "review": "Every bilingual interpretation is a draft until reviewed by a qualified bilingual practitioner.",
+          "audioPolicy": "Author text, timing, sound-design and casting manifests now. Never call a transcription API a speech synthesizer; do not assert audio exists until ingested."
+        },
+        "context": {}
+      }
+    },
+    {
+      "stage": "narrative-critique",
+      "model": "muse-spark-1.3",
+      "schema": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "verdict": {
+            "type": "string",
+            "enum": [
+              "accept",
+              "revise",
+              "reject"
+            ]
+          },
+          "appeal": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "immediateHook": {
+                "type": "string"
+              },
+              "characterDepth": {
+                "type": "string"
+              },
+              "suspense": {
+                "type": "string"
+              },
+              "humor": {
+                "type": "string"
+              },
+              "replayValue": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "immediateHook",
+              "characterDepth",
+              "suspense",
+              "humor",
+              "replayValue"
+            ]
+          },
+          "findings": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "severity": {
+                  "type": "string",
+                  "enum": [
+                    "minor",
+                    "major",
+                    "blocker"
+                  ]
+                },
+                "problem": {
+                  "type": "string"
+                },
+                "suggestion": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "severity",
+                "problem",
+                "suggestion"
+              ]
+            }
+          }
+        },
+        "required": [
+          "verdict",
+          "appeal",
+          "findings"
+        ]
+      },
+      "system": "You are the Entre Voces creative studio. Produce sophisticated, delightful entertainment for adult bilingual interpreter trainees. Avoid stereotypes and classroom quizzes. The submitted corpus is a provisional, unreviewed research draft: never assert that entry-level synonyms are clinically/legal-authoritatively verified. Preserve negation, numbers, deadlines, permissions, uncertainty, attribution, and person-first language. Fictional scenarios must not masquerade as official case records. All content is original and culturally nuanced. All output must be plain valid JSON without markdown.\nReturn {verdict:\"accept\"|\"revise\"|\"reject\",appeal:{immediateHook,characterDepth,suspense,humor,replayValue},findings:[{severity,problem,suggestion}]}. Reject patronizing education disguised as entertainment, stereotypes, shallow outlines.\nAn emotionally vivid short film with striking situation, audible dialogue and visual punchline. Realistic iPhone production strategy.\nFormat film. Aim for at least 180 words of distinct, substantive, performable content. Creative north star: produce audio storytelling that someone chooses for pleasure, not a lecture or vocabulary drill.\n\nCraft requirements: start in a surprising specific human situation; recurring characters have incompatible reasonable desires; allow subtext, silence, interruption and a comic turn rooted in personality. Each scene changes someone's plan, status or knowledge. The interpreting distinction must cause an actual believable consequence, not appear in a final lecture. Adult humor is affectionate, layered, never an ethnic stereotype or a caricatured accent. Write natural conversational Spanish and English at the level of the character, with explicit language labels and appropriate registers. Preserve all key numbers, negation, uncertainty, attribution, jurisdiction and consent boundaries. Never invent authoritatively correct clinical advice or court outcomes; let a character ask a qualified person when necessary. Avoid procedural trivia as emotional resolution. No 'today we learned', 'the lesson is', generic mentor monologues, cliffhanger without preceding payoff, or token-length padding. Add moments of sound and atmosphere that remain meaningful without a screen.",
+      "user": {
+        "brief": {
+          "id": "film-medical-35",
+          "kind": "film",
+          "topic": "uncertainty",
+          "domain": "medical",
+          "direction": "en-es",
+          "creativeDNA": {
+            "version": 1,
+            "world": "a public library book club after an unexpected blackout",
+            "soundscape": "paper pages, emergency lamp click, distant thunder",
+            "stakes": "one borrowed story has acquired an extra witness",
+            "tone": "soft speculative fiction grounded in real human choices",
+            "comicRhythm": "one absurd rule is treated with ordinary practicality",
+            "music": "acoustic score only where it advances emotion",
+            "musicalHook": "use near-silence rather than constant underscores",
+            "choiceProblem": "How a subtle uncertainty distinction changes a credible medical situation",
+            "emotionalTurn": "An initially sensible choice has a cost; the ending resolves that cost without sermonizing",
+            "adultAudience": "Curious adult learner, no stereotype-based personalization",
+            "noCopying": "Original roles, scene order, exact dialogue, lyric melody and production identity; never mimic a named living performer"
+          },
+          "audience": "Adult interpreters in training; mature warmth and wit, without gender or cultural stereotypes.",
+          "primarySkill": "uncertainty",
+          "termIds": [
+            "M0229",
+            "M0031",
+            "M0087",
+            "M0032",
+            "M0086"
+          ],
+          "sourceIds": [
+            "MEDLINE_TOPICS"
+          ],
+          "knowledge": [
+            {
+              "id": "M0229",
+              "en": "patient-reported",
+              "es": "según lo informado por el paciente",
+              "context": "Information attributed to patient, not independently confirmed.",
+              "caution": "Avoid changing 'reports' into 'diagnosed'.",
+              "review": "needs_professional_bilingual_and_domain_review",
+              "source_id": "MEDLINE_TOPICS",
+              "groundingReason": "editorial-topic-anchor:patient-reported"
+            },
+            {
+              "id": "M0031",
+              "en": "chief complaint",
+              "es": "motivo principal de consulta",
+              "context": "Main reason for seeking care.",
+              "caution": "Do not confuse complaint with a formal grievance.",
+              "review": "needs_professional_bilingual_and_domain_review",
+              "source_id": "MEDLINE_TOPICS",
+              "groundingReason": "editorial-topic-anchor:chief complaint"
+            },
+            {
+              "id": "M0087",
+              "en": "symptom",
+              "es": "síntoma",
+              "context": "Problem experienced by patient.",
+              "caution": "",
+              "review": "needs_professional_bilingual_and_domain_review",
+              "source_id": "MEDLINE_TOPICS",
+              "groundingReason": "editorial-topic-anchor:symptom"
+            },
+            {
+              "id": "M0032",
+              "en": "medical history",
+              "es": "antecedentes médicos",
+              "context": "Past and present information relevant to care.",
+              "caution": "",
+              "review": "needs_professional_bilingual_and_domain_review",
+              "source_id": "MEDLINE_TOPICS",
+              "groundingReason": "editorial-topic-anchor:medical history"
+            },
+            {
+              "id": "M0086",
+              "en": "diagnosis",
+              "es": "diagnóstico",
+              "context": "Identification of condition based on assessment.",
+              "caution": "Distinguish suspected from confirmed diagnosis.",
+              "review": "needs_professional_bilingual_and_domain_review",
+              "source_id": "MEDLINE_TOPICS",
+              "groundingReason": "editorial-topic-anchor:diagnosis"
+            }
+          ],
+          "brief": "An emotionally vivid short film with striking situation, audible dialogue and visual punchline. Realistic iPhone production strategy.",
+          "deliverable": "complete script, timecoded storyboard, captions, iPhone production directions; mark video pending",
+          "minWords": 180,
+          "editorialConstraint": "Every important topic must be grounded in the selected domain. Treat clinical/legal guidance as provisional; write character-driven entertainment with truthful, explicitly fictional interpretation repairs.",
+          "review": "Every bilingual interpretation is a draft until reviewed by a qualified bilingual practitioner.",
+          "audioPolicy": "Author text, timing, sound-design and casting manifests now. Never call a transcription API a speech synthesizer; do not assert audio exists until ingested."
+        },
+        "context": {}
+      }
+    },
+    {
+      "stage": "production",
+      "model": "muse-spark-1.3",
+      "schema": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "recording": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "casting": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "properties": {
+                    "speaker": {
+                      "type": "string"
+                    },
+                    "language": {
+                      "type": "string"
+                    },
+                    "voiceTraits": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "speaker",
+                    "language",
+                    "voiceTraits"
+                  ]
+                }
+              },
+              "segments": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "properties": {
+                    "speaker": {
+                      "type": "string"
+                    },
+                    "text": {
+                      "type": "string"
+                    },
+                    "durationSec": {
+                      "type": "number"
+                    },
+                    "soundCue": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "speaker",
+                    "text",
+                    "durationSec",
+                    "soundCue"
+                  ]
+                }
+              }
+            },
+            "required": [
+              "casting",
+              "segments"
+            ]
+          },
+          "art": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "prompt": {
+                "type": "string"
+              },
+              "altText": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "prompt",
+              "altText"
+            ]
+          },
+          "music": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "brief": {
+                "type": "string"
+              },
+              "stems": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            },
+            "required": [
+              "brief",
+              "stems"
+            ]
+          },
+          "sunoPrompt": {
+            "type": "string"
+          },
+          "video": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "iphoneWorkflow": {
+                "type": "string"
+              },
+              "shotList": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "properties": {
+                    "durationSec": {
+                      "type": "number"
+                    },
+                    "shot": {
+                      "type": "string"
+                    },
+                    "action": {
+                      "type": "string"
+                    },
+                    "audio": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "durationSec",
+                    "shot",
+                    "action",
+                    "audio"
+                  ]
+                }
+              }
+            },
+            "required": [
+              "iphoneWorkflow",
+              "shotList"
+            ]
+          },
+          "accessibility": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "transcriptPlan": {
+                "type": "string"
+              },
+              "captionsPlan": {
+                "type": "string"
+              },
+              "reducedAudioPlan": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "transcriptPlan",
+              "captionsPlan",
+              "reducedAudioPlan"
+            ]
+          }
+        },
+        "required": [
+          "recording",
+          "art",
+          "music",
+          "sunoPrompt",
+          "video",
+          "accessibility"
+        ]
+      },
+      "system": "You are the Entre Voces creative studio. Produce sophisticated, delightful entertainment for adult bilingual interpreter trainees. Avoid stereotypes and classroom quizzes. The submitted corpus is a provisional, unreviewed research draft: never assert that entry-level synonyms are clinically/legal-authoritatively verified. Preserve negation, numbers, deadlines, permissions, uncertainty, attribution, and person-first language. Fictional scenarios must not masquerade as official case records. All content is original and culturally nuanced. All output must be plain valid JSON without markdown.\nReturn {recording:{casting:[{speaker,language,voiceTraits}],segments:[{speaker,text,durationSec,soundCue}]},art:{prompt,altText},music:{brief,stems:[string]},sunoPrompt:string under 1000 characters (only for song),video:{iphoneWorkflow,shotList:[{durationSec,shot,action,audio}]},accessibility:{transcriptPlan,captionsPlan,reducedAudioPlan}}. Meta text/ASR endpoints are NOT TTS. Mark unproduced outputs pending.\nAn emotionally vivid short film with striking situation, audible dialogue and visual punchline. Realistic iPhone production strategy.\nFormat film. Aim for at least 180 words of distinct, substantive, performable content. Creative north star: produce audio storytelling that someone chooses for pleasure, not a lecture or vocabulary drill.\n\nCraft requirements: start in a surprising specific human situation; recurring characters have incompatible reasonable desires; allow subtext, silence, interruption and a comic turn rooted in personality. Each scene changes someone's plan, status or knowledge. The interpreting distinction must cause an actual believable consequence, not appear in a final lecture. Adult humor is affectionate, layered, never an ethnic stereotype or a caricatured accent. Write natural conversational Spanish and English at the level of the character, with explicit language labels and appropriate registers. Preserve all key numbers, negation, uncertainty, attribution, jurisdiction and consent boundaries. Never invent authoritatively correct clinical advice or court outcomes; let a character ask a qualified person when necessary. Avoid procedural trivia as emotional resolution. No 'today we learned', 'the lesson is', generic mentor monologues, cliffhanger without preceding payoff, or token-length padding. Add moments of sound and atmosphere that remain meaningful without a screen.",
+      "user": {
+        "brief": {
+          "id": "film-medical-35",
+          "kind": "film",
+          "topic": "uncertainty",
+          "domain": "medical",
+          "direction": "en-es",
+          "creativeDNA": {
+            "version": 1,
+            "world": "a public library book club after an unexpected blackout",
+            "soundscape": "paper pages, emergency lamp click, distant thunder",
+            "stakes": "one borrowed story has acquired an extra witness",
+            "tone": "soft speculative fiction grounded in real human choices",
+            "comicRhythm": "one absurd rule is treated with ordinary practicality",
+            "music": "acoustic score only where it advances emotion",
+            "musicalHook": "use near-silence rather than constant underscores",
+            "choiceProblem": "How a subtle uncertainty distinction changes a credible medical situation",
+            "emotionalTurn": "An initially sensible choice has a cost; the ending resolves that cost without sermonizing",
+            "adultAudience": "Curious adult learner, no stereotype-based personalization",
+            "noCopying": "Original roles, scene order, exact dialogue, lyric melody and production identity; never mimic a named living performer"
+          },
+          "audience": "Adult interpreters in training; mature warmth and wit, without gender or cultural stereotypes.",
+          "primarySkill": "uncertainty",
+          "termIds": [
+            "M0229",
+            "M0031",
+            "M0087",
+            "M0032",
+            "M0086"
+          ],
+          "sourceIds": [
+            "MEDLINE_TOPICS"
+          ],
+          "knowledge": [
+            {
+              "id": "M0229",
+              "en": "patient-reported",
+              "es": "según lo informado por el paciente",
+              "context": "Information attributed to patient, not independently confirmed.",
+              "caution": "Avoid changing 'reports' into 'diagnosed'.",
+              "review": "needs_professional_bilingual_and_domain_review",
+              "source_id": "MEDLINE_TOPICS",
+              "groundingReason": "editorial-topic-anchor:patient-reported"
+            },
+            {
+              "id": "M0031",
+              "en": "chief complaint",
+              "es": "motivo principal de consulta",
+              "context": "Main reason for seeking care.",
+              "caution": "Do not confuse complaint with a formal grievance.",
+              "review": "needs_professional_bilingual_and_domain_review",
+              "source_id": "MEDLINE_TOPICS",
+              "groundingReason": "editorial-topic-anchor:chief complaint"
+            },
+            {
+              "id": "M0087",
+              "en": "symptom",
+              "es": "síntoma",
+              "context": "Problem experienced by patient.",
+              "caution": "",
+              "review": "needs_professional_bilingual_and_domain_review",
+              "source_id": "MEDLINE_TOPICS",
+              "groundingReason": "editorial-topic-anchor:symptom"
+            },
+            {
+              "id": "M0032",
+              "en": "medical history",
+              "es": "antecedentes médicos",
+              "context": "Past and present information relevant to care.",
+              "caution": "",
+              "review": "needs_professional_bilingual_and_domain_review",
+              "source_id": "MEDLINE_TOPICS",
+              "groundingReason": "editorial-topic-anchor:medical history"
+            },
+            {
+              "id": "M0086",
+              "en": "diagnosis",
+              "es": "diagnóstico",
+              "context": "Identification of condition based on assessment.",
+              "caution": "Distinguish suspected from confirmed diagnosis.",
+              "review": "needs_professional_bilingual_and_domain_review",
+              "source_id": "MEDLINE_TOPICS",
+              "groundingReason": "editorial-topic-anchor:diagnosis"
+            }
+          ],
+          "brief": "An emotionally vivid short film with striking situation, audible dialogue and visual punchline. Realistic iPhone production strategy.",
+          "deliverable": "complete script, timecoded storyboard, captions, iPhone production directions; mark video pending",
+          "minWords": 180,
+          "editorialConstraint": "Every important topic must be grounded in the selected domain. Treat clinical/legal guidance as provisional; write character-driven entertainment with truthful, explicitly fictional interpretation repairs.",
+          "review": "Every bilingual interpretation is a draft until reviewed by a qualified bilingual practitioner.",
+          "audioPolicy": "Author text, timing, sound-design and casting manifests now. Never call a transcription API a speech synthesizer; do not assert audio exists until ingested."
+        },
+        "context": {}
+      }
+    }
+  ],
+  "callsMade": 0
+}

@@ -1,0 +1,90 @@
+{
+  "schemaVersion": 2,
+  "mediaId": "voice-consent-or-command",
+  "title": "Una pregunta no es una orden",
+  "kind": "catch-the-change",
+  "status": "script-draft",
+  "intendedLanguagePair": "English/Spanish",
+  "licenseState": "uncleared",
+  "review": {
+    "bilingual": false,
+    "domain": false,
+    "editorial": false
+  },
+  "scriptSource": "authored project draft",
+  "speakers": [
+    "Clinician",
+    "Interpreter",
+    "Patient",
+    "Interpreter corrected"
+  ],
+  "lines": [
+    {
+      "lineId": "line-001",
+      "speaker": "Clinician",
+      "language": "en",
+      "text": "You may ask questions before deciding whether to sign.",
+      "estimatedMs": 4000,
+      "source": "explicit-bilingual-turn"
+    },
+    {
+      "lineId": "line-002",
+      "speaker": "Interpreter",
+      "language": "es",
+      "text": "Debe firmar ahora.",
+      "estimatedMs": 1333,
+      "source": "explicit-bilingual-turn"
+    },
+    {
+      "lineId": "line-003",
+      "speaker": "Patient",
+      "language": "es",
+      "text": "Quiero preguntar primero.",
+      "estimatedMs": 1333,
+      "source": "explicit-bilingual-turn"
+    },
+    {
+      "lineId": "line-004",
+      "speaker": "Interpreter corrected",
+      "language": "es",
+      "text": "Puede hacer preguntas antes de decidir si firma.",
+      "estimatedMs": 3556,
+      "source": "explicit-bilingual-turn"
+    }
+  ],
+  "cues": [
+    {
+      "errorId": "permission-command",
+      "category": "modality",
+      "original": "You may ask questions before deciding whether to sign",
+      "wrong": "Debe firmar ahora",
+      "repair": "Puede hacer preguntas antes de decidir si firma",
+      "sourceTurnIndex": 0,
+      "wrongTurnIndex": 1,
+      "repairTurnIndex": 3,
+      "requiredAfterRecording": "mark true phrase boundaries in final audio waveform; verify by a bilingual human; do not use estimated timestamps",
+      "alignmentState": "not-aligned"
+    }
+  ],
+  "wordCount": 267,
+  "approximateDurationSec": 12,
+  "production": {
+    "speakerStemPolicy": "one dry mono WAV stem per actor + separately recorded SFX/music stems",
+    "masters": "lossless 48kHz 24-bit WAV project master, accessible web M4A/MP3 plus captions",
+    "intelligibility": "mix spoken words above music; proof numbers, negative particles, hedges and speaker identities in the final mix",
+    "playback": "recheck native audio playback in mobile Safari with headphones and speakers",
+    "languagePolicy": "review every unconfirmed line language; do not assume English/Spanish from speaker ethnicity",
+    "soundPolicy": "silence may carry emotion; preserve consonants and headroom; sound cues never obscure an error anchor",
+    "licensing": "collect actor/voice/talent releases, music/sample license, cover and performance rights before deployment",
+    "asr": "export 16/24 kHz mono PCM16 for Meta Voice Transcribe; ASR only advises, never certifies bilingual fidelity"
+  },
+  "pending": [
+    "language of 0 parsed lines must be confirmed",
+    "all planned pauses and timings must be replaced with real measurements",
+    "actual recording and listening-quality inspection",
+    "source-to-translation semantic review",
+    "legal and medical domain review",
+    "rights sign-off"
+  ],
+  "cannotClaim": "This packet does not include recorded audio, authentic performance, final cue alignment or professional validation."
+}

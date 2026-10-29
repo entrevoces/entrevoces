@@ -21,6 +21,12 @@
     "suite:build": "node tools/build-suite.mjs",
     "audit:samples": "node tools/audit/seed-audit.mjs",
     "pretest": "npm run build",
-    "verify:site": "node tools/verify-site.mjs"
+    "verify:site": "node tools/verify-site.mjs",
+    "media:studio": "node tools/media-studio.mjs",
+    "media:audit": "node tools/media-studio.mjs audit",
+    "media:queue": "node tools/media-studio.mjs queue",
+    "media:packets": "node tools/media-recording-packets.mjs",
+    "media:test": "node --test tests/media-first.test.js tests/media-professional.test.js tests/media-quality-v2.test.js tests/media-voice-production.test.js tests/media-stage-schemas.test.js tests/media-legacy-audit.test.js tests/meta-real-contract.test.js tests/meta-workflows.test.js",
+    "meta:dry": "node tools/meta-live-verify.mjs --dry-run"
   }
 }

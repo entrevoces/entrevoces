@@ -1,0 +1,275 @@
+{
+  "schemaVersion": 2,
+  "mediaId": "podcast-the-one-word-alibi",
+  "title": "Radio La Cosa Exacta · El alibi de una palabra",
+  "kind": "podcast",
+  "status": "script-draft",
+  "intendedLanguagePair": "English/Spanish",
+  "licenseState": "uncleared",
+  "review": {
+    "bilingual": false,
+    "domain": false,
+    "editorial": false
+  },
+  "scriptSource": "authored project draft",
+  "speakers": [
+    "HOST ANA",
+    "GUEST ELENA",
+    "ANA",
+    "ELENA",
+    "LISTENER PILAR",
+    "LUPE"
+  ],
+  "lines": [
+    {
+      "lineId": "cue-001",
+      "type": "production-cue",
+      "text": "PODCAST: Radio La Cosa Exacta. Episode: The One-Word Alibi. Sound of an old radio dialing into a warm modern acoustic theme.",
+      "requiresHumanMix": true
+    },
+    {
+      "lineId": "line-002",
+      "speaker": "HOST ANA",
+      "language": "unconfirmed",
+      "text": "Welcome to La Cosa Exacta, where a tiny word can change a very big afternoon. I'm Ana, and I have a confession: I once thought “maybe” was a word people used when they didn't know how to finish a sentence.",
+      "estimatedMs": 18667,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "line-003",
+      "speaker": "GUEST ELENA",
+      "language": "unconfirmed",
+      "text": "And now?",
+      "estimatedMs": 889,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "line-004",
+      "speaker": "ANA",
+      "language": "unconfirmed",
+      "text": "Now I know it might be the most important word in that sentence. Today we're listening to made-up interpreting practice cases about uncertainty, attribution, permission and time. They are stories, not legal or medical advice.",
+      "estimatedMs": 16444,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "line-005",
+      "speaker": "ELENA",
+      "language": "unconfirmed",
+      "text": "Imagine a witness says, “My neighbor told me the car was red.” What facts do we have?",
+      "estimatedMs": 7556,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "line-006",
+      "speaker": "ANA",
+      "language": "unconfirmed",
+      "text": "A neighbor said something. We haven't established what the witness saw.",
+      "estimatedMs": 5333,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "line-007",
+      "speaker": "ELENA",
+      "language": "unconfirmed",
+      "text": "Right. Now imagine the rendering says, “I saw a red car.” The color stayed. The source of knowledge didn't.",
+      "estimatedMs": 8889,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "cue-008",
+      "type": "production-cue",
+      "text": "Sound of a bicycle bell. A listener sends in a voice note played by an actor.",
+      "requiresHumanMix": true
+    },
+    {
+      "lineId": "line-009",
+      "speaker": "LISTENER PILAR",
+      "language": "unconfirmed",
+      "text": "I keep catching the wrong big words. But the mistakes that change the meaning aren't always big words. They seem invisible.",
+      "estimatedMs": 9778,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "line-010",
+      "speaker": "ANA",
+      "language": "unconfirmed",
+      "text": "A good observation. How can someone practice listening for invisible words?",
+      "estimatedMs": 4889,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "line-011",
+      "speaker": "ELENA",
+      "language": "unconfirmed",
+      "text": "Try listening for a handful of relationships: who did it, what did they know, when did it happen, and how certain are they? Then hear the meaning again after a pause.",
+      "estimatedMs": 13778,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "line-012",
+      "speaker": "ANA",
+      "language": "unconfirmed",
+      "text": "We have a little game. I'll read two statements. You can stop the recording if you hear a change, but there is no magic score for being quick. The point is the explanation afterward. First: “I have not had chest pain today.” Second: “I have had chest pain today.”",
+      "estimatedMs": 22222,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "cue-013",
+      "type": "production-cue",
+      "text": "Two beats of silence.",
+      "requiresHumanMix": true
+    },
+    {
+      "lineId": "line-014",
+      "speaker": "ELENA",
+      "language": "unconfirmed",
+      "text": "That's the negation. Keep the sound of the original separate from what we wish the sentence meant. If this were a real clinical encounter, the clinician would handle diagnosis and management, not the interpreter.",
+      "estimatedMs": 15556,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "line-015",
+      "speaker": "ANA",
+      "language": "unconfirmed",
+      "text": "Next: “Return in five days if the fever continues.” Then: “Return in fifteen days when the fever continues.”",
+      "estimatedMs": 8000,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "line-016",
+      "speaker": "ELENA",
+      "language": "unconfirmed",
+      "text": "Both the number and the condition changed. That is why a model judging vocabulary similarity alone would miss critical distinctions.",
+      "estimatedMs": 8889,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "line-017",
+      "speaker": "ANA",
+      "language": "unconfirmed",
+      "text": "Our last caller says her family argues about “every other day” and “twice daily.” Can one be the same as the other?",
+      "estimatedMs": 9778,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "line-018",
+      "speaker": "ELENA",
+      "language": "unconfirmed",
+      "text": "No. They are not automatically equivalent. One is an interval; the other is frequency per day. Any real medical instructions need confirmation with the treating care team.",
+      "estimatedMs": 12000,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "cue-019",
+      "type": "production-cue",
+      "text": "Sound bridge: cup set gently on saucer.",
+      "requiresHumanMix": true
+    },
+    {
+      "lineId": "line-020",
+      "speaker": "ANA",
+      "language": "unconfirmed",
+      "text": "Listeners, we have a surprise for you. My aunt Lupe has joined by telephone and insists she understands the exact meaning of every legal term.",
+      "estimatedMs": 11111,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "line-021",
+      "speaker": "LUPE",
+      "language": "unconfirmed",
+      "text": "I understand that “hearing” means someone listens. On family calls, everyone hears but no one listens.",
+      "estimatedMs": 7111,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "line-022",
+      "speaker": "ELENA",
+      "language": "unconfirmed",
+      "text": "That's very funny, and also the beginning of a useful distinction. A hearing is a proceeding, while a judgment is a court decision. We can't infer a decision from a scheduled hearing.",
+      "estimatedMs": 15111,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "line-023",
+      "speaker": "ANA",
+      "language": "unconfirmed",
+      "text": "Lupe, are you giving legal advice?",
+      "estimatedMs": 2667,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "line-024",
+      "speaker": "LUPE",
+      "language": "unconfirmed",
+      "text": "Absolutely not. I'm giving culinary advice. If someone says “simmer for ten minutes,” don't translate it as “boil for one hour.”",
+      "estimatedMs": 10222,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "line-025",
+      "speaker": "ELENA",
+      "language": "unconfirmed",
+      "text": "The principle would apply: preserve timing and action. But we should still distinguish cooking from legal practice.",
+      "estimatedMs": 7556,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "cue-026",
+      "type": "production-cue",
+      "text": "Two seconds of friendly laughter.",
+      "requiresHumanMix": true
+    },
+    {
+      "lineId": "line-027",
+      "speaker": "ANA",
+      "language": "unconfirmed",
+      "text": "Before we leave, tell us what the best kind of interpreter training feels like.",
+      "estimatedMs": 6222,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "line-028",
+      "speaker": "ELENA",
+      "language": "unconfirmed",
+      "text": "It sounds like a conversation worth listening to, with a mistake you can notice, a repair you can explain and a second opportunity where the meaning stays intact. Sometimes it is a story. Sometimes a song. Sometimes the correct response is simply: “Could you repeat that?”",
+      "estimatedMs": 20444,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "line-029",
+      "speaker": "ANA",
+      "language": "unconfirmed",
+      "text": "That is our show. We will be back next week with an elevator, a file, and a woman who insists the truth can be filed under miscellaneous.",
+      "estimatedMs": 12000,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "cue-030",
+      "type": "production-cue",
+      "text": "Outro music; credits specify the actors and that the original practice cases are fictional.",
+      "requiresHumanMix": true
+    }
+  ],
+  "cues": [],
+  "wordCount": 669,
+  "approximateDurationSec": 271,
+  "production": {
+    "speakerStemPolicy": "one dry mono WAV stem per actor + separately recorded SFX/music stems",
+    "masters": "lossless 48kHz 24-bit WAV project master, accessible web M4A/MP3 plus captions",
+    "intelligibility": "mix spoken words above music; proof numbers, negative particles, hedges and speaker identities in the final mix",
+    "playback": "recheck native audio playback in mobile Safari with headphones and speakers",
+    "languagePolicy": "review every unconfirmed line language; do not assume English/Spanish from speaker ethnicity",
+    "soundPolicy": "silence may carry emotion; preserve consonants and headroom; sound cues never obscure an error anchor",
+    "licensing": "collect actor/voice/talent releases, music/sample license, cover and performance rights before deployment",
+    "asr": "export 16/24 kHz mono PCM16 for Meta Voice Transcribe; ASR only advises, never certifies bilingual fidelity"
+  },
+  "pending": [
+    "language of 24 parsed lines must be confirmed",
+    "all planned pauses and timings must be replaced with real measurements",
+    "actual recording and listening-quality inspection",
+    "source-to-translation semantic review",
+    "legal and medical domain review",
+    "rights sign-off"
+  ],
+  "cannotClaim": "This packet does not include recorded audio, authentic performance, final cue alignment or professional validation."
+}

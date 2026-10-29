@@ -1,0 +1,338 @@
+{
+  "schemaVersion": 2,
+  "mediaId": "drama-last-word-episode-4",
+  "title": "La última palabra · La reunión que no había terminado",
+  "kind": "audio-drama",
+  "status": "script-draft",
+  "intendedLanguagePair": "English/Spanish",
+  "licenseState": "uncleared",
+  "review": {
+    "bilingual": false,
+    "domain": false,
+    "editorial": false
+  },
+  "scriptSource": "authored project draft",
+  "speakers": [
+    "NARRATOR",
+    "LUPE",
+    "TERESA",
+    "MARTA",
+    "RAFA",
+    "VIOLETA",
+    "ACTOR ON RECORDING",
+    "TRAINEE RECORDING",
+    "UNKNOWN WOMAN"
+  ],
+  "lines": [
+    {
+      "lineId": "cue-001",
+      "type": "production-cue",
+      "text": "SERIES: La última palabra. Episode: La reunión que no había terminado. Scene 1 — A community room after a potluck. Glasses clink and someone insists on wrapping leftover arroz in a suspiciously tiny container.",
+      "requiresHumanMix": true
+    },
+    {
+      "lineId": "line-002",
+      "speaker": "NARRATOR",
+      "language": "unconfirmed",
+      "text": "Teresa wanted a quiet Thursday. She had paid her electricity bill, remembered her umbrella and turned off the neighborhood group chat. The universe viewed this as an invitation.",
+      "estimatedMs": 12444,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "line-003",
+      "speaker": "LUPE",
+      "language": "unconfirmed",
+      "text": "Teresa, please tell me the difference between a hearing and a judgment, but do it before the casserole gets cold.",
+      "estimatedMs": 8889,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "line-004",
+      "speaker": "TERESA",
+      "language": "unconfirmed",
+      "text": "One is an event where the court may hear something. The other is a decision. Why?",
+      "estimatedMs": 7111,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "line-005",
+      "speaker": "LUPE",
+      "language": "unconfirmed",
+      "text": "Because the entire building believes the hallway has been sentenced to eviction.",
+      "estimatedMs": 5333,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "line-006",
+      "speaker": "MARTA",
+      "language": "unconfirmed",
+      "text": "I never said the hallway was evicted! I said the notice scheduled a hearing. Someone forwarded a photo without the second page.",
+      "estimatedMs": 9778,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "line-007",
+      "speaker": "RAFA",
+      "language": "unconfirmed",
+      "text": "I forwarded the photo because the second page was a picture of my thumb. My thumb is a public document now.",
+      "estimatedMs": 9333,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "cue-008",
+      "type": "production-cue",
+      "text": "Music: playful bass walks two notes and stops.",
+      "requiresHumanMix": true
+    },
+    {
+      "lineId": "line-009",
+      "speaker": "NARRATOR",
+      "language": "unconfirmed",
+      "text": "At the center of the table lay a page folded into the shape of a boat. Its printed words had crossed three phones, six people and seven opinions.",
+      "estimatedMs": 12444,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "line-010",
+      "speaker": "VIOLETA",
+      "language": "unconfirmed",
+      "text": "Before anyone purchases a moving box, we need to know what the document actually says. I can point to the words, but I am not your lawyer.",
+      "estimatedMs": 12000,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "line-011",
+      "speaker": "MARTA",
+      "language": "unconfirmed",
+      "text": "Then let's read it slowly.",
+      "estimatedMs": 2667,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "line-012",
+      "speaker": "TERESA",
+      "language": "unconfirmed",
+      "text": "The phrase says a hearing is scheduled for Tuesday. It does not say the judge has made a ruling. If there are questions about the case, we need a legal professional, not a group chat verdict.",
+      "estimatedMs": 16000,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "line-013",
+      "speaker": "LUPE",
+      "language": "unconfirmed",
+      "text": "That is disappointing. A group chat verdict is much cheaper.",
+      "estimatedMs": 4444,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "cue-014",
+      "type": "production-cue",
+      "text": "Scene 2 — Teresa's kitchen, late evening. Rain at the windows. She practices consecutive interpreting with recordings from a training course.",
+      "requiresHumanMix": true
+    },
+    {
+      "lineId": "line-015",
+      "speaker": "ACTOR ON RECORDING",
+      "language": "en",
+      "text": "The neighbor told me a red truck was parked outside. I did not see who drove it.",
+      "estimatedMs": 7556,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "line-016",
+      "speaker": "TRAINEE RECORDING",
+      "language": "es",
+      "text": "Vi al acusado estacionar una camioneta roja afuera.",
+      "estimatedMs": 3556,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "line-017",
+      "speaker": "TERESA",
+      "language": "unconfirmed",
+      "text": "No, no, no. Who saw the driver? No one. Who said the truck belonged to the defendant? No one. Where did that certainty come from?",
+      "estimatedMs": 11111,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "line-018",
+      "speaker": "RAFA",
+      "language": "unconfirmed",
+      "text": "It came from a person who wanted the story to have a villain. Sometimes a red truck is just a red truck.",
+      "estimatedMs": 9778,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "line-019",
+      "speaker": "TERESA",
+      "language": "unconfirmed",
+      "text": "You are very wise for someone who thought “every other day” meant twice a day.",
+      "estimatedMs": 6667,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "line-020",
+      "speaker": "RAFA",
+      "language": "unconfirmed",
+      "text": "I have grown since Tuesday. The calendar and I have agreed to see other people.",
+      "estimatedMs": 6667,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "cue-021",
+      "type": "production-cue",
+      "text": "Pause. The group chat starts vibrating again.",
+      "requiresHumanMix": true
+    },
+    {
+      "lineId": "line-022",
+      "speaker": "LUPE",
+      "language": "unconfirmed",
+      "text": "Emergency. Violeta has located the original notice, and the second page is not Rafa's thumb. It lists an apartment number.",
+      "estimatedMs": 9333,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "line-023",
+      "speaker": "TERESA",
+      "language": "unconfirmed",
+      "text": "Which number?",
+      "estimatedMs": 889,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "line-024",
+      "speaker": "LUPE",
+      "language": "unconfirmed",
+      "text": "That's the strange part. It is not Marta's.",
+      "estimatedMs": 4444,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "cue-025",
+      "type": "production-cue",
+      "text": "Scene 3 — Apartment hallway. Shoes shuffle. A second envelope is slipped under a door. Nobody sees who delivered it.",
+      "requiresHumanMix": true
+    },
+    {
+      "lineId": "line-026",
+      "speaker": "MARTA",
+      "language": "unconfirmed",
+      "text": "I panicked, and I had everyone else panicking. I heard “court” and decided I knew the end of the story.",
+      "estimatedMs": 8889,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "line-027",
+      "speaker": "VIOLETA",
+      "language": "unconfirmed",
+      "text": "The court documents may be serious. Don't replace careful reading with reassurance either. We can acknowledge uncertainty without inventing a happy outcome.",
+      "estimatedMs": 10222,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "line-028",
+      "speaker": "TERESA",
+      "language": "unconfirmed",
+      "text": "That's the part I keep practicing. An interpreter isn't a narrator who fixes the story. We keep the story faithful to the speaker.",
+      "estimatedMs": 11111,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "line-029",
+      "speaker": "LUPE",
+      "language": "unconfirmed",
+      "text": "But you can still be a good friend after the interpreting is over.",
+      "estimatedMs": 5778,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "line-030",
+      "speaker": "TERESA",
+      "language": "unconfirmed",
+      "text": "Yes. Listening and helping are different jobs, and I need to know which one I am doing.",
+      "estimatedMs": 7556,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "cue-031",
+      "type": "production-cue",
+      "text": "Scene 4 — Door at the end of the hall. Someone opens it a few inches.",
+      "requiresHumanMix": true
+    },
+    {
+      "lineId": "line-032",
+      "speaker": "UNKNOWN WOMAN",
+      "language": "unconfirmed",
+      "text": "Are you all discussing the paper for unit seven?",
+      "estimatedMs": 4000,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "line-033",
+      "speaker": "MARTA",
+      "language": "unconfirmed",
+      "text": "Do you know anything?",
+      "estimatedMs": 1778,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "line-034",
+      "speaker": "UNKNOWN WOMAN",
+      "language": "unconfirmed",
+      "text": "I know the person listed has been away for six months. And I know the envelope was delivered today. I don't know whether anyone has been notified before.",
+      "estimatedMs": 12889,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "line-035",
+      "speaker": "LUPE",
+      "language": "unconfirmed",
+      "text": "Finally! A person who knows what she knows and doesn't know what she doesn't know. Hire her for the group chat.",
+      "estimatedMs": 10222,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "cue-036",
+      "type": "production-cue",
+      "text": "Cliffhanger: the woman unfolds a second notice. The camera would show only her expression; the audio leaves the paper silent.",
+      "requiresHumanMix": true
+    },
+    {
+      "lineId": "line-037",
+      "speaker": "NARRATOR",
+      "language": "unconfirmed",
+      "text": "In the building where everyone translated everyone, the most important sentence might be the one no one had heard yet.",
+      "estimatedMs": 8889,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "cue-038",
+      "type": "production-cue",
+      "text": "End music, not a factual claim about any real eviction. NEXT EPISODE: Before the Signature.",
+      "requiresHumanMix": true
+    }
+  ],
+  "cues": [],
+  "wordCount": 722,
+  "approximateDurationSec": 262,
+  "production": {
+    "speakerStemPolicy": "one dry mono WAV stem per actor + separately recorded SFX/music stems",
+    "masters": "lossless 48kHz 24-bit WAV project master, accessible web M4A/MP3 plus captions",
+    "intelligibility": "mix spoken words above music; proof numbers, negative particles, hedges and speaker identities in the final mix",
+    "playback": "recheck native audio playback in mobile Safari with headphones and speakers",
+    "languagePolicy": "review every unconfirmed line language; do not assume English/Spanish from speaker ethnicity",
+    "soundPolicy": "silence may carry emotion; preserve consonants and headroom; sound cues never obscure an error anchor",
+    "licensing": "collect actor/voice/talent releases, music/sample license, cover and performance rights before deployment",
+    "asr": "export 16/24 kHz mono PCM16 for Meta Voice Transcribe; ASR only advises, never certifies bilingual fidelity"
+  },
+  "pending": [
+    "language of 28 parsed lines must be confirmed",
+    "all planned pauses and timings must be replaced with real measurements",
+    "actual recording and listening-quality inspection",
+    "source-to-translation semantic review",
+    "legal and medical domain review",
+    "rights sign-off"
+  ],
+  "cannotClaim": "This packet does not include recorded audio, authentic performance, final cue alignment or professional validation."
+}

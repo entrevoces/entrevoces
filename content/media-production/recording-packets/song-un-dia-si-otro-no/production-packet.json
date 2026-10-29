@@ -1,0 +1,380 @@
+{
+  "schemaVersion": 2,
+  "mediaId": "song-un-dia-si-otro-no",
+  "title": "Un día sí, otro no",
+  "kind": "song",
+  "status": "script-draft",
+  "intendedLanguagePair": "English/Spanish",
+  "licenseState": "uncleared",
+  "review": {
+    "bilingual": false,
+    "domain": false,
+    "editorial": false
+  },
+  "scriptSource": "authored project draft",
+  "speakers": [
+    "NARRATOR",
+    "él decía",
+    "Y si hay dudas"
+  ],
+  "lines": [
+    {
+      "lineId": "cue-001",
+      "type": "production-cue",
+      "text": "Intro hablada",
+      "requiresHumanMix": true
+    },
+    {
+      "lineId": "line-002",
+      "speaker": "NARRATOR",
+      "language": "unconfirmed",
+      "text": "No es un refrán de amores.",
+      "estimatedMs": 2667,
+      "source": "narrative-body"
+    },
+    {
+      "lineId": "line-003",
+      "speaker": "NARRATOR",
+      "language": "unconfirmed",
+      "text": "Es una instrucción que hay que escuchar con cuidado.",
+      "estimatedMs": 4000,
+      "source": "narrative-body"
+    },
+    {
+      "lineId": "cue-004",
+      "type": "production-cue",
+      "text": "Verso 1",
+      "requiresHumanMix": true
+    },
+    {
+      "lineId": "line-005",
+      "speaker": "NARRATOR",
+      "language": "unconfirmed",
+      "text": "Mi vecino puso un reloj en la cocina,",
+      "estimatedMs": 3556,
+      "source": "narrative-body"
+    },
+    {
+      "lineId": "line-006",
+      "speaker": "NARRATOR",
+      "language": "unconfirmed",
+      "text": "le dio cuerda con un beso y un café.",
+      "estimatedMs": 4000,
+      "source": "narrative-body"
+    },
+    {
+      "lineId": "line-007",
+      "speaker": "NARRATOR",
+      "language": "unconfirmed",
+      "text": "La mañana se reía en la cortina,",
+      "estimatedMs": 3111,
+      "source": "narrative-body"
+    },
+    {
+      "lineId": "line-008",
+      "speaker": "él decía",
+      "language": "unconfirmed",
+      "text": "«Lo entendí». Yo dije: «¿Qué?»",
+      "estimatedMs": 2222,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "cue-009",
+      "type": "production-cue",
+      "text": "Pre-coro",
+      "requiresHumanMix": true
+    },
+    {
+      "lineId": "line-010",
+      "speaker": "NARRATOR",
+      "language": "unconfirmed",
+      "text": "No es igual cuánto tomas",
+      "estimatedMs": 2222,
+      "source": "narrative-body"
+    },
+    {
+      "lineId": "line-011",
+      "speaker": "NARRATOR",
+      "language": "unconfirmed",
+      "text": "que la hora de tomar.",
+      "estimatedMs": 2222,
+      "source": "narrative-body"
+    },
+    {
+      "lineId": "line-012",
+      "speaker": "NARRATOR",
+      "language": "unconfirmed",
+      "text": "Una cosa es la cantidad,",
+      "estimatedMs": 2222,
+      "source": "narrative-body"
+    },
+    {
+      "lineId": "line-013",
+      "speaker": "NARRATOR",
+      "language": "unconfirmed",
+      "text": "otra, cuándo volverá.",
+      "estimatedMs": 1333,
+      "source": "narrative-body"
+    },
+    {
+      "lineId": "cue-014",
+      "type": "production-cue",
+      "text": "Coro",
+      "requiresHumanMix": true
+    },
+    {
+      "lineId": "line-015",
+      "speaker": "NARRATOR",
+      "language": "unconfirmed",
+      "text": "Un día sí, otro no,",
+      "estimatedMs": 2222,
+      "source": "narrative-body"
+    },
+    {
+      "lineId": "line-016",
+      "speaker": "NARRATOR",
+      "language": "unconfirmed",
+      "text": "no es dos veces por día.",
+      "estimatedMs": 2667,
+      "source": "narrative-body"
+    },
+    {
+      "lineId": "line-017",
+      "speaker": "NARRATOR",
+      "language": "unconfirmed",
+      "text": "No me cambies el reloj,",
+      "estimatedMs": 2222,
+      "source": "narrative-body"
+    },
+    {
+      "lineId": "line-018",
+      "speaker": "NARRATOR",
+      "language": "unconfirmed",
+      "text": "ni me borres la medida.",
+      "estimatedMs": 2222,
+      "source": "narrative-body"
+    },
+    {
+      "lineId": "line-019",
+      "speaker": "NARRATOR",
+      "language": "unconfirmed",
+      "text": "Uno es uno, dos es dos,",
+      "estimatedMs": 2667,
+      "source": "narrative-body"
+    },
+    {
+      "lineId": "line-020",
+      "speaker": "NARRATOR",
+      "language": "unconfirmed",
+      "text": "las palabras tienen vida.",
+      "estimatedMs": 1778,
+      "source": "narrative-body"
+    },
+    {
+      "lineId": "line-021",
+      "speaker": "NARRATOR",
+      "language": "unconfirmed",
+      "text": "Si no queda claro el ritmo,",
+      "estimatedMs": 2667,
+      "source": "narrative-body"
+    },
+    {
+      "lineId": "line-022",
+      "speaker": "NARRATOR",
+      "language": "unconfirmed",
+      "text": "que lo explique quien lo indica.",
+      "estimatedMs": 2667,
+      "source": "narrative-body"
+    },
+    {
+      "lineId": "cue-023",
+      "type": "production-cue",
+      "text": "Verso 2",
+      "requiresHumanMix": true
+    },
+    {
+      "lineId": "line-024",
+      "speaker": "NARRATOR",
+      "language": "unconfirmed",
+      "text": "La vecina, que tocaba la campana,",
+      "estimatedMs": 2667,
+      "source": "narrative-body"
+    },
+    {
+      "lineId": "line-025",
+      "speaker": "NARRATOR",
+      "language": "unconfirmed",
+      "text": "confundió el martes con viernes al pasar.",
+      "estimatedMs": 3111,
+      "source": "narrative-body"
+    },
+    {
+      "lineId": "line-026",
+      "speaker": "NARRATOR",
+      "language": "unconfirmed",
+      "text": "«Yo te mando el recordatorio por la mañana»,",
+      "estimatedMs": 3556,
+      "source": "narrative-body"
+    },
+    {
+      "lineId": "line-027",
+      "speaker": "NARRATOR",
+      "language": "unconfirmed",
+      "text": "y el reloj se puso a protestar.",
+      "estimatedMs": 3111,
+      "source": "narrative-body"
+    },
+    {
+      "lineId": "cue-028",
+      "type": "production-cue",
+      "text": "Puente",
+      "requiresHumanMix": true
+    },
+    {
+      "lineId": "line-029",
+      "speaker": "NARRATOR",
+      "language": "unconfirmed",
+      "text": "Un piano juega con el tiempo,",
+      "estimatedMs": 2667,
+      "source": "narrative-body"
+    },
+    {
+      "lineId": "line-030",
+      "speaker": "NARRATOR",
+      "language": "unconfirmed",
+      "text": "y el bajo lo vuelve a colocar.",
+      "estimatedMs": 3111,
+      "source": "narrative-body"
+    },
+    {
+      "lineId": "line-031",
+      "speaker": "NARRATOR",
+      "language": "unconfirmed",
+      "text": "No decido la receta,",
+      "estimatedMs": 1778,
+      "source": "narrative-body"
+    },
+    {
+      "lineId": "line-032",
+      "speaker": "NARRATOR",
+      "language": "unconfirmed",
+      "text": "solo cuido lo que se quiso expresar.",
+      "estimatedMs": 3111,
+      "source": "narrative-body"
+    },
+    {
+      "lineId": "cue-033",
+      "type": "production-cue",
+      "text": "Coro final",
+      "requiresHumanMix": true
+    },
+    {
+      "lineId": "line-034",
+      "speaker": "NARRATOR",
+      "language": "unconfirmed",
+      "text": "Un día sí, otro no,",
+      "estimatedMs": 2222,
+      "source": "narrative-body"
+    },
+    {
+      "lineId": "line-035",
+      "speaker": "NARRATOR",
+      "language": "unconfirmed",
+      "text": "como el paso y la melodía.",
+      "estimatedMs": 2667,
+      "source": "narrative-body"
+    },
+    {
+      "lineId": "line-036",
+      "speaker": "NARRATOR",
+      "language": "unconfirmed",
+      "text": "No me cambies el reloj,",
+      "estimatedMs": 2222,
+      "source": "narrative-body"
+    },
+    {
+      "lineId": "line-037",
+      "speaker": "NARRATOR",
+      "language": "unconfirmed",
+      "text": "ni una condición por simpatía.",
+      "estimatedMs": 2222,
+      "source": "narrative-body"
+    },
+    {
+      "lineId": "line-038",
+      "speaker": "NARRATOR",
+      "language": "unconfirmed",
+      "text": "Si la frase se perdió,",
+      "estimatedMs": 2222,
+      "source": "narrative-body"
+    },
+    {
+      "lineId": "line-039",
+      "speaker": "NARRATOR",
+      "language": "unconfirmed",
+      "text": "la aclaramos con quien la decía.",
+      "estimatedMs": 2667,
+      "source": "narrative-body"
+    },
+    {
+      "lineId": "line-040",
+      "speaker": "NARRATOR",
+      "language": "unconfirmed",
+      "text": "No inventemos instrucciones,",
+      "estimatedMs": 1333,
+      "source": "narrative-body"
+    },
+    {
+      "lineId": "line-041",
+      "speaker": "NARRATOR",
+      "language": "unconfirmed",
+      "text": "que en las manos pesan vidas.",
+      "estimatedMs": 2667,
+      "source": "narrative-body"
+    },
+    {
+      "lineId": "cue-042",
+      "type": "production-cue",
+      "text": "Salida",
+      "requiresHumanMix": true
+    },
+    {
+      "lineId": "line-043",
+      "speaker": "NARRATOR",
+      "language": "unconfirmed",
+      "text": "Un día sí. Otro no.",
+      "estimatedMs": 2222,
+      "source": "narrative-body"
+    },
+    {
+      "lineId": "line-044",
+      "speaker": "Y si hay dudas",
+      "language": "unconfirmed",
+      "text": "pregúntalo.",
+      "estimatedMs": 700,
+      "source": "parsed-script-label"
+    }
+  ],
+  "cues": [],
+  "wordCount": 223,
+  "approximateDurationSec": 113,
+  "production": {
+    "speakerStemPolicy": "one dry mono WAV stem per actor + separately recorded SFX/music stems",
+    "masters": "lossless 48kHz 24-bit WAV project master, accessible web M4A/MP3 plus captions",
+    "intelligibility": "mix spoken words above music; proof numbers, negative particles, hedges and speaker identities in the final mix",
+    "playback": "recheck native audio playback in mobile Safari with headphones and speakers",
+    "languagePolicy": "review every unconfirmed line language; do not assume English/Spanish from speaker ethnicity",
+    "soundPolicy": "silence may carry emotion; preserve consonants and headroom; sound cues never obscure an error anchor",
+    "licensing": "collect actor/voice/talent releases, music/sample license, cover and performance rights before deployment",
+    "asr": "export 16/24 kHz mono PCM16 for Meta Voice Transcribe; ASR only advises, never certifies bilingual fidelity"
+  },
+  "pending": [
+    "language of 36 parsed lines must be confirmed",
+    "all planned pauses and timings must be replaced with real measurements",
+    "actual recording and listening-quality inspection",
+    "source-to-translation semantic review",
+    "legal and medical domain review",
+    "rights sign-off"
+  ],
+  "cannotClaim": "This packet does not include recorded audio, authentic performance, final cue alignment or professional validation."
+}

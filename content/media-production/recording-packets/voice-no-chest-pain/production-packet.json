@@ -1,0 +1,102 @@
+{
+  "schemaVersion": 2,
+  "mediaId": "voice-no-chest-pain",
+  "title": "El “no” que nadie oyó",
+  "kind": "catch-the-change",
+  "status": "script-draft",
+  "intendedLanguagePair": "English/Spanish",
+  "licenseState": "uncleared",
+  "review": {
+    "bilingual": false,
+    "domain": false,
+    "editorial": false
+  },
+  "scriptSource": "authored project draft",
+  "speakers": [
+    "Patient",
+    "Interpreter",
+    "Supervisor",
+    "Interpreter corrected"
+  ],
+  "lines": [
+    {
+      "lineId": "line-001",
+      "speaker": "Patient",
+      "language": "en",
+      "text": "I have not had chest pain today; yesterday I felt pressure, but I am not sure why.",
+      "estimatedMs": 7556,
+      "source": "explicit-bilingual-turn"
+    },
+    {
+      "lineId": "line-002",
+      "speaker": "Interpreter",
+      "language": "es",
+      "text": "Hoy he tenido dolor de pecho. Ayer tuve dolor agudo por el medicamento.",
+      "estimatedMs": 5778,
+      "source": "explicit-bilingual-turn"
+    },
+    {
+      "lineId": "line-003",
+      "speaker": "Supervisor",
+      "language": "en",
+      "text": "What changed in negation, quality and attribution?",
+      "estimatedMs": 3111,
+      "source": "explicit-bilingual-turn"
+    },
+    {
+      "lineId": "line-004",
+      "speaker": "Interpreter corrected",
+      "language": "es",
+      "text": "Hoy no he tenido dolor de pecho; ayer sentí presión, pero no sé por qué.",
+      "estimatedMs": 6667,
+      "source": "explicit-bilingual-turn"
+    }
+  ],
+  "cues": [
+    {
+      "errorId": "chest-pain-negation",
+      "category": "negation",
+      "original": "I have not had chest pain today",
+      "wrong": "Hoy he tenido dolor de pecho",
+      "repair": "Hoy no he tenido dolor de pecho",
+      "sourceTurnIndex": 0,
+      "wrongTurnIndex": 1,
+      "repairTurnIndex": 3,
+      "requiredAfterRecording": "mark true phrase boundaries in final audio waveform; verify by a bilingual human; do not use estimated timestamps",
+      "alignmentState": "not-aligned"
+    },
+    {
+      "errorId": "symptom-attribution",
+      "category": "uncertainty",
+      "original": "I am not sure why",
+      "wrong": "por el medicamento",
+      "repair": "pero no sé por qué",
+      "sourceTurnIndex": 0,
+      "wrongTurnIndex": 1,
+      "repairTurnIndex": 3,
+      "requiredAfterRecording": "mark true phrase boundaries in final audio waveform; verify by a bilingual human; do not use estimated timestamps",
+      "alignmentState": "not-aligned"
+    }
+  ],
+  "wordCount": 261,
+  "approximateDurationSec": 25,
+  "production": {
+    "speakerStemPolicy": "one dry mono WAV stem per actor + separately recorded SFX/music stems",
+    "masters": "lossless 48kHz 24-bit WAV project master, accessible web M4A/MP3 plus captions",
+    "intelligibility": "mix spoken words above music; proof numbers, negative particles, hedges and speaker identities in the final mix",
+    "playback": "recheck native audio playback in mobile Safari with headphones and speakers",
+    "languagePolicy": "review every unconfirmed line language; do not assume English/Spanish from speaker ethnicity",
+    "soundPolicy": "silence may carry emotion; preserve consonants and headroom; sound cues never obscure an error anchor",
+    "licensing": "collect actor/voice/talent releases, music/sample license, cover and performance rights before deployment",
+    "asr": "export 16/24 kHz mono PCM16 for Meta Voice Transcribe; ASR only advises, never certifies bilingual fidelity"
+  },
+  "pending": [
+    "language of 0 parsed lines must be confirmed",
+    "all planned pauses and timings must be replaced with real measurements",
+    "actual recording and listening-quality inspection",
+    "source-to-translation semantic review",
+    "legal and medical domain review",
+    "rights sign-off"
+  ],
+  "cannotClaim": "This packet does not include recorded audio, authentic performance, final cue alignment or professional validation."
+}

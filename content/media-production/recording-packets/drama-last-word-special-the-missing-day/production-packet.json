@@ -1,0 +1,516 @@
+{
+  "schemaVersion": 2,
+  "mediaId": "drama-last-word-special-the-missing-day",
+  "title": "La última palabra: El día que faltaba",
+  "kind": "audio-drama",
+  "status": "script-draft",
+  "intendedLanguagePair": "English/Spanish",
+  "licenseState": "uncleared",
+  "review": {
+    "bilingual": false,
+    "domain": false,
+    "editorial": false
+  },
+  "scriptSource": "authored project draft",
+  "speakers": [
+    "NARRATOR",
+    "LUPE",
+    "TERESA",
+    "TRAINER",
+    "ACTOR ONE",
+    "ACTOR TWO, AS NOVICE INTERPRETER",
+    "ACTOR TWO",
+    "ACTOR THREE, AS CLINICIAN",
+    "ACTOR FOUR, AS PATIENT",
+    "ACTOR TWO, AS NOVICE",
+    "MARTA"
+  ],
+  "lines": [
+    {
+      "lineId": "cue-001",
+      "type": "production-cue",
+      "text": "SCENE ONE — 7:06 A.M. A bus shelter. Rain ticks on metal. Someone struggles to close a broken umbrella.",
+      "requiresHumanMix": true
+    },
+    {
+      "lineId": "line-002",
+      "speaker": "NARRATOR",
+      "language": "unconfirmed",
+      "text": "By seven in the morning, Teresa has already heard four different versions of the truth. None of them were told in the same language. The first came from a voice note sent to the wrong neighborhood group.",
+      "estimatedMs": 16444,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "line-003",
+      "speaker": "LUPE",
+      "language": "unconfirmed",
+      "text": "Attention, residents. At nine, a person from the county will be at the building. The message says the court has made its decision. Repeat: made its decision. I am wearing lipstick suitable for an emergency.",
+      "estimatedMs": 15556,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "line-004",
+      "speaker": "TERESA",
+      "language": "unconfirmed",
+      "text": "Lupe, who sent that?",
+      "estimatedMs": 1778,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "line-005",
+      "speaker": "LUPE",
+      "language": "unconfirmed",
+      "text": "An anonymous woman who says her cousin knows a clerk. You cannot get more official than that without a seal.",
+      "estimatedMs": 8889,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "line-006",
+      "speaker": "TERESA",
+      "language": "unconfirmed",
+      "text": "You can. You can get an actual notice. Also, your voice note says “the court has made its decision,” but the screenshot says “a hearing has been scheduled.”",
+      "estimatedMs": 12444,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "line-007",
+      "speaker": "LUPE",
+      "language": "unconfirmed",
+      "text": "A small difference.",
+      "estimatedMs": 1333,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "line-008",
+      "speaker": "TERESA",
+      "language": "unconfirmed",
+      "text": "A different legal event. A hearing is a chance for people to be heard. A decision is a result. We can’t turn one into the other because the group chat is impatient.",
+      "estimatedMs": 14667,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "line-009",
+      "speaker": "LUPE",
+      "language": "unconfirmed",
+      "text": "Fine. I will post a correction.",
+      "estimatedMs": 2667,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "cue-010",
+      "type": "production-cue",
+      "text": "A rapid cascade of message notification tones.",
+      "requiresHumanMix": true
+    },
+    {
+      "lineId": "line-011",
+      "speaker": "LUPE",
+      "language": "unconfirmed",
+      "text": "The correction now has seventeen reactions, including a pineapple. Someone has asked whether this means they should bring a lawyer, a translator, or chairs.",
+      "estimatedMs": 10667,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "line-012",
+      "speaker": "TERESA",
+      "language": "unconfirmed",
+      "text": "I can tell them where the court explains interpreter access. I can’t tell them what legal decision to make. And I haven’t seen the full notice.",
+      "estimatedMs": 12444,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "cue-013",
+      "type": "production-cue",
+      "text": "Bus air brakes. Doors open.",
+      "requiresHumanMix": true
+    },
+    {
+      "lineId": "line-014",
+      "speaker": "NARRATOR",
+      "language": "unconfirmed",
+      "text": "Teresa boards a bus carrying two folders, one sandwich, and a professional rule that she has come to fear more than a difficult word: never improve someone else’s story.",
+      "estimatedMs": 13333,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "cue-015",
+      "type": "production-cue",
+      "text": "SCENE TWO — 9:40 A.M. An interpreter training room. Chairs scrape. A clock ticks.",
+      "requiresHumanMix": true
+    },
+    {
+      "lineId": "line-016",
+      "speaker": "TRAINER",
+      "language": "unconfirmed",
+      "text": "Today's simulation is not about being eloquent. It is about being accurate under social pressure. You are not the witness. You are not the judge. You are the interpreter.",
+      "estimatedMs": 13333,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "line-017",
+      "speaker": "ACTOR ONE",
+      "language": "unconfirmed",
+      "text": "I think I saw a man at the entrance. I might recognize his jacket. I couldn't tell whether he was carrying anything.",
+      "estimatedMs": 10222,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "line-018",
+      "speaker": "ACTOR TWO, AS NOVICE INTERPRETER",
+      "language": "unconfirmed",
+      "text": "Vi al hombre en la entrada. Reconozco su chaqueta. Llevaba algo.",
+      "estimatedMs": 4889,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "cue-019",
+      "type": "production-cue",
+      "text": "The room goes quiet.",
+      "requiresHumanMix": true
+    },
+    {
+      "lineId": "line-020",
+      "speaker": "TRAINER",
+      "language": "unconfirmed",
+      "text": "Teresa, what happened?",
+      "estimatedMs": 1333,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "line-021",
+      "speaker": "TERESA",
+      "language": "unconfirmed",
+      "text": "The interpretation upgraded three uncertainties into facts. “I think” disappeared. “Might recognize” became “recognize.” “Couldn't tell whether” became “was carrying.”",
+      "estimatedMs": 9333,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "line-022",
+      "speaker": "ACTOR TWO",
+      "language": "unconfirmed",
+      "text": "It sounded awkward with so many maybes.",
+      "estimatedMs": 3111,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "line-023",
+      "speaker": "TERESA",
+      "language": "unconfirmed",
+      "text": "The witness sounded uncertain. That awkwardness belongs to the witness. We can't polish it away.",
+      "estimatedMs": 7111,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "line-024",
+      "speaker": "TRAINER",
+      "language": "unconfirmed",
+      "text": "Exactly. Your job is not to make testimony persuasive. Try again and keep the degree of certainty.",
+      "estimatedMs": 7556,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "line-025",
+      "speaker": "ACTOR TWO",
+      "language": "unconfirmed",
+      "text": "Creo que vi a un hombre en la entrada. Tal vez reconocería su chaqueta. No pude distinguir si llevaba algo.",
+      "estimatedMs": 8889,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "line-026",
+      "speaker": "TRAINER",
+      "language": "unconfirmed",
+      "text": "Better. We can discuss regional phrasing, but the uncertainty and limits of observation survived. Now a medical conversation. New actors.",
+      "estimatedMs": 8889,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "line-027",
+      "speaker": "ACTOR THREE, AS CLINICIAN",
+      "language": "unconfirmed",
+      "text": "Did the pressure start before you took the medicine or after?",
+      "estimatedMs": 4889,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "line-028",
+      "speaker": "ACTOR FOUR, AS PATIENT",
+      "language": "unconfirmed",
+      "text": "It started before. I took the medicine because I felt that pressure. I don't know if it helped.",
+      "estimatedMs": 8444,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "line-029",
+      "speaker": "ACTOR TWO, AS NOVICE",
+      "language": "unconfirmed",
+      "text": "Empezó después de tomar la medicina. La tomó y se sintió mejor.",
+      "estimatedMs": 5333,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "line-030",
+      "speaker": "TERESA",
+      "language": "unconfirmed",
+      "text": "That is a different history. We changed the sequence and invented an improvement.",
+      "estimatedMs": 5778,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "line-031",
+      "speaker": "ACTOR TWO",
+      "language": "unconfirmed",
+      "text": "I heard “took the medicine” and “pressure.”",
+      "estimatedMs": 3111,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "line-032",
+      "speaker": "TERESA",
+      "language": "unconfirmed",
+      "text": "Hearing the nouns wasn't enough. “Before” carried the timeline; “I don't know” carried the uncertainty. The big words weren't the dangerous part.",
+      "estimatedMs": 11111,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "cue-033",
+      "type": "production-cue",
+      "text": "Someone taps the desk twice, like a tiny gavel.",
+      "requiresHumanMix": true
+    },
+    {
+      "lineId": "line-034",
+      "speaker": "TRAINER",
+      "language": "unconfirmed",
+      "text": "A useful principle: if you didn't understand something, make the interpreting difficulty transparent and request clarification. Don't quietly fill the gap.",
+      "estimatedMs": 10222,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "cue-035",
+      "type": "production-cue",
+      "text": "SCENE THREE — 12:25 P.M. A café. Cups clink. A small radio plays a scratchy bolero.",
+      "requiresHumanMix": true
+    },
+    {
+      "lineId": "line-036",
+      "speaker": "LUPE",
+      "language": "unconfirmed",
+      "text": "I have a question. If the words are so fragile, why do people speak so fast?",
+      "estimatedMs": 7111,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "line-037",
+      "speaker": "TERESA",
+      "language": "unconfirmed",
+      "text": "Because they don't know they're entering someone else's future.",
+      "estimatedMs": 5333,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "line-038",
+      "speaker": "LUPE",
+      "language": "unconfirmed",
+      "text": "Very dramatic. You should write telenovelas.",
+      "estimatedMs": 2667,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "line-039",
+      "speaker": "MARTA",
+      "language": "unconfirmed",
+      "text": "I brought the actual notice. I want help understanding what it says, not deciding what to do. Can you read the title aloud?",
+      "estimatedMs": 10222,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "line-040",
+      "speaker": "TERESA",
+      "language": "unconfirmed",
+      "text": "“Notice of hearing.” It names a date and a place. That doesn't tell us what the outcome will be. For the specific legal meaning and your options, ask the court or a qualified legal advisor. The court should be able to explain how to request language assistance.",
+      "estimatedMs": 21333,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "line-041",
+      "speaker": "MARTA",
+      "language": "unconfirmed",
+      "text": "Then the anonymous message that said I already lost my home was wrong?",
+      "estimatedMs": 5778,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "line-042",
+      "speaker": "TERESA",
+      "language": "unconfirmed",
+      "text": "I can't establish the legal status from a group rumor. I can say that the screenshot was misquoted. The document says “hearing,” not “judgment.”",
+      "estimatedMs": 11111,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "line-043",
+      "speaker": "LUPE",
+      "language": "unconfirmed",
+      "text": "Which means we need to apologize to everyone I told to pack their lamps.",
+      "estimatedMs": 6222,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "line-044",
+      "speaker": "MARTA",
+      "language": "unconfirmed",
+      "text": "Especially the woman who already sold her lamp.",
+      "estimatedMs": 3556,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "cue-045",
+      "type": "production-cue",
+      "text": "A laugh, then the radio cuts out.",
+      "requiresHumanMix": true
+    },
+    {
+      "lineId": "cue-046",
+      "type": "production-cue",
+      "text": "SCENE FOUR — 6:10 P.M. Teresa's kitchen. A phone vibrates on the table.",
+      "requiresHumanMix": true
+    },
+    {
+      "lineId": "line-047",
+      "speaker": "NARRATOR",
+      "language": "unconfirmed",
+      "text": "At home, Teresa takes off her shoes and plays the training recording one more time. She has missed a different little word this time. The patient said the pressure started *before*. The trainee said *after*. Without that one bridge between events, the story crosses to the wrong bank.",
+      "estimatedMs": 21333,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "line-048",
+      "speaker": "NARRATOR",
+      "language": "unconfirmed",
+      "text": "LUPE [VOICE NOTE]: I have fixed the post. I wrote: “A hearing was scheduled. No decision has been confirmed in the information we saw.” I also removed the pineapple.",
+      "estimatedMs": 12889,
+      "source": "narrative-body"
+    },
+    {
+      "lineId": "line-049",
+      "speaker": "TERESA",
+      "language": "unconfirmed",
+      "text": "You finally kept the limits of what you know.",
+      "estimatedMs": 4000,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "line-050",
+      "speaker": "NARRATOR",
+      "language": "unconfirmed",
+      "text": "LUPE [VOICE NOTE]: I am now a woman of great restraint. But a new message has arrived. Someone says the notice was for apartment nine. Marta lives in six.",
+      "estimatedMs": 12889,
+      "source": "narrative-body"
+    },
+    {
+      "lineId": "line-051",
+      "speaker": "TERESA",
+      "language": "unconfirmed",
+      "text": "Don't forward anything. First verify the apartment number and the document.",
+      "estimatedMs": 5333,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "cue-052",
+      "type": "production-cue",
+      "text": "Silence. Then an incoming message chime.",
+      "requiresHumanMix": true
+    },
+    {
+      "lineId": "line-053",
+      "speaker": "NARRATOR",
+      "language": "unconfirmed",
+      "text": "UNKNOWN VOICE [VOICE NOTE]: Hello, Teresa. I'm calling from the clinic simulation. I need to correct something I said this morning. The person didn't say “I never had pain.” They said “I haven't had pain today.” I think someone removed the word *today* in the report.",
+      "estimatedMs": 21778,
+      "source": "narrative-body"
+    },
+    {
+      "lineId": "line-054",
+      "speaker": "NARRATOR",
+      "language": "unconfirmed",
+      "text": "Teresa looks at the empty space beside her notebook where she has written three words: who, when, maybe. A new fourth word joins them: *today*.",
+      "estimatedMs": 11111,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "cue-055",
+      "type": "production-cue",
+      "text": "The radio starts again, playing the same melody in a different key.",
+      "requiresHumanMix": true
+    },
+    {
+      "lineId": "line-056",
+      "speaker": "TERESA",
+      "language": "unconfirmed",
+      "text": "Lupe, I'm going to need you to stop calling every message a verdict.",
+      "estimatedMs": 6222,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "line-057",
+      "speaker": "NARRATOR",
+      "language": "unconfirmed",
+      "text": "LUPE [VOICE NOTE]: I already changed the group name.",
+      "estimatedMs": 4000,
+      "source": "narrative-body"
+    },
+    {
+      "lineId": "line-058",
+      "speaker": "TERESA",
+      "language": "unconfirmed",
+      "text": "To what?",
+      "estimatedMs": 889,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "line-059",
+      "speaker": "LUPE",
+      "language": "unconfirmed",
+      "text": "“Solo Avisos — Sujeto a Verificación.”",
+      "estimatedMs": 2222,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "line-060",
+      "speaker": "NARRATOR",
+      "language": "unconfirmed",
+      "text": "For once, the group is quiet. Then the typing dots appear. Five people, all at once.",
+      "estimatedMs": 7111,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "cue-061",
+      "type": "production-cue",
+      "text": "END EPISODE — THE MISSING DAY",
+      "requiresHumanMix": true
+    }
+  ],
+  "cues": [],
+  "wordCount": 1122,
+  "approximateDurationSec": 448,
+  "production": {
+    "speakerStemPolicy": "one dry mono WAV stem per actor + separately recorded SFX/music stems",
+    "masters": "lossless 48kHz 24-bit WAV project master, accessible web M4A/MP3 plus captions",
+    "intelligibility": "mix spoken words above music; proof numbers, negative particles, hedges and speaker identities in the final mix",
+    "playback": "recheck native audio playback in mobile Safari with headphones and speakers",
+    "languagePolicy": "review every unconfirmed line language; do not assume English/Spanish from speaker ethnicity",
+    "soundPolicy": "silence may carry emotion; preserve consonants and headroom; sound cues never obscure an error anchor",
+    "licensing": "collect actor/voice/talent releases, music/sample license, cover and performance rights before deployment",
+    "asr": "export 16/24 kHz mono PCM16 for Meta Voice Transcribe; ASR only advises, never certifies bilingual fidelity"
+  },
+  "pending": [
+    "language of 49 parsed lines must be confirmed",
+    "all planned pauses and timings must be replaced with real measurements",
+    "actual recording and listening-quality inspection",
+    "source-to-translation semantic review",
+    "legal and medical domain review",
+    "rights sign-off"
+  ],
+  "cannotClaim": "This packet does not include recorded audio, authentic performance, final cue alignment or professional validation."
+}

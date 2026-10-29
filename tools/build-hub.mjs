@@ -1,5 +1,6 @@
 // Reproducible static hub assembly. No authoring endpoints or runtime AI.
 import{mkdirSync,readFileSync,writeFileSync,cpSync,existsSync,rmSync}from'node:fs';import{join,resolve}from'node:path';import{createHash}from'node:crypto';
+import{loadKnowledge}from'../media-engine/knowledge.mjs';import{validateCatalog}from'../media-engine/validation.mjs';import{publicCatalog}from'../media-engine/publication.mjs';
 import*as core from'../packages/engine-core/index.js';import{validateCollection}from'../generator/living-library.js';import{learningRuntimeSources}from'../generator/runtime.js';
 const out=resolve('dist');rmSync(out,{recursive:true,force:true});mkdirSync(out,{recursive:true});writeFileSync(join(out,'.nojekyll'),'');
 const {curriculumSource}=await import('../generator/curriculum-source.js');
@@ -25,7 +26,10 @@ cpSync('assets/game-vectors',join(out,'games/_shared/media'),{recursive:true});
 // Static, locally bundled living-library experiences and authored audio.
 const collection=JSON.parse(readFileSync('content/living-library/collection.json'));const mediaErrors=validateCollection(collection);if(mediaErrors.length)throw Error(`Living library validation failed: ${mediaErrors.join('; ')}`);
 cpSync('apps/living-library',join(out,'living-library'),{recursive:true});
-cpSync('content/living-library/collection.json',join(out,'living-library/collection.json'));
+const production=JSON.parse(readFileSync('content/media-production/catalog.json'));const kb=loadKnowledge();const mediaCheck=validateCatalog(production,{knowledge:kb,assetRoot:'apps/biblioteca-viva'});if(!mediaCheck.ok)throw Error(`Production catalog invalid: ${mediaCheck.errors.join('; ')}`);
+// Only public content fields are projected. Each imported entry remains script-only.
+const projected=publicCatalog(production).items.map(item=>{const base={id:item.id,title:item.title,subtitle:item.synopsis||item.subtitle||'',source_id:(item.sourceIds||[]).join(', '),source_note:'Fictional draft; professional review and audio production are pending.',review:'Draft',productionKind:item.kind};if(item.kind==='audio-mystery')return {...base,kind:'branching',start:item.start,nodes:item.nodes};if(item.kind==='song')return {...base,kind:'song',lyrics:item.lyrics||item.script,prompt:item.prompts?.suno||'Draft song concept',style:'Song draft',bpm:'—'};return {...base,kind:item.kind==='audio-drama'?'telenovela':'story',body:item.script,takeaway:item.takeaway||''};});
+const merged={...collection,items:[...collection.items,...projected]};const mergedErrors=validateCollection(merged);if(mergedErrors.length)throw Error(`Merged media invalid: ${mergedErrors.join('; ')}`);writeFileSync(join(out,'living-library/collection.json'),JSON.stringify(merged));
 // Version browser assets by content so Pages visitors do not receive mismatched cached files.
 const version=path=>createHash('sha256').update(readFileSync(path)).digest('hex').slice(0,12);
 const mediaDir=join(out,'living-library'),mediaJS=join(mediaDir,'library.js');

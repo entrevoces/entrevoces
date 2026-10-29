@@ -1,0 +1,448 @@
+{
+  "schemaVersion": 2,
+  "mediaId": "drama-el-boleto-equivocado",
+  "title": "La última palabra: El boleto equivocado",
+  "kind": "audio-drama",
+  "status": "script-draft",
+  "intendedLanguagePair": "English/Spanish",
+  "licenseState": "uncleared",
+  "review": {
+    "bilingual": false,
+    "domain": false,
+    "editorial": false
+  },
+  "scriptSource": "authored project draft",
+  "speakers": [
+    "TERESA",
+    "LUPE",
+    "MARTA",
+    "FACILITATOR",
+    "DESK CLERK ACTOR",
+    "INTERPRETER ACTOR",
+    "REPAIRER",
+    "NARRATOR",
+    "ROSITA"
+  ],
+  "lines": [
+    {
+      "lineId": "cue-001",
+      "type": "production-cue",
+      "text": "SCENE ONE: SUNDAY MORNING. A kitchen. Rain is pattering against an empty flowerpot. A radio plays half a bolero before someone switches it off.",
+      "requiresHumanMix": true
+    },
+    {
+      "lineId": "line-002",
+      "speaker": "TERESA",
+      "language": "unconfirmed",
+      "text": "Your suitcase is in the kitchen. Does it want breakfast?",
+      "estimatedMs": 4444,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "line-003",
+      "speaker": "LUPE",
+      "language": "unconfirmed",
+      "text": "My suitcase came early because the whole family arrives late. Also, I brought the blue dress. I have a meeting.",
+      "estimatedMs": 8889,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "line-004",
+      "speaker": "TERESA",
+      "language": "unconfirmed",
+      "text": "What meeting?",
+      "estimatedMs": 889,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "line-005",
+      "speaker": "LUPE",
+      "language": "unconfirmed",
+      "text": "A serious meeting with the woman who repairs the old sewing machines. She asked if I'd sell mine. I said maybe. Then I said no. Now I'm having coffee with her to negotiate my uncertainty.",
+      "estimatedMs": 16444,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "line-006",
+      "speaker": "TERESA",
+      "language": "unconfirmed",
+      "text": "That's the most precise answer you've given all year.",
+      "estimatedMs": 4889,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "cue-007",
+      "type": "production-cue",
+      "text": "A notification chimes. Teresa checks her phone, then checks it again.",
+      "requiresHumanMix": true
+    },
+    {
+      "lineId": "line-008",
+      "speaker": "TERESA",
+      "language": "unconfirmed",
+      "text": "Marta says she changed her ride to Tuesday. But her appointment is Thursday. Why would she do that?",
+      "estimatedMs": 8000,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "line-009",
+      "speaker": "LUPE",
+      "language": "unconfirmed",
+      "text": "Because buses have seats on Tuesday. Thursday is just a rumor invented by dentists.",
+      "estimatedMs": 6222,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "line-010",
+      "speaker": "TERESA",
+      "language": "unconfirmed",
+      "text": "She says someone in the group interpreted “next Thursday” as “this Tuesday.” She's already bought a nonrefundable ticket.",
+      "estimatedMs": 8444,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "line-011",
+      "speaker": "LUPE",
+      "language": "unconfirmed",
+      "text": "We have discussed banning the group chat before eleven in the morning.",
+      "estimatedMs": 5333,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "cue-012",
+      "type": "production-cue",
+      "text": "SCENE TWO: MARTA'S APARTMENT. The room is full of orderly piles: papers in one, folded clothes in another, basil in a jar trying to become a houseplant.",
+      "requiresHumanMix": true
+    },
+    {
+      "lineId": "line-013",
+      "speaker": "MARTA",
+      "language": "unconfirmed",
+      "text": "I had everything planned. I could leave the paperwork with Teresa, return in time to meet the bus, and still have lunch. Now there's another date.",
+      "estimatedMs": 12000,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "line-014",
+      "speaker": "TERESA",
+      "language": "unconfirmed",
+      "text": "Who originally said Thursday?",
+      "estimatedMs": 1778,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "line-015",
+      "speaker": "MARTA",
+      "language": "unconfirmed",
+      "text": "A person at the appointment desk. I heard it in English. Then Rosita told the group Tuesday. Everybody repeated Tuesday, so I thought I remembered wrong.",
+      "estimatedMs": 11556,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "line-016",
+      "speaker": "LUPE",
+      "language": "unconfirmed",
+      "text": "You trusted the majority vote to determine the calendar. My mother once tried that with Easter.",
+      "estimatedMs": 7111,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "line-017",
+      "speaker": "TERESA",
+      "language": "unconfirmed",
+      "text": "We're not going to decide your appointment date by memory. Let's call the office using the callback number printed on your confirmed notice. You can request an interpreter there. I'll stay for company, not interpret a live clinical conversation.",
+      "estimatedMs": 18667,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "line-018",
+      "speaker": "MARTA",
+      "language": "unconfirmed",
+      "text": "I don't want anyone to think I can't manage.",
+      "estimatedMs": 4889,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "line-019",
+      "speaker": "TERESA",
+      "language": "unconfirmed",
+      "text": "Asking to hear something clearly isn't a failure. You're not a microphone that has to record every syllable perfectly.",
+      "estimatedMs": 9333,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "cue-020",
+      "type": "production-cue",
+      "text": "The telephone rings; then the pleasant, slightly tinny hum of hold music.",
+      "requiresHumanMix": true
+    },
+    {
+      "lineId": "line-021",
+      "speaker": "MARTA",
+      "language": "unconfirmed",
+      "text": "Why is hold music always a song that sounds like it's apologizing to a bank?",
+      "estimatedMs": 7111,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "line-022",
+      "speaker": "LUPE",
+      "language": "unconfirmed",
+      "text": "This one sounds like a bank refusing your apology.",
+      "estimatedMs": 4000,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "cue-023",
+      "type": "production-cue",
+      "text": "SCENE THREE: A supervised training simulation later that afternoon. Three actors sit in a small room. A facilitator has pinned two dates to a wall calendar.",
+      "requiresHumanMix": true
+    },
+    {
+      "lineId": "line-024",
+      "speaker": "FACILITATOR",
+      "language": "unconfirmed",
+      "text": "We're not reproducing Marta's real appointment. No case details enter the training room. Our actors will demonstrate an easy-to-miss difference. Please listen to the original statement.",
+      "estimatedMs": 13333,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "line-025",
+      "speaker": "DESK CLERK ACTOR",
+      "language": "en",
+      "text": "Your appointment is next Thursday. You may arrive fifteen minutes early, but it isn't required.",
+      "estimatedMs": 7111,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "line-026",
+      "speaker": "INTERPRETER ACTOR",
+      "language": "es",
+      "text": "Su cita es este martes. Debe llegar quince minutos antes.",
+      "estimatedMs": 4444,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "cue-027",
+      "type": "production-cue",
+      "text": "Lupe makes a small, involuntary sound, as though she's dropped a spoon into a sink.",
+      "requiresHumanMix": true
+    },
+    {
+      "lineId": "line-028",
+      "speaker": "FACILITATOR",
+      "language": "unconfirmed",
+      "text": "Pause. What changed?",
+      "estimatedMs": 1333,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "line-029",
+      "speaker": "LUPE",
+      "language": "unconfirmed",
+      "text": "The day moved. And “may” put on a uniform and became “must.”",
+      "estimatedMs": 5333,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "line-030",
+      "speaker": "TERESA",
+      "language": "unconfirmed",
+      "text": "Those are separate shifts. The first changes the scheduling fact; the second changes an optional arrival to an obligation. Neither belongs to the interpreter.",
+      "estimatedMs": 10667,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "line-031",
+      "speaker": "FACILITATOR",
+      "language": "unconfirmed",
+      "text": "A repair in this simulation might be: “Su cita es el próximo jueves. Puede llegar quince minutos antes, pero no es obligatorio.” We would still check regional usage and the actual scheduling context before approving a professional version.",
+      "estimatedMs": 16889,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "line-032",
+      "speaker": "LUPE",
+      "language": "unconfirmed",
+      "text": "I notice the wrong interpretation was very confident. It had a lovely posture.",
+      "estimatedMs": 5778,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "line-033",
+      "speaker": "FACILITATOR",
+      "language": "unconfirmed",
+      "text": "Confidence is not fidelity. And today we are not grading acting skill.",
+      "estimatedMs": 5333,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "cue-034",
+      "type": "production-cue",
+      "text": "They listen to the original again. On the second pass, the small word “may” is unmistakable.",
+      "requiresHumanMix": true
+    },
+    {
+      "lineId": "cue-035",
+      "type": "production-cue",
+      "text": "SCENE FOUR: BACK AT THE KITCHEN. Rain has stopped. The suitcase is still there.",
+      "requiresHumanMix": true
+    },
+    {
+      "lineId": "line-036",
+      "speaker": "MARTA",
+      "language": "unconfirmed",
+      "text": "The office confirmed Thursday. I can change my ticket with a small fee. Rosita apologized. Then she explained that someone else told her Tuesday.",
+      "estimatedMs": 10667,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "line-037",
+      "speaker": "LUPE",
+      "language": "unconfirmed",
+      "text": "Ah, the oldest song in the neighborhood. “I was merely forwarding it.”",
+      "estimatedMs": 5333,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "line-038",
+      "speaker": "TERESA",
+      "language": "unconfirmed",
+      "text": "How are you feeling?",
+      "estimatedMs": 1778,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "line-039",
+      "speaker": "MARTA",
+      "language": "unconfirmed",
+      "text": "Annoyed, but relieved. I didn't lose my appointment. I almost spent the whole afternoon being angry at the wrong person.",
+      "estimatedMs": 9333,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "line-040",
+      "speaker": "LUPE",
+      "language": "unconfirmed",
+      "text": "That is an enormous savings. I could teach a workshop about it.",
+      "estimatedMs": 5333,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "line-041",
+      "speaker": "MARTA",
+      "language": "unconfirmed",
+      "text": "Please don't.",
+      "estimatedMs": 1333,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "cue-042",
+      "type": "production-cue",
+      "text": "A knock on the door. A woman with a tool bag holds up a box containing two carefully labeled sewing machine parts.",
+      "requiresHumanMix": true
+    },
+    {
+      "lineId": "line-043",
+      "speaker": "REPAIRER",
+      "language": "unconfirmed",
+      "text": "Lupe? You said maybe about the machine. I thought we'd look at it before you decide. I brought coffee.",
+      "estimatedMs": 8889,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "line-044",
+      "speaker": "LUPE",
+      "language": "unconfirmed",
+      "text": "I said I wasn't going to sell it. I did not say I wasn't going to fall in love with repairing it.",
+      "estimatedMs": 10667,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "line-045",
+      "speaker": "TERESA",
+      "language": "unconfirmed",
+      "text": "That's a distinction I'm prepared to preserve.",
+      "estimatedMs": 4000,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "cue-046",
+      "type": "production-cue",
+      "text": "The repairer laughs. Lupe takes the toolbox instead of her suitcase and sets it on the kitchen table.",
+      "requiresHumanMix": true
+    },
+    {
+      "lineId": "line-047",
+      "speaker": "NARRATOR",
+      "language": "unconfirmed",
+      "text": "The calendar does not apologize for Tuesday. The ticket does not apologize for the fee. But the old sewing machine makes a low, grateful sound when Lupe turns its wheel for the first time in years.",
+      "estimatedMs": 16000,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "cue-048",
+      "type": "production-cue",
+      "text": "SCENE FIVE: TAG. Evening. The family group message lights up.",
+      "requiresHumanMix": true
+    },
+    {
+      "lineId": "line-049",
+      "speaker": "ROSITA",
+      "language": "unconfirmed",
+      "text": "Confirmed: Thursday. Not Tuesday. I have corrected the message above. Also, I may bring flan.",
+      "estimatedMs": 6667,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "line-050",
+      "speaker": "LUPE",
+      "language": "unconfirmed",
+      "text": "(typing aloud) “May” is not “must.” We understand.",
+      "estimatedMs": 3556,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "line-051",
+      "speaker": "TERESA",
+      "language": "unconfirmed",
+      "text": "And please don't ask the group to vote on dessert.",
+      "estimatedMs": 4889,
+      "source": "parsed-script-label"
+    },
+    {
+      "lineId": "cue-052",
+      "type": "production-cue",
+      "text": "The phone buzzes with thirteen responses. All of them say “Flan.”",
+      "requiresHumanMix": true
+    },
+    {
+      "lineId": "cue-053",
+      "type": "production-cue",
+      "text": "END. A two-note sewing-machine motif becomes the closing musical theme.",
+      "requiresHumanMix": true
+    }
+  ],
+  "cues": [],
+  "wordCount": 943,
+  "approximateDurationSec": 327,
+  "production": {
+    "speakerStemPolicy": "one dry mono WAV stem per actor + separately recorded SFX/music stems",
+    "masters": "lossless 48kHz 24-bit WAV project master, accessible web M4A/MP3 plus captions",
+    "intelligibility": "mix spoken words above music; proof numbers, negative particles, hedges and speaker identities in the final mix",
+    "playback": "recheck native audio playback in mobile Safari with headphones and speakers",
+    "languagePolicy": "review every unconfirmed line language; do not assume English/Spanish from speaker ethnicity",
+    "soundPolicy": "silence may carry emotion; preserve consonants and headroom; sound cues never obscure an error anchor",
+    "licensing": "collect actor/voice/talent releases, music/sample license, cover and performance rights before deployment",
+    "asr": "export 16/24 kHz mono PCM16 for Meta Voice Transcribe; ASR only advises, never certifies bilingual fidelity"
+  },
+  "pending": [
+    "language of 38 parsed lines must be confirmed",
+    "all planned pauses and timings must be replaced with real measurements",
+    "actual recording and listening-quality inspection",
+    "source-to-translation semantic review",
+    "legal and medical domain review",
+    "rights sign-off"
+  ],
+  "cannotClaim": "This packet does not include recorded audio, authentic performance, final cue alignment or professional validation."
+}

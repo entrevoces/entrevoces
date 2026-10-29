@@ -1,0 +1,21 @@
+[Fictional clinic practice. The recording begins with a chair moving gently, a page turning, and a thoughtful silence.]
+
+CLINICIAN (ENGLISH): You can ask any questions before deciding whether to sign this consent form. We will explain the options, but I cannot promise the outcome.
+
+INTERPRETER (SPANISH, INTENTIONALLY WRONG TAKE): Si firma el formulario, le aseguran que el procedimiento saldrá bien.
+
+PATIENT ACTOR (SPANISH): ¿Me lo aseguran? Porque eso cambia cómo me siento acerca de firmar.
+
+[Silence for listeners to interrupt. Do not play the answer yet.]
+
+FACILITATOR (ENGLISH): The incorrect take has introduced a promise the clinician did not make. It also removed the patient's opportunity to ask questions before deciding. The simulated patient is reacting to information invented by the interpretation.
+
+INTERPRETER (SPANISH, REPAIR): Puede hacer todas las preguntas que quiera antes de decidir si firma el formulario de consentimiento. Le explicaremos las opciones, pero no puedo prometerle el resultado.
+
+PATIENT ACTOR (SPANISH): Entonces quiero preguntar primero. Todavía no he decidido.
+
+CLINICIAN ACTOR (ENGLISH): Thank you. Ask whatever you need to ask. We can take our time.
+
+FACILITATOR (ENGLISH): This scenario is for interpreter training, not a specific clinical recommendation. The exact professional Spanish version and any local consent procedure must be checked by qualified reviewers. The distinction to hear is simple: providing information and allowing a decision do not amount to guaranteeing what happens next.
+
+[Recorded ending: the page closes without the scrape of a pen. The patient has not yet signed. A quiet musical tag reinforces that a pause is a legitimate part of the scene.]

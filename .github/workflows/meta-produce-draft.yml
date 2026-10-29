@@ -1,0 +1,71 @@
+name: Meta Muse creative media draft production
+# Run intentionally from Actions -> Run workflow. Results are private review artifacts, not published media.
+on:
+  workflow_dispatch:
+    inputs:
+      kind:
+        description: 'Media form'
+        type: choice
+        required: true
+        default: audio-drama
+        options: [audio-drama, catch-the-change, podcast, audio-mystery, story, song, film]
+      topic:
+        description: 'Interpreting skill or knowledge topic'
+        type: string
+        required: true
+        default: negation
+      domain:
+        description: 'Medical or legal domain'
+        type: choice
+        required: true
+        default: medical
+        options: [medical, legal]
+      budget:
+        description: 'Maximum paid provider requests for this job'
+        type: choice
+        required: true
+        default: '15'
+        options: ['10', '15', '20']
+permissions:
+  contents: read
+concurrency:
+  group: meta-creative-studio
+  cancel-in-progress: false
+jobs:
+  produce-one-draft:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    environment: meta-production
+    env:
+      MODEL_API_KEY: ${{ secrets.MODEL_API_KEY }}
+      EV_FORMAT: ${{ inputs.kind }}
+      EV_TOPIC: ${{ inputs.topic }}
+      EV_DOMAIN: ${{ inputs.domain }}
+      EV_BUDGET: ${{ inputs.budget }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Fail rather than pretend to use Meta
+        run: |
+          test -n "$MODEL_API_KEY" || { echo 'Missing MODEL_API_KEY secret in meta-production environment'; exit 1; }
+      - name: Validate knowledge and stage machinery
+        run: |
+          node tools/media-studio.mjs audit
+          node --test tests/media-first.test.js tests/media-professional.test.js tests/meta-real-contract.test.js tests/media-quality-v2.test.js tests/media-voice-production.test.js tests/media-stage-schemas.test.js tests/media-legacy-audit.test.js
+      - name: Freeze the source-grounded media brief
+        run: |
+          mkdir -p media-workshop
+          node tools/media-studio.mjs brief --kind "$EV_FORMAT" --topic "$EV_TOPIC" --domain "$EV_DOMAIN" --out media-workshop/brief.json
+      - name: Generate real Wonder / Spark / critique / production outputs
+        run: |
+          node tools/media-studio.mjs author --brief media-workshop/brief.json --out media-workshop --live --budget "$EV_BUDGET"
+      - name: Upload real model draft + checkpoint for human review
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: meta-content-draft-${{ github.run_id }}
+          path: media-workshop/
+          retention-days: 7
+          if-no-files-found: warn

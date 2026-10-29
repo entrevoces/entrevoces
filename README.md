@@ -1,3 +1,5 @@
+> **Living library:** The current static site includes 24 original entries and 17 imported script drafts. See [docs/living-library.md](docs/living-library.md) for available audio and review limits, and [docs/VIDEO_STUDIO.md](docs/VIDEO_STUDIO.md) for the script-to-image and video authoring workflow. The original games and shared learning engine remain available.
+
 # Entre Voces
 
 A shared learning engine, an interpreting learning hub, and a file-based game creation suite. Interpreting—understanding meaning, choosing language, preserving intent and repairing communication—is the core principle. Published learning and games remain static on **GitHub Pages**; authoring agents work at build time through the local Codex CLI. An opt-in spoken-practice extension calls a **separate Modal endpoint running Meta MMS speech recognition on CPU**. Neither Pages nor the game bundle contains model credentials.

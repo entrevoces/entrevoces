@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "primaryGoal": "Produce a coherent, delightful, mostly offline English–Spanish interpreting media library where audio-first learning outranks arcade mechanics.",
+  "modelRouting": {
+    "director": "muse-wonder-1.0",
+    "bulkScriptWriter": "muse-spark-1.3",
+    "semanticCritic": "muse-wonder-1.0",
+    "editorialCritic": "muse-spark-1.3",
+    "productionPlanner": "muse-spark-1.3",
+    "coverArtist": "muse-image-1.0",
+    "audioTranscription": "muse-voice-transcribe-1.0",
+    "voiceSynthesis": "external human narrator / licensed TTS, not Meta Voice Transcribe",
+    "songPerformance": "manual Suno prompt and rights review",
+    "videoPerformance": "manual iPhone storyboard generation / export"
+  },
+  "agents": [
+    {"id":"listener-researcher","role":"Study competencies, target user listening contexts, known misconceptions, and enjoyment goals without stereotyping.","outputs":["learning-gaps","media-taste-hypotheses","source-disposition"]},
+    {"id":"media-curator","role":"Recommend full mix of podcasts, audio dramas, branching mysteries, songs, short fiction and language-error listening sessions.","outputs":["catalog-plan","portfolio-diversity-audit","priority-queue"]},
+    {"id":"creative-director","role":"Invent original memorable characters, plot, humor, sound identity and multi-episode arcs, not quizzes disguised as entertainment.","outputs":["complete-production-brief","cast","episode-beats"]},
+    {"id":"scriptwriter","role":"Write complete scripts with authentic spoken register, source-backed concepts and explicit meaning-change events.","outputs":["full-script","critical-meaning-units","sound-cues"]},
+    {"id":"medical-legal-reviewer","role":"Critique medical/legal fidelity and provenance; model critique can flag concerns but cannot grant professional approval.","outputs":["flagged-claims","rewrite-requests","source-mappings"]},
+    {"id":"entertainment-critic","role":"Challenge weak story structure, patronizing exercises, stereotypes, thin dialogue and shallow twists.","outputs":["narrative-findings","revision-requests"]},
+    {"id":"voice-director","role":"Prepare performance scripts, speaker identities, accents, casting and timed audio cues, with legal rights tracking.","outputs":["voice-production-packet","recording-plan","timestamp-spec"]},
+    {"id":"sound-and-song-producer","role":"Compose original music directions, five or more Suno-ready prompts, earcons and soundscapes without claiming music already exists.","outputs":["music-brief","Suno-prompts","rights-report"]},
+    {"id":"visual-media-producer","role":"Create artwork requests, cover descriptions, captions, video storyboards and iPhone short-video instructions.","outputs":["cover-prompts","shot-list","accessibility-plan"]},
+    {"id":"quality-and-publishing-critic","role":"Enforce source evidence, human review, rights, complete story graph, real audio files and no fake learning evidence.","outputs":["automated-verification","pending-human-gates","publish-manifest"]}
+  ],
+  "nonNegotiables": ["The 865-term original JSON is canonical; derived labels must be natural spoken language and keep original senses separately.","No production status inflation; unreviewed generated media remains a draft.","No runtime model keys or live-generation requirement on GitHub Pages.","The voice-first error-interruption activity is the signature interactive feature; arcade is secondary.","No fictitious clinician/court instruction is represented as factual or professional advice.","All AI reviews are advisory until qualified bilingual human approval."]
+}

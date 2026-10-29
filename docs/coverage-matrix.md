@@ -56,3 +56,12 @@ The ZIP is a standalone reconstruction, not a verified replacement for the repos
 | LIVE-02 | Media manifests reject missing assets, unsafe paths and broken branches; drafts remain clearly labeled | generator/living-library.js, content/living-library/collection.json | Two automated manifest tests; no expert review | Verified structurally; content review pending |
 | LIVE-03 | A real song can be heard from the library without embedding unsupported free-plan downloads | song01 externalAudio | Suno generated two versions; one MP3/M4A downloaded; logged-out share page exposes playback | Verified link/play control; bilingual listening review pending |
 | LIVE-04 | Generate and publish verified bilingual audio dramas, songs and stitched videos through a production pipeline | Future authoring and review workflow | Five existing synthetic demos and a Suno share link only; no Meta video generation endpoint verified | In progress / media production and review pending |
+
+## October 29 Quality V2 integration
+
+| ID | Acceptance | Implementation | Verification | State |
+|---|---|---|---|---|
+| V2-01 | Preserve the existing multilingual site and source corpus while exposing 17 additional scripts as drafts | content/media-production, tools/build-hub.mjs, living-library | Original SHA matches; 41 catalog entries, browser opened a draft and a branching choice; 89 overlay tests | Implemented; content not professionally reviewed |
+| V2-02 | Script-to-shot authoring can select hosted Meta or Baseten-hosted open weights; Muse Image produces resumable, attributed image drafts | tools/media-studio/studio.py | Local mocked contracts and validation; no provider keys were available | Implemented; live provider requests unverified |
+| V2-03 | Assemble audio and reviewed images or imported motion clips into a video with provenance | tools/media-studio/studio.py | FFmpeg integration test produced audio/video; 180-second screenshot demo rendered | Verified locally for stills; imported motion clips and real generated images unverified |
+| V2-04 | Professional, bilingual recorded episode, generated motion and contest-ready capture | docs/CONTEST_SHOWCASE.md | No reviewed recording, generated motion or actual paid model artifacts; current demo uses screenshots and device narration | Blocked on provider access, asset production and professional review |

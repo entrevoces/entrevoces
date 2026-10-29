@@ -1,0 +1,5 @@
+"lineId","speaker","language","estimatedMs","text"
+"line-001","Patient","en","7556","I have not had chest pain today; yesterday I felt pressure, but I am not sure why."
+"line-002","Interpreter","es","5778","Hoy he tenido dolor de pecho. Ayer tuve dolor agudo por el medicamento."
+"line-003","Supervisor","en","3111","What changed in negation, quality and attribution?"
+"line-004","Interpreter corrected","es","6667","Hoy no he tenido dolor de pecho; ayer sentí presión, pero no sé por qué."

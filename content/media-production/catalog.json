@@ -1,0 +1,1186 @@
+{
+  "schemaVersion": 1,
+  "notice": "All content below is original unreviewed draft material. No audio is included until separately ingested and approved.",
+  "items": [
+    {
+      "id": "voice-hearing-not-verdict",
+      "kind": "catch-the-change",
+      "title": "La noticia que todavía no era noticia",
+      "synopsis": "An apartment hallway, a hearing notice, and a dangerous rumor.",
+      "domain": "legal",
+      "termIds": [
+        "L0023",
+        "L0153",
+        "L0331"
+      ],
+      "sourceIds": [
+        "OJD_GLOSS",
+        "OREGON_ORS",
+        "OJD_EVICTION"
+      ],
+      "status": "script-draft",
+      "script": "[Hallway of an apartment building, evening. Keys jingle. Neighbors overlap, but their voices are always intelligible.]\n\nMARTA: The paper says they scheduled a hearing for next Tuesday. I don't know what the judge will decide.\n\nINTERPRETER (deliberately altered training version): El juez decidió que tenemos que irnos el martes.\n\n[Pause; a notification chimes, then three more. The disagreement is supposed to sound small.]\n\nLUPE: Wait—who decided we have to leave? The paper says something about going to court, not moving trucks.\n\nTERESA: In this simulation, the English speaker described a future hearing and uncertainty. The Spanish version changed that into a completed judicial decision.\n\nMARTA: My cousin already borrowed a truck. I was going to pack the refrigerator before dinner.\n\nVIOLETA: A scheduled hearing is not a final judgment. I am not deciding your case; I am saying what that notice actually says. If you need legal guidance, speak with a qualified source.\n\nLUPE: So the refrigerator is not on trial?\n\nVIOLETA: Not unless it files a motion.\n\n[The practice version replays, this time with the correct line and a beat of silence after “no sé.”]\n\nINTERPRETER (corrected training version): El documento dice que programaron una audiencia para el próximo martes. No sé qué decidirá el juez.\n\n[The actors repeat the original in a new order, one speaker stopping mid-sentence for a repair. The learner listens for tense, attribution and certainty instead of isolated nouns.]\n\nMARTA: I was scared because I thought a hearing meant the case was over.\n\nLUPE: You were scared because the words arrived wearing the wrong uniform.\n\nTERESA: And the interpreter's job is not to dress the words up. It's to carry what was actually said.\n\n[End: the apartment group chat buzzes, but nobody has sent the refrigerator emoji yet.]",
+      "turns": [
+        {
+          "speaker": "Marta",
+          "language": "en",
+          "text": "The paper says they scheduled a hearing for next Tuesday. I do not know what the judge will decide."
+        },
+        {
+          "speaker": "Interpreter",
+          "language": "es",
+          "text": "El juez decidió que tenemos que irnos el martes."
+        },
+        {
+          "speaker": "Lupe",
+          "language": "es",
+          "text": "¿Quién dijo eso? La audiencia ni siquiera ha ocurrido."
+        },
+        {
+          "speaker": "Interpreter corrected",
+          "language": "es",
+          "text": "El documento dice que programaron una audiencia para el próximo martes. No sé qué decidirá el juez."
+        }
+      ],
+      "errors": [
+        {
+          "id": "hearing-verdict",
+          "category": "procedural-status",
+          "original": "scheduled a hearing; do not know what the judge will decide",
+          "wrong": "judge decided we must leave",
+          "repair": "programaron una audiencia; no sé qué decidirá el juez",
+          "recognizedPhrases": [
+            "audiencia",
+            "todavia",
+            "sentencia",
+            "decidio"
+          ],
+          "audibleSource": "scheduled a hearing for next Tuesday",
+          "audibleWrong": "El juez decidió que tenemos que irnos el martes",
+          "audibleRepair": "programaron una audiencia para el próximo martes",
+          "sourceTurnIndex": 0,
+          "wrongTurnIndex": 1,
+          "repairTurnIndex": 3
+        }
+      ],
+      "nodes": null,
+      "start": null,
+      "audio": null,
+      "cover": null,
+      "sunoUrl": null,
+      "review": {
+        "bilingualApproved": false,
+        "domainApproved": false,
+        "editorialApproved": false
+      },
+      "rights": {
+        "status": "uncleared"
+      },
+      "transcript": null,
+      "productionNotes": [
+        "Place cue around the completed judgment claim after audio is recorded.",
+        "Bilingual reviewer must approve the correction and exact audio time window.",
+        "Never label a fictional result as Oregon legal advice."
+      ],
+      "prompts": {
+        "image": "Original sophisticated illustrated audio cover art for La noticia que todavía no era noticia; adult listeners; warm paper textures, character psychology, strong visual storytelling, no text",
+        "voice": "Produce a cast reading with distinct voices, room tone, and intentional pauses. License and verify each voice performance. Meta Voice Transcribe is STT only.",
+        "video": "Create 15–45-second vertical trailer on iPhone using key illustrated scenes, caption every spoken line and reveal no model-assessed professional claims."
+      },
+      "reviewNotice": "Fictional teaching draft; professional English–Spanish and legal/medical review required. No recorded audio exists."
+    },
+    {
+      "id": "voice-every-other-day",
+      "kind": "catch-the-change",
+      "title": "Una pastilla, muchas alarmas",
+      "synopsis": "One family reminder turns every other day into every day.",
+      "domain": "medical",
+      "termIds": [
+        "M0119",
+        "M0142",
+        "M0216"
+      ],
+      "sourceIds": [
+        "MEDLINE_MEDICINES",
+        "MEDLINE_TOPICS"
+      ],
+      "status": "script-draft",
+      "script": "[A kitchen timer ticks. Two relatives are helping prepare questions for a clinician. They are not making their own prescribing decision.]\n\nCLINICIAN: The written instructions say one tablet every other day. If that conflicts with what you remember, please confirm with your care team before changing anything.\n\nINTERPRETER (altered training version): Las instrucciones dicen una pastilla dos veces al día; cambie la dosis si se acuerda de otra cosa.\n\nRAFA: Two a day? My calendar has little suns, not little moons. I have no idea what we've invented.\n\nTERESA: Listen to the three things that changed. One tablet, not two. Every other day, not twice daily. And the clinician asked for verification before any change.\n\nLUPE: Your calendar didn't prescribe the medicine, Rafa. You drew a rooster on Wednesday.\n\nRAFA: That's not a rooster. That's the pharmacist.\n\n[A short chime marks the exact moment the conditional instruction disappears. The trainee can interrupt without watching a screen.]\n\nCLINICIAN: Let me say it once more. One tablet every other day. Please check with us before altering the instructions.\n\nINTERPRETER (corrected training version): Una tableta un día sí y otro no. Confirme con su equipo médico antes de cambiar las instrucciones.\n\nRAFA: Good. Then I will ask the clinic instead of trusting a drawing of a very handsome pharmacist.\n\nTERESA: A faithful interpretation protects how much, how often, and what to do when there is uncertainty.\n\n[Fade. The timer stops, but the audience hears one more rooster sound from Lupe's phone.]",
+      "turns": [
+        {
+          "speaker": "Clinician",
+          "language": "en",
+          "text": "One tablet every other day; confirm with your care team before making changes."
+        },
+        {
+          "speaker": "Interpreter",
+          "language": "es",
+          "text": "Una pastilla dos veces al día. Cambie la dosis si recuerda otra cosa."
+        },
+        {
+          "speaker": "Relative",
+          "language": "es",
+          "text": "¿Dos veces? Eso no es lo mismo."
+        },
+        {
+          "speaker": "Interpreter corrected",
+          "language": "es",
+          "text": "Una tableta un día sí y otro no. Confirme con el equipo médico antes de hacer cambios."
+        }
+      ],
+      "errors": [
+        {
+          "id": "dose-frequency",
+          "category": "frequency",
+          "original": "one tablet every other day",
+          "wrong": "two tablets daily",
+          "repair": "una tableta un día sí y otro no",
+          "recognizedPhrases": [
+            "frecuencia",
+            "dos veces",
+            "dia",
+            "pastilla"
+          ],
+          "audibleSource": "One tablet every other day",
+          "audibleWrong": "Una pastilla dos veces al día",
+          "audibleRepair": "Una tableta un día sí y otro no",
+          "sourceTurnIndex": 0,
+          "wrongTurnIndex": 1,
+          "repairTurnIndex": 3
+        },
+        {
+          "id": "conditional-change",
+          "category": "condition",
+          "original": "confirm before making changes",
+          "wrong": "change the dose without confirmation",
+          "repair": "confirme antes de cambiar",
+          "recognizedPhrases": [
+            "confirme",
+            "condicion",
+            "cambiar"
+          ],
+          "audibleSource": "confirm with your care team before making changes",
+          "audibleWrong": "Cambie la dosis si recuerda otra cosa",
+          "audibleRepair": "Confirme con el equipo médico antes de hacer cambios",
+          "sourceTurnIndex": 0,
+          "wrongTurnIndex": 1,
+          "repairTurnIndex": 3
+        }
+      ],
+      "nodes": null,
+      "start": null,
+      "audio": null,
+      "cover": null,
+      "sunoUrl": null,
+      "review": {
+        "bilingualApproved": false,
+        "domainApproved": false,
+        "editorialApproved": false
+      },
+      "rights": {
+        "status": "uncleared"
+      },
+      "transcript": null,
+      "productionNotes": [
+        "Have clinician, interpreter and relative use distinctly different speech timbres.",
+        "Pause after changed quantity/frequency and after altered condition; real timestamps filled only after mix review."
+      ],
+      "prompts": {
+        "image": "Original sophisticated illustrated audio cover art for Una pastilla, muchas alarmas; adult listeners; warm paper textures, character psychology, strong visual storytelling, no text",
+        "voice": "Produce a cast reading with distinct voices, room tone, and intentional pauses. License and verify each voice performance. Meta Voice Transcribe is STT only.",
+        "video": "Create 15–45-second vertical trailer on iPhone using key illustrated scenes, caption every spoken line and reveal no model-assessed professional claims."
+      },
+      "reviewNotice": "Fictional teaching draft; professional English–Spanish and legal/medical review required. No recorded audio exists."
+    },
+    {
+      "id": "voice-no-chest-pain",
+      "kind": "catch-the-change",
+      "title": "El “no” que nadie oyó",
+      "synopsis": "In a clinical history, one quiet word changes a symptom.",
+      "domain": "medical",
+      "termIds": [
+        "M0087",
+        "M0100",
+        "M0119"
+      ],
+      "sourceIds": [
+        "MEDLINE_TOPICS",
+        "MEDLINE_MEDICINES"
+      ],
+      "status": "script-draft",
+      "script": "[Clinical simulation. There is no real patient information. A careful interviewer and a patient actor speak over low room ambience.]\n\nPATIENT: I have not had chest pain today. Yesterday I felt pressure, but I am not sure what caused it.\n\nINTERPRETER (altered practice line): Hoy he tenido dolor de pecho. Ayer tuve dolor agudo por el medicamento.\n\n[Silence. The clinician prepares to write a note; the supervising interpreter stops the exercise.]\n\nSUPERVISOR: We heard three new facts that the patient did not give. Today changed from no chest pain to chest pain. Pressure became sharp pain. Uncertainty about cause became a claim about medication.\n\nTRAINEE: It sounded like the same story because most words were familiar. I was listening for medical vocabulary rather than relationships.\n\nPATIENT: What does “not sure” sound like? I do not want someone else to sound more certain than me.\n\nSUPERVISOR: Preserve the uncertainty. If you miss a sound, disclose the difficulty and ask for repetition instead of making a clinically significant guess.\n\n[The same actors repeat with a corrected version, leaving the hedging intact.]\n\nINTERPRETER (corrected practice line): Hoy no he tenido dolor de pecho. Ayer sentí presión, pero no estoy seguro de qué la causó.\n\nTRAINEE: I hear the opposite of the original error now. The small “no” carries a big difference.\n\nSUPERVISOR: Exactly. The lesson is not a claim that every symptom means the same condition. It is the accuracy of what a person actually reported.\n\n[The ambient room sound gives way to a soft bell; the scene ends before any diagnosis is invented.]",
+      "turns": [
+        {
+          "speaker": "Patient",
+          "language": "en",
+          "text": "I have not had chest pain today; yesterday I felt pressure, but I am not sure why."
+        },
+        {
+          "speaker": "Interpreter",
+          "language": "es",
+          "text": "Hoy he tenido dolor de pecho. Ayer tuve dolor agudo por el medicamento."
+        },
+        {
+          "speaker": "Supervisor",
+          "language": "en",
+          "text": "What changed in negation, quality and attribution?"
+        },
+        {
+          "speaker": "Interpreter corrected",
+          "language": "es",
+          "text": "Hoy no he tenido dolor de pecho; ayer sentí presión, pero no sé por qué."
+        }
+      ],
+      "errors": [
+        {
+          "id": "chest-pain-negation",
+          "category": "negation",
+          "original": "have not had chest pain",
+          "wrong": "have had chest pain",
+          "repair": "no he tenido dolor de pecho",
+          "recognizedPhrases": [
+            "no",
+            "negacion",
+            "dolor"
+          ],
+          "audibleSource": "I have not had chest pain today",
+          "audibleWrong": "Hoy he tenido dolor de pecho",
+          "audibleRepair": "Hoy no he tenido dolor de pecho",
+          "sourceTurnIndex": 0,
+          "wrongTurnIndex": 1,
+          "repairTurnIndex": 3
+        },
+        {
+          "id": "symptom-attribution",
+          "category": "uncertainty",
+          "original": "not sure what caused it",
+          "wrong": "caused by medication",
+          "repair": "no estoy seguro de qué lo causó",
+          "recognizedPhrases": [
+            "seguro",
+            "causa",
+            "medicamento"
+          ],
+          "audibleSource": "I am not sure why",
+          "audibleWrong": "por el medicamento",
+          "audibleRepair": "pero no sé por qué",
+          "sourceTurnIndex": 0,
+          "wrongTurnIndex": 1,
+          "repairTurnIndex": 3
+        }
+      ],
+      "nodes": null,
+      "start": null,
+      "audio": null,
+      "cover": null,
+      "sunoUrl": null,
+      "review": {
+        "bilingualApproved": false,
+        "domainApproved": false,
+        "editorialApproved": false
+      },
+      "rights": {
+        "status": "uncleared"
+      },
+      "transcript": null,
+      "productionNotes": [
+        "No medical outcome or advice.",
+        "Sound design must not mask the negation."
+      ],
+      "prompts": {
+        "image": "Original sophisticated illustrated audio cover art for El “no” que nadie oyó; adult listeners; warm paper textures, character psychology, strong visual storytelling, no text",
+        "voice": "Produce a cast reading with distinct voices, room tone, and intentional pauses. License and verify each voice performance. Meta Voice Transcribe is STT only.",
+        "video": "Create 15–45-second vertical trailer on iPhone using key illustrated scenes, caption every spoken line and reveal no model-assessed professional claims."
+      },
+      "reviewNotice": "Fictional teaching draft; professional English–Spanish and legal/medical review required. No recorded audio exists."
+    },
+    {
+      "id": "voice-witness-maybe",
+      "kind": "catch-the-change",
+      "title": "Tal vez vi la camioneta",
+      "synopsis": "A witness describes a possibility; the altered interpretation turns it into certainty.",
+      "domain": "legal",
+      "termIds": [
+        "L0074",
+        "L0285",
+        "L0023"
+      ],
+      "sourceIds": [
+        "OJD_GLOSS"
+      ],
+      "status": "script-draft",
+      "script": "[Fictional court interpreter training scenario. Chair creaks. A clock ticks once, then disappears beneath the voice.]\n\nWITNESS: I think I might have seen a red truck near the intersection. I cannot say whose it was.\n\nINTERPRETER (altered training version): Vi la camioneta roja del acusado cerca de la intersección.\n\n[A few listeners might miss the shift; the words “red truck” are familiar, but the identity and the certainty are not the same.]\n\nTRAINER: Let's imagine the difference between “might” and “did,” then the difference between “cannot say whose” and “belonging to the defendant.”\n\nTRAINEE: The interpreter made the witness an eyewitness of ownership when the witness said neither ownership nor certainty.\n\nWITNESS: I don't want a stronger statement attributed to me. I said what I thought I saw.\n\nTRAINER: You can use plain words, but do not strengthen an uncertain account. Accuracy includes preserving qualifications and limitations.\n\nINTERPRETER (corrected practice version): Creo que tal vez vi una camioneta roja cerca de la intersección. No puedo decir de quién era.\n\nTRAINEE: That sounds less dramatic, but it's closer to the truth of what the witness said.\n\nTRAINER: A good interpreter doesn't decide how dramatic a fact should be.\n\n[A quiet beat. The trainer asks a second question: what if the witness changes their mind? The trainee answers that the interpreter carries the new statement as a new statement, not an opportunity to rewrite the first. The record should show what each person said at the time. No one in the training room decides which memory is correct.]\n\n[Short pause, no verdict. In the final replay the audience hears the source and altered rendering again, with the key words unchanged except for their missing qualifiers.]",
+      "turns": [
+        {
+          "speaker": "Witness",
+          "language": "en",
+          "text": "I think I might have seen a red truck. I cannot say whose it was."
+        },
+        {
+          "speaker": "Interpreter",
+          "language": "es",
+          "text": "Vi la camioneta roja del acusado."
+        },
+        {
+          "speaker": "Trainer",
+          "language": "en",
+          "text": "Which qualifications were lost?"
+        },
+        {
+          "speaker": "Interpreter corrected",
+          "language": "es",
+          "text": "Creo que tal vez vi una camioneta roja. No puedo decir de quién era."
+        }
+      ],
+      "errors": [
+        {
+          "id": "certainty",
+          "category": "uncertainty",
+          "original": "I think I might have seen",
+          "wrong": "I saw",
+          "repair": "creo que tal vez vi",
+          "recognizedPhrases": [
+            "tal vez",
+            "creo",
+            "seguro"
+          ],
+          "audibleSource": "I think I might have seen a red truck",
+          "audibleWrong": "Vi la camioneta roja del acusado",
+          "audibleRepair": "Creo que tal vez vi una camioneta roja",
+          "sourceTurnIndex": 0,
+          "wrongTurnIndex": 1,
+          "repairTurnIndex": 3
+        },
+        {
+          "id": "ownership",
+          "category": "attribution",
+          "original": "cannot say whose it was",
+          "wrong": "the defendant’s truck",
+          "repair": "no puedo decir de quién era",
+          "recognizedPhrases": [
+            "acusado",
+            "de quien",
+            "pertenece"
+          ],
+          "audibleSource": "I cannot say whose it was",
+          "audibleWrong": "del acusado",
+          "audibleRepair": "No puedo decir de quién era",
+          "sourceTurnIndex": 0,
+          "wrongTurnIndex": 1,
+          "repairTurnIndex": 3
+        }
+      ],
+      "nodes": null,
+      "start": null,
+      "audio": null,
+      "cover": null,
+      "sunoUrl": null,
+      "review": {
+        "bilingualApproved": false,
+        "domainApproved": false,
+        "editorialApproved": false
+      },
+      "rights": {
+        "status": "uncleared"
+      },
+      "transcript": null,
+      "productionNotes": [
+        "Source and target actors must have distinct positions in stereo.",
+        "A real timing window is required before scoring."
+      ],
+      "prompts": {
+        "image": "Original sophisticated illustrated audio cover art for Tal vez vi la camioneta; adult listeners; warm paper textures, character psychology, strong visual storytelling, no text",
+        "voice": "Produce a cast reading with distinct voices, room tone, and intentional pauses. License and verify each voice performance. Meta Voice Transcribe is STT only.",
+        "video": "Create 15–45-second vertical trailer on iPhone using key illustrated scenes, caption every spoken line and reveal no model-assessed professional claims."
+      },
+      "reviewNotice": "Fictional teaching draft; professional English–Spanish and legal/medical review required. No recorded audio exists."
+    },
+    {
+      "id": "voice-consent-or-command",
+      "kind": "catch-the-change",
+      "title": "Una pregunta no es una orden",
+      "synopsis": "Informed consent requires preserving permission, questions and choice.",
+      "domain": "medical",
+      "termIds": [
+        "M0187",
+        "M0186",
+        "M0211"
+      ],
+      "sourceIds": [
+        "MEDLINE_TOPICS",
+        "OHA_LANGUAGE"
+      ],
+      "status": "script-draft",
+      "script": "[Training simulation in a consultation room. Paper rustles; one person moves a chair to include the patient in the conversation.]\n\nCLINICIAN: You may ask any questions before deciding whether to sign. If you need more information, tell us what is unclear.\n\nINTERPRETER (altered practice): Debe firmar ahora. Si no entiende algo, está bien.\n\nPATIENT: Wait, I wanted to know what the form means. I did not hear an answer to my question.\n\nTRAINER: Notice that “you may ask” was changed to “you must sign.” A process designed to inform a decision became a command.\n\nTRAINEE: It sounded confident, but confident is not faithful. We must preserve the option to ask and the timing of the decision.\n\nCLINICIAN: I have not instructed the patient to sign. I offered to explain the form first.\n\nINTERPRETER (corrected simulation): Puede hacer todas las preguntas que quiera antes de decidir si firma. Si necesita más información, díganos qué no está claro.\n\nPATIENT: That is different. I have questions about the next step.\n\n[The simulation stops at this point. It does not pretend that interpreting a form itself establishes informed consent or gives medical advice.]\n\nTRAINER: At a real appointment, a qualified healthcare professional explains the procedure and the patient's options. The interpreter preserves the exchange and appropriately manages clarification when needed.\n\nTRAINEE: So a single word could change whether a patient knows they can ask.\n\nTRAINER: Yes. And that is why we practice hearing the small words with the same care as the big terminology.\n\n[End: the sound of a pen is replaced by a chair sliding closer to the table.]",
+      "turns": [
+        {
+          "speaker": "Clinician",
+          "language": "en",
+          "text": "You may ask questions before deciding whether to sign."
+        },
+        {
+          "speaker": "Interpreter",
+          "language": "es",
+          "text": "Debe firmar ahora."
+        },
+        {
+          "speaker": "Patient",
+          "language": "es",
+          "text": "Quiero preguntar primero."
+        },
+        {
+          "speaker": "Interpreter corrected",
+          "language": "es",
+          "text": "Puede hacer preguntas antes de decidir si firma."
+        }
+      ],
+      "errors": [
+        {
+          "id": "permission-command",
+          "category": "modality",
+          "original": "may ask questions",
+          "wrong": "must sign now",
+          "repair": "puede hacer preguntas antes de decidir",
+          "recognizedPhrases": [
+            "puede",
+            "debe",
+            "firmar",
+            "pregunta"
+          ],
+          "audibleSource": "You may ask questions before deciding whether to sign",
+          "audibleWrong": "Debe firmar ahora",
+          "audibleRepair": "Puede hacer preguntas antes de decidir si firma",
+          "sourceTurnIndex": 0,
+          "wrongTurnIndex": 1,
+          "repairTurnIndex": 3
+        }
+      ],
+      "nodes": null,
+      "start": null,
+      "audio": null,
+      "cover": null,
+      "sunoUrl": null,
+      "review": {
+        "bilingualApproved": false,
+        "domainApproved": false,
+        "editorialApproved": false
+      },
+      "rights": {
+        "status": "uncleared"
+      },
+      "transcript": null,
+      "productionNotes": [
+        "In voice casting, neither interpreter nor patient actor should be caricatured."
+      ],
+      "prompts": {
+        "image": "Original sophisticated illustrated audio cover art for Una pregunta no es una orden; adult listeners; warm paper textures, character psychology, strong visual storytelling, no text",
+        "voice": "Produce a cast reading with distinct voices, room tone, and intentional pauses. License and verify each voice performance. Meta Voice Transcribe is STT only.",
+        "video": "Create 15–45-second vertical trailer on iPhone using key illustrated scenes, caption every spoken line and reveal no model-assessed professional claims."
+      },
+      "reviewNotice": "Fictional teaching draft; professional English–Spanish and legal/medical review required. No recorded audio exists."
+    },
+    {
+      "id": "drama-last-word-episode-4",
+      "kind": "audio-drama",
+      "title": "La última palabra · La reunión que no había terminado",
+      "synopsis": "An apartment rumor, a misplaced page, and a mystery about what a hearing actually means.",
+      "domain": "legal",
+      "termIds": [
+        "L0023",
+        "L0153",
+        "L0074"
+      ],
+      "sourceIds": [
+        "OJD_GLOSS",
+        "OREGON_ORS"
+      ],
+      "status": "script-draft",
+      "script": "[SERIES: La última palabra. Episode: La reunión que no había terminado. Scene 1 — A community room after a potluck. Glasses clink and someone insists on wrapping leftover arroz in a suspiciously tiny container.]\n\nNARRATOR: Teresa wanted a quiet Thursday. She had paid her electricity bill, remembered her umbrella and turned off the neighborhood group chat. The universe viewed this as an invitation.\n\nLUPE: Teresa, please tell me the difference between a hearing and a judgment, but do it before the casserole gets cold.\n\nTERESA: One is an event where the court may hear something. The other is a decision. Why?\n\nLUPE: Because the entire building believes the hallway has been sentenced to eviction.\n\nMARTA: I never said the hallway was evicted! I said the notice scheduled a hearing. Someone forwarded a photo without the second page.\n\nRAFA: I forwarded the photo because the second page was a picture of my thumb. My thumb is a public document now.\n\n[Music: playful bass walks two notes and stops.]\n\nNARRATOR: At the center of the table lay a page folded into the shape of a boat. Its printed words had crossed three phones, six people and seven opinions.\n\nVIOLETA: Before anyone purchases a moving box, we need to know what the document actually says. I can point to the words, but I am not your lawyer.\n\nMARTA: Then let's read it slowly.\n\nTERESA: The phrase says a hearing is scheduled for Tuesday. It does not say the judge has made a ruling. If there are questions about the case, we need a legal professional, not a group chat verdict.\n\nLUPE: That is disappointing. A group chat verdict is much cheaper.\n\n[Scene 2 — Teresa's kitchen, late evening. Rain at the windows. She practices consecutive interpreting with recordings from a training course.]\n\nACTOR ON RECORDING (English): The neighbor told me a red truck was parked outside. I did not see who drove it.\n\nTRAINEE RECORDING (Spanish): Vi al acusado estacionar una camioneta roja afuera.\n\nTERESA: No, no, no. Who saw the driver? No one. Who said the truck belonged to the defendant? No one. Where did that certainty come from?\n\nRAFA: It came from a person who wanted the story to have a villain. Sometimes a red truck is just a red truck.\n\nTERESA: You are very wise for someone who thought “every other day” meant twice a day.\n\nRAFA: I have grown since Tuesday. The calendar and I have agreed to see other people.\n\n[Pause. The group chat starts vibrating again.]\n\nLUPE (on voice note): Emergency. Violeta has located the original notice, and the second page is not Rafa's thumb. It lists an apartment number.\n\nTERESA: Which number?\n\nLUPE: That's the strange part. It is not Marta's.\n\n[Scene 3 — Apartment hallway. Shoes shuffle. A second envelope is slipped under a door. Nobody sees who delivered it.]\n\nMARTA: I panicked, and I had everyone else panicking. I heard “court” and decided I knew the end of the story.\n\nVIOLETA: The court documents may be serious. Don't replace careful reading with reassurance either. We can acknowledge uncertainty without inventing a happy outcome.\n\nTERESA: That's the part I keep practicing. An interpreter isn't a narrator who fixes the story. We keep the story faithful to the speaker.\n\nLUPE: But you can still be a good friend after the interpreting is over.\n\nTERESA: Yes. Listening and helping are different jobs, and I need to know which one I am doing.\n\n[Scene 4 — Door at the end of the hall. Someone opens it a few inches.]\n\nUNKNOWN WOMAN: Are you all discussing the paper for unit seven?\n\nMARTA: Do you know anything?\n\nUNKNOWN WOMAN: I know the person listed has been away for six months. And I know the envelope was delivered today. I don't know whether anyone has been notified before.\n\nLUPE: Finally! A person who knows what she knows and doesn't know what she doesn't know. Hire her for the group chat.\n\n[Cliffhanger: the woman unfolds a second notice. The camera would show only her expression; the audio leaves the paper silent.]\n\nNARRATOR: In the building where everyone translated everyone, the most important sentence might be the one no one had heard yet.\n\n[End music, not a factual claim about any real eviction. NEXT EPISODE: Before the Signature.]",
+      "turns": [],
+      "errors": [],
+      "nodes": null,
+      "start": null,
+      "audio": null,
+      "cover": null,
+      "sunoUrl": null,
+      "review": {
+        "bilingualApproved": false,
+        "domainApproved": false,
+        "editorialApproved": false
+      },
+      "rights": {
+        "status": "uncleared"
+      },
+      "transcript": null,
+      "productionNotes": [
+        "5 distinct performers and one narrator; mild comedic ambience, 4 major scenes.",
+        "Do not voice the inaccurate statements as authoritative guidance.",
+        "Editorial review must verify story logic and character consistency."
+      ],
+      "prompts": {
+        "image": "Original sophisticated illustrated audio cover art for La última palabra · La reunión que no había terminado; adult listeners; warm paper textures, character psychology, strong visual storytelling, no text",
+        "voice": "Produce a cast reading with distinct voices, room tone, and intentional pauses. License and verify each voice performance. Meta Voice Transcribe is STT only.",
+        "video": "Create 15–45-second vertical trailer on iPhone using key illustrated scenes, caption every spoken line and reveal no model-assessed professional claims."
+      },
+      "reviewNotice": "Fictional teaching draft; professional English–Spanish and legal/medical review required. No recorded audio exists."
+    },
+    {
+      "id": "drama-last-word-episode-5",
+      "kind": "audio-drama",
+      "title": "La última palabra · Antes de firmar",
+      "synopsis": "A clinical simulation tests consent, uncertainty, and the limits of an interpreter’s role.",
+      "domain": "medical",
+      "termIds": [
+        "M0187",
+        "M0119",
+        "M0211"
+      ],
+      "sourceIds": [
+        "MEDLINE_TOPICS",
+        "MEDLINE_MEDICINES",
+        "OHA_LANGUAGE"
+      ],
+      "status": "script-draft",
+      "script": "[EPISODE: Before the Signature. Scene 1 — A bus stop near an Oregon clinic. Distant rain, bus brakes, a phone notification.]\n\nNARRATOR: Teresa's training exam was tomorrow. She had rehearsed chest pains, procedures, consultations and every word that sounded like a different word. But one sentence, written in tiny print, kept bothering her: “You may ask.”\n\nLUPE: You may ask for a bigger coffee, but the cafe may charge you for it. Permission is not a promise.\n\nTERESA: You have managed to explain modality and budgeting at the same time.\n\nLUPE: My methods are not approved by any university.\n\n[They enter a supervised simulation room. An actor is playing a patient, another actor is playing a clinician.]\n\nCLINICIAN: Before you decide whether to sign the consent form, I can explain the options and answer any questions.\n\nPATIENT: I'm not sure I understand the difference between what will happen and what might happen.\n\nNOVICE INTERPRETER: Tiene que firmar para que le expliquen el procedimiento.\n\n[The supervisor signals pause. It is not a rebuke; it is an invitation to examine the information.]\n\nSUPERVISOR: What was the speaker offering? And what did the interpreter add?\n\nTERESA: The clinician offered information before a choice. The interpreted sentence made signing a requirement before the explanation. It reversed the order and changed the patient's options.\n\nPATIENT: I was asking about what might happen. “Might” did not mean “will.”\n\nSUPERVISOR: Good. Let the original uncertainty stay uncertain. If an interpreter needs clarification, that can be handled transparently, without a guess.\n\n[Scene 2 — Lunch outside. The wind steals Lupe's napkin, which makes three dignified attempts to escape.]\n\nLUPE: I have a question. If the interpreter knows the answer, why can't she just explain the medicine herself?\n\nTERESA: Because the professional explaining it has the clinical responsibility. The interpreter carries the exchange accurately and can ask for clarification when needed.\n\nLUPE: So the interpreter is not a human search engine with a stethoscope.\n\nTERESA: Correct, and I would be terrible at hearing heartbeats. My ears are full of commas.\n\n[Scene 3 — Afternoon practice. The actors return with a new statement.]\n\nCLINICIAN: The instructions say one tablet every other day. Please check with your team before changing the dose.\n\nPATIENT: Does that mean a tablet today, none tomorrow, and one the next day?\n\nTERESA (interpreting the patient's question): ¿Eso significa una tableta hoy, ninguna mañana y otra pasado mañana?\n\nSUPERVISOR: That preserves the question. It doesn't answer on behalf of the clinician.\n\nCLINICIAN: That's what the schedule says in this training example. For an actual prescription, the patient should follow the clinician's individualized instructions.\n\n[Scene 4 — Evening, apartment elevator. A new notice is taped crookedly, with no name or date.]\n\nLUPE: Oh no. Another mysterious paper. It says “final notice.”\n\nTERESA: Final notice of what? Who sent it? What authority does it have? A dramatic label is not the full story.\n\nLUPE: I was hoping this episode would end with dessert.\n\nNARRATOR: They walk past the elevator without concluding anything. By now Teresa knows that a sentence can be dramatic and still be incomplete.\n\n[Scene 5 — Teresa's apartment, later. A page of notes sits beside a bowl of oranges.]\n\nTERESA: In this training recording, I changed a permission into an obligation. I didn't even notice until I replayed it.\n\nLUPE: You have been replaying the same twelve seconds for an hour. The oranges are getting nervous.\n\nTERESA: It sounds different now. What was offered was an explanation before a decision. What I heard after the mistranslation was a command.\n\nRAFA: I used to think a confident voice made a sentence correct. Then I watched Lupe explain the dishwasher instructions with total confidence and flood the kitchen.\n\nLUPE: Those instructions were unclear. Also, the dishwasher was very dramatic.\n\nTERESA: Confidence isn't evidence. Listening closely and asking when necessary is the work.\n\n[Music softens. She closes the notebook instead of adding another answer. For once the room is quiet.]\n\n[Outro: warm guitar and one tiny bell. NEXT EPISODE: The Red Truck.]",
+      "turns": [],
+      "errors": [],
+      "nodes": null,
+      "start": null,
+      "audio": null,
+      "cover": null,
+      "sunoUrl": null,
+      "review": {
+        "bilingualApproved": false,
+        "domainApproved": false,
+        "editorialApproved": false
+      },
+      "rights": {
+        "status": "uncleared"
+      },
+      "transcript": null,
+      "productionNotes": [
+        "Source-based training only; fictional clinical situation.",
+        "Do not portray fictional dosage example as a universal dosing instruction.",
+        "Mix 4 distinct dialogue tracks, then verify in Muse Voice Transcribe."
+      ],
+      "prompts": {
+        "image": "Original sophisticated illustrated audio cover art for La última palabra · Antes de firmar; adult listeners; warm paper textures, character psychology, strong visual storytelling, no text",
+        "voice": "Produce a cast reading with distinct voices, room tone, and intentional pauses. License and verify each voice performance. Meta Voice Transcribe is STT only.",
+        "video": "Create 15–45-second vertical trailer on iPhone using key illustrated scenes, caption every spoken line and reveal no model-assessed professional claims."
+      },
+      "reviewNotice": "Fictional teaching draft; professional English–Spanish and legal/medical review required. No recorded audio exists."
+    },
+    {
+      "id": "podcast-the-one-word-alibi",
+      "kind": "podcast",
+      "title": "Radio La Cosa Exacta · El alibi de una palabra",
+      "synopsis": "A funny fictional call-in show about how tiny words carry enormous meaning.",
+      "domain": "legal",
+      "termIds": [
+        "L0074",
+        "L0023",
+        "M0119"
+      ],
+      "sourceIds": [
+        "OJD_GLOSS",
+        "MEDLINE_MEDICINES"
+      ],
+      "status": "script-draft",
+      "script": "[PODCAST: Radio La Cosa Exacta. Episode: The One-Word Alibi. Sound of an old radio dialing into a warm modern acoustic theme.]\n\nHOST ANA: Welcome to La Cosa Exacta, where a tiny word can change a very big afternoon. I'm Ana, and I have a confession: I once thought “maybe” was a word people used when they didn't know how to finish a sentence.\n\nGUEST ELENA: And now?\n\nANA: Now I know it might be the most important word in that sentence. Today we're listening to made-up interpreting practice cases about uncertainty, attribution, permission and time. They are stories, not legal or medical advice.\n\nELENA: Imagine a witness says, “My neighbor told me the car was red.” What facts do we have?\n\nANA: A neighbor said something. We haven't established what the witness saw.\n\nELENA: Right. Now imagine the rendering says, “I saw a red car.” The color stayed. The source of knowledge didn't.\n\n[Sound of a bicycle bell. A listener sends in a voice note played by an actor.]\n\nLISTENER PILAR: I keep catching the wrong big words. But the mistakes that change the meaning aren't always big words. They seem invisible.\n\nANA: A good observation. How can someone practice listening for invisible words?\n\nELENA: Try listening for a handful of relationships: who did it, what did they know, when did it happen, and how certain are they? Then hear the meaning again after a pause.\n\nANA: We have a little game. I'll read two statements. You can stop the recording if you hear a change, but there is no magic score for being quick. The point is the explanation afterward. First: “I have not had chest pain today.” Second: “I have had chest pain today.”\n\n[Two beats of silence.]\n\nELENA: That's the negation. Keep the sound of the original separate from what we wish the sentence meant. If this were a real clinical encounter, the clinician would handle diagnosis and management, not the interpreter.\n\nANA: Next: “Return in five days if the fever continues.” Then: “Return in fifteen days when the fever continues.”\n\nELENA: Both the number and the condition changed. That is why a model judging vocabulary similarity alone would miss critical distinctions.\n\nANA: Our last caller says her family argues about “every other day” and “twice daily.” Can one be the same as the other?\n\nELENA: No. They are not automatically equivalent. One is an interval; the other is frequency per day. Any real medical instructions need confirmation with the treating care team.\n\n[Sound bridge: cup set gently on saucer.]\n\nANA: Listeners, we have a surprise for you. My aunt Lupe has joined by telephone and insists she understands the exact meaning of every legal term.\n\nLUPE: I understand that “hearing” means someone listens. On family calls, everyone hears but no one listens.\n\nELENA: That's very funny, and also the beginning of a useful distinction. A hearing is a proceeding, while a judgment is a court decision. We can't infer a decision from a scheduled hearing.\n\nANA: Lupe, are you giving legal advice?\n\nLUPE: Absolutely not. I'm giving culinary advice. If someone says “simmer for ten minutes,” don't translate it as “boil for one hour.”\n\nELENA: The principle would apply: preserve timing and action. But we should still distinguish cooking from legal practice.\n\n[Two seconds of friendly laughter.]\n\nANA: Before we leave, tell us what the best kind of interpreter training feels like.\n\nELENA: It sounds like a conversation worth listening to, with a mistake you can notice, a repair you can explain and a second opportunity where the meaning stays intact. Sometimes it is a story. Sometimes a song. Sometimes the correct response is simply: “Could you repeat that?”\n\nANA: That is our show. We will be back next week with an elevator, a file, and a woman who insists the truth can be filed under miscellaneous.\n\n[Outro music; credits specify the actors and that the original practice cases are fictional.]",
+      "turns": [],
+      "errors": [],
+      "nodes": null,
+      "start": null,
+      "audio": null,
+      "cover": null,
+      "sunoUrl": null,
+      "review": {
+        "bilingualApproved": false,
+        "domainApproved": false,
+        "editorialApproved": false
+      },
+      "rights": {
+        "status": "uncleared"
+      },
+      "transcript": null,
+      "productionNotes": [
+        "Record as an intimate two-microphone show with warm sound design.",
+        "Mark every staged caller as an actor in credits.",
+        "Do not frame medicine or law as advice."
+      ],
+      "prompts": {
+        "image": "Original sophisticated illustrated audio cover art for Radio La Cosa Exacta · El alibi de una palabra; adult listeners; warm paper textures, character psychology, strong visual storytelling, no text",
+        "voice": "Produce a cast reading with distinct voices, room tone, and intentional pauses. License and verify each voice performance. Meta Voice Transcribe is STT only.",
+        "video": "Create 15–45-second vertical trailer on iPhone using key illustrated scenes, caption every spoken line and reveal no model-assessed professional claims."
+      },
+      "reviewNotice": "Fictional teaching draft; professional English–Spanish and legal/medical review required. No recorded audio exists."
+    },
+    {
+      "id": "mystery-elevator-maybe",
+      "kind": "audio-mystery",
+      "title": "El ascensor de los tal vez",
+      "synopsis": "A supernatural audio mystery where certainty, negation, and procedures become doors.",
+      "domain": "legal",
+      "termIds": [
+        "L0074",
+        "L0023",
+        "M0087"
+      ],
+      "sourceIds": [
+        "OJD_GLOSS",
+        "MEDLINE_TOPICS"
+      ],
+      "status": "script-draft",
+      "script": "[AUDIO MYSTERY: El ascensor de los tal vez. Opening sound: an elevator arrives on a floor that has no number. A restrained thriller soundtrack hums beneath dialogue.]\n\nNARRATOR: Elena enters an empty office building carrying a file with four handwritten words: before, after, maybe and never. The elevator doors open without anyone pressing a button. Inside is a brass plaque: The Floor You Heard.\n\nELENA: Is this a dream?\n\nVOICE ON INTERCOM: Only if you are sure.\n\nNARRATOR: The intercom tells her that a witness may have seen a red truck. The voice has a warm accent but no identifiable source. Elena asks, “May have seen, or did see?” The floor indicator flickers between 5 and 15.\n\nVOICE ON INTERCOM: Choose the sentence that you actually heard, not the one that feels complete.\n\n[First choice: preserve “might have seen” or announce the person saw it with certainty. Both change the elevator's path. A careful listener can return and compare.]\n\nNARRATOR: On the next floor, a clinician says a fictional patient has not had a symptom today. In one recording a tiny negation vanishes. The elevator doors are different colors, but the player must rely on sound; no icon gives away the answer.\n\nELENA: Not having a symptom and having a symptom are not the same story.\n\nVOICE ON INTERCOM: True. But does the interpreter know enough to replace what was said?\n\nELENA: No. If the words are unclear, the interpreter should disclose the difficulty and request clarification.\n\n[Second choice: admit hearing difficulty or invent a plausible answer. The hall beyond each opens onto a different recorded memory.]\n\nNARRATOR: A third voice, which Elena recognizes as her own, says, “A hearing is scheduled for Tuesday.” Then another version announces the judge has already made a decision. The building shakes as if certainty were a weight on its beams.\n\nELENA: A scheduled proceeding isn't the same as a ruling. Stop the recording.\n\n[Third choice: mark the procedural difference or follow a misleading summary. No gory outcome; the world simply becomes less reliable.]\n\nVOICE ON INTERCOM: You made the building more honest. That does not mean you decided what happened.\n\nELENA: I only kept what was actually said.\n\n[Endings: the elevator arrives at a quiet library where the sentences can be heard in their original forms, or loops back to the same floor with a new invitation to listen again. None of the fictional consequences count as evidence of real legal knowledge.]\n\nNARRATOR: In the building that remembers every word, the only way out is to refuse the words you never heard.\n\n[Afterword — The elevator returns in the listener's imagination. The narrator names the four doors without revealing which option to choose. Elena hears a grandmother say in Spanish, “Tal vez no,” and this time the building waits rather than filling in the silence.]\n\nELENA: A pause may be uncomfortable, but a false certainty can reshape what follows.\n\nVOICE ON INTERCOM: What if you don't know which word you heard?\n\nELENA: Then I ask for it again. The corridor can remain a corridor for another minute.\n\nNARRATOR: Outside the window, city buses are still taking people home. The ordinary world looks strange enough when everyone stops guessing what other people must have meant.\n\n[Soft door chime, then silence. Credits identify the fiction and the source concepts behind it.]",
+      "turns": [],
+      "errors": [],
+      "nodes": {
+        "entry": {
+          "text": "An elevator opens in a building with no numbered floors. A witness might have seen a red truck, says the intercom. Another voice insists they definitely saw it. Which will you carry forward?",
+          "choices": [
+            {
+              "label": "Preserve the uncertainty: might have seen",
+              "next": "maybe"
+            },
+            {
+              "label": "Say it happened without doubt",
+              "next": "certain"
+            }
+          ]
+        },
+        "maybe": {
+          "text": "The elevator takes you to a quiet clinic. A patient says they have NOT had chest pain today. The interpreter leaves out NOT. The doors tremble. You can stop and clarify, or pretend the recording is clear.",
+          "choices": [
+            {
+              "label": "Stop and request clarification",
+              "next": "clarify"
+            },
+            {
+              "label": "Guess a plausible statement",
+              "next": "guess"
+            }
+          ]
+        },
+        "certain": {
+          "text": "Every wall repeats that the witness saw a truck. But nobody knows who owned it. The building gives you a second opportunity to hear the missing qualification.",
+          "choices": [
+            {
+              "label": "Listen for the uncertain ownership",
+              "next": "maybe"
+            },
+            {
+              "label": "Keep the stronger claim",
+              "next": "loop"
+            }
+          ]
+        },
+        "clarify": {
+          "text": "The voices slow down. You hear the negation clearly and preserve it. Now the court floor says a hearing is scheduled, though an earlier version announced a verdict.",
+          "choices": [
+            {
+              "label": "A hearing is not a decision",
+              "next": "library"
+            },
+            {
+              "label": "The judge already ruled",
+              "next": "loop"
+            }
+          ]
+        },
+        "guess": {
+          "text": "The elevator reads the invented statement back to you in your own voice. You can restart or acknowledge uncertainty.",
+          "choices": [
+            {
+              "label": "Acknowledge uncertainty and listen again",
+              "next": "clarify"
+            },
+            {
+              "label": "Continue the guess",
+              "next": "loop"
+            }
+          ]
+        },
+        "loop": {
+          "text": "You are back at the floor with no number. The walls are still repeating a sentence no one actually said. The door closes. This is an ending, but not the only one.",
+          "choices": []
+        },
+        "library": {
+          "text": "The elevator arrives at a sunlit library. The files are still complicated, but each word now belongs to the person who said it. This is an ending, not a claim of professional qualification.",
+          "choices": []
+        }
+      },
+      "start": "entry",
+      "audio": null,
+      "cover": null,
+      "sunoUrl": null,
+      "review": {
+        "bilingualApproved": false,
+        "domainApproved": false,
+        "editorialApproved": false
+      },
+      "rights": {
+        "status": "uncleared"
+      },
+      "transcript": null,
+      "productionNotes": [
+        "Voice actors play ambiguous statements with controlled timing.",
+        "Branch narration must be individually recorded and loudness-matched.",
+        "Future listening version needs chapter navigation, transcript and jump labels."
+      ],
+      "prompts": {
+        "image": "Original sophisticated illustrated audio cover art for El ascensor de los tal vez; adult listeners; warm paper textures, character psychology, strong visual storytelling, no text",
+        "voice": "Produce a cast reading with distinct voices, room tone, and intentional pauses. License and verify each voice performance. Meta Voice Transcribe is STT only.",
+        "video": "Create 15–45-second vertical trailer on iPhone using key illustrated scenes, caption every spoken line and reveal no model-assessed professional claims."
+      },
+      "reviewNotice": "Fictional teaching draft; professional English–Spanish and legal/medical review required. No recorded audio exists."
+    },
+    {
+      "id": "drama-last-word-special-the-missing-day",
+      "kind": "audio-drama",
+      "title": "La última palabra: El día que faltaba",
+      "subtitle": "Episode special · A rumor travels faster than a notice",
+      "synopsis": "A rumor about a court hearing exposes what happens when uncertainty, chronology and a single missing day are edited out of human speech. A funny and tense radio drama with recurring adult characters.",
+      "seriesId": "la-ultima-palabra",
+      "episode": 6,
+      "domain": "legal",
+      "direction": "en-es",
+      "termIds": [
+        "L0023",
+        "L0014",
+        "M0087",
+        "M0115",
+        "M0187"
+      ],
+      "sourceIds": [
+        "OJD_GLOSS",
+        "MEDLINE_TOPICS",
+        "MEDLINE_MEDICINES"
+      ],
+      "status": "script-draft",
+      "script": "[SCENE ONE — 7:06 A.M. A bus shelter. Rain ticks on metal. Someone struggles to close a broken umbrella.]\n\nNARRATOR: By seven in the morning, Teresa has already heard four different versions of the truth. None of them were told in the same language. The first came from a voice note sent to the wrong neighborhood group.\n\nLUPE: Attention, residents. At nine, a person from the county will be at the building. The message says the court has made its decision. Repeat: made its decision. I am wearing lipstick suitable for an emergency.\n\nTERESA: Lupe, who sent that?\n\nLUPE: An anonymous woman who says her cousin knows a clerk. You cannot get more official than that without a seal.\n\nTERESA: You can. You can get an actual notice. Also, your voice note says “the court has made its decision,” but the screenshot says “a hearing has been scheduled.”\n\nLUPE: A small difference.\n\nTERESA: A different legal event. A hearing is a chance for people to be heard. A decision is a result. We can’t turn one into the other because the group chat is impatient.\n\nLUPE: Fine. I will post a correction.\n\n[A rapid cascade of message notification tones.]\n\nLUPE: The correction now has seventeen reactions, including a pineapple. Someone has asked whether this means they should bring a lawyer, a translator, or chairs.\n\nTERESA: I can tell them where the court explains interpreter access. I can’t tell them what legal decision to make. And I haven’t seen the full notice.\n\n[Bus air brakes. Doors open.]\n\nNARRATOR: Teresa boards a bus carrying two folders, one sandwich, and a professional rule that she has come to fear more than a difficult word: never improve someone else’s story.\n\n[SCENE TWO — 9:40 A.M. An interpreter training room. Chairs scrape. A clock ticks.]\n\nTRAINER: Today's simulation is not about being eloquent. It is about being accurate under social pressure. You are not the witness. You are not the judge. You are the interpreter.\n\nACTOR ONE: I think I saw a man at the entrance. I might recognize his jacket. I couldn't tell whether he was carrying anything.\n\nACTOR TWO, AS NOVICE INTERPRETER: Vi al hombre en la entrada. Reconozco su chaqueta. Llevaba algo.\n\n[The room goes quiet.]\n\nTRAINER: Teresa, what happened?\n\nTERESA: The interpretation upgraded three uncertainties into facts. “I think” disappeared. “Might recognize” became “recognize.” “Couldn't tell whether” became “was carrying.”\n\nACTOR TWO: It sounded awkward with so many maybes.\n\nTERESA: The witness sounded uncertain. That awkwardness belongs to the witness. We can't polish it away.\n\nTRAINER: Exactly. Your job is not to make testimony persuasive. Try again and keep the degree of certainty.\n\nACTOR TWO: Creo que vi a un hombre en la entrada. Tal vez reconocería su chaqueta. No pude distinguir si llevaba algo.\n\nTRAINER: Better. We can discuss regional phrasing, but the uncertainty and limits of observation survived. Now a medical conversation. New actors.\n\nACTOR THREE, AS CLINICIAN: Did the pressure start before you took the medicine or after?\n\nACTOR FOUR, AS PATIENT: It started before. I took the medicine because I felt that pressure. I don't know if it helped.\n\nACTOR TWO, AS NOVICE: Empezó después de tomar la medicina. La tomó y se sintió mejor.\n\nTERESA: That is a different history. We changed the sequence and invented an improvement.\n\nACTOR TWO: I heard “took the medicine” and “pressure.”\n\nTERESA: Hearing the nouns wasn't enough. “Before” carried the timeline; “I don't know” carried the uncertainty. The big words weren't the dangerous part.\n\n[Someone taps the desk twice, like a tiny gavel.]\n\nTRAINER: A useful principle: if you didn't understand something, make the interpreting difficulty transparent and request clarification. Don't quietly fill the gap.\n\n[SCENE THREE — 12:25 P.M. A café. Cups clink. A small radio plays a scratchy bolero.]\n\nLUPE: I have a question. If the words are so fragile, why do people speak so fast?\n\nTERESA: Because they don't know they're entering someone else's future.\n\nLUPE: Very dramatic. You should write telenovelas.\n\nMARTA: I brought the actual notice. I want help understanding what it says, not deciding what to do. Can you read the title aloud?\n\nTERESA: “Notice of hearing.” It names a date and a place. That doesn't tell us what the outcome will be. For the specific legal meaning and your options, ask the court or a qualified legal advisor. The court should be able to explain how to request language assistance.\n\nMARTA: Then the anonymous message that said I already lost my home was wrong?\n\nTERESA: I can't establish the legal status from a group rumor. I can say that the screenshot was misquoted. The document says “hearing,” not “judgment.”\n\nLUPE: Which means we need to apologize to everyone I told to pack their lamps.\n\nMARTA: Especially the woman who already sold her lamp.\n\n[A laugh, then the radio cuts out.]\n\n[SCENE FOUR — 6:10 P.M. Teresa's kitchen. A phone vibrates on the table.]\n\nNARRATOR: At home, Teresa takes off her shoes and plays the training recording one more time. She has missed a different little word this time. The patient said the pressure started *before*. The trainee said *after*. Without that one bridge between events, the story crosses to the wrong bank.\n\nLUPE [VOICE NOTE]: I have fixed the post. I wrote: “A hearing was scheduled. No decision has been confirmed in the information we saw.” I also removed the pineapple.\n\nTERESA: You finally kept the limits of what you know.\n\nLUPE [VOICE NOTE]: I am now a woman of great restraint. But a new message has arrived. Someone says the notice was for apartment nine. Marta lives in six.\n\nTERESA: Don't forward anything. First verify the apartment number and the document.\n\n[Silence. Then an incoming message chime.]\n\nUNKNOWN VOICE [VOICE NOTE]: Hello, Teresa. I'm calling from the clinic simulation. I need to correct something I said this morning. The person didn't say “I never had pain.” They said “I haven't had pain today.” I think someone removed the word *today* in the report.\n\nNARRATOR: Teresa looks at the empty space beside her notebook where she has written three words: who, when, maybe. A new fourth word joins them: *today*.\n\n[The radio starts again, playing the same melody in a different key.]\n\nTERESA: Lupe, I'm going to need you to stop calling every message a verdict.\n\nLUPE [VOICE NOTE]: I already changed the group name.\n\nTERESA: To what?\n\nLUPE: “Solo Avisos — Sujeto a Verificación.”\n\nNARRATOR: For once, the group is quiet. Then the typing dots appear. Five people, all at once.\n\n[END EPISODE — THE MISSING DAY]",
+      "turns": [],
+      "errors": [],
+      "audio": null,
+      "cover": null,
+      "review": {
+        "bilingualApproved": false,
+        "domainApproved": false,
+        "editorialApproved": false
+      },
+      "rights": {
+        "status": "uncleared",
+        "license": null
+      },
+      "transcript": null,
+      "duration": "unrecorded; timing provisional",
+      "takeaway": "Preserve uncertainty, source attribution, negation, and chronology. A scheduled hearing is not a judicial ruling.",
+      "casting": [
+        {
+          "name": "TERESA",
+          "role": "Interpreter trainee",
+          "voice": "thoughtful, grounded adult voice"
+        },
+        {
+          "name": "LUPE",
+          "role": "Neighbor",
+          "voice": "fast, funny, never caricatured"
+        },
+        {
+          "name": "MARTA",
+          "role": "Neighbor",
+          "voice": "clear, concerned, determined"
+        },
+        {
+          "name": "TRAINER",
+          "role": "Instructor",
+          "voice": "precise, warm"
+        }
+      ],
+      "productionNotes": [
+        "Separate character stems, a clear original/interpreted pairing, rainy bus exterior, classroom interior, café radio ambience, kitchen phone messages",
+        "Prioritize quiet acoustic intelligibility over soundtrack; never cover critical words with music",
+        "Every Spanish interpreted line must receive independent bilingual domain review before a published recording",
+        "Cue index for maybe/might/could not tell and before/after must be aligned to produced audio after final cut"
+      ],
+      "reviewNotice": "Original fictional media; all professional claims and translated lines require qualified review."
+    },
+    {
+      "id": "radio-la-puerta-no-vio",
+      "kind": "audio-drama",
+      "title": "Radio La Cosa Exacta: La puerta no vio nada",
+      "synopsis": "A late-night call-in show, a mystery photograph, and a rumor trying to become eyewitness testimony.",
+      "subtitle": "A late-night call-in show, a mystery photograph, and a rumor trying to become eyewitness testimony.",
+      "domain": "legal",
+      "direction": "en-es",
+      "termIds": [
+        "L0014",
+        "L0074",
+        "L0107",
+        "L0195"
+      ],
+      "sourceIds": [
+        "OJD_TERMS"
+      ],
+      "script": "[COLD OPEN. A bus kneels at a curb. A zipper catches. At the end of an old corridor, a latch taps twice in the wind.]\n\nNORA: On the radio you can see everything. That's the first lie I told myself when I took this job.\n\nJAIME: (over intercom) The first lie was that you knew how to operate the espresso machine.\n\nNORA: I know how to operate it. I refuse to negotiate with its values.\n\n[THEME: three notes from a muted trumpet. A telephone line clicks.]\n\nNORA: Good evening, neighbors. This is Radio La Cosa Exacta, where we ask what happened before announcing what we wish had happened. Tonight: somebody has sent us a picture of an apartment door, and somehow the whole building believes it proves a crime. Our producer Jaime has put the photograph in an envelope so I can't embellish it with my eyebrows.\n\nJAIME: Your eyebrows have never accepted a chain of custody.\n\nNORA: We are not a courtroom, Jaime. That is exactly why we must be careful. First call—Antonia, you're on.\n\nANTONIA: Mi vecina me dijo que vio la puerta abierta a las diez. That's what I said. But the neighborhood message says I saw a stranger forcing it.\n\nNORA: What did you actually see?\n\nANTONIA: La foto. On my niece's phone. The door was closed in the photo, anyway. My neighbor said she saw it open earlier. I was buying bread.\n\nJAIME: For the record, the bread was innocent.\n\nANTONIA: No lo sé. It was very expensive.\n\nNORA: We have three separate things: what the neighbor reported, what Antonia saw in the picture, and what someone imagined between them. Which one of those does the chat remember?\n\nANTONIA: The imagined one. It has better punctuation.\n\n[The studio door opens. A quiet woman in a raincoat enters without making eye contact with the microphone.]\n\nMERCEDES: I'm the building's evening caretaker. I heard you're describing our door.\n\nNORA: You can choose not to come on the air.\n\nMERCEDES: I know. But I want to tell my side before the door acquires an attorney. I was closing the upper window when the wind pushed the latch. The door was open for perhaps twenty seconds. Nobody was forcing it.\n\nNORA: Are you certain about the twenty seconds?\n\nMERCEDES: Approximately. I did not time it. The radio at the bakery was playing the chorus of something terrible.\n\nJAIME: Please don't tell me it was our morning show.\n\nMERCEDES: It was. The chorus was the weather forecast. Twice.\n\n[A second telephone line flashes. The tiny light in the booth looks like an impatient firefly.]\n\nNORA: We also have an interpretation exercise, recorded by actors, that shows how a rumor can escape its owner. Let's hear the original witness account first.\n\nWITNESS ACTOR (ENGLISH): My neighbor told me that the door was open. I didn't see anyone enter.\n\nINTERPRETER ACTOR (SPANISH): Mi vecina me dijo que la puerta estaba abierta. No vi entrar a nadie.\n\nNORA: That was the faithful version. Now listen to the fictional mistake.\n\nINTERPRETER ACTOR (SPANISH, SECOND TAKE): Vi a una persona entrar por la puerta abierta.\n\n[A bell sounds once, dry as a teaspoon striking a glass.]\n\nANTONIA: ¡No! That's a completely different witness.\n\nJAIME: In one sentence we've created a spectator, an entrant, and a certainty that weren't there.\n\nNORA: Exactly. The problem isn't the accent. It isn't whether the Spanish is elegant. It's that the speaker's limits were stolen. Can we repair it without turning the whole segment into a sermon?\n\nMERCEDES: Play the original again. The people listening can do the work.\n\n[They do. This time the silence after the sentence is long enough to hear rain touch the studio window.]\n\nNORA: Mercedes, what do you want the neighbors to know?\n\nMERCEDES: That somebody should repair the latch, and somebody else should apologize to the woman they accused. I have more important gossip: the community garden has grown three tomatoes in October.\n\nANTONIA: Three? They said there were nine.\n\nJAIME: Here we go again.\n\nNORA: (softening) We may have solved the door. We have not solved the internet. At least the tomatoes are still negotiable.\n\n[The photograph is finally removed from its envelope. It's a close-up of the latch, taken a week before the rumor. A penciled note on the back says, “Ask maintenance.”]\n\nNORA: That is our final fact for tonight: a photo can show a latch; it cannot show what somebody witnessed on another day.\n\n[THEME RETURNS, interrupted by Jaime's espresso machine grinding with the determination of a small construction vehicle.]\n\nJAIME: I got it to make coffee.\n\nNORA: Is it coffee?\n\nJAIME: I wouldn't testify to that.\n\n[END. The call-in line remains open for listeners who want to hear the two versions again.]",
+      "status": "script-draft",
+      "review": {
+        "bilingualApproved": false,
+        "domainApproved": false,
+        "editorialApproved": false
+      },
+      "rights": {
+        "status": "uncleared",
+        "license": null
+      },
+      "audio": null,
+      "cover": null,
+      "transcript": null,
+      "reviewNotice": "Original fictional draft; needs professional bilingual and domain review plus recording rights before publication.",
+      "takeaway": "Reported speech is not an eyewitness account. Uncertainty and attribution must remain attached to their original speaker.",
+      "seriesId": "radio-la-cosa-exacta",
+      "episode": 1,
+      "cast": [
+        {
+          "name": "Nora"
+        },
+        {
+          "name": "Jaime"
+        },
+        {
+          "name": "Antonia"
+        },
+        {
+          "name": "Mercedes"
+        }
+      ]
+    },
+    {
+      "id": "drama-el-boleto-equivocado",
+      "kind": "audio-drama",
+      "title": "La última palabra: El boleto equivocado",
+      "synopsis": "A bus ticket, a mistaken appointment date, and one cousin who refuses to admit she cares.",
+      "subtitle": "A bus ticket, a mistaken appointment date, and one cousin who refuses to admit she cares.",
+      "domain": "medical",
+      "direction": "en-es",
+      "termIds": [
+        "M0143",
+        "M0196",
+        "M0211"
+      ],
+      "sourceIds": [
+        "MEDLINE_TOPICS"
+      ],
+      "script": "[SCENE ONE: SUNDAY MORNING. A kitchen. Rain is pattering against an empty flowerpot. A radio plays half a bolero before someone switches it off.]\n\nTERESA: Your suitcase is in the kitchen. Does it want breakfast?\n\nLUPE: My suitcase came early because the whole family arrives late. Also, I brought the blue dress. I have a meeting.\n\nTERESA: What meeting?\n\nLUPE: A serious meeting with the woman who repairs the old sewing machines. She asked if I'd sell mine. I said maybe. Then I said no. Now I'm having coffee with her to negotiate my uncertainty.\n\nTERESA: That's the most precise answer you've given all year.\n\n[A notification chimes. Teresa checks her phone, then checks it again.]\n\nTERESA: Marta says she changed her ride to Tuesday. But her appointment is Thursday. Why would she do that?\n\nLUPE: Because buses have seats on Tuesday. Thursday is just a rumor invented by dentists.\n\nTERESA: She says someone in the group interpreted “next Thursday” as “this Tuesday.” She's already bought a nonrefundable ticket.\n\nLUPE: We have discussed banning the group chat before eleven in the morning.\n\n[SCENE TWO: MARTA'S APARTMENT. The room is full of orderly piles: papers in one, folded clothes in another, basil in a jar trying to become a houseplant.]\n\nMARTA: I had everything planned. I could leave the paperwork with Teresa, return in time to meet the bus, and still have lunch. Now there's another date.\n\nTERESA: Who originally said Thursday?\n\nMARTA: A person at the appointment desk. I heard it in English. Then Rosita told the group Tuesday. Everybody repeated Tuesday, so I thought I remembered wrong.\n\nLUPE: You trusted the majority vote to determine the calendar. My mother once tried that with Easter.\n\nTERESA: We're not going to decide your appointment date by memory. Let's call the office using the callback number printed on your confirmed notice. You can request an interpreter there. I'll stay for company, not interpret a live clinical conversation.\n\nMARTA: I don't want anyone to think I can't manage.\n\nTERESA: Asking to hear something clearly isn't a failure. You're not a microphone that has to record every syllable perfectly.\n\n[The telephone rings; then the pleasant, slightly tinny hum of hold music.]\n\nMARTA: Why is hold music always a song that sounds like it's apologizing to a bank?\n\nLUPE: This one sounds like a bank refusing your apology.\n\n[SCENE THREE: A supervised training simulation later that afternoon. Three actors sit in a small room. A facilitator has pinned two dates to a wall calendar.]\n\nFACILITATOR: We're not reproducing Marta's real appointment. No case details enter the training room. Our actors will demonstrate an easy-to-miss difference. Please listen to the original statement.\n\nDESK CLERK ACTOR (ENGLISH): Your appointment is next Thursday. You may arrive fifteen minutes early, but it isn't required.\n\nINTERPRETER ACTOR (SPANISH, INCORRECT TAKE): Su cita es este martes. Debe llegar quince minutos antes.\n\n[Lupe makes a small, involuntary sound, as though she's dropped a spoon into a sink.]\n\nFACILITATOR: Pause. What changed?\n\nLUPE: The day moved. And “may” put on a uniform and became “must.”\n\nTERESA: Those are separate shifts. The first changes the scheduling fact; the second changes an optional arrival to an obligation. Neither belongs to the interpreter.\n\nFACILITATOR: A repair in this simulation might be: “Su cita es el próximo jueves. Puede llegar quince minutos antes, pero no es obligatorio.” We would still check regional usage and the actual scheduling context before approving a professional version.\n\nLUPE: I notice the wrong interpretation was very confident. It had a lovely posture.\n\nFACILITATOR: Confidence is not fidelity. And today we are not grading acting skill.\n\n[They listen to the original again. On the second pass, the small word “may” is unmistakable.]\n\n[SCENE FOUR: BACK AT THE KITCHEN. Rain has stopped. The suitcase is still there.]\n\nMARTA (on speakerphone): The office confirmed Thursday. I can change my ticket with a small fee. Rosita apologized. Then she explained that someone else told her Tuesday.\n\nLUPE: Ah, the oldest song in the neighborhood. “I was merely forwarding it.”\n\nTERESA: How are you feeling?\n\nMARTA: Annoyed, but relieved. I didn't lose my appointment. I almost spent the whole afternoon being angry at the wrong person.\n\nLUPE: That is an enormous savings. I could teach a workshop about it.\n\nMARTA: Please don't.\n\n[A knock on the door. A woman with a tool bag holds up a box containing two carefully labeled sewing machine parts.]\n\nREPAIRER: Lupe? You said maybe about the machine. I thought we'd look at it before you decide. I brought coffee.\n\nLUPE: I said I wasn't going to sell it. I did not say I wasn't going to fall in love with repairing it.\n\nTERESA: That's a distinction I'm prepared to preserve.\n\n[The repairer laughs. Lupe takes the toolbox instead of her suitcase and sets it on the kitchen table.]\n\nNARRATOR: The calendar does not apologize for Tuesday. The ticket does not apologize for the fee. But the old sewing machine makes a low, grateful sound when Lupe turns its wheel for the first time in years.\n\n[SCENE FIVE: TAG. Evening. The family group message lights up.]\n\nROSITA (VOICE NOTE): Confirmed: Thursday. Not Tuesday. I have corrected the message above. Also, I may bring flan.\n\nLUPE: (typing aloud) “May” is not “must.” We understand.\n\nTERESA: And please don't ask the group to vote on dessert.\n\n[The phone buzzes with thirteen responses. All of them say “Flan.”]\n\n[END. A two-note sewing-machine motif becomes the closing musical theme.]",
+      "status": "script-draft",
+      "review": {
+        "bilingualApproved": false,
+        "domainApproved": false,
+        "editorialApproved": false
+      },
+      "rights": {
+        "status": "uncleared",
+        "license": null
+      },
+      "audio": null,
+      "cover": null,
+      "transcript": null,
+      "reviewNotice": "Original fictional draft; needs professional bilingual and domain review plus recording rights before publication.",
+      "takeaway": "The calendar day and the difference between permission and obligation must both survive interpretation. Always verify real appointments with the relevant provider.",
+      "seriesId": "la-ultima-palabra",
+      "episode": 6,
+      "cast": [
+        {
+          "name": "Teresa"
+        },
+        {
+          "name": "Lupe"
+        },
+        {
+          "name": "Marta"
+        },
+        {
+          "name": "Facilitator"
+        },
+        {
+          "name": "Repairer"
+        }
+      ]
+    },
+    {
+      "id": "podcast-la-pausa-tiene-duena",
+      "kind": "podcast",
+      "title": "Radio La Cosa Exacta: La pausa tiene dueña",
+      "synopsis": "An on-air conversation about the funny, uncomfortable moment when everyone wants an interpreter to decide for them.",
+      "subtitle": "An on-air conversation about the funny, uncomfortable moment when everyone wants an interpreter to decide for them.",
+      "domain": "medical",
+      "direction": "en-es",
+      "termIds": [
+        "M0187",
+        "M0433",
+        "M0207",
+        "M0119"
+      ],
+      "sourceIds": [
+        "MEDLINE_TOPICS",
+        "OHA_HCI"
+      ],
+      "script": "[OPENING JINGLE: hand percussion, upright bass, the sound of two cups placed on a table.]\n\nNORA: The café has given us the corner table with the table leg that doesn't quite reach the floor. If you hear a clunk, that is not a microphone problem. It's a furniture opinion.\n\nJAIME: Welcome to La Cosa Exacta. Today is a call-in episode about something that makes kind people uncomfortable: sometimes the most helpful thing is to stop talking.\n\nNORA: I would like everyone to acknowledge that Jaime has asked me to stop talking while we're broadcasting a talk show.\n\nJAIME: For research. You're allowed to continue in a minute.\n\nNORA: Our first guest is Mercedes, an adult interpreter trainee. Last week she came to a simulation where the patient actor asked whether a form would guarantee a successful outcome. The interpreter knew several plausible answers from other jobs. Mercedes, what happened?\n\nMERCEDES: The interpreter actor said, in Spanish, “Sí, si firma, todo estará bien.” But the clinician had said only, “This form allows us to discuss the procedure; it doesn't guarantee the outcome.”\n\nNORA: That is an expensive extra promise.\n\nMERCEDES: It sounded comforting. Everyone was anxious. That's exactly why it was tempting.\n\nJAIME: If the interpreter is nervous too, what's the useful move?\n\nMERCEDES: Preserve the speaker's actual degree of certainty, and ask for clarification transparently when a phrase isn't understood. Do not invent reassurance. I'm learning how to say that without turning every minute into a debate.\n\nNORA: Let's do a small recorded comparison with actors. One line is faithful and one changes a condition. No private clinical records are involved.\n\nACTOR, CLINICIAN (ENGLISH): We can explain the options, but I can't promise which option will work for you.\n\nACTOR, INTERPRETER (SPANISH, FIRST TAKE): Podemos explicar las opciones, pero no puedo prometer cuál funcionará para usted.\n\nACTOR, INTERPRETER (SPANISH, SECOND TAKE): Si escoge esta opción, seguro que le funcionará.\n\n[An intentionally long pause. A spoon rolls across the table.]\n\nNORA: Which one should make our listeners uncomfortable?\n\nJAIME: Not the silence. That spoon is far more troubling than the silence.\n\nMERCEDES: The second interpretation. It erased the limits on what the clinician knew and gave personalized advice that was never spoken.\n\nNORA: Exactly. The performance of certainty is not certainty. Still, can we make this entertaining without laughing at the patient?\n\nMERCEDES: We can laugh at ourselves. Everyone thinks they can tell what a person means by the way they look. My aunt can turn one raised eyebrow into a weather forecast. At work, eyebrows are not an authorized translation channel.\n\nJAIME: That's going on a mug.\n\n[SHORT MUSIC BRIDGE. A caller enters.]\n\nCALLER ELENA: I have a different problem. In a practice legal conversation, I heard, “The court has scheduled a hearing.” The trainee interpreted, “The judge has decided.” I caught it because my stomach dropped. But after the session I was afraid to say anything. The person who said it looked so confident.\n\nNORA: Confidence has excellent tailoring. Facts don't always wear jackets.\n\nMERCEDES: We can name the exact difference without humiliating anyone. Scheduled means there will be a proceeding. Decided means the outcome has been determined. Those are not the same. And we should be careful with the specific procedure and jurisdiction instead of guessing the consequences.\n\nJAIME: The interesting thing is that nobody needed a difficult vocabulary word to make that error. A verb did it.\n\nNORA: We have a recurring question from listeners: why not correct everything immediately, even a small change in tone?\n\nMERCEDES: Because a professional response depends on the setting and applicable protocol. The aim is accurate communication and transparent repair, not becoming another participant who controls the conversation. When you're learning, the question is what the speaker actually authorized you to say.\n\nNORA: Let me make a confession. Before this show, I translated my grandmother's message to the family chat. She said, “I'll probably be there after lunch.” I sent, “She is coming at one.”\n\nJAIME: Did she arrive at one?\n\nNORA: She arrived at four with an enormous cake and said she'd been very clear. She was correct. “Probably” wasn't decorative. “After lunch” wasn't a clock.\n\nMERCEDES: Did she forgive you?\n\nNORA: She gave me the cake. Then she made me carry it up three flights of stairs. That was her formal review process.\n\n[A PHONE DINGS.]\n\nJAIME: We have an email from a listener asking whether they can just put uncertain words in quotation marks.\n\nMERCEDES: Quotation marks don't repair a changed assertion. The listener needs to preserve the actual uncertainty. A careful rendering may sound less elegant than a confident invention. That's fine. It's doing the job.\n\nNORA: Before we go, I want to try something. I'll read a sentence; we won't provide the answer immediately. Our listeners can think for five seconds and decide what must stay in the interpretation.\n\nNORA (ENGLISH): I may have seen the person near the station, but I'm not sure it was the same person.\n\n[Five seconds of real silence in the production mix. Only the air conditioning is audible.]\n\nJAIME: Things worth keeping: the possibility, the location, and the uncertainty about identity. Nothing about ownership. Nothing about guilt.\n\nNORA: That was an unusually good summary from a man who insists our espresso machine is sentient.\n\nJAIME: It refused to give me coffee this morning. That's evidence.\n\nMERCEDES: That's a machine malfunction. You should get it repaired before you call a witness.\n\n[THEME RETURNS. THE TABLE LEG CLUNKS A FINAL TIME.]\n\nNORA: This has been La Cosa Exacta. Keep the words that belong to the speaker—even the small ones that aren't trying to impress anyone. If you want to replay the two takes, the transcript and the meaning-change notes are available with this episode. Thank you, Mercedes. Thank you, Jaime. And thank you to our opinionated table.\n\nJAIME: I still think the table is right.\n\n[END.]",
+      "status": "script-draft",
+      "review": {
+        "bilingualApproved": false,
+        "domainApproved": false,
+        "editorialApproved": false
+      },
+      "rights": {
+        "status": "uncleared",
+        "license": null
+      },
+      "audio": null,
+      "cover": null,
+      "transcript": null,
+      "reviewNotice": "Original fictional draft; needs professional bilingual and domain review plus recording rights before publication.",
+      "takeaway": "An interpreter does not add guarantees, clinical advice, or imagined decisions. Preserve the source speaker’s limits and ask for transparent clarification.",
+      "seriesId": "radio-la-cosa-exacta",
+      "episode": 2,
+      "cast": [
+        {
+          "name": "Nora"
+        },
+        {
+          "name": "Jaime"
+        },
+        {
+          "name": "Mercedes"
+        },
+        {
+          "name": "Elena"
+        }
+      ]
+    },
+    {
+      "id": "song-los-zapatos-del-tal-vez",
+      "kind": "song",
+      "title": "Los zapatos del tal vez",
+      "synopsis": "A bolero with a mischievous chorus about doubt being part of the truth.",
+      "subtitle": "A bolero with a mischievous chorus about doubt being part of the truth.",
+      "domain": "legal",
+      "direction": "en-es",
+      "termIds": [
+        "L0014",
+        "L0074",
+        "L0195"
+      ],
+      "sourceIds": [
+        "OJD_TERMS"
+      ],
+      "script": "[Verso 1]\nLlegaste con la historia bien peinada,\nla mesa lista, el nombre en el mantel.\nDijiste: «Lo vi», con voz prestada,\npero al principio habías dicho «tal vez».\n\n[Pre-coro]\nLa duda no se esconde en el bolsillo,\nni es una mancha que haya que quitar.\nHay un poquito de aire en el pasillo,\npor donde la verdad puede pasar.\n\n[Coro]\nEl tal vez tiene zapatos,\ncamina sin hacer ruido.\nNo le cambies los retratos,\nni le inventes lo vivido.\nSi dijo «creo», deja el creo,\nsi dijo «no sé», déjalo estar.\nQue una palabra pequeñita\npuede cambiar la ciudad.\n\n[Verso 2]\nMi tía escucha todo desde el patio,\nella sabe cuándo va a llover.\nPero ni el cielo firma un calendario,\nni un rumor es lo que alguien pudo ver.\n\n[Puente]\nTal vez mañana llegue el tren,\ntal vez esa luz sea de otro hogar.\nNo necesito hablar por quien\nno sabe todavía qué pensar.\n\n[Coro final]\nEl tal vez tiene zapatos,\nse despide al amanecer.\nNo le quites su camino,\nno lo obligues a volver.\nSi dijo «creo», deja el creo,\nsi dijo «no sé», déjalo estar.\nLa verdad también respira\ncuando la dejamos dudar.\n\n[Salida hablada]\n«No sé» también cuenta una historia.\nDéjala terminar.",
+      "status": "script-draft",
+      "review": {
+        "bilingualApproved": false,
+        "domainApproved": false,
+        "editorialApproved": false
+      },
+      "rights": {
+        "status": "uncleared",
+        "license": null
+      },
+      "audio": null,
+      "cover": null,
+      "transcript": null,
+      "reviewNotice": "Original fictional draft; needs professional bilingual and domain review plus recording rights before publication.",
+      "takeaway": "Keep every “might,” “I think,” and “I am not sure” attached to the original speaker.",
+      "lyrics": "[Verso 1]\nLlegaste con la historia bien peinada,\nla mesa lista, el nombre en el mantel.\nDijiste: «Lo vi», con voz prestada,\npero al principio habías dicho «tal vez».\n\n[Pre-coro]\nLa duda no se esconde en el bolsillo,\nni es una mancha que haya que quitar.\nHay un poquito de aire en el pasillo,\npor donde la verdad puede pasar.\n\n[Coro]\nEl tal vez tiene zapatos,\ncamina sin hacer ruido.\nNo le cambies los retratos,\nni le inventes lo vivido.\nSi dijo «creo», deja el creo,\nsi dijo «no sé», déjalo estar.\nQue una palabra pequeñita\npuede cambiar la ciudad.\n\n[Verso 2]\nMi tía escucha todo desde el patio,\nella sabe cuándo va a llover.\nPero ni el cielo firma un calendario,\nni un rumor es lo que alguien pudo ver.\n\n[Puente]\nTal vez mañana llegue el tren,\ntal vez esa luz sea de otro hogar.\nNo necesito hablar por quien\nno sabe todavía qué pensar.\n\n[Coro final]\nEl tal vez tiene zapatos,\nse despide al amanecer.\nNo le quites su camino,\nno lo obligues a volver.\nSi dijo «creo», deja el creo,\nsi dijo «no sé», déjalo estar.\nLa verdad también respira\ncuando la dejamos dudar.\n\n[Salida hablada]\n«No sé» también cuenta una historia.\nDéjala terminar.",
+      "prompts": {
+        "suno": "Original elegant late-night Latin bolero, female low contralto lead with intimate understated delivery, nylon guitar, upright bass, brushed drums, soft bandoneon countermelody, 78 BPM. Witty melancholy, conversational theatrical pauses, tactile acoustic texture, subtle chorus lift and a beautifully restrained spoken outro. Crystal-clear Spanish diction, mature expressive storytelling, no novelty voice, no synthetic choir. ORIGINAL lyrics supplied separately."
+      }
+    },
+    {
+      "id": "song-un-dia-si-otro-no",
+      "kind": "song",
+      "title": "Un día sí, otro no",
+      "synopsis": "A playful but careful son-cumbia about how timing and quantities are different.",
+      "subtitle": "A playful but careful son-cumbia about how timing and quantities are different.",
+      "domain": "medical",
+      "direction": "en-es",
+      "termIds": [
+        "M0119",
+        "M0127",
+        "M0128",
+        "M0129"
+      ],
+      "sourceIds": [
+        "MEDLINE_MEDICINES"
+      ],
+      "script": "[Intro hablada]\nNo es un refrán de amores.\nEs una instrucción que hay que escuchar con cuidado.\n\n[Verso 1]\nMi vecino puso un reloj en la cocina,\nle dio cuerda con un beso y un café.\nLa mañana se reía en la cortina,\nél decía: «Lo entendí». Yo dije: «¿Qué?»\n\n[Pre-coro]\nNo es igual cuánto tomas\nque la hora de tomar.\nUna cosa es la cantidad,\notra, cuándo volverá.\n\n[Coro]\nUn día sí, otro no,\nno es dos veces por día.\nNo me cambies el reloj,\nni me borres la medida.\nUno es uno, dos es dos,\nlas palabras tienen vida.\nSi no queda claro el ritmo,\nque lo explique quien lo indica.\n\n[Verso 2]\nLa vecina, que tocaba la campana,\nconfundió el martes con viernes al pasar.\n«Yo te mando el recordatorio por la mañana»,\ny el reloj se puso a protestar.\n\n[Puente]\nUn piano juega con el tiempo,\ny el bajo lo vuelve a colocar.\nNo decido la receta,\nsolo cuido lo que se quiso expresar.\n\n[Coro final]\nUn día sí, otro no,\ncomo el paso y la melodía.\nNo me cambies el reloj,\nni una condición por simpatía.\nSi la frase se perdió,\nla aclaramos con quien la decía.\nNo inventemos instrucciones,\nque en las manos pesan vidas.\n\n[Salida]\nUn día sí. Otro no.\nY si hay dudas: pregúntalo.",
+      "status": "script-draft",
+      "review": {
+        "bilingualApproved": false,
+        "domainApproved": false,
+        "editorialApproved": false
+      },
+      "rights": {
+        "status": "uncleared",
+        "license": null
+      },
+      "audio": null,
+      "cover": null,
+      "transcript": null,
+      "reviewNotice": "Original fictional draft; needs professional bilingual and domain review plus recording rights before publication.",
+      "takeaway": "Dose amount, schedule, and conditional instructions are separate pieces of meaning; never infer a real prescription from a song.",
+      "lyrics": "[Intro hablada]\nNo es un refrán de amores.\nEs una instrucción que hay que escuchar con cuidado.\n\n[Verso 1]\nMi vecino puso un reloj en la cocina,\nle dio cuerda con un beso y un café.\nLa mañana se reía en la cortina,\nél decía: «Lo entendí». Yo dije: «¿Qué?»\n\n[Pre-coro]\nNo es igual cuánto tomas\nque la hora de tomar.\nUna cosa es la cantidad,\notra, cuándo volverá.\n\n[Coro]\nUn día sí, otro no,\nno es dos veces por día.\nNo me cambies el reloj,\nni me borres la medida.\nUno es uno, dos es dos,\nlas palabras tienen vida.\nSi no queda claro el ritmo,\nque lo explique quien lo indica.\n\n[Verso 2]\nLa vecina, que tocaba la campana,\nconfundió el martes con viernes al pasar.\n«Yo te mando el recordatorio por la mañana»,\ny el reloj se puso a protestar.\n\n[Puente]\nUn piano juega con el tiempo,\ny el bajo lo vuelve a colocar.\nNo decido la receta,\nsolo cuido lo que se quiso expresar.\n\n[Coro final]\nUn día sí, otro no,\ncomo el paso y la melodía.\nNo me cambies el reloj,\nni una condición por simpatía.\nSi la frase se perdió,\nla aclaramos con quien la decía.\nNo inventemos instrucciones,\nque en las manos pesan vidas.\n\n[Salida]\nUn día sí. Otro no.\nY si hay dudas: pregúntalo.",
+      "prompts": {
+        "suno": "Original playful Cuban son meets warm contemporary cumbia, 102 BPM, live tres guitar, congas, bright acoustic bass, airy piano montunos, expressive mature female lead, subtle male call-and-response chorus. Singable catchy hook with deliberately crisp numbers and time expressions, syncopated live drums, small dance-floor lift, varied final chorus, one spoken outro. Spanish diction clear, sophisticated not childish. Original lyrics supplied separately."
+      }
+    },
+    {
+      "id": "voice-no-era-lo-mismo",
+      "kind": "catch-the-change",
+      "title": "No era lo mismo: La vista y el rumor",
+      "synopsis": "A warm neighbor conversation in which secondhand information suddenly becomes eyewitness testimony.",
+      "subtitle": "A warm neighbor conversation in which secondhand information suddenly becomes eyewitness testimony.",
+      "domain": "legal",
+      "direction": "en-es",
+      "termIds": [
+        "L0014",
+        "L0074",
+        "L0107"
+      ],
+      "sourceIds": [
+        "OJD_TERMS"
+      ],
+      "script": "[A neighborhood radio drama recorded as a bilingual simulation. Each take will be produced as separate, aligned stems.]\n\nNORA (ENGLISH): Thank you for calling us. You can keep your name off air. What did you personally see?\n\nCALLER (ENGLISH): I didn't see anyone at the door. My neighbor told me somebody had left a bag outside. I saw the bag later, when I returned.\n\nINTERPRETER (SPANISH, INTENTIONALLY WRONG TAKE): Vi a alguien dejar una bolsa afuera de la puerta.\n\nNORA (ENGLISH): Stop the tape there. That was the wrong practice rendering. The original caller saw a bag later. She never claimed to watch somebody place it. The altered line makes her an eyewitness.\n\nINTERPRETER (SPANISH, REPAIRED TAKE): No vi a nadie en la puerta. Mi vecina me dijo que alguien había dejado una bolsa afuera. Vi la bolsa después, cuando regresé.\n\nCALLER (ENGLISH): That's what I meant. I don't know who left it. It might have been somebody from the building, but that's only a guess.\n\nNORA (ENGLISH): And the guess stays a guess. We also have to keep the two time points apart. Hearing about a bag is not watching the bag arrive.\n\nJAIME (ENGLISH): I have once again become interested in the bag. Can it contain a microphone? Because ours is making a noise like a suitcase rolling down stairs.\n\nNORA (ENGLISH): No, Jaime, the bag does not contain our budget. The neighbors have kindly agreed to turn this entire misunderstanding into a training example, with actors and no real personal details.\n\n[For the game version, start with the original call; follow with the single wrong interpretation; leave a generous space after the wrong phrase for a tap or spoken interruption. The repair is a separate reveal, never part of the first audio take.]",
+      "status": "script-draft",
+      "review": {
+        "bilingualApproved": false,
+        "domainApproved": false,
+        "editorialApproved": false
+      },
+      "rights": {
+        "status": "uncleared",
+        "license": null
+      },
+      "audio": null,
+      "cover": null,
+      "transcript": null,
+      "reviewNotice": "Original fictional draft; needs professional bilingual and domain review plus recording rights before publication.",
+      "takeaway": "The observer, the report, and the timing must stay distinct.",
+      "turns": [
+        {
+          "speaker": "Caller",
+          "language": "en",
+          "text": "I didn't see anyone at the door. My neighbor told me somebody had left a bag outside. I saw the bag later, when I returned."
+        },
+        {
+          "speaker": "Interpreter",
+          "language": "es",
+          "text": "Vi a alguien dejar una bolsa afuera de la puerta."
+        },
+        {
+          "speaker": "Nora",
+          "language": "en",
+          "text": "The caller never claimed she watched somebody leave the bag."
+        },
+        {
+          "speaker": "Interpreter",
+          "language": "es",
+          "text": "No vi a nadie en la puerta. Mi vecina me dijo que alguien había dejado una bolsa afuera. Vi la bolsa después, cuando regresé."
+        }
+      ],
+      "errors": [
+        {
+          "id": "r01",
+          "category": "attribution",
+          "original": "I didn't see anyone at the door. My neighbor told me somebody had left a bag outside.",
+          "wrong": "Vi a alguien dejar una bolsa afuera de la puerta.",
+          "repair": "No vi a nadie en la puerta. Mi vecina me dijo que alguien había dejado una bolsa afuera.",
+          "recognizedPhrases": [
+            "yo no vi",
+            "lo contó la vecina",
+            "no fue testigo"
+          ],
+          "audibleSource": "I didn't see anyone at the door. My neighbor told me somebody had left a bag outside.",
+          "audibleWrong": "Vi a alguien dejar una bolsa afuera de la puerta",
+          "audibleRepair": "No vi a nadie en la puerta. Mi vecina me dijo que alguien había dejado una bolsa afuera",
+          "sourceTurnIndex": 0,
+          "wrongTurnIndex": 1,
+          "repairTurnIndex": 3
+        }
+      ]
+    },
+    {
+      "id": "voice-no-promesa",
+      "kind": "catch-the-change",
+      "title": "Una firma no es una promesa",
+      "synopsis": "A consent conversation in which a trainee accidentally turns explanation into a guarantee.",
+      "subtitle": "A consent conversation in which a trainee accidentally turns explanation into a guarantee.",
+      "domain": "medical",
+      "direction": "en-es",
+      "termIds": [
+        "M0187",
+        "M0362",
+        "M0207"
+      ],
+      "sourceIds": [
+        "MEDLINE_TOPICS"
+      ],
+      "script": "[Fictional clinic practice. The recording begins with a chair moving gently, a page turning, and a thoughtful silence.]\n\nCLINICIAN (ENGLISH): You can ask any questions before deciding whether to sign this consent form. We will explain the options, but I cannot promise the outcome.\n\nINTERPRETER (SPANISH, INTENTIONALLY WRONG TAKE): Si firma el formulario, le aseguran que el procedimiento saldrá bien.\n\nPATIENT ACTOR (SPANISH): ¿Me lo aseguran? Porque eso cambia cómo me siento acerca de firmar.\n\n[Silence for listeners to interrupt. Do not play the answer yet.]\n\nFACILITATOR (ENGLISH): The incorrect take has introduced a promise the clinician did not make. It also removed the patient's opportunity to ask questions before deciding. The simulated patient is reacting to information invented by the interpretation.\n\nINTERPRETER (SPANISH, REPAIR): Puede hacer todas las preguntas que quiera antes de decidir si firma el formulario de consentimiento. Le explicaremos las opciones, pero no puedo prometerle el resultado.\n\nPATIENT ACTOR (SPANISH): Entonces quiero preguntar primero. Todavía no he decidido.\n\nCLINICIAN ACTOR (ENGLISH): Thank you. Ask whatever you need to ask. We can take our time.\n\nFACILITATOR (ENGLISH): This scenario is for interpreter training, not a specific clinical recommendation. The exact professional Spanish version and any local consent procedure must be checked by qualified reviewers. The distinction to hear is simple: providing information and allowing a decision do not amount to guaranteeing what happens next.\n\n[Recorded ending: the page closes without the scrape of a pen. The patient has not yet signed. A quiet musical tag reinforces that a pause is a legitimate part of the scene.]",
+      "status": "script-draft",
+      "review": {
+        "bilingualApproved": false,
+        "domainApproved": false,
+        "editorialApproved": false
+      },
+      "rights": {
+        "status": "uncleared",
+        "license": null
+      },
+      "audio": null,
+      "cover": null,
+      "transcript": null,
+      "reviewNotice": "Original fictional draft; needs professional bilingual and domain review plus recording rights before publication.",
+      "takeaway": "Explanation, choice, and guarantees are different. Never invent certainty in a consent conversation.",
+      "turns": [
+        {
+          "speaker": "Clinician",
+          "language": "en",
+          "text": "You can ask any questions before deciding whether to sign this consent form. We will explain the options, but I cannot promise the outcome."
+        },
+        {
+          "speaker": "Interpreter",
+          "language": "es",
+          "text": "Si firma el formulario, le aseguran que el procedimiento saldrá bien."
+        },
+        {
+          "speaker": "Patient",
+          "language": "es",
+          "text": "¿Me lo aseguran? Porque eso cambia cómo me siento acerca de firmar."
+        },
+        {
+          "speaker": "Interpreter",
+          "language": "es",
+          "text": "Puede hacer todas las preguntas que quiera antes de decidir si firma el formulario de consentimiento. Le explicaremos las opciones, pero no puedo prometerle el resultado."
+        }
+      ],
+      "errors": [
+        {
+          "id": "r01",
+          "category": "unsupported-addition",
+          "original": "I cannot promise the outcome.",
+          "wrong": "le aseguran que el procedimiento saldrá bien.",
+          "repair": "no puedo prometerle el resultado.",
+          "recognizedPhrases": [
+            "no prometió",
+            "dijo que no podía asegurar",
+            "no hay garantía"
+          ],
+          "audibleSource": "I cannot promise the outcome",
+          "audibleWrong": "le aseguran que el procedimiento saldrá bien",
+          "audibleRepair": "no puedo prometerle el resultado",
+          "sourceTurnIndex": 0,
+          "wrongTurnIndex": 1,
+          "repairTurnIndex": 3
+        }
+      ]
+    }
+  ]
+}
