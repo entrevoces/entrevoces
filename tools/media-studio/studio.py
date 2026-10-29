@@ -109,7 +109,7 @@ def images(args):
 
 def render(args):
     plan=json.loads(Path(args.storyboard).read_text());duration=validate(plan);out=Path(args.output).resolve();frames=Path(args.images).resolve()
-    if out.exists():raise StudioError('Output exists; choose a new file.')
+    if out.exists() or out.with_suffix('.provenance.json').exists():raise StudioError('Output or receipt exists; choose a new file.')
     if not args.audio and not args.allow_silent:raise StudioError('Supply --audio or explicitly use --allow-silent.')
     contains_motion=any((frames/(shot['id']+'.mp4')).is_file() for shot in plan['shots'])
     with __import__('tempfile').TemporaryDirectory(prefix='ev-video-') as tmp:

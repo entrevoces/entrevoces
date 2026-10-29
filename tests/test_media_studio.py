@@ -48,3 +48,6 @@ class VideoStudioTests(unittest.TestCase):
    probe=subprocess.check_output(['ffprobe','-v','error','-show_entries','stream=codec_type','-of','csv=p=0',str(root/'demo.mp4')],text=True)
    self.assertIn('video',probe);self.assertIn('audio',probe)
    self.assertFalse(json.loads((root/'demo.provenance.json').read_text())['containsMotionClips'])
+   subprocess.run(['ffmpeg','-hide_banner','-loglevel','error','-f','lavfi','-i','testsrc=size=320x180:rate=24','-t','1','-pix_fmt','yuv420p','-threads','1',str(frames/'one.mp4')],check=True)
+   args.output=str(root/'motion.mp4');studio.render(args)
+   self.assertTrue(json.loads((root/'motion.provenance.json').read_text())['containsMotionClips'])
