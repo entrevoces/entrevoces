@@ -1,5 +1,5 @@
 // Reproducible static hub assembly. No authoring endpoints or runtime AI.
-import{mkdirSync,readFileSync,writeFileSync,cpSync,existsSync,rmSync}from'node:fs';import{join,resolve}from'node:path';
+import{mkdirSync,readFileSync,writeFileSync,cpSync,existsSync,rmSync}from'node:fs';import{join,resolve}from'node:path';import{createHash}from'node:crypto';
 import*as core from'../packages/engine-core/index.js';import{validateCollection}from'../generator/living-library.js';import{learningRuntimeSources}from'../generator/runtime.js';
 const out=resolve('dist');rmSync(out,{recursive:true,force:true});mkdirSync(out,{recursive:true});writeFileSync(join(out,'.nojekyll'),'');
 const {curriculumSource}=await import('../generator/curriculum-source.js');
@@ -26,4 +26,14 @@ cpSync('assets/game-vectors',join(out,'games/_shared/media'),{recursive:true});
 const collection=JSON.parse(readFileSync('content/living-library/collection.json'));const mediaErrors=validateCollection(collection);if(mediaErrors.length)throw Error(`Living library validation failed: ${mediaErrors.join('; ')}`);
 cpSync('apps/living-library',join(out,'living-library'),{recursive:true});
 cpSync('content/living-library/collection.json',join(out,'living-library/collection.json'));
+// Version browser assets by content so Pages visitors do not receive mismatched cached files.
+const version=path=>createHash('sha256').update(readFileSync(path)).digest('hex').slice(0,12);
+const mediaDir=join(out,'living-library'),mediaJS=join(mediaDir,'library.js');
+writeFileSync(mediaJS,readFileSync(mediaJS,'utf8').replace('./translations.js',`./translations.js?v=${version(join(mediaDir,'translations.js'))}`));
+for(const [dir,files] of [[out,['style.css','hub.js']],[mediaDir,['library.css','library.js']]]){
+ const page=join(dir,'index.html');let html=readFileSync(page,'utf8');
+ for(const file of files)html=html.replace(`"${file}"`,`"${file}?v=${version(join(dir,file))}"`);
+ writeFileSync(page,html);
+}
+
 console.log(JSON.stringify({directory:out,concepts:concepts.length,books:books.length,games:gameManifest.games.length}));
