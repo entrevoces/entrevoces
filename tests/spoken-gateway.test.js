@@ -1,4 +1,5 @@
 import test from 'node:test';
+import {readFileSync} from 'node:fs';
 import assert from 'node:assert/strict';
 import {createSpokenServer} from '../services/spoken-gateway/server.js';
 import {createMetaClient,extractResponseText} from '../services/spoken-gateway/meta-client.js';
@@ -120,4 +121,12 @@ test('spoken UI can swap language direction, record PCM, submit, review and clos
     globalThis.document=old.document;globalThis.window=old.window;globalThis.fetch=old.fetch;
     if(old.navigator)Object.defineProperty(globalThis,'navigator',old.navigator);else delete globalThis.navigator;
   }
+});
+
+test('built games version the Voice Lab module and its stylesheet',()=>{
+  const game=readFileSync('dist/games/rio-de-palabras/index.html','utf8');
+  const runtime=readFileSync('dist/games/_shared/v5.js','utf8');
+  assert.match(game,/\.\.\/_shared\/v5\.js\?v=[a-f0-9]{12}/);
+  assert.match(game,/\.\.\/_shared\/voice\.css\?v=[a-f0-9]{12}/);
+  assert.match(runtime,/spoken-client\.js\?v=[a-f0-9]{12}/);
 });

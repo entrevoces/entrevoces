@@ -41,6 +41,12 @@ const page=join(out,'index.html');let html=readFileSync(page,'utf8');
 for(const file of ['media-app/style.css','media-app/app.js'])html=html.replace(`"${file}"`,`"${file}?v=${version(join(out,file))}"`);
 writeFileSync(page,html);
 
+// Invalidate cached game modules and styles when Voice Lab changes.
+{const shared=join(out,'games/_shared');const v5=join(shared,'v5.js');if(existsSync(v5)){
+ let source=readFileSync(v5,'utf8');source=source.replace("'./spoken-client.js'",`'./spoken-client.js?v=${version(join(shared,'spoken-client.js'))}'`);writeFileSync(v5,source);
+ for(const game of gameManifest.games){const page=join(out,'games',game.id,'index.html');if(!existsSync(page))continue;let html=readFileSync(page,'utf8');for(const file of ['v5.js','voice.css'])html=html.replace(`"../_shared/${file}"`,`"../_shared/${file}?v=${version(join(shared,file))}"`);writeFileSync(page,html);}
+}}
+
 // Practice retains its own cache-busted assets; the library uses a versioned service-worker cache.
 {const page=join(out,'practice.html');let html=readFileSync(page,'utf8');for(const file of ['style.css','hub.js'])html=html.replace(`"${file}"`,`"${file}?v=${version(join(out,file))}"`);writeFileSync(page,html);}
 
