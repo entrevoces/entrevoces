@@ -1,4 +1,4 @@
-> **Living library:** The current static site includes 24 original entries and 17 imported script drafts. See [docs/living-library.md](docs/living-library.md) for available audio and review limits, and [docs/VIDEO_STUDIO.md](docs/VIDEO_STUDIO.md) for the script-to-image and video authoring workflow. The original games and shared learning engine remain available.
+> **Living library:** Only published media that passes review, rights and file-integrity gates appears on the static site. Drafts and scripts remain in authoring; see [docs/VIDEO_STUDIO.md](docs/VIDEO_STUDIO.md). Games and the shared learning engine remain available.
 
 # Entre Voces
 
@@ -9,7 +9,7 @@ npm run build
 npm run hub
 ```
 
-The library opens at `http://127.0.0.1:8014/`, with a directly linkable `cada-dos-dias-script.html` video script. Games and creation tools are under `practice.html`. The practice hub contains the game collection, a staged learning path, searchable English–Spanish/English–Chinese knowledge, a readable reused handbook, local progress export/import, and a creation room for saving game briefs. The build reuses 21 existing medical/legal concepts, ten interpreting-skill definitions from existing research notes, and nine optional source-specific reference entries. Institutional/credential reference material does not define curriculum progress. Missing translations remain visible rather than silently falling back to another language.
+The library opens at `http://127.0.0.1:8014/` and contains only approved, published media; scripts remain in the authoring workflow. Games and creation tools are under `practice.html`. The practice hub contains the game collection, a staged learning path, searchable English–Spanish/English–Chinese knowledge, a readable reused handbook, local progress export/import, and a creation room for saving game briefs. The build reuses 21 existing medical/legal concepts, ten interpreting-skill definitions from existing research notes, and nine optional source-specific reference entries. Institutional/credential reference material does not define curriculum progress. Missing translations remain visible rather than silently falling back to another language.
 
 For GitHub Pages, the `.github/workflows/pages.yml` workflow builds and publishes `dist/`. If the public GitHub Actions variable `EV_SPOKEN_API_URL` points at your deployed Modal web function, each game can send explicitly recorded 16 kHz audio to Meta MMS for speech recognition on CPU; the transcript and example rendering are available for review, without automatic meaning grades. With no URL, games stay playable while the voice feature is unavailable. See [Modal deployment and licensing](services/modal-spoken/README.md) and [three arcade games](apps/games/README.md). Live CPU model inference testing is still required before asserting the model integration works with real voices.
 

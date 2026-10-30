@@ -47,7 +47,7 @@ test('sound-production packet remains explicit about missing audio and rights',(
 test('Meta audio quality review cannot grant professional approval',async()=>{const c={textJSON:async()=>({model:'muse-spark-1.3',data:{verdict:'needs-listening-review',flags:[],speakerNotes:[],cautions:['ASR is imperfect']}})};const x=await advisoryMetaAudioReview(c,{item:{...item(),script:'I have not had pain.'},transcript:'I have had pain.'});assert.equal(x.approved,false);assert.equal(x.humanReviewPending,true)});
 test('all authored seed items meet minimum content lengths',()=>{const c=JSON.parse(readFileSync('content/media-production/catalog.json','utf8'));assert.ok(c.items.length>=9);for(const x of c.items){const min=TYPES[x.kind].minWords;assert.ok(x.script.split(/\s+/).length>=min,`${x.id} was too short`);assert.equal(x.status,'script-draft');assert.equal(x.audio,null);assert.equal(x.review.bilingualApproved,false);}});
 test('production seed catalog is source-grounded and its branching graph is reachable',()=>{const c=JSON.parse(readFileSync('content/media-production/catalog.json','utf8'));const check=validateCatalog(c,{knowledge:kb,strict:true});assert.equal(check.ok,true,check.errors.join('; '));assert.ok(c.items.some(x=>x.kind==='audio-mystery'));assert.ok(c.items.some(x=>x.kind==='podcast'));assert.ok(c.items.some(x=>x.kind==='audio-drama'));assert.ok(c.items.filter(x=>x.kind==='catch-the-change').length>=5)});
-test('browser root always foregrounds media, not the arcade listing',()=>{const html=readFileSync('apps/biblioteca-viva/index.html','utf8');assert.ok(html.indexOf('id="shelves"')<html.indexOf('id="listen-room"'));assert.ok(html.includes('https://suno.com/song/9fe7cfec-a73b-47d8-9321-91941484ea7b'));assert.ok(html.includes('href="practice.html"'));assert.ok(!html.includes('id="game-collection"'))});
+test('browser root foregrounds the library and does not expose drafts',()=>{const html=readFileSync('apps/biblioteca-viva/index.html','utf8');assert.ok(html.includes('id="shelves"'));assert.ok(html.includes('href="practice.html"'));assert.ok(!html.includes('id="game-collection"'));assert.ok(!html.includes('cada-dos-dias-script'));});
 test('Meta image-understanding QA submits actual image input, never a textual filename',async()=>{const temp=mkdtempSync(join(tmpdir(),'ev-image-')),file=join(temp,'cover.png');writeFileSync(file,Buffer.from([137,80,78,71,13,10,26,10,0,0]));let payload;const c=new MetaClient({apiKey:'test',maxRequests:1,fetchImpl:async(u,init)=>{payload=JSON.parse(init.body);return{ok:true,json:async()=>({choices:[{message:{content:JSON.stringify({findings:[],readyForHumanReview:true})}}]})}}});const x=await c.inspectImage({imagePath:file});assert.equal(x.review,'advisory-model-only');assert.equal(payload.messages[1].content[1].type,'image_url');assert.ok(payload.messages[1].content[1].image_url.url.startsWith('data:image/png;base64,'))});
 
 test('media studio saves complete stage checkpoints and resumes after interrupted model calls',async()=>{
@@ -87,20 +87,13 @@ test('voice cue matching never treats noise as the standalone word no',()=>{
 });
 
 import {publicItem,publicCatalog} from '../media-engine/publication.mjs';
-test('public media snapshot cannot expose reviewer credentials or authoring model traces',()=>{
- const full={...item(),kind:'song',generation:{stageOutputs:{secretPrompt:'PRIVATE PROMPT'},usage:[{private:'billing'}]},review:{bilingualApproved:true,domainApproved:true,editorialApproved:true,credential:'PRIVATE CREDENTIAL',reviewer:'Dr. PRIVATE'},rights:{status:'cleared',authorization:'PRIVATE RELEASE'},producerEmail:'PRIVATE EMAIL',productionPlan:{private:'PRIVATE PLAN'},sourceClaims:[{note:'PRIVATE DRAFT'}],prompts:{suno:'Original Suno style prompt',voice:'PRIVATE VOICE SAMPLES'}};
- const publicData=publicCatalog({items:[full]});const raw=JSON.stringify(publicData);
- for(const secret of ['PRIVATE PROMPT','PRIVATE CREDENTIAL','PRIVATE RELEASE','PRIVATE EMAIL','PRIVATE PLAN','PRIVATE DRAFT','PRIVATE VOICE SAMPLES'])assert.ok(!raw.includes(secret),secret);
- assert.equal(publicData.items[0].review.bilingualApproved,true);
- assert.equal(publicData.items[0].prompts.suno,'Original Suno style prompt');
+test('public media projection excludes scripts, prompts, reviews and credentials',()=>{
+ const full={...item(),kind:'song',script:'PRIVATE SCRIPT',lyrics:'PRIVATE LYRICS',generation:{secret:'PRIVATE PROMPT'},review:{credential:'PRIVATE CREDENTIAL'},rights:{authorization:'PRIVATE RELEASE'},prompts:{suno:'PRIVATE PROMPT'}};
+ const raw=JSON.stringify(publicItem(full));for(const secret of ['PRIVATE SCRIPT','PRIVATE LYRICS','PRIVATE PROMPT','PRIVATE CREDENTIAL','PRIVATE RELEASE'])assert.ok(!raw.includes(secret));
 });
-test('the published public media snapshot is separate from the authoring manifest',()=>{
- const source=JSON.parse(readFileSync('content/media-production/catalog.json','utf8'));
- const slim=publicCatalog(source);
- assert.equal(slim.items.length,source.items.length);
- assert.ok(slim.items.every(x=>x.id&&x.script&&x.termIds?.length));
- assert.ok(slim.items.every(x=>x.productionStatus==='script-only'&&x.review.bilingualApproved===false));
- assert.ok(slim.items.every(x=>!Object.hasOwn(x,'rights')&&!Object.hasOwn(x,'generation')));
+test('the public media snapshot excludes unpublished drafts and rejects improperly approved items',()=>{
+ const source=JSON.parse(readFileSync('content/media-production/catalog.json','utf8'));assert.equal(publicCatalog(source).items.length,0);
+ const bad={...source.items[0],status:'published'};assert.throws(()=>publicCatalog({items:[bad]}),/failed release gate/);
 });
 
 import {validateVoiceWav} from '../media-engine/meta.mjs';
@@ -128,4 +121,18 @@ test('the exact knowledge file used in the earlier Entre Voces corpus remains th
  const raw=readFileSync('entre_voces_knowledge_base.json');
  const used=loadKnowledge();assert.equal(used.sourceFileSha256,(await import('node:crypto')).createHash('sha256').update(raw).digest('hex'));
  assert.equal(used.sourceFileSha256,'802c5c93015293b7759779a6bfc364e89923c70f77c156e4988c422a33f55487');
+});
+
+test('video moves from unreviewed intake through explicit release and stops if its file changes',async()=>{
+ const {ingestVideo}=await import('../media-engine/ingest.mjs');
+ const root=mkdtempSync(join(tmpdir(),'ev-film-')),media=join(root,'media');mkdirSync(media);
+ const file=join(root,'clip.mp4'),bytes=Buffer.alloc(48);bytes.write('ftyp',4);writeFileSync(file,bytes);const captions=join(root,'captions.vtt');writeFileSync(captions,'WEBVTT\n\n00:00.000 --> 00:01.000\nHello\n');
+ const base={...productionPlan(makeBrief(kb,{kind:'film',topic:'negation',index:91})),title:'A film',synopsis:'A short film',script:Array(200).fill('scene').join(' ')};
+ const rights={creator:'Creator',license:'demo',recordedAt:'2026-10-29',authorization:'written'};
+ const draft=ingestVideo(base,{input:file,outputRoot:media,rights,transcript:'Accessible transcript',captions}).item;
+ assert.equal(publicCatalog({items:[draft]},{knowledge:kb,assetRoot:root}).items.length,0);
+ const reviewed=markReviewed(draft,{reviewer:'Reviewer',credential:'Qualified interpreter',reviewDate:'2026-10-29',medicalLegalReviewed:true,languagePair:'en-es',approved:true});
+ const released={...reviewed,status:'published',rights:{...reviewed.rights,status:'cleared'}};
+ const published=publicCatalog({items:[released]},{knowledge:kb,assetRoot:root});assert.equal(published.items.length,1);assert.equal(published.items[0].video,`media/${base.id}.mp4`);assert.equal(published.items[0].script,undefined);
+ writeFileSync(join(root,released.video),Buffer.alloc(48));assert.throws(()=>publicCatalog({items:[released]},{knowledge:kb,assetRoot:root}),/hash does not match/);
 });

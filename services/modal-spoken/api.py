@@ -1,6 +1,6 @@
 """Actual HTTP boundary, testable without GPU or Modal credentials."""
 
-def create_app(corpus, code, transcribe, origins="https://entrevoces.github.io,http://127.0.0.1:8014,http://localhost:8014"):
+def create_app(corpus, code, transcribe, origins="https://entrevoces.github.io,http://127.0.0.1:8014,http://localhost:8014", speech_model=None):
     import hmac
     import json
     import time
@@ -27,7 +27,7 @@ def create_app(corpus, code, transcribe, origins="https://entrevoces.github.io,h
     async def health():
         return {
             "enabled": True, "accessRequired": bool(code),
-            "speechModel": MODEL_SPEECH, "assessmentModel": MODEL_MEANING,
+            "speechModel": speech_model or MODEL_SPEECH, "assessmentModel": MODEL_MEANING,
             "maxSeconds": 30, "liveStreaming": False,
             "hardware": "cpu", "mode": "transcript-review", "automatedFidelity": False,
         }

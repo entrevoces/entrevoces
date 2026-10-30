@@ -1,14 +1,17 @@
-/** Explicit public projection: private creative prompts, model traces, rights receipts and reviewer identities stay in authoring storage. */
-const select=(obj,keys)=>Object.fromEntries(keys.filter(key=>Object.hasOwn(obj||{},key)).map(key=>[key,obj[key]]));
-const PUBLIC_KEYS=['id','kind','title','synopsis','subtitle','domain','direction','termIds','sourceIds','status','script','turns','errors','nodes','start','audio','cover','sunoUrl','lyrics','transcript','duration','reviewNotice','takeaway','language'];
+/** Public catalog is derived only from explicitly published, reviewed media. */
+import {publicationGate} from './validation.mjs';
+const PUBLIC_KEYS=['id','kind','title','synopsis','subtitle','audio','video','captions','cover','sunoUrl','duration','language'];
 export function publicItem(item){
  if(!item||typeof item!=='object'||!item.id)throw Error('Invalid media object');
- const projected=select(item,PUBLIC_KEYS);
- // Never share reviewer names or their credentials; only a narrow review flag.
- projected.review={bilingualApproved:item.review?.bilingualApproved===true,domainApproved:item.review?.domainApproved===true,editorialApproved:item.review?.editorialApproved===true};
- // Publicly show only original, user-shareable Suno creative prompt; never dump internal generation pipeline output.
- if(item.kind==='song'&&typeof item.prompts?.suno==='string')projected.prompts={suno:item.prompts.suno.slice(0,1000)};
- projected.productionStatus=item.audio?'recorded':item.sunoUrl?'external-audio':'script-only';
- return projected;
+ return Object.fromEntries(PUBLIC_KEYS.filter(key=>Object.hasOwn(item,key)).map(key=>[key,item[key]]));
 }
-export function publicCatalog(catalog){return {schemaVersion:catalog.schemaVersion||1,notice:'Source-grounded draft fiction. Professional medical/legal bilingual review may still be pending.',items:(catalog.items||[]).map(publicItem)};}
+export function publicCatalog(catalog,options={}){
+ const items=[];
+ for(const item of catalog.items||[]){
+  if(item.status!=='published')continue;
+  const gate=publicationGate(item,options);
+  if(!gate.ok)throw Error(`Published media ${item.id} failed release gate: ${gate.errors.join('; ')}`);
+  items.push(publicItem(item));
+ }
+ return {schemaVersion:1,notice:'Approved media only.',items};
+}

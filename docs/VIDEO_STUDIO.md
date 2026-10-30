@@ -32,3 +32,18 @@ Each shot uses `<id>.mp4` if supplied, otherwise `<id>.png`. FFmpeg assembles th
 The supplied `outputs/demo/entre-voces-demo.mp4`, when present locally, is a three-minute editorial preview made from six actual site screenshots, the system's synthetic narrator and one bundled synthetic example. It is not a live recording or an acted, professionally reviewed episode. `outputs/demo/transcript.txt` is its narration script; timings and captions still need human editing. Outputs are ignored by Git so unfinished media does not silently become public.
 
 Primary documentation: [Meta Muse Image](https://dev.meta.ai/docs/image-generation), [Meta model catalog](https://dev.meta.ai/docs/models), [Muse Spark Open hosted providers](https://dev.meta.ai/docs/muse-spark-open/deploy), [Baseten inference overview](https://docs.baseten.co/inference/overview).
+
+## Publish a finished video to the library
+
+Generated scripts and previews stay in the authoring workspace. The public library includes only items marked `published` after the release gate, and the build copies only their approved media files. Legacy draft entries, scripts and production prompts are not published.
+
+After producing and inspecting a finished MP4 or WebM, supply a rights receipt and an actual accessible transcript and reviewed WebVTT captions. Ingest resets review; a qualified person must sign off the final asset, and a separate rights clearance is required before publication:
+
+```sh
+node tools/media-studio.mjs ingest --item media-workshop/film.json --video film.mp4 --transcript film-transcript.txt --captions film-captions.vtt --rights media-workshop/rights.json --out media-workshop/film-with-video.json
+node tools/media-studio.mjs signoff --item media-workshop/film-with-video.json --review media-workshop/human-review.json --out media-workshop/reviewed-film.json
+node tools/media-studio.mjs publish --item media-workshop/reviewed-film.json --rights-approval media-workshop/rights-approval.json --replace
+npm run build
+```
+
+The release gate binds the approved video bytes to their recorded SHA-256; replacing the file requires renewed intake and signoff. Rights and reviewer credentials are recorded assertions, not independently verified by this tool. The transcript stays in authoring data rather than appearing as a script in the public library. The video player provides the approved captions. The caption file is also hash-checked; replacing it requires renewed review.

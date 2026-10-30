@@ -26,7 +26,7 @@ if modal.is_local():
 speech_image = (
     modal.Image.debian_slim(python_version='3.11')
     .pip_install('torch==2.5.1+cpu', index_url='https://download.pytorch.org/whl/cpu')
-    .pip_install('transformers==4.48.3', 'accelerate==1.3.0', 'numpy==1.26.4')
+    .pip_install('transformers==4.48.3', 'accelerate==1.3.0', 'numpy==1.26.4', 'sentencepiece==0.2.0')
 )
 cache = modal.Volume.from_name('entre-voces-mms-cache', create_if_missing=True)
 
@@ -113,6 +113,33 @@ class Speech:
             result = self.recognizer({'array': samples, 'sampling_rate': 16000})
         return {'transcript': str(result.get('text', '')).strip()[:2200]}
 
+@app.cls(image=speech_image, cpu=4, memory=16384, timeout=600,
+         max_containers=1, min_containers=0, scaledown_window=60,
+         volumes={'/root/.cache/huggingface': cache})
+class SeamlessSpeech:
+    """Optional CPU candidate; requires real-audio comparison before rollout."""
+    @modal.enter()
+    def load(self):
+        import torch
+        from transformers import AutoProcessor, SeamlessM4Tv2ForSpeechToText
+        torch.set_num_threads(4)
+        name = 'facebook/seamless-m4t-v2-large'
+        self.processor = AutoProcessor.from_pretrained(name)
+        self.model = SeamlessM4Tv2ForSpeechToText.from_pretrained(name).eval()
+
+    @modal.method()
+    def transcribe(self, pcm: bytes, language: str) -> dict:
+        import numpy as np
+        import torch
+        languages = {'en': 'eng', 'es': 'spa', 'zh': 'cmn'}
+        if language not in languages or not 3200 <= len(pcm) <= 960000 or len(pcm) % 2:
+            raise ValueError('Invalid speech request')
+        samples = np.frombuffer(pcm, dtype='<i2').astype(np.float32) / 32768.0
+        inputs = self.processor(audios=samples, sampling_rate=16000, return_tensors='pt')
+        with torch.inference_mode():
+            ids = self.model.generate(**inputs, tgt_lang=languages[language])
+        return {'transcript': self.processor.batch_decode(ids, skip_special_tokens=True)[0].strip()[:2200]}
+
 @app.function(image=api_image, cpu=.25, memory=256, timeout=600,
               min_containers=0, max_containers=1, scaledown_window=60,
               secrets=[modal.Secret.from_name('entre-voces-demo-access')])
@@ -125,12 +152,19 @@ def web():
     from api import create_app
     corpus = json.loads(Path('/srv/curriculum.json').read_text())['knowledge']
 
+    backend = os.environ.get('EV_SPEECH_BACKEND', 'mms').strip().lower()
+    if backend not in {'mms', 'seamless'}:
+        raise RuntimeError('Unsupported EV_SPEECH_BACKEND')
+
     async def transcribe(pcm, language):
+        if backend == 'seamless':
+            return await SeamlessSpeech().transcribe.remote.aio(pcm, language)
         return await Speech(language=language).transcribe.remote.aio(pcm, language)
 
     return create_app(
         corpus, os.environ.get('EV_DEMO_ACCESS_CODE', ''), transcribe,
         origins=os.environ.get('EV_ALLOWED_ORIGINS', 'https://entrevoces.github.io,http://127.0.0.1:8014,http://localhost:8014'),
+        speech_model='facebook/seamless-m4t-v2-large' if backend == 'seamless' else None,
     )
 
 @app.local_entrypoint()

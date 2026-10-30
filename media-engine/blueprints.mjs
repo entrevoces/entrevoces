@@ -12,7 +12,7 @@ export const TYPES=Object.freeze({
  'sound-bites':{minWords:160,sections:3,brief:'A collection of concise, natural spoken phrases about one professional concept, showing dialect and register without stereotypes.',deliverable:'8 to 12 contextual utterances, translations, critical distinctions and speaker directions'}
 });
 export const ERROR_CLASSES=['negation','quantity','time','frequency','modality','uncertainty','attribution','condition','procedural-status','register','meaning-omission','unsupported-addition'];
-export const PRODUCTION_STAGES=['proposed','script-draft','semantic-reviewed','editorially-reviewed','audio-pending','audio-produced','bilingual-reviewed','published'];
+export const PRODUCTION_STAGES=['proposed','script-draft','semantic-reviewed','editorially-reviewed','audio-pending','audio-produced','video-produced','bilingual-reviewed','published'];
 export function recommendedKinds(skill){
  const s=String(skill||'').toLowerCase();
  if(/negat|time|dose|frequency|number|uncertain|modality|condition|attribut|fidel|omission/.test(s))return ['catch-the-change','audio-drama','song'];

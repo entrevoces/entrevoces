@@ -1,5 +1,5 @@
 import {TYPES,ERROR_CLASSES,PRODUCTION_STAGES} from './blueprints.mjs';
-import {existsSync} from 'node:fs';import {resolve,relative} from 'node:path';
+import {existsSync,readFileSync} from 'node:fs';import {createHash} from 'node:crypto';import {resolve,relative} from 'node:path';
 const wordCount=s=>String(s||'').match(/\S+/g)?.length||0;
 const safeString=x=>typeof x==='string'&&x.trim().length>0;
 export function validateProduction(item,{knowledge,assetRoot=null,strict=false}={}){
@@ -47,7 +47,13 @@ export function validateProduction(item,{knowledge,assetRoot=null,strict=false}=
   if(!/^media\/[a-z0-9_-]+\.(mp3|m4a|wav|ogg)$/i.test(item.audio))errors.push('Unsafe audio path');
   if(assetRoot){const abs=resolve(assetRoot,item.audio);if(relative(resolve(assetRoot),abs).startsWith('..')||!existsSync(abs))errors.push('Audio asset absent');}
  }
- if(item.cover){if(!/^covers\/[a-z0-9_-]+\.(webp|jpg|png|svg)$/i.test(item.cover))errors.push('Unsafe cover image path');}
+ if(item.video&&item.audio)errors.push('Publish separate entries for audio and video assets');
+ if(item.video){
+  if(!/^media\/[a-z0-9_-]+\.(mp4|webm)$/i.test(item.video))errors.push('Unsafe video path');
+  if(assetRoot){const abs=resolve(assetRoot,item.video);if(relative(resolve(assetRoot),abs).startsWith('..')||!existsSync(abs))errors.push('Video asset absent');}
+ }
+ if(item.captions){if(!/^media\/[a-z0-9_-]+\.vtt$/i.test(item.captions))errors.push('Unsafe caption path');else if(assetRoot&&!existsSync(resolve(assetRoot,item.captions)))errors.push('Caption file absent');}
+ if(item.cover){if(!/^covers\/[a-z0-9_-]+\.(webp|jpg|png|svg)$/i.test(item.cover))errors.push('Unsafe cover image path');else if(assetRoot&&!existsSync(resolve(assetRoot,item.cover)))errors.push('Cover asset absent');}
  if(item.sunoUrl){try{const u=new URL(item.sunoUrl);if(u.hostname!=='suno.com'||u.protocol!=='https:'||!/^\/s\/[a-zA-Z0-9]+$/.test(u.pathname))throw Error();}catch{errors.push('Invalid Suno share link');}}
  if(item.status==='published'){
   if(!item.rights||item.rights.status!=='cleared')errors.push('Cannot publish without cleared rights');
@@ -83,10 +89,14 @@ export function scoreInterruption(item,atMs,{mode='tap',spokenText=''}={}){
 export function publicationGate(item,options={}){
  const valid=validateProduction(item,{...options,strict:true});
  const errors=[...valid.errors];
- if(!item.audio&&!item.sunoUrl)errors.push('No playable approved media available');
+ if(!item.audio&&!item.video&&!item.sunoUrl)errors.push('No playable approved media available');
+ if(item.kind==='film'&&!item.video)errors.push('Cannot publish film without video');
+ if(item.video&&!item.captions)errors.push('Video requires reviewed WebVTT captions');
+ if(item.video&&item.captions&&options.assetRoot){const file=resolve(options.assetRoot,item.captions);if(!/^[a-f0-9]{64}$/.test(item.captionSha256||''))errors.push('Caption file hash is missing');else if(existsSync(file)&&createHash('sha256').update(readFileSync(file)).digest('hex')!==item.captionSha256)errors.push('Caption file hash does not match');}
  if(item.rights?.status!=='cleared')errors.push('Rights are not cleared');
+ if(options.assetRoot&&(item.video||item.audio)){const path=resolve(options.assetRoot,item.video||item.audio);if(!/^[a-f0-9]{64}$/.test(item.rights?.sha256||''))errors.push('Approved file hash is missing');else if(existsSync(path)&&createHash('sha256').update(readFileSync(path)).digest('hex')!==item.rights.sha256)errors.push('Approved file hash does not match');}
  if(!item.review?.bilingualApproved||!item.review?.domainApproved)errors.push('Professional medical/legal and bilingual review incomplete');
- if(item.audio&&!item.transcript)errors.push('Missing accessible transcript');
+ if((item.audio||item.video)&&!item.transcript)errors.push('Missing accessible transcript');
  if(!String(item.script||item.body||item.lyrics||'').trim())errors.push('No complete accessible authored script supplied');
  return {ok:errors.length===0,errors,warnings:valid.warnings};
 }

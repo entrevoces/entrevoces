@@ -104,11 +104,9 @@ test('independent critiques rejecting a script trigger two revisions, never auto
  assert.equal(result.item.generation.stageOutputs.production,undefined);
  assert.ok(scripts===2&&critics>=3);
 });
-test('listening comparison is hidden until explicit reveal in the actual browser source',()=>{
+test('public library displays approved media without revealing production scripts',()=>{
  const source=readFileSync('apps/biblioteca-viva/media-app/app.js','utf8');
- assert.match(source,/detailRevealed\?/);assert.match(source,/data-reveal-comparison/);
- assert.match(source,/detailRevealed=false/);
- assert.match(readFileSync('apps/biblioteca-viva/index.html','utf8'),/audio-speed/);
+ assert.match(source,/<video controls/);assert.match(source,/<audio controls/);assert.doesNotMatch(source,/i\.script|i\.lyrics|i\.body/);
 });
 
 test('paid-call budget includes retried HTTP attempts and never silently overspends',async()=>{

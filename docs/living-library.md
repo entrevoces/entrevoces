@@ -1,5 +1,7 @@
 # Biblioteca Viva
 
+> Historical archive notes below describe earlier previews. The public library now contains only explicitly published media that passes the current release gate; archived drafts, scripts and unreviewed audio are not included. See [VIDEO_STUDIO.md](VIDEO_STUDIO.md) for the current intake and release workflow.
+
 The living library brings the user's reconstructed archive into the existing static site. The source archive is `entre-voces-biblioteca-viva-preview.zip` (SHA-256 `4cb96c6a11295b1fea1f411248b82093d20c08fc812a45138e5024fa49268b4f`). Its duplicate glossary is deliberately not imported: the field guide remains the canonical vocabulary source. Games and their local learning progress remain separate and available.
 
 `content/living-library/collection.json` is the editable catalog. Each experience has a stable ID, kind, title, content, review note and source context. `generator/living-library.js` rejects duplicate IDs, missing required content, unsafe or missing audio paths and broken story branches before `tools/build-hub.mjs` copies the catalog, UI and locally bundled audio into `dist/living-library`. Search, format filtering, story choices, native audio and locally saved favorites work without a learner account. Favorites do not claim competency or alter the shared learning engine.
