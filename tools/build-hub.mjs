@@ -7,7 +7,9 @@ const {curriculumSource}=await import('../generator/curriculum-source.js');
 const {domains,concepts,books}=curriculumSource();
 const curriculum=core.compileCurriculum({domains,concepts,books});
 if(books.length){mkdirSync(join(out,'books/language-access'),{recursive:true});cpSync('knowledge/imports/language-access',join(out,'books/language-access'),{recursive:true});}
-for(const file of ['index.html','style.css','hub.js'])cpSync(join('apps/learning-hub',file),join(out,file));
+for(const file of ['style.css','hub.js'])cpSync(join('apps/learning-hub',file),join(out,file));
+cpSync('apps/learning-hub/index.html',join(out,'practice.html'));
+cpSync('apps/biblioteca-viva',out,{recursive:true});
 mkdirSync(join(out,'runtime/engine-core'),{recursive:true});for(const[f,s]of Object.entries(learningRuntimeSources()))writeFileSync(join(out,'runtime/engine-core',f),s);cpSync('packages/engine-client/engine-client.js',join(out,'runtime/engine-client.js'));
 // Browser games share one maintained gameplay runtime instead of copying engines.
 cpSync('packages/game-runtime',join(out,'runtime/game-runtime'),{recursive:true});
@@ -29,15 +31,20 @@ cpSync('apps/living-library',join(out,'living-library'),{recursive:true});
 const production=JSON.parse(readFileSync('content/media-production/catalog.json'));const kb=loadKnowledge();const mediaCheck=validateCatalog(production,{knowledge:kb,assetRoot:'apps/biblioteca-viva'});if(!mediaCheck.ok)throw Error(`Production catalog invalid: ${mediaCheck.errors.join('; ')}`);
 // Only public content fields are projected. Each imported entry remains script-only.
 const projected=publicCatalog(production).items.map(item=>{const base={id:item.id,title:item.title,subtitle:item.synopsis||item.subtitle||'',source_id:(item.sourceIds||[]).join(', '),source_note:'Fictional draft; professional review and audio production are pending.',review:'Draft',productionKind:item.kind};if(item.kind==='audio-mystery')return {...base,kind:'branching',start:item.start,nodes:item.nodes};if(item.kind==='song')return {...base,kind:'song',lyrics:item.lyrics||item.script,prompt:item.prompts?.suno||'Draft song concept',style:'Song draft',bpm:'—'};return {...base,kind:item.kind==='audio-drama'?'telenovela':'story',body:item.script,takeaway:item.takeaway||''};});
+mkdirSync(join(out,'media-data'),{recursive:true});
+writeFileSync(join(out,'media-data/knowledge.json'),JSON.stringify(kb));
 const merged={...collection,items:[...collection.items,...projected]};const mergedErrors=validateCollection(merged);if(mergedErrors.length)throw Error(`Merged media invalid: ${mergedErrors.join('; ')}`);writeFileSync(join(out,'living-library/collection.json'),JSON.stringify(merged));
 // Version browser assets by content so Pages visitors do not receive mismatched cached files.
 const version=path=>createHash('sha256').update(readFileSync(path)).digest('hex').slice(0,12);
 const mediaDir=join(out,'living-library'),mediaJS=join(mediaDir,'library.js');
 writeFileSync(mediaJS,readFileSync(mediaJS,'utf8').replace('./translations.js',`./translations.js?v=${version(join(mediaDir,'translations.js'))}`));
-for(const [dir,files] of [[out,['style.css','hub.js']],[mediaDir,['library.css','library.js']]]){
+for(const [dir,files] of [[mediaDir,['library.css','library.js']]]){
  const page=join(dir,'index.html');let html=readFileSync(page,'utf8');
  for(const file of files)html=html.replace(`"${file}"`,`"${file}?v=${version(join(dir,file))}"`);
  writeFileSync(page,html);
 }
+
+// Practice retains its own cache-busted assets; the library uses a versioned service-worker cache.
+{const page=join(out,'practice.html');let html=readFileSync(page,'utf8');for(const file of ['style.css','hub.js'])html=html.replace(`"${file}"`,`"${file}?v=${version(join(out,file))}"`);writeFileSync(page,html);}
 
 console.log(JSON.stringify({directory:out,concepts:concepts.length,books:books.length,games:gameManifest.games.length}));

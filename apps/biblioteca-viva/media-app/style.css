@@ -9,3 +9,5 @@
 #audio-speed{min-width:48px;min-height:44px;border:1px solid currentColor;border-radius:8px;background:transparent;color:inherit;font-weight:700}
 #mini-player audio{min-width:0}
 @media(max-width:500px){#mini-player{gap:.5rem}#mini-player audio{width:100%;order:3}}
+
+.script-link{color:#f8eac9;white-space:nowrap;text-underline-offset:.25em}.feature-strip{flex-wrap:wrap}
