@@ -27,9 +27,12 @@ async function generate(item,lang){
    status(`Generating segment ${n+1} of ${item.segments.length}…`);
    let response;
    for(let tries=0;tries<3;tries++){
-    response=await fetch(`${api}/api/admin/synthesize`,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({id:item.id,revision:item.revision,segment:n,language:lang})});
-    if(response.status!==429)break;status('Voice service is busy. Waiting before retrying…');
-    for(let i=0;i<60&&!stop;i++)await sleep(1000);if(stop)break;
+    try{response=await fetch(`${api}/api/admin/synthesize`,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({id:item.id,revision:item.revision,segment:n,language:lang})});}
+    catch(error){if(tries===2)throw Error('Voice service connection failed. Saved segments can be resumed.');status('Connection interrupted. Retrying…');for(let i=0;i<3&&!stop;i++)await sleep(1000);if(stop)break;continue;}
+    if(response.status!==429&&response.status!==503)break;
+    if(tries===2)break;
+    status(response.status===429?'Voice service is busy. Waiting before retrying…':'Voice service is warming up. Retrying…');
+    for(let i=0;i<(response.status===429?60:5)&&!stop;i++)await sleep(1000);if(stop)break;
    }
    if(stop&&!response?.ok)break;
    if(!response?.ok){let msg='Voice generation is unavailable. Try again.';try{const body=await response.json();msg=body.detail||msg}catch{}throw Error(msg);}
