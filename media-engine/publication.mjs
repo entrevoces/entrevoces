@@ -1,6 +1,6 @@
 /** Public catalog is derived only from explicitly published, reviewed media. */
 import {publicationGate} from './validation.mjs';
-const PUBLIC_KEYS=['id','kind','title','synopsis','subtitle','audio','video','captions','cover','sunoUrl','duration','language'];
+const PUBLIC_KEYS=['id','kind','title','synopsis','subtitle','audio','video','captions','sunoUrl','duration','language'];
 export function publicItem(item){
  if(!item||typeof item!=='object'||!item.id)throw Error('Invalid media object');
  return Object.fromEntries(PUBLIC_KEYS.filter(key=>Object.hasOwn(item,key)).map(key=>[key,item[key]]));

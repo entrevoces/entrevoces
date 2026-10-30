@@ -92,9 +92,9 @@ export function publicationGate(item,options={}){
  if(!item.audio&&!item.video&&!item.sunoUrl)errors.push('No playable approved media available');
  if(item.kind==='film'&&!item.video)errors.push('Cannot publish film without video');
  if(item.video&&!item.captions)errors.push('Video requires reviewed WebVTT captions');
- if(item.video&&item.captions&&options.assetRoot){const file=resolve(options.assetRoot,item.captions);if(!/^[a-f0-9]{64}$/.test(item.captionSha256||''))errors.push('Caption file hash is missing');else if(existsSync(file)&&createHash('sha256').update(readFileSync(file)).digest('hex')!==item.captionSha256)errors.push('Caption file hash does not match');}
+ if(item.video&&/^media\/[a-z0-9_-]+\.vtt$/i.test(item.captions||'')&&options.assetRoot){const file=resolve(options.assetRoot,item.captions);if(!/^[a-f0-9]{64}$/.test(item.captionSha256||''))errors.push('Caption file hash is missing');else if(existsSync(file)&&createHash('sha256').update(readFileSync(file)).digest('hex')!==item.captionSha256)errors.push('Caption file hash does not match');}
  if(item.rights?.status!=='cleared')errors.push('Rights are not cleared');
- if(options.assetRoot&&(item.video||item.audio)){const path=resolve(options.assetRoot,item.video||item.audio);if(!/^[a-f0-9]{64}$/.test(item.rights?.sha256||''))errors.push('Approved file hash is missing');else if(existsSync(path)&&createHash('sha256').update(readFileSync(path)).digest('hex')!==item.rights.sha256)errors.push('Approved file hash does not match');}
+ if(options.assetRoot&&/^media\/[a-z0-9_-]+\.(mp3|m4a|wav|ogg|mp4|webm)$/i.test(item.video||item.audio||'')){const path=resolve(options.assetRoot,item.video||item.audio);if(!/^[a-f0-9]{64}$/.test(item.rights?.sha256||''))errors.push('Approved file hash is missing');else if(existsSync(path)&&createHash('sha256').update(readFileSync(path)).digest('hex')!==item.rights.sha256)errors.push('Approved file hash does not match');}
  if(!item.review?.bilingualApproved||!item.review?.domainApproved)errors.push('Professional medical/legal and bilingual review incomplete');
  if((item.audio||item.video)&&!item.transcript)errors.push('Missing accessible transcript');
  if(!String(item.script||item.body||item.lyrics||'').trim())errors.push('No complete accessible authored script supplied');

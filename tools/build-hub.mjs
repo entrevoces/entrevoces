@@ -32,7 +32,7 @@ const published=publicCatalog(production,{knowledge:kb,assetRoot:'apps/bibliotec
 mkdirSync(join(out,'living-library'),{recursive:true});
 writeFileSync(join(out,'living-library/collection.json'),JSON.stringify(published));
 writeFileSync(join(out,'living-library/index.html'),'<!doctype html><html lang="en"><head><meta charset="utf-8"><meta http-equiv="refresh" content="0;url=../"><title>Library moved</title></head><body><a href="../">Open the library</a></body></html>');
-for(const item of published.items)for(const path of [item.audio,item.video,item.captions,item.cover].filter(Boolean)){
+for(const item of published.items)for(const path of [item.audio,item.video,item.captions].filter(Boolean)){
  const dest=join(out,path);mkdirSync(resolve(dest,'..'),{recursive:true});cpSync(join('apps/biblioteca-viva',path),dest);
 }
 // Version browser assets by content so Pages visitors do not receive mismatched cached files.
