@@ -113,8 +113,8 @@ test('spoken UI can swap language direction, record PCM, submit, review and clos
     await ui.stop();assert.equal(stopped,true);assert.equal(validatePcmWav(submitted),true);
     assert.match(submittedUrl,/^https:\/\/demo--entre-voces-spoken-web\.modal\.run\/api\/spoken\/assess/);
     assert.equal(submittedCode,'demo-secret-code');
-    assert.equal(callbackResult.assessment.verdict,'faithful');assert.equal(fields.get('result').hidden,false);
-    await ui.close();assert.equal(closed,true);assert.equal(ui.open,false);assert.equal(ui.samples.length,0);
+    assert.equal(callbackResult.assessment.verdict,'faithful');assert.equal(fields.get('result').hidden,false);assert.equal(fields.get('transcript').value,'Take one dose now.');assert.match(fields.get('recording').src,/^blob:/);assert.ok(ui.recordingUrl);
+    await ui.close();assert.equal(closed,true);assert.equal(ui.open,false);assert.equal(ui.samples.length,0);assert.equal(ui.recordingUrl,null);
   }finally{
     globalThis.document=old.document;globalThis.window=old.window;globalThis.fetch=old.fetch;
     if(old.navigator)Object.defineProperty(globalThis,'navigator',old.navigator);else delete globalThis.navigator;

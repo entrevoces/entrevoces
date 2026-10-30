@@ -113,6 +113,39 @@ class Speech:
             result = self.recognizer({'array': samples, 'sampling_rate': 16000})
         return {'transcript': str(result.get('text', '')).strip()[:2200]}
 
+@app.cls(image=speech_image, cpu=4, memory=12288, timeout=600,
+         max_containers=1, min_containers=0, scaledown_window=60,
+         volumes={'/root/.cache/huggingface': cache})
+class FullPrecisionMMS:
+    """Comparison candidate; does not affect the live service."""
+    language: str = modal.parameter(default='en')
+
+    @modal.enter()
+    def load(self):
+        import torch
+        from transformers import AutoProcessor, Wav2Vec2ForCTC, pipeline
+        adapters = {'en': 'eng', 'es': 'spa', 'zh': 'cmn-script_simplified'}
+        if self.language not in adapters:
+            raise ValueError('Unsupported speech language')
+        torch.set_num_threads(4)
+        name = 'facebook/mms-1b-all'
+        model = Wav2Vec2ForCTC.from_pretrained(name, target_lang=adapters[self.language], ignore_mismatched_sizes=True).eval()
+        processor = AutoProcessor.from_pretrained(name, target_lang=adapters[self.language])
+        self.recognizer = pipeline('automatic-speech-recognition', model=model, tokenizer=processor.tokenizer,
+                                   feature_extractor=processor.feature_extractor, device=-1,
+                                   chunk_length_s=10, stride_length_s=1)
+
+    @modal.method()
+    def transcribe(self, pcm: bytes, language: str) -> dict:
+        import numpy as np
+        import torch
+        if language != self.language or not 3200 <= len(pcm) <= 960000 or len(pcm) % 2:
+            raise ValueError('Invalid speech request')
+        samples = np.frombuffer(pcm, dtype='<i2').astype(np.float32) / 32768.0
+        with torch.inference_mode():
+            result = self.recognizer({'array': samples, 'sampling_rate': 16000})
+        return {'transcript': str(result.get('text', '')).strip()[:2200]}
+
 @app.cls(image=speech_image, cpu=4, memory=16384, timeout=600,
          max_containers=1, min_containers=0, scaledown_window=60,
          volumes={'/root/.cache/huggingface': cache})
@@ -170,3 +203,36 @@ def web():
 @app.local_entrypoint()
 def prepare():
     print(prepare_models.remote())
+
+@app.local_entrypoint()
+def probe(audio_file: str, language: str = 'en', candidate: str = 'all'):
+    """Compare candidates on an explicitly supplied 16 kHz mono PCM WAV fixture.
+
+    Use fictional/consented speech only. Results are printed locally and never
+    added to the static library or learner evidence.
+    """
+    import json
+    import time
+    import wave
+    if language not in {'en', 'es', 'zh'}:
+        raise ValueError('Unsupported language')
+    with wave.open(audio_file, 'rb') as wav:
+        if wav.getnchannels() != 1 or wav.getsampwidth() != 2 or wav.getframerate() != 16000:
+            raise ValueError('Expected 16 kHz mono 16-bit PCM WAV')
+        if not 1600 <= wav.getnframes() <= 480000:
+            raise ValueError('Expected 0.1–30 seconds of audio')
+        pcm = wav.readframes(wav.getnframes())
+    results = {}
+    choices = {'mms': Speech(language=language), 'seamless': SeamlessSpeech(), 'mms-full': FullPrecisionMMS(language=language)}
+    if candidate != 'all' and candidate not in choices:
+        raise ValueError('Unknown candidate')
+    for name, recognizer in choices.items():
+        if candidate != 'all' and name != candidate:
+            continue
+        started = time.monotonic()
+        try:
+            result = recognizer.transcribe.remote(pcm, language)
+            results[name] = {'transcript': result['transcript'], 'seconds': round(time.monotonic() - started, 2)}
+        except Exception as exc:
+            results[name] = {'error': type(exc).__name__, 'seconds': round(time.monotonic() - started, 2)}
+    print(json.dumps(results, ensure_ascii=False))
