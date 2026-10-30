@@ -13,6 +13,18 @@ python3 tools/media-studio/studio.py storyboard --provider baseten --script fict
 
 The Baseten default is `meta-models/muse-spark-open`. The local machine is not assumed to have enough GPU memory to run that model. A successful JSON response is only a draft; narration must consist of exact spans of the script, and the plan must pass duration, ID and structural checks. Editorial and bilingual experts still need to inspect it. If no credentials or access exist, the command fails; it does not invent a model response.
 
+## Create a song and its music-video treatment
+
+On the public [drafts page](https://entrevoces.github.io/entrevoces/admin/), select a song, enter its intended length in seconds (30–600), and download a starting brief. The page itself is static: it does not call a writing model or contain model credentials. Edit the brief to specify the interpreting concept, language, setting, and any era preferences; omit private information. Run the writer locally with the same duration:
+
+```sh
+python3 tools/media-studio/studio.py song --provider baseten --brief ~/Downloads/song-brief.txt --seconds 180 --output content/media-production/song-drafts/my-song.json
+# Alternatively use --provider meta with MODEL_API_KEY in the environment.
+npm run build
+```
+
+The model writes complete lyrics, musical arrangement, era and place, a narrative treatment, visual direction, a music-generation prompt, and a shot list whose durations must add up to the requested length. The length is an authoring target, not a guarantee about a subsequently generated recording. The song JSON also works as input to `images` and `render` below. This creates neither sung audio nor motion video. Review the language, interpreter concepts, originality and rights before using the treatment or promoting finished work. Drafts in this directory are deliberately public when built and deployed; do not put private material or credentials there. Provider calls require working credentials and model access, and may incur charges.
+
 ## Make the visual shots
 
 ```sh

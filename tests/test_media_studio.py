@@ -39,6 +39,19 @@ class VideoStudioTests(unittest.TestCase):
    result['choices'][0]['message']['content']=json.dumps({**self.plan(),'shots':[{'id':'one','durationSeconds':1,'visualPrompt':'blue','narration':'Made up.'}]})
    args.output=str(root/'invalid.json')
    with patch.object(studio,'post',return_value=result),self.assertRaises(studio.StudioError):studio.storyboard(args)
+ def test_song_model_request_duration_and_invalid_output(self):
+  with tempfile.TemporaryDirectory() as d:
+   root=Path(d);brief=root/'brief.txt';brief.write_text('A Spanish song about preserving uncertainty in interpreting.')
+   args=Namespace(brief=str(brief),provider='baseten',model=None,seconds=60,output=str(root/'song.json'))
+   pack={'title':'Draft','lyrics':'[Verse] Maybe tomorrow','musicDirection':'Quiet guitar','videoConcept':'A traveler waits','era':'1960s imagined coastal town','visualStyle':'Warm paper','sunoPrompt':'Acoustic original song','shots':[{'id':'one','durationSeconds':30,'visualPrompt':'A red suitcase','action':'Slow pan','lyricCue':'Maybe tomorrow'},{'id':'two','durationSeconds':30,'visualPrompt':'A blue window','action':'The window opens','lyricCue':'Instrumental'}]}
+   result={'id':'test','choices':[{'finish_reason':'stop','message':{'content':json.dumps(pack)}}]}
+   with patch.object(studio,'post',return_value=result) as call:
+    studio.song(args);self.assertEqual(call.call_args.args[2]['model'],'meta-models/muse-spark-open');self.assertIn('60 seconds',call.call_args.args[2]['messages'][0]['content'])
+   saved=json.loads((root/'song.json').read_text());self.assertEqual(studio.validate(saved),60);self.assertEqual(saved['shots'][0]['narration'],'Maybe tomorrow')
+   args.output=str(root/'bad.json');pack['shots'][0]['durationSeconds']=5
+   result['choices'][0]['message']['content']=json.dumps(pack)
+   with patch.object(studio,'post',return_value=result),self.assertRaises(studio.StudioError):studio.song(args)
+   self.assertFalse((root/'bad.json').exists())
  def test_render_creates_a_real_video_from_image_and_audio(self):
   with tempfile.TemporaryDirectory() as d:
    root=Path(d);frames=root/'frames';frames.mkdir();plan=root/'plan.json';plan.write_text(json.dumps(self.plan()))

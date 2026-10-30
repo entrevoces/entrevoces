@@ -1,5 +1,5 @@
 // Reproducible static hub assembly. No authoring endpoints or runtime AI.
-import{mkdirSync,readFileSync,writeFileSync,cpSync,existsSync,rmSync}from'node:fs';import{join,resolve}from'node:path';import{createHash}from'node:crypto';
+import{mkdirSync,readFileSync,writeFileSync,cpSync,existsSync,rmSync,readdirSync}from'node:fs';import{join,resolve}from'node:path';import{createHash}from'node:crypto';
 import{loadKnowledge}from'../media-engine/knowledge.mjs';import{buildAdminCatalog}from'../media-engine/admin-catalog.mjs';import{validateCatalog}from'../media-engine/validation.mjs';import{publicCatalog}from'../media-engine/publication.mjs';
 import*as core from'../packages/engine-core/index.js';import{validateCollection}from'../generator/living-library.js';import{learningRuntimeSources}from'../generator/runtime.js';
 const out=resolve('dist');rmSync(out,{recursive:true,force:true});mkdirSync(out,{recursive:true});writeFileSync(join(out,'.nojekyll'),'');
@@ -24,11 +24,18 @@ try{if(process.env.CI)throw Error('Local authoring state is private.');const {re
 writeFileSync(join(out,'games.json'),JSON.stringify(gameManifest));
 for(const g of gameManifest.games){if(g.path&&existsSync(g.path))cpSync(g.path,join(out,'games',g.id),{recursive:true});}
 if(existsSync('apps/games/_shared'))cpSync('apps/games/_shared',join(out,'games/_shared'),{recursive:true});
-cpSync('assets/game-vectors',join(out,'games/_shared/media'),{recursive:true});
+cpSync('assets/game-vectors',join(out,'games/_shared/media'),{recursive:true,filter:src=>!src.endsWith('/provenance.json')});
 // Only signed-off and explicitly published production items enter the public bundle.
 const production=JSON.parse(readFileSync('content/media-production/catalog.json'));const kb=loadKnowledge();
 const mediaCheck=validateCatalog(production,{knowledge:kb,assetRoot:'apps/biblioteca-viva'});if(!mediaCheck.ok)throw Error(`Production catalog invalid: ${mediaCheck.errors.join('; ')}`);
-const legacy=JSON.parse(readFileSync('content/living-library/collection.json'));const legacyErrors=validateCollection(legacy);if(legacyErrors.length)throw Error(`Invalid admin archive: ${legacyErrors.join('; ')}`);const admin=buildAdminCatalog(production,legacy,[{id:'cada-dos-dias-video-script',title:'Cada dos días · One-minute video',kind:'film',language:'es',externalAudio:'https://suno.com/song/9fe7cfec-a73b-47d8-9321-91941484ea7b',script:readFileSync('content/media-production/cada-dos-dias-video.txt','utf8')}]);mkdirSync(join(out,'admin-data'),{recursive:true});writeFileSync(join(out,'admin-data/catalog.json'),JSON.stringify(admin));
+const songDir='content/media-production/song-drafts';
+const songDrafts=existsSync(songDir)?readdirSync(songDir).filter(f=>/^[a-z0-9][a-z0-9-]*\.json$/.test(f)).map(f=>{
+ const x=JSON.parse(readFileSync(join(songDir,f),'utf8'));const fields=['title','lyrics','musicDirection','videoConcept','era','visualStyle','sunoPrompt'];
+ if(fields.some(k=>typeof x[k]!=='string'||!x[k].trim())||!Number.isInteger(x.durationSeconds)||x.durationSeconds<30||x.durationSeconds>600||!Array.isArray(x.shots)||x.shots.length<2||x.shots.length>60)throw Error(`Invalid song draft ${f}`);
+ let duration=0;const ids=new Set();for(const shot of x.shots){if(!shot||typeof shot.id!=='string'||!/^[a-z0-9][a-z0-9-]{0,39}$/.test(shot.id)||ids.has(shot.id)||typeof shot.durationSeconds!=='number'||shot.durationSeconds<1||shot.durationSeconds>60||['visualPrompt','action','lyricCue'].some(k=>typeof shot[k]!=='string'||!shot[k].trim()))throw Error(`Invalid shot in ${f}`);ids.add(shot.id);duration+=shot.durationSeconds;}if(Math.abs(duration-x.durationSeconds)>1)throw Error(`Song duration mismatch in ${f}`);
+ return {id:`song-draft-${f.slice(0,-5)}`,title:x.title,kind:'song',script:x.lyrics,songTreatment:{durationSeconds:x.durationSeconds,era:x.era,videoConcept:x.videoConcept,visualStyle:x.visualStyle,musicDirection:x.musicDirection,sunoPrompt:x.sunoPrompt,shots:x.shots.map(({id,durationSeconds,visualPrompt,action,lyricCue})=>({id,durationSeconds,visualPrompt,action,lyricCue}))}};
+}):[];
+const legacy=JSON.parse(readFileSync('content/living-library/collection.json'));const legacyErrors=validateCollection(legacy);if(legacyErrors.length)throw Error(`Invalid admin archive: ${legacyErrors.join('; ')}`);const admin=buildAdminCatalog(production,legacy,[{id:'cada-dos-dias-video-script',title:'Cada dos días · One-minute video',kind:'film',language:'es',externalAudio:'https://suno.com/song/9fe7cfec-a73b-47d8-9321-91941484ea7b',script:readFileSync('content/media-production/cada-dos-dias-video.txt','utf8')},...songDrafts]);mkdirSync(join(out,'admin-data'),{recursive:true});writeFileSync(join(out,'admin-data/catalog.json'),JSON.stringify(admin));
 for(const i of admin.items.filter(i=>i.preview)){const original=i.origin==='legacy'?legacy.items.find(x=>`legacy-${x.id}`===i.id):production.items.find(x=>x.id===i.id);const root=i.origin==='legacy'?'apps/living-library':'apps/biblioteca-viva';const dest=join(out,i.preview.replace('../',''));mkdirSync(resolve(dest,'..'),{recursive:true});cpSync(join(root,original.audio),dest);}
 const published=publicCatalog(production,{knowledge:kb,assetRoot:'apps/biblioteca-viva'});
 mkdirSync(join(out,'living-library'),{recursive:true});

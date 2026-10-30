@@ -79,6 +79,53 @@ def storyboard(args):
     if path.exists():raise StudioError('Output already exists; choose a new path to preserve prior work.')
     write_json(path,plan); print(f'Saved draft storyboard: {path} ({seconds:g}s)')
 
+def validate_song(pack, seconds):
+    if not isinstance(pack, dict): raise StudioError('Song package must be an object.')
+    for field in ('title', 'lyrics', 'musicDirection', 'videoConcept', 'era', 'visualStyle', 'sunoPrompt'):
+        if not isinstance(pack.get(field), str) or not pack[field].strip(): raise StudioError(f'Song package requires {field}.')
+    if len(pack['sunoPrompt']) > 1000: raise StudioError('Music prompt exceeds 1000 characters.')
+    shots=pack.get('shots')
+    if not isinstance(shots,list) or not 2 <= len(shots) <= 60: raise StudioError('Song video needs 2–60 shots.')
+    ids=set(); total=0
+    for shot in shots:
+        if not isinstance(shot,dict): raise StudioError('Each song shot must be an object.')
+        sid=shot.get('id'); duration=shot.get('durationSeconds')
+        if not isinstance(sid,str) or not ID.fullmatch(sid) or sid in ids: raise StudioError('Shot IDs must be unique lowercase slugs.')
+        if type(duration) not in (int,float) or not 1 <= duration <= 60: raise StudioError('Shot duration must be 1–60 seconds.')
+        if any(not isinstance(shot.get(k),str) or not shot[k].strip() for k in ('visualPrompt','action','lyricCue')): raise StudioError(f'{sid}: visualPrompt, action and lyricCue are required.')
+        ids.add(sid); total+=duration
+    if abs(total-seconds)>1: raise StudioError(f'Shot durations total {total:g}s, not the requested {seconds}s.')
+    return total
+
+def song(args):
+    brief=Path(args.brief).read_text(encoding='utf8').strip()
+    if not 20 <= len(brief) <= 20000: raise StudioError('Brief must contain 20–20,000 characters.')
+    if not 30 <= args.seconds <= 600: raise StudioError('Song duration must be 30–600 seconds.')
+    path=Path(args.output)
+    if path.exists(): raise StudioError('Output already exists; choose a new path to preserve prior work.')
+    base,key,model=(META,os.getenv('MODEL_API_KEY'),args.model or 'muse-wonder-1.0') if args.provider=='meta' else (BASETEN,os.getenv('BASETEN_API_KEY'),args.model or 'meta-models/muse-spark-open')
+    instruction=(f'Create an original adult-oriented song and a vivid, feasible music-video treatment for interpreter learning. Target exactly {args.seconds} seconds. '
+      'Return ONLY JSON with title, lyrics (complete, marked sections), musicDirection (tempo, instrumentation, vocal character, arrangement and timed structure), '
+      'era (specific historical or imagined era and place), videoConcept (narrative and emotional arc), visualStyle (palette, lighting, wardrobe and production design), '
+      'sunoPrompt (under 1000 characters), and shots. Each shot has a unique lowercase hyphenated id, durationSeconds from 1 to 60, '
+      'visualPrompt (composition, subjects, setting and lighting; no generated lettering), action (camera and movement), and lyricCue (the lyric or instrumental moment). '
+      'Shot durations must sum exactly to the target. Make imagery change meaningfully with the song, with recurring motifs and coherent characters. '
+      'Write natural lyrics in the requested language, with sufficient sections and instrumental time for the specified duration. '
+      'Preserve attribution, uncertainty, numbers, negation and interpreter boundaries; do not make up medical or legal advice. '
+      'Avoid stereotypes, imitation of named artists, copyrighted characters, filler and generic stock imagery. Fictional examples only. '
+      'This is an unreviewed production draft, not generated audio or video.')
+    result=post(base+'/chat/completions',key,{'model':model,'messages':[{'role':'system','content':instruction},{'role':'user','content':brief}],'temperature':0.7,'max_tokens':8000})
+    try:
+        choice=result['choices'][0]
+        if choice.get('finish_reason') not in (None,'stop'): raise StudioError('Provider output was incomplete.')
+        pack=json.loads(choice['message']['content'].strip().removeprefix('```json').removesuffix('```').strip())
+    except (KeyError,IndexError,TypeError,json.JSONDecodeError): raise StudioError('Provider did not return valid song JSON.') from None
+    validate_song(pack,args.seconds)
+    for shot in pack['shots']: shot['narration']=shot['lyricCue']
+    pack['durationSeconds']=args.seconds
+    pack['provenance']={'provider':args.provider,'model':model,'briefSha256':hashlib.sha256(brief.encode()).hexdigest(),'requestId':result.get('id'),'review':'draft'}
+    write_json(path,pack);print(f'Saved song and video treatment draft: {path} ({args.seconds}s)')
+
 def images(args):
     plan=json.loads(Path(args.storyboard).read_text());validate(plan)
     out=Path(args.output);out.mkdir(parents=True,exist_ok=True)
@@ -133,6 +180,7 @@ def render(args):
 def main():
     parser=argparse.ArgumentParser(description=__doc__);sub=parser.add_subparsers(dest='command',required=True)
     p=sub.add_parser('storyboard');p.add_argument('--script',required=True);p.add_argument('--provider',choices=['meta','baseten'],required=True);p.add_argument('--model');p.add_argument('--seconds',type=int,default=180);p.add_argument('--output',required=True);p.set_defaults(fn=storyboard)
+    p=sub.add_parser('song');p.add_argument('--brief',required=True);p.add_argument('--provider',choices=['meta','baseten'],required=True);p.add_argument('--model');p.add_argument('--seconds',type=int,required=True);p.add_argument('--output',required=True);p.set_defaults(fn=song)
     p=sub.add_parser('images');p.add_argument('--storyboard',required=True);p.add_argument('--output',required=True);p.add_argument('--continuity',action='store_true',help='Use Meta server-managed conversation state across image turns.');p.add_argument('--resume',action='store_true');p.add_argument('--max-images',type=int,default=5);p.set_defaults(fn=images)
     p=sub.add_parser('render');p.add_argument('--storyboard',required=True);p.add_argument('--images',required=True);p.add_argument('--audio');p.add_argument('--allow-silent',action='store_true');p.add_argument('--output',required=True);p.set_defaults(fn=render)
     args=parser.parse_args()

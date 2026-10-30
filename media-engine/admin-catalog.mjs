@@ -21,6 +21,6 @@ export function buildAdminCatalog(production,legacy,supplemental=[]){
   if(x.kind==='branching'&&x.nodes)script=Object.entries(x.nodes).map(([id,node])=>`${id}\n${node.text||''}\n${(node.choices||[]).map(c=>`Choice: ${c.label}`).join('\n')}`).join('\n\n');
   if(!script)continue;mapped.push({id:`legacy-${x.id}`,title:x.title,kind:x.kind,status:'legacy-draft',script,origin:'legacy',preview:x.audio?`../admin-media/legacy-${x.id}${x.audio.slice(x.audio.lastIndexOf('.'))}`:null,externalAudio:x.externalAudio?.url||null});
  }
- for(const x of supplemental){if(x?.id&&x?.script)mapped.push({id:x.id,title:x.title,kind:x.kind,status:'script-draft',script:x.script,origin:'production',language:x.language,externalAudio:x.externalAudio||null});}
+ for(const x of supplemental){if(x?.id&&x?.script)mapped.push({id:x.id,title:x.title,kind:x.kind,status:'script-draft',script:x.script,origin:'production',language:x.language,externalAudio:x.externalAudio||null, ...(x.songTreatment?{songTreatment:x.songTreatment}: {})});}
  return {schemaVersion:1,items:mapped.map(x=>{const segments=narrationSegments(x.script);return {...x,segments,revision:createHash('sha256').update(JSON.stringify(segments)).digest('hex').slice(0,20),defaultLanguage:x.language|| (x.kind==='song'?'es':'en')};})};
 }
