@@ -96,7 +96,7 @@ test('spoken UI can swap language direction, record PCM, submit, review and clos
     Object.defineProperty(globalThis,'navigator',{configurable:true,value:{mediaDevices:{getUserMedia:async()=>({getTracks:()=>[{stop(){stopped=true;}}]})}}});
     globalThis.fetch=async(url,options)=>{
       if(String(url).includes('/api/spoken/health'))return{ok:true,json:async()=>({enabled:true,accessRequired:true})};
-      if(String(url).includes('/api/spoken/task')){const direction=new URLSearchParams(String(url).split('?')[1]).get('direction');return{ok:true,json:async()=>({...task,sourceText:direction==='reverse'?task.referenceText:task.sourceText,sourceLanguage:direction==='reverse'?'es':'en',targetLanguage:direction==='reverse'?'en':'es',direction,taskId:`medical:es:dose:${direction}`})};}
+      if(String(url).includes('/api/spoken/task')){if(new URLSearchParams(String(url).split('?')[1]).get('conceptId')==='missing-concept')return{ok:false,status:404};const direction=new URLSearchParams(String(url).split('?')[1]).get('direction');return{ok:true,json:async()=>({...task,sourceText:direction==='reverse'?task.referenceText:task.sourceText,sourceLanguage:direction==='reverse'?'es':'en',targetLanguage:direction==='reverse'?'en':'es',direction,taskId:`medical:es:dose:${direction}`})};}
       if(String(url).includes('/api/spoken/assess')){submittedUrl=String(url);submittedCode=options.headers['X-EV-Access-Code'];submitted=Buffer.from(await options.body.arrayBuffer());return{ok:true,json:async()=>({assessment:{verdict:'faithful',feedback:'Good',units:[]},transcript:'Take one dose now.',usableEvidence:true})};}
       throw Error('Unexpected path');
     };
@@ -115,6 +115,7 @@ test('spoken UI can swap language direction, record PCM, submit, review and clos
     assert.equal(submittedCode,'demo-secret-code');
     assert.equal(callbackResult.assessment.verdict,'faithful');assert.equal(fields.get('result').hidden,false);assert.equal(fields.get('transcript').value,'Take one dose now.');assert.match(fields.get('recording').src,/^blob:/);assert.ok(ui.recordingUrl);
     await ui.close();assert.equal(closed,true);assert.equal(ui.open,false);assert.equal(ui.samples.length,0);assert.equal(ui.recordingUrl,null);
+    const fallbackUi=new SpokenPractice();fallbackUi.apiBaseUrl=ui.apiBaseUrl;await fallbackUi.health();await fallbackUi.start({domain:'medical',lang:'es',conceptId:'missing-concept'});assert.equal(fallbackUi.action('record').disabled,false);assert.match(fallbackUi.field('status').textContent,/different sourced practice scenario/);await fallbackUi.close();
   }finally{
     globalThis.document=old.document;globalThis.window=old.window;globalThis.fetch=old.fetch;
     if(old.navigator)Object.defineProperty(globalThis,'navigator',old.navigator);else delete globalThis.navigator;

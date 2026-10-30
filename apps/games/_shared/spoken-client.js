@@ -49,12 +49,15 @@ export class SpokenPractice {
   async loadTask(){
     const sequence=++this.generation;this.task=null;this.resetAttempt();this.action('record').disabled=true;this.action('listen').disabled=true;this.action('swap').disabled=true;
     this.field('prompt').textContent='Loading sourced scenario…';
-    try{const r=await fetch(`${this.apiBaseUrl}/api/spoken/task?${new URLSearchParams({...this.selection,direction:this.direction})}`,{cache:'no-store'});
-      if(!r.ok)throw Error('No reviewed speaking scenario for this concept.');const task=await r.json();if(!this.open||sequence!==this.generation)return;
+    try{const request=conceptId=>fetch(`${this.apiBaseUrl}/api/spoken/task?${new URLSearchParams({...this.selection,conceptId,direction:this.direction})}`,{cache:'no-store'});
+      let r=await request(this.selection.conceptId),fallback=false;
+      const alternate={medical:'dose',legal:'arraignment'}[this.selection.domain];
+      if(r.status===404&&alternate&&alternate!==this.selection.conceptId){r=await request(alternate);fallback=true;}
+      if(!r.ok)throw Error(r.status===404?'No speaking scenario is available for this language and topic.':'Voice scenarios are temporarily unavailable. Please retry.');const task=await r.json();if(!this.open||sequence!==this.generation)return;
       this.task=task;this.field('prompt').textContent=task.sourceText;
       const label={en:'English',es:'Spanish',zh:'Mandarin'};this.field('language').textContent=`${label[task.sourceLanguage]} → ${label[task.targetLanguage]}`;
       this.action('record').disabled=false;this.action('listen').disabled=!('speechSynthesis' in window);this.action('swap').disabled=false;
-      this.status('Take your time. Press Record when ready.');this.action('record').focus();
+      this.status(fallback?'This game term has no voice scenario yet. Using a different sourced practice scenario.':'Take your time. Press Record when ready.');this.action('record').focus();
     }catch(e){if(sequence===this.generation){this.action('swap').disabled=false;this.status(e.message);}}
   }
   swap(){if(this.recording||this.busy||!this.available)return;window.speechSynthesis?.cancel();this.direction=this.direction==='forward'?'reverse':'forward';this.loadTask();}
