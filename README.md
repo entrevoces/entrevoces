@@ -1,4 +1,4 @@
-> **Living library:** Only published media that passes review, rights and file-integrity gates appears on the static site. Drafts and scripts remain in authoring; see [docs/VIDEO_STUDIO.md](docs/VIDEO_STUDIO.md). Games and the shared learning engine remain available.
+> **Living library:** Only published media that passes review, rights and file-integrity gates appears on the static site. Drafts and scripts remain in authoring; see [docs/VIDEO_STUDIO.md](docs/VIDEO_STUDIO.md). Games and the shared learning engine remain available. The deliberately public [media studio](docs/media-studio-admin.md) provides draft browsing and Modal voice generation.
 
 # Entre Voces
 

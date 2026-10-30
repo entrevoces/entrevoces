@@ -32,6 +32,27 @@ class HttpContractTests(unittest.TestCase):
             w.setnchannels(1); w.setsampwidth(2); w.setframerate(16000); w.writeframes(b'\0' * 32000)
         self.wav = f.getvalue()
 
+    def test_admin_voice_accepts_only_catalogued_segments_and_does_not_expose_access_code(self):
+        calls = []
+        async def synthesize(text, lang):
+            calls.append((text, lang))
+            return self.wav
+        admin = {'items': [{'id':'draft-1','revision':'rev-1','segments':['A fictional example.']}]}
+        client = TestClient(create_app([], 'test-only-access-code', lambda *_: None, admin_catalog=admin, synthesize=synthesize))
+        request = {'id':'draft-1','revision':'rev-1','segment':0,'language':'es'}
+        response = client.post('/api/admin/synthesize', json=request)
+        self.assertEqual(response.status_code, 200)
+        self.assertEqual(response.headers['content-type'], 'audio/wav')
+        self.assertEqual(response.headers['cache-control'], 'no-store')
+        self.assertEqual(calls, [('A fictional example.', 'es')])
+        for bad in [{**request,'id':'unknown'}, {**request,'segment':-1}, {**request,'segment':True}, {**request,'language':'zh'}]:
+            self.assertEqual(client.post('/api/admin/synthesize', json=bad).status_code, 400)
+        self.assertEqual(client.post('/api/admin/synthesize', json={**request,'revision':'old'}).status_code, 409)
+        self.assertEqual(len(calls), 1)
+
+    def test_unavailable_voice_does_not_fake_audio(self):
+        self.assertEqual(self.client.post('/api/admin/synthesize', json={}).status_code, 503)
+
     def test_cpu_health_task_and_actual_audio_response(self):
         health = self.client.get('/api/spoken/health').json()
         self.assertEqual(health['speechModel'], 'facebook/mms-1b-all')

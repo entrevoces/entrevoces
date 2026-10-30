@@ -1,6 +1,6 @@
 """Actual HTTP boundary, testable without GPU or Modal credentials."""
 
-def create_app(corpus, code, transcribe, origins="https://entrevoces.github.io,http://127.0.0.1:8014,http://localhost:8014", speech_model=None):
+def create_app(corpus, code, transcribe, origins="https://entrevoces.github.io,http://127.0.0.1:8014,http://localhost:8014", speech_model=None, admin_catalog=None, synthesize=None):
     import hmac
     import json
     import time
@@ -22,6 +22,8 @@ def create_app(corpus, code, transcribe, origins="https://entrevoces.github.io,h
         allow_headers=["Content-Type", "X-EV-Access-Code"], max_age=600,
     )
     requests = deque()
+    voice_requests = deque()
+    admin_items = {item["id"]: item for item in (admin_catalog or {}).get("items", [])}
 
     @web_app.get("/api/spoken/health")
     async def health():
@@ -96,6 +98,49 @@ def create_app(corpus, code, transcribe, origins="https://entrevoces.github.io,h
             "referenceText": approved["referenceText"],
             "sourceIds": approved["sourceIds"],
         }
+
+    @web_app.post("/api/admin/synthesize")
+    async def admin_synthesize(request: Request):
+        # Public admin is intentional. Only immutable, bounded catalog segments
+        # may be generated; this service never accepts arbitrary submitted text.
+        if synthesize is None:
+            raise HTTPException(503, "Voice generation is not configured.")
+        check_content_length(request, 4096)
+        data = bytearray()
+        async for chunk in request.stream():
+            data.extend(chunk)
+            if len(data) > 4096:
+                raise HTTPException(413, "Request body too large.")
+        try:
+            value = json.loads(data)
+        except (ValueError, UnicodeDecodeError):
+            raise HTTPException(400, "Invalid request.") from None
+        if not isinstance(value, dict):
+            raise HTTPException(400, "Invalid request.")
+        item = admin_items.get(value.get("id")) if isinstance(value.get("id"), str) else None
+        index = value.get("segment")
+        lang = value.get("language")
+        if not item or type(index) is not int or not 0 <= index < len(item.get("segments", [])) or lang not in ("en", "es"):
+            raise HTTPException(400, "Unknown script, segment, or voice language.")
+        if value.get("revision") != item.get("revision"):
+            raise HTTPException(409, "This script changed. Reload the admin page before generating.")
+        text = item["segments"][index]
+        if not isinstance(text, str) or not 1 <= len(text) <= 240:
+            raise HTTPException(400, "Invalid script segment.")
+        now = time.monotonic()
+        while voice_requests and now - voice_requests[0] > 60:
+            voice_requests.popleft()
+        if len(voice_requests) >= 60:
+            raise HTTPException(429, "Voice generation is busy. Retry in one minute.", headers={"Retry-After": "60"})
+        voice_requests.append(now)
+        try:
+            audio = await synthesize(text, lang)
+            if not isinstance(audio, bytes) or len(audio) < 44 or len(audio) > 8_000_000 or audio[:4] != b'RIFF' or audio[8:12] != b'WAVE':
+                raise ValueError('Invalid synthesized audio')
+        except Exception:
+            raise HTTPException(503, "Voice generation is warming up or temporarily unavailable. Please retry.") from None
+        from fastapi.responses import Response
+        return Response(audio, media_type="audio/wav", headers={"Cache-Control": "no-store"})
 
     @web_app.post("/api/spoken/calibrate")
     async def calibrate(request: Request):

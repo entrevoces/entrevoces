@@ -14,13 +14,15 @@ api_image = modal.Image.debian_slim(python_version='3.11').pip_install('fastapi=
 if modal.is_local():
     REPO = Path(__file__).resolve().parents[2]
     CORPUS = REPO / 'dist/curriculum.json'
-    if not CORPUS.exists():
+    ADMIN = REPO / 'dist/admin-data/catalog.json'
+    if not CORPUS.exists() or not ADMIN.exists():
         raise RuntimeError("Run 'npm run build' before deploying the Modal service.")
     api_image = (
         api_image
         .add_local_file(str(REPO / 'services/modal-spoken/core.py'), '/srv/core.py')
         .add_local_file(str(REPO / 'services/modal-spoken/api.py'), '/srv/api.py')
         .add_local_file(str(CORPUS), '/srv/curriculum.json')
+        .add_local_file(str(ADMIN), '/srv/admin-catalog.json')
     )
 # Install CPU PyTorch explicitly: ordinary Linux wheels pull large CUDA packages.
 speech_image = (
@@ -173,6 +175,48 @@ class SeamlessSpeech:
             ids = self.model.generate(**inputs, tgt_lang=languages[language])
         return {'transcript': self.processor.batch_decode(ids, skip_special_tokens=True)[0].strip()[:2200]}
 
+@app.cls(image=speech_image, cpu=2, memory=3072, timeout=300,
+         max_containers=1, min_containers=0, scaledown_window=60,
+         volumes={'/root/.cache/huggingface': cache})
+class DraftVoice:
+    """Synthetic draft narration, one Meta MMS voice per language."""
+    language: str = modal.parameter(default='en')
+
+    @modal.enter()
+    def load(self):
+        import torch
+        from transformers import AutoTokenizer, VitsModel
+        codes = {'en': 'eng', 'es': 'spa'}
+        if self.language not in codes:
+            raise ValueError('Unsupported voice language')
+        torch.set_num_threads(2)
+        name = 'facebook/mms-tts-' + codes[self.language]
+        self.tokenizer = AutoTokenizer.from_pretrained(name)
+        self.model = VitsModel.from_pretrained(name).eval()
+
+    @modal.method()
+    def speak(self, text: str) -> bytes:
+        import hashlib
+        import io
+        import wave
+        import numpy as np
+        import torch
+        if not isinstance(text, str) or not 1 <= len(text) <= 240:
+            raise ValueError('Invalid script segment')
+        tokens = self.tokenizer(text, return_tensors='pt')
+        if tokens['input_ids'].numel() == 0:
+            raise ValueError('No pronounceable text')
+        torch.manual_seed(int.from_bytes(hashlib.sha256(text.encode()).digest()[:4], 'big'))
+        with torch.inference_mode():
+            output = self.model(**tokens).waveform.squeeze().cpu().numpy()
+        if output.ndim != 1 or not output.size or not np.all(np.isfinite(output)):
+            raise ValueError('Voice synthesis failed')
+        pcm = (np.clip(output, -1, 1) * 32767).astype('<i2').tobytes()
+        stream = io.BytesIO()
+        with wave.open(stream, 'wb') as wav:
+            wav.setnchannels(1); wav.setsampwidth(2); wav.setframerate(self.model.config.sampling_rate); wav.writeframes(pcm)
+        return stream.getvalue()
+
 @app.function(image=api_image, cpu=.25, memory=256, timeout=600,
               min_containers=0, max_containers=1, scaledown_window=60,
               secrets=[modal.Secret.from_name('entre-voces-demo-access')])
@@ -184,6 +228,7 @@ def web():
     sys.path.insert(0, '/srv')
     from api import create_app
     corpus = json.loads(Path('/srv/curriculum.json').read_text())['knowledge']
+    admin_catalog = json.loads(Path('/srv/admin-catalog.json').read_text())
 
     backend = os.environ.get('EV_SPEECH_BACKEND', 'mms').strip().lower()
     if backend not in {'mms', 'seamless'}:
@@ -194,10 +239,14 @@ def web():
             return await SeamlessSpeech().transcribe.remote.aio(pcm, language)
         return await Speech(language=language).transcribe.remote.aio(pcm, language)
 
+    async def synthesize(text, language):
+        return await DraftVoice(language=language).speak.remote.aio(text)
+
     return create_app(
         corpus, os.environ.get('EV_DEMO_ACCESS_CODE', ''), transcribe,
         origins=os.environ.get('EV_ALLOWED_ORIGINS', 'https://entrevoces.github.io,http://127.0.0.1:8014,http://localhost:8014'),
         speech_model='facebook/seamless-m4t-v2-large' if backend == 'seamless' else None,
+        admin_catalog=admin_catalog, synthesize=synthesize,
     )
 
 @app.local_entrypoint()
@@ -236,3 +285,13 @@ def probe(audio_file: str, language: str = 'en', candidate: str = 'all'):
         except Exception as exc:
             results[name] = {'error': type(exc).__name__, 'seconds': round(time.monotonic() - started, 2)}
     print(json.dumps(results, ensure_ascii=False))
+
+@app.local_entrypoint()
+def voice_probe():
+    """Exercise both draft voices with fictional sample text on temporary workers."""
+    from pathlib import Path
+    for language, text in [('en', 'Please check the time and the quantity.'), ('es', 'Por favor confirme la cantidad y la frecuencia.')]:
+        audio = DraftVoice(language=language).speak.remote(text)
+        path = Path('/private/tmp/entre-voces-draft-' + language + '.wav')
+        path.write_bytes(audio)
+        print(language + ': ' + str(len(audio)) + ' bytes; ' + str(path))
